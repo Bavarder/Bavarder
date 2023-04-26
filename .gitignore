@@ -1,3 +1,5 @@
 flatpak-pip-generator
 .flatpak-builder/
 repo/
+build/
+export/
