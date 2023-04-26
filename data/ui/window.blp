@@ -2,10 +2,11 @@ using Gtk 4.0;
 using Adw 1;
 
 template BavarderWindow : Adw.ApplicationWindow {
-  title: _("Bavarder");
-  default-width: 950;
-  default-height: 650;
 
+  title: _("Bavarder");
+  default-width: 650;
+  default-height: 250;
+  
   ShortcutController {
     Shortcut {
       trigger: "<primary>q";
@@ -14,78 +15,126 @@ template BavarderWindow : Adw.ApplicationWindow {
   }
 
   Adw.ToastOverlay toast_overlay {
-    Adw.Leaflet leaflet {
-      can-navigate-back: true;
-      can-unfold: false;
+    Box {
+      orientation: vertical;
+      vexpand: true;
+      hexpand: true;
+      Adw.HeaderBar {
+        MenuButton {
+          primary: true;
+          menu-model: main-menu;
+          icon-name: "open-menu-symbolic";
+          tooltip-text: _("Main Menu");
+        }
+      }
 
-      Gtk.Box main_view {
+      Box main {
         orientation: vertical;
+        vexpand: true;
+        hexpand: true;
+        margin-top: 0;
+        margin-bottom: 24;
+        margin-start: 24;
+        margin-end: 24;
+        spacing: 12;
 
-        Adw.HeaderBar titlebar {
-          centering-policy: strict;
+        Adw.PreferencesGroup prompt_group {
+          title: _("Prompt");
 
-          Button apply-button {
-            styles ["suggested-action"]
-            label: _("New");
-            tooltip-text: _("New chat");
-            action-name: "app.new_chat";
-          }
-
-          [title]
-          Adw.ViewSwitcherTitle title {
-            stack: view_stack;
-          }
-
-          [end]
-          Gtk.MenuButton {
-            tooltip-text: _("Main Menu");
-            icon-name: "open-menu-symbolic";
-            menu-model: main-menu;
-          }
-
-         
-        }
-
-        Gtk.Box {
-          orientation: vertical;
-
-          Adw.ViewStack view_stack {
-            vexpand: true;
+          Box {
+            orientation: vertical;
             hexpand: true;
+            vexpand: true;
 
-            Adw.ViewStackPage {
-              name: "colors";
-              title: _("_Colors");
-              icon-name: "larger-brush-symbolic";
+            styles ["card", "text-box"]
 
-              child: Adw.PreferencesPage content { };
-              use-underline: true;
+            ScrolledWindow {
+              margin-top:12;
+              margin-bottom:0;
+              margin-start:12;
+              margin-end:12;
+
+              TextView prompt_text_view {
+                wrap-mode: char;
+                hexpand: true;
+                vexpand: true;
+                buffer: TextBuffer { };
+
+              }
+            }
+            Box {
+                hexpand: true;
+                halign: end;
+
+              styles ["toolbar"]
+              Button {
+                sensitive: false;
+                icon-name: "document-send-symbolic";
+                tooltip-text: _("Ask");
+                action-name: "app.ask";
+              }
+              Button {
+                sensitive: false;
+                icon-name: "edit-copy-symbolic";
+                tooltip-text: _("Copy to Clipboard");
+                hexpand: true;
+                halign: end;
+                action-name: "app.copy_prompt";
+              }
             }
 
-            Adw.ViewStackPage {
-              name: "monet";
-              title: _("_Monet");
-              icon-name: "color-picker-symbolic";
-
-              child: Adw.PreferencesPage content_monet { };
-              use-underline: true;
-            }
-
-            Adw.ViewStackPage {
-              name: "plugins";
-              title: _("_Advanced");
-              icon-name: "settings-symbolic";
-
-              child: Adw.PreferencesPage content_plugins { };
-              use-underline: true;
-            }
-          }
-
-          Adw.ViewSwitcherBar {
-            stack: view_stack;
-            reveal: bind title.title-visible;
           }
         }
+
+        Adw.PreferencesGroup bot_group {
+          title: _("Bot");
+
+          Box {
+            orientation: vertical;
+            hexpand: true;
+            vexpand: true;
+
+            styles ["card", "text-box"]
+
+            ScrolledWindow {
+              margin-top:12;
+              margin-bottom:0;
+              margin-start:12;
+              margin-end:12;
+
+              TextView bot_text_view {
+                wrap-mode: char;
+                hexpand: true;
+                vexpand: true;
+                editable: false;
+              }
+            }
+            Box {
+              hexpand: true;
+              halign: end;
+
+              styles ["toolbar"]
+
+              Label status {
+                label: _("Ready");
+
+              }
+              
+              Button {
+                sensitive: false;
+                icon-name: "edit-copy-symbolic";
+                tooltip-text: _("Copy to Clipboard");
+                hexpand: true;
+                halign: end;
+                action-name: "app.copy_bot";
+              }
+            }
+
+          }
+        }
+
+
+        
       }
     }
   }

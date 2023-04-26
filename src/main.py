@@ -19,12 +19,19 @@
 
 import sys
 import gi
+import sys
 
 gi.require_version('Gtk', '4.0')
 gi.require_version('Adw', '1')
+gi.require_version('Gdk', '4.0')
 
-from gi.repository import Gtk, Gio, Adw
+from gi.repository import Gtk, Gio, Adw, Gdk
 from .window import BavarderWindow
+from .preferences import Preferences
+
+from .constants import app_id, version
+
+from baichat_py import BAIChat
 
 
 class BavarderApplication(Adw.Application):
@@ -36,6 +43,14 @@ class BavarderApplication(Adw.Application):
         self.create_action('quit', lambda *_: self.quit(), ['<primary>q'])
         self.create_action('about', self.on_about_action)
         self.create_action('preferences', self.on_preferences_action)
+        self.create_action('copy_prompt', self.on_copy_prompt_action)
+        self.create_action('copy_bot', self.on_copy_bot_action)
+        self.create_action('ask', self.on_ask_action)
+
+        self.settings = Gio.Settings(schema_id="com.github.Bavarder.Bavarder")
+
+
+        self.clear_after_send = self.settings.get_boolean("clear-after-send")
 
     def do_activate(self):
         """Called when the application is activated.
@@ -43,25 +58,90 @@ class BavarderApplication(Adw.Application):
         We raise the application's main window, creating it if
         necessary.
         """
-        win = self.props.active_window
-        if not win:
-            win = BavarderWindow(application=self)
-        win.present()
+        self.win = self.props.active_window
+        if not self.win:
+            self.win = BavarderWindow(application=self)
+        self.win.present()
 
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
         about = Adw.AboutWindow(transient_for=self.props.active_window,
-                                application_name='bavarder',
-                                application_icon='com.github.Bavarder.Bavarder',
-                                developer_name='Me',
-                                version='0.1.0',
-                                developers=['Me'],
-                                copyright='© 2023 Me')
+                                application_name='Bavarder',
+                                application_icon=app_id,
+                                developer_name='0xMRTT',
+                                developers = ['0xMRTT https://github.com/0xMRTT'],
+                                designers = [],
+                                documenters = [],
+                                license_type=Gtk.License.GPL_3_0,
+                                version=version,
+                                copyright='© 2023 0xMRTT')
+
+        about.add_acknowledgement_section('Special thanks to',['Telegraph https://apps.gnome.org/app/io.github.fkinoshita.Telegraph', 'BAIChat https://chatbot.theb.ai/'])
         about.present()
 
     def on_preferences_action(self, widget, _):
         """Callback for the app.preferences action."""
         print('app.preferences action activated')
+
+        preferences = Preferences(application=self, transient_for=self.props.active_window)
+        preferences.present()
+
+    def on_copy_prompt_action(self, widget, _):
+        """Callback for the app.copy_prompt action."""
+        
+        toast = Adw.Toast()
+
+        text = self.win.prompt_text_view.get_buffer()
+        toast.set_title('Text copied')
+
+        (start, end) = text.get_bounds()
+        text = text.get_text(start, end, False)
+
+        if (len(text) == 0):
+            return
+
+        Gdk.Display.get_default().get_clipboard().set(text)
+
+        
+        self.win.toast_overlay.add_toast(toast)
+
+    def on_copy_bot_action(self, widget, _):
+        """Callback for the app.copy_bot action."""
+
+        toast = Adw.Toast()
+
+        text = self.win.bot_text_view.get_buffer()
+        toast.set_title('Text copied')
+
+        (start, end) = text.get_bounds()
+        text = text.get_text(start, end, False)
+
+        if (len(text) == 0):
+            return
+
+        Gdk.Display.get_default().get_clipboard().set(text)
+
+        
+        self.win.toast_overlay.add_toast(toast)
+
+    def ask(self, prompt):
+        with BAIChat() as (loop, chat):
+            response = chat.ask(self.prompt)
+            return response.text
+
+
+
+    def on_ask_action(self, widget, _):
+        """Callback for the app.ask action."""
+
+        self.win.status.set_text("Loading ...")
+        self.prompt = self.win.prompt_text_view.get_buffer().props.text
+
+        self.win.bot_text_view.get_buffer().set_text(self.ask(self.prompt))
+        self.win.status.set_text("Ready")
+
+       
+
 
     def create_action(self, name, callback, shortcuts=None):
         """Add an application action.
