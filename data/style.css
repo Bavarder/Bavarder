@@ -1,0 +1,13 @@
+.text-box textview,
+.text-box text {
+  background: none;
+  color: inherit;
+}
+
+.scrolled-window undershoot.bottom {
+  border-bottom: 1px solid #ededed;
+}
+
+.scrolled-window.top-undershoot undershoot.top {
+  border-top: 1px solid #ededed;
+}
