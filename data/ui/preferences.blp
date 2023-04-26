@@ -1,0 +1,28 @@
+using Gtk 4.0;
+using Adw 1;
+
+template GradiencePreferencesWindow : Adw.PreferencesWindow {
+  title: _("Preferences");
+  default-height: 400;
+  default-width: 600;
+  modal: true;
+
+  Adw.PreferencesPage general_page {
+    Adw.PreferencesGroup prompt_group {
+      title: _("Prompt");
+
+      Adw.ActionRow {
+        title: _("Clear prompt after send");
+        subtitle: _("The prompt will be cleared after send");
+        activatable-widget: clear_after_send_switch;
+        Gtk.Switch clear_after_send_switch {
+          valign: center;
+        }
+      }
+
+     
+    }
+
+    
+  }
+}
