@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=bavarder
+Exec=bavarder
+Icon=com.github.Bavarder.Bavarder
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

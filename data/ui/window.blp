@@ -1,0 +1,107 @@
+using Gtk 4.0;
+using Adw 1;
+
+template BavarderWindow : Adw.ApplicationWindow {
+  title: _("Bavarder");
+  default-width: 950;
+  default-height: 650;
+
+  ShortcutController {
+    Shortcut {
+      trigger: "<primary>q";
+      action: "action(window.close)";
+    }
+  }
+
+  Adw.ToastOverlay toast_overlay {
+    Adw.Leaflet leaflet {
+      can-navigate-back: true;
+      can-unfold: false;
+
+      Gtk.Box main_view {
+        orientation: vertical;
+
+        Adw.HeaderBar titlebar {
+          centering-policy: strict;
+
+          Button apply-button {
+            styles ["suggested-action"]
+            label: _("New");
+            tooltip-text: _("New chat");
+            action-name: "app.new_chat";
+          }
+
+          [title]
+          Adw.ViewSwitcherTitle title {
+            stack: view_stack;
+          }
+
+          [end]
+          Gtk.MenuButton {
+            tooltip-text: _("Main Menu");
+            icon-name: "open-menu-symbolic";
+            menu-model: main-menu;
+          }
+
+         
+        }
+
+        Gtk.Box {
+          orientation: vertical;
+
+          Adw.ViewStack view_stack {
+            vexpand: true;
+            hexpand: true;
+
+            Adw.ViewStackPage {
+              name: "colors";
+              title: _("_Colors");
+              icon-name: "larger-brush-symbolic";
+
+              child: Adw.PreferencesPage content { };
+              use-underline: true;
+            }
+
+            Adw.ViewStackPage {
+              name: "monet";
+              title: _("_Monet");
+              icon-name: "color-picker-symbolic";
+
+              child: Adw.PreferencesPage content_monet { };
+              use-underline: true;
+            }
+
+            Adw.ViewStackPage {
+              name: "plugins";
+              title: _("_Advanced");
+              icon-name: "settings-symbolic";
+
+              child: Adw.PreferencesPage content_plugins { };
+              use-underline: true;
+            }
+          }
+
+          Adw.ViewSwitcherBar {
+            stack: view_stack;
+            reveal: bind title.title-visible;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+menu main-menu {
+  section {
+    item {
+      label: _("Preferences");
+      action: "app.preferences";
+    }
+
+    item {
+      label: _("About Bavarder");
+      action: "app.about";
+    }
+  }
+}
