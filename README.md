@@ -6,7 +6,7 @@
 </h1>
 
 <p align="center">
-  <strong>Ask GPT from GNOME</strong>
+  <strong>Chat with GPT from your desktop</strong>
 </p>
 
 <p align="center">
