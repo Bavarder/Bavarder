@@ -1,0 +1,87 @@
+# Bavarder POT file
+# Copyright (C) 2023 Bavarder
+# This file is distributed under the GNU GPLv3 license.
+# Bavarder, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 10:43+0200\n"
+"PO-Revision-Date: 2023-04-27 09:44+0000\n"
+"Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
+"Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
+"bavarder/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.17\n"
+
+#: data/com.github.Bavarder.Bavarder.desktop.in:3
+msgid "bavarder"
+msgstr "bavarder"
+
+#: data/com.github.Bavarder.Bavarder.appdata.xml.in:7
+msgid "No description"
+msgstr "Aucune description"
+
+#: data/ui/help-overlay.ui:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Général"
+
+#: data/ui/help-overlay.ui:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Afficher les Raccourcis"
+
+#: data/ui/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Quitter"
+
+#: data/ui/preferences.blp:5 data/ui/window.blp:147
+msgid "Preferences"
+msgstr "Préférences"
+
+#: data/ui/preferences.blp:12 data/ui/window.blp:42
+msgid "Prompt"
+msgstr "Invite"
+
+#: data/ui/preferences.blp:15
+msgid "Clear prompt after send"
+msgstr "Effacer l'invite après l'envoi"
+
+#: data/ui/preferences.blp:16
+msgid "The prompt will be cleared after send"
+msgstr "L'invite sera effacée après l'envoi"
+
+#: data/ui/window.blp:6
+msgid "Bavarder"
+msgstr "Bavarder"
+
+#: data/ui/window.blp:27
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+#: data/ui/window.blp:73
+msgid "Ask"
+msgstr "Demandez"
+
+#: data/ui/window.blp:79 data/ui/window.blp:126
+msgid "Copy to Clipboard"
+msgstr "Copier dans le presse papier"
+
+#: data/ui/window.blp:90
+msgid "Bot"
+msgstr "Robot"
+
+#: data/ui/window.blp:119
+msgid "Ready"
+msgstr "Prêt"
+
+#: data/ui/window.blp:152
+msgid "About Bavarder"
+msgstr "A propos de Bavarder"
