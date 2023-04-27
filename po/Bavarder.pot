@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 10:43+0200\n"
+"POT-Creation-Date: 2023-04-27 13:50+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,11 +40,11 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr ""
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:147
+#: data/ui/preferences.blp:5 data/ui/window.blp:154
 msgid "Preferences"
 msgstr ""
 
-#: data/ui/preferences.blp:12 data/ui/window.blp:42
+#: data/ui/preferences.blp:12
 msgid "Prompt"
 msgstr ""
 
@@ -64,22 +64,26 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: data/ui/window.blp:73
-msgid "Ask"
+#: data/ui/window.blp:43
+msgid "Message"
 msgstr ""
 
-#: data/ui/window.blp:79 data/ui/window.blp:126
+#: data/ui/window.blp:76 data/ui/window.blp:137
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: data/ui/window.blp:90
-msgid "Bot"
+#: data/ui/window.blp:83
+msgid "Ask"
 msgstr ""
 
-#: data/ui/window.blp:119
+#: data/ui/window.blp:98
+msgid "Response"
+msgstr ""
+
+#: data/ui/window.blp:130
 msgid "Ready"
 msgstr ""
 
-#: data/ui/window.blp:152
+#: data/ui/window.blp:159
 msgid "About Bavarder"
 msgstr ""
