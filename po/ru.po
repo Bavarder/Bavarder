@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
+# Daudix_UFO <ddaudix@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 13:50+0200\n"
 "PO-Revision-Date: 2023-04-27 12:23+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
+"Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
 "Language: ru\n"
@@ -23,7 +24,7 @@ msgstr ""
 
 #: data/com.github.Bavarder.Bavarder.desktop.in:3
 msgid "bavarder"
-msgstr ""
+msgstr "bavarder"
 
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:7
 msgid "No description"
@@ -37,7 +38,7 @@ msgstr "Общее"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Показать комбинации клавиш"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
@@ -50,23 +51,23 @@ msgstr "Настройки"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "Поле ввода"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Очищать поле ввода после отправки"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "Поле ввода будет очищено после отправки"
 
 #: data/ui/window.blp:6
 msgid "Bavarder"
-msgstr ""
+msgstr "Bavarder"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
-msgstr ""
+msgstr "Главное меню"
 
 #: data/ui/window.blp:43
 msgid "Message"
@@ -78,11 +79,11 @@ msgstr "Скопировать в буфер обмена"
 
 #: data/ui/window.blp:83
 msgid "Ask"
-msgstr ""
+msgstr "Спросить"
 
 #: data/ui/window.blp:98
 msgid "Response"
-msgstr ""
+msgstr "Ответ"
 
 #: data/ui/window.blp:130
 msgid "Ready"
@@ -90,7 +91,7 @@ msgstr "Готово"
 
 #: data/ui/window.blp:159
 msgid "About Bavarder"
-msgstr ""
+msgstr "О Bavarder"
 
 #~ msgid "Bot"
 #~ msgstr "Бот"
