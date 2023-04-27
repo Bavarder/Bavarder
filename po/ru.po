@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 19:33+0200\n"
-"PO-Revision-Date: 2023-04-27 17:33+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-04-27 17:37+0000\n"
+"Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
 "Language: ru\n"
@@ -30,15 +30,15 @@ msgstr "Bavarder"
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:7
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chit-chat with GPT"
-msgstr ""
+msgstr "Болтайте с GPT"
 
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:15
 msgid "Screenshot of Main UI"
-msgstr ""
+msgstr "Снимок экрана главного интерфейса"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -82,7 +82,7 @@ msgstr "Главное меню"
 
 #: data/ui/window.blp:33
 msgid "No network connection"
-msgstr "Нет подключения к сети."
+msgstr "Нет подключения к сети"
 
 #: data/ui/window.blp:48
 msgid "Message"
@@ -109,11 +109,8 @@ msgid "Ready"
 msgstr "Готов"
 
 #: data/ui/window.blp:187
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Show Shortcuts"
 msgid "Keyboard Shortcuts"
-msgstr "Показать комбинации клавиш"
+msgstr "Комбинации клавиш"
 
 #: data/ui/window.blp:192
 msgid "About Bavarder"
