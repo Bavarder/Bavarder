@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 13:50+0200\n"
-"PO-Revision-Date: 2023-04-27 10:08+0000\n"
+"PO-Revision-Date: 2023-04-27 11:52+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: data/ui/window.blp:43
 msgid "Message"
-msgstr ""
+msgstr "Mensaje"
 
 #: data/ui/window.blp:76 data/ui/window.blp:137
 msgid "Copy to Clipboard"
