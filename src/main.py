@@ -21,6 +21,7 @@ import sys
 import gi
 import sys
 import threading
+import socket
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
@@ -64,6 +65,8 @@ class BavarderApplication(Adw.Application):
         if not self.win:
             self.win = BavarderWindow(application=self)
         self.win.present()
+
+        self.win.response_stack.set_visible_child_name("page_response")
 
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
@@ -140,7 +143,12 @@ class BavarderApplication(Adw.Application):
             response = chat.sync_ask(self.prompt)
         except KeyError:
             return ""
-        return response.text
+        except socket.gaierror:
+            #self.win.response_stack.set_visible_child_name("page_offline")
+            self.win.banner.set_revealed(True)
+            return ""
+        else:
+            return response.text
 
     @Gtk.Template.Callback()
     def on_key_press_event(self, widget, event):
@@ -154,7 +162,7 @@ class BavarderApplication(Adw.Application):
 
         self.win.spinner.start()
         self.win.ask_button.set_visible(False)
-        self.win.spinner.set_visible(True)
+        self.win.wait_button.set_visible(True)
         self.win.status.set_text("Loading…")
         self.prompt = self.win.prompt_text_view.get_buffer().props.text
 
@@ -166,7 +174,7 @@ class BavarderApplication(Adw.Application):
         def cleanup(response):
             self.win.spinner.stop()
             self.win.ask_button.set_visible(True)
-            self.win.spinner.set_visible(False)
+            self.win.wait_button.set_visible(False)
             t.join()
             self.win.bot_text_view.get_buffer().set_text(response)
             self.win.status.set_text("Ready")

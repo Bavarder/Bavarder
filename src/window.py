@@ -31,6 +31,9 @@ class BavarderWindow(Adw.ApplicationWindow):
     status = Gtk.Template.Child()
     spinner = Gtk.Template.Child()
     ask_button = Gtk.Template.Child()
+    wait_button = Gtk.Template.Child()
+    response_stack = Gtk.Template.Child()
+    banner = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

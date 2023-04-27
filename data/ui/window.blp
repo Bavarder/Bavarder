@@ -29,6 +29,11 @@ template BavarderWindow : Adw.ApplicationWindow {
         styles ["flat"]
       }
 
+      Adw.Banner banner {
+        title: _("Offline");
+        revealed: false;
+      }
+
       Box main {
         orientation: vertical;
         vexpand: true;
@@ -86,9 +91,14 @@ template BavarderWindow : Adw.ApplicationWindow {
                 action-name: "app.ask";
                 styles ["suggested-action", "circular"]
               }
-              Spinner spinner {
-                styles ["circular"]
+              Button wait_button {
                 visible: false;
+                sensitive: false;
+                tooltip-text: _("Wait");
+                styles ["suggested-action", "circular"]
+                Spinner spinner {
+                  styles ["suggested-action", "circular"]
+                }
               }
             }
           }
@@ -112,14 +122,28 @@ template BavarderWindow : Adw.ApplicationWindow {
               margin-end:12;
               styles ["scrolled-window"]
               
+              Gtk.Stack response_stack {
+                Gtk.StackPage {
+                  name: "page_response";
+                  child: TextView bot_text_view {
+                    wrap-mode: word_char;
+                    hexpand: true;
+                    vexpand: true;
+                    editable: false;
+                  };
+                }
 
-              TextView bot_text_view {
-                wrap-mode: word_char;
-                hexpand: true;
-                vexpand: true;
-                editable: false;
+                // Gtk.StackPage {
+                //   name: "page_offline";
+                //   child: Adw.StatusPage {
+                //     //icon-name: "network-wireless-offline-symbolic";
+                //     title: _("Offline");
+                //   };
+                // }
               }
+              
             }
+
             Box {
               hexpand: true;
               halign: end;
