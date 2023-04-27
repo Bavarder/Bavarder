@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 13:50+0200\n"
-"PO-Revision-Date: 2023-04-27 12:23+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
+"PO-Revision-Date: 2023-04-27 12:26+0000\n"
+"Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
 "Language: ru\n"
@@ -47,7 +47,7 @@ msgstr "Выйти"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:154
 msgid "Preferences"
-msgstr "Настройки"
+msgstr "Параметры"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
@@ -87,7 +87,7 @@ msgstr "Ответ"
 
 #: data/ui/window.blp:130
 msgid "Ready"
-msgstr "Готово"
+msgstr "Готов"
 
 #: data/ui/window.blp:159
 msgid "About Bavarder"
