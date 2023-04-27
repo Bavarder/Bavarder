@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 10:43+0200\n"
+"POT-Creation-Date: 2023-04-27 13:50+0200\n"
 "PO-Revision-Date: 2023-04-27 09:44+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
@@ -42,11 +42,11 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Aufhören"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:147
+#: data/ui/preferences.blp:5 data/ui/window.blp:154
 msgid "Preferences"
 msgstr "Einstellungen"
 
-#: data/ui/preferences.blp:12 data/ui/window.blp:42
+#: data/ui/preferences.blp:12
 msgid "Prompt"
 msgstr "Eingabeaufforderung"
 
@@ -66,22 +66,29 @@ msgstr "Bavarder"
 msgid "Main Menu"
 msgstr "Hauptmenü"
 
-#: data/ui/window.blp:73
-msgid "Ask"
-msgstr "Fragen"
+#: data/ui/window.blp:43
+msgid "Message"
+msgstr ""
 
-#: data/ui/window.blp:79 data/ui/window.blp:126
+#: data/ui/window.blp:76 data/ui/window.blp:137
 msgid "Copy to Clipboard"
 msgstr "In die Zwischenablage kopieren"
 
-#: data/ui/window.blp:90
-msgid "Bot"
-msgstr "Bot"
+#: data/ui/window.blp:83
+msgid "Ask"
+msgstr "Fragen"
 
-#: data/ui/window.blp:119
+#: data/ui/window.blp:98
+msgid "Response"
+msgstr ""
+
+#: data/ui/window.blp:130
 msgid "Ready"
 msgstr "Bereit"
 
-#: data/ui/window.blp:152
+#: data/ui/window.blp:159
 msgid "About Bavarder"
 msgstr "Über Bavarder"
+
+#~ msgid "Bot"
+#~ msgstr "Bot"
