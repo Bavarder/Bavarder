@@ -3,13 +3,14 @@
 # This file is distributed under the GNU GPLv3 license.
 # Bavarder, 2023.
 #
+# 0xMRTT <0xmrtt@tuta.io>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 13:50+0200\n"
 "PO-Revision-Date: 2023-04-27 11:52+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -80,7 +81,7 @@ msgstr "Demandez"
 
 #: data/ui/window.blp:98
 msgid "Response"
-msgstr ""
+msgstr "Réponse"
 
 #: data/ui/window.blp:130
 msgid "Ready"
