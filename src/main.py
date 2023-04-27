@@ -49,7 +49,7 @@ class BavarderApplication(Adw.Application):
         self.create_action("preferences", self.on_preferences_action)
         self.create_action("copy_prompt", self.on_copy_prompt_action)
         self.create_action("copy_bot", self.on_copy_bot_action)
-        self.create_action("ask", self.on_ask_action)
+        self.create_action("ask", self.on_ask_action, ["<Control>Return"])
 
         self.settings = Gio.Settings(schema_id="com.github.Bavarder.Bavarder")
 
@@ -142,21 +142,16 @@ class BavarderApplication(Adw.Application):
         try:
             response = chat.sync_ask(self.prompt)
         except KeyError:
+            self.win.banner.set_revealed(False)
             return ""
         except socket.gaierror:
             #self.win.response_stack.set_visible_child_name("page_offline")
             self.win.banner.set_revealed(True)
             return ""
         else:
+            self.win.banner.set_revealed(False)
             return response.text
-
-    @Gtk.Template.Callback()
-    def on_key_press_event(self, widget, event):
-        if gtk.gdk.keyval_name(event.keyval) == "Return":
-            self.on_ask_action(widget, event)
-            return True
-        return False
-
+            
     def on_ask_action(self, widget, _):
         """Callback for the app.ask action."""
 
