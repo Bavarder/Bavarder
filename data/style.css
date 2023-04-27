@@ -4,10 +4,12 @@
   color: inherit;
 }
 
-.scrolled-window undershoot.bottom {
-  border-bottom: 1px solid #ededed;
+.scrolled-window undershoot.top {
+  box-shadow: inset 0 1px alpha(@shade_color, .75);
+  background: linear-gradient(to bottom, alpha(@shade_color, .75), transparent 4px);
 }
 
-.scrolled-window.top-undershoot undershoot.top {
-  border-top: 1px solid #ededed;
+.scrolled-window undershoot.bottom {
+  box-shadow: inset 0 -1px alpha(@shade_color, .75);
+  background: linear-gradient(to top, alpha(@shade_color, .75), transparent 4px);
 }
