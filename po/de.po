@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 19:15+0200\n"
-"PO-Revision-Date: 2023-04-27 13:18+0000\n"
+"PO-Revision-Date: 2023-04-27 17:33+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
@@ -28,15 +28,15 @@ msgstr "Bavarder"
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:7
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chat with GPT from your desktop"
-msgstr ""
+msgstr "Chatten Sie mit GPT von Ihrem Desktop aus"
 
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:15
 msgid "Screenshot of Main UI"
-msgstr ""
+msgstr "Screenshot der Hauptbenutzeroberfläche"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
