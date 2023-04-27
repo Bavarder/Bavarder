@@ -3,7 +3,46 @@
 	<id>com.github.Bavarder.Bavarder.desktop</id>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
+	<name>Bavarder</name>
+	<summary>Chat with GPT from your desktop</summary>
+	<developer_name>0xMRTT</developer_name>
+	<content_rating type="oars-1.1"/>
 	<description>
-	  <p>No description</p>
+	  <p>Chat with GPT from your desktop</p>
 	</description>
+	<screenshots>
+	  <screenshot width="472" height="622">
+		<caption>Screenshot of Main UI</caption>
+		<image type="source">https://raw.githubusercontent.com/Bavarder/Bavarder/main/data/screenshots/quantum-computing.png</image>
+		</screenshot>
+	</screenshots>
+	<url type="bugtracker">https://github.com/Bavarder/Bavarder/issues</url>
+	<url type="translate">https://translate.codeberg.org/engage/bavarder/</url>
+	<url type="help">https://github.com/Bavarder/Bavarder/issues</url>
+	<url type="homepage">https://github.com/Bavarder/Bavarder</url>
+
+	<kudos>
+		<kudo>HiDpiIcon</kudo>
+		<kudo>ModernToolkit</kudo>
+	</kudos>
+
+	<requires>
+		<display_length compare="ge">360</display_length>
+	</requires>
+
+	<categories>
+		<category>Utility</category>
+	</categories>
+
+	<recommends>
+		<control>keyboard</control>
+		<control>pointing</control>
+		<control>touch</control>
+	</recommends>
+
+	<keywords>
+		<keyword>Bavarder</keyword>
+		<keyword>GPT</keyword>
+		<keyword>OpenAI</keyword>
+	</keywords>"
 </component>
