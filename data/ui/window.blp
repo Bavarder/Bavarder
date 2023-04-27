@@ -61,6 +61,7 @@ template BavarderWindow : Adw.ApplicationWindow {
                 hexpand: true;
                 vexpand: true;
                 buffer: TextBuffer { };
+                //key-press => on_key_press_event();
 
               }
             }
@@ -75,7 +76,8 @@ template BavarderWindow : Adw.ApplicationWindow {
                 tooltip-text: _("Copy to Clipboard");
                 action-name: "app.copy_prompt";
               }
-              Button {
+              Button ask_button {
+                visible: true;
                 sensitive: false;
                 icon-name: "paper-plane-symbolic";
                 tooltip-text: _("Ask");
@@ -84,12 +86,17 @@ template BavarderWindow : Adw.ApplicationWindow {
                 action-name: "app.ask";
                 styles ["suggested-action", "circular"]
               }
+              Spinner spinner {
+                styles ["circular"]
+                visible: false;
+              }
             }
           }
         }
 
         Adw.PreferencesGroup bot_group {
           title: _("Response");
+
 
           Box {
             orientation: vertical;
@@ -104,6 +111,7 @@ template BavarderWindow : Adw.ApplicationWindow {
               margin-start:12;
               margin-end:12;
               styles ["scrolled-window"]
+              
 
               TextView bot_text_view {
                 wrap-mode: word_char;
