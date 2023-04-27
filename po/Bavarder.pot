@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 14:30+0200\n"
+"POT-Creation-Date: 2023-04-27 15:16+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,11 @@ msgid "Show Shortcuts"
 msgstr ""
 
 #: data/ui/help-overlay.ui:20
+msgctxt "shortcut window"
+msgid "Ask"
+msgstr ""
+
+#: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr ""
@@ -93,5 +98,9 @@ msgid "Ready"
 msgstr ""
 
 #: data/ui/window.blp:183
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: data/ui/window.blp:188
 msgid "About Bavarder"
 msgstr ""
