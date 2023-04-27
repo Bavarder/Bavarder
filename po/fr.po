@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 14:25+0200\n"
-"PO-Revision-Date: 2023-04-27 12:23+0000\n"
+"PO-Revision-Date: 2023-04-27 13:16+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -69,7 +69,7 @@ msgstr "Menu Principal"
 
 #: data/ui/window.blp:33
 msgid "Working offline, remote content cannot be fetched"
-msgstr ""
+msgstr "Travail hors ligne, le contenu distant ne peut pas être récupéré"
 
 #: data/ui/window.blp:48
 msgid "Message"
@@ -85,7 +85,7 @@ msgstr "Demandez"
 
 #: data/ui/window.blp:97
 msgid "Wait"
-msgstr ""
+msgstr "Attendez"
 
 #: data/ui/window.blp:108
 msgid "Response"
