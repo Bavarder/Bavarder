@@ -6,4 +6,7 @@
     <file preprocess="xml-stripblanks">ui/preferences.ui</file>
     <file>style.css</file>
   </gresource>
+  <gresource prefix="/com/github/Bavarder/Bavarder/icons/scalable/actions/">
+    <file preprocess="xml-stripblanks" alias="paper-plane-symbolic.svg">icons/scalable/actions/paper-plane-symbolic.svg</file>
+  </gresource>
 </gresources>

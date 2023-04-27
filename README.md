@@ -1,8 +1,8 @@
 # Bavarder
 
-Ask GPT from GNOME
+Simple way to ask GPT
 
-![](./data/screenshots/languages.png)
+![app-screenshot](./data/screenshots/quantum-computing.png)
 
 ## Installation
 

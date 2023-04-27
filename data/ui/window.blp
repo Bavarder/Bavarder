@@ -4,8 +4,8 @@ using Adw 1;
 template BavarderWindow : Adw.ApplicationWindow {
 
   title: _("Bavarder");
-  default-width: 650;
-  default-height: 250;
+  default-width: 350;
+  default-height: 500;
   
   ShortcutController {
     Shortcut {
@@ -26,6 +26,7 @@ template BavarderWindow : Adw.ApplicationWindow {
           icon-name: "open-menu-symbolic";
           tooltip-text: _("Main Menu");
         }
+        styles ["flat"]
       }
 
       Box main {
@@ -39,7 +40,7 @@ template BavarderWindow : Adw.ApplicationWindow {
         spacing: 12;
 
         Adw.PreferencesGroup prompt_group {
-          title: _("Prompt");
+          title: _("Message");
 
           Box {
             orientation: vertical;
@@ -53,9 +54,10 @@ template BavarderWindow : Adw.ApplicationWindow {
               margin-bottom:0;
               margin-start:12;
               margin-end:12;
+              styles ["scrolled-window"]
 
               TextView prompt_text_view {
-                wrap-mode: char;
+                wrap-mode: word_char;
                 hexpand: true;
                 vexpand: true;
                 buffer: TextBuffer { };
@@ -69,25 +71,25 @@ template BavarderWindow : Adw.ApplicationWindow {
               styles ["toolbar"]
               Button {
                 sensitive: false;
-                icon-name: "document-send-symbolic";
-                tooltip-text: _("Ask");
-                action-name: "app.ask";
+                icon-name: "edit-copy-symbolic";
+                tooltip-text: _("Copy to Clipboard");
+                action-name: "app.copy_prompt";
               }
               Button {
                 sensitive: false;
-                icon-name: "edit-copy-symbolic";
-                tooltip-text: _("Copy to Clipboard");
+                icon-name: "paper-plane-symbolic";
+                tooltip-text: _("Ask");
                 hexpand: true;
                 halign: end;
-                action-name: "app.copy_prompt";
+                action-name: "app.ask";
+                styles ["suggested-action", "circular"]
               }
             }
-
           }
         }
 
         Adw.PreferencesGroup bot_group {
-          title: _("Bot");
+          title: _("Response");
 
           Box {
             orientation: vertical;
@@ -101,9 +103,10 @@ template BavarderWindow : Adw.ApplicationWindow {
               margin-bottom:0;
               margin-start:12;
               margin-end:12;
+              styles ["scrolled-window"]
 
               TextView bot_text_view {
-                wrap-mode: char;
+                wrap-mode: word_char;
                 hexpand: true;
                 vexpand: true;
                 editable: false;
@@ -119,7 +122,7 @@ template BavarderWindow : Adw.ApplicationWindow {
                 label: _("Ready");
 
               }
-              
+
               Button {
                 sensitive: false;
                 icon-name: "edit-copy-symbolic";
@@ -129,12 +132,8 @@ template BavarderWindow : Adw.ApplicationWindow {
                 action-name: "app.copy_bot";
               }
             }
-
           }
         }
-
-
-        
       }
     }
   }
