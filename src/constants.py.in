@@ -1,4 +1,4 @@
-rootdir          = '/com/github/Bavarder/Bavarder'
+rootdir          = '/io/github/Bavarder/Bavarder'
 datadir          = '@DATA_DIR@'
 pkgdatadir       = '@PKGDATA_DIR@'
 localedir        = '@LOCALE_DIR@'

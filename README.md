@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <img src="data/icons/hicolor/scalable/apps/com.github.Bavarder.Bavarder.svg" alt="Bavarder" width="192" height="192"/>
+  <img src="data/icons/hicolor/scalable/apps/io.github.Bavarder.Bavarder.svg" alt="Bavarder" width="192" height="192"/>
   <br>
   Bavarder
 </h1>
@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://flathub.org/apps/details/com.github.Bavarder.Bavarder">
+  <a href="https://flathub.org/apps/details/io.github.Bavarder.Bavarder">
     <img width="200" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-i-en.svg"/>
   </a>
   <br>
@@ -53,7 +53,7 @@ Clone the repo and run `flatpak-builder`
 ```
 git clone https://github.com/Bavarder/Bavarder
 cd Bavarder
-flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/com.github.Bavarder.Bavarder.json
+flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/io.github.Bavarder.Bavarder.json
 ```
 
 ## Contribute

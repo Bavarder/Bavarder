@@ -1,6 +1,6 @@
-data/com.github.Bavarder.Bavarder.desktop.in
-data/com.github.Bavarder.Bavarder.appdata.xml.in
-data/com.github.Bavarder.Bavarder.gschema.xml
+data/io.github.Bavarder.Bavarder.desktop.in
+data/io.github.Bavarder.Bavarder.appdata.xml.in
+data/io.github.Bavarder.Bavarder.gschema.xml
 data/ui/help-overlay.ui
 data/ui/preferences.blp
 data/ui/window.blp

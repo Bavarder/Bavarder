@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/com/github/Bavarder/Bavarder">
+  <gresource prefix="/io/github/Bavarder/Bavarder">
     <file preprocess="xml-stripblanks">ui/window.ui</file>
     <file preprocess="xml-stripblanks" alias="gtk/help-overlay.ui">ui/help-overlay.ui</file>
     <file preprocess="xml-stripblanks">ui/preferences.ui</file>
     <file>style.css</file>
   </gresource>
-  <gresource prefix="/com/github/Bavarder/Bavarder/icons/scalable/actions/">
+  <gresource prefix="/io/github/Bavarder/Bavarder/icons/scalable/actions/">
     <file preprocess="xml-stripblanks" alias="paper-plane-symbolic.svg">icons/scalable/actions/paper-plane-symbolic.svg</file>
   </gresource>
 </gresources>

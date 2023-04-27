@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="bavarder">
-	<schema id="com.github.Bavarder.Bavarder" path="/com/github/Bavarder/Bavarder/">
+	<schema id="io.github.Bavarder.Bavarder" path="/io/github/Bavarder/Bavarder/">
 		<key name="width" type="i">
-			<default>640</default>
+			<default>350</default>
 		</key>
 		<key name="height" type="i">
-			<default>480</default>
+			<default>500</default>
 		</key>
 		<key name="is-maximized" type="b">
 			<default>false</default>

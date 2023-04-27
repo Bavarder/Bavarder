@@ -1,4 +1,4 @@
-application_id = 'com.github.Bavarder.Bavarder'
+application_id = 'io.github.Bavarder.Bavarder'
 
 scalable_dir = join_paths('hicolor', 'scalable', 'apps')
 install_data(

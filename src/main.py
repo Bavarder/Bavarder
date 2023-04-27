@@ -41,7 +41,7 @@ class BavarderApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(
-            application_id="com.github.Bavarder.Bavarder",
+            application_id="io.github.Bavarder.Bavarder",
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
         self.create_action("quit", lambda *_: self.quit(), ["<primary>q"])
@@ -51,7 +51,7 @@ class BavarderApplication(Adw.Application):
         self.create_action("copy_bot", self.on_copy_bot_action)
         self.create_action("ask", self.on_ask_action, ["<primary>Return"])
 
-        self.settings = Gio.Settings(schema_id="com.github.Bavarder.Bavarder")
+        self.settings = Gio.Settings(schema_id="io.github.Bavarder.Bavarder")
 
         self.clear_after_send = self.settings.get_boolean("clear-after-send")
 
