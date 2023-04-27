@@ -15,12 +15,13 @@ class Preferences(Adw.PreferencesWindow):
 
         self.win = self.app.get_active_window()
 
-
         self.setup()
 
     def setup(self):
         clear_after_send = self.settings.get_boolean("clear-after-send")
-        self.clear_after_send_switch.connect("state-set", self.on_clear_after_send_switch_toggled)
+        self.clear_after_send_switch.connect(
+            "state-set", self.on_clear_after_send_switch_toggled
+        )
 
     def on_clear_after_send_switch_toggled(self, *args):
         state = self.clear_after_send_switch.props.state

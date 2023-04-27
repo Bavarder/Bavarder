@@ -20,27 +20,32 @@
 from gi.repository import Adw
 from gi.repository import Gtk, Gio
 
-@Gtk.Template(resource_path='/com/github/Bavarder/Bavarder/ui/window.ui')
+
+@Gtk.Template(resource_path="/com/github/Bavarder/Bavarder/ui/window.ui")
 class BavarderWindow(Adw.ApplicationWindow):
-    __gtype_name__ = 'BavarderWindow'
+    __gtype_name__ = "BavarderWindow"
 
     toast_overlay = Gtk.Template.Child()
     prompt_text_view = Gtk.Template.Child()
     bot_text_view = Gtk.Template.Child()
     status = Gtk.Template.Child()
+    spinner = Gtk.Template.Child()
+    ask_button = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         self.settings = Gio.Settings(schema_id="com.github.Bavarder.Bavarder")
 
-        self.settings.bind("width", self, "default-width",
-                           Gio.SettingsBindFlags.DEFAULT)
-        self.settings.bind("height", self, "default-height",
-                           Gio.SettingsBindFlags.DEFAULT)
-        self.settings.bind("is-maximized", self, "maximized",
-                           Gio.SettingsBindFlags.DEFAULT)
-        self.settings.bind("is-fullscreen", self, "fullscreened",
-                           Gio.SettingsBindFlags.DEFAULT)
-
-    
+        self.settings.bind(
+            "width", self, "default-width", Gio.SettingsBindFlags.DEFAULT
+        )
+        self.settings.bind(
+            "height", self, "default-height", Gio.SettingsBindFlags.DEFAULT
+        )
+        self.settings.bind(
+            "is-maximized", self, "maximized", Gio.SettingsBindFlags.DEFAULT
+        )
+        self.settings.bind(
+            "is-fullscreen", self, "fullscreened", Gio.SettingsBindFlags.DEFAULT
+        )
