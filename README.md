@@ -37,7 +37,7 @@
 </p>
 
 <p align="center">
-  <img src="./data/screenshots/languages.png" alt="Preview"/>
+  <img src="./data/screenshots/quantum-computing.png" alt="Preview"/>
 </p>
 
 ## Installation
