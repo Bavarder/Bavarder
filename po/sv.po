@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 14:25+0200\n"
+"POT-Creation-Date: 2023-04-27 15:16+0200\n"
 "PO-Revision-Date: 2023-04-27 12:23+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
@@ -40,6 +40,11 @@ msgstr ""
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
+msgid "Ask"
+msgstr ""
+
+#: data/ui/help-overlay.ui:26
+msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Sluta"
 
@@ -68,7 +73,7 @@ msgid "Main Menu"
 msgstr ""
 
 #: data/ui/window.blp:33
-msgid "Working offline, remote content cannot be fetched"
+msgid "Working offline"
 msgstr ""
 
 #: data/ui/window.blp:48
@@ -96,5 +101,9 @@ msgid "Ready"
 msgstr "läst"
 
 #: data/ui/window.blp:183
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: data/ui/window.blp:188
 msgid "About Bavarder"
 msgstr ""
