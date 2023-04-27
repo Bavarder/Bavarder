@@ -1,6 +1,9 @@
 data/com.github.Bavarder.Bavarder.desktop.in
 data/com.github.Bavarder.Bavarder.appdata.xml.in
 data/com.github.Bavarder.Bavarder.gschema.xml
+data/ui/help-overlay.ui
+data/ui/preferences.blp
+data/ui/window.blp
 src/main.py
+src/preferences.py
 src/window.py
-src/window.ui
