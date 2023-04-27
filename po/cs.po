@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 19:33+0200\n"
+"POT-Creation-Date: 2023-04-27 22:07+0200\n"
 "PO-Revision-Date: 2023-04-27 19:52+0000\n"
 "Last-Translator: muznyo <codeberg.vqtek@simplelogin.com>\n"
 "Language-Team: Czech <https://translate.codeberg.org/projects/bavarder/"
@@ -58,7 +58,7 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Ukončit"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:182
+#: data/ui/preferences.blp:5 data/ui/window.blp:177
 msgid "Preferences"
 msgstr "Nastavení"
 
@@ -86,7 +86,7 @@ msgstr "Žádné připojení k síti"
 msgid "Message"
 msgstr "Zpráva"
 
-#: data/ui/window.blp:81 data/ui/window.blp:165
+#: data/ui/window.blp:81 data/ui/window.blp:160
 msgid "Copy to Clipboard"
 msgstr "Kopírovat do schránky"
 
@@ -102,14 +102,13 @@ msgstr "Čekejte"
 msgid "Response"
 msgstr "Odpověď"
 
-#: data/ui/window.blp:158
-msgid "Ready"
-msgstr "Připraveno"
-
-#: data/ui/window.blp:187
+#: data/ui/window.blp:182
 msgid "Keyboard Shortcuts"
 msgstr "Klávesové zkratky"
 
-#: data/ui/window.blp:192
+#: data/ui/window.blp:187
 msgid "About Bavarder"
 msgstr "O Bavarder"
+
+#~ msgid "Ready"
+#~ msgstr "Připraveno"

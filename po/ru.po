@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 19:33+0200\n"
+"POT-Creation-Date: 2023-04-27 22:07+0200\n"
 "PO-Revision-Date: 2023-04-27 17:37+0000\n"
 "Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
@@ -18,8 +18,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in:3
@@ -60,7 +60,7 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Выйти"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:182
+#: data/ui/preferences.blp:5 data/ui/window.blp:177
 msgid "Preferences"
 msgstr "Параметры"
 
@@ -88,7 +88,7 @@ msgstr "Нет подключения к сети"
 msgid "Message"
 msgstr "Сообщение"
 
-#: data/ui/window.blp:81 data/ui/window.blp:165
+#: data/ui/window.blp:81 data/ui/window.blp:160
 msgid "Copy to Clipboard"
 msgstr "Скопировать в буфер обмена"
 
@@ -104,17 +104,16 @@ msgstr "Ждите"
 msgid "Response"
 msgstr "Ответ"
 
-#: data/ui/window.blp:158
-msgid "Ready"
-msgstr "Готов"
-
-#: data/ui/window.blp:187
+#: data/ui/window.blp:182
 msgid "Keyboard Shortcuts"
 msgstr "Комбинации клавиш"
 
-#: data/ui/window.blp:192
+#: data/ui/window.blp:187
 msgid "About Bavarder"
 msgstr "О Bavarder"
+
+#~ msgid "Ready"
+#~ msgstr "Готов"
 
 #~ msgid "bavarder"
 #~ msgstr "bavarder"
