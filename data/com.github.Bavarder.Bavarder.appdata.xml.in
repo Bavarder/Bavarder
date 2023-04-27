@@ -4,11 +4,11 @@
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
 	<name>Bavarder</name>
-	<summary>Chat with GPT from your desktop</summary>
+	<summary>Chit-chat with GPT</summary>
 	<developer_name>0xMRTT</developer_name>
 	<content_rating type="oars-1.1"/>
 	<description>
-	  <p>Chat with GPT from your desktop</p>
+	  <p>Chit-chat with GPT</p>
 	</description>
 	<screenshots>
 	  <screenshot width="472" height="622">

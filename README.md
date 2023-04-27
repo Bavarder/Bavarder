@@ -6,7 +6,7 @@
 </h1>
 
 <p align="center">
-  <strong>Chat with GPT from your desktop</strong>
+  <strong>Chit-chat with GPT</strong>
 </p>
 
 <p align="center">
