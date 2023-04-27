@@ -76,7 +76,7 @@ class BavarderApplication(Adw.Application):
             application_icon=app_id,
             developer_name="0xMRTT",
             developers=["0xMRTT https://github.com/0xMRTT"],
-            designers=[],
+            designers=["David Lapshin https://github.com/daudix-UFO"],
             documenters=[],
             license_type=Gtk.License.GPL_3_0,
             version=version,
