@@ -158,7 +158,6 @@ class BavarderApplication(Adw.Application):
         self.win.spinner.start()
         self.win.ask_button.set_visible(False)
         self.win.wait_button.set_visible(True)
-        self.win.status.set_text("Loading…")
         self.prompt = self.win.prompt_text_view.get_buffer().props.text
 
         def thread_run():
@@ -172,7 +171,6 @@ class BavarderApplication(Adw.Application):
             self.win.wait_button.set_visible(False)
             t.join()
             self.win.bot_text_view.get_buffer().set_text(response)
-            self.win.status.set_text("Ready")
 
             if self.clear_after_send:
                 self.win.prompt_text_view.get_buffer().set_text("")
