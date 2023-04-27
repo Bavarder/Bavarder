@@ -20,21 +20,21 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/com.github.Bavarder.Bavarder.desktop.in:3
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:6 data/ui/window.blp:6
+#: data/io.github.Bavarder.Bavarder.desktop.in:3
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:6 data/ui/window.blp:6
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:7
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:11
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chit-chat with GPT"
 msgstr "Plaudern Sie mit GPT"
 
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:8
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
 msgstr "0xMRTT"
 
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:15
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:15
 msgid "Screenshot of Main UI"
 msgstr "Screenshot der Hauptbenutzeroberfläche"
 

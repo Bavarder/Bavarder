@@ -21,7 +21,7 @@ from gi.repository import Adw
 from gi.repository import Gtk, Gio
 
 
-@Gtk.Template(resource_path="/com/github/Bavarder/Bavarder/ui/window.ui")
+@Gtk.Template(resource_path="/io/github/Bavarder/Bavarder/ui/window.ui")
 class BavarderWindow(Adw.ApplicationWindow):
     __gtype_name__ = "BavarderWindow"
 
@@ -37,7 +37,7 @@ class BavarderWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        self.settings = Gio.Settings(schema_id="com.github.Bavarder.Bavarder")
+        self.settings = Gio.Settings(schema_id="io.github.Bavarder.Bavarder")
 
         self.settings.bind(
             "width", self, "default-width", Gio.SettingsBindFlags.DEFAULT

@@ -1,7 +1,7 @@
 from gi.repository import Gtk, Adw
 
 
-@Gtk.Template(resource_path="/com/github/Bavarder/Bavarder/ui/preferences.ui")
+@Gtk.Template(resource_path="/io/github/Bavarder/Bavarder/ui/preferences.ui")
 class Preferences(Adw.PreferencesWindow):
     __gtype_name__ = "Preferences"
 

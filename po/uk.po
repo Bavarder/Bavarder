@@ -21,21 +21,21 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/com.github.Bavarder.Bavarder.desktop.in:3
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:6 data/ui/window.blp:6
+#: data/io.github.Bavarder.Bavarder.desktop.in:3
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:6 data/ui/window.blp:6
 msgid "Bavarder"
 msgstr ""
 
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:7
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:11
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chit-chat with GPT"
 msgstr ""
 
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:8
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
 msgstr ""
 
-#: data/com.github.Bavarder.Bavarder.appdata.xml.in:15
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:15
 msgid "Screenshot of Main UI"
 msgstr ""
 

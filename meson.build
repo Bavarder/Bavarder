@@ -9,7 +9,7 @@ gnome = import('gnome')
 python = import('python')
 
 # Constants
-PROJECT_RDNN_NAME = 'com.github.Bavarder.Bavarder'
+PROJECT_RDNN_NAME = 'io.github.Bavarder.Bavarder'
 
 PROJECT_URL = 'https://github.com/Bavarder'
 
