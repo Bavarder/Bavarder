@@ -49,7 +49,7 @@ class BavarderApplication(Adw.Application):
         self.create_action("preferences", self.on_preferences_action)
         self.create_action("copy_prompt", self.on_copy_prompt_action)
         self.create_action("copy_bot", self.on_copy_bot_action)
-        self.create_action("ask", self.on_ask_action, ["<Control>Return"])
+        self.create_action("ask", self.on_ask_action, ["<primary>Return"])
 
         self.settings = Gio.Settings(schema_id="com.github.Bavarder.Bavarder")
 
@@ -151,7 +151,7 @@ class BavarderApplication(Adw.Application):
         else:
             self.win.banner.set_revealed(False)
             return response.text
-            
+
     def on_ask_action(self, widget, _):
         """Callback for the app.ask action."""
 
