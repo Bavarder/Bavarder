@@ -134,7 +134,7 @@ class BavarderApplication(Adw.Application):
     def on_ask_action(self, widget, _):
         """Callback for the app.ask action."""
 
-        self.win.status.set_text("Loading ...")
+        self.win.status.set_text("Loading…")
         self.prompt = self.win.prompt_text_view.get_buffer().props.text
 
         self.win.bot_text_view.get_buffer().set_text(self.ask(self.prompt))
