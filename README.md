@@ -58,6 +58,8 @@ flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/com.githu
 
 ## Contribute
 
+The [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct) is applicable to this project
+
 ### Translate
 
 <a href="https://translate.codeberg.org/engage/bavarder/">
