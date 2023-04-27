@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 10:43+0200\n"
-"PO-Revision-Date: 2023-04-27 09:19+0000\n"
+"PO-Revision-Date: 2023-04-27 09:44+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: data/com.github.Bavarder.Bavarder.desktop.in:3
 msgid "bavarder"
-msgstr ""
+msgstr "bavarder"
 
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:7
 msgid "No description"
-msgstr ""
+msgstr "Aucune description"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -35,7 +35,7 @@ msgstr "Général"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Afficher les Raccourcis"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
@@ -48,7 +48,7 @@ msgstr "Préférences"
 
 #: data/ui/preferences.blp:12 data/ui/window.blp:42
 msgid "Prompt"
-msgstr ""
+msgstr "Invite"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
@@ -56,7 +56,7 @@ msgstr "Effacer l'invite après l'envoi"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "L'invite sera effacée après l'envoi"
 
 #: data/ui/window.blp:6
 msgid "Bavarder"
