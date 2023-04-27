@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 13:50+0200\n"
+"POT-Creation-Date: 2023-04-27 14:25+0200\n"
 "PO-Revision-Date: 2023-04-27 12:23+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
@@ -43,7 +43,7 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Esci"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:154
+#: data/ui/preferences.blp:5 data/ui/window.blp:178
 msgid "Preferences"
 msgstr "Preferenze"
 
@@ -67,26 +67,34 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: data/ui/window.blp:43
+#: data/ui/window.blp:33
+msgid "Working offline, remote content cannot be fetched"
+msgstr ""
+
+#: data/ui/window.blp:48
 msgid "Message"
 msgstr "Messaggio"
 
-#: data/ui/window.blp:76 data/ui/window.blp:137
+#: data/ui/window.blp:81 data/ui/window.blp:161
 msgid "Copy to Clipboard"
 msgstr "Copia negli appunti"
 
-#: data/ui/window.blp:83
+#: data/ui/window.blp:88
 msgid "Ask"
 msgstr ""
 
-#: data/ui/window.blp:98
+#: data/ui/window.blp:97
+msgid "Wait"
+msgstr ""
+
+#: data/ui/window.blp:108
 msgid "Response"
 msgstr ""
 
-#: data/ui/window.blp:130
+#: data/ui/window.blp:154
 msgid "Ready"
 msgstr "Pronto"
 
-#: data/ui/window.blp:159
+#: data/ui/window.blp:183
 msgid "About Bavarder"
 msgstr ""
