@@ -2,19 +2,19 @@
 <schemalist gettext-domain="bavarder">
 	<schema id="com.github.Bavarder.Bavarder" path="/com/github/Bavarder/Bavarder/">
 		<key name="width" type="i">
-		<default>640</default>
+			<default>640</default>
 		</key>
 		<key name="height" type="i">
-		<default>480</default>
+			<default>480</default>
 		</key>
 		<key name="is-maximized" type="b">
-		<default>false</default>
+			<default>false</default>
 		</key>
 		<key name="is-fullscreen" type="b">
-		<default>false</default>
+			<default>false</default>
 		</key>
 		<key name="clear-after-send" type="b">
-		<default>false</default>
+			<default>false</default>
 		</key>
 	</schema>
 </schemalist>
