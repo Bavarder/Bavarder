@@ -50,17 +50,17 @@
 	</keywords>
 
   <releases>
-    <release version="0.1.2" date="2023-4-5" type="stable">
+    <release version="0.1.2" date="2023-4-27" type="stable">
       <description>
         <p>Fix appdata not having release tags</p>
       </description>
     </release>
-    <release version="0.1.1" date="2023-4-5" type="stable">
+    <release version="0.1.1" date="2023-4-27" type="stable">
       <description>
         <p>Change app ID to io.github.Bavarder.Bavarder</p>
       </description>
     </release>
-    <release version="0.1.0" date="2023-4-5" type="stable">
+    <release version="0.1.0" date="2023-4-27" type="stable">
       <description>
         <p>First release of Bavarder</p>
       </description>
