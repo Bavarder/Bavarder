@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 15:16+0200\n"
-"PO-Revision-Date: 2023-04-27 13:16+0000\n"
+"PO-Revision-Date: 2023-04-27 13:18+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
@@ -39,8 +39,6 @@ msgid "Show Shortcuts"
 msgstr "Verknüpfungen anzeigen"
 
 #: data/ui/help-overlay.ui:20
-#, fuzzy
-#| msgid "Ask"
 msgctxt "shortcut window"
 msgid "Ask"
 msgstr "Fragen"
@@ -76,7 +74,7 @@ msgstr "Hauptmenü"
 
 #: data/ui/window.blp:33
 msgid "Working offline"
-msgstr ""
+msgstr "Offline arbeiten"
 
 #: data/ui/window.blp:48
 msgid "Message"
@@ -103,11 +101,8 @@ msgid "Ready"
 msgstr "Bereit"
 
 #: data/ui/window.blp:183
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Show Shortcuts"
 msgid "Keyboard Shortcuts"
-msgstr "Verknüpfungen anzeigen"
+msgstr "Tastatürkürzel"
 
 #: data/ui/window.blp:188
 msgid "About Bavarder"
