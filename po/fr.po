@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-27 19:33+0200\n"
-"PO-Revision-Date: 2023-04-27 17:33+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-04-27 17:37+0000\n"
+"Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -28,7 +28,7 @@ msgstr "Bavarder"
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:7
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chit-chat with GPT"
-msgstr ""
+msgstr "Bavarder avec GPT"
 
 #: data/com.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
@@ -80,7 +80,7 @@ msgstr "Menu Principal"
 
 #: data/ui/window.blp:33
 msgid "No network connection"
-msgstr "Pas de connexion réseau."
+msgstr "Pas de connexion réseau"
 
 #: data/ui/window.blp:48
 msgid "Message"
