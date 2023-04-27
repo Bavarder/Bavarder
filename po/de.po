@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 19:33+0200\n"
+"POT-Creation-Date: 2023-04-27 22:07+0200\n"
 "PO-Revision-Date: 2023-04-27 17:37+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
@@ -58,7 +58,7 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Aufhören"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:182
+#: data/ui/preferences.blp:5 data/ui/window.blp:177
 msgid "Preferences"
 msgstr "Einstellungen"
 
@@ -86,7 +86,7 @@ msgstr "Keine Netzwerkverbindung"
 msgid "Message"
 msgstr "Meldung"
 
-#: data/ui/window.blp:81 data/ui/window.blp:165
+#: data/ui/window.blp:81 data/ui/window.blp:160
 msgid "Copy to Clipboard"
 msgstr "In die Zwischenablage kopieren"
 
@@ -102,17 +102,16 @@ msgstr "Warten"
 msgid "Response"
 msgstr "Antwort"
 
-#: data/ui/window.blp:158
-msgid "Ready"
-msgstr "Bereit"
-
-#: data/ui/window.blp:187
+#: data/ui/window.blp:182
 msgid "Keyboard Shortcuts"
 msgstr "Tastatürkürzel"
 
-#: data/ui/window.blp:192
+#: data/ui/window.blp:187
 msgid "About Bavarder"
 msgstr "Über Bavarder"
+
+#~ msgid "Ready"
+#~ msgstr "Bereit"
 
 #~ msgid "Chat with GPT from your desktop"
 #~ msgstr "Chatten Sie mit GPT von Ihrem Desktop aus"

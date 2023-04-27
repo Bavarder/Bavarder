@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 19:33+0200\n"
+"POT-Creation-Date: 2023-04-27 22:07+0200\n"
 "PO-Revision-Date: 2023-04-27 17:37+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
@@ -58,7 +58,7 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Salida"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:182
+#: data/ui/preferences.blp:5 data/ui/window.blp:177
 msgid "Preferences"
 msgstr "Preferencias"
 
@@ -86,7 +86,7 @@ msgstr "No hay conexión de red"
 msgid "Message"
 msgstr "Mensaje"
 
-#: data/ui/window.blp:81 data/ui/window.blp:165
+#: data/ui/window.blp:81 data/ui/window.blp:160
 msgid "Copy to Clipboard"
 msgstr "Copiar al portapapeles"
 
@@ -102,17 +102,16 @@ msgstr ""
 msgid "Response"
 msgstr ""
 
-#: data/ui/window.blp:158
-msgid "Ready"
-msgstr "Leer"
-
-#: data/ui/window.blp:187
+#: data/ui/window.blp:182
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/window.blp:192
+#: data/ui/window.blp:187
 msgid "About Bavarder"
 msgstr ""
+
+#~ msgid "Ready"
+#~ msgstr "Leer"
 
 #~ msgid "No description"
 #~ msgstr "Sin descripción"
