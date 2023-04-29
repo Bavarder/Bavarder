@@ -10,6 +10,9 @@ python = import('python')
 
 # Constants
 PROJECT_RDNN_NAME = 'io.github.Bavarder.Bavarder'
+BUGTRACKER_URL = 'https://github.com/Bavarder/Bavarder/issues'
+HELP_URL = 'https://github.com/Bavarder/Bavarder/issues'
+TRANSLATE_URL = 'https://translate.codeberg.org/engage/bavarder/'
 
 PROJECT_URL = 'https://github.com/Bavarder'
 
@@ -55,6 +58,11 @@ conf.set('BUILD_TYPE', get_option('buildtype'))
 conf.set('SCHEMAS_DIR', PKGDATA_DIR)
 conf.set('SOURCE_DIR', meson.current_source_dir())
 conf.set('BUILD_DIR', meson.current_build_dir())
+conf.set('BUGTRACKER_URL', BUGTRACKER_URL)
+conf.set('HELP_URL', HELP_URL)
+conf.set('TRANSLATE_URL', TRANSLATE_URL)
+conf.set('RELEASE_VER', meson.project_version())
+conf.set('PROJECT_URL', PROJECT_URL)
 
 subdir('data')
 subdir('src')
