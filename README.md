@@ -60,7 +60,7 @@ You can download the latest Flatpak build from [Github Actions](https://github.c
 Clone the repo and run `flatpak-builder`
 
 ```
-git clone https://github.com/Bavarder/Bavarder
+git clone https://codeberg.org/Bavarder/Bavarder # or https://github.com/Bavarder/Bavarder
 cd Bavarder
 flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/io.github.Bavarder.Bavarder.json
 ```
