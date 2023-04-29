@@ -6,7 +6,7 @@
 </h1>
 
 <p align="center">
-  <strong>Chit-chat with GPT</strong>
+  <strong>Chit-chat with an AI</strong>
 </p>
 
 <p align="center">

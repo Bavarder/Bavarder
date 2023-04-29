@@ -28,7 +28,7 @@ msgstr ""
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
-msgid "Chit-chat with GPT"
+msgid "Chit-chat with an AI"
 msgstr ""
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
