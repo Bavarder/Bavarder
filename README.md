@@ -46,6 +46,15 @@
 
 #### Flathub
 
+> **Warn**: This app isn't yet on Flathub
+> See https://github.com/flathub/flathub/pull/4109 for a track
+
+##### Release
+
+#### Latest build
+
+You can download the latest Flatpak build from [Github Actions](https://github.com/Bavarder/Bavarder/actions/workflows/build.yml). Click on the latest job and download the artifact.
+
 #### From Source
 
 Clone the repo and run `flatpak-builder`
