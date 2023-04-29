@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
+# 0xMRTT <0xmrtt@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-29 17:30+0200\n"
-"PO-Revision-Date: 2023-04-27 17:37+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
+"PO-Revision-Date: 2023-04-29 16:26+0000\n"
+"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -92,7 +93,7 @@ msgstr "In die Zwischenablage kopieren"
 
 #: data/ui/window.blp:86
 msgid "Listen"
-msgstr ""
+msgstr "Hören"
 
 #: data/ui/window.blp:93
 msgid "Listening"
