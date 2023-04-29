@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-29 17:30+0200\n"
-"PO-Revision-Date: 2023-04-27 17:37+0000\n"
+"PO-Revision-Date: 2023-04-29 15:33+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -92,11 +92,11 @@ msgstr "Copier dans le presse papier"
 
 #: data/ui/window.blp:86
 msgid "Listen"
-msgstr ""
+msgstr "Écouter"
 
 #: data/ui/window.blp:93
 msgid "Listening"
-msgstr ""
+msgstr "En train d'écouter"
 
 #: data/ui/window.blp:105
 msgid "Ask"
@@ -112,11 +112,11 @@ msgstr "Réponse"
 
 #: data/ui/window.blp:176
 msgid "Speak"
-msgstr ""
+msgstr "Parler"
 
 #: data/ui/window.blp:183
 msgid "Speaking"
-msgstr ""
+msgstr "En train de parler"
 
 #: data/ui/window.blp:217
 msgid "Keyboard Shortcuts"
