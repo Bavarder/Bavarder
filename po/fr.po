@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-27 22:07+0200\n"
+"POT-Creation-Date: 2023-04-29 17:30+0200\n"
 "PO-Revision-Date: 2023-04-27 17:37+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
@@ -58,7 +58,7 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Quitter"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:177
+#: data/ui/preferences.blp:5 data/ui/window.blp:212
 msgid "Preferences"
 msgstr "Préférences"
 
@@ -86,27 +86,43 @@ msgstr "Pas de connexion réseau"
 msgid "Message"
 msgstr "Message"
 
-#: data/ui/window.blp:81 data/ui/window.blp:160
+#: data/ui/window.blp:81 data/ui/window.blp:195
 msgid "Copy to Clipboard"
 msgstr "Copier dans le presse papier"
 
-#: data/ui/window.blp:88
+#: data/ui/window.blp:86
+msgid "Listen"
+msgstr ""
+
+#: data/ui/window.blp:93
+msgid "Listening"
+msgstr ""
+
+#: data/ui/window.blp:105
 msgid "Ask"
 msgstr "Demandez"
 
-#: data/ui/window.blp:97
+#: data/ui/window.blp:114
 msgid "Wait"
 msgstr "Attendez"
 
-#: data/ui/window.blp:112
+#: data/ui/window.blp:129
 msgid "Response"
 msgstr "Réponse"
 
-#: data/ui/window.blp:182
+#: data/ui/window.blp:176
+msgid "Speak"
+msgstr ""
+
+#: data/ui/window.blp:183
+msgid "Speaking"
+msgstr ""
+
+#: data/ui/window.blp:217
 msgid "Keyboard Shortcuts"
 msgstr "Raccourcis Clavier"
 
-#: data/ui/window.blp:187
+#: data/ui/window.blp:222
 msgid "About Bavarder"
 msgstr "A propos de Bavarder"
 
