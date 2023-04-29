@@ -1,11 +1,11 @@
 from .base import BaseProvider
 
-from baichat_py import BaiChat
+from baichat_py import BAIChat
 
-class BaiChatProvider:
+class BAIChatProvider:
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
-        self.chat = BaiChat(sync=True)
+        self.chat = BAIChat(sync=True)
 
     def ask(self, prompt):
         try:
@@ -31,7 +31,7 @@ class BaiChatProvider:
     def about(self):
         about = Adw.AboutWindow(
             transient_for=self.props.active_window,
-            application_name="Bai Chat",
+            application_name="BAI Chat",
             developer_name="Theb.ai",
             developers=["0xMRTT https://github.com/0xMRTT"],
             license_type=Gtk.License.GPL_3_0,

@@ -38,7 +38,7 @@ from hgchat import HGChat
 from gtts import gTTS
 from tempfile import NamedTemporaryFile
 
-from baichat_py import BaiChat
+from baichat_py import BAIChat
 
 BACKEND = "hgchat" # "hgchat" or "bai"
 
