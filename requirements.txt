@@ -3,3 +3,5 @@
 # ./flatpak-pip-generator --requirements-file=requirements.txt --output pypi-dependencies
 
 baichat-py
+hgchat
+gTTS
