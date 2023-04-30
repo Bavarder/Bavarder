@@ -184,8 +184,11 @@ class BavarderApplication(Adw.Application):
                     r += "\n"
                 else:
                     r += char
-                self.win.bot_text_view.get_buffer().set_text(r)
+                GLib.idle_add(self.update_response, r)
             return r
+
+    def update_response(self, response):
+        self.win.bot_text_view.get_buffer().set_text(response)
 
     def on_ask_action(self, widget, _):
         """Callback for the app.ask action."""
