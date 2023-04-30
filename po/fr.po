@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
+# 0xMRTT <0xmrtt@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
 "PO-Revision-Date: 2023-05-01 08:57+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -76,7 +77,7 @@ msgstr "L'invite sera effacée après l'envoi"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr ""
+msgstr "Fournisseurs"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
@@ -132,11 +133,12 @@ msgstr "A propos de Bavarder"
 
 #: src/main.py:156
 msgid "Special thanks to"
-msgstr ""
+msgstr "Remerciements spéciaux à"
 
 #: src/provider/base.py:36
 msgid "No API key provided, you can provide one in settings"
 msgstr ""
+"Pas de clé d'API fournis, vous pouvez en ajouter une dans les paramètres"
 
 #: src/provider/base.py:38
 msgid "Open settings"
@@ -144,7 +146,7 @@ msgstr "Ouvrir les paramètres"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
 msgid "Cat GPT"
-msgstr ""
+msgstr "Chat GPT"
 
 #~ msgid "Ready"
 #~ msgstr "Prêt"
