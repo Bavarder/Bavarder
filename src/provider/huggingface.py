@@ -31,11 +31,16 @@ class BaseHFProvider(BavarderProvider):
             if self.authorization:
                 headers["Authorization"] = f"Bearer {self.api_key}"
             url = f"https://api-inference.huggingface.co/models/{self.model}"
-            response = requests.request("POST", url, headers=headers, data=payload).json()[0]["generated_text"]
+            print(url)
+            response = requests.request("POST", url, headers=headers, data=payload)
+            print(response)
+            response = response.json()[0]["generated_text"]
 
         # except NoApikey:
         #     self.no_api_key()
         #     return ""
+        except KeyError:
+            pass
         except socket.gaierror:
             self.no_connection()
             return ""
