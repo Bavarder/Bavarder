@@ -22,6 +22,7 @@ import gi
 import sys
 import threading
 import socket
+import json
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
@@ -38,9 +39,7 @@ from hgchat import HGChat
 from gtts import gTTS
 from tempfile import NamedTemporaryFile
 
-from baichat_py import BAIChat
-
-BACKEND = "hgchat" # "hgchat" or "bai"
+from .provider import PROVIDERS
 
 class BavarderApplication(Adw.Application):
     """The main application singleton class."""
@@ -50,7 +49,7 @@ class BavarderApplication(Adw.Application):
             application_id="io.github.Bavarder.Bavarder",
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
-        self.create_action("quit", lambda *_: self.quit(), ["<primary>q"])
+        self.create_action("quit", self.on_quit, ["<primary>q"])
         self.create_action("about", self.on_about_action)
         self.create_action("preferences", self.on_preferences_action)
         self.create_action("copy_prompt", self.on_copy_prompt_action)
@@ -63,13 +62,10 @@ class BavarderApplication(Adw.Application):
 
         self.clear_after_send = self.settings.get_boolean("clear-after-send")
 
-        if BACKEND == "hgchat":
-            self.chat = HGChat()
-        elif BACKEND == "bai":
-            self.chat = BAIChat()
-        else:
-            raise ValueError("Invalid backend")
-
+        self.enabled_providers = set(self.settings.get_strv("enabled-providers"))
+        self.latest_provider = self.settings.get_string("latest-provider")
+        self.latest_provider = "huggingchat"
+        
         # GStreamer playbin object and related setup
         Gst.init(None)
         self.player = Gst.ElementFactory.make('playbin', 'player')
@@ -79,6 +75,24 @@ class BavarderApplication(Adw.Application):
         # bus.connect('message', self.on_gst_message)
         self.player_event = threading.Event()  # An event for letting us know when Gst is done playing
 
+    def on_quit(self, action, param):
+        """Called when the user activates the Quit action."""
+        self.settings.set_strv("enabled-providers", list(self.enabled_providers))
+        self.settings.set_string("latest-provider", self.get_provider().slug)
+
+        self.save_providers()
+        self.quit()
+
+    def save_providers(self):
+        r = {}
+        for k, p in self.providers.items():
+            r[k] = json.dumps(p.save())
+        self.settings.set_value("providers-data", r)
+        print(r)
+
+    def get_provider(self):
+        print(self.providers)
+        return self.providers[self.win.provider_selector.props.selected]
 
     def do_activate(self):
         """Called when the application is activated.
@@ -92,6 +106,27 @@ class BavarderApplication(Adw.Application):
         self.win.present()
 
         self.win.response_stack.set_visible_child_name("page_response")
+
+        self.provider_selector_model = Gtk.StringList()
+        self.providers = {}
+
+        self.providers_data = self.settings.get_value("providers-data")
+        print(self.providers_data)
+
+        for provider, i in zip(self.enabled_providers, range(len(self.enabled_providers))):
+            try:
+                self.provider_selector_model.append(PROVIDERS[provider].name)
+
+                self.providers[i] = PROVIDERS[provider](self.win, self, self.providers_data[i])
+            except KeyError:
+                self.providers[i] = PROVIDERS[provider](self.win, self, None)
+
+        self.win.provider_selector.set_model(self.provider_selector_model)
+        
+        for k, p in self.providers.items():
+            if p.slug == self.latest_provider:
+                self.win.provider_selector.set_selected(k)
+                break
 
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
@@ -163,29 +198,9 @@ class BavarderApplication(Adw.Application):
         self.win.toast_overlay.add_toast(toast)
 
     def ask(self, prompt):
-        try:
-            if BACKEND == "hgchat":
-                response = self.chat.ask(self.prompt)
-            elif BACKEND == "bai":
-                response = self.chat.sync_ask(self.prompt)
-        except KeyError:
-            self.win.banner.set_revealed(False)
-            return ""
-        except socket.gaierror:
-            #self.win.response_stack.set_visible_child_name("page_offline")
-            self.win.banner.set_revealed(True)
-            return ""
-        else:
-            self.win.banner.set_revealed(False)
-            r = ""
-            for i in response:
-                char = i["token"]["text"]
-                if char == "</s>":
-                    r += "\n"
-                else:
-                    r += char
-                GLib.idle_add(self.update_response, r)
-            return r
+        print(self.provider)
+        print(self.providers[self.provider])
+        return self.providers[self.provider].ask(prompt)
 
     def update_response(self, response):
         self.win.bot_text_view.get_buffer().set_text(response)
@@ -197,6 +212,8 @@ class BavarderApplication(Adw.Application):
         self.win.ask_button.set_visible(False)
         self.win.wait_button.set_visible(True)
         self.prompt = self.win.prompt_text_view.get_buffer().props.text
+
+        self.provider = self.win.provider_selector.props.selected
 
         def thread_run():
             response = self.ask(self.prompt)

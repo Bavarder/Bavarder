@@ -1,12 +1,20 @@
+
 class BavarderProvider:
-    def __init__(self, win, app, *args, **kwargs):
+    name = None
+    slug = None
+    def __init__(self, win, app, data, *args, **kwargs):
         self.win = win
         self.banner = win.banner
         self.bot_text_view = win.bot_text_view
         self.app = app
         self.chat = None
-
-        super().__init__(*args, **kwargs)
+        self.data = data
+        self.update_response = app.update_response
+        if data:
+            self.load(data)
+            self.no_data = False
+        else:
+            self.no_data = True
 
     def ask(self, prompt):
         raise NotImplementedError()
@@ -23,3 +31,9 @@ class BavarderProvider:
 
     def no_preferences(self):
         pass
+
+    def save(self):
+        raise NotImplementedError()
+
+    def load(self, data):
+        raise NotImplementedError()

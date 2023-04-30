@@ -16,5 +16,14 @@
 		<key name="clear-after-send" type="b">
 			<default>false</default>
 		</key>
+		<key name="enabled-providers" type="as">
+			<default>["huggingchat", "baichat"]</default>
+		</key>
+		<key name="latest-provider" type="s">
+			<default>'huggingchat'</default>
+		</key>
+		<key name="providers-data" type="a{sv}">
+			<default>{}</default>
+		</key>
 	</schema>
 </schemalist>

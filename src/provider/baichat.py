@@ -1,15 +1,18 @@
-from .base import BaseProvider
+from .base import BavarderProvider
 
 from baichat_py import BAIChat
+import socket
 
-class BAIChatProvider:
+class BAIChatProvider(BavarderProvider):
+    name = "BAI Chat"
+    slug = "baichat"
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
         self.chat = BAIChat(sync=True)
 
     def ask(self, prompt):
         try:
-            response = self.chat.sync_ask(self.prompt)
+            response = self.chat.sync_ask(prompt)
         except KeyError:
             self.win.banner.set_revealed(False)
             return ""
@@ -18,8 +21,8 @@ class BAIChatProvider:
             return ""
         else:
             self.win.banner.set_revealed(False)
-            self.win.bot_text_view.get_buffer().set_text(response)
-            return response
+            self.update_response(response.text)
+            return response.text
 
     @property
     def require_api_key(self):
@@ -38,3 +41,9 @@ class BAIChatProvider:
             version=version,
             copyright="© 2023 0xMRTT",
         )
+
+    def save(self):
+        return []
+
+    def load(self, data):
+        pass

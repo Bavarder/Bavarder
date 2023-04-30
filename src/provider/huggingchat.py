@@ -1,10 +1,13 @@
-from .base import BaseProvider
+from .base import BavarderProvider
 
 from hgchat import HGChat
- 
+import socket
+
 
 from gi.repository import Gtk, Adw
-class HuggingChatProvider(BaseProvider):
+class HuggingChatProvider(BavarderProvider):
+    name = "Hugging Chat"
+    slug = "huggingchat"
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
@@ -12,7 +15,7 @@ class HuggingChatProvider(BaseProvider):
 
     def ask(self, prompt):
         try:
-            response = self.chat.ask(self.prompt)
+            response = self.chat.ask(prompt)
         except KeyError:
             self.win.banner.set_revealed(False)
             return ""
@@ -28,7 +31,7 @@ class HuggingChatProvider(BaseProvider):
                     r += "\n"
                 else:
                     r += char
-                self.win.bot_text_view.get_buffer().set_text(r)
+                self.update_response(r)
             return r
 
     @property
@@ -48,3 +51,9 @@ class HuggingChatProvider(BaseProvider):
             version=version,
             copyright="© 2023 0xMRTT",
         )
+    
+    def save(self):
+        return []
+
+    def load(self, data):
+        pass

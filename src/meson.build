@@ -29,3 +29,5 @@ bavarder_sources = [
 ]
 
 PY_INSTALLDIR.install_sources(bavarder_sources, subdir: moduledir)
+
+subdir('provider')
