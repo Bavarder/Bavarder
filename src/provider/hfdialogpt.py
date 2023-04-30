@@ -3,6 +3,7 @@ import json
 import socket
 import requests
 
+
 class HuggingFaceDialoGPTLargeProvider(BaseHFProvider):
     name = "DialoGPT"
     slug = "dialogpt"
@@ -11,16 +12,16 @@ class HuggingFaceDialoGPTLargeProvider(BaseHFProvider):
 
     def ask(self, prompt):
         try:
-            payload = json.dumps({
-                "inputs": {
-                    #"past_user_inputs": ["Which movie is the best ?"],
-                    #"generated_responses": ["It's Die Hard for sure."],
-                    "text": prompt
-                },
-            })
-            headers = {
-                'Content-Type': 'application/json'
-            }
+            payload = json.dumps(
+                {
+                    "inputs": {
+                        # "past_user_inputs": ["Which movie is the best ?"],
+                        # "generated_responses": ["It's Die Hard for sure."],
+                        "text": prompt
+                    },
+                }
+            )
+            headers = {"Content-Type": "application/json"}
             if self.authorization:
                 headers["Authorization"] = f"Bearer {self.api_key}"
             url = f"https://api-inference.huggingface.co/models/{self.model}"

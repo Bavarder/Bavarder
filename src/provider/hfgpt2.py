@@ -1,5 +1,6 @@
 from .huggingface import BaseHFProvider
 
+
 class HuggingFaceGPT2Provider(BaseHFProvider):
     name = "GPT 2"
     slug = "gpt2"

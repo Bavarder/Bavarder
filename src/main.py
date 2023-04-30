@@ -21,13 +21,12 @@ import sys
 import gi
 import sys
 import threading
-import socket
 import json
 
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 gi.require_version("Gdk", "4.0")
-gi.require_version('Gst', '1.0')
+gi.require_version("Gst", "1.0")
 
 from gi.repository import Gtk, Gio, Adw, Gdk, GLib, Gst
 from .window import BavarderWindow
@@ -35,11 +34,11 @@ from .preferences import Preferences
 
 from .constants import app_id, version
 
-from hgchat import HGChat
 from gtts import gTTS
 from tempfile import NamedTemporaryFile
 
 from .provider import PROVIDERS
+
 
 class BavarderApplication(Adw.Application):
     """The main application singleton class."""
@@ -65,15 +64,17 @@ class BavarderApplication(Adw.Application):
         self.enabled_providers = set(self.settings.get_strv("enabled-providers"))
         self.latest_provider = self.settings.get_string("latest-provider")
         self.latest_provider = "huggingchat"
-        
+
         # GStreamer playbin object and related setup
         Gst.init(None)
-        self.player = Gst.ElementFactory.make('playbin', 'player')
+        self.player = Gst.ElementFactory.make("playbin", "player")
         self.pipeline = Gst.Pipeline()
         # bus = self.player.get_bus()
         # bus.add_signal_watch()
         # bus.connect('message', self.on_gst_message)
-        self.player_event = threading.Event()  # An event for letting us know when Gst is done playing
+        self.player_event = (
+            threading.Event()
+        )  # An event for letting us know when Gst is done playing
 
     def on_quit(self, action, param):
         """Called when the user activates the Quit action."""
@@ -114,17 +115,21 @@ class BavarderApplication(Adw.Application):
         print(self.providers_data)
         print(self.enabled_providers)
 
-        for provider, i in zip(self.enabled_providers, range(len(self.enabled_providers))):
+        for provider, i in zip(
+            self.enabled_providers, range(len(self.enabled_providers))
+        ):
             try:
                 self.provider_selector_model.append(PROVIDERS[provider].name)
 
-                self.providers[i] = PROVIDERS[provider](self.win, self, self.providers_data[i])
+                self.providers[i] = PROVIDERS[provider](
+                    self.win, self, self.providers_data[i]
+                )
             except KeyError:
                 self.providers[i] = PROVIDERS[provider](self.win, self, None)
 
         self.win.provider_selector.set_model(self.provider_selector_model)
-        self.win.provider_selector.connect('notify', self.on_provider_selector_notify)
-        
+        self.win.provider_selector.connect("notify", self.on_provider_selector_notify)
+
         for k, p in self.providers.items():
             if p.slug == self.latest_provider:
                 self.win.provider_selector.set_selected(k)
@@ -252,13 +257,11 @@ class BavarderApplication(Adw.Application):
             print(exc)
 
     def _play_audio(self, path):
-        uri = 'file://' + path
-        self.player.set_property('uri', uri)
+        uri = "file://" + path
+        self.player.set_property("uri", uri)
         self.pipeline.add(self.player)
         self.pipeline.set_state(Gst.State.PLAYING)
         self.player.set_state(Gst.State.PLAYING)
-        
-            
 
     def on_listen_action(self, widget, _):
         """Callback for the app.listen action."""

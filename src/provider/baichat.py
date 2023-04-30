@@ -3,9 +3,11 @@ from .base import BavarderProvider
 from baichat_py import BAIChat
 import socket
 
+
 class BAIChatProvider(BavarderProvider):
     name = "BAI Chat"
     slug = "baichat"
+
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
         self.chat = BAIChat(sync=True)
@@ -30,7 +32,7 @@ class BAIChatProvider(BavarderProvider):
 
     def preferences(self):
         self.no_preferences()
-        
+
     def about(self):
         about = Adw.AboutWindow(
             transient_for=self.props.active_window,

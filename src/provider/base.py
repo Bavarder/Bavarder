@@ -1,7 +1,7 @@
-
 class BavarderProvider:
     name = None
     slug = None
+
     def __init__(self, win, app, data, *args, **kwargs):
         self.win = win
         self.banner = win.banner
@@ -30,7 +30,9 @@ class BavarderProvider:
         if title:
             self.win.banner.props.title = title
         else:
-            self.win.banner.props.title = "No API key provided, you can provide one in settings"
+            self.win.banner.props.title = (
+                "No API key provided, you can provide one in settings"
+            )
         self.win.banner.props.button_label = "Open settings"
         self.win.banner.connect("button-clicked", self.app.on_preferences_action)
         self.win.banner.set_revealed(True)

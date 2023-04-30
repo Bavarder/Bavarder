@@ -12,16 +12,16 @@ from .hfgpt2 import HuggingFaceGPT2Provider
 from .hfdialogpt import HuggingFaceDialoGPTLargeProvider
 
 PROVIDERS = {
-    'alpacalora': AlpacaLoRAProvider,
-    'baichat': BAIChatProvider,
-    'catgpt': CatGPTProvider,
-    'hfdialogpt': HuggingFaceDialoGPTLargeProvider,
-    'hfgoogleflant5xxl': HuggingFaceGoogleFlanT5XXLProvider,
-    'hfgoogleflanu12': HuggingFaceGoogleFlanU12Provider,
-    'hfgpt2': HuggingFaceGPT2Provider,
-    'hfopenassistantsft1pythia12b': HuggingFaceOpenAssistantSFT1PythiaProvider,
-    'huggingchat': HuggingChatProvider,
-    'openaigpt35turbo': OpenAIGPT35TurboProvider,
-    'openaigpt4': OpenAIGPT4Provider,
-    'openaitextdavinci003': OpenAITextDavinci003,
+    "alpacalora": AlpacaLoRAProvider,
+    "baichat": BAIChatProvider,
+    "catgpt": CatGPTProvider,
+    "hfdialogpt": HuggingFaceDialoGPTLargeProvider,
+    "hfgoogleflant5xxl": HuggingFaceGoogleFlanT5XXLProvider,
+    "hfgoogleflanu12": HuggingFaceGoogleFlanU12Provider,
+    "hfgpt2": HuggingFaceGPT2Provider,
+    "hfopenassistantsft1pythia12b": HuggingFaceOpenAssistantSFT1PythiaProvider,
+    "huggingchat": HuggingChatProvider,
+    "openaigpt35turbo": OpenAIGPT35TurboProvider,
+    "openaigpt4": OpenAIGPT4Provider,
+    "openaitextdavinci003": OpenAITextDavinci003,
 }

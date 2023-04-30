@@ -1,14 +1,11 @@
 import requests
 import json
-
-url = "https://api-inference.huggingface.co/models/google/flan-t5-xxl"
-
-
 from .base import BavarderProvider
 
 import socket
 
 from gi.repository import Gtk, Adw
+
 
 class BaseHFProvider(BavarderProvider):
     name = None
@@ -22,12 +19,8 @@ class BaseHFProvider(BavarderProvider):
 
     def ask(self, prompt):
         try:
-            payload = json.dumps({
-                "inputs": prompt
-            })
-            headers = {
-                'Content-Type': 'application/json'
-            }
+            payload = json.dumps({"inputs": prompt})
+            headers = {"Content-Type": "application/json"}
             if self.authorization:
                 headers["Authorization"] = f"Bearer {self.api_key}"
             url = f"https://api-inference.huggingface.co/models/{self.model}"
@@ -75,7 +68,6 @@ class BaseHFProvider(BavarderProvider):
         self.api_key = self.api_row.get_text()
         print(self.api_key)
 
-        
     def about(self):
         about = Adw.AboutWindow(
             transient_for=self.props.active_window,
@@ -86,14 +78,12 @@ class BaseHFProvider(BavarderProvider):
             version=version,
             copyright="© 2023 0xMRTT",
         )
-    
+
     def save(self):
         if self.authorization:
-            return {
-                "api_key": self.api_key
-            }
+            return {"api_key": self.api_key}
         return {}
 
     def load(self, data):
         if self.authorization:
-            self.api_key = data["api_key"] 
+            self.api_key = data["api_key"]

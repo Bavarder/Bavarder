@@ -1,5 +1,6 @@
 from .huggingface import BaseHFProvider
 
+
 class HuggingFaceOpenAssistantSFT1PythiaProvider(BaseHFProvider):
     name = "Open-Assistant SFT-1 12B Model "
     slug = "hfopenassistantsft1pythia12b"

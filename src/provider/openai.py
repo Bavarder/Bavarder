@@ -5,6 +5,7 @@ import socket
 
 from gi.repository import Gtk, Adw
 
+
 class BaseOpenAIProvider(BavarderProvider):
     name = None
     slug = None
@@ -16,7 +17,9 @@ class BaseOpenAIProvider(BavarderProvider):
 
     def ask(self, prompt):
         try:
-            response = self.chat.create(model=self.model, messages=[{"role": "user", "content": prompt}])
+            response = self.chat.create(
+                model=self.model, messages=[{"role": "user", "content": prompt}]
+            )
             response = response.choices[0].message.content
         except openai.error.AuthenticationError:
             self.no_api_key()
@@ -56,7 +59,6 @@ class BaseOpenAIProvider(BavarderProvider):
         print(api_key)
         openai.api_key = api_key
 
-        
     def about(self):
         about = Adw.AboutWindow(
             transient_for=self.props.active_window,
@@ -67,11 +69,9 @@ class BaseOpenAIProvider(BavarderProvider):
             version=version,
             copyright="© 2023 0xMRTT",
         )
-    
+
     def save(self):
-        return {
-            "api_key": openai.api_key
-        }
+        return {"api_key": openai.api_key}
 
     def load(self, data):
-        openai.api_key = data["api_key"] 
+        openai.api_key = data["api_key"]

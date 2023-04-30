@@ -4,6 +4,8 @@ import socket
 import requests
 
 from gi.repository import Gtk, Adw
+
+
 class AlpacaLoRAProvider(BavarderProvider):
     name = "Alpaca-LoRA"
     slug = "alpacalora"
@@ -11,20 +13,22 @@ class AlpacaLoRAProvider(BavarderProvider):
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
 
-
     def ask(self, prompt):
         try:
-            response = requests.post("https://tloen-alpaca-lora.hf.space/run/predict", json={
-                "data": [
-                    prompt,
-                    prompt,
-                    0.1,
-                    0.75,
-                    40,
-                    4,
-                    128,
-                ]
-            }).json()
+            response = requests.post(
+                "https://tloen-alpaca-lora.hf.space/run/predict",
+                json={
+                    "data": [
+                        prompt,
+                        prompt,
+                        0.1,
+                        0.75,
+                        40,
+                        4,
+                        128,
+                    ]
+                },
+            ).json()
         except socket.gaierror:
             self.no_connection()
             return ""
@@ -40,7 +44,7 @@ class AlpacaLoRAProvider(BavarderProvider):
 
     def preferences(self):
         self.no_preferences()
-        
+
     def about(self):
         about = Adw.AboutWindow(
             transient_for=self.props.active_window,
@@ -51,7 +55,7 @@ class AlpacaLoRAProvider(BavarderProvider):
             version=version,
             copyright="© 2023 0xMRTT",
         )
-    
+
     def save(self):
         return {}
 

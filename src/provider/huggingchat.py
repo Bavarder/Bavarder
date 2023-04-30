@@ -5,6 +5,8 @@ import socket
 
 
 from gi.repository import Gtk, Adw
+
+
 class HuggingChatProvider(BavarderProvider):
     name = "Hugging Chat"
     slug = "huggingchat"
@@ -37,7 +39,7 @@ class HuggingChatProvider(BavarderProvider):
 
     def preferences(self):
         self.no_preferences()
-        
+
     def about(self):
         about = Adw.AboutWindow(
             transient_for=self.props.active_window,
@@ -48,7 +50,7 @@ class HuggingChatProvider(BavarderProvider):
             version=version,
             copyright="© 2023 0xMRTT",
         )
-    
+
     def save(self):
         return {}
 

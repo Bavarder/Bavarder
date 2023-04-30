@@ -35,5 +35,5 @@ class Preferences(Adw.PreferencesWindow):
         for provider in self.app.providers.values():
             try:
                 self.provider_group.add(provider.preferences())
-            except TypeError: # no prefs
+            except TypeError:  # no prefs
                 pass
