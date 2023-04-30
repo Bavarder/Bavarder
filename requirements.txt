@@ -5,3 +5,4 @@
 baichat-py
 hgchat
 gTTS
+openai
