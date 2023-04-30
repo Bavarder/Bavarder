@@ -36,7 +36,7 @@ class BaseOpenAIProvider(BavarderProvider):
 
     @property
     def require_api_key(self):
-        return False
+        return True
 
     def preferences(self):
         self.expander = Adw.ExpanderRow()
