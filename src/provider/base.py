@@ -1,3 +1,5 @@
+from gettext import gettext as _
+
 class BavarderProvider:
     name = None
     slug = None
@@ -31,14 +33,14 @@ class BavarderProvider:
             self.win.banner.props.title = title
         else:
             self.win.banner.props.title = (
-                "No API key provided, you can provide one in settings"
+                _("No API key provided, you can provide one in settings")
             )
-        self.win.banner.props.button_label = "Open settings"
+        self.win.banner.props.button_label = _("Open settings")
         self.win.banner.connect("button-clicked", self.app.on_preferences_action)
         self.win.banner.set_revealed(True)
 
     def no_connection(self):
-        self.win.banner.props.title = "No network connection"
+        self.win.banner.props.title = _("No network connection")
         self.win.banner.props.button_label = ""
         self.win.banner.set_revealed(True)
 

@@ -63,7 +63,6 @@ class BavarderApplication(Adw.Application):
 
         self.enabled_providers = set(self.settings.get_strv("enabled-providers"))
         self.latest_provider = self.settings.get_string("latest-provider")
-        self.latest_provider = "huggingchat"
 
         # GStreamer playbin object and related setup
         Gst.init(None)
@@ -154,18 +153,15 @@ class BavarderApplication(Adw.Application):
         )
 
         about.add_acknowledgement_section(
-            "Special thanks to",
+            _("Special thanks to"),
             [
                 "Telegraph https://apps.gnome.org/app/io.github.fkinoshita.Telegraph",
-                "BAIChat https://chatbot.theb.ai/",
             ],
         )
         about.present()
 
     def on_preferences_action(self, widget, *args, **kwargs):
         """Callback for the app.preferences action."""
-        print("app.preferences action activated")
-
         preferences = Preferences(
             application=self, transient_for=self.props.active_window
         )

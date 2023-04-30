@@ -7,3 +7,5 @@ data/ui/window.blp
 src/main.py
 src/preferences.py
 src/window.py
+src/provider/base.py
+src/provider/catgpt.py

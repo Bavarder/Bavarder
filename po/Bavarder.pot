@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-01 01:45+0200\n"
+"POT-Creation-Date: 2023-05-01 01:51+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: data/ui/window.blp:36
+#: data/ui/window.blp:36 src/provider/base.py:43
 msgid "No network connection"
 msgstr ""
 
@@ -125,4 +125,20 @@ msgstr ""
 
 #: data/ui/window.blp:225
 msgid "About Bavarder"
+msgstr ""
+
+#: src/main.py:156
+msgid "Special thanks to"
+msgstr ""
+
+#: src/provider/base.py:36
+msgid "No API key provided, you can provide one in settings"
+msgstr ""
+
+#: src/provider/base.py:38
+msgid "Open settings"
+msgstr ""
+
+#: src/provider/catgpt.py:7 src/provider/catgpt.py:54
+msgid "Cat GPT"
 msgstr ""

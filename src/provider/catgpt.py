@@ -4,7 +4,7 @@ from random import choice, randint
 
 
 class CatGPTProvider(BavarderProvider):
-    name = "CatGPT"
+    name = _("Cat GPT")
     slug = "catgpt"
 
     def __init__(self, win, app, *args, **kwargs):
@@ -51,7 +51,7 @@ class CatGPTProvider(BavarderProvider):
     def about(self):
         about = Adw.AboutWindow(
             transient_for=self.props.active_window,
-            application_name="Cat GPT",
+            application_name=_("Cat GPT"),
             developer_name="0xMRTT",
             developers=["0xMRTT https://github.com/0xMRTT"],
             license_type=Gtk.License.GPL_3_0,
