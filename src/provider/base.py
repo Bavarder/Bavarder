@@ -26,6 +26,23 @@ class BavarderProvider:
     def preferences(self):
         raise NotImplementedError()
 
+    def no_api_key(self, title=None):
+        if title:
+            self.win.banner.props.title = title
+        else:
+            self.win.banner.props.title = "No API key provided, you can provide one in settings"
+        self.win.banner.props.button_label = "Open settings"
+        self.win.banner.connect("button-clicked", self.app.on_preferences_action)
+        self.win.banner.set_revealed(True)
+
+    def no_connection(self):
+        self.win.banner.props.title = "No network connection"
+        self.win.banner.props.button_label = ""
+        self.win.banner.set_revealed(True)
+
+    def hide_banner(self):
+        self.win.banner.set_revealed(False)
+
     def about(self):
         raise NotImplementedError()
 

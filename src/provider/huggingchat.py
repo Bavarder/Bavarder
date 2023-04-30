@@ -16,11 +16,8 @@ class HuggingChatProvider(BavarderProvider):
     def ask(self, prompt):
         try:
             response = self.chat.ask(prompt)
-        except KeyError:
-            self.win.banner.set_revealed(False)
-            return ""
         except socket.gaierror:
-            self.win.banner.set_revealed(True)
+            self.no_connection()
             return ""
         else:
             self.win.banner.set_revealed(False)
@@ -53,7 +50,7 @@ class HuggingChatProvider(BavarderProvider):
         )
     
     def save(self):
-        return []
+        return {}
 
     def load(self, data):
         pass

@@ -112,6 +112,7 @@ class BavarderApplication(Adw.Application):
 
         self.providers_data = self.settings.get_value("providers-data")
         print(self.providers_data)
+        print(self.enabled_providers)
 
         for provider, i in zip(self.enabled_providers, range(len(self.enabled_providers))):
             try:
@@ -122,11 +123,15 @@ class BavarderApplication(Adw.Application):
                 self.providers[i] = PROVIDERS[provider](self.win, self, None)
 
         self.win.provider_selector.set_model(self.provider_selector_model)
+        self.win.provider_selector.connect('notify', self.on_provider_selector_notify)
         
         for k, p in self.providers.items():
             if p.slug == self.latest_provider:
                 self.win.provider_selector.set_selected(k)
                 break
+
+    def on_provider_selector_notify(self, _unused, pspec):
+        self.win.banner.set_revealed(False)
 
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
@@ -152,7 +157,7 @@ class BavarderApplication(Adw.Application):
         )
         about.present()
 
-    def on_preferences_action(self, widget, _):
+    def on_preferences_action(self, widget, *args, **kwargs):
         """Callback for the app.preferences action."""
         print("app.preferences action activated")
 

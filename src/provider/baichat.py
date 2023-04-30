@@ -17,7 +17,7 @@ class BAIChatProvider(BavarderProvider):
             self.win.banner.set_revealed(False)
             return ""
         except socket.gaierror:
-            self.win.banner.set_revealed(True)
+            self.no_connection()
             return ""
         else:
             self.win.banner.set_revealed(False)
@@ -43,7 +43,7 @@ class BAIChatProvider(BavarderProvider):
         )
 
     def save(self):
-        return []
+        return {}
 
     def load(self, data):
         pass
