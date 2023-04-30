@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-29 17:30+0200\n"
+"POT-Creation-Date: 2023-05-01 01:51+0200\n"
 "PO-Revision-Date: 2023-04-27 17:37+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
@@ -59,7 +59,7 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Вийти"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:212
+#: data/ui/preferences.blp:5 data/ui/window.blp:215
 msgid "Preferences"
 msgstr "Опції"
 
@@ -75,56 +75,76 @@ msgstr ""
 msgid "The prompt will be cleared after send"
 msgstr ""
 
+#: data/ui/preferences.blp:25
+msgid "Providers"
+msgstr ""
+
 #: data/ui/window.blp:27
 msgid "Main Menu"
 msgstr ""
 
-#: data/ui/window.blp:33
+#: data/ui/window.blp:36 src/provider/base.py:43
 msgid "No network connection"
 msgstr "Відсутнє з'єднання з мережею"
 
-#: data/ui/window.blp:48
+#: data/ui/window.blp:51
 msgid "Message"
 msgstr "Повідомлення"
 
-#: data/ui/window.blp:81 data/ui/window.blp:195
+#: data/ui/window.blp:84 data/ui/window.blp:198
 msgid "Copy to Clipboard"
 msgstr "Копіювати"
 
-#: data/ui/window.blp:86
+#: data/ui/window.blp:89
 msgid "Listen"
 msgstr ""
 
-#: data/ui/window.blp:93
+#: data/ui/window.blp:96
 msgid "Listening"
 msgstr ""
 
-#: data/ui/window.blp:105
+#: data/ui/window.blp:108
 msgid "Ask"
 msgstr ""
 
-#: data/ui/window.blp:114
+#: data/ui/window.blp:117
 msgid "Wait"
 msgstr ""
 
-#: data/ui/window.blp:129
+#: data/ui/window.blp:132
 msgid "Response"
 msgstr ""
 
-#: data/ui/window.blp:176
+#: data/ui/window.blp:179
 msgid "Speak"
 msgstr ""
 
-#: data/ui/window.blp:183
+#: data/ui/window.blp:186
 msgid "Speaking"
 msgstr ""
 
-#: data/ui/window.blp:217
+#: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/window.blp:222
+#: data/ui/window.blp:225
 msgid "About Bavarder"
+msgstr ""
+
+#: src/main.py:156
+msgid "Special thanks to"
+msgstr ""
+
+#: src/provider/base.py:36
+msgid "No API key provided, you can provide one in settings"
+msgstr ""
+
+#: src/provider/base.py:38
+msgid "Open settings"
+msgstr ""
+
+#: src/provider/catgpt.py:7 src/provider/catgpt.py:54
+msgid "Cat GPT"
 msgstr ""
 
 #~ msgid "Ready"
