@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-29 17:30+0200\n"
-"PO-Revision-Date: 2023-04-27 19:52+0000\n"
+"PO-Revision-Date: 2023-04-30 23:51+0000\n"
 "Last-Translator: muznyo <codeberg.vqtek@simplelogin.com>\n"
 "Language-Team: Czech <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/cs/>\n"
@@ -92,11 +92,11 @@ msgstr "Kopírovat do schránky"
 
 #: data/ui/window.blp:86
 msgid "Listen"
-msgstr ""
+msgstr "Poslech"
 
 #: data/ui/window.blp:93
 msgid "Listening"
-msgstr ""
+msgstr "Poslouchání"
 
 #: data/ui/window.blp:105
 msgid "Ask"
@@ -112,11 +112,11 @@ msgstr "Odpověď"
 
 #: data/ui/window.blp:176
 msgid "Speak"
-msgstr ""
+msgstr "Mluvit"
 
 #: data/ui/window.blp:183
 msgid "Speaking"
-msgstr ""
+msgstr "Mluvení"
 
 #: data/ui/window.blp:217
 msgid "Keyboard Shortcuts"
