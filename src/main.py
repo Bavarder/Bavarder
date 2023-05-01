@@ -39,7 +39,6 @@ from tempfile import NamedTemporaryFile
 
 from .provider import PROVIDERS
 
-
 class BavarderApplication(Adw.Application):
     """The main application singleton class."""
 
@@ -153,7 +152,7 @@ class BavarderApplication(Adw.Application):
         )
 
         about.add_acknowledgement_section(
-            _("Special thanks to"),
+            "Special thanks to",
             [
                 "Telegraph https://apps.gnome.org/app/io.github.fkinoshita.Telegraph",
             ],

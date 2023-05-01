@@ -34,6 +34,6 @@ class Preferences(Adw.PreferencesWindow):
     def setup_providers(self):
         for provider in self.app.providers.values():
             try:
-                self.provider_group.add(provider.preferences())
+                self.provider_group.add(provider.preferences(self))
             except TypeError:  # no prefs
                 pass

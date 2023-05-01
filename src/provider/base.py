@@ -1,5 +1,7 @@
 from gettext import gettext as _
 
+from gi.repository import Gtk, Adw
+
 class BavarderProvider:
     name = None
     slug = None
@@ -47,11 +49,27 @@ class BavarderProvider:
     def hide_banner(self):
         self.win.banner.set_revealed(False)
 
-    def about(self):
+    def about(self, *args):
         raise NotImplementedError()
 
-    def no_preferences(self):
-        pass
+    def no_preferences(self, win):
+        self.pref_win = win
+
+        self.expander = Adw.ExpanderRow()
+        self.expander.props.title = self.name
+
+        about_button = Gtk.Button()
+        about_button.set_label("About")
+        about_button.connect("clicked", self.about)
+        about_button.set_valign(Gtk.Align.CENTER)
+        self.expander.add_action(about_button) # TODO: in Adw 1.4, use add_suffix
+
+
+        self.no_pref_row = Adw.ActionRow()
+        self.no_pref_row.props.title = "No preferences available"
+        self.expander.add_row(self.no_pref_row)
+
+        return self.expander
 
     def save(self):
         raise NotImplementedError()

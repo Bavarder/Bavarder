@@ -10,10 +10,12 @@ class BaseOpenAIProvider(BavarderProvider):
     name = None
     slug = None
     model = None
+    version = "0.1.0"
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
         self.chat = openai.ChatCompletion
+        self.pref_win = None
 
     def ask(self, prompt):
         try:
@@ -41,9 +43,18 @@ class BaseOpenAIProvider(BavarderProvider):
     def require_api_key(self):
         return True
 
-    def preferences(self):
+    def preferences(self, win):
+        self.pref_win = win
+
         self.expander = Adw.ExpanderRow()
         self.expander.props.title = self.name
+
+        about_button = Gtk.Button()
+        about_button.set_label("About")
+        about_button.connect("clicked", self.about)
+        about_button.set_valign(Gtk.Align.CENTER)
+        self.expander.add_action(about_button) # TODO: in Adw 1.4, use add_suffix
+
 
         self.api_row = Adw.PasswordEntryRow()
         self.api_row.connect("apply", self.on_apply)
@@ -59,16 +70,17 @@ class BaseOpenAIProvider(BavarderProvider):
         print(api_key)
         openai.api_key = api_key
 
-    def about(self):
+    def about(self, *args):
         about = Adw.AboutWindow(
-            transient_for=self.props.active_window,
+            transient_for=self.pref_win,
             application_name=self.name,
             developer_name="OpenAI",
             developers=["0xMRTT https://github.com/0xMRTT"],
             license_type=Gtk.License.GPL_3_0,
-            version=version,
+            version=self.version,
             copyright="© 2023 0xMRTT",
         )
+        about.present()
 
     def save(self):
         return {"api_key": openai.api_key}
