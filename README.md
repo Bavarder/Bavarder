@@ -22,9 +22,6 @@
  <a href="https://translate.codeberg.org/engage/bavarder/">
   <img src="https://translate.codeberg.org/widgets/bavarder/-/svg-badge.svg" alt="Translation status" />
   </a>
-  <a href="https://github.com/Bavarder/Bavarder/actions/workflows/build.yml">
-    <img alt="Build status" src="https://github.com/GradienceTeam/Gradience/actions/workflows/build.yml/badge.svg"/>
-  </a>
   <a href="https://repology.org/project/bavarder/versions">
     <img alt="Packaging status" src="https://repology.org/badge/tiny-repos/bavarder.svg">
   </a>
