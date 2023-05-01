@@ -11,7 +11,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
 "PO-Revision-Date: 2023-05-01 08:57+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
 "Language: ru\n"
@@ -78,7 +78,7 @@ msgstr "Поле ввода будет очищено после отправк�
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr ""
+msgstr "Провайдеры"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
@@ -134,11 +134,11 @@ msgstr "О Bavarder"
 
 #: src/main.py:156
 msgid "Special thanks to"
-msgstr ""
+msgstr "Особое спасибо"
 
 #: src/provider/base.py:36
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "Ключ API не предоставлен, вы можете предоставить его в настройках"
 
 #: src/provider/base.py:38
 msgid "Open settings"
@@ -146,7 +146,7 @@ msgstr "Открыть настройки"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
 msgid "Cat GPT"
-msgstr ""
+msgstr "Cat GPT"
 
 #~ msgid "Ready"
 #~ msgstr "Готов"
