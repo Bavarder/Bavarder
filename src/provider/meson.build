@@ -5,6 +5,7 @@ providers_sources = [
   '__init__.py',
   'alpacalora.py',
   'baichat.py',
+  'bard.py',
   'base.py',
   'catgpt.py',
   'hfdialogpt.py',

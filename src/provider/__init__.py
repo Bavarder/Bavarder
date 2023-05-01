@@ -10,10 +10,12 @@ from .hfgoogleflanu12 import HuggingFaceGoogleFlanU12Provider
 from .hfopenassistantsft1pythia12b import HuggingFaceOpenAssistantSFT1PythiaProvider
 from .hfgpt2 import HuggingFaceGPT2Provider
 from .hfdialogpt import HuggingFaceDialoGPTLargeProvider
+from .bard import BardProvider
 
 PROVIDERS = {
     "alpacalora": AlpacaLoRAProvider,
     "baichat": BAIChatProvider,
+    "bard": BardProvider,
     "catgpt": CatGPTProvider,
     "hfdialogpt": HuggingFaceDialoGPTLargeProvider,
     "hfgoogleflant5xxl": HuggingFaceGoogleFlanT5XXLProvider,
