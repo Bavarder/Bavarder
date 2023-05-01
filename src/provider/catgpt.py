@@ -2,10 +2,12 @@ from .base import BavarderProvider
 
 from random import choice, randint
 
+from gi.repository import Gtk, Adw
 
 class CatGPTProvider(BavarderProvider):
     name = _("Cat GPT")
     slug = "catgpt"
+    version = "0.1.0"
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
@@ -45,19 +47,20 @@ class CatGPTProvider(BavarderProvider):
     def require_api_key(self):
         return False
 
-    def preferences(self):
-        self.no_preferences()
+    def preferences(self, win):
+        return self.no_preferences(win)
 
-    def about(self):
+    def about(self, *args):
         about = Adw.AboutWindow(
-            transient_for=self.props.active_window,
+            transient_for=self.pref_win,
             application_name=_("Cat GPT"),
             developer_name="0xMRTT",
             developers=["0xMRTT https://github.com/0xMRTT"],
             license_type=Gtk.License.GPL_3_0,
-            version=version,
+            version=self.version,
             copyright="© 2023 0xMRTT",
         )
+        about.present()
 
     def save(self):
         return {}
