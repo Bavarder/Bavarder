@@ -14,7 +14,7 @@ class BardChat:
         headers = {
             "Host": "bard.google.com",
             "X-Same-Domain": "1",
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36",
             "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
             "Origin": "https://bard.google.com",
             "Referer": "https://bard.google.com/",
@@ -96,14 +96,6 @@ class BardProvider(BavarderProvider):
         try:
             response = self.chat.ask(prompt)
             response = response["content"]
-        # except openai.error.AuthenticationError:
-        #     self.no_api_key()
-        #     return ""
-        # except openai.error.InvalidRequestError:
-        #     self.win.banner.props.title = "You don't have access to this model"
-        #     self.win.banner.props.button_label = ""
-        #     self.win.banner.set_revealed(True)
-        #     return ""
         except AttributeError:
             self.no_api_key()
             return ""
