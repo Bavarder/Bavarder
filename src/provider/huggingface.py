@@ -26,6 +26,14 @@ class BaseHFProvider(BavarderProvider):
             url = f"https://api-inference.huggingface.co/models/{self.model}"
             print(url)
             response = requests.request("POST", url, headers=headers, data=payload)
+            if response.status_code == 403:
+                self.no_api_key()
+                return ""
+            elif response.status_code != 200:
+                self.win.banner.props.title = response.json()["error"]
+                self.win.banner.props.button_label = ""
+                self.win.banner.set_revealed(True)
+                return ""
             print(response)
             response = response.json()[0]["generated_text"]
 
