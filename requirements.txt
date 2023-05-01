@@ -6,3 +6,4 @@ baichat-py
 hgchat
 gTTS
 openai
+googlebardpy

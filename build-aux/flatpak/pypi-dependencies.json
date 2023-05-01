@@ -223,6 +223,45 @@
                     "sha256": "04ab9d4b9f587c06d801c2abfe9317b77cdf996c65a90d5e84ecc45010823571"
                 }
             ]
+        },
+        {
+            "name": "python3-googlebardpy",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"googlebardpy\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/71/4c/3db2b8021bd6f2f0ceb0e088d6b2d49147671f25832fb17970e9b583d742/certifi-2022.12.7-py3-none-any.whl",
+                    "sha256": "4ad3232f5e926d6718ec31cfc1fcadfde020920e278684144551c91769c7bc18"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz",
+                    "sha256": "34e0a2f9c370eb95597aae63bf85eb5e96826d81e3dcf88b8886012906f509b5"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/a8/40/30a6440d5ceec49fc268710705b89e654fc854d9b8754850228deaf64892/googlebardpy-0.1.0-py3-none-any.whl",
+                    "sha256": "12e65fdfe99392cbb5e8f93572340b757cd9d7aa83391316eaea3a1527995ef2"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl",
+                    "sha256": "90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/cf/e1/2aa539876d9ed0ddc95882451deb57cfd7aa8dbf0b8dbce68e045549ba56/requests-2.29.0-py3-none-any.whl",
+                    "sha256": "e8f3c9be120d3333921d213eef078af392fba3933ab7ed2d1cba3b56f2568c3b"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/7b/f5/890a0baca17a61c1f92f72b81d3c31523c99bec609e60c292ea55b387ae8/urllib3-1.26.15-py2.py3-none-any.whl",
+                    "sha256": "aa751d169e23c7479ce47a0cb0da579e3ede798f994f5816a74e4f4500dcea42"
+                }
+            ]
         }
     ]
 }
