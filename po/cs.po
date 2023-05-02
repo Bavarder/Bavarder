@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-01 08:57+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-03 12:23+0000\n"
+"Last-Translator: muznyo <codeberg.vqtek@simplelogin.com>\n"
 "Language-Team: Czech <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/cs/>\n"
 "Language: cs\n"
@@ -28,7 +28,7 @@ msgstr "Bavarder"
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chit-chat with an AI"
-msgstr "Chatovat s GPT"
+msgstr "Chatovat s umělou inteligencí"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
@@ -76,7 +76,7 @@ msgstr "Dotaz bude vymazán po odeslání"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr ""
+msgstr "Poskytovatelé"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
@@ -132,11 +132,11 @@ msgstr "O Bavarder"
 
 #: src/main.py:156
 msgid "Special thanks to"
-msgstr ""
+msgstr "Zvláštní poděkování patří"
 
 #: src/provider/base.py:36
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "API klíč nebyl přidán, můžete jej přidat v nastavení"
 
 #: src/provider/base.py:38
 msgid "Open settings"
@@ -144,7 +144,7 @@ msgstr "Otevřít nastavení"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
 msgid "Cat GPT"
-msgstr ""
+msgstr "Cat GPT"
 
 #~ msgid "Ready"
 #~ msgstr "Připraveno"
