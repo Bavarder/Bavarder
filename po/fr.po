@@ -5,13 +5,14 @@
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
+# muznyo <codeberg.vqtek@simplelogin.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-01 08:57+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
+"PO-Revision-Date: 2023-05-03 12:23+0000\n"
+"Last-Translator: muznyo <codeberg.vqtek@simplelogin.com>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -145,6 +146,7 @@ msgid "Open settings"
 msgstr "Ouvrir les paramètres"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
+#, fuzzy
 msgid "Cat GPT"
 msgstr "Chat GPT"
 
