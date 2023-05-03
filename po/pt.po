@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-03 12:27+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-03 13:42+0000\n"
+"Last-Translator: galegovski <galegovski@outlook.com>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pt/>\n"
 "Language: pt\n"
@@ -46,12 +46,12 @@ msgstr "Geral"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Mostrar Atalhos"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Ask"
-msgstr ""
+msgstr "Perguntar"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
@@ -64,27 +64,27 @@ msgstr "Preferências"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "Prompt"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Limpar prompt após enviar"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "O prompt será limpo após o envio"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr ""
+msgstr "Provedores"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
-msgstr ""
+msgstr "Menu principal"
 
 #: data/ui/window.blp:36 src/provider/base.py:43
 msgid "No network connection"
-msgstr ""
+msgstr "Nenhuma conexão de rede"
 
 #: data/ui/window.blp:51
 msgid "Message"
@@ -92,56 +92,57 @@ msgstr "Mensagem"
 
 #: data/ui/window.blp:84 data/ui/window.blp:198
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Copiar para área de transferência"
 
 #: data/ui/window.blp:89
 msgid "Listen"
-msgstr ""
+msgstr "Ouvir"
 
 #: data/ui/window.blp:96
 msgid "Listening"
-msgstr ""
+msgstr "Audição"
 
 #: data/ui/window.blp:108
 msgid "Ask"
-msgstr ""
+msgstr "Perguntar"
 
 #: data/ui/window.blp:117
 msgid "Wait"
-msgstr ""
+msgstr "Espere"
 
 #: data/ui/window.blp:132
 msgid "Response"
-msgstr ""
+msgstr "Resposta"
 
 #: data/ui/window.blp:179
 msgid "Speak"
-msgstr ""
+msgstr "Falar"
 
 #: data/ui/window.blp:186
 msgid "Speaking"
-msgstr ""
+msgstr "Falando"
 
 #: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Atalhos do teclado"
 
 #: data/ui/window.blp:225
 msgid "About Bavarder"
-msgstr ""
+msgstr "Sobre Bavarder"
 
 #: src/main.py:156
 msgid "Special thanks to"
-msgstr ""
+msgstr "Agradecimentos especiais para"
 
 #: src/provider/base.py:36
 msgid "No API key provided, you can provide one in settings"
 msgstr ""
+"Nenhuma chave de API fornecida, você pode fornecer uma nas configurações"
 
 #: src/provider/base.py:38
 msgid "Open settings"
-msgstr ""
+msgstr "Abrir configurações"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
 msgid "Cat GPT"
-msgstr ""
+msgstr "Cat GPT"
