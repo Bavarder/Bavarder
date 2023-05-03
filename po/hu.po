@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # osiixy <osiixy@gmail.com>, 2023.
+# 0xMRTT <0xmrtt@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-03 15:17+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-03 19:17+0000\n"
+"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/hu/>\n"
 "Language: hu\n"
@@ -84,7 +85,7 @@ msgstr ""
 
 #: data/ui/window.blp:36 src/provider/base.py:43
 msgid "No network connection"
-msgstr "Nincs hálózati kapcsolat."
+msgstr "Nincs hálózati kapcsolat"
 
 #: data/ui/window.blp:51
 msgid "Message"
