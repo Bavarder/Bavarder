@@ -16,10 +16,10 @@
 		<image type="source">https://raw.githubusercontent.com/Bavarder/Bavarder/main/data/screenshots/quantum-computing.png</image>
 		</screenshot>
 	</screenshots>
-	<url type="bugtracker">https://github.com/Bavarder/Bavarder/issues</url>
+	<url type="bugtracker">https://codeberg.org/Bavarder/Bavarder/issues</url>
 	<url type="translate">https://translate.codeberg.org/engage/bavarder/</url>
-	<url type="help">https://github.com/Bavarder/Bavarder/issues</url>
-	<url type="homepage">https://github.com/Bavarder/Bavarder</url>
+	<url type="help">https://codeberg.org/Bavarder/Bavarder/issues</url>
+	<url type="homepage">https://codeberg.org/Bavarder/Bavarder</url>
 
 	<kudos>
 		<kudo>HiDpiIcon</kudo>
