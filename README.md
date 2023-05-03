@@ -79,5 +79,7 @@ You can translate Bavarder using Codeberg Translate
 
 ### Imaginer : Imagine with AI 
 
+A tool for generating pictures with AI (GNOME app)
+
 - https://github.com/ImaginerApp/Imaginer
 - https://codeberg.org/Imaginer/Imaginer
