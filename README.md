@@ -74,3 +74,10 @@ The [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct) is 
 </a>
 
 You can translate Bavarder using Codeberg Translate
+
+## See also 
+
+### Imaginer : Imagine with AI 
+
+- https://github.com/ImaginerApp/Imaginer
+- https://codeberg.org/Imaginer/Imaginer
