@@ -5,13 +5,14 @@
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # sjdonado <jsrd98@gmail.com>, 2023.
+# deimidis <gmovia@pm.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-03 12:23+0000\n"
-"Last-Translator: sjdonado <jsrd98@gmail.com>\n"
+"PO-Revision-Date: 2023-05-03 18:51+0000\n"
+"Last-Translator: deimidis <gmovia@pm.me>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
 "Language: es\n"
@@ -24,16 +25,16 @@ msgstr ""
 #: data/io.github.Bavarder.Bavarder.desktop.in:3
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:6 data/ui/window.blp:6
 msgid "Bavarder"
-msgstr ""
+msgstr "Bavarder"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chit-chat with an AI"
-msgstr ""
+msgstr "Conversa con una IA"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:15
 msgid "Screenshot of Main UI"
@@ -77,7 +78,7 @@ msgstr "La entrada será borrada después de enviar"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr ""
+msgstr "Proveedores"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
