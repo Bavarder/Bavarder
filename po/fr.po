@@ -6,13 +6,14 @@
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # muznyo <codeberg.vqtek@simplelogin.com>, 2023.
+# rene-coty <irenee.thirion@e.email>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-03 13:44+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
+"PO-Revision-Date: 2023-05-03 18:22+0000\n"
+"Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -38,7 +39,7 @@ msgstr "0xMRTT"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:15
 msgid "Screenshot of Main UI"
-msgstr "Capture d'écran de l'interface utilisateur principale"
+msgstr "Capture d’écran de l’interface principale"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -48,12 +49,12 @@ msgstr "Général"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Afficher les Raccourcis"
+msgstr "Afficher les raccourcis"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Ask"
-msgstr "Demandez"
+msgstr "Demander"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
@@ -66,15 +67,15 @@ msgstr "Préférences"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr "Invite"
+msgstr "Requête"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr "Effacer l'invite après l'envoi"
+msgstr "Effacer la requête après envoi"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr "L'invite sera effacée après l'envoi"
+msgstr "La requête sera effacée après envoi"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
@@ -94,7 +95,7 @@ msgstr "Message"
 
 #: data/ui/window.blp:84 data/ui/window.blp:198
 msgid "Copy to Clipboard"
-msgstr "Copier dans le presse papier"
+msgstr "Copier dans le presse-papiers"
 
 #: data/ui/window.blp:89
 msgid "Listen"
@@ -102,11 +103,11 @@ msgstr "Écouter"
 
 #: data/ui/window.blp:96
 msgid "Listening"
-msgstr "En train d'écouter"
+msgstr "En écoute"
 
 #: data/ui/window.blp:108
 msgid "Ask"
-msgstr "Demandez"
+msgstr "Demander"
 
 #: data/ui/window.blp:117
 msgid "Wait"
@@ -126,11 +127,11 @@ msgstr "En train de parler"
 
 #: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
-msgstr "Raccourcis Clavier"
+msgstr "Raccourcis clavier"
 
 #: data/ui/window.blp:225
 msgid "About Bavarder"
-msgstr "A propos de Bavarder"
+msgstr "À propos de Bavarder"
 
 #: src/main.py:156
 msgid "Special thanks to"
@@ -139,7 +140,7 @@ msgstr "Remerciements spéciaux à"
 #: src/provider/base.py:36
 msgid "No API key provided, you can provide one in settings"
 msgstr ""
-"Pas de clé d'API fournis, vous pouvez en ajouter une dans les paramètres"
+"Pas de clé d’API fournie, vous pouvez en ajouter une dans les paramètres"
 
 #: src/provider/base.py:38
 msgid "Open settings"
