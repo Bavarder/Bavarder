@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-03 18:22+0000\n"
+"PO-Revision-Date: 2023-05-03 18:51+0000\n"
 "Last-Translator: thepoladov13 <thepoladov@protonmail.com>\n"
 "Language-Team: Azerbaijani <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/az/>\n"
@@ -28,15 +28,15 @@ msgstr "Bavarder"
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chit-chat with an AI"
-msgstr ""
+msgstr "Chit AI ilə söhbət edin"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:15
 msgid "Screenshot of Main UI"
-msgstr ""
+msgstr "Əsas UI ekran görüntüsü"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -46,45 +46,45 @@ msgstr "Ümumi"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Qısayolları göstərin"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Ask"
-msgstr ""
+msgstr "Soruş"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Çıx"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:215
 msgid "Preferences"
-msgstr ""
+msgstr "Üstünlüklər"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "Sorğu"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Göndərdikdən sonra sorğunu silin"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "Sorğu göndərildikdən sonra silinəcək"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr ""
+msgstr "Provayderlər"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
-msgstr ""
+msgstr "Əsas menyu"
 
 #: data/ui/window.blp:36 src/provider/base.py:43
 msgid "No network connection"
-msgstr ""
+msgstr "Şəbəkə bağlantısı yoxdur"
 
 #: data/ui/window.blp:51
 msgid "Message"
@@ -92,56 +92,56 @@ msgstr "Mesaj"
 
 #: data/ui/window.blp:84 data/ui/window.blp:198
 msgid "Copy to Clipboard"
-msgstr "Panoya kopiyalayın"
+msgstr "Buferə kopyalayın"
 
 #: data/ui/window.blp:89
 msgid "Listen"
-msgstr ""
+msgstr "Dinləmək"
 
 #: data/ui/window.blp:96
 msgid "Listening"
-msgstr ""
+msgstr "Dinləyirəm"
 
 #: data/ui/window.blp:108
 msgid "Ask"
-msgstr ""
+msgstr "Soruş"
 
 #: data/ui/window.blp:117
 msgid "Wait"
-msgstr ""
+msgstr "Gözləyin"
 
 #: data/ui/window.blp:132
 msgid "Response"
-msgstr ""
+msgstr "Cavab"
 
 #: data/ui/window.blp:179
 msgid "Speak"
-msgstr ""
+msgstr "Danış"
 
 #: data/ui/window.blp:186
 msgid "Speaking"
-msgstr ""
+msgstr "Danışıram"
 
 #: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Klaviatura Qısayolları"
 
 #: data/ui/window.blp:225
 msgid "About Bavarder"
-msgstr ""
+msgstr "Bavarder haqqında"
 
 #: src/main.py:156
 msgid "Special thanks to"
-msgstr ""
+msgstr "Xüsusi təşəkkürlər"
 
 #: src/provider/base.py:36
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "API açarı təqdim edilməyib, siz onu ayarlarda təmin edə bilərsiniz"
 
 #: src/provider/base.py:38
 msgid "Open settings"
-msgstr "Ayarları açın"
+msgstr "Parametrləri açın"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
 msgid "Cat GPT"
-msgstr ""
+msgstr "Cat GPT"
