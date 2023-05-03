@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://flathub.org/apps/details/io.github.Bavarder.Bavarder">
-    <img width="200" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-i-en.svg"/>
+    <img width="200" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-en.svg"/>
   </a>
   <br>
 </p>
@@ -43,10 +43,11 @@
 
 #### Flathub
 
-> **Warn**: This app isn't yet on Flathub
-> See https://github.com/flathub/flathub/pull/4109 for a track
+You can either use your GNOME Software and search for "Bavarder" or you can run
 
-##### Release
+``` shell
+flatpak install io.github.Bavarder.Bavarder
+```
 
 #### Latest build
 
@@ -56,7 +57,7 @@ You can download the latest Flatpak build from [Github Actions](https://github.c
 
 Clone the repo and run `flatpak-builder`
 
-```
+``` shell
 git clone https://codeberg.org/Bavarder/Bavarder # or https://github.com/Bavarder/Bavarder
 cd Bavarder
 flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/io.github.Bavarder.Bavarder.json
