@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
+# Morgan Antonsson <morgan.antonsson@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-04-27 17:37+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@tuta.io>\n"
+"PO-Revision-Date: 2023-05-03 18:22+0000\n"
+"Last-Translator: Morgan Antonsson <morgan.antonsson@gmail.com>\n"
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
 "Language: sv\n"
@@ -23,20 +24,20 @@ msgstr ""
 #: data/io.github.Bavarder.Bavarder.desktop.in:3
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:6 data/ui/window.blp:6
 msgid "Bavarder"
-msgstr ""
+msgstr "Bavarder"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chit-chat with an AI"
-msgstr ""
+msgstr "Chatta med en AI"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:15
 msgid "Screenshot of Main UI"
-msgstr ""
+msgstr "Skärmdump av huvudgränssnittet"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -46,17 +47,17 @@ msgstr "Generellt"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Visa genvägar"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Ask"
-msgstr ""
+msgstr "Fråga"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr "Sluta"
+msgstr "Avsluta"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:215
 msgid "Preferences"
@@ -64,23 +65,23 @@ msgstr "Inställningar"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "Prompt"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Töm prompt efter den har skickats"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "Prompten kommer att rensas efter att den har skickats"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr ""
+msgstr "Leverantörer"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
-msgstr ""
+msgstr "Huvudmeny"
 
 #: data/ui/window.blp:36 src/provider/base.py:43
 msgid "No network connection"
@@ -96,55 +97,55 @@ msgstr "Kopiera till urklipp"
 
 #: data/ui/window.blp:89
 msgid "Listen"
-msgstr ""
+msgstr "Lyssna"
 
 #: data/ui/window.blp:96
 msgid "Listening"
-msgstr ""
+msgstr "Lyssnar"
 
 #: data/ui/window.blp:108
 msgid "Ask"
-msgstr ""
+msgstr "Fråga"
 
 #: data/ui/window.blp:117
 msgid "Wait"
-msgstr ""
+msgstr "Vänta"
 
 #: data/ui/window.blp:132
 msgid "Response"
-msgstr ""
+msgstr "Svar"
 
 #: data/ui/window.blp:179
 msgid "Speak"
-msgstr ""
+msgstr "Tala"
 
 #: data/ui/window.blp:186
 msgid "Speaking"
-msgstr ""
+msgstr "Talar"
 
 #: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Tangentbordsgenvägar"
 
 #: data/ui/window.blp:225
 msgid "About Bavarder"
-msgstr ""
+msgstr "Om Bavarder"
 
 #: src/main.py:156
 msgid "Special thanks to"
-msgstr ""
+msgstr "Särskilt tack till"
 
 #: src/provider/base.py:36
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "Ingen API-nyckel har angetts, du kan ange en i inställningarna"
 
 #: src/provider/base.py:38
 msgid "Open settings"
-msgstr ""
+msgstr "Öppna inställningar"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
 msgid "Cat GPT"
-msgstr ""
+msgstr "Cat GPT"
 
 #~ msgid "Ready"
 #~ msgstr "läst"
