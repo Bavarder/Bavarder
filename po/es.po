@@ -6,13 +6,14 @@
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # sjdonado <jsrd98@gmail.com>, 2023.
 # deimidis <gmovia@pm.me>, 2023.
+# 0xMRTT <0xmrtt@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-03 18:51+0000\n"
-"Last-Translator: deimidis <gmovia@pm.me>\n"
+"PO-Revision-Date: 2023-05-03 18:52+0000\n"
+"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
 "Language: es\n"
@@ -147,7 +148,7 @@ msgstr "Abrir configuraciones"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
 msgid "Cat GPT"
-msgstr ""
+msgstr "Charla GPT"
 
 #~ msgid "Ready"
 #~ msgstr "Leer"
