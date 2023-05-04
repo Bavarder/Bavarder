@@ -35,6 +35,10 @@
     <display_length compare="ge">360</display_length>
   </requires>
 
+  <categories>
+    <category>Utility</category>
+  </categories>
+
   <recommends>
     <control>keyboard</control>
     <control>pointing</control>
