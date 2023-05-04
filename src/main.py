@@ -132,6 +132,9 @@ class BavarderApplication(Adw.Application):
             if p.slug == self.latest_provider:
                 self.win.provider_selector.set_selected(k)
                 break
+    
+        self.win.prompt_text_view.grab_focus()
+
 
     def on_provider_selector_notify(self, _unused, pspec):
         self.win.banner.set_revealed(False)
