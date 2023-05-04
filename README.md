@@ -37,6 +37,10 @@
   <img src="./data/screenshots/quantum-computing.png" alt="Preview"/>
 </p>
 
+## About the name
+
+Bavarder is a french word, the definiton of Bavarder is "Parler abondamment de choses sans grande portée" (Talking a lot about things that don't matter) (Larousse) which can be translated by Chit-Chat (informal conversation about matters that are not important). For non-french speakers, Bavarder can be hard to speak, it's prounouced as [bavaʀde]. Hear [here](https://youtu.be/9Qoogwxo5YA)
+
 ## Installation
 
 ### Flatpak
