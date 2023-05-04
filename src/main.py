@@ -79,15 +79,21 @@ class BavarderApplication(Adw.Application):
         self.settings.set_strv("enabled-providers", list(self.enabled_providers))
         self.settings.set_string("latest-provider", self.get_provider().slug)
 
+        print("Saving providers data...")
+
         self.save_providers()
         self.quit()
 
     def save_providers(self):
         r = {}
         for k, p in self.providers.items():
-            r[k] = json.dumps(p.save())
-        self.settings.set_value("providers-data", r)
+            r[str(k)] = json.dumps(p.save())
         print(r)
+        data = GLib.Variant(
+            "a{ss}", 
+            r
+        )
+        self.settings.set_value("providers-data", data)
 
     def get_provider(self):
         print(self.providers)
@@ -117,21 +123,27 @@ class BavarderApplication(Adw.Application):
             self.enabled_providers, range(len(self.enabled_providers))
         ):
             try:
+                print("Loading provider", provider)
                 self.provider_selector_model.append(PROVIDERS[provider].name)
 
                 self.providers[i] = PROVIDERS[provider](
                     self.win, self, self.providers_data[i]
                 )
             except KeyError:
-                self.providers[i] = PROVIDERS[provider](self.win, self, None)
+                print("Provider", provider, " -> KeyError, skipping...")
+                self.providers[i] = PROVIDERS[provider](
+                    self.win, self, None
+                )
 
         self.win.provider_selector.set_model(self.provider_selector_model)
         self.win.provider_selector.connect("notify", self.on_provider_selector_notify)
 
+        print(self.latest_provider)
         for k, p in self.providers.items():
             if p.slug == self.latest_provider:
+                print("Setting selected provider to", k)
                 self.win.provider_selector.set_selected(k)
-                break
+                break            
     
         self.win.prompt_text_view.grab_focus()
 
