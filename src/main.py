@@ -60,7 +60,7 @@ class BavarderApplication(Adw.Application):
 
         self.clear_after_send = self.settings.get_boolean("clear-after-send")
 
-        self.enabled_providers = set(self.settings.get_strv("enabled-providers"))
+        self.enabled_providers = sorted(set(self.settings.get_strv("enabled-providers")))
         self.latest_provider = self.settings.get_string("latest-provider")
 
         # GStreamer playbin object and related setup
