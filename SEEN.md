@@ -4,6 +4,7 @@
 
 - https://www.omgubuntu.co.uk/2023/05/bavarder-chatgpt-linux-app
 - https://gnulinux.ch/bavarder-chatgpt-ohne-account
+- https://infoidevice.fr/bavarder-application-chatgpt-linux/
 
 ## Youtube
 
