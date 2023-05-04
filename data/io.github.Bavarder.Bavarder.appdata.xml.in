@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-	<id>@APP_ID@</id>
-	<name>@APP_ID@</name>
+	<id>io.github.Bavarder.Bavarder</id>
+	<name>Bavarder</name>
 	<summary>Chit-chat with an AI</summary>
-  <translation type="gettext">@PKGNAME@</translation>
 	<developer_name>0xMRTT</developer_name>
   <metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
-  <launchable type="desktop-id">@APP_ID@.desktop</launchable>
+  <launchable type="desktop-id">io.github.Bavarder.Bavarder.desktop</launchable>
   <content_rating type="oars-1.1"/>
 
 	<description>
