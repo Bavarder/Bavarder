@@ -22,7 +22,7 @@
 		<key name="latest-provider" type="s">
 			<default>'huggingchat'</default>
 		</key>
-		<key name="providers-data" type="a{sv}">
+		<key name="providers-data" type="a{ss}">
 			<default>{}</default>
 		</key>
 	</schema>
