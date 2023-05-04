@@ -84,23 +84,23 @@ template BavarderWindow : Adw.ApplicationWindow {
                 tooltip-text: _("Copy to Clipboard");
                 action-name: "app.copy_prompt";
               }
-              Button listen {
-                action-name: "app.listen";
-                tooltip-text: _("Listen");
-                icon-name: "audio-input-microphone-symbolic";
-              }
+              // Button listen {
+              //   action-name: "app.listen";
+              //   tooltip-text: _("Listen");
+              //   icon-name: "audio-input-microphone-symbolic";
+              // }
 
-              Button listen_wait {
-                visible: false;
-                sensitive: false;
-                tooltip-text: _("Listening");
-                Spinner listen_spinner {
-                  margin-top: 8;
-                  margin-bottom: 8;
-                  margin-start: 8;
-                  margin-end: 8;
-                }
-              }
+              // Button listen_wait {
+              //   visible: false;
+              //   sensitive: false;
+              //   tooltip-text: _("Listening");
+              //   Spinner listen_spinner {
+              //     margin-top: 8;
+              //     margin-bottom: 8;
+              //     margin-start: 8;
+              //     margin-end: 8;
+              //   }
+              // }
               Button ask_button {
                 visible: true;
                 sensitive: false;
@@ -174,23 +174,23 @@ template BavarderWindow : Adw.ApplicationWindow {
 
               styles ["toolbar"]
 
-              Button speak {
-                action-name: "app.speak";
-                tooltip-text: _("Speak");
-                icon-name: "audio-speakers-symbolic";
-              }
-
-              Button speak_wait {
-                visible: false;
-                sensitive: false;
-                tooltip-text: _("Speaking");
-                Spinner speak_spinner {
-                  margin-top: 8;
-                  margin-bottom: 8;
-                  margin-start: 8;
-                  margin-end: 8;
-                }
-              }
+              // Button speak {
+              //   action-name: "app.speak";
+              //   tooltip-text: _("Speak");
+              //   icon-name: "audio-speakers-symbolic";
+              // }
+              
+              // Button speak_wait {
+              //   visible: false;
+              //   sensitive: false;
+              //   tooltip-text: _("Speaking");
+              //   Spinner speak_spinner {
+              //     margin-top: 8;
+              //     margin-bottom: 8;
+              //     margin-start: 8;
+              //     margin-end: 8;
+              //   }
+              // }
 
               Button copy_bot {
                 sensitive: false;
