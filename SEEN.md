@@ -13,6 +13,7 @@
 
 - https://bassam.social/notice/AVII4g9FPM0sD1bMWW
 - https://pleroma.destroyallmachines.net/notice/AVHg9tnvMACshmHJL6
+- https://floss.social/@omgubuntu/110304976747139717
 
 ## Misc
 
