@@ -75,7 +75,10 @@ class BardProvider(BavarderProvider):
         about.present()
 
     def save(self):
-        return {"api_key": self.api_key}
+        try:
+            return {"api_key": self.api_key}
+        except AttributeError: # no api key
+            return {}
 
     def load(self, data):
         self.chat = BardChat(api_key)
