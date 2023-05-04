@@ -2,6 +2,7 @@ from gettext import gettext as _
 
 from gi.repository import Gtk, Adw
 
+import json 
 class BavarderProvider:
     name = None
     slug = None
@@ -14,8 +15,8 @@ class BavarderProvider:
         self.chat = None
         self.data = data
         self.update_response = app.update_response
-        if data:
-            self.load(data)
+        if self.data:
+            self.load(json.loads(self.data))
             self.no_data = False
         else:
             self.no_data = True
