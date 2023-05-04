@@ -20,6 +20,7 @@
 ## Twitter
 
 - https://twitter.com/omgubuntu/status/1653752319660417024
+- https://twitter.com/linuxern00b/status/1653754427373936645/photo/1
 
 ## Misc
 
