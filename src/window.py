@@ -33,12 +33,12 @@ class BavarderWindow(Adw.ApplicationWindow):
     wait_button = Gtk.Template.Child()
     response_stack = Gtk.Template.Child()
     banner = Gtk.Template.Child()
-    listen = Gtk.Template.Child()
-    listen_wait = Gtk.Template.Child()
-    listen_spinner = Gtk.Template.Child()
-    speak = Gtk.Template.Child()
-    speak_wait = Gtk.Template.Child()
-    speak_spinner = Gtk.Template.Child()
+    # listen = Gtk.Template.Child()
+    # listen_wait = Gtk.Template.Child()
+    # listen_spinner = Gtk.Template.Child()
+    # speak = Gtk.Template.Child()
+    # speak_wait = Gtk.Template.Child()
+    # speak_spinner = Gtk.Template.Child()
     provider_selector = Gtk.Template.Child()
 
     def __init__(self, **kwargs):

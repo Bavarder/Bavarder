@@ -53,8 +53,8 @@ class BavarderApplication(Adw.Application):
         self.create_action("copy_prompt", self.on_copy_prompt_action)
         self.create_action("copy_bot", self.on_copy_bot_action)
         self.create_action("ask", self.on_ask_action, ["<primary>Return"])
-        self.create_action("speak", self.on_speak_action, ["<primary>S"])
-        self.create_action("listen", self.on_listen_action, ["<primary>L"])
+        # self.create_action("speak", self.on_speak_action, ["<primary>S"])
+        # self.create_action("listen", self.on_listen_action, ["<primary>L"])
 
         self.settings = Gio.Settings(schema_id="io.github.Bavarder.Bavarder")
 
@@ -64,15 +64,15 @@ class BavarderApplication(Adw.Application):
         self.latest_provider = self.settings.get_string("latest-provider")
 
         # GStreamer playbin object and related setup
-        Gst.init(None)
-        self.player = Gst.ElementFactory.make("playbin", "player")
-        self.pipeline = Gst.Pipeline()
+        # Gst.init(None)
+        # self.player = Gst.ElementFactory.make("playbin", "player")
+        # self.pipeline = Gst.Pipeline()
         # bus = self.player.get_bus()
         # bus.add_signal_watch()
         # bus.connect('message', self.on_gst_message)
-        self.player_event = (
-            threading.Event()
-        )  # An event for letting us know when Gst is done playing
+        # self.player_event = (
+        #     threading.Event()
+        # )  # An event for letting us know when Gst is done playing
 
     def on_quit(self, action, param):
         """Called when the user activates the Quit action."""
@@ -146,6 +146,16 @@ class BavarderApplication(Adw.Application):
             developers=["0xMRTT https://github.com/0xMRTT"],
             designers=["David Lapshin https://github.com/daudix-UFO"],
             documenters=[],
+            translator_credits="""0xMRTT <0xmrtt@proton.me>
+                David Lapshin <ddaudix@gmail.com>
+                Morgan Antonsson <morgan.antonsson@gmail.com>
+                thepoladov13 <thepoladov@protonmail.com>
+                Muznyo <codeberg.vqtek@simplelogin.com>
+                Deimidis <gmovia@pm.me>
+                sjdonado <jsrd98@gmail.com>
+                artnay <jiri.gronroos@iki.fi>
+                Rene Coty <irenee.thirion@e.email>
+                galegovski <galegovski@outlook.com>""",
             license_type=Gtk.License.GPL_3_0,
             version=version,
             copyright="© 2023 0xMRTT",
@@ -203,8 +213,6 @@ class BavarderApplication(Adw.Application):
         self.win.toast_overlay.add_toast(toast)
 
     def ask(self, prompt):
-        print(self.provider)
-        print(self.providers[self.provider])
         return self.providers[self.provider].ask(prompt)
 
     def update_response(self, response):
@@ -236,31 +244,31 @@ class BavarderApplication(Adw.Application):
         t = threading.Thread(target=thread_run)
         t.start()
 
-    def on_speak_action(self, widget, _):
-        """Callback for the app.speak action."""
-        print("app.speak action activated")
-
-        try:
-
-            with NamedTemporaryFile() as file_to_play:
-
-                tts = gTTS(self.win.bot_text_view.get_buffer().props.text)
-                tts.write_to_fp(file_to_play)
-                file_to_play.seek(0)
-                self._play_audio(file_to_play.name)
-        except Exception as exc:
-            print(exc)
-
-    def _play_audio(self, path):
-        uri = "file://" + path
-        self.player.set_property("uri", uri)
-        self.pipeline.add(self.player)
-        self.pipeline.set_state(Gst.State.PLAYING)
-        self.player.set_state(Gst.State.PLAYING)
-
-    def on_listen_action(self, widget, _):
-        """Callback for the app.listen action."""
-        print("app.listen action activated")
+    # def on_speak_action(self, widget, _):
+    #     """Callback for the app.speak action."""
+    #     print("app.speak action activated")
+    # 
+    #     try:
+    #
+    #         with NamedTemporaryFile() as file_to_play:
+    #
+    #             tts = gTTS(self.win.bot_text_view.get_buffer().props.text)
+    #             tts.write_to_fp(file_to_play)
+    #             file_to_play.seek(0)
+    #             self._play_audio(file_to_play.name)
+    #     except Exception as exc:
+    #         print(exc)
+    # 
+    # def _play_audio(self, path):
+    #     uri = "file://" + path
+    #     self.player.set_property("uri", uri)
+    #     self.pipeline.add(self.player)
+    #     self.pipeline.set_state(Gst.State.PLAYING)
+    #     self.player.set_state(Gst.State.PLAYING)
+    #
+    # def on_listen_action(self, widget, _):
+    #     """Callback for the app.listen action."""
+    #     print("app.listen action activated")
 
     def create_action(self, name, callback, shortcuts=None):
         """Add an application action.
