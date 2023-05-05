@@ -38,6 +38,8 @@ from gtts import gTTS
 from tempfile import NamedTemporaryFile
 
 from .provider import PROVIDERS
+import platform
+import os
 
 class BavarderApplication(Adw.Application):
     """The main application singleton class."""
@@ -160,6 +162,7 @@ class BavarderApplication(Adw.Application):
             developer_name="0xMRTT",
             developers=["0xMRTT https://github.com/0xMRTT"],
             designers=["David Lapshin https://github.com/daudix-UFO"],
+            artists=["David Lapshin https://github.com/daudix-UFO"],
             documenters=[],
             translator_credits="""0xMRTT <0xmrtt@proton.me>
                 David Lapshin <ddaudix@gmail.com>
@@ -173,6 +176,10 @@ class BavarderApplication(Adw.Application):
                 galegovski <galegovski@outlook.com>""",
             license_type=Gtk.License.GPL_3_0,
             version=version,
+            website="https://bavarder.codeberg.page",
+            issue_url="https://github.com/Bavarder/Bavarder/issues",
+            support_url="https://codeberg.org/Bavarder/Bavarder/issues",
+
             copyright="© 2023 0xMRTT",
         )
 
@@ -181,6 +188,16 @@ class BavarderApplication(Adw.Application):
             [
                 "Telegraph https://apps.gnome.org/app/io.github.fkinoshita.Telegraph",
             ],
+        )
+        about.set_debug_info(
+            f"""{app_id} {version}
+Environment: {os.environ.get("XDG_CURRENT_DESKTOP", "Unknown")}
+Gtk: {Gtk.MAJOR_VERSION}.{Gtk.MINOR_VERSION}.{Gtk.MICRO_VERSION}
+Python: {platform.python_version()}
+OS: {platform.system()} {platform.release()} {platform.version()}
+Providers: {self.enabled_providers}
+"""
+
         )
         about.present()
 
