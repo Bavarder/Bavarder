@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-05 09:41+0000\n"
+"PO-Revision-Date: 2023-05-05 10:18+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -46,12 +46,12 @@ msgstr "Algemeen"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Sneltoetsen tonen"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Ask"
-msgstr ""
+msgstr "Vraag stellen"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
@@ -64,27 +64,27 @@ msgstr "Voorkeuren"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "Invoerveld"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Invoerveld wissen na versturen"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "Wis het invoerveld na het stellen van een vraag"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr "Leveringen"
+msgstr "Diensten"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
-msgstr ""
+msgstr "Hoofdmenu"
 
 #: data/ui/window.blp:36 src/provider/base.py:43
 msgid "No network connection"
-msgstr "Geen netwerkverbinding."
+msgstr "Geen netwerkverbinding"
 
 #: data/ui/window.blp:51
 msgid "Message"
@@ -96,52 +96,52 @@ msgstr "Kopiëren naar klembord"
 
 #: data/ui/window.blp:89
 msgid "Listen"
-msgstr ""
+msgstr "Luisteren"
 
 #: data/ui/window.blp:96
 msgid "Listening"
-msgstr ""
+msgstr "Bezig met luisteren…"
 
 #: data/ui/window.blp:108
 msgid "Ask"
-msgstr ""
+msgstr "Vraag stellen"
 
 #: data/ui/window.blp:117
 msgid "Wait"
-msgstr ""
+msgstr "Even geduld…"
 
 #: data/ui/window.blp:132
 msgid "Response"
-msgstr ""
+msgstr "Antwoord"
 
 #: data/ui/window.blp:179
 msgid "Speak"
-msgstr ""
+msgstr "Praten"
 
 #: data/ui/window.blp:186
 msgid "Speaking"
-msgstr ""
+msgstr "Bezig met praten…"
 
 #: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Sneltoetsen"
 
 #: data/ui/window.blp:225
 msgid "About Bavarder"
-msgstr ""
+msgstr "Over Bavarder"
 
 #: src/main.py:156
 msgid "Special thanks to"
-msgstr ""
+msgstr "Met veel dank aan"
 
 #: src/provider/base.py:36
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "Er is geen api-sleutel opgegeven - open de voorkeuren"
 
 #: src/provider/base.py:38
 msgid "Open settings"
-msgstr "Instellingen openen"
+msgstr "Voorkeuren openen"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
 msgid "Cat GPT"
-msgstr ""
+msgstr "Cat GPT"
