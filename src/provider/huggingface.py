@@ -53,18 +53,17 @@ class BaseHFProvider(BavarderProvider):
 
     @property
     def require_api_key(self):
-        if self.authorization:
-            return True
         return False
 
     def preferences(self):
-        if self.authorization:
+        if self.require_api_key:
             self.expander = Adw.ExpanderRow()
             self.expander.props.title = self.name
 
             self.api_row = Adw.PasswordEntryRow()
             self.api_row.connect("apply", self.on_apply)
             self.api_row.props.title = "API Key"
+            self.api_row.props.text = self.api_key or ""
             self.api_row.set_show_apply_button(True)
             self.expander.add_row(self.api_row)
 
@@ -88,10 +87,11 @@ class BaseHFProvider(BavarderProvider):
         )
 
     def save(self):
-        if self.authorization:
+        if self.require_api_key:
             return {"api_key": self.api_key}
         return {}
 
     def load(self, data):
-        if self.authorization:
+        if self.require_api_key:
             self.api_key = data["api_key"]
+        
