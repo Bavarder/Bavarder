@@ -7,19 +7,13 @@ class BavarderProvider:
     name = None
     slug = None
 
-    def __init__(self, win, app, data, *args, **kwargs):
+    def __init__(self, win, app, *args, **kwargs):
         self.win = win
         self.banner = win.banner
         self.bot_text_view = win.bot_text_view
         self.app = app
         self.chat = None
-        self.data = data
         self.update_response = app.update_response
-        if self.data:
-            self.load(json.loads(self.data))
-            self.no_data = False
-        else:
-            self.no_data = True
 
     def ask(self, prompt):
         raise NotImplementedError()
@@ -73,7 +67,7 @@ class BavarderProvider:
         return self.expander
 
     def save(self):
-        raise NotImplementedError()
+        return {}
 
     def load(self, data):
         raise NotImplementedError()
