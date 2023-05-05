@@ -19,16 +19,29 @@ class BaseOpenAIProvider(BavarderProvider):
         self.pref_win = None
 
     def ask(self, prompt):
+        prompt = self.chunk(prompt)
         try:
-            response = self.chat.create(
-                model=self.model, messages=[{"role": "user", "content": prompt}]
-            )
-            response = response.choices[0].message.content
+            if isinstance(prompt, list):
+                response = ""
+                for chunk in prompt:
+                    response += self.chat.create(
+                        model=self.model, messages=[{"role": "user", "content": chunk}]
+                    ).choices[0].message.content
+            else:
+                response = self.chat.create(
+                    model=self.model, messages=[{"role": "user", "content": prompt}]
+                )
+                response = response.choices[0].message.content
         except openai.error.AuthenticationError:
             self.no_api_key()
             return ""
         except openai.error.InvalidRequestError:
             self.win.banner.props.title = "You don't have access to this model"
+            self.win.banner.props.button_label = ""
+            self.win.banner.set_revealed(True)
+            return ""
+        except openai.error.RateLimitError:
+            self.win.banner.props.title = "You exceeded your current quota, please check your plan and billing details."
             self.win.banner.props.button_label = ""
             self.win.banner.set_revealed(True)
             return ""
@@ -55,7 +68,6 @@ class BaseOpenAIProvider(BavarderProvider):
         about_button.connect("clicked", self.about)
         about_button.set_valign(Gtk.Align.CENTER)
         self.expander.add_action(about_button) # TODO: in Adw 1.4, use add_suffix
-
 
         self.api_row = Adw.PasswordEntryRow()
         self.api_row.connect("apply", self.on_apply)
