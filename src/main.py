@@ -65,18 +65,7 @@ class BavarderApplication(Adw.Application):
         self.enabled_providers = sorted(set(self.settings.get_strv("enabled-providers")))
         self.latest_provider = self.settings.get_string("latest-provider")
 
-        # GStreamer playbin object and related setup
-        # Gst.init(None)
-        # self.player = Gst.ElementFactory.make("playbin", "player")
-        # self.pipeline = Gst.Pipeline()
-        # bus = self.player.get_bus()
-        # bus.add_signal_watch()
-        # bus.connect('message', self.on_gst_message)
-        # self.player_event = (
-        #     threading.Event()
-        # )  # An event for letting us know when Gst is done playing
-
-    def quitting(self, _):
+    def quitting(self, *args, **kwargs):
         """Called before closing main window."""
         self.settings.set_strv("enabled-providers", list(self.enabled_providers))
         self.settings.set_string("latest-provider", self.get_provider().slug)
@@ -93,7 +82,7 @@ class BavarderApplication(Adw.Application):
     def save_providers(self):
         r = {}
         for k, p in self.providers.items():
-            r[str(k)] = json.dumps(p.save())
+            r[p.slug] = json.dumps(p.save())
         print(r)
         data = GLib.Variant(
             "a{ss}", 
@@ -130,18 +119,14 @@ class BavarderApplication(Adw.Application):
         for provider, i in zip(
             self.enabled_providers, range(len(self.enabled_providers))
         ):
-            try:
-                print("Loading provider", provider)
-                self.provider_selector_model.append(PROVIDERS[provider].name)
+            print("Loading provider", provider)
+            self.provider_selector_model.append(PROVIDERS[provider].name)
 
-                self.providers[i] = PROVIDERS[provider](
-                    self.win, self, self.providers_data[i]
-                )
-            except KeyError:
-                print("Provider", provider, " -> KeyError, skipping...")
-                self.providers[i] = PROVIDERS[provider](
-                    self.win, self, None
-                )
+            self.providers[i] = PROVIDERS[provider](
+                self.win, self
+            )
+
+        self.load()
 
         self.win.provider_selector.set_model(self.provider_selector_model)
         self.win.provider_selector.connect("notify", self.on_provider_selector_notify)
@@ -154,6 +139,14 @@ class BavarderApplication(Adw.Application):
                 break            
     
         self.win.prompt_text_view.grab_focus()
+
+    def load(self):
+        for p in self.providers.values():
+            print(self.providers_data)
+            try:
+                p.load(data=json.loads(self.providers_data[p.slug]))
+            except KeyError: # provider not in data
+                pass
 
 
     def on_provider_selector_notify(self, _unused, pspec):
