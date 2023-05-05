@@ -76,8 +76,8 @@ class BavarderApplication(Adw.Application):
         #     threading.Event()
         # )  # An event for letting us know when Gst is done playing
 
-    def on_quit(self, action, param):
-        """Called when the user activates the Quit action."""
+    def quitting(self, _):
+        """Called before closing main window."""
         self.settings.set_strv("enabled-providers", list(self.enabled_providers))
         self.settings.set_string("latest-provider", self.get_provider().slug)
 
@@ -85,6 +85,10 @@ class BavarderApplication(Adw.Application):
 
         self.save_providers()
         self.quit()
+
+    def on_quit(self, action, param):
+        """Called when the user activates the Quit action."""
+        self.quitting()
 
     def save_providers(self):
         r = {}
@@ -113,6 +117,8 @@ class BavarderApplication(Adw.Application):
         self.win.present()
 
         self.win.response_stack.set_visible_child_name("page_response")
+
+        self.win.connect("close-request", self.quitting)
 
         self.provider_selector_model = Gtk.StringList()
         self.providers = {}
