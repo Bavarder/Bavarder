@@ -59,6 +59,7 @@ class BaseOpenAIProvider(BavarderProvider):
 
         self.api_row = Adw.PasswordEntryRow()
         self.api_row.connect("apply", self.on_apply)
+        self.api_row.props.text = openai.api_key or ""
         self.api_row.props.title = self.api_key_title
         self.api_row.set_show_apply_button(True)
         self.expander.add_row(self.api_row)
@@ -68,7 +69,6 @@ class BaseOpenAIProvider(BavarderProvider):
     def on_apply(self, widget):
         self.hide_banner()
         api_key = self.api_row.get_text()
-        print(api_key)
         openai.api_key = api_key
 
     def about(self, *args):
@@ -87,4 +87,5 @@ class BaseOpenAIProvider(BavarderProvider):
         return {"api_key": openai.api_key}
 
     def load(self, data):
-        openai.api_key = data["api_key"]
+        if data["api_key"]:
+            openai.api_key = data["api_key"]
