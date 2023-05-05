@@ -22,6 +22,9 @@ class BaseOpenAIProvider(BavarderProvider):
         prompt = self.chunk(prompt)
         try:
             if isinstance(prompt, list):
+                self.win.banner.props.title = "Prompt too long, splitting into chunks."
+                self.win.banner.props.button_label = ""
+                self.win.banner.set_revealed(True)
                 response = ""
                 for chunk in prompt:
                     response += self.chat.create(
