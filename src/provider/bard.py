@@ -58,9 +58,13 @@ class BardProvider(BavarderProvider):
     def on_apply(self, widget):
         self.hide_banner()
         api_key = self.api_row.get_text()
-        print(api_key)
         self.api_key = api_key
-        self.chat = BardChat(api_key)
+        try:
+            self.chat = BardChat(api_key)
+        except AttributeError:
+            self.banner.props.title = "Invalid API key"
+            self.banner.props.button_label = ""
+            self.banner.set_revealed(True)
 
     def about(self, *args):
         about = Adw.AboutWindow(
@@ -81,5 +85,9 @@ class BardProvider(BavarderProvider):
             return {}
 
     def load(self, data):
-        self.chat = BardChat(api_key)
-        self.api_key = api_key
+        try:
+            self.chat = BardChat(data['api_key'])
+            self.api_key = data['api_key']
+        except AttributeError:
+            self.chat = None
+            self.api_key = None
