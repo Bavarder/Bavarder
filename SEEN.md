@@ -6,10 +6,13 @@
 - https://gnulinux.ch/bavarder-chatgpt-ohne-account
 - https://infoidevice.fr/bavarder-application-chatgpt-linux/
 - https://sempreupdate.com.br/como-instalar-o-chat-bavarder-no-linux/
+- https://www.linuxjournal.com/content/introducing-bavarder-user-friendly-linux-desktop-app-quick-chatgpt-interaction
+- https://fostips.com/bavarder-open-source-ai-chat-linux/
 
 ## Youtube
 
 - https://youtu.be/dtAi2ejMwrk
+- https://youtu.be/bXcSEGb8IPE
 
 ## Fediverse
 
@@ -28,3 +31,4 @@
 
 - https://alternativeto.net/software/bavarder/
 - https://linuxphoneapps.org/apps/io.github.bavarder.bavarder/
+- https://www.linuxquestions.org/questions/showthread.php?s=7c645a66bd3800801946c6f238e2ee25&p=6429159#post6429159
