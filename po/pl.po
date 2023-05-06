@@ -52,7 +52,7 @@ msgstr "Pokaż skróty"
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Ask"
-msgstr ""
+msgstr "Zapytaj"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
