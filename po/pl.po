@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
 "PO-Revision-Date: 2023-05-06 10:02+0000\n"
-"Last-Translator: ioghjog <michal.d1191@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pl/>\n"
 "Language: pl\n"
@@ -42,7 +42,7 @@ msgstr "Zrzut ekranu interfejsu"
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "Ogólne"
 
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
@@ -57,11 +57,11 @@ msgstr ""
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Wyjdź"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:215
 msgid "Preferences"
-msgstr ""
+msgstr "Preferencje"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
@@ -85,15 +85,15 @@ msgstr ""
 
 #: data/ui/window.blp:36 src/provider/base.py:43
 msgid "No network connection"
-msgstr ""
+msgstr "Brak połączenia z siecią."
 
 #: data/ui/window.blp:51
 msgid "Message"
-msgstr ""
+msgstr "Wiadomość"
 
 #: data/ui/window.blp:84 data/ui/window.blp:198
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Skopiuj do schowka"
 
 #: data/ui/window.blp:89
 msgid "Listen"
