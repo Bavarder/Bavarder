@@ -276,10 +276,10 @@ Providers: {self.enabled_providers}
             GLib.idle_add(self.update_response, response)
             if self.clear_after_send:
                 GLib.idle_add(self.update_response, "")
-            t.join()
+            self.t.join()
 
-        t = threading.Thread(target=thread_run)
-        t.start()
+        self.t = threading.Thread(target=thread_run)
+        self.t.start()
 
     # def on_speak_action(self, widget, _):
     #     """Callback for the app.speak action."""
