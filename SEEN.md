@@ -10,6 +10,7 @@
 - https://fostips.com/bavarder-open-source-ai-chat-linux/
 - https://voyagerlive.org/voyager-chatgpt/
 - https://plus.diolinux.com.br/t/bavarder-um-aplicativo-de-chatgpt-para-linux/53155
+- https://mindaizer.com/chatgpt-et-linux-presentation-de-bavarder/
 
 ## Youtube
 
