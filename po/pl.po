@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
-"PO-Revision-Date: 2023-05-06 10:02+0000\n"
+"PO-Revision-Date: 2023-05-06 10:29+0000\n"
 "Last-Translator: ioghjog <michal.d1191@gmail.com>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pl/>\n"
@@ -29,7 +29,7 @@ msgstr "Bavarder"
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
 msgid "Chit-chat with an AI"
-msgstr ""
+msgstr "Pogawędka z SI"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
 msgid "0xMRTT"
@@ -65,27 +65,27 @@ msgstr "Preferencje"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "Zapytanie"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Czyść zapytanie po wysłaniu"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "Zapytanie zostanie wyczyszczone po wysłaniu"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr ""
+msgstr "Dostawcy"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
-msgstr ""
+msgstr "Główne menu"
 
 #: data/ui/window.blp:36 src/provider/base.py:43
 msgid "No network connection"
-msgstr "Brak połączenia z siecią."
+msgstr "Brak połączenia z siecią"
 
 #: data/ui/window.blp:51
 msgid "Message"
@@ -97,52 +97,52 @@ msgstr "Skopiuj do schowka"
 
 #: data/ui/window.blp:89
 msgid "Listen"
-msgstr ""
+msgstr "Słuchaj"
 
 #: data/ui/window.blp:96
 msgid "Listening"
-msgstr ""
+msgstr "Słuchanie"
 
 #: data/ui/window.blp:108
 msgid "Ask"
-msgstr ""
+msgstr "Zapytaj"
 
 #: data/ui/window.blp:117
 msgid "Wait"
-msgstr ""
+msgstr "Czekaj"
 
 #: data/ui/window.blp:132
 msgid "Response"
-msgstr ""
+msgstr "Odpowiedź"
 
 #: data/ui/window.blp:179
 msgid "Speak"
-msgstr ""
+msgstr "Powiedz"
 
 #: data/ui/window.blp:186
 msgid "Speaking"
-msgstr ""
+msgstr "Mówienie"
 
 #: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Skróty klawiszowe"
 
 #: data/ui/window.blp:225
 msgid "About Bavarder"
-msgstr ""
+msgstr "O Bavarderze"
 
 #: src/main.py:156
 msgid "Special thanks to"
-msgstr ""
+msgstr "Specjalne podziękowania dla"
 
 #: src/provider/base.py:36
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "Nie podano klucza API, dodaj go w ustawieniach"
 
 #: src/provider/base.py:38
 msgid "Open settings"
-msgstr ""
+msgstr "Otwórz ustawienia"
 
 #: src/provider/catgpt.py:7 src/provider/catgpt.py:54
 msgid "Cat GPT"
-msgstr ""
+msgstr "Cat GPT"
