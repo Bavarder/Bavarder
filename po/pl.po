@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-01 01:51+0200\n"
 "PO-Revision-Date: 2023-05-06 10:02+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: ioghjog <michal.d1191@gmail.com>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pl/>\n"
 "Language: pl\n"
@@ -47,7 +47,7 @@ msgstr "Ogólne"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Pokaż skróty"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
