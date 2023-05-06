@@ -4,7 +4,7 @@ from hgchat import HGChat
 import socket
 
 
-from gi.repository import Gtk, Adw
+from gi.repository import Gtk, Adw, GLib
 
 
 class HuggingChatProvider(BavarderProvider):
@@ -30,7 +30,7 @@ class HuggingChatProvider(BavarderProvider):
                     r += "\n"
                 else:
                     r += char
-                self.update_response(r)
+                GLib.idle_add(self.update_response, r)
             return r
 
     @property

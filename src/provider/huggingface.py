@@ -4,7 +4,7 @@ from .base import BavarderProvider
 
 import socket
 
-from gi.repository import Gtk, Adw
+from gi.repository import Gtk, Adw, GLib
 
 
 class BaseHFProvider(BavarderProvider):
@@ -48,7 +48,7 @@ class BaseHFProvider(BavarderProvider):
         else:
             self.hide_banner()
             print(response)
-            self.update_response(response)
+            GLib.idle_add(self.update_response, response)
             return response
 
     @property

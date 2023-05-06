@@ -3,6 +3,7 @@ from .base import BavarderProvider
 from baichat_py import BAIChat
 import socket
 
+from gi.repository import Gtk, Adw, GLib
 
 class BAIChatProvider(BavarderProvider):
     name = "BAI Chat"
@@ -23,7 +24,7 @@ class BAIChatProvider(BavarderProvider):
             return ""
         else:
             self.win.banner.set_revealed(False)
-            self.update_response(response.text)
+            GLib.idle_add(self.update_response, response.text)
             return response.text
 
     @property

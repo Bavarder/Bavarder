@@ -3,7 +3,7 @@ from .base import BavarderProvider
 import socket
 import requests
 
-from gi.repository import Gtk, Adw
+from gi.repository import Gtk, Adw, GLib
 
 
 class AlpacaLoRAProvider(BavarderProvider):
@@ -35,7 +35,7 @@ class AlpacaLoRAProvider(BavarderProvider):
         else:
             self.win.banner.set_revealed(False)
             r = response["data"][0]
-            self.update_response(r)
+            GLib.idle_add(self.update_response, r)
             return r
 
     @property

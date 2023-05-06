@@ -4,7 +4,7 @@ import socket
 
 from googlebardpy import BardChat
 
-from gi.repository import Gtk, Adw
+from gi.repository import Gtk, Adw, GLib
 
 class BardProvider(BavarderProvider):
     name = "Bard"
@@ -27,7 +27,7 @@ class BardProvider(BavarderProvider):
             return ""
         else:
             self.hide_banner()
-            self.update_response(response)
+            GLib.idle_add(self.update_response, response)
             return response
 
     @property

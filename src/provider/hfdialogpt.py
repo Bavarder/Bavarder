@@ -3,12 +3,17 @@ import json
 import socket
 import requests
 
+from gi.repository import Gtk, Adw, GLib
+
 
 class HuggingFaceDialoGPTLargeProvider(BaseHFProvider):
     name = "DialoGPT"
     slug = "dialogpt"
     model = "microsoft/DialoGPT-large"
-    authorization = False
+
+    @property
+    def require_api_key(self):
+        return False
 
     def ask(self, prompt):
         try:
@@ -41,5 +46,5 @@ class HuggingFaceDialoGPTLargeProvider(BaseHFProvider):
         else:
             self.hide_banner()
             print(response)
-            self.update_response(response)
+            GLib.idle_add(self.update_response, response)
             return response

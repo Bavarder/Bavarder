@@ -257,20 +257,26 @@ Providers: {self.enabled_providers}
         self.win.wait_button.set_visible(True)
         self.prompt = self.win.prompt_text_view.get_buffer().props.text
 
+        if self.prompt == "":
+            return
+
         self.provider = self.win.provider_selector.props.selected
 
         def thread_run():
-            response = self.ask(self.prompt)
+            try:
+                response = self.ask(self.prompt)
+            except GLib.Error as e:
+                response = e.message
             GLib.idle_add(cleanup, response)
 
         def cleanup(response):
             self.win.spinner.stop()
             self.win.ask_button.set_visible(True)
             self.win.wait_button.set_visible(False)
-            t.join()
-            self.win.bot_text_view.get_buffer().set_text(response)
+            GLib.idle_add(self.update_response, response)
             if self.clear_after_send:
-                self.win.prompt_text_view.get_buffer().set_text("")
+                GLib.idle_add(self.update_response, "")
+            t.join()
 
         t = threading.Thread(target=thread_run)
         t.start()

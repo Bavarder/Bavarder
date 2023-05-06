@@ -3,7 +3,7 @@ from .base import BavarderProvider
 import openai
 import socket
 
-from gi.repository import Gtk, Adw
+from gi.repository import Gtk, Adw, GLib
 
 
 class BaseOpenAIProvider(BavarderProvider):
@@ -53,7 +53,7 @@ class BaseOpenAIProvider(BavarderProvider):
             return ""
         else:
             self.hide_banner()
-            self.update_response(response)
+            GLib.idle_add(self.update_response, response)
             return response
 
     @property
