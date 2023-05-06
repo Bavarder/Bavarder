@@ -62,6 +62,7 @@
     <release version="0.1.6" date="2023-6-4" type="stable">
       <description>
         <p>Fix an issue which caused the app to crash randomly</p>
+        <p>Add save/load of settings</p>
       </description>
     </release>
     <release version="0.1.5" date="2023-5-4" type="stable">
