@@ -2,7 +2,9 @@ from gettext import gettext as _
 
 from gi.repository import Gtk, Adw
 
-import json 
+import json
+
+
 class BavarderProvider:
     name = None
     slug = None
@@ -29,8 +31,8 @@ class BavarderProvider:
         if title:
             self.win.banner.props.title = title
         else:
-            self.win.banner.props.title = (
-                _("No API key provided, you can provide one in settings")
+            self.win.banner.props.title = _(
+                "No API key provided, you can provide one in settings"
             )
         self.win.banner.props.button_label = _("Open settings")
         self.win.banner.connect("button-clicked", self.app.on_preferences_action)
@@ -57,8 +59,7 @@ class BavarderProvider:
         about_button.set_label("About")
         about_button.connect("clicked", self.about)
         about_button.set_valign(Gtk.Align.CENTER)
-        self.expander.add_action(about_button) # TODO: in Adw 1.4, use add_suffix
-
+        self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
 
         self.no_pref_row = Adw.ActionRow()
         self.no_pref_row.props.title = "No preferences available"
@@ -75,6 +76,5 @@ class BavarderProvider:
     def chunk(self, prompt, n=4000):
         if len(prompt) > n:
             print("Chuncking prompt")
-            prompt = [(prompt[i:i+n]) for i in range(0, len(prompt), n)]
+            prompt = [(prompt[i : i + n]) for i in range(0, len(prompt), n)]
         return prompt
-        

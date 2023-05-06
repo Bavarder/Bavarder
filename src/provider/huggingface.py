@@ -94,4 +94,3 @@ class BaseHFProvider(BavarderProvider):
     def load(self, data):
         if self.require_api_key:
             self.api_key = data["api_key"]
-        

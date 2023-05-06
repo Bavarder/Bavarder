@@ -4,6 +4,7 @@ from random import choice, randint
 
 from gi.repository import Gtk, Adw, GLib
 
+
 class CatGPTProvider(BavarderProvider):
     name = _("Cat GPT")
     slug = "catgpt"

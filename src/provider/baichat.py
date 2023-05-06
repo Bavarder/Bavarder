@@ -5,6 +5,7 @@ import socket
 
 from gi.repository import Gtk, Adw, GLib
 
+
 class BAIChatProvider(BavarderProvider):
     name = "BAI Chat"
     slug = "baichat"

@@ -6,6 +6,7 @@ from googlebardpy import BardChat
 
 from gi.repository import Gtk, Adw, GLib
 
+
 class BardProvider(BavarderProvider):
     name = "Bard"
     slug = "bard"
@@ -44,8 +45,7 @@ class BardProvider(BavarderProvider):
         about_button.set_label("About")
         about_button.connect("clicked", self.about)
         about_button.set_valign(Gtk.Align.CENTER)
-        self.expander.add_action(about_button) # TODO: in Adw 1.4, use add_suffix
-
+        self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
 
         self.api_row = Adw.PasswordEntryRow()
         self.api_row.connect("apply", self.on_apply)
@@ -81,13 +81,13 @@ class BardProvider(BavarderProvider):
     def save(self):
         try:
             return {"api_key": self.api_key}
-        except AttributeError: # no api key
+        except AttributeError:  # no api key
             return {}
 
     def load(self, data):
         try:
-            self.chat = BardChat(data['api_key'])
-            self.api_key = data['api_key']
+            self.chat = BardChat(data["api_key"])
+            self.api_key = data["api_key"]
         except AttributeError:
             self.chat = None
             self.api_key = None

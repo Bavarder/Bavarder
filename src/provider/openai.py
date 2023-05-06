@@ -27,9 +27,14 @@ class BaseOpenAIProvider(BavarderProvider):
                 self.win.banner.set_revealed(True)
                 response = ""
                 for chunk in prompt:
-                    response += self.chat.create(
-                        model=self.model, messages=[{"role": "user", "content": chunk}]
-                    ).choices[0].message.content
+                    response += (
+                        self.chat.create(
+                            model=self.model,
+                            messages=[{"role": "user", "content": chunk}],
+                        )
+                        .choices[0]
+                        .message.content
+                    )
             else:
                 response = self.chat.create(
                     model=self.model, messages=[{"role": "user", "content": prompt}]
@@ -70,7 +75,7 @@ class BaseOpenAIProvider(BavarderProvider):
         about_button.set_label("About")
         about_button.connect("clicked", self.about)
         about_button.set_valign(Gtk.Align.CENTER)
-        self.expander.add_action(about_button) # TODO: in Adw 1.4, use add_suffix
+        self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
 
         self.api_row = Adw.PasswordEntryRow()
         self.api_row.connect("apply", self.on_apply)

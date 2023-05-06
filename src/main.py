@@ -41,6 +41,7 @@ from .provider import PROVIDERS
 import platform
 import os
 
+
 class BavarderApplication(Adw.Application):
     """The main application singleton class."""
 
@@ -62,7 +63,9 @@ class BavarderApplication(Adw.Application):
 
         self.clear_after_send = self.settings.get_boolean("clear-after-send")
 
-        self.enabled_providers = sorted(set(self.settings.get_strv("enabled-providers")))
+        self.enabled_providers = sorted(
+            set(self.settings.get_strv("enabled-providers"))
+        )
         self.latest_provider = self.settings.get_string("latest-provider")
 
     def quitting(self, *args, **kwargs):
@@ -84,10 +87,7 @@ class BavarderApplication(Adw.Application):
         for k, p in self.providers.items():
             r[p.slug] = json.dumps(p.save())
         print(r)
-        data = GLib.Variant(
-            "a{ss}", 
-            r
-        )
+        data = GLib.Variant("a{ss}", r)
         self.settings.set_value("providers-data", data)
 
     def get_provider(self):
@@ -122,9 +122,7 @@ class BavarderApplication(Adw.Application):
             print("Loading provider", provider)
             self.provider_selector_model.append(PROVIDERS[provider].name)
 
-            self.providers[i] = PROVIDERS[provider](
-                self.win, self
-            )
+            self.providers[i] = PROVIDERS[provider](self.win, self)
 
         self.load()
 
@@ -136,8 +134,8 @@ class BavarderApplication(Adw.Application):
             if p.slug == self.latest_provider:
                 print("Setting selected provider to", k)
                 self.win.provider_selector.set_selected(k)
-                break            
-    
+                break
+
         self.win.prompt_text_view.grab_focus()
 
     def load(self):
@@ -145,9 +143,8 @@ class BavarderApplication(Adw.Application):
             print(self.providers_data)
             try:
                 p.load(data=json.loads(self.providers_data[p.slug]))
-            except KeyError: # provider not in data
+            except KeyError:  # provider not in data
                 pass
-
 
     def on_provider_selector_notify(self, _unused, pspec):
         self.win.banner.set_revealed(False)
@@ -178,7 +175,6 @@ class BavarderApplication(Adw.Application):
             website="https://bavarder.codeberg.page",
             issue_url="https://github.com/Bavarder/Bavarder/issues",
             support_url="https://codeberg.org/Bavarder/Bavarder/issues",
-
             copyright="© 2023 0xMRTT",
         )
 
@@ -196,7 +192,6 @@ Python: {platform.python_version()}
 OS: {platform.system()} {platform.release()} {platform.version()}
 Providers: {self.enabled_providers}
 """
-
         )
         about.present()
 
@@ -284,7 +279,7 @@ Providers: {self.enabled_providers}
     # def on_speak_action(self, widget, _):
     #     """Callback for the app.speak action."""
     #     print("app.speak action activated")
-    # 
+    #
     #     try:
     #
     #         with NamedTemporaryFile() as file_to_play:
@@ -295,7 +290,7 @@ Providers: {self.enabled_providers}
     #             self._play_audio(file_to_play.name)
     #     except Exception as exc:
     #         print(exc)
-    # 
+    #
     # def _play_audio(self, path):
     #     uri = "file://" + path
     #     self.player.set_property("uri", uri)
