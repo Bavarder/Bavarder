@@ -83,7 +83,7 @@ You can translate Bavarder using Codeberg Translate
 
 ### Mirrors
 
-- [Github](https://github.com/Bavarder/Bavarder)
+- [GitHub](https://github.com/Bavarder/Bavarder)
 - [Codeberg](https://codeberg.org/Bavarder/Bavarder)
 
 ## See also 
