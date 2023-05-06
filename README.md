@@ -71,6 +71,8 @@ flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/io.github
 
 The [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct) is applicable to this project
 
+See [`SEEN.md`](./SEEN.md) for a list of articles and posts about Bavarder
+
 ### Translate
 
 <a href="https://translate.codeberg.org/engage/bavarder/">
