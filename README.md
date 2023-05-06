@@ -11,7 +11,7 @@
 
 <p align="center">
   <a href="https://flathub.org/apps/details/io.github.Bavarder.Bavarder">
-    <img width="200" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-en.svg"/>
+    <img width="200" alt="Download on Flathub" src="https://dl.flathub.org/assets/badges/flathub-badge-i-en.svg"/>
   </a>
   <br>
 </p>
