@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-07 23:01+0200\n"
-"PO-Revision-Date: 2023-05-07 08:51+0000\n"
+"PO-Revision-Date: 2023-05-07 23:15+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -59,18 +59,14 @@ msgid "Quit"
 msgstr "Afsluiten"
 
 #: data/ui/help-overlay.ui:32
-#, fuzzy
-#| msgid "Preferences"
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Voorkeuren"
 
 #: data/ui/help-overlay.ui:38
-#, fuzzy
-#| msgid "Response"
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr "Antwoord"
+msgstr "Antwoord kopiëren"
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
