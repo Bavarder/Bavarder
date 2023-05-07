@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # keyiflerolsun <keyiflerolsun@gmail.com>, 2023.
+# 0xMRTT <0xmrtt@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 17:03+0200\n"
-"PO-Revision-Date: 2023-05-04 20:56+0000\n"
-"Last-Translator: keyiflerolsun <keyiflerolsun@gmail.com>\n"
+"PO-Revision-Date: 2023-05-07 09:49+0000\n"
+"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: Turkish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/tr/>\n"
 "Language: tr\n"
@@ -111,9 +112,6 @@ msgid "Keyboard Shortcuts"
 msgstr "Klavye kısayolları"
 
 #: data/ui/window.blp:225
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Quit"
 msgid "Quit"
 msgstr "Çıkış"
 
