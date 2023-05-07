@@ -11,6 +11,8 @@ from .hfopenassistantsft1pythia12b import HuggingFaceOpenAssistantSFT1PythiaProv
 from .hfgpt2 import HuggingFaceGPT2Provider
 from .hfdialogpt import HuggingFaceDialoGPTLargeProvider
 from .bard import BardProvider
+from .hfgpt2large import HuggingFaceGPT2LargeProvider
+from .hfgpt2xl import HuggingFaceGPT2XLProvider
 
 PROVIDERS = {
     "alpacalora": AlpacaLoRAProvider,
@@ -21,6 +23,8 @@ PROVIDERS = {
     "hfgoogleflant5xxl": HuggingFaceGoogleFlanT5XXLProvider,
     "hfgoogleflanu12": HuggingFaceGoogleFlanU12Provider,
     "hfgpt2": HuggingFaceGPT2Provider,
+    "hfgpt2large": HuggingFaceGPT2LargeProvider,
+    "hfgpt2xl": HuggingFaceGPT2XLProvider,
     "hfopenassistantsft1pythia12b": HuggingFaceOpenAssistantSFT1PythiaProvider,
     "huggingchat": HuggingChatProvider,
     "openaigpt35turbo": OpenAIGPT35TurboProvider,

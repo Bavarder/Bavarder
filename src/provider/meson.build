@@ -12,6 +12,8 @@ providers_sources = [
   'hfgoogleflant5xxl.py',
   'hfgoogleflanu12.py',
   'hfgpt2.py',
+  'hfgpt2large.py',
+  'hfgpt2xl.py',
   'hfopenassistantsft1pythia12b.py',
   'huggingchat.py',
   'huggingchatbase.py',
