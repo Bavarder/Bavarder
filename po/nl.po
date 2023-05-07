@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 17:03+0200\n"
-"PO-Revision-Date: 2023-05-05 10:18+0000\n"
+"PO-Revision-Date: 2023-05-07 08:51+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -111,9 +111,6 @@ msgid "Keyboard Shortcuts"
 msgstr "Sneltoetsen"
 
 #: data/ui/window.blp:225
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Quit"
 msgid "Quit"
 msgstr "Afsluiten"
 
