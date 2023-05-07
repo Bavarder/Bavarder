@@ -52,7 +52,7 @@ class BavarderApplication(Adw.Application):
         )
         self.create_action("quit", self.on_quit, ["<primary>q"])
         self.create_action("about", self.on_about_action, ["<primary>a"])
-        self.create_action("preferences", self.on_preferences_action, ["<primary>p"])
+        self.create_action("preferences", self.on_preferences_action, ["<primary>,"])
         self.create_action("copy_prompt", self.on_copy_prompt_action)
         self.create_action("copy_bot", self.on_copy_bot_action, ["<primary>c"])
         self.create_action("ask", self.on_ask_action, ["<primary>Return"])
