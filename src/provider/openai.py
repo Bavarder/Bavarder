@@ -77,6 +77,13 @@ class BaseOpenAIProvider(BavarderProvider):
         about_button.set_valign(Gtk.Align.CENTER)
         self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
 
+        enabled = Gtk.Switch()
+        enabled.set_active(self.slug in self.app.enabled_providers)
+        enabled.connect("notify::active", self.on_enabled)
+        enabled.set_valign(Gtk.Align.CENTER)
+
+        self.expander.add_action(enabled)
+
         self.api_row = Adw.PasswordEntryRow()
         self.api_row.connect("apply", self.on_apply)
         self.api_row.props.text = openai.api_key or ""
@@ -90,18 +97,6 @@ class BaseOpenAIProvider(BavarderProvider):
         self.hide_banner()
         api_key = self.api_row.get_text()
         openai.api_key = api_key
-
-    def about(self, *args):
-        about = Adw.AboutWindow(
-            transient_for=self.pref_win,
-            application_name=self.name,
-            developer_name="OpenAI",
-            developers=["0xMRTT https://github.com/0xMRTT"],
-            license_type=Gtk.License.GPL_3_0,
-            version=self.version,
-            copyright="© 2023 0xMRTT",
-        )
-        about.present()
 
     def save(self):
         return {"api_key": openai.api_key}

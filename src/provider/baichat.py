@@ -32,20 +32,6 @@ class BAIChatProvider(BavarderProvider):
     def require_api_key(self):
         return False
 
-    def preferences(self):
-        self.no_preferences()
-
-    def about(self):
-        about = Adw.AboutWindow(
-            transient_for=self.props.active_window,
-            application_name="BAI Chat",
-            developer_name="Theb.ai",
-            developers=["0xMRTT https://github.com/0xMRTT"],
-            license_type=Gtk.License.GPL_3_0,
-            version=version,
-            copyright="© 2023 0xMRTT",
-        )
-
     def save(self):
         return {}
 

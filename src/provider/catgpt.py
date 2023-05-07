@@ -48,21 +48,6 @@ class CatGPTProvider(BavarderProvider):
     def require_api_key(self):
         return False
 
-    def preferences(self, win):
-        return self.no_preferences(win)
-
-    def about(self, *args):
-        about = Adw.AboutWindow(
-            transient_for=self.pref_win,
-            application_name=_("Cat GPT"),
-            developer_name="0xMRTT",
-            developers=["0xMRTT https://github.com/0xMRTT"],
-            license_type=Gtk.License.GPL_3_0,
-            version=self.version,
-            copyright="© 2023 0xMRTT",
-        )
-        about.present()
-
     def save(self):
         return {}
 

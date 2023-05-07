@@ -47,6 +47,13 @@ class BardProvider(BavarderProvider):
         about_button.set_valign(Gtk.Align.CENTER)
         self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
 
+        enabled = Gtk.Switch()
+        enabled.set_active(self.slug in self.app.enabled_providers)
+        enabled.connect("notify::active", self.on_enabled)
+        enabled.set_valign(Gtk.Align.CENTER)
+
+        self.expander.add_action(enabled)
+
         self.api_row = Adw.PasswordEntryRow()
         self.api_row.connect("apply", self.on_apply)
         self.api_row.props.title = "__Secure-1PSID cookie"
@@ -65,18 +72,6 @@ class BardProvider(BavarderProvider):
             self.banner.props.title = "Invalid API key"
             self.banner.props.button_label = ""
             self.banner.set_revealed(True)
-
-    def about(self, *args):
-        about = Adw.AboutWindow(
-            transient_for=self.pref_win,
-            application_name="Bard",
-            developer_name="Google",
-            developers=["0xMRTT https://github.com/0xMRTT"],
-            license_type=Gtk.License.GPL_3_0,
-            version=self.version,
-            copyright="© 2023 0xMRTT",
-        )
-        about.present()
 
     def save(self):
         try:

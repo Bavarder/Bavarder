@@ -55,10 +55,24 @@ class BaseHFProvider(BavarderProvider):
     def require_api_key(self):
         return False
 
-    def preferences(self):
+    def preferences(self, win):
         if self.require_api_key:
             self.expander = Adw.ExpanderRow()
             self.expander.props.title = self.name
+
+            about_button = Gtk.Button()
+            about_button.set_label("About")
+            about_button.connect("clicked", self.about)
+            about_button.set_valign(Gtk.Align.CENTER)
+            self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
+
+
+            enabled = Gtk.Switch()
+            enabled.set_active(self.slug in self.app.enabled_providers)
+            enabled.connect("notify::active", self.on_enabled)
+            enabled.set_valign(Gtk.Align.CENTER)
+
+            self.expander.add_action(enabled)
 
             self.api_row = Adw.PasswordEntryRow()
             self.api_row.connect("apply", self.on_apply)
@@ -68,23 +82,13 @@ class BaseHFProvider(BavarderProvider):
             self.expander.add_row(self.api_row)
 
             return self.expander
-        pass
+        else:
+            return self.no_preferences(win)
 
     def on_apply(self, widget):
         self.hide_banner()
         self.api_key = self.api_row.get_text()
         print(self.api_key)
-
-    def about(self):
-        about = Adw.AboutWindow(
-            transient_for=self.props.active_window,
-            application_name=self.name,
-            developer_name="HuggingFace",
-            developers=["0xMRTT https://github.com/0xMRTT"],
-            license_type=Gtk.License.GPL_3_0,
-            version=version,
-            copyright="© 2023 0xMRTT",
-        )
 
     def save(self):
         if self.require_api_key:
