@@ -15,7 +15,7 @@ from .bard import BardProvider
 PROVIDERS = {
     "alpacalora": AlpacaLoRAProvider,
     "baichat": BAIChatProvider,
-    "bard": BardProvider,
+    #"bard": BardProvider, # Disabled because we need more documentation on how to use it
     "catgpt": CatGPTProvider,
     "hfdialogpt": HuggingFaceDialoGPTLargeProvider,
     "hfgoogleflant5xxl": HuggingFaceGoogleFlanT5XXLProvider,
