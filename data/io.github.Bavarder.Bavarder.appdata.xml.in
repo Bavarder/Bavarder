@@ -59,6 +59,15 @@
 	</keywords>
 
   <releases>
+    <release version="0.1.7" date="2023-5-7" type="stable">
+      <description>
+        <p>Fix an issue which caused the app to crash randomly</p>
+        <p>Add the ability to enable/disable providers from the preferences</p>
+        <p>Add more keyboard shortcuts</p>
+        <p>Update translations</p>
+        <p>Add better error handling</p>
+      </description>
+    </release>
     <release version="0.1.6" date="2023-5-6" type="stable">
       <description>
         <p>Fix an issue which caused the app to crash randomly</p>
