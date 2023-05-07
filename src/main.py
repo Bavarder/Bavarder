@@ -136,9 +136,15 @@ class BavarderApplication(Adw.Application):
             self.enabled_providers, range(len(self.enabled_providers))
         ):
             print("Loading provider", provider)
-            self.provider_selector_model.append(PROVIDERS[provider].name)
-
-            self.providers[i] = PROVIDERS[provider](self.win, self)
+            try:
+                self.provider_selector_model.append(PROVIDERS[provider].name)
+            except KeyError:
+                print("Provider", provider, "not found")
+                
+            try:
+                _ = self.providers[i] # doesn't re load if already loaded
+            except KeyError:
+                self.providers[i] = PROVIDERS[provider](self.win, self)
 
         self.win.provider_selector.set_model(self.provider_selector_model)
         self.win.provider_selector.connect("notify", self.on_provider_selector_notify)
