@@ -146,6 +146,7 @@ class BavarderApplication(Adw.Application):
                 self.provider_selector_model.append(PROVIDERS[provider].name)
             except KeyError:
                 print("Provider", provider, "not found")
+                self.enabled_providers.remove(provider)
                 continue
             else:
                 try:
