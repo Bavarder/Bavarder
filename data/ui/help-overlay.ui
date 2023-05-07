@@ -27,6 +27,30 @@
                 <property name="action-name">app.quit</property>
               </object>
             </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="title" translatable="yes" context="shortcut window">About</property>
+                <property name="action-name">app.about</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="title" translatable="yes" context="shortcut window">Preferences</property>
+                <property name="action-name">app.preferences</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="title" translatable="yes" context="shortcut window">Copy response</property>
+                <property name="action-name">app.copy_bot</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkShortcutsShortcut">
+                <property name="title" translatable="yes" context="shortcut window">Clear</property>
+                <property name="action-name">app.clear</property>
+              </object>
+            </child>
           </object>
         </child>
       </object>
