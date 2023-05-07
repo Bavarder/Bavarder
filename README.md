@@ -67,6 +67,14 @@ cd Bavarder
 flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/io.github.Bavarder.Bavarder.json
 ```
 
+### Archlinux
+
+Bavarder is available in the AUR. Just use your favourite aur helper!
+
+``` shell
+yay -S bavarder
+```
+
 ## Contribute
 
 The [GNOME Code of Conduct](https://wiki.gnome.org/Foundation/CodeOfConduct) is applicable to this project
