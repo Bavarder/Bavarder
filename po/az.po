@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-07 23:01+0200\n"
-"PO-Revision-Date: 2023-05-07 09:49+0000\n"
+"PO-Revision-Date: 2023-05-07 23:15+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: Azerbaijani <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/az/>\n"
@@ -60,8 +60,6 @@ msgid "Quit"
 msgstr "Çıx"
 
 #: data/ui/help-overlay.ui:32
-#, fuzzy
-#| msgid "Preferences"
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Üstünlüklər"
