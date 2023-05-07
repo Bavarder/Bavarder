@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-01 01:51+0200\n"
+"POT-Creation-Date: 2023-05-06 17:03+0200\n"
 "PO-Revision-Date: 2023-05-03 12:23+0000\n"
 "Last-Translator: muznyo <codeberg.vqtek@simplelogin.com>\n"
 "Language-Team: Czech <https://translate.codeberg.org/projects/bavarder/"
@@ -21,20 +21,20 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in:3
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:6 data/ui/window.blp:6
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:4 data/ui/window.blp:6
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:5
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:13
 msgid "Chit-chat with an AI"
 msgstr "Chatovat s umělou inteligencí"
 
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:6
 msgid "0xMRTT"
 msgstr "0xMRTT"
 
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:15
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:18
 msgid "Screenshot of Main UI"
 msgstr "Snímek obrazovky hlavního uživatelského rozhraní"
 
@@ -82,7 +82,7 @@ msgstr "Poskytovatelé"
 msgid "Main Menu"
 msgstr "Hlavní menu"
 
-#: data/ui/window.blp:36 src/provider/base.py:43
+#: data/ui/window.blp:36 src/provider/base.py:40
 msgid "No network connection"
 msgstr "Žádné připojení k síti"
 
@@ -93,14 +93,6 @@ msgstr "Zpráva"
 #: data/ui/window.blp:84 data/ui/window.blp:198
 msgid "Copy to Clipboard"
 msgstr "Kopírovat do schránky"
-
-#: data/ui/window.blp:89
-msgid "Listen"
-msgstr "Poslech"
-
-#: data/ui/window.blp:96
-msgid "Listening"
-msgstr "Poslouchání"
 
 #: data/ui/window.blp:108
 msgid "Ask"
@@ -114,37 +106,47 @@ msgstr "Čekejte"
 msgid "Response"
 msgstr "Odpověď"
 
-#: data/ui/window.blp:179
-msgid "Speak"
-msgstr "Mluvit"
-
-#: data/ui/window.blp:186
-msgid "Speaking"
-msgstr "Mluvení"
-
 #: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
 msgstr "Klávesové zkratky"
 
 #: data/ui/window.blp:225
+#, fuzzy
+#| msgctxt "shortcut window"
+#| msgid "Quit"
+msgid "Quit"
+msgstr "Ukončit"
+
+#: data/ui/window.blp:230
 msgid "About Bavarder"
 msgstr "O Bavarder"
 
-#: src/main.py:156
-msgid "Special thanks to"
-msgstr "Zvláštní poděkování patří"
-
-#: src/provider/base.py:36
+#: src/provider/base.py:33
 msgid "No API key provided, you can provide one in settings"
 msgstr "API klíč nebyl přidán, můžete jej přidat v nastavení"
 
-#: src/provider/base.py:38
+#: src/provider/base.py:35
 msgid "Open settings"
 msgstr "Otevřít nastavení"
 
-#: src/provider/catgpt.py:7 src/provider/catgpt.py:54
+#: src/provider/catgpt.py:8 src/provider/catgpt.py:56
 msgid "Cat GPT"
 msgstr "Cat GPT"
+
+#~ msgid "Listen"
+#~ msgstr "Poslech"
+
+#~ msgid "Listening"
+#~ msgstr "Poslouchání"
+
+#~ msgid "Speak"
+#~ msgstr "Mluvit"
+
+#~ msgid "Speaking"
+#~ msgstr "Mluvení"
+
+#~ msgid "Special thanks to"
+#~ msgstr "Zvláštní poděkování patří"
 
 #~ msgid "Ready"
 #~ msgstr "Připraveno"

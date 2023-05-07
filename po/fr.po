@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-01 01:51+0200\n"
+"POT-Creation-Date: 2023-05-06 17:03+0200\n"
 "PO-Revision-Date: 2023-05-03 18:22+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
@@ -24,20 +24,20 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in:3
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:6 data/ui/window.blp:6
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:4 data/ui/window.blp:6
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:7
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:11
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:5
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:13
 msgid "Chit-chat with an AI"
 msgstr "Bavarder avec GPT"
 
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:8
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:6
 msgid "0xMRTT"
 msgstr "0xMRTT"
 
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:15
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:18
 msgid "Screenshot of Main UI"
 msgstr "Capture d’écran de l’interface principale"
 
@@ -85,7 +85,7 @@ msgstr "Fournisseurs"
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: data/ui/window.blp:36 src/provider/base.py:43
+#: data/ui/window.blp:36 src/provider/base.py:40
 msgid "No network connection"
 msgstr "Pas de connexion réseau"
 
@@ -96,14 +96,6 @@ msgstr "Message"
 #: data/ui/window.blp:84 data/ui/window.blp:198
 msgid "Copy to Clipboard"
 msgstr "Copier dans le presse-papiers"
-
-#: data/ui/window.blp:89
-msgid "Listen"
-msgstr "Écouter"
-
-#: data/ui/window.blp:96
-msgid "Listening"
-msgstr "En écoute"
 
 #: data/ui/window.blp:108
 msgid "Ask"
@@ -117,38 +109,48 @@ msgstr "Attendez"
 msgid "Response"
 msgstr "Réponse"
 
-#: data/ui/window.blp:179
-msgid "Speak"
-msgstr "Parler"
-
-#: data/ui/window.blp:186
-msgid "Speaking"
-msgstr "En train de parler"
-
 #: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
 msgstr "Raccourcis clavier"
 
 #: data/ui/window.blp:225
+#, fuzzy
+#| msgctxt "shortcut window"
+#| msgid "Quit"
+msgid "Quit"
+msgstr "Quitter"
+
+#: data/ui/window.blp:230
 msgid "About Bavarder"
 msgstr "À propos de Bavarder"
 
-#: src/main.py:156
-msgid "Special thanks to"
-msgstr "Remerciements spéciaux à"
-
-#: src/provider/base.py:36
+#: src/provider/base.py:33
 msgid "No API key provided, you can provide one in settings"
 msgstr ""
 "Pas de clé d’API fournie, vous pouvez en ajouter une dans les paramètres"
 
-#: src/provider/base.py:38
+#: src/provider/base.py:35
 msgid "Open settings"
 msgstr "Ouvrir les paramètres"
 
-#: src/provider/catgpt.py:7 src/provider/catgpt.py:54
+#: src/provider/catgpt.py:8 src/provider/catgpt.py:56
 msgid "Cat GPT"
 msgstr "Chat GPT"
+
+#~ msgid "Listen"
+#~ msgstr "Écouter"
+
+#~ msgid "Listening"
+#~ msgstr "En écoute"
+
+#~ msgid "Speak"
+#~ msgstr "Parler"
+
+#~ msgid "Speaking"
+#~ msgstr "En train de parler"
+
+#~ msgid "Special thanks to"
+#~ msgstr "Remerciements spéciaux à"
 
 #~ msgid "Ready"
 #~ msgstr "Prêt"
