@@ -51,12 +51,12 @@ class BavarderApplication(Adw.Application):
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
         self.create_action("quit", self.on_quit, ["<primary>q"])
-        self.create_action("about", self.on_about_action, ["<primary>a"])
+        self.create_action("about", self.on_about_action)
         self.create_action("preferences", self.on_preferences_action, ["<primary>comma"])
         self.create_action("copy_prompt", self.on_copy_prompt_action)
-        self.create_action("copy_bot", self.on_copy_bot_action, ["<primary>c"])
+        self.create_action("copy_bot", self.on_copy_bot_action, ["<primary<shift>>c"])
         self.create_action("ask", self.on_ask_action, ["<primary>Return"])
-        self.create_action("clear", self.on_clear_action, ["<primary>BackSpace"])
+        self.create_action("clear", self.on_clear_action, ["<primary><shift>BackSpace"])
         # self.create_action("speak", self.on_speak_action, ["<primary>S"])
         # self.create_action("listen", self.on_listen_action, ["<primary>L"])
 

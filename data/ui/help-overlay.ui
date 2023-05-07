@@ -29,12 +29,6 @@
             </child>
             <child>
               <object class="GtkShortcutsShortcut">
-                <property name="title" translatable="yes" context="shortcut window">About</property>
-                <property name="action-name">app.about</property>
-              </object>
-            </child>
-            <child>
-              <object class="GtkShortcutsShortcut">
                 <property name="title" translatable="yes" context="shortcut window">Preferences</property>
                 <property name="action-name">app.preferences</property>
               </object>
