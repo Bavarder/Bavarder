@@ -69,11 +69,11 @@ class BavarderProvider:
         self.expander = Adw.ExpanderRow()
         self.expander.props.title = self.name
 
-        about_button = Gtk.Button()
-        about_button.set_label("About")
-        about_button.connect("clicked", self.about)
-        about_button.set_valign(Gtk.Align.CENTER)
-        self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
+        # about_button = Gtk.Button()
+        # about_button.set_label("About")
+        # about_button.connect("clicked", self.about)
+        # about_button.set_valign(Gtk.Align.CENTER)
+        # self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
 
         enabled = Gtk.Switch()
         enabled.set_active(self.slug in self.app.enabled_providers)
