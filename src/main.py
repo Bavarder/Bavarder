@@ -54,7 +54,7 @@ class BavarderApplication(Adw.Application):
         self.create_action("about", self.on_about_action)
         self.create_action("preferences", self.on_preferences_action, ["<primary>comma"])
         self.create_action("copy_prompt", self.on_copy_prompt_action)
-        self.create_action("copy_bot", self.on_copy_bot_action, ["<primary<shift>>c"])
+        self.create_action("copy_bot", self.on_copy_bot_action, ["<primary><shift>c"])
         self.create_action("ask", self.on_ask_action, ["<primary>Return"])
         self.create_action("clear", self.on_clear_action, ["<primary><shift>BackSpace"])
         # self.create_action("speak", self.on_speak_action, ["<primary>S"])
