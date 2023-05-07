@@ -17,7 +17,7 @@
 			<default>false</default>
 		</key>
 		<key name="enabled-providers" type="as">
-			<default>["baichat",  "catgpt", "huggingchat", "openaigpt35turbo", "openaigpt4"]</default>
+			<default>["baichat",  "catgpt", "huggingchat", "openaigpt35turbo"]</default>
 		</key>
 		<key name="latest-provider" type="s">
 			<default>'huggingchat'</default>
