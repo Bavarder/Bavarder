@@ -52,7 +52,7 @@ class BavarderApplication(Adw.Application):
         )
         self.create_action("quit", self.on_quit, ["<primary>q"])
         self.create_action("about", self.on_about_action, ["<primary>a"])
-        self.create_action("preferences", self.on_preferences_action, ["<primary>,"])
+        self.create_action("preferences", self.on_preferences_action, ["<primary>comma"])
         self.create_action("copy_prompt", self.on_copy_prompt_action)
         self.create_action("copy_bot", self.on_copy_bot_action, ["<primary>c"])
         self.create_action("ask", self.on_ask_action, ["<primary>Return"])
@@ -146,11 +146,12 @@ class BavarderApplication(Adw.Application):
                 self.provider_selector_model.append(PROVIDERS[provider].name)
             except KeyError:
                 print("Provider", provider, "not found")
-                
-            try:
-                _ = self.providers[i] # doesn't re load if already loaded
-            except KeyError:
-                self.providers[i] = PROVIDERS[provider](self.win, self)
+                continue
+            else:
+                try:
+                    _ = self.providers[i] # doesn't re load if already loaded
+                except KeyError:
+                    self.providers[i] = PROVIDERS[provider](self.win, self)
 
         self.win.provider_selector.set_model(self.provider_selector_model)
         self.win.provider_selector.connect("notify", self.on_provider_selector_notify)
