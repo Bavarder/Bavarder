@@ -267,34 +267,34 @@ Providers: {self.enabled_providers}
     def on_ask_action(self, widget, _):
         """Callback for the app.ask action."""
 
-        self.win.spinner.start()
-        self.win.ask_button.set_visible(False)
-        self.win.wait_button.set_visible(True)
-        self.prompt = self.win.prompt_text_view.get_buffer().props.text
+        self.prompt = self.win.prompt_text_view.get_buffer().props.text.strip()
 
-        if self.prompt == "":
+        if self.prompt == "" or self.prompt is None: # empty prompt 
             return
+        else:
+            self.win.spinner.start()
+            self.win.ask_button.set_visible(False)
+            self.win.wait_button.set_visible(True)
+            self.provider = self.win.provider_selector.props.selected
 
-        self.provider = self.win.provider_selector.props.selected
+            def thread_run():
+                try:
+                    response = self.ask(self.prompt)
+                except GLib.Error as e:
+                    response = e.message
+                GLib.idle_add(cleanup, response)
 
-        def thread_run():
-            try:
-                response = self.ask(self.prompt)
-            except GLib.Error as e:
-                response = e.message
-            GLib.idle_add(cleanup, response)
+            def cleanup(response):
+                self.win.spinner.stop()
+                self.win.ask_button.set_visible(True)
+                self.win.wait_button.set_visible(False)
+                GLib.idle_add(self.update_response, response)
+                self.t.join()
+                if self.clear_after_send:
+                    self.win.prompt_text_view.get_buffer().set_text("")
 
-        def cleanup(response):
-            self.win.spinner.stop()
-            self.win.ask_button.set_visible(True)
-            self.win.wait_button.set_visible(False)
-            GLib.idle_add(self.update_response, response)
-            self.t.join()
-            if self.clear_after_send:
-                self.win.prompt_text_view.get_buffer().set_text("")
-
-        self.t = threading.Thread(target=thread_run)
-        self.t.start()
+            self.t = threading.Thread(target=thread_run)
+            self.t.start()
 
     # def on_speak_action(self, widget, _):
     #     """Callback for the app.speak action."""
