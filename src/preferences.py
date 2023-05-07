@@ -1,5 +1,6 @@
 from gi.repository import Gtk, Adw
 
+from .provider import PROVIDERS
 
 @Gtk.Template(resource_path="/io/github/Bavarder/Bavarder/ui/preferences.ui")
 class Preferences(Adw.PreferencesWindow):
@@ -32,8 +33,18 @@ class Preferences(Adw.PreferencesWindow):
             self.settings.set_boolean("clear-after-send", False)
 
     def setup_providers(self):
-        for provider in self.app.providers.values():
+        # for provider in self.app.providers.values():
+        #     try:
+        #         self.provider_group.add(provider.preferences(self))
+        #     except TypeError:  # no prefs
+        #         pass
+        # else:
+        #     row = Adw.ActionRow()
+        #     row.props.title = "No providers available"
+        #     self.provider_group.add(row)
+        for provider in PROVIDERS.values():
             try:
-                self.provider_group.add(provider.preferences(self))
-            except TypeError:  # no prefs
+                self.provider_group.add(provider(self.app.win, self.app).preferences(self))
+            except TypeError:
                 pass
+        
