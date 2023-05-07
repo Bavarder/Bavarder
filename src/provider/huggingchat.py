@@ -21,6 +21,11 @@ class HuggingChatProvider(BavarderProvider):
         except socket.gaierror:
             self.no_connection()
             return ""
+        except Exception as e:
+            self.win.banner.props.title = str(e)
+            self.win.banner.props.button_label = ""
+            self.win.banner.set_revealed(True)
+            return ""
         else:
             self.win.banner.set_revealed(False)
             r = ""
