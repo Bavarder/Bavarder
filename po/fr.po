@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-07 23:01+0200\n"
-"PO-Revision-Date: 2023-05-07 07:43+0000\n"
+"PO-Revision-Date: 2023-05-07 23:15+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -62,18 +62,14 @@ msgid "Quit"
 msgstr "Quitter"
 
 #: data/ui/help-overlay.ui:32
-#, fuzzy
-#| msgid "Preferences"
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Préférences"
 
 #: data/ui/help-overlay.ui:38
-#, fuzzy
-#| msgid "Response"
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr "Réponse"
+msgstr "Copier la Réponse"
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
