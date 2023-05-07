@@ -34,14 +34,20 @@ class AlpacaLoRAProvider(BavarderProvider):
             return ""
         else:
             self.win.banner.set_revealed(False)
-            r = response["data"][0]
-            GLib.idle_add(self.update_response, r)
-            return r
+            if "error" in response:
+                self.win.banner.props.title = response["error"]
+                self.win.banner.props.button_label = ""
+                self.win.banner.set_revealed(True)
+                return ""
+            else:
+                r = response["data"][0]
+                GLib.idle_add(self.update_response, r)
+                return r
 
     @property
     def require_api_key(self):
         return False
-        
+
     def save(self):
         return {}
 
