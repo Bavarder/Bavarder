@@ -8,7 +8,7 @@ from gi.repository import Gtk, Adw, GLib
 
 class HuggingFaceDialoGPTLargeProvider(BaseHFProvider):
     name = "DialoGPT"
-    slug = "dialogpt"
+    slug = "hfdialogpt"
     model = "microsoft/DialoGPT-large"
 
     @property
