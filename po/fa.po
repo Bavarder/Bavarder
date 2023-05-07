@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 17:03+0200\n"
 "PO-Revision-Date: 2023-05-07 09:01+0000\n"
-"Last-Translator: kouroshtaf <kouroshtaf@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Persian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fa/>\n"
 "Language: fa\n"
@@ -41,7 +41,7 @@ msgstr "تصویر نمای اصلی"
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "عمومی"
 
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
@@ -56,11 +56,11 @@ msgstr "بپرس"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "خروج"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:215
 msgid "Preferences"
-msgstr ""
+msgstr "پیش‌فرض‌ها"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
@@ -88,7 +88,7 @@ msgstr "ارتباط شبکه برقرار نیست"
 
 #: data/ui/window.blp:51
 msgid "Message"
-msgstr ""
+msgstr "پیام"
 
 #: data/ui/window.blp:84 data/ui/window.blp:198
 msgid "Copy to Clipboard"
@@ -112,7 +112,7 @@ msgstr ""
 
 #: data/ui/window.blp:225
 msgid "Quit"
-msgstr ""
+msgstr "خروج"
 
 #: data/ui/window.blp:230
 msgid "About Bavarder"
