@@ -8,7 +8,7 @@ import json
 class BavarderProvider:
     name = None
     slug = None
-    version = "0.1.0"
+    version = "0.1.7"
     developer_name = "0xMRTT"
     developers = ["0xMRTT https://github.com/0xMRTT"]
     license_type = Gtk.License.GPL_3_0
