@@ -289,9 +289,9 @@ Providers: {self.enabled_providers}
             self.win.ask_button.set_visible(True)
             self.win.wait_button.set_visible(False)
             GLib.idle_add(self.update_response, response)
-            if self.clear_after_send:
-                GLib.idle_add(self.update_response, "")
             self.t.join()
+            if self.clear_after_send:
+                self.win.prompt_text_view.get_buffer().set_text("")
 
         self.t = threading.Thread(target=thread_run)
         self.t.start()

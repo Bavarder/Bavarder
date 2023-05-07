@@ -15,22 +15,21 @@ class Preferences(Adw.PreferencesWindow):
         self.app = application
         self.settings = application.settings
 
-        clear_after_send = self.settings.get_boolean("clear-after-send")
-        self.clear_after_send_switch.props.state = clear_after_send
+        self.clear_after_send_switch.set_active(self.app.clear_after_send)
         self.clear_after_send_switch.connect(
-            "state-set", self.on_clear_after_send_switch_toggled
+            "notify::active", self.on_clear_after_send_switch_toggled
         )
 
         self.setup_providers()
 
-    def on_clear_after_send_switch_toggled(self, *args):
+    def on_clear_after_send_switch_toggled(self, widget, *args):
         """Callback for the clear_after_send_switch toggled event."""
-        state = self.clear_after_send_switch.props.state
-
-        if state:
+        if widget.get_active():
             self.settings.set_boolean("clear-after-send", True)
+            self.app.clear_after_send = True
         else:
             self.settings.set_boolean("clear-after-send", False)
+            self.app.clear_after_send = False
 
     def setup_providers(self):
         # for provider in self.app.providers.values():
