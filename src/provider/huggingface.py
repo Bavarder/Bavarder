@@ -11,7 +11,6 @@ class BaseHFProvider(BavarderProvider):
     name = None
     slug = None
     model = None
-    authorization = True
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
@@ -21,10 +20,9 @@ class BaseHFProvider(BavarderProvider):
         try:
             payload = json.dumps({"inputs": prompt})
             headers = {"Content-Type": "application/json"}
-            if self.authorization:
+            if self.require_api_key:
                 headers["Authorization"] = f"Bearer {self.api_key}"
             url = f"https://api-inference.huggingface.co/models/{self.model}"
-            print(url)
             response = requests.request("POST", url, headers=headers, data=payload)
             if response.status_code == 403:
                 self.no_api_key()
@@ -34,7 +32,6 @@ class BaseHFProvider(BavarderProvider):
                 self.win.banner.props.button_label = ""
                 self.win.banner.set_revealed(True)
                 return ""
-            print(response)
             response = response.json()[0]["generated_text"]
 
         # except NoApikey:
