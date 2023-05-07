@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-06 17:03+0200\n"
+"POT-Creation-Date: 2023-05-07 23:01+0200\n"
 "PO-Revision-Date: 2023-05-07 09:49+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
@@ -60,6 +60,25 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Wyjdź"
 
+#: data/ui/help-overlay.ui:32
+#, fuzzy
+#| msgid "Preferences"
+msgctxt "shortcut window"
+msgid "Preferences"
+msgstr "Preferencje"
+
+#: data/ui/help-overlay.ui:38
+#, fuzzy
+#| msgid "Response"
+msgctxt "shortcut window"
+msgid "Copy response"
+msgstr "Odpowiedź"
+
+#: data/ui/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Clear"
+msgstr ""
+
 #: data/ui/preferences.blp:5 data/ui/window.blp:215
 msgid "Preferences"
 msgstr "Preferencje"
@@ -84,7 +103,7 @@ msgstr "Dostawcy"
 msgid "Main Menu"
 msgstr "Główne menu"
 
-#: data/ui/window.blp:36 src/provider/base.py:40
+#: data/ui/window.blp:36 src/provider/base.py:47
 msgid "No network connection"
 msgstr "Brak połączenia z siecią"
 
@@ -113,24 +132,23 @@ msgid "Keyboard Shortcuts"
 msgstr "Skróty klawiszowe"
 
 #: data/ui/window.blp:225
-msgid "Quit"
-msgstr "Wyjdź"
-
-#: data/ui/window.blp:230
 msgid "About Bavarder"
 msgstr "O Bavarderze"
 
-#: src/provider/base.py:33
+#: src/provider/base.py:40
 msgid "No API key provided, you can provide one in settings"
 msgstr "Nie podano klucza API, dodaj go w ustawieniach"
 
-#: src/provider/base.py:35
+#: src/provider/base.py:42
 msgid "Open settings"
 msgstr "Otwórz ustawienia"
 
-#: src/provider/catgpt.py:8 src/provider/catgpt.py:56
+#: src/provider/catgpt.py:9
 msgid "Cat GPT"
 msgstr "Cat GPT"
+
+#~ msgid "Quit"
+#~ msgstr "Wyjdź"
 
 #~ msgid "Listen"
 #~ msgstr "Słuchaj"

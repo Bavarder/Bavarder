@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-06 17:03+0200\n"
+"POT-Creation-Date: 2023-05-07 23:01+0200\n"
 "PO-Revision-Date: 2023-05-03 19:17+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
@@ -59,6 +59,23 @@ msgctxt "shortcut window"
 msgid "Quit"
 msgstr "Kilépés"
 
+#: data/ui/help-overlay.ui:32
+#, fuzzy
+#| msgid "Preferences"
+msgctxt "shortcut window"
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: data/ui/help-overlay.ui:38
+msgctxt "shortcut window"
+msgid "Copy response"
+msgstr ""
+
+#: data/ui/help-overlay.ui:44
+msgctxt "shortcut window"
+msgid "Clear"
+msgstr ""
+
 #: data/ui/preferences.blp:5 data/ui/window.blp:215
 msgid "Preferences"
 msgstr "Beállítások"
@@ -83,7 +100,7 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: data/ui/window.blp:36 src/provider/base.py:40
+#: data/ui/window.blp:36 src/provider/base.py:47
 msgid "No network connection"
 msgstr "Nincs hálózati kapcsolat"
 
@@ -112,24 +129,23 @@ msgid "Keyboard Shortcuts"
 msgstr ""
 
 #: data/ui/window.blp:225
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Quit"
-msgid "Quit"
-msgstr "Kilépés"
-
-#: data/ui/window.blp:230
 msgid "About Bavarder"
 msgstr ""
 
-#: src/provider/base.py:33
+#: src/provider/base.py:40
 msgid "No API key provided, you can provide one in settings"
 msgstr ""
 
-#: src/provider/base.py:35
+#: src/provider/base.py:42
 msgid "Open settings"
 msgstr ""
 
-#: src/provider/catgpt.py:8 src/provider/catgpt.py:56
+#: src/provider/catgpt.py:9
 msgid "Cat GPT"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "shortcut window"
+#~| msgid "Quit"
+#~ msgid "Quit"
+#~ msgstr "Kilépés"
