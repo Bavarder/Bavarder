@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 17:03+0200\n"
-"PO-Revision-Date: 2023-05-03 18:52+0000\n"
+"PO-Revision-Date: 2023-05-07 09:49+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
@@ -114,11 +114,8 @@ msgid "Keyboard Shortcuts"
 msgstr "Atajos de Teclado"
 
 #: data/ui/window.blp:225
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Quit"
 msgid "Quit"
-msgstr "Salida"
+msgstr "Salir"
 
 #: data/ui/window.blp:230
 msgid "About Bavarder"
