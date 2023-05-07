@@ -109,6 +109,22 @@ class BavarderApplication(Adw.Application):
 
         self.win.connect("close-request", self.quitting)
 
+        self.load_dropdown()
+
+        self.load()
+
+
+        print(self.latest_provider)
+        for k, p in self.providers.items():
+            if p.slug == self.latest_provider:
+                print("Setting selected provider to", k)
+                self.win.provider_selector.set_selected(k)
+                break
+
+        self.win.prompt_text_view.grab_focus()
+
+    def load_dropdown(self):
+
         self.provider_selector_model = Gtk.StringList()
         self.providers = {}
 
@@ -124,19 +140,9 @@ class BavarderApplication(Adw.Application):
 
             self.providers[i] = PROVIDERS[provider](self.win, self)
 
-        self.load()
-
         self.win.provider_selector.set_model(self.provider_selector_model)
         self.win.provider_selector.connect("notify", self.on_provider_selector_notify)
-
-        print(self.latest_provider)
-        for k, p in self.providers.items():
-            if p.slug == self.latest_provider:
-                print("Setting selected provider to", k)
-                self.win.provider_selector.set_selected(k)
-                break
-
-        self.win.prompt_text_view.grab_focus()
+        
 
     def load(self):
         for p in self.providers.values():
