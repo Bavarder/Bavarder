@@ -5,13 +5,14 @@
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # phaerrax <davide.ferracin@protonmail.com>, 2023.
+# elgandoz <gandi.marco@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 17:03+0200\n"
-"PO-Revision-Date: 2023-05-06 10:02+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-07 09:45+0000\n"
+"Last-Translator: elgandoz <gandi.marco@gmail.com>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/it/>\n"
 "Language: it\n"
@@ -69,11 +70,11 @@ msgstr "Prompt"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Svuota il prompt dopo l'invio"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "Il prompt verrà svuotato dopo l'invio"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
