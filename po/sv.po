@@ -5,13 +5,14 @@
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # Morgan Antonsson <morgan.antonsson@gmail.com>, 2023.
+# 0xMRTT <0xmrtt@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-06 17:03+0200\n"
-"PO-Revision-Date: 2023-05-03 18:22+0000\n"
-"Last-Translator: Morgan Antonsson <morgan.antonsson@gmail.com>\n"
+"PO-Revision-Date: 2023-05-07 09:49+0000\n"
+"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
 "Language: sv\n"
@@ -112,9 +113,6 @@ msgid "Keyboard Shortcuts"
 msgstr "Tangentbordsgenvägar"
 
 #: data/ui/window.blp:225
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Quit"
 msgid "Quit"
 msgstr "Avsluta"
 
