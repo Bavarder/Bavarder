@@ -14,6 +14,7 @@ providers_sources = [
   'hfgpt2.py',
   'hfopenassistantsft1pythia12b.py',
   'huggingchat.py',
+  'huggingchatbase.py',
   'huggingface.py',
   'openai.py',
   'openaigpt4.py',
