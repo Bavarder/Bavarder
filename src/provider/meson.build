@@ -22,6 +22,7 @@ providers_sources = [
   'openaigpt4.py',
   'openaigpt35turbo.py',
   'openaitextdavinci003.py',
+  'starcoder.py',
 ]
 
 PY_INSTALLDIR.install_sources(providers_sources, subdir: providers_dir)

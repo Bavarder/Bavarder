@@ -13,6 +13,7 @@ from .hfdialogpt import HuggingFaceDialoGPTLargeProvider
 from .bard import BardProvider
 from .hfgpt2large import HuggingFaceGPT2LargeProvider
 from .hfgpt2xl import HuggingFaceGPT2XLProvider
+from .starcoder import StarCoderProvider
 
 PROVIDERS = {
     "alpacalora": AlpacaLoRAProvider,
@@ -30,4 +31,5 @@ PROVIDERS = {
     "openaigpt35turbo": OpenAIGPT35TurboProvider,
     "openaigpt4": OpenAIGPT4Provider,
     "openaitextdavinci003": OpenAITextDavinci003,
+    "starcoder": StarCoderProvider,
 }
