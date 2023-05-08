@@ -17,7 +17,7 @@ from .hfgpt2xl import HuggingFaceGPT2XLProvider
 PROVIDERS = {
     "alpacalora": AlpacaLoRAProvider,
     "baichat": BAIChatProvider,
-    #"bard": BardProvider, # Disabled because we need more documentation on how to use it
+    # "bard": BardProvider, # Disabled because we need more documentation on how to use it
     "catgpt": CatGPTProvider,
     "hfdialogpt": HuggingFaceDialoGPTLargeProvider,
     "hfgoogleflant5xxl": HuggingFaceGoogleFlanT5XXLProvider,

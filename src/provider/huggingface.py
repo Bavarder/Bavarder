@@ -63,7 +63,6 @@ class BaseHFProvider(BavarderProvider):
             # about_button.set_valign(Gtk.Align.CENTER)
             # self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
 
-
             enabled = Gtk.Switch()
             enabled.set_active(self.slug in self.app.enabled_providers)
             enabled.connect("notify::active", self.on_enabled)

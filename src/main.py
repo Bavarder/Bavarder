@@ -52,7 +52,9 @@ class BavarderApplication(Adw.Application):
         )
         self.create_action("quit", self.on_quit, ["<primary>q"])
         self.create_action("about", self.on_about_action)
-        self.create_action("preferences", self.on_preferences_action, ["<primary>comma"])
+        self.create_action(
+            "preferences", self.on_preferences_action, ["<primary>comma"]
+        )
         self.create_action("copy_prompt", self.on_copy_prompt_action)
         self.create_action("copy_bot", self.on_copy_bot_action, ["<primary><shift>c"])
         self.create_action("ask", self.on_ask_action, ["<primary>Return"])
@@ -119,7 +121,6 @@ class BavarderApplication(Adw.Application):
 
         self.load()
 
-
         print(self.latest_provider)
         for k, p in self.providers.items():
             if p.slug == self.latest_provider:
@@ -150,13 +151,12 @@ class BavarderApplication(Adw.Application):
                 continue
             else:
                 try:
-                    _ = self.providers[i] # doesn't re load if already loaded
+                    _ = self.providers[i]  # doesn't re load if already loaded
                 except KeyError:
                     self.providers[i] = PROVIDERS[provider](self.win, self)
 
         self.win.provider_selector.set_model(self.provider_selector_model)
         self.win.provider_selector.connect("notify", self.on_provider_selector_notify)
-        
 
     def load(self):
         for p in self.providers.values():
@@ -269,7 +269,7 @@ Providers: {self.enabled_providers}
 
         self.prompt = self.win.prompt_text_view.get_buffer().props.text.strip()
 
-        if self.prompt == "" or self.prompt is None: # empty prompt 
+        if self.prompt == "" or self.prompt is None:  # empty prompt
             return
         else:
             self.win.spinner.start()

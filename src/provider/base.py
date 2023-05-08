@@ -57,9 +57,7 @@ class BavarderProvider:
         popover = Gtk.Popover()
         vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
         title = Gtk.Label()
-        title.set_markup(
-            f"<b>{self.name}</b>\n<small>Version {self.version}</small>"
-        )
+        title.set_markup(f"<b>{self.name}</b>\n<small>Version {self.version}</small>")
         title.set_halign(Gtk.Align.CENTER)
         title.set_valign(Gtk.Align.CENTER)
         vbox.append(title)
@@ -89,7 +87,7 @@ class BavarderProvider:
         enabled.connect("notify::active", self.on_enabled)
         enabled.set_valign(Gtk.Align.CENTER)
         return enabled
-        
+
     def no_preferences(self, win):
         self.pref_win = win
 

@@ -2,6 +2,7 @@ from gi.repository import Gtk, Adw
 
 from .provider import PROVIDERS
 
+
 @Gtk.Template(resource_path="/io/github/Bavarder/Bavarder/ui/preferences.ui")
 class Preferences(Adw.PreferencesWindow):
     __gtype_name__ = "Preferences"
@@ -43,7 +44,8 @@ class Preferences(Adw.PreferencesWindow):
         #     self.provider_group.add(row)
         for provider in PROVIDERS.values():
             try:
-                self.provider_group.add(provider(self.app.win, self.app).preferences(self))
+                self.provider_group.add(
+                    provider(self.app.win, self.app).preferences(self)
+                )
             except TypeError:
                 pass
-        
