@@ -12,6 +12,7 @@ class BaseOpenAIProvider(BavarderProvider):
     model = None
     version = "0.1.0"
     api_key_title = "API Key"
+    url = "https://bavarder.codeberg.page/docs/providers/openai.html"
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
@@ -79,6 +80,7 @@ class BaseOpenAIProvider(BavarderProvider):
         self.api_row.props.text = openai.api_key or ""
         self.api_row.props.title = self.api_key_title
         self.api_row.set_show_apply_button(True)
+        self.api_row.add_suffix(self.how_to_get_a_token())
         self.expander.add_row(self.api_row)
 
         return self.expander

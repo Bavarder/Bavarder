@@ -1,6 +1,6 @@
 from gettext import gettext as _
 
-from gi.repository import Gtk, Adw
+from gi.repository import Gtk, Adw, GLib
 
 import json
 
@@ -73,6 +73,25 @@ class BavarderProvider:
             description.set_halign(Gtk.Align.CENTER)
             description.set_valign(Gtk.Align.CENTER)
             vbox.append(description)
+        popover.set_child(vbox)
+
+        about_button = Gtk.MenuButton()
+        about_button.set_icon_name("info-symbolic")
+        about_button.set_valign(Gtk.Align.CENTER)
+        about_button.set_popover(popover)
+        return about_button
+
+    def open_documentation(self, *args, **kwargs):
+        GLib.spawn_command_line_async(
+            f"xdg-open {self.url}"
+        )
+    
+    def how_to_get_a_token(self):
+        popover = Gtk.Popover()
+        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+        button = Gtk.Button(label="How to get a token?")
+        button.connect("clicked", self.open_documentation)
+        vbox.append(button)
         popover.set_child(vbox)
 
         about_button = Gtk.MenuButton()
