@@ -11,6 +11,7 @@ class BaseHFProvider(BavarderProvider):
     name = None
     slug = None
     model = None
+    url = "https://bavarder.codeberg.page/docs/providers/huggingface.html"
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
@@ -57,23 +58,14 @@ class BaseHFProvider(BavarderProvider):
             self.expander = Adw.ExpanderRow()
             self.expander.props.title = self.name
 
-            # about_button = Gtk.Button()
-            # about_button.set_label("About")
-            # about_button.connect("clicked", self.about)
-            # about_button.set_valign(Gtk.Align.CENTER)
-            # self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
-
-            enabled = Gtk.Switch()
-            enabled.set_active(self.slug in self.app.enabled_providers)
-            enabled.connect("notify::active", self.on_enabled)
-            enabled.set_valign(Gtk.Align.CENTER)
-
-            self.expander.add_action(enabled)
+            self.expander.add_action(self.about())
+            self.expander.add_action(self.enable_switch())
 
             self.api_row = Adw.PasswordEntryRow()
             self.api_row.connect("apply", self.on_apply)
             self.api_row.props.title = "API Key"
             self.api_row.props.text = self.api_key or ""
+            self.api_row.add_suffix(self.how_to_get_a_token())
             self.api_row.set_show_apply_button(True)
             self.expander.add_row(self.api_row)
 
