@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-07 23:01+0200\n"
-"PO-Revision-Date: 2023-05-07 23:15+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-08 07:53+0000\n"
+"Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -69,7 +69,7 @@ msgstr "Préférences"
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr "Copier la Réponse"
+msgstr "Copier la réponse"
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
@@ -98,7 +98,7 @@ msgstr "Fournisseurs"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
-msgstr "Menu Principal"
+msgstr "Menu principal"
 
 #: data/ui/window.blp:36 src/provider/base.py:47
 msgid "No network connection"
@@ -143,7 +143,7 @@ msgstr "Ouvrir les paramètres"
 
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
-msgstr "Chat GPT"
+msgstr "Cat GPT"
 
 #~ msgid "Quit"
 #~ msgstr "Quitter"
