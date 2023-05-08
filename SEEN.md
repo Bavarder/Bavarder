@@ -41,3 +41,4 @@
 - https://linuxphoneapps.org/apps/io.github.bavarder.bavarder/
 - https://www.linuxquestions.org/questions/showthread.php?s=7c645a66bd3800801946c6f238e2ee25&p=6429159#post6429159
 - http://lxer.com/module/newswire/view/329486/index.html
+- https://www.prime-wow.com/?p=1136455
