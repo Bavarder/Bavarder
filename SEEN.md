@@ -11,6 +11,8 @@
 - https://voyagerlive.org/voyager-chatgpt/
 - https://plus.diolinux.com.br/t/bavarder-um-aplicativo-de-chatgpt-para-linux/53155
 - https://mindaizer.com/chatgpt-et-linux-presentation-de-bavarder/
+- https://wiredgorilla.com/introducing-bavarder-a-user-friendly-linux-desktop-app-for-quick-chatgpt-interaction/
+- https://www.linuxconsultant.org/bavarder-is-a-chatgpt-app-for-linux-desktops/
 
 ## Youtube
 
@@ -22,6 +24,8 @@
 - https://bassam.social/notice/AVII4g9FPM0sD1bMWW
 - https://pleroma.destroyallmachines.net/notice/AVHg9tnvMACshmHJL6
 - https://floss.social/@omgubuntu/110304976747139717
+- https://mastodon.social/@geekland/110305211402821977
+- And more
 
 ## Twitter
 
@@ -29,6 +33,7 @@
 - https://twitter.com/linuxern00b/status/1653754427373936645
 - https://twitter.com/infoidevice/status/1653996236461023232
 - https://twitter.com/search?q=bavarder%20linux&src=typed_query&f=top
+- And more
 
 ## Misc
 
