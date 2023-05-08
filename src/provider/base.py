@@ -8,6 +8,8 @@ import json
 class BavarderProvider:
     name = None
     slug = None
+    description = ""
+    languages = ""
     version = "0.1.7"
     developer_name = "0xMRTT"
     developers = ["0xMRTT https://github.com/0xMRTT"]
@@ -52,35 +54,50 @@ class BavarderProvider:
         self.win.banner.set_revealed(False)
 
     def about(self, *args, **kwargs):
-        about = Adw.AboutWindow(
-            transient_for=self.pref_win,
-            application_name=self.name,
-            developer_name=self.developer_name,
-            developers=self.developers,
-            license_type=self.license_type,
-            version=self.version,
-            copyright=self.copyright,
+        popover = Gtk.Popover()
+        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
+        title = Gtk.Label()
+        title.set_markup(
+            f"<b>{self.name}</b>\n<small>Version {self.version}</small>"
         )
-        about.present()
+        title.set_halign(Gtk.Align.CENTER)
+        title.set_valign(Gtk.Align.CENTER)
+        vbox.append(title)
 
+        if self.description:
+            description = Gtk.Label()
+            if self.languages:
+                description.set_markup(
+                    f"<small>{self.description}</small>\n<small>Languages: {self.languages}</small>"
+                )
+            else:
+                description.set_markup(f"<small>{self.description}</small>")
+            description.set_halign(Gtk.Align.CENTER)
+            description.set_valign(Gtk.Align.CENTER)
+            vbox.append(description)
+        popover.set_child(vbox)
+
+        about_button = Gtk.MenuButton()
+        about_button.set_icon_name("info-symbolic")
+        about_button.set_valign(Gtk.Align.CENTER)
+        about_button.set_popover(popover)
+        return about_button
+
+    def enable_switch(self):
+        enabled = Gtk.Switch()
+        enabled.set_active(self.slug in self.app.enabled_providers)
+        enabled.connect("notify::active", self.on_enabled)
+        enabled.set_valign(Gtk.Align.CENTER)
+        return enabled
+        
     def no_preferences(self, win):
         self.pref_win = win
 
         self.expander = Adw.ExpanderRow()
         self.expander.props.title = self.name
 
-        # about_button = Gtk.Button()
-        # about_button.set_label("About")
-        # about_button.connect("clicked", self.about)
-        # about_button.set_valign(Gtk.Align.CENTER)
-        # self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
-
-        enabled = Gtk.Switch()
-        enabled.set_active(self.slug in self.app.enabled_providers)
-        enabled.connect("notify::active", self.on_enabled)
-        enabled.set_valign(Gtk.Align.CENTER)
-
-        self.expander.add_action(enabled)
+        self.expander.add_action(self.about())  # TODO: in Adw 1.4, use add_suffix
+        self.expander.add_action(self.enable_switch())
 
         self.no_pref_row = Adw.ActionRow()
         self.no_pref_row.props.title = "No preferences available"

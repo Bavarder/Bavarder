@@ -71,18 +71,8 @@ class BaseOpenAIProvider(BavarderProvider):
         self.expander = Adw.ExpanderRow()
         self.expander.props.title = self.name
 
-        # about_button = Gtk.Button()
-        # about_button.set_label("About")
-        # about_button.connect("clicked", self.about)
-        # about_button.set_valign(Gtk.Align.CENTER)
-        # self.expander.add_action(about_button)  # TODO: in Adw 1.4, use add_suffix
-
-        enabled = Gtk.Switch()
-        enabled.set_active(self.slug in self.app.enabled_providers)
-        enabled.connect("notify::active", self.on_enabled)
-        enabled.set_valign(Gtk.Align.CENTER)
-
-        self.expander.add_action(enabled)
+        self.expander.add_action(self.about())  # TODO: in Adw 1.4, use add_suffix
+        self.expander.add_action(self.enable_switch())
 
         self.api_row = Adw.PasswordEntryRow()
         self.api_row.connect("apply", self.on_apply)
