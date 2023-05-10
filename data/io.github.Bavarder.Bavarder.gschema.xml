@@ -25,5 +25,8 @@
 		<key name="providers-data" type="a{ss}">
 			<default>{}</default>
 		</key>
+		<key name="use-text-view" type="b">
+			<default>false</default>
+		</key>
 	</schema>
 </schemalist>

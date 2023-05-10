@@ -19,6 +19,15 @@ template Preferences : Adw.PreferencesWindow {
           valign: center;
         }
       }
+
+      Adw.ActionRow {
+        title: _("Use text view");
+        subtitle: _("If the text view is used, you will lose formatting");
+        activatable-widget: use_text_view_switch;
+        Gtk.Switch use_text_view_switch {
+          valign: center;
+        }
+      }
     }
 
     Adw.PreferencesGroup provider_group {

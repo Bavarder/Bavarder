@@ -9,6 +9,7 @@ class Preferences(Adw.PreferencesWindow):
 
     clear_after_send_switch = Gtk.Template.Child()
     provider_group = Gtk.Template.Child()
+    use_text_view_switch = Gtk.Template.Child()
 
     def __init__(self, application, **kwargs):
         super().__init__(**kwargs)
@@ -21,6 +22,11 @@ class Preferences(Adw.PreferencesWindow):
             "notify::active", self.on_clear_after_send_switch_toggled
         )
 
+        self.use_text_view_switch.set_active(self.app.use_text_view)
+        self.use_text_view_switch.connect(
+            "notify::active", self.on_use_text_view_switch_toggled
+        )
+
         self.setup_providers()
 
     def on_clear_after_send_switch_toggled(self, widget, *args):
@@ -31,6 +37,15 @@ class Preferences(Adw.PreferencesWindow):
         else:
             self.settings.set_boolean("clear-after-send", False)
             self.app.clear_after_send = False
+
+    def on_use_text_view_switch_toggled(self, widget, *args):
+        """Callback for the use_text_view_switch toggled event."""
+        if widget.get_active():
+            self.settings.set_boolean("use-text-view", True)
+            self.app.use_text_view = True
+        else:
+            self.settings.set_boolean("use-text-view", False)
+            self.app.use_text_view = False
 
     def setup_providers(self):
         # for provider in self.app.providers.values():
