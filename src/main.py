@@ -319,8 +319,6 @@ Providers: {self.enabled_providers}
                 self.win.response_stack.add_child(self.web_view)
                 self.win.response_stack.set_visible_child(self.web_view)
             
-
-            print(html)
             if self.web_view.is_loading():
                 self.web_view_pending_html = html
             else:
@@ -936,16 +934,16 @@ Providers: {self.enabled_providers}
                         }
                     }"""
         CUSTOM_STYLE = """
-            --text-color: {view_fg_color};
-            --background-color: {view_fg_color};
+            --text-color: {card_fg_color};
+            --background-color: {card_bg_color};
             --alt-background-color: {view_bg_color};
             --link-color: {accent_fg_color};
             --blockquote-text-color: {card_fg_color};
             --blockquote-border-color: {card_bg_color};
-            --header-border-color: #e1e2e4;
-            --hr-background-color: #d8dadd;
-            --table-tr-border-color: #bdc1c6;
-            --table-td-border-color: #d6d8da;
+            --header-border-color: {headerbar_border_color};
+            --hr-background-color: {headerbar_bg_color};
+            --table-tr-border-color: {headerbar_border_color};
+            --table-td-border-color: {headerbar_border_color};
             --kbd-text-color: #4e585e;
             --kbd-background-color: #f1f1f1;
             --kbd-border-color: #bdc1c6;
@@ -954,7 +952,6 @@ Providers: {self.enabled_providers}
 
         if os.path.exists(os.path.expanduser("~/.config/gtk-4.0/gtk.css")):
             variables, palette, css = self.parse_css(os.path.expanduser("~/.config/gtk-4.0/gtk.css"))
-            print(variables, palette, css)
             theme_css = ":root {\n" + CUSTOM_STYLE.format(**variables) + " \n}\n" + css
         else:
             theme_css = ADWAITA_STYLE
