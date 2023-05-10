@@ -400,12 +400,16 @@ Providers: {self.enabled_providers}
                     // https://fonts.googleapis.com/css2?family=Cantarell&family=Source+Code+Pro&display=swap
                     @font-face {
                     font-family: 'Cantarell';
-                    src: local("Cantarell")
+                    src: url("/app/share/fonts/Cantarell.ttf") format("ttf"),
+                        local("Cantarell"),
+                        url("https://fonts.gstatic.com/s/cantarell/v17/B50NF7ZDq37KMUvlO015jKJr.woff2") format("woff2");
                     }
 
                     @font-face {
-                    font-family: 'Monospace';
-                    src: local("Monospace")
+                    font-family: 'Source Code Pro Regular';
+                    src: url("/app/share/fonts/SourceCodePro-Regular.ttf") format("ttf"),
+                        local("Source Code Pro Regular"),
+                        url("https://fonts.gstatic.com/s/sourcecodepro/v22/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTA.woff2") format("woff2");
                     }
 
                     @font-face {
@@ -420,7 +424,7 @@ Providers: {self.enabled_providers}
                     }
 
                     html {
-                    font-size: 11pt;
+                    font-size: 16px;
                     }
 
                     body {
@@ -436,7 +440,7 @@ Providers: {self.enabled_providers}
 
                     @media screen and (max-width: 799px) {
                     html {
-                        font-size: 11pt;
+                        font-size: 14px;
                     }
 
                     body {
@@ -446,7 +450,7 @@ Providers: {self.enabled_providers}
 
                     @media screen and (min-width: 1280px) {
                     html {
-                        font-size: 11pt;
+                        font-size: 18px;
                     }
                     }
 
