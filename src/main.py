@@ -432,8 +432,8 @@ Providers: {self.enabled_providers}
                     line-height: 1.5;
                     word-wrap: break-word;
                     max-width: 980px;
-                    margin: auto;
-                    padding: 4em;
+                    //margin: auto;
+                    //padding: 4em;
                     }
 
                     @media screen and (max-width: 799px) {
