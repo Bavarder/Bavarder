@@ -1011,6 +1011,7 @@ Providers: {self.enabled_providers}
             self.win.spinner.start()
             self.win.ask_button.set_visible(False)
             self.win.wait_button.set_visible(True)
+            self.win.stop_button.set_visible(True)
             self.provider = self.win.provider_selector.props.selected
 
             def thread_run():
@@ -1024,6 +1025,7 @@ Providers: {self.enabled_providers}
                 self.win.spinner.stop()
                 self.win.ask_button.set_visible(True)
                 self.win.wait_button.set_visible(False)
+                self.win.stop_button.set_visible(False)
                 GLib.idle_add(self.update_response, response)
                 self.t.join()
                 if self.clear_after_send:
@@ -1037,6 +1039,7 @@ Providers: {self.enabled_providers}
         self.win.spinner.stop()
         self.win.ask_button.set_visible(True)
         self.win.wait_button.set_visible(False)
+        self.win.stop_button.set_visible(False)
         self.t.kill()
         self.t.join()
 
