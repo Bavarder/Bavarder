@@ -261,19 +261,19 @@ Providers: {self.enabled_providers}
         """Callback for the app.copy_bot action."""
 
         toast = Adw.Toast()
-
-        text = self.win.bot_text_view.get_buffer()
         toast.set_title("Text copied")
-
-        (start, end) = text.get_bounds()
-        text = text.get_text(start, end, False)
-
-        if len(text) == 0:
+        
+        try: 
+            text = self.response 
+        except AttributeError:
             return
+        else:
+            if len(text) == 0:
+                return
+            else:
+                Gdk.Display.get_default().get_clipboard().set(text)
 
-        Gdk.Display.get_default().get_clipboard().set(text)
-
-        self.win.toast_overlay.add_toast(toast)
+                self.win.toast_overlay.add_toast(toast)
 
     def ask(self, prompt):
         return self.providers[self.provider].ask(prompt)
@@ -390,6 +390,7 @@ Providers: {self.enabled_providers}
             
     def update_response(self, response):
         """Update the response text view with the response."""
+        self.response = response
         response = markdown.markdown(response, extensions=["markdown.extensions.extra"])
 
         TEMPLATE = """
