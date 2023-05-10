@@ -920,17 +920,17 @@ Providers: {self.enabled_providers}
                     @media (prefers-color-scheme: dark) {
                         :root {
                             --text-color: #eeeeec;
-                            --background-color: #353535;
-                            --alt-background-color: #3a3a3a;
-                            --link-color: #b5daff;
-                            --blockquote-text-color: #a8a8a6;
+                            --background-color: #363636;
+                            --alt-background-color: #4a4a4a;
+                            --link-color: #78aeed;
+                            --blockquote-text-color: #ffffff;
                             --blockquote-border-color: #525252;
                             --header-border-color: #474747;
                             --hr-background-color: #505050;
                             --table-tr-border-color: #696969;
                             --table-td-border-color: #525252;
-                            --kbd-text-color: #cececc;
-                            --kbd-background-color: #3c3c3c;
+                            --kbd-text-color: #ffffff;
+                            --kbd-background-color: #4a4a4a;
                             --kbd-border-color: #696969;
                             --kbd-shadow-color: #979797;
                         }
