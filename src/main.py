@@ -397,18 +397,19 @@ Providers: {self.enabled_providers}
         <html>
             <head>
                 <style>
+                    // https://fonts.googleapis.com/css2?family=Cantarell&family=Source+Code+Pro&display=swap
                     @font-face {
-                    font-family: fira-sans;
-                    src: url("/app/share/fonts/FiraSans-Regular.ttf") format("ttf"),
-                        local("FiraSans-Regular"),
-                        url("https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5Vvl4jL.woff2") format("woff2");
+                    font-family: 'Cantarell';
+                    src: url("/app/share/fonts/Cantarell.ttf") format("ttf"),
+                        local("Cantarell"),
+                        url("https://fonts.gstatic.com/s/cantarell/v17/B50NF7ZDq37KMUvlO015jKJr.woff2") format("woff2");
                     }
 
                     @font-face {
-                    font-family: fira-mono;
-                    src: url("/app/share/fonts/FiraMono-Regular.ttf") format("ttf"),
-                        local("FiraMono-Regular"),
-                        url("https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgJv7S.woff2") format("woff2");
+                    font-family: 'Source Code Pro Regular';
+                    src: url("/app/share/fonts/SourceCodePro-Regular.ttf") format("ttf"),
+                        local("Source Code Pro Regular"),
+                        url("https://fonts.gstatic.com/s/sourcecodepro/v22/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTA.woff2") format("woff2");
                     }
 
                     @font-face {
@@ -429,7 +430,7 @@ Providers: {self.enabled_providers}
                     body {
                     color: var(--text-color);
                     background-color: var(--background-color);
-                    font-family: "Fira Sans", fira-sans, sans-serif, color-emoji;
+                    font-family: "Cantarell", "Source Code Pro Regular", sans-serif, color-emoji;
                     line-height: 1.5;
                     word-wrap: break-word;
                     max-width: 980px;
