@@ -11,7 +11,7 @@ class BaseHFProvider(BavarderProvider):
     name = None
     slug = None
     model = None
-    url = "https://bavarder.codeberg.page/docs/providers/huggingface.html"
+    url = "https://bavarder.codeberg.page/help/huggingface"
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)

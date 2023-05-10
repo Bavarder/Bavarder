@@ -12,7 +12,7 @@ class BaseOpenAIProvider(BavarderProvider):
     model = None
     version = "0.1.0"
     api_key_title = "API Key"
-    url = "https://bavarder.codeberg.page/docs/providers/openai.html"
+    url = "https://bavarder.codeberg.page/help/openai"
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
