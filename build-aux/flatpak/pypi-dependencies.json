@@ -223,6 +223,25 @@
                     "sha256": "d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e"
                 }
             ]
+        },
+        {
+            "name": "python3-pymdown-extensions",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pymdown-extensions\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz",
+                    "sha256": "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/42/d5/ad2ce4fbd49f746c56f17ca4d1a8112cf76ea8797db670592923f7b3d96e/pymdown_extensions-9.11-py3-none-any.whl",
+                    "sha256": "a499191d8d869f30339de86fcf072a787e86c42b6f16f280f5c2cf174182b7f3"
+                }
+            ]
         }
     ]
 }
