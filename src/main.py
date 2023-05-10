@@ -34,7 +34,7 @@ from .window import BavarderWindow
 from .preferences import Preferences
 from enum import auto, IntEnum
 
-from .constants import app_id, version
+from .constants import app_id, version, build_type
 
 from tempfile import NamedTemporaryFile
 
@@ -303,7 +303,7 @@ Providers: {self.enabled_providers}
             if not self.web_view:
                 self.web_view = WebKit.WebView()
                 self.web_view.get_settings().set_allow_universal_access_from_file_urls(True)
-                #TODO: enable devtools on Devel profile
+
                 self.web_view.get_settings().set_enable_developer_extras(True)
 
                 # Show preview once the load is finished
@@ -323,7 +323,10 @@ Providers: {self.enabled_providers}
             if self.web_view.is_loading():
                 self.web_view_pending_html = html
             else:
-                self.web_view.load_html(html, "file://localhost/")
+                try:
+                    self.web_view.load_html(html, "file://localhost/")
+                except TypeError: # Argument 1 does not allow None as a value
+                    pass
 
 
         elif step == Step.RENDER:
