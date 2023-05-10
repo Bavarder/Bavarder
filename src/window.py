@@ -27,10 +27,11 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     toast_overlay = Gtk.Template.Child()
     prompt_text_view = Gtk.Template.Child()
-    bot_text_view = Gtk.Template.Child()
     spinner = Gtk.Template.Child()
     ask_button = Gtk.Template.Child()
     wait_button = Gtk.Template.Child()
+    scrolled_response_window = Gtk.Template.Child()
+    bot_text_view = Gtk.Template.Child()
     response_stack = Gtk.Template.Child()
     banner = Gtk.Template.Child()
     # listen = Gtk.Template.Child()

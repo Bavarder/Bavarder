@@ -1,5 +1,6 @@
 using Gtk 4.0;
 using Adw 1;
+using WebKit 6.0;
 
 template BavarderWindow : Adw.ApplicationWindow {
 
@@ -139,7 +140,7 @@ template BavarderWindow : Adw.ApplicationWindow {
 
             styles ["card", "text-box"]
 
-            ScrolledWindow {
+            ScrolledWindow scrolled_response_window {
               margin-top:12;
               margin-bottom:0;
               margin-start:12;
@@ -147,6 +148,8 @@ template BavarderWindow : Adw.ApplicationWindow {
               styles ["scrolled-window"]
               
               Gtk.Stack response_stack {
+                vexpand: true;
+                hexpand: true;
                 Gtk.StackPage {
                   name: "page_response";
                   child: TextView bot_text_view {

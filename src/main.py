@@ -27,19 +27,29 @@ gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 gi.require_version("Gdk", "4.0")
 gi.require_version("Gst", "1.0")
+gi.require_version('WebKit', '6.0')
 
-from gi.repository import Gtk, Gio, Adw, Gdk, GLib, Gst
+from gi.repository import Gtk, Gio, Adw, Gdk, GLib, Gst, WebKit
 from .window import BavarderWindow
 from .preferences import Preferences
+from enum import auto, IntEnum
 
 from .constants import app_id, version
 
-from gtts import gTTS
 from tempfile import NamedTemporaryFile
 
 from .provider import PROVIDERS
 import platform
 import os
+import markdown
+import tempfile
+import re
+
+class Step(IntEnum):
+    CONVERT_HTML = auto()
+    LOAD_WEBVIEW = auto()
+    RENDER = auto()
+
 
 
 class BavarderApplication(Adw.Application):
@@ -70,6 +80,15 @@ class BavarderApplication(Adw.Application):
             set(self.settings.get_strv("enabled-providers"))
         )
         self.latest_provider = self.settings.get_string("latest-provider")
+
+        self.web_view = None
+        self.web_view_pending_html = None
+
+        self.loading = False
+        self.shown = False
+        self.preview_visible = False
+
+
 
     def quitting(self, *args, **kwargs):
         """Called before closing main window."""
@@ -112,8 +131,6 @@ class BavarderApplication(Adw.Application):
         if not self.win:
             self.win = BavarderWindow(application=self)
         self.win.present()
-
-        self.win.response_stack.set_visible_child_name("page_response")
 
         self.win.connect("close-request", self.quitting)
 
@@ -261,8 +278,664 @@ Providers: {self.enabled_providers}
     def ask(self, prompt):
         return self.providers[self.provider].ask(prompt)
 
+    @staticmethod
+    def on_click_link(web_view, decision, _decision_type):
+        if web_view.get_uri().startswith(("http://", "https://", "www.")):
+            Glib.spawn_command_line_async(f"xdg-open {web_view.get_uri()}")
+            decision.ignore()
+            return True
+
+    @staticmethod
+    def on_right_click(web_view, context_menu, _event, _hit_test):
+        # disable some context menu option
+        for item in context_menu.get_items():
+            if item.get_stock_action() in [WebKit.ContextMenuAction.RELOAD,
+                                           WebKit.ContextMenuAction.GO_BACK,
+                                           WebKit.ContextMenuAction.GO_FORWARD,
+                                           WebKit.ContextMenuAction.STOP]:
+                context_menu.remove(item)
+
+
+    def show(self, html=None, step=Step.LOAD_WEBVIEW):
+        if step == Step.LOAD_WEBVIEW:
+            self.loading = True
+            if not self.web_view:
+                self.web_view = WebKit.WebView()
+                self.web_view.get_settings().set_allow_universal_access_from_file_urls(True)
+                #TODO: enable devtools on Devel profile
+                self.web_view.get_settings().set_enable_developer_extras(True)
+
+                # Show preview once the load is finished
+                self.web_view.connect("load-changed", self.on_load_changed)
+
+                # All links will be opened in default browser, but local files are opened in apps.
+                self.web_view.connect("decide-policy", self.on_click_link)
+
+                self.web_view.connect("context-menu", self.on_right_click)
+
+                self.web_view.set_hexpand(True)
+                self.web_view.set_vexpand(True)
+
+                self.win.response_stack.add_child(self.web_view)
+                self.win.response_stack.set_visible_child(self.web_view)
+            
+
+            print(html)
+            if self.web_view.is_loading():
+                self.web_view_pending_html = html
+            else:
+                self.web_view.load_html(html, "file://localhost/")
+
+
+        elif step == Step.RENDER:
+            if not self.preview_visible:
+                self.preview_visible = True
+                self.show()
+
+    def reload(self, *_widget, reshow=False):
+        if self.preview_visible:
+            if reshow:
+                self.hide()
+            self.show()
+
+    def on_load_changed(self, _web_view, event):
+        if event == WebKit.LoadEvent.FINISHED:
+            self.loading = False
+            if self.web_view_pending_html:
+                self.show(html=self.web_view_pending_html, step=Step.LOAD_WEBVIEW)
+                self.web_view_pending_html = None
+            else:
+                # we only lazyload the webview once
+                self.show(step=Step.RENDER)
+
+    def parse_css(path):
+
+        adw_palette_prefixes = [
+            "blue_",
+            "green_",
+            "yellow_",
+            "orange_",
+            "red_",
+            "purple_",
+            "brown_",
+            "light_",
+            "dark_"
+        ]
+
+        # Regular expressions
+        not_define_color = re.compile(r"(^(?:(?!@define-color).)*$)")
+        define_color = re.compile(r"(@define-color .*[^\s])")
+        css = ""
+        variables = {}
+        palette = {}
+
+        for color in adw_palette_prefixes:
+            palette[color] = {}
+
+        with open(path, "r", encoding="utf-8") as sheet:
+            for line in sheet:
+                cdefine_match = re.search(define_color, line)
+                not_cdefine_match = re.search(not_define_color, line)
+                if cdefine_match != None: # If @define-color variable declarations were found
+                    palette_part = cdefine_match.__getitem__(1) # Get the second item of the re.Match object
+                    name, color = palette_part.split(" ", 1)[1].split(" ", 1)
+                    if name.startswith(tuple(adw_palette_prefixes)): # Palette colors
+                        palette[name[:-1]][name[-1:]] = color[:-1]
+                    else: # Other color variables
+                        variables[name] = color[:-1]
+                elif not_cdefine_match != None: # If CSS rules were found
+                    css_part = not_cdefine_match.__getitem__(1)
+                    css += f"{css_part}\n"
+
+            sheet.close()
+            return variables, palette, css
+            
     def update_response(self, response):
-        self.win.bot_text_view.get_buffer().set_text(response)
+        """Update the response text view with the response."""
+        response = markdown.markdown(response, extensions=["markdown.extensions.extra"])
+
+        TEMPLATE = """
+        <html>
+            <head>
+                <style>
+                    @font-face {
+                    font-family: fira-sans;
+                    src: url("/app/share/fonts/FiraSans-Regular.ttf") format("ttf"),
+                        local("FiraSans-Regular"),
+                        url("https://fonts.gstatic.com/s/firasans/v10/va9E4kDNxMZdWfMOD5Vvl4jL.woff2") format("woff2");
+                    }
+
+                    @font-face {
+                    font-family: fira-mono;
+                    src: url("/app/share/fonts/FiraMono-Regular.ttf") format("ttf"),
+                        local("FiraMono-Regular"),
+                        url("https://fonts.gstatic.com/s/firamono/v9/N0bX2SlFPv1weGeLZDtgJv7S.woff2") format("woff2");
+                    }
+
+                    @font-face {
+                    font-family: color-emoji;
+                    src: local("Noto Color Emoji"), local("Apple Color Emoji"), local("Segoe UI Emoji"), local("Segoe UI Symbol");
+                    }
+
+                    :root {
+                        --text-color: #2e3436;
+                        --background-color: #f6f5f4;
+                        --alt-background-color: #edeeef;
+                        --link-color: #0d71de;
+                        --blockquote-text-color: #747e85;
+                        --blockquote-border-color: #d6d8da;
+                        --header-border-color: #e1e2e4;
+                        --hr-background-color: #d8dadd;
+                        --table-tr-border-color: #bdc1c6;
+                        --table-td-border-color: #d6d8da;
+                        --kbd-text-color: #4e585e;
+                        --kbd-background-color: #f1f1f1;
+                        --kbd-border-color: #bdc1c6;
+                        --kbd-shadow-color: #8c939a;
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                    :root {
+                        --text-color: #eeeeec;
+                        --background-color: #353535;
+                        --alt-background-color: #3a3a3a;
+                        --link-color: #b5daff;
+                        --blockquote-text-color: #a8a8a6;
+                        --blockquote-border-color: #525252;
+                        --header-border-color: #474747;
+                        --hr-background-color: #505050;
+                        --table-tr-border-color: #696969;
+                        --table-td-border-color: #525252;
+                        --kbd-text-color: #cececc;
+                        --kbd-background-color: #3c3c3c;
+                        --kbd-border-color: #696969;
+                        --kbd-shadow-color: #979797;
+                    }
+                    }
+
+
+
+                    * {
+                    box-sizing: border-box;
+                    }
+
+                    html {
+                    font-size: 16px;
+                    }
+
+                    body {
+                    color: var(--text-color);
+                    background-color: var(--background-color);
+                    font-family: "Fira Sans", fira-sans, sans-serif, color-emoji;
+                    line-height: 1.5;
+                    word-wrap: break-word;
+                    max-width: 980px;
+                    margin: auto;
+                    padding: 4em;
+                    }
+
+                    @media screen and (max-width: 799px) {
+                    html {
+                        font-size: 14px;
+                    }
+
+                    body {
+                        padding: 1em;
+                    }
+                    }
+
+                    @media screen and (min-width: 1280px) {
+                    html {
+                        font-size: 18px;
+                    }
+                    }
+
+                    a {
+                    background-color: transparent;
+                    color: var(--link-color);
+                    text-decoration: none;
+                    }
+
+                    a:active,
+                    a:hover {
+                    outline-width: 0;
+                    }
+
+                    a:hover {
+                    text-decoration: underline;
+                    }
+
+                    strong {
+                    font-weight: 600;
+                    }
+
+                    img {
+                    border-style: none;
+                    }
+
+                    hr {
+                    box-sizing: content-box;
+                    height: 0.25em;
+                    padding: 0;
+                    margin: 1.5em 0;
+                    overflow: hidden;
+                    background-color: var(--hr-background-color);
+                    border: 0;
+                    }
+
+                    hr::before {
+                    display: table;
+                    content: "";
+                    }
+
+                    hr::after {
+                    display: table;
+                    clear: both;
+                    content: "";
+                    }
+
+                    input {
+                    font-family: inherit;
+                    font-size: inherit;
+                    line-height: inherit;
+                    margin: 0;
+                    overflow: visible;
+                    }
+
+                    [type="checkbox"] {
+                    box-sizing: border-box;
+                    padding: 0;
+                    }
+
+                    table {
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                    }
+
+                    td,
+                    th {
+                    padding: 0;
+                    }
+
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6 {
+                    font-weight: 600;
+                    margin: 0;
+                    }
+
+                    h1 {
+                    font-size: 2em;
+                    }
+
+                    h2 {
+                    font-size: 1.5em;
+                    }
+
+                    h3 {
+                    font-size: 1.25em;
+                    }
+
+                    h4 {
+                    font-size: 1em;
+                    }
+
+                    h5 {
+                    font-size: 0.875em;
+                    }
+
+                    h6 {
+                    font-size: 0.85em;
+                    }
+
+                    p {
+                    margin-top: 0;
+                    margin-bottom: 0.625em;
+                    }
+
+                    blockquote {
+                    margin: 0;
+                    }
+
+                    ul,
+                    ol {
+                    padding-left: 0;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    }
+
+                    ol ol,
+                    ul ol {
+                    list-style-type: lower-roman;
+                    }
+
+                    ul ul ol,
+                    ul ol ol,
+                    ol ul ol,
+                    ol ol ol {
+                    list-style-type: lower-alpha;
+                    }
+
+                    dd {
+                    margin-left: 0;
+                    }
+
+                    code,
+                    kbd,
+                    pre {
+                    font-family: "Fira Mono", fira-mono, monospace, color-emoji;
+                    font-size: 1em;
+                    word-wrap: normal;
+                    }
+
+                    code {
+                    border-radius: 0.1875em;
+                    font-size: 0.85em;
+                    padding: 0.2em 0.4em;
+                    margin: 0;
+                    }
+
+                    pre {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-size: 0.75em;
+                    }
+
+                    pre>code {
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1em;
+                    word-break: normal;
+                    white-space: pre;
+                    background: transparent;
+                    border: 0;
+                    }
+
+                    .highlight {
+                    margin-bottom: 1em;
+                    }
+
+                    .highlight pre {
+                    margin-bottom: 0;
+                    word-break: normal;
+                    }
+
+                    .highlight pre,
+                    pre {
+                    padding: 1em;
+                    overflow: auto;
+                    font-size: 0.85em;
+                    line-height: 1.5;
+                    background-color: var(--alt-background-color);
+                    border-radius: 0.1875em;
+                    }
+
+                    pre code {
+                    background-color: transparent;
+                    border: 0;
+                    display: inline;
+                    padding: 0;
+                    margin: 0;
+                    overflow: visible;
+                    line-height: inherit;
+                    word-wrap: normal;
+                    }
+
+                    .pl-0 {
+                    padding-left: 0 !important;
+                    }
+
+                    .pl-1 {
+                    padding-left: 0.25em !important;
+                    }
+
+                    .pl-2 {
+                    padding-left: 0.5em !important;
+                    }
+
+                    .pl-3 {
+                    padding-left: 1em !important;
+                    }
+
+                    .pl-4 {
+                    padding-left: 1.5em !important;
+                    }
+
+                    .pl-5 {
+                    padding-left: 2em !important;
+                    }
+
+                    .pl-6 {
+                    padding-left: 2.5em !important;
+                    }
+
+                    .markdown-body::before {
+                    display: table;
+                    content: "";
+                    }
+
+                    .markdown-body::after {
+                    display: table;
+                    clear: both;
+                    content: "";
+                    }
+
+                    .markdown-body>*:first-child {
+                    margin-top: 0 !important;
+                    }
+
+                    .markdown-body>*:last-child {
+                    margin-bottom: 0 !important;
+                    }
+
+                    a:not([href]) {
+                    color: inherit;
+                    text-decoration: none;
+                    }
+
+                    .anchor {
+                    float: left;
+                    padding-right: 0.25em;
+                    margin-left: -1.25em;
+                    line-height: 1;
+                    }
+
+                    .anchor:focus {
+                    outline: none;
+                    }
+
+                    p,
+                    blockquote,
+                    ul,
+                    ol,
+                    dl,
+                    table,
+                    pre {
+                    margin-top: 0;
+                    margin-bottom: 1em;
+                    }
+
+                    blockquote {
+                    padding: 0 1em;
+                    color: var(--blockquote-text-color);
+                    border-left: 0.25em solid var(--blockquote-border-color);
+                    }
+
+                    blockquote>:first-child {
+                    margin-top: 0;
+                    }
+
+                    blockquote>:last-child {
+                    margin-bottom: 0;
+                    }
+
+                    kbd {
+                    display: inline-block;
+                    padding: 0.1875em 0.3125em;
+                    font-size: 0.6875em;
+                    line-height: 1;
+                    color: var(--kbd-text-color);
+                    vertical-align: middle;
+                    background-color: var(--kbd-background-color);
+                    border: solid 1px var(--kbd-border-color);
+                    border-bottom-color: var(--kbd-shadow-color);
+                    border-radius: 3px;
+                    box-shadow: inset 0 -1px 0 var(--kbd-shadow-color);;
+                    }
+
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6 {
+                    margin-top: 1.5em;
+                    margin-bottom: 1em;
+                    font-weight: 600;
+                    line-height: 1.25;
+                    }
+
+                    h1:hover .anchor,
+                    h2:hover .anchor,
+                    h3:hover .anchor,
+                    h4:hover .anchor,
+                    h5:hover .anchor,
+                    h6:hover .anchor {
+                    text-decoration: none;
+                    }
+
+                    h1 {
+                    padding-bottom: 0.3em;
+                    font-size: 2em;
+                    border-bottom: 1px solid var(--header-border-color);
+                    }
+
+                    h2 {
+                    padding-bottom: 0.3em;
+                    font-size: 1.5em;
+                    border-bottom: 1px solid var(--header-border-color);
+                    }
+
+                    h3 {
+                    font-size: 1.25em;
+                    }
+
+                    h4 {
+                    font-size: 1em;
+                    }
+
+                    h5 {
+                    font-size: 0.875em;
+                    }
+
+                    h6 {
+                    font-size: 0.85em;
+                    opacity: 0.67;
+                    }
+
+                    ul,
+                    ol {
+                    padding-left: 2em;
+                    }
+
+                    ul ul,
+                    ul ol,
+                    ol ol,
+                    ol ul {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    }
+
+                    li {
+                    overflow-wrap: break-word;
+                    }
+
+                    li>p {
+                    margin-top: 1em;
+                    }
+
+                    li+li {
+                    margin-top: 0.25em;
+                    }
+
+                    dl {
+                    padding: 0;
+                    }
+
+                    dl dt {
+                    padding: 0;
+                    margin-top: 1em;
+                    font-size: 1em;
+                    font-style: italic;
+                    font-weight: 600;
+                    }
+
+                    dl dd {
+                    padding: 0 1em;
+                    margin-bottom: 1em;
+                    }
+
+                    table {
+                    display: block;
+                    width: 100%;
+                    overflow: auto;
+                    }
+
+                    table th {
+                    font-weight: 600;
+                    }
+
+                    table th,
+                    table td {
+                    padding: 0.375em 0.8125em;
+                    border: 1px solid var(--table-td-border-color);
+                    }
+
+                    table tr {
+                    background-color: var(--background-color);
+                    border-top: 1px solid var(--table-tr-border-color);
+                    }
+
+                    table tr:nth-child(2n) {
+                    background-color: var(--alt-background-color);
+                    }
+
+                    img {
+                    max-width: 100%;
+                    box-sizing: content-box;
+                    }
+
+                    img[align=right] {
+                    padding-left: 1.25em;
+                    }
+
+                    img[align=left] {
+                    padding-right: 1.25em;
+                    }
+
+                    .task-list-item {
+                    list-style-type: none;
+                    }
+
+                    .task-list-item+.task-list-item {
+                    margin-top: 0.1875em;
+                    }
+
+                    .task-list-item input {
+                    margin: 0 0.2em 0.25em -1.6em;
+                    vertical-align: middle;
+                    }
+                </style>
+            </head>
+            <body>
+                {response}
+            </body>
+        </html>
+        """
+        self.show(TEMPLATE.replace("{response}", response), Step.LOAD_WEBVIEW)
 
     def on_ask_action(self, widget, _):
         """Callback for the app.ask action."""

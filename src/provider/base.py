@@ -21,7 +21,6 @@ class BavarderProvider:
     def __init__(self, win, app, *args, **kwargs):
         self.win = win
         self.banner = win.banner
-        self.bot_text_view = win.bot_text_view
         self.app = app
         self.chat = None
         self.update_response = app.update_response
