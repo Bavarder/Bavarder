@@ -348,7 +348,7 @@ Providers: {self.enabled_providers}
                 # we only lazyload the webview once
                 self.show(step=Step.RENDER)
 
-    def parse_css(path):
+    def parse_css(self, path):
 
         adw_palette_prefixes = [
             "blue_",
@@ -936,8 +936,8 @@ Providers: {self.enabled_providers}
                         }
                     }"""
         CUSTOM_STYLE = """
-            --text-color: {window_fg_color};
-            --background-color: {window_bg_color};
+            --text-color: {view_fg_color};
+            --background-color: {view_fg_color};
             --alt-background-color: {view_bg_color};
             --link-color: {accent_fg_color};
             --blockquote-text-color: {card_fg_color};
