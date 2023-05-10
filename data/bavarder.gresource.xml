@@ -8,5 +8,6 @@
   </gresource>
   <gresource prefix="/io/github/Bavarder/Bavarder/icons/scalable/actions/">
     <file preprocess="xml-stripblanks" alias="paper-plane-symbolic.svg">icons/scalable/actions/paper-plane-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="x-circular-symbolic.svg">icons/scalable/actions/x-circular-symbolic.svg</file>
   </gresource>
 </gresources>

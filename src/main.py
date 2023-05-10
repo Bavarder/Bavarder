@@ -50,6 +50,38 @@ class Step(IntEnum):
     LOAD_WEBVIEW = auto()
     RENDER = auto()
 
+class KillableThread(threading.Thread):
+    def __init__(self, *args, **keywords):
+        threading.Thread.__init__(self, *args, **keywords)
+        self.killed = False
+    
+    def start(self):
+        self.__run_backup = self.run
+        self.run = self.__run     
+        threading.Thread.start(self)
+    
+    def __run(self):
+        sys.settrace(self.globaltrace)
+        self.__run_backup()
+        self.run = self.__run_backup
+    
+    def globaltrace(self, frame, event, arg):
+        if event == 'call':
+            return self.localtrace
+        else:
+            return None
+    
+    def localtrace(self, frame, event, arg):
+        if self.killed:
+            if event == 'line':
+                raise SystemExit()
+        return self.localtrace
+    
+    def kill(self):
+        self.killed = True
+
+ 
+
 
 
 class BavarderApplication(Adw.Application):
@@ -69,6 +101,7 @@ class BavarderApplication(Adw.Application):
         self.create_action("copy_bot", self.on_copy_bot_action, ["<primary><shift>c"])
         self.create_action("ask", self.on_ask_action, ["<primary>Return"])
         self.create_action("clear", self.on_clear_action, ["<primary><shift>BackSpace"])
+        self.create_action("stop", self.on_stop_action, ["<primary>Escape"])
         # self.create_action("speak", self.on_speak_action, ["<primary>S"])
         # self.create_action("listen", self.on_listen_action, ["<primary>L"])
 
@@ -995,8 +1028,16 @@ Providers: {self.enabled_providers}
                 if self.clear_after_send:
                     self.win.prompt_text_view.get_buffer().set_text("")
 
-            self.t = threading.Thread(target=thread_run)
+            self.t = KillableThread(target=thread_run)
             self.t.start()
+
+    def on_stop_action(self, widget, _):
+        """Callback for the app.stop action."""
+        self.win.spinner.stop()
+        self.win.ask_button.set_visible(True)
+        self.win.wait_button.set_visible(False)
+        self.t.kill()
+        self.t.join()
 
     # def on_speak_action(self, widget, _):
     #     """Callback for the app.speak action."""

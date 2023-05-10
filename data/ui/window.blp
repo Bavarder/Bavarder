@@ -203,6 +203,17 @@ template BavarderWindow : Adw.ApplicationWindow {
                 halign: end;
                 action-name: "app.copy_bot";
               }
+
+              Button stop_button {
+                visible: true;
+                sensitive: false;
+                icon-name: "x-circular-symbolic";
+                tooltip-text: _("Stop");
+                hexpand: true;
+                halign: end;
+                action-name: "app.stop";
+                styles ["suggested-action", "circular"]
+              }
             }
           }
         }
