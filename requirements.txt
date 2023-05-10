@@ -4,6 +4,6 @@
 
 baichat-py>=0.1.2
 hgchat
-gTTS
 openai
 googlebardpy
+markdown
