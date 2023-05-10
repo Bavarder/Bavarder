@@ -417,43 +417,7 @@ Providers: {self.enabled_providers}
                     src: local("Noto Color Emoji"), local("Apple Color Emoji"), local("Segoe UI Emoji"), local("Segoe UI Symbol");
                     }
 
-                    :root {
-                        --text-color: #2e3436;
-                        --background-color: #f6f5f4;
-                        --alt-background-color: #edeeef;
-                        --link-color: #0d71de;
-                        --blockquote-text-color: #747e85;
-                        --blockquote-border-color: #d6d8da;
-                        --header-border-color: #e1e2e4;
-                        --hr-background-color: #d8dadd;
-                        --table-tr-border-color: #bdc1c6;
-                        --table-td-border-color: #d6d8da;
-                        --kbd-text-color: #4e585e;
-                        --kbd-background-color: #f1f1f1;
-                        --kbd-border-color: #bdc1c6;
-                        --kbd-shadow-color: #8c939a;
-                    }
-
-                    @media (prefers-color-scheme: dark) {
-                    :root {
-                        --text-color: #eeeeec;
-                        --background-color: #353535;
-                        --alt-background-color: #3a3a3a;
-                        --link-color: #b5daff;
-                        --blockquote-text-color: #a8a8a6;
-                        --blockquote-border-color: #525252;
-                        --header-border-color: #474747;
-                        --hr-background-color: #505050;
-                        --table-tr-border-color: #696969;
-                        --table-td-border-color: #525252;
-                        --kbd-text-color: #cececc;
-                        --kbd-background-color: #3c3c3c;
-                        --kbd-border-color: #696969;
-                        --kbd-shadow-color: #979797;
-                    }
-                    }
-
-
+                    {theme_css}
 
                     * {
                     box-sizing: border-box;
@@ -935,7 +899,66 @@ Providers: {self.enabled_providers}
             </body>
         </html>
         """
-        self.show(TEMPLATE.replace("{response}", response), Step.LOAD_WEBVIEW)
+
+        ADWAITA_STYLE = """:root {
+                        --text-color: #2e3436;
+                        --background-color: #f6f5f4;
+                        --alt-background-color: #edeeef;
+                        --link-color: #0d71de;
+                        --blockquote-text-color: #747e85;
+                        --blockquote-border-color: #d6d8da;
+                        --header-border-color: #e1e2e4;
+                        --hr-background-color: #d8dadd;
+                        --table-tr-border-color: #bdc1c6;
+                        --table-td-border-color: #d6d8da;
+                        --kbd-text-color: #4e585e;
+                        --kbd-background-color: #f1f1f1;
+                        --kbd-border-color: #bdc1c6;
+                        --kbd-shadow-color: #8c939a;
+                    }
+
+                    @media (prefers-color-scheme: dark) {
+                        :root {
+                            --text-color: #eeeeec;
+                            --background-color: #353535;
+                            --alt-background-color: #3a3a3a;
+                            --link-color: #b5daff;
+                            --blockquote-text-color: #a8a8a6;
+                            --blockquote-border-color: #525252;
+                            --header-border-color: #474747;
+                            --hr-background-color: #505050;
+                            --table-tr-border-color: #696969;
+                            --table-td-border-color: #525252;
+                            --kbd-text-color: #cececc;
+                            --kbd-background-color: #3c3c3c;
+                            --kbd-border-color: #696969;
+                            --kbd-shadow-color: #979797;
+                        }
+                    }"""
+        CUSTOM_STYLE = """
+            --text-color: {text_color};
+            --background-color: #f6f5f4;
+            --alt-background-color: #edeeef;
+            --link-color: #0d71de;
+            --blockquote-text-color: #747e85;
+            --blockquote-border-color: #d6d8da;
+            --header-border-color: #e1e2e4;
+            --hr-background-color: #d8dadd;
+            --table-tr-border-color: #bdc1c6;
+            --table-td-border-color: #d6d8da;
+            --kbd-text-color: #4e585e;
+            --kbd-background-color: #f1f1f1;
+            --kbd-border-color: #bdc1c6;
+            --kbd-shadow-color: #8c939a;
+        """
+
+        if os.path.exists(os.path.expanduser("~/.config/gtk-4.0/gtk.css")):
+            variables, palette, css = self.parse_css(os.path.expanduser("~/.config/gtk-4.0/gtk.css"))
+            print(variables, palette, css)
+            theme_css = ":root {\n" + CUSTOM_STYLE + " \n}\n" + css
+        else:
+            theme_css = ADWAITA_STYLE
+        self.show(TEMPLATE.replace("{response}", response).replace("{theme_css}", theme_css), Step.LOAD_WEBVIEW)
 
     def on_ask_action(self, widget, _):
         """Callback for the app.ask action."""
