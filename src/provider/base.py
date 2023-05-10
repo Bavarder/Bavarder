@@ -15,6 +15,8 @@ class BavarderProvider:
     developers = ["0xMRTT https://github.com/0xMRTT"]
     license_type = Gtk.License.GPL_3_0
     copyright = "© 2023 0xMRTT"
+    url = "https://bavarder.codeberg.page/help/bard"
+
 
     def __init__(self, win, app, *args, **kwargs):
         self.win = win
@@ -87,17 +89,12 @@ class BavarderProvider:
         )
     
     def how_to_get_a_token(self):
-        popover = Gtk.Popover()
-        vbox = Gtk.Box(orientation=Gtk.Orientation.VERTICAL)
-        button = Gtk.Button(label="How to get a token?")
-        button.connect("clicked", self.open_documentation)
-        vbox.append(button)
-        popover.set_child(vbox)
-
-        about_button = Gtk.MenuButton()
+        about_button = Gtk.Button()
         about_button.set_icon_name("info-symbolic")
+        about_button.set_tooltip_text("How to get a token?")
+        about_button.add_css_class("flat")
         about_button.set_valign(Gtk.Align.CENTER)
-        about_button.set_popover(popover)
+        about_button.connect("clicked", self.open_documentation)
         return about_button
 
     def enable_switch(self):
