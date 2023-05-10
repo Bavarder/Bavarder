@@ -397,19 +397,14 @@ Providers: {self.enabled_providers}
         <html>
             <head>
                 <style>
-                    // https://fonts.googleapis.com/css2?family=Cantarell&family=Source+Code+Pro&display=swap
                     @font-face {
                     font-family: 'Cantarell';
-                    src: url("/app/share/fonts/Cantarell.ttf") format("ttf"),
-                        local("Cantarell"),
-                        url("https://fonts.gstatic.com/s/cantarell/v17/B50NF7ZDq37KMUvlO015jKJr.woff2") format("woff2");
+                    src: local("Cantarell")
                     }
 
                     @font-face {
-                    font-family: 'Source Code Pro Regular';
-                    src: url("/app/share/fonts/SourceCodePro-Regular.ttf") format("ttf"),
-                        local("Source Code Pro Regular"),
-                        url("https://fonts.gstatic.com/s/sourcecodepro/v22/HI_diYsKILxRpg3hIP6sJ7fM7PqPMcMnZFqUwX28DMyQtMlrTA.woff2") format("woff2");
+                    font-family: 'Monospace';
+                    src: local("Monospace")
                     }
 
                     @font-face {
@@ -430,28 +425,12 @@ Providers: {self.enabled_providers}
                     body {
                     color: var(--text-color);
                     background-color: var(--background-color);
-                    font-family: "Cantarell", "Source Code Pro Regular", sans-serif, color-emoji;
+                    font-family: "Cantarell", "Monospace", sans-serif, color-emoji;
                     line-height: 1.5;
                     word-wrap: break-word;
                     max-width: 980px;
                     //margin: auto;
                     //padding: 4em;
-                    }
-
-                    @media screen and (max-width: 799px) {
-                    html {
-                        font-size: 14px;
-                    }
-
-                    body {
-                        padding: 1em;
-                    }
-                    }
-
-                    @media screen and (min-width: 1280px) {
-                    html {
-                        font-size: 18px;
-                    }
                     }
 
                     a {
