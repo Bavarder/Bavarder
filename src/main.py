@@ -253,6 +253,7 @@ class BavarderApplication(Adw.Application):
             "Special thanks to",
             [
                 "Telegraph https://apps.gnome.org/app/io.github.fkinoshita.Telegraph",
+                "Apostrophe https://apps.gnome.org/app/org.gnome.gitlab.somas.Apostrophe",
             ],
         )
         about.set_debug_info(
