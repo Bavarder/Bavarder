@@ -8,3 +8,4 @@ openai
 googlebardpy
 markdown
 pymdown-extensions
+Pygments

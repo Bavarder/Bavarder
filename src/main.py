@@ -431,7 +431,7 @@ Providers: {self.enabled_providers}
         self.response = response
 
         if not self.use_text_view:
-            response = markdown.markdown(response, extensions=["markdown.extensions.extra", 'pymdownx.arithmatex'])
+            response = markdown.markdown(response, extensions=["markdown.extensions.extra", 'pymdownx.arithmatex', 'pymdownx.highlight'])
 
             TEMPLATE = """
             <html>
