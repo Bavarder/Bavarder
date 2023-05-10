@@ -936,12 +936,12 @@ Providers: {self.enabled_providers}
                         }
                     }"""
         CUSTOM_STYLE = """
-            --text-color: {text_color};
-            --background-color: #f6f5f4;
-            --alt-background-color: #edeeef;
-            --link-color: #0d71de;
-            --blockquote-text-color: #747e85;
-            --blockquote-border-color: #d6d8da;
+            --text-color: {window_fg_color};
+            --background-color: {window_bg_color};
+            --alt-background-color: {view_bg_color};
+            --link-color: {accent_fg_color};
+            --blockquote-text-color: {card_fg_color};
+            --blockquote-border-color: {card_bg_color};
             --header-border-color: #e1e2e4;
             --hr-background-color: #d8dadd;
             --table-tr-border-color: #bdc1c6;
@@ -955,7 +955,7 @@ Providers: {self.enabled_providers}
         if os.path.exists(os.path.expanduser("~/.config/gtk-4.0/gtk.css")):
             variables, palette, css = self.parse_css(os.path.expanduser("~/.config/gtk-4.0/gtk.css"))
             print(variables, palette, css)
-            theme_css = ":root {\n" + CUSTOM_STYLE + " \n}\n" + css
+            theme_css = ":root {\n" + CUSTOM_STYLE.format(**variables) + " \n}\n" + css
         else:
             theme_css = ADWAITA_STYLE
         self.show(TEMPLATE.replace("{response}", response).replace("{theme_css}", theme_css), Step.LOAD_WEBVIEW)
