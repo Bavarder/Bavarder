@@ -1,0 +1,14 @@
+pipeline:
+  build:
+    image: docker.io/bilelmoussaoui/flatpak-github-actions
+    secrets: [access_token]
+    when:
+      branch: main
+      event: [push, pull_request, tag]
+    commands:
+      - flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+      - flatpak install --user -y org.flatpak.Builder
+      - flatpak run org.flatpak.Builder --user --install-deps-from=flathub --default-branch=master --force-clean --repo=build-repo build-dir io.github.Bavarder.Bavarder.json
+      - flatpak build-bundle build-repo bavarder.flatpak io.github.Bavarder.Bavarder
+      - ls -la
+      
