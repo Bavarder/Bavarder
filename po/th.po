@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-07 23:01+0200\n"
-"PO-Revision-Date: 2023-05-11 01:02+0000\n"
+"PO-Revision-Date: 2023-05-11 05:14+0000\n"
 "Last-Translator: watchakorn-18k <porton555@gmail.com>\n"
 "Language-Team: Thai <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/th/>\n"
@@ -66,7 +66,7 @@ msgstr "การตั้งค่า"
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr ""
+msgstr "คัดลอกการตอบกลับ"
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
@@ -79,27 +79,27 @@ msgstr "การตั้งค่า"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "พรอมต์"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "ล้างพร้อมต์หลังจากส่ง"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "พรอมต์จะถูกล้างหลังจากส่ง"
 
 #: data/ui/preferences.blp:25
 msgid "Providers"
-msgstr ""
+msgstr "ผู้ให้บริการ"
 
 #: data/ui/window.blp:27
 msgid "Main Menu"
-msgstr ""
+msgstr "เมนูหลัก"
 
 #: data/ui/window.blp:36 src/provider/base.py:47
 msgid "No network connection"
-msgstr ""
+msgstr "ไม่มีการเชื่อมต่อเครือข่าย"
 
 #: data/ui/window.blp:51
 msgid "Message"
@@ -107,36 +107,36 @@ msgstr "ข้อความ"
 
 #: data/ui/window.blp:84 data/ui/window.blp:198
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "คัดลอกไปยังคลิปบอร์ด"
 
 #: data/ui/window.blp:108
 msgid "Ask"
-msgstr ""
+msgstr "ถาม"
 
 #: data/ui/window.blp:117
 msgid "Wait"
-msgstr ""
+msgstr "รอ"
 
 #: data/ui/window.blp:132
 msgid "Response"
-msgstr ""
+msgstr "การตอบสนอง"
 
 #: data/ui/window.blp:220
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "แป้นพิมพ์ลัด"
 
 #: data/ui/window.blp:225
 msgid "About Bavarder"
-msgstr ""
+msgstr "เกี่ยวกับแบบวาร์เดอร์"
 
 #: src/provider/base.py:40
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "ไม่มีรหัส API คุณสามารถระบุได้ในการตั้งค่าได้"
 
 #: src/provider/base.py:42
 msgid "Open settings"
-msgstr ""
+msgstr "เปิดการตั้งค่า"
 
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
-msgstr ""
+msgstr "แมว GPT"
