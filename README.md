@@ -1,4 +1,4 @@
-
+<a href="https://bavarder.codeberg.page">
 <h1 align="center">
   <img src="data/icons/hicolor/scalable/apps/io.github.Bavarder.Bavarder.svg" alt="Bavarder" width="192" height="192"/>
   <br>
@@ -8,6 +8,7 @@
 <p align="center">
   <strong>Chit-chat with an AI</strong>
 </p>
+</a>
 
 <p align="center">
   <a href="https://flathub.org/apps/details/io.github.Bavarder.Bavarder">
@@ -33,9 +34,11 @@
   </a>
 </p>
 
+<a href="https://bavarder.codeberg.page">
 <p align="center">
   <img src="./data/screenshots/quantum-computing.png" alt="Preview"/>
 </p>
+</a>
 
 ## About the name
 
@@ -53,10 +56,6 @@ You can either use your GNOME Software and search for "Bavarder" or you can run
 flatpak install io.github.Bavarder.Bavarder
 ```
 
-#### Latest build
-
-You can download the latest Flatpak build from [Github Actions](https://github.com/Bavarder/Bavarder/actions/workflows/build.yml). Click on the latest job and download the artifact.
-
 #### From Source
 
 Clone the repo and run `flatpak-builder`
@@ -67,13 +66,9 @@ cd Bavarder
 flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/io.github.Bavarder.Bavarder.json
 ```
 
-### Archlinux
+### Others
 
-Bavarder is available in the AUR. Just use your favourite aur helper!
-
-``` shell
-yay -S bavarder
-```
+You can see more install methods on the [website](https://bavarder.codeberg.page/install/)
 
 ## Contribute
 
@@ -96,9 +91,9 @@ You can translate Bavarder using Codeberg Translate
 
 ## See also 
 
-### Imaginer : Imagine with AI 
+### [Imaginer : Imagine with AI](https://imaginer.codeberg.page)
 
 A tool for generating pictures with AI (GNOME app)
 
-- https://github.com/ImaginerApp/Imaginer
-- https://codeberg.org/Imaginer/Imaginer
+- [GitHub](https://github.com/ImaginerApp/Imaginer)
+- [Codeberg](https://codeberg.org/Imaginer/Imaginer)
