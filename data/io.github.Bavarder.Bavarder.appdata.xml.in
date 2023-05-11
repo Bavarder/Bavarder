@@ -61,12 +61,15 @@
   <releases>
     <release version="0.2.0" date="2023-5-11" type="stable">
       <description>
-        <p>Add support of formatting in the response view with use of a WebView and a markdown render</p>
-        <p>Add description of providesr</p>
+        <p>Add support of formatting in the response view using Markdown</p>
+        <p>Allow disabling the new render method </p>
+        <p>Add description of providers</p>
         <p>Add help for getting a token for providers</p>
+        <p>New website including some help for providers</p>
         <p>Fix an issue which caused the app to spin forever</p>
         <p>Remove Quit entry in the app menu</p>
         <p>Fix keyboard shortcuts</p>
+        <p>Fix some bugs</p>
         <p>Update translations</p>
         <p>Add better error handling</p>
       </description>
