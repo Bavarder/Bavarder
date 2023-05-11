@@ -9,7 +9,8 @@
         "--share=ipc",
         "--socket=fallback-x11",
         "--device=dri",
-        "--socket=wayland"
+        "--socket=wayland",
+        "--filesystem=xdg-config/gtk-4.0"
     ],
     "cleanup" : [
         "/include",
