@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-07 23:01+0200\n"
-"PO-Revision-Date: 2023-05-07 23:15+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-12 06:37+0000\n"
+"Last-Translator: muznyo <codeberg.vqtek@simplelogin.com>\n"
 "Language-Team: Czech <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/cs/>\n"
 "Language: cs\n"
@@ -60,18 +60,14 @@ msgid "Quit"
 msgstr "Ukončit"
 
 #: data/ui/help-overlay.ui:32
-#, fuzzy
-#| msgid "Preferences"
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Nastavení"
 
 #: data/ui/help-overlay.ui:38
-#, fuzzy
-#| msgid "Response"
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr "Odpověď"
+msgstr "Zkopírovat odpověď"
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
