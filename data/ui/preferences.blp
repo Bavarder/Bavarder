@@ -21,8 +21,8 @@ template Preferences : Adw.PreferencesWindow {
       }
 
       Adw.ActionRow {
-        title: _("Use text view");
-        subtitle: _("If the text view is used, you will lose formatting");
+        title: _("Use plain text for output");
+        subtitle: _("The plain text without formatting will be used");
         activatable-widget: use_text_view_switch;
         Gtk.Switch use_text_view_switch {
           valign: center;

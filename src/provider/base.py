@@ -77,7 +77,9 @@ class BavarderProvider:
         popover.set_child(vbox)
 
         about_button = Gtk.MenuButton()
-        about_button.set_icon_name("info-symbolic")
+        about_button.set_icon_name("help-about-symbolic")
+        about_button.set_tooltip_text("About provider")
+        about_button.add_css_class("flat")
         about_button.set_valign(Gtk.Align.CENTER)
         about_button.set_popover(popover)
         return about_button
@@ -89,8 +91,8 @@ class BavarderProvider:
     
     def how_to_get_a_token(self):
         about_button = Gtk.Button()
-        about_button.set_icon_name("info-symbolic")
-        about_button.set_tooltip_text("How to get a token?")
+        about_button.set_icon_name("dialog-information-symbolic")
+        about_button.set_tooltip_text("How to get a token")
         about_button.add_css_class("flat")
         about_button.set_valign(Gtk.Align.CENTER)
         about_button.connect("clicked", self.open_documentation)
