@@ -13,6 +13,7 @@
 - https://mindaizer.com/chatgpt-et-linux-presentation-de-bavarder/
 - https://wiredgorilla.com/introducing-bavarder-a-user-friendly-linux-desktop-app-for-quick-chatgpt-interaction/
 - https://www.linuxconsultant.org/bavarder-is-a-chatgpt-app-for-linux-desktops/
+- https://www.linuxlinks.com/machine-learning-linux-bavarder/
 
 ## Youtube
 
