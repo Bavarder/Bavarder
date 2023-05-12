@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-07 23:01+0200\n"
+"POT-Creation-Date: 2023-05-12 16:35+0200\n"
 "PO-Revision-Date: 2023-05-07 23:15+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
@@ -23,7 +23,7 @@ msgstr ""
 "X-Generator: Weblate 4.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in:3
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:4 data/ui/window.blp:6
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:4 data/ui/window.blp:7
 msgid "Bavarder"
 msgstr "Bavarder"
 
@@ -79,7 +79,7 @@ msgctxt "shortcut window"
 msgid "Clear"
 msgstr "Cancella"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:215
+#: data/ui/preferences.blp:5 data/ui/window.blp:229
 msgid "Preferences"
 msgstr "Preferenze"
 
@@ -95,52 +95,64 @@ msgstr "Svuota il prompt dopo l'invio"
 msgid "The prompt will be cleared after send"
 msgstr "Il prompt verrà svuotato dopo l'invio"
 
+#: data/ui/preferences.blp:24
+msgid "Use text view"
+msgstr ""
+
 #: data/ui/preferences.blp:25
+msgid "If the text view is used, you will lose formatting"
+msgstr ""
+
+#: data/ui/preferences.blp:34
 msgid "Providers"
 msgstr "Fornitori"
 
-#: data/ui/window.blp:27
+#: data/ui/window.blp:28
 msgid "Main Menu"
 msgstr "Menù principale"
 
-#: data/ui/window.blp:36 src/provider/base.py:47
+#: data/ui/window.blp:37 src/provider/base.py:50
 msgid "No network connection"
 msgstr "Nessuna connessione di rete"
 
-#: data/ui/window.blp:51
+#: data/ui/window.blp:52
 msgid "Message"
 msgstr "Messaggio"
 
-#: data/ui/window.blp:84 data/ui/window.blp:198
+#: data/ui/window.blp:85 data/ui/window.blp:201
 msgid "Copy to Clipboard"
 msgstr "Copia negli appunti"
 
-#: data/ui/window.blp:108
+#: data/ui/window.blp:109
 msgid "Ask"
 msgstr "Chiedi"
 
-#: data/ui/window.blp:117
+#: data/ui/window.blp:118
 msgid "Wait"
 msgstr "Attendere"
 
-#: data/ui/window.blp:132
+#: data/ui/window.blp:133
 msgid "Response"
 msgstr "Risposta"
 
-#: data/ui/window.blp:220
+#: data/ui/window.blp:211
+msgid "Stop"
+msgstr ""
+
+#: data/ui/window.blp:234
 msgid "Keyboard Shortcuts"
 msgstr "Scorciatoie da tastiera"
 
-#: data/ui/window.blp:225
+#: data/ui/window.blp:239
 msgid "About Bavarder"
 msgstr "Informazioni su Bavarder"
 
-#: src/provider/base.py:40
+#: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
 msgstr ""
 "Nessuna chiave API fornita; è possibile fornirne una nelle impostazioni"
 
-#: src/provider/base.py:42
+#: src/provider/base.py:45
 msgid "Open settings"
 msgstr "Apri impostazioni"
 
