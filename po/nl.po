@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-12 16:35+0200\n"
-"PO-Revision-Date: 2023-05-12 14:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-13 06:37+0000\n"
+"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -91,11 +91,11 @@ msgstr "Wis het invoerveld na het stellen van een vraag"
 
 #: data/ui/preferences.blp:24
 msgid "Use text view"
-msgstr ""
+msgstr "Tekstweergave inschakelen"
 
 #: data/ui/preferences.blp:25
 msgid "If the text view is used, you will lose formatting"
-msgstr ""
+msgstr "Als de tekstweergave is ingeschakeld, wordt alle opmaak gewist"
 
 #: data/ui/preferences.blp:34
 msgid "Providers"
@@ -131,7 +131,7 @@ msgstr "Antwoord"
 
 #: data/ui/window.blp:211
 msgid "Stop"
-msgstr "Stop"
+msgstr "Stoppen"
 
 #: data/ui/window.blp:234
 msgid "Keyboard Shortcuts"
