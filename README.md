@@ -48,8 +48,6 @@ Bavarder is a french word, the definiton of Bavarder is "Parler abondamment de c
 
 ### Flatpak
 
-#### Flathub
-
 You can either use your GNOME Software and search for "Bavarder" or you can run
 
 ``` shell
