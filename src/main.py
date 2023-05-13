@@ -978,15 +978,15 @@ Clear After Send: {self.clear_after_send}
                                 --alt-background-color: #4a4a4a;
                                 --link-color: #78aeed;
                                 --blockquote-text-color: #ffffff;
-                                --blockquote-border-color: #1f1f1f;
-                                --header-border-color: #1f1f1f;
+                                --blockquote-border-color: #454545;
+                                --header-border-color: #454545;
                                 --hr-background-color: #505050;
-                                --table-tr-border-color: #1f1f1f;
-                                --table-td-border-color: #1f1f1f;
+                                --table-tr-border-color: #6e6e6e;
+                                --table-td-border-color: #6e6e6e;
                                 --kbd-text-color: #ffffff;
                                 --kbd-background-color: #4a4a4a;
-                                --kbd-border-color: #1f1f1f;
-                                --kbd-shadow-color: #1e1e1e;
+                                --kbd-border-color: #6e6e6e;
+                                --kbd-shadow-color: #575757;
                             }
                         }"""
             CUSTOM_STYLE = """
