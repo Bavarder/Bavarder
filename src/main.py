@@ -116,6 +116,7 @@ class BavarderApplication(Adw.Application):
             set(self.settings.get_strv("enabled-providers"))
         )
         self.latest_provider = self.settings.get_string("latest-provider")
+        self.use_theme = False
 
     def quitting(self, *args, **kwargs):
         """Called before closing main window."""
@@ -275,6 +276,9 @@ Gtk: {Gtk.MAJOR_VERSION}.{Gtk.MINOR_VERSION}.{Gtk.MICRO_VERSION}
 Python: {platform.python_version()}
 OS: {platform.system()} {platform.release()} {platform.version()}
 Providers: {self.enabled_providers}
+Use Theme: {self.use_theme}
+Use Text View: {self.use_text_view}
+Clear After Send: {self.clear_after_send}
 """
         )
         about.present()
@@ -1003,6 +1007,7 @@ Providers: {self.enabled_providers}
             """
 
             if os.path.exists(os.path.expanduser("~/.config/gtk-4.0/gtk.css")):
+                self.use_theme = True
                 variables, palette, css = self.parse_css(os.path.expanduser("~/.config/gtk-4.0/gtk.css"))
                 variables["card_fg_color"] = variables.get("card_fg_color", "#2e3436")
                 variables["card_bg_color"] = variables.get("card_bg_color", "#f6f5f4")
@@ -1012,6 +1017,7 @@ Providers: {self.enabled_providers}
                 variables["headerbar_bg_color"] = variables.get("headerbar_bg_color", "#d8dadd")
                 theme_css = ":root {\n" + CUSTOM_STYLE.format(**variables) + " \n}\n" + css
             else:
+                self.use_theme = False
                 theme_css = ADWAITA_STYLE
             self.show(TEMPLATE.replace("{response}", response).replace("{theme_css}", theme_css), Step.LOAD_WEBVIEW)
         else:
