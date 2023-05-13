@@ -1005,6 +1005,22 @@ Clear After Send: {self.clear_after_send}
                 --kbd-border-color: #bdc1c6;
                 --kbd-shadow-color: #8c939a;
             """
+            DARK_CUSTOM_STYLE = """
+             --text-color: {card_fg_color};
+            --background-color: {card_bg_color};
+            --alt-background-color: {view_bg_color};
+            --link-color: {accent_fg_color};
+            --blockquote-text-color: {card_fg_color};
+            --blockquote-border-color: {card_bg_color};
+            --header-border-color: {headerbar_border_color};
+            --hr-background-color: {headerbar_bg_color};
+            --table-tr-border-color: {headerbar_border_color};
+            --table-td-border-color: {headerbar_border_color};
+            --kbd-text-color: #ffffff;
+            --kbd-background-color: #4a4a4a;
+            --kbd-border-color: #1f1f1f;
+            --kbd-shadow-color: #1e1e1e;
+            """
 
             if os.path.exists(os.path.expanduser("~/.config/gtk-4.0/gtk.css")):
                 self.use_theme = True
@@ -1015,7 +1031,8 @@ Clear After Send: {self.clear_after_send}
                 variables["accent_fg_color"] = variables.get("accent_fg_color", "#0d71de")
                 variables["headerbar_border_color"] = variables.get("headerbar_border_color", "#e1e2e4")
                 variables["headerbar_bg_color"] = variables.get("headerbar_bg_color", "#d8dadd")
-                theme_css = ":root {\n" + CUSTOM_STYLE.format(**variables) + " \n}\n" + css
+                theme_css = ":root {\n" + CUSTOM_STYLE.format(**variables) + " \n}\n" + "@media (prefers-color-scheme: dark) {\n:root {\n" + \
+                     DARK_CUSTOM_STYLE.format(**variables) + "\n}\n}\n" + css
             else:
                 self.use_theme = False
                 theme_css = ADWAITA_STYLE
