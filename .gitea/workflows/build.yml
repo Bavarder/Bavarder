@@ -1,0 +1,35 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  flatpak:
+    name: Flatpak
+    runs-on: ubuntu-latest
+    container:
+      image: bilelmoussaoui/flatpak-github-actions:gnome-44
+      options: --privileged
+    strategy:
+      matrix:
+        arch: [x86_64]
+      fail-fast: false
+    steps:
+      - name: Hack container for local development
+        run: |
+                        dnf -y install nodejs
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+                    dnf -y install docker flatpak-builder flatpak git
+      - name: Build
+        run: |
+          flatpak-builder --repo=repo --force-clean build build-aux/flatpak/io.github.Bavarder.Bavarder.json
+          flatpak build-bundle repo bavarder.flatpak io.github.Bavarder.Bavarder
+          ls -la
+          curl --user 0xmrtt:$ACCESS_TOKEN --upload-file bavarder.flatpak https://git.projectsegfau.lt/api/packages/Bavarder/generic/Bavarder/$GITHUB_JOB/bavarder.flatpak          
+
+
