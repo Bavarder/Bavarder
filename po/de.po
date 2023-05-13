@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-13 13:03+0200\n"
-"PO-Revision-Date: 2023-05-12 14:38+0000\n"
+"PO-Revision-Date: 2023-05-13 13:25+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
@@ -92,11 +92,11 @@ msgstr "Die Eingabeaufforderung wird nach dem Senden gelöscht"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Verwenden Sie für die Ausgabe Klartext"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "Es wird der reine Text ohne Formatierung verwendet"
 
 #: data/ui/preferences.blp:34
 msgid "Providers"
@@ -140,7 +140,7 @@ msgstr "Tastatürkürzel"
 
 #: data/ui/window.blp:239
 msgid "New window"
-msgstr ""
+msgstr "Neues Fenster"
 
 #: data/ui/window.blp:244
 msgid "About Bavarder"
@@ -152,7 +152,7 @@ msgstr "Besonderer Dank an"
 
 #: src/main.py:308
 msgid "Text copied"
-msgstr ""
+msgstr "Text kopiert"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
