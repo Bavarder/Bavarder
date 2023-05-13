@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-13 13:03+0200\n"
-"PO-Revision-Date: 2023-05-12 14:36+0000\n"
+"PO-Revision-Date: 2023-05-13 13:25+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fi/>\n"
@@ -140,7 +140,7 @@ msgstr "Pikanäppäimet"
 
 #: data/ui/window.blp:239
 msgid "New window"
-msgstr ""
+msgstr "Uusi ikkuna"
 
 #: data/ui/window.blp:244
 msgid "About Bavarder"
