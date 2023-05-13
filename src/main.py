@@ -963,11 +963,11 @@ Clear After Send: {self.clear_after_send}
                             --blockquote-border-color: #dbdbdb;
                             --header-border-color: #dbdbdb;
                             --hr-background-color: #dbdbdb;
-                            --table-tr-border-color: #dbdbdb;
-                            --table-td-border-color: #dbdbdb;
+                            --table-tr-border-color: #dcdcdc;
+                            --table-td-border-color: #dcdcdc;
                             --kbd-text-color: rgba(0, 0, 0, 0.8);
                             --kbd-background-color: #ffffff;
-                            --kbd-border-color: #dbdbdb;
+                            --kbd-border-color: #dcdcdc;
                             --kbd-shadow-color: #dddddd;
                         }
 
