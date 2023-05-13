@@ -59,6 +59,16 @@
 	</keywords>
 
   <releases>
+    <release version="0.2.1" date="2023-5-13" type="stable">
+      <description>
+        <p>Fix Theming support of the new render widget</p>
+        <p>Add the ability to have multiple windows open at the same time</p>
+        <p>Update preferences UI</p>
+        <p>Fix some bugs</p>
+        <p>Update translations</p>
+        <p>Add better error handling</p>
+      </description>
+    </release>
     <release version="0.2.0" date="2023-5-11" type="stable">
       <description>
         <p>Add support of formatting in the response view using Markdown</p>
