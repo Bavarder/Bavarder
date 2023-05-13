@@ -13,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-13 13:03+0200\n"
 "PO-Revision-Date: 2023-05-13 13:25+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -94,11 +94,11 @@ msgstr "La requête sera effacée après envoi"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Utiliser du texte brut pour la sortie"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "Le texte brut sans mise en forme sera utilisé"
 
 #: data/ui/preferences.blp:34
 msgid "Providers"
@@ -154,7 +154,7 @@ msgstr "Remerciements spéciaux à"
 
 #: src/main.py:308
 msgid "Text copied"
-msgstr ""
+msgstr "Texte copié"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
