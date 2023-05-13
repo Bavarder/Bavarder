@@ -3,3 +3,4 @@ flatpak-pip-generator
 repo/
 build/
 export/
+bavarder.flatpak
