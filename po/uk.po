@@ -6,13 +6,14 @@
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # Orest58008 <orest58008@tuta.io>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
+# volkov <d2oo1dle2x@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-13 13:03+0200\n"
-"PO-Revision-Date: 2023-05-13 13:25+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-14 07:13+0000\n"
+"Last-Translator: volkov <d2oo1dle2x@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/uk/>\n"
 "Language: uk\n"
@@ -49,7 +50,7 @@ msgstr "Загальні"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Показати Скорочення"
+msgstr "Показати комбінації клавіш"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
@@ -62,18 +63,14 @@ msgid "Quit"
 msgstr "Вийти"
 
 #: data/ui/help-overlay.ui:32
-#, fuzzy
-#| msgid "Preferences"
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Опції"
 
 #: data/ui/help-overlay.ui:38
-#, fuzzy
-#| msgid "Response"
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr "Відповідь"
+msgstr "Копіювати відповідь"
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
@@ -97,12 +94,13 @@ msgid "The prompt will be cleared after send"
 msgstr "Запит буде очищений після надсилання"
 
 #: data/ui/preferences.blp:24
+#, fuzzy
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Використовувати звичайний текст для виводу"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "Звичайний текст, без форматування, буде використовуватися"
 
 #: data/ui/preferences.blp:34
 msgid "Providers"
@@ -130,7 +128,7 @@ msgstr "Запитати"
 
 #: data/ui/window.blp:118
 msgid "Wait"
-msgstr "Чекати"
+msgstr "Чекайте"
 
 #: data/ui/window.blp:133
 msgid "Response"
@@ -158,7 +156,7 @@ msgstr "Особлива подяка"
 
 #: src/main.py:308
 msgid "Text copied"
-msgstr ""
+msgstr "Текст скопійовано"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
