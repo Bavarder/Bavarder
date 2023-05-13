@@ -505,7 +505,7 @@ Clear After Send: {self.clear_after_send}
                         }
 
                         strong {
-                        font-weight: 600;
+                        font-weight: bold;
                         }
 
                         img {
@@ -562,32 +562,32 @@ Clear After Send: {self.clear_after_send}
                         h4,
                         h5,
                         h6 {
-                        font-weight: 600;
+                        font-weight: bold;
                         margin: 0;
                         }
 
                         h1 {
-                        font-size: 2em;
+                        font-size: 24pt;
                         }
 
                         h2 {
-                        font-size: 1.5em;
+                        font-size: 18pt;
                         }
 
                         h3 {
-                        font-size: 1.25em;
+                        font-size: 14pt;
                         }
 
                         h4 {
-                        font-size: 1em;
+                        font-size: 12pt;
                         }
 
                         h5 {
-                        font-size: 0.875em;
+                        font-size: 10pt;
                         }
 
                         h6 {
-                        font-size: 0.85em;
+                        font-size: 8pt;
                         }
 
                         p {
@@ -625,14 +625,14 @@ Clear After Send: {self.clear_after_send}
                         code,
                         kbd,
                         pre {
-                        font-family: "Fira Mono", fira-mono, monospace, color-emoji;
-                        font-size: 1em;
+                        font-family: "Monospace", monospace, color-emoji;
+                        font-size: 12pt;
                         word-wrap: normal;
                         }
 
                         code {
                         border-radius: 0.1875em;
-                        font-size: 0.85em;
+                        font-size: 10pt;
                         padding: 0.2em 0.4em;
                         margin: 0;
                         }
@@ -640,13 +640,13 @@ Clear After Send: {self.clear_after_send}
                         pre {
                         margin-top: 0;
                         margin-bottom: 0;
-                        font-size: 0.75em;
+                        font-size: 8pt;
                         }
 
                         pre>code {
                         padding: 0;
                         margin: 0;
-                        font-size: 1em;
+                        font-size: 12pt;
                         word-break: normal;
                         white-space: pre;
                         background: transparent;
@@ -666,7 +666,7 @@ Clear After Send: {self.clear_after_send}
                         pre {
                         padding: 1em;
                         overflow: auto;
-                        font-size: 0.85em;
+                        font-size: 10pt;
                         line-height: 1.5;
                         background-color: var(--alt-background-color);
                         border-radius: 0.1875em;
@@ -774,7 +774,7 @@ Clear After Send: {self.clear_after_send}
                         kbd {
                         display: inline-block;
                         padding: 0.1875em 0.3125em;
-                        font-size: 0.6875em;
+                        font-size: 8pt;
                         line-height: 1;
                         color: var(--kbd-text-color);
                         vertical-align: middle;
@@ -808,30 +808,30 @@ Clear After Send: {self.clear_after_send}
 
                         h1 {
                         padding-bottom: 0.3em;
-                        font-size: 2em;
+                        font-size: 24pt;
                         border-bottom: 1px solid var(--header-border-color);
                         }
 
                         h2 {
                         padding-bottom: 0.3em;
-                        font-size: 1.5em;
+                        font-size: 18pt;
                         border-bottom: 1px solid var(--header-border-color);
                         }
 
                         h3 {
-                        font-size: 1.25em;
+                        font-size: 14pt;
                         }
 
                         h4 {
-                        font-size: 1em;
+                        font-size: 12pt;
                         }
 
                         h5 {
-                        font-size: 0.875em;
+                        font-size: 10pt;
                         }
 
                         h6 {
-                        font-size: 0.85em;
+                        font-size: 8pt;
                         opacity: 0.67;
                         }
 
@@ -867,7 +867,7 @@ Clear After Send: {self.clear_after_send}
                         dl dt {
                         padding: 0;
                         margin-top: 1em;
-                        font-size: 1em;
+                        font-size: 12pt;
                         font-style: italic;
                         font-weight: 600;
                         }
