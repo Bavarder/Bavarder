@@ -34,6 +34,7 @@ from .window import BavarderWindow
 from .preferences import Preferences
 from enum import auto, IntEnum
 
+from gettext import gettext as _
 from .constants import app_id, version, build_type
 
 from tempfile import NamedTemporaryFile
@@ -102,6 +103,7 @@ class BavarderApplication(Adw.Application):
         self.create_action("ask", self.on_ask_action, ["<primary>Return"])
         self.create_action("clear", self.on_clear_action, ["<primary><shift>BackSpace"])
         self.create_action("stop", self.on_stop_action, ["<primary>Escape"])
+        self.create_action("new", self.on_new_window, ["<primary>n"])
         # self.create_action("speak", self.on_speak_action, ["<primary>S"])
         # self.create_action("listen", self.on_listen_action, ["<primary>L"])
 
@@ -115,15 +117,6 @@ class BavarderApplication(Adw.Application):
         )
         self.latest_provider = self.settings.get_string("latest-provider")
 
-        self.web_view = None
-        self.web_view_pending_html = None
-
-        self.loading = False
-        self.shown = False
-        self.preview_visible = False
-
-
-
     def quitting(self, *args, **kwargs):
         """Called before closing main window."""
         self.settings.set_strv("enabled-providers", list(self.enabled_providers))
@@ -132,7 +125,37 @@ class BavarderApplication(Adw.Application):
         print("Saving providers data...")
 
         self.save_providers()
-        self.quit()
+        self.win.close()
+
+    @property
+    def win(self):
+        return self.props.active_window
+
+    def on_new_window(self, action, *args):
+        self.new_window()
+
+    def new_window(self, window=None):
+        if window:
+            win = self.props.active_window
+        else:
+            win = BavarderWindow(application=self)
+        win.connect("close-request", self.quitting)
+        self.load_dropdown(win)
+        self.load()
+        print(self.latest_provider)
+        for k, p in self.providers.items():
+            if p.slug == self.latest_provider:
+                print("Setting selected provider to", k)
+                self.win.provider_selector.set_selected(k)
+                break
+
+        win.web_view = None
+        win.web_view_pending_html = None
+        win.loading = False
+        win.shown = False
+        win.preview_visible = False
+
+        win.present()
 
     def on_quit(self, action, param):
         """Called when the user activates the Quit action."""
@@ -161,27 +184,13 @@ class BavarderApplication(Adw.Application):
         We raise the application's main window, creating it if
         necessary.
         """
-        self.win = self.props.active_window
-        if not self.win:
-            self.win = BavarderWindow(application=self)
-        self.win.present()
-
-        self.win.connect("close-request", self.quitting)
-
-        self.load_dropdown()
-
-        self.load()
-
-        print(self.latest_provider)
-        for k, p in self.providers.items():
-            if p.slug == self.latest_provider:
-                print("Setting selected provider to", k)
-                self.win.provider_selector.set_selected(k)
-                break
-
+        self.new_window()
         self.win.prompt_text_view.grab_focus()
 
-    def load_dropdown(self):
+    def load_dropdown(self, window=None):
+
+        if window is None:
+            window = self.win
 
         self.provider_selector_model = Gtk.StringList()
         self.providers = {}
@@ -202,12 +211,12 @@ class BavarderApplication(Adw.Application):
                 continue
             else:
                 try:
-                    _ = self.providers[i]  # doesn't re load if already loaded
+                    self.providers[i]  # doesn't re load if already loaded
                 except KeyError:
-                    self.providers[i] = PROVIDERS[provider](self.win, self)
+                    self.providers[i] = PROVIDERS[provider](window, self)
 
-        self.win.provider_selector.set_model(self.provider_selector_model)
-        self.win.provider_selector.connect("notify", self.on_provider_selector_notify)
+        window.provider_selector.set_model(self.provider_selector_model)
+        window.provider_selector.connect("notify", self.on_provider_selector_notify)
 
     def load(self):
         for p in self.providers.values():
@@ -333,53 +342,53 @@ Providers: {self.enabled_providers}
 
     def show(self, html=None, step=Step.LOAD_WEBVIEW):
         if step == Step.LOAD_WEBVIEW:
-            self.loading = True
-            if not self.web_view:
-                self.web_view = WebKit.WebView()
-                self.web_view.get_settings().set_allow_universal_access_from_file_urls(True)
+            self.win.loading = True
+            if not self.win.web_view:
+                self.win.web_view = WebKit.WebView()
+                self.win.web_view.get_settings().set_allow_universal_access_from_file_urls(True)
 
-                self.web_view.get_settings().set_enable_developer_extras(True)
+                self.win.web_view.get_settings().set_enable_developer_extras(True)
 
                 # Show preview once the load is finished
-                self.web_view.connect("load-changed", self.on_load_changed)
+                self.win.web_view.connect("load-changed", self.on_load_changed)
 
                 # All links will be opened in default browser, but local files are opened in apps.
-                self.web_view.connect("decide-policy", self.on_click_link)
+                self.win.web_view.connect("decide-policy", self.on_click_link)
 
-                self.web_view.connect("context-menu", self.on_right_click)
+                self.win.web_view.connect("context-menu", self.on_right_click)
 
-                self.web_view.set_hexpand(True)
-                self.web_view.set_vexpand(True)
+                self.win.web_view.set_hexpand(True)
+                self.win.web_view.set_vexpand(True)
 
-                self.win.response_stack.add_child(self.web_view)
-                self.win.response_stack.set_visible_child(self.web_view)
+                self.win.response_stack.add_child(self.win.web_view)
+                self.win.response_stack.set_visible_child(self.win.web_view)
             
-            if self.web_view.is_loading():
-                self.web_view_pending_html = html
+            if self.win.web_view.is_loading():
+                self.win.web_view_pending_html = html
             else:
                 try:
-                    self.web_view.load_html(html, "file://localhost/")
+                    self.win.web_view.load_html(html, "file://localhost/")
                 except TypeError: # Argument 1 does not allow None as a value
                     pass
 
 
         elif step == Step.RENDER:
-            if not self.preview_visible:
-                self.preview_visible = True
+            if not self.win.preview_visible:
+                self.win.preview_visible = True
                 self.show()
 
     def reload(self, *_widget, reshow=False):
-        if self.preview_visible:
+        if self.win.preview_visible:
             if reshow:
                 self.hide()
             self.show()
 
     def on_load_changed(self, _web_view, event):
         if event == WebKit.LoadEvent.FINISHED:
-            self.loading = False
-            if self.web_view_pending_html:
-                self.show(html=self.web_view_pending_html, step=Step.LOAD_WEBVIEW)
-                self.web_view_pending_html = None
+            self.win.loading = False
+            if self.win.web_view_pending_html:
+                self.show(html=self.win.web_view_pending_html, step=Step.LOAD_WEBVIEW)
+                self.win.web_view_pending_html = None
             else:
                 # we only lazyload the webview once
                 self.show(step=Step.RENDER)

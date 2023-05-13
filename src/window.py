@@ -46,6 +46,11 @@ class BavarderWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+        app = kwargs.get('application')
+        if app is None:
+            raise ValueError("Application should be passed to ImaginerWindow")
+        self.app = app
+
         self.settings = Gio.Settings(schema_id="io.github.Bavarder.Bavarder")
 
         self.settings.bind(
