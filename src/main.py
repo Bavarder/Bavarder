@@ -475,7 +475,7 @@ Clear After Send: {self.clear_after_send}
                         }
 
                         html {
-                        font-size: 16px;
+                        font-size: 11pt;
                         }
 
                         body {
@@ -955,38 +955,38 @@ Clear After Send: {self.clear_after_send}
             """
 
             ADWAITA_STYLE = """:root {
-                            --text-color: #2e3436;
-                            --background-color: #f6f5f4;
-                            --alt-background-color: #edeeef;
-                            --link-color: #0d71de;
-                            --blockquote-text-color: #747e85;
-                            --blockquote-border-color: #d6d8da;
-                            --header-border-color: #e1e2e4;
-                            --hr-background-color: #d8dadd;
-                            --table-tr-border-color: #bdc1c6;
-                            --table-td-border-color: #d6d8da;
-                            --kbd-text-color: #4e585e;
-                            --kbd-background-color: #f1f1f1;
-                            --kbd-border-color: #bdc1c6;
-                            --kbd-shadow-color: #8c939a;
+                            --text-color: rgba(0, 0, 0, 0.8);
+                            --background-color: #ffffff;
+                            --alt-background-color: #ebebeb;
+                            --link-color: #1c71d8;
+                            --blockquote-text-color: rgba(0, 0, 0, 0.8);
+                            --blockquote-border-color: #dbdbdb;
+                            --header-border-color: #dbdbdb;
+                            --hr-background-color: #dbdbdb;
+                            --table-tr-border-color: #dbdbdb;
+                            --table-td-border-color: #dbdbdb;
+                            --kbd-text-color: rgba(0, 0, 0, 0.8);
+                            --kbd-background-color: #ffffff;
+                            --kbd-border-color: #dbdbdb;
+                            --kbd-shadow-color: #dddddd;
                         }
 
                         @media (prefers-color-scheme: dark) {
                             :root {
-                                --text-color: #eeeeec;
+                                --text-color: #ffffff;
                                 --background-color: #363636;
                                 --alt-background-color: #4a4a4a;
                                 --link-color: #78aeed;
                                 --blockquote-text-color: #ffffff;
-                                --blockquote-border-color: #525252;
-                                --header-border-color: #474747;
+                                --blockquote-border-color: #1f1f1f;
+                                --header-border-color: #1f1f1f;
                                 --hr-background-color: #505050;
-                                --table-tr-border-color: #696969;
-                                --table-td-border-color: #525252;
+                                --table-tr-border-color: #1f1f1f;
+                                --table-td-border-color: #1f1f1f;
                                 --kbd-text-color: #ffffff;
                                 --kbd-background-color: #4a4a4a;
-                                --kbd-border-color: #696969;
-                                --kbd-shadow-color: #979797;
+                                --kbd-border-color: #1f1f1f;
+                                --kbd-shadow-color: #1e1e1e;
                             }
                         }"""
             CUSTOM_STYLE = """
