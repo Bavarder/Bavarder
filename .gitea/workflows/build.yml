@@ -17,14 +17,12 @@ jobs:
         arch: [x86_64]
       fail-fast: false
     steps:
-      - name: Hack container for local development
-        run: |
-                        dnf -y install nodejs
+      - name: Install Node.js
+        run: dnf -y install nodejs
       - name: Checkout
         uses: actions/checkout@v3
       - name: Install dependencies
-        run: |
-                    dnf -y install docker flatpak-builder flatpak git
+        run: dnf -y install docker flatpak-builder flatpak git
       - name: Build
         run: |
           flatpak-builder --repo=repo --force-clean build build-aux/flatpak/io.github.Bavarder.Bavarder.json
