@@ -485,7 +485,7 @@ Clear After Send: {self.clear_after_send}
                         line-height: 1.5;
                         word-wrap: break-word;
                         max-width: 980px;
-                        //margin: auto;
+                        margin: 0;
                         //padding: 4em;
                         }
 
