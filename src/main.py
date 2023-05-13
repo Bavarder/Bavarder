@@ -227,7 +227,10 @@ class BavarderApplication(Adw.Application):
                 pass
 
     def on_provider_selector_notify(self, _unused, pspec):
-        self.win.banner.set_revealed(False)
+        try:
+            self.win.banner.set_revealed(False)
+        except AttributeError:
+            pass
 
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
@@ -1001,6 +1004,12 @@ Providers: {self.enabled_providers}
 
             if os.path.exists(os.path.expanduser("~/.config/gtk-4.0/gtk.css")):
                 variables, palette, css = self.parse_css(os.path.expanduser("~/.config/gtk-4.0/gtk.css"))
+                variables["card_fg_color"] = variables.get("card_fg_color", "#2e3436")
+                variables["card_bg_color"] = variables.get("card_bg_color", "#f6f5f4")
+                variables["view_bg_color"] = variables.get("view_bg_color", "#edeeef")
+                variables["accent_fg_color"] = variables.get("accent_fg_color", "#0d71de")
+                variables["headerbar_border_color"] = variables.get("headerbar_border_color", "#e1e2e4")
+                variables["headerbar_bg_color"] = variables.get("headerbar_bg_color", "#d8dadd")
                 theme_css = ":root {\n" + CUSTOM_STYLE.format(**variables) + " \n}\n" + css
             else:
                 theme_css = ADWAITA_STYLE
