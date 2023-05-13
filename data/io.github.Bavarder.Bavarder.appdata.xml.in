@@ -15,9 +15,13 @@
 
 	<screenshots>
 	  <screenshot width="472" height="622">
-		<caption>Screenshot of Main UI</caption>
-		<image type="source">https://raw.githubusercontent.com/Bavarder/Bavarder/main/data/screenshots/quantum-computing.png</image>
+      <caption>Screenshot of Main UI</caption>
+      <image type="source">https://codeberg.org/Bavarder/Bavarder/raw/branch/main/data/screenshots/preview.png</image>
 		</screenshot>
+    <screenshot width="724" height="732">
+      <caption>Screenshot of Preferences UI</caption>
+      <image type="source">https://codeberg.org/Bavarder/Bavarder/raw/branch/main/data/screenshots/preferences.png</image>
+    </screenshot>
 	</screenshots>
 
 	<url type="bugtracker">https://codeberg.org/Bavarder/Bavarder/issues</url>

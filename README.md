@@ -36,7 +36,7 @@
 
 <a href="https://bavarder.codeberg.page">
 <p align="center">
-  <img src="./data/screenshots/quantum-computing.png" alt="Preview"/>
+  <img src="./data/screenshots/preview.png" alt="Preview"/>
 </p>
 </a>
 
