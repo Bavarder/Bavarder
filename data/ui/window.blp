@@ -226,6 +226,12 @@ template BavarderWindow : Adw.ApplicationWindow {
 menu main-menu {
   section {
     item {
+      label: _("New window");
+      action: "app.new";
+    }
+  }
+  section {
+    item {
       label: _("Preferences");
       action: "app.preferences";
     }
@@ -234,12 +240,7 @@ menu main-menu {
       label: _("Keyboard Shortcuts");
       action: "win.show-help-overlay";
     }
-
-    item {
-      label: _("New window");
-      action: "app.new";
-    }
-
+    
     item {
       label: _("About Bavarder");
       action: "app.about";
