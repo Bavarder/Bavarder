@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 16:35+0200\n"
+"POT-Creation-Date: 2023-05-13 13:03+0200\n"
 "PO-Revision-Date: 2023-05-12 14:36+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
@@ -94,11 +94,11 @@ msgid "The prompt will be cleared after send"
 msgstr "La entrada será borrada después de enviar"
 
 #: data/ui/preferences.blp:24
-msgid "Use text view"
+msgid "Use plain text for output"
 msgstr ""
 
 #: data/ui/preferences.blp:25
-msgid "If the text view is used, you will lose formatting"
+msgid "The plain text without formatting will be used"
 msgstr ""
 
 #: data/ui/preferences.blp:34
@@ -142,8 +142,20 @@ msgid "Keyboard Shortcuts"
 msgstr "Atajos de Teclado"
 
 #: data/ui/window.blp:239
+msgid "New window"
+msgstr ""
+
+#: data/ui/window.blp:244
 msgid "About Bavarder"
 msgstr "Sobre Bavarder"
+
+#: src/main.py:262
+msgid "Special thanks to"
+msgstr "Agradecimientos especiales a"
+
+#: src/main.py:308
+msgid "Text copied"
+msgstr ""
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -172,9 +184,6 @@ msgstr "Charla GPT"
 
 #~ msgid "Speaking"
 #~ msgstr "Hablando"
-
-#~ msgid "Special thanks to"
-#~ msgstr "Agradecimientos especiales a"
 
 #~ msgid "Ready"
 #~ msgstr "Leer"

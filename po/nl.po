@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 16:35+0200\n"
+"POT-Creation-Date: 2023-05-13 13:03+0200\n"
 "PO-Revision-Date: 2023-05-13 06:37+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
@@ -90,12 +90,12 @@ msgid "The prompt will be cleared after send"
 msgstr "Wis het invoerveld na het stellen van een vraag"
 
 #: data/ui/preferences.blp:24
-msgid "Use text view"
-msgstr "Tekstweergave inschakelen"
+msgid "Use plain text for output"
+msgstr ""
 
 #: data/ui/preferences.blp:25
-msgid "If the text view is used, you will lose formatting"
-msgstr "Als de tekstweergave is ingeschakeld, wordt alle opmaak gewist"
+msgid "The plain text without formatting will be used"
+msgstr ""
 
 #: data/ui/preferences.blp:34
 msgid "Providers"
@@ -138,8 +138,20 @@ msgid "Keyboard Shortcuts"
 msgstr "Sneltoetsen"
 
 #: data/ui/window.blp:239
+msgid "New window"
+msgstr ""
+
+#: data/ui/window.blp:244
 msgid "About Bavarder"
 msgstr "Over Bavarder"
+
+#: src/main.py:262
+msgid "Special thanks to"
+msgstr "Met veel dank aan"
+
+#: src/main.py:308
+msgid "Text copied"
+msgstr ""
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -152,6 +164,12 @@ msgstr "Voorkeuren openen"
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
 msgstr "Cat GPT"
+
+#~ msgid "Use text view"
+#~ msgstr "Tekstweergave inschakelen"
+
+#~ msgid "If the text view is used, you will lose formatting"
+#~ msgstr "Als de tekstweergave is ingeschakeld, wordt alle opmaak gewist"
 
 #~ msgid "Quit"
 #~ msgstr "Afsluiten"
@@ -167,6 +185,3 @@ msgstr "Cat GPT"
 
 #~ msgid "Speaking"
 #~ msgstr "Bezig met praten…"
-
-#~ msgid "Special thanks to"
-#~ msgstr "Met veel dank aan"

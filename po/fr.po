@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 16:35+0200\n"
+"POT-Creation-Date: 2023-05-13 13:03+0200\n"
 "PO-Revision-Date: 2023-05-12 14:38+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
@@ -93,12 +93,12 @@ msgid "The prompt will be cleared after send"
 msgstr "La requête sera effacée après envoi"
 
 #: data/ui/preferences.blp:24
-msgid "Use text view"
-msgstr "Utiliser la vue texte"
+msgid "Use plain text for output"
+msgstr ""
 
 #: data/ui/preferences.blp:25
-msgid "If the text view is used, you will lose formatting"
-msgstr "Si la vue texte est utilisée, vous perdrez la mise en forme"
+msgid "The plain text without formatting will be used"
+msgstr ""
 
 #: data/ui/preferences.blp:34
 msgid "Providers"
@@ -141,8 +141,20 @@ msgid "Keyboard Shortcuts"
 msgstr "Raccourcis clavier"
 
 #: data/ui/window.blp:239
+msgid "New window"
+msgstr ""
+
+#: data/ui/window.blp:244
 msgid "About Bavarder"
 msgstr "À propos de Bavarder"
+
+#: src/main.py:262
+msgid "Special thanks to"
+msgstr "Remerciements spéciaux à"
+
+#: src/main.py:308
+msgid "Text copied"
+msgstr ""
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -156,6 +168,12 @@ msgstr "Ouvrir les paramètres"
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
 msgstr "Cat GPT"
+
+#~ msgid "Use text view"
+#~ msgstr "Utiliser la vue texte"
+
+#~ msgid "If the text view is used, you will lose formatting"
+#~ msgstr "Si la vue texte est utilisée, vous perdrez la mise en forme"
 
 #~ msgid "Quit"
 #~ msgstr "Quitter"
@@ -171,9 +189,6 @@ msgstr "Cat GPT"
 
 #~ msgid "Speaking"
 #~ msgstr "En train de parler"
-
-#~ msgid "Special thanks to"
-#~ msgstr "Remerciements spéciaux à"
 
 #~ msgid "Ready"
 #~ msgstr "Prêt"

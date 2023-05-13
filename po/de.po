@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-12 16:35+0200\n"
+"POT-Creation-Date: 2023-05-13 13:03+0200\n"
 "PO-Revision-Date: 2023-05-12 14:38+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
@@ -91,12 +91,12 @@ msgid "The prompt will be cleared after send"
 msgstr "Die Eingabeaufforderung wird nach dem Senden gelöscht"
 
 #: data/ui/preferences.blp:24
-msgid "Use text view"
-msgstr "Verwenden Sie die Textansicht"
+msgid "Use plain text for output"
+msgstr ""
 
 #: data/ui/preferences.blp:25
-msgid "If the text view is used, you will lose formatting"
-msgstr "Wenn die Textansicht verwendet wird, geht die Formatierung verloren"
+msgid "The plain text without formatting will be used"
+msgstr ""
 
 #: data/ui/preferences.blp:34
 msgid "Providers"
@@ -139,8 +139,20 @@ msgid "Keyboard Shortcuts"
 msgstr "Tastatürkürzel"
 
 #: data/ui/window.blp:239
+msgid "New window"
+msgstr ""
+
+#: data/ui/window.blp:244
 msgid "About Bavarder"
 msgstr "Über Bavarder"
+
+#: src/main.py:262
+msgid "Special thanks to"
+msgstr "Besonderer Dank an"
+
+#: src/main.py:308
+msgid "Text copied"
+msgstr ""
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -154,6 +166,12 @@ msgstr "Einstellungen öffnen"
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
 msgstr "Katze GPT"
+
+#~ msgid "Use text view"
+#~ msgstr "Verwenden Sie die Textansicht"
+
+#~ msgid "If the text view is used, you will lose formatting"
+#~ msgstr "Wenn die Textansicht verwendet wird, geht die Formatierung verloren"
 
 #~ msgid "Quit"
 #~ msgstr "Aufhören"
@@ -169,9 +187,6 @@ msgstr "Katze GPT"
 
 #~ msgid "Speaking"
 #~ msgstr "Reden"
-
-#~ msgid "Special thanks to"
-#~ msgstr "Besonderer Dank an"
 
 #~ msgid "Ready"
 #~ msgstr "Bereit"
