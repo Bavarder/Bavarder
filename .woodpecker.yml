@@ -1,13 +1,23 @@
+clone:
+  git:
+    image: bash
+    commands:
+      - cd /home/0xmrtt
+      - if [ -d Bavarder ]; then
+      -   cd Bavarder
+      -   git pull
+      - else
+      -   git clone https://git.exozy.me/Bavarder/Bavarder.git
+      - fi
+
 pipeline:
   build:
-    image: fedora
-    secrets: [access_token]
-    when:
-      branch: main
-      event: [push, pull_request, tag]
+    image: fish
+    secrets: [ access_token ]
     commands:
-      - dnf install flatpak flatpak-builder -y
+      - nix-env -iA nixpkgs.flatpak-builder
+      - fish_add_path ~/.nix-profile/bin
       - flatpak-builder --repo=repo --force-clean build build-aux/flatpak/io.github.Bavarder.Bavarder.json
       - flatpak build-bundle repo bavarder.flatpak io.github.Bavarder.Bavarder
       - ls -la
-      
+      - curl --user $CI_REPO_OWNER:$ACCESS_TOKEN --upload-file bavarder.flatpak https://git.exozy.me/api/packages/$CI_REPO_OWNER/generic/$CI_REPO_NAME/$CI_BUILD_NUMBER/bavarder.flatpak
