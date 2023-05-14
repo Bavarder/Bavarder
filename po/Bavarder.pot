@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-13 13:03+0200\n"
+"POT-Creation-Date: 2023-05-14 15:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,6 +35,10 @@ msgstr ""
 msgid "Screenshot of Main UI"
 msgstr ""
 
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:22
+msgid "Screenshot of Preferences UI"
+msgstr ""
+
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
 msgid "General"
@@ -52,25 +56,30 @@ msgstr ""
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
-msgid "Quit"
+msgid "Close current window"
 msgstr ""
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
-msgid "Preferences"
+msgid "Close all windows"
 msgstr ""
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
-msgid "Copy response"
+msgid "Preferences"
 msgstr ""
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
+msgid "Copy response"
+msgstr ""
+
+#: data/ui/help-overlay.ui:50
+msgctxt "shortcut window"
 msgid "Clear"
 msgstr ""
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:229
+#: data/ui/preferences.blp:5 data/ui/window.blp:235
 msgid "Preferences"
 msgstr ""
 
@@ -94,7 +103,15 @@ msgstr ""
 msgid "The plain text without formatting will be used"
 msgstr ""
 
+#: data/ui/preferences.blp:33
+msgid "Close all windows without warning"
+msgstr ""
+
 #: data/ui/preferences.blp:34
+msgid "All windows will be closed without warning, this can lead to data lose"
+msgstr ""
+
+#: data/ui/preferences.blp:43
 msgid "Providers"
 msgstr ""
 
@@ -130,24 +147,16 @@ msgstr ""
 msgid "Stop"
 msgstr ""
 
-#: data/ui/window.blp:234
-msgid "Keyboard Shortcuts"
-msgstr ""
-
-#: data/ui/window.blp:239
+#: data/ui/window.blp:229
 msgid "New window"
 msgstr ""
 
-#: data/ui/window.blp:244
+#: data/ui/window.blp:240
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: data/ui/window.blp:245
 msgid "About Bavarder"
-msgstr ""
-
-#: src/main.py:262
-msgid "Special thanks to"
-msgstr ""
-
-#: src/main.py:308
-msgid "Text copied"
 msgstr ""
 
 #: src/provider/base.py:43
