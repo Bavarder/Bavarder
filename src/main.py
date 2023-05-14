@@ -194,7 +194,8 @@ class BavarderApplication(Adw.Application):
             self.close_all()
         else:
             dialog = Adw.MessageDialog(
-                body="Are you sure you want to close all windows?",
+                heading="Close all windows?",
+                body="Closing all windows will lead to chat data loss",
                 transient_for=self.props.active_window,
             )
             dialog.add_response("cancel", "Cancel")
