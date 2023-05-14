@@ -8,6 +8,7 @@ from gi.repository import Gtk, Adw, GLib
 class CatGPTProvider(BavarderProvider):
     name = _("Cat GPT")
     slug = "catgpt"
+    description = "🐱️"
     version = "0.1.0"
 
     def __init__(self, win, app, *args, **kwargs):
