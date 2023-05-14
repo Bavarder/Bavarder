@@ -10,6 +10,8 @@ class CatGPTProvider(BavarderProvider):
     slug = "catgpt"
     description = "🐱️"
     version = "0.1.0"
+    developer_name = "Astrid Yu"
+    developers = ["Astrid Yu https://github.com/ifd3f"]
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
