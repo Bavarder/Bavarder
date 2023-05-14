@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-13 13:03+0200\n"
 "PO-Revision-Date: 2023-05-14 08:59+0000\n"
-"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -32,7 +32,7 @@ msgstr "与AI一起聊天"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:6
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:18
 msgid "Screenshot of Main UI"
@@ -41,27 +41,27 @@ msgstr ""
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "常规"
 
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "显示快捷方式"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Ask"
-msgstr ""
+msgstr "问"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "退出"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Preferences"
-msgstr ""
+msgstr "首选项"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
@@ -71,15 +71,15 @@ msgstr ""
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
 msgid "Clear"
-msgstr ""
+msgstr "清除"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:229
 msgid "Preferences"
-msgstr ""
+msgstr "首选项"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "提示词"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
@@ -99,27 +99,27 @@ msgstr ""
 
 #: data/ui/preferences.blp:34
 msgid "Providers"
-msgstr ""
+msgstr "提供者"
 
 #: data/ui/window.blp:28
 msgid "Main Menu"
-msgstr ""
+msgstr "主菜单"
 
 #: data/ui/window.blp:37 src/provider/base.py:50
 msgid "No network connection"
-msgstr ""
+msgstr "无网络连接"
 
 #: data/ui/window.blp:52
 msgid "Message"
-msgstr ""
+msgstr "消息"
 
 #: data/ui/window.blp:85 data/ui/window.blp:201
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "复制"
 
 #: data/ui/window.blp:109
 msgid "Ask"
-msgstr ""
+msgstr "问"
 
 #: data/ui/window.blp:118
 msgid "Wait"
@@ -131,11 +131,11 @@ msgstr ""
 
 #: data/ui/window.blp:211
 msgid "Stop"
-msgstr ""
+msgstr "暂停"
 
 #: data/ui/window.blp:234
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "键盘快捷键"
 
 #: data/ui/window.blp:239
 msgid "New window"
@@ -155,11 +155,11 @@ msgstr ""
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "未提供 API 密钥，你可以在设置中提供一个"
 
 #: src/provider/base.py:45
 msgid "Open settings"
-msgstr ""
+msgstr "打开设置"
 
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
