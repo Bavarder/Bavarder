@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 15:37+0200\n"
+"POT-Creation-Date: 2023-05-14 16:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,7 +79,7 @@ msgctxt "shortcut window"
 msgid "Clear"
 msgstr ""
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:235
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:277
 msgid "Preferences"
 msgstr ""
 
@@ -108,10 +108,10 @@ msgid "Close all windows without warning"
 msgstr ""
 
 #: data/ui/preferences.blp:34
-msgid "All windows will be closed without warning, this can lead to data lose"
+msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
 
-#: data/ui/preferences.blp:43
+#: data/ui/preferences.blp:43 src/main.py:275
 msgid "Providers"
 msgstr ""
 
@@ -119,44 +119,48 @@ msgstr ""
 msgid "Main Menu"
 msgstr ""
 
-#: data/ui/window.blp:37 src/provider/base.py:50
+#: data/ui/window.blp:34 src/provider/base.py:50
 msgid "No network connection"
 msgstr ""
 
-#: data/ui/window.blp:52
+#: data/ui/window.blp:49
 msgid "Message"
 msgstr ""
 
-#: data/ui/window.blp:85 data/ui/window.blp:201
+#: data/ui/window.blp:82 data/ui/window.blp:198
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: data/ui/window.blp:109
+#: data/ui/window.blp:106
 msgid "Ask"
 msgstr ""
 
-#: data/ui/window.blp:118
+#: data/ui/window.blp:115
 msgid "Wait"
 msgstr ""
 
-#: data/ui/window.blp:133
+#: data/ui/window.blp:130
 msgid "Response"
 msgstr ""
 
-#: data/ui/window.blp:211
+#: data/ui/window.blp:208
 msgid "Stop"
 msgstr ""
 
-#: data/ui/window.blp:229
+#: data/ui/window.blp:226
 msgid "New window"
 msgstr ""
 
-#: data/ui/window.blp:240
+#: data/ui/window.blp:237 src/main.py:278
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/window.blp:245
+#: data/ui/window.blp:242 src/main.py:279
 msgid "About Bavarder"
+msgstr ""
+
+#: src/main.py:243
+msgid "New Window"
 msgstr ""
 
 #: src/provider/base.py:43

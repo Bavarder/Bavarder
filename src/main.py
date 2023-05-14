@@ -105,6 +105,7 @@ class BavarderApplication(Adw.Application):
         self.create_action("clear", self.on_clear_action, ["<primary><shift>BackSpace"])
         self.create_action("stop", self.on_stop_action, ["<primary>Escape"])
         self.create_action("new", self.on_new_window, ["<primary>n"])
+        self.create_action("open_help", self.on_open_help, ["F1"])
         # self.create_action("speak", self.on_speak_action, ["<primary>S"])
         # self.create_action("listen", self.on_listen_action, ["<primary>L"])
 
@@ -117,6 +118,7 @@ class BavarderApplication(Adw.Application):
             set(self.settings.get_strv("enabled-providers"))
         )
         self.latest_provider = self.settings.get_string("latest-provider")
+        self.provider = self.latest_provider
         self.close_all_without_dialog = self.settings.get_boolean(
             "close-all-without-dialog"
         )
@@ -128,6 +130,11 @@ class BavarderApplication(Adw.Application):
         )
 
         self.use_theme = False
+
+    def on_open_help(self, action, *args):
+        GLib.spawn_command_line_async(
+            f"xdg-open https://bavarder.codeberg.page"
+        )
 
     def on_set_provider_action(self, action, *args):
         self.provider = args[0].get_string()
