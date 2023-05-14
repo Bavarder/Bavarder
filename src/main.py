@@ -342,6 +342,7 @@ Providers: {self.enabled_providers}
 Use Theme: {self.use_theme}
 Use Text View: {self.use_text_view}
 Clear After Send: {self.clear_after_send}
+Close All Without Dialog: {self.close_all_without_dialog}
 """
         )
         about.present()
