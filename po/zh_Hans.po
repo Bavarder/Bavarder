@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-13 13:03+0200\n"
-"PO-Revision-Date: 2023-05-14 08:59+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-14 09:43+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -36,7 +36,7 @@ msgstr "0xMRTT"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:18
 msgid "Screenshot of Main UI"
-msgstr ""
+msgstr "主界面的屏幕截图"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -66,7 +66,7 @@ msgstr "首选项"
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr ""
+msgstr "复制回复"
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
@@ -83,19 +83,19 @@ msgstr "提示词"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "发送后明确提示"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "发送后将清除该提示"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "使用纯文本进行输出"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "将使用没有格式化的纯文本"
 
 #: data/ui/preferences.blp:34
 msgid "Providers"
@@ -115,23 +115,23 @@ msgstr "消息"
 
 #: data/ui/window.blp:85 data/ui/window.blp:201
 msgid "Copy to Clipboard"
-msgstr "复制"
+msgstr "复制到剪贴板"
 
 #: data/ui/window.blp:109
 msgid "Ask"
-msgstr "问"
+msgstr "询问"
 
 #: data/ui/window.blp:118
 msgid "Wait"
-msgstr ""
+msgstr "等待"
 
 #: data/ui/window.blp:133
 msgid "Response"
-msgstr ""
+msgstr "回复"
 
 #: data/ui/window.blp:211
 msgid "Stop"
-msgstr "暂停"
+msgstr "停止"
 
 #: data/ui/window.blp:234
 msgid "Keyboard Shortcuts"
@@ -139,23 +139,23 @@ msgstr "键盘快捷键"
 
 #: data/ui/window.blp:239
 msgid "New window"
-msgstr ""
+msgstr "新窗口"
 
 #: data/ui/window.blp:244
 msgid "About Bavarder"
-msgstr ""
+msgstr "关于 Bavarder"
 
 #: src/main.py:262
 msgid "Special thanks to"
-msgstr ""
+msgstr "特别感谢"
 
 #: src/main.py:308
 msgid "Text copied"
-msgstr ""
+msgstr "复制文本"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
-msgstr "未提供 API 密钥，你可以在设置中提供一个"
+msgstr "没有提供API密钥，您可以在设置中提供一个"
 
 #: src/provider/base.py:45
 msgid "Open settings"
@@ -163,4 +163,4 @@ msgstr "打开设置"
 
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
-msgstr ""
+msgstr "Cat GPT"
