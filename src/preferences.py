@@ -10,6 +10,7 @@ class Preferences(Adw.PreferencesWindow):
     clear_after_send_switch = Gtk.Template.Child()
     provider_group = Gtk.Template.Child()
     use_text_view_switch = Gtk.Template.Child()
+    close_all_without_dialog_switch = Gtk.Template.Child()
 
     def __init__(self, application, **kwargs):
         super().__init__(**kwargs)
@@ -25,6 +26,11 @@ class Preferences(Adw.PreferencesWindow):
         self.use_text_view_switch.set_active(self.app.use_text_view)
         self.use_text_view_switch.connect(
             "notify::active", self.on_use_text_view_switch_toggled
+        )
+
+        self.close_all_without_dialog_switch.set_active(self.app.close_all_without_dialog)
+        self.close_all_without_dialog_switch.connect(
+            "notify::active", self.on_close_all_without_dialog_switch_toggled
         )
 
         self.setup_providers()
@@ -46,6 +52,15 @@ class Preferences(Adw.PreferencesWindow):
         else:
             self.settings.set_boolean("use-text-view", False)
             self.app.use_text_view = False
+
+    def on_close_all_without_dialog_switch_toggled(self, widget, *args):
+        """Callback for the close_all_without_dialog_switch toggled event."""
+        if widget.get_active():
+            self.settings.set_boolean("close-all-without-dialog", True)
+            self.app.close_all_without_dialog = True
+        else:
+            self.settings.set_boolean("close-all-without-dialog", False)
+            self.app.close_all_without_dialog = False
 
     def setup_providers(self):
         # for provider in self.app.providers.values():

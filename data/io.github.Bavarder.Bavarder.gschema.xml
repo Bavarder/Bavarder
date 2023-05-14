@@ -28,5 +28,8 @@
 		<key name="use-text-view" type="b">
 			<default>false</default>
 		</key>
+		<key name="close-all-without-dialog" type="b">
+			<default>false</default>
+		</key>
 	</schema>
 </schemalist>

@@ -28,6 +28,15 @@ template Preferences : Adw.PreferencesWindow {
           valign: center;
         }
       }
+
+      Adw.ActionRow {
+        title: _("Close all windows without warning");
+        subtitle: _("All windows will be closed without warnnings, this can lead to data lose");
+        activatable-widget: close_all_without_dialog_switch;
+        Gtk.Switch close_all_without_dialog_switch {
+          valign: center;
+        }
+      }
     }
 
     Adw.PreferencesGroup provider_group {

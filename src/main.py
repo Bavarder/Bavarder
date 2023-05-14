@@ -93,7 +93,8 @@ class BavarderApplication(Adw.Application):
             application_id="io.github.Bavarder.Bavarder",
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
-        self.create_action("quit", self.on_quit, ["<primary>q"])
+        self.create_action("quit_all", self.on_close_all, ["<primary>q"])
+        self.create_action("quit", self.on_quit, ["<primary>w"])
         self.create_action("about", self.on_about_action)
         self.create_action(
             "preferences", self.on_preferences_action, ["<primary>comma"]
@@ -116,6 +117,9 @@ class BavarderApplication(Adw.Application):
             set(self.settings.get_strv("enabled-providers"))
         )
         self.latest_provider = self.settings.get_string("latest-provider")
+        self.close_all_without_dialog = self.settings.get_boolean(
+            "close-all-without-dialog"
+        )
         self.use_theme = False
 
     def quitting(self, *args, **kwargs):
@@ -126,7 +130,6 @@ class BavarderApplication(Adw.Application):
         print("Saving providers data...")
 
         self.save_providers()
-        self.win.close()
 
     @property
     def win(self):
@@ -158,9 +161,42 @@ class BavarderApplication(Adw.Application):
 
         win.present()
 
+    def on_close_all(self, action, param):
+        print("Closing all windows...")
+
+        def close_all():
+            self.quitting()
+            for w in self.get_windows():
+                w.close()
+
+        if len(self.get_windows()) == 1:
+            self.on_quit(action, param)
+        elif self.close_all_without_dialog:
+            close_all()
+        else:
+            dialog = Adw.MessageDialog(
+                body="Are you sure you want to close all windows?",
+                transient_for=self.props.active_window,
+            )
+            dialog.add_response("cancel", "Cancel")
+            dialog.add_response("close", "Close")
+            dialog.set_response_appearance("close", Adw.ResponseAppearance.DESTRUCTIVE)
+            dialog.set_default_response("cancel")
+            dialog.set_close_response("cancel")
+            dialog.connect("response", self.on_close_all_response)
+            dialog.present()
+
+    def on_close_all_response(self, dialog, response):
+        if response == "close":
+            close_all()
+        dialog.close()
+        
+
     def on_quit(self, action, param):
         """Called when the user activates the Quit action."""
+        print("Closing active window...")
         self.quitting()
+        self.win.close()
 
     def save_providers(self):
         r = {}
