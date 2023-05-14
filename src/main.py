@@ -178,18 +178,20 @@ class BavarderApplication(Adw.Application):
 
         win.present()
 
+    def close_all(self):
+        self.quitting()
+        for w in self.get_windows():
+            w.close()
+
+
     def on_close_all(self, action, param):
         print("Closing all windows...")
 
-        def close_all():
-            self.quitting()
-            for w in self.get_windows():
-                w.close()
-
+        
         if len(self.get_windows()) == 1:
             self.on_quit(action, param)
         elif self.close_all_without_dialog:
-            close_all()
+            self.close_all()
         else:
             dialog = Adw.MessageDialog(
                 body="Are you sure you want to close all windows?",
@@ -205,7 +207,7 @@ class BavarderApplication(Adw.Application):
 
     def on_close_all_response(self, dialog, response):
         if response == "close":
-            close_all()
+            self.close_all()
         dialog.close()
         
 
