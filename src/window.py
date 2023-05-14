@@ -41,7 +41,7 @@ class BavarderWindow(Adw.ApplicationWindow):
     # speak = Gtk.Template.Child()
     # speak_wait = Gtk.Template.Child()
     # speak_spinner = Gtk.Template.Child()
-    provider_selector = Gtk.Template.Child()
+    menu = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

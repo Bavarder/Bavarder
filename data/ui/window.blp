@@ -21,14 +21,11 @@ template BavarderWindow : Adw.ApplicationWindow {
       vexpand: true;
       hexpand: true;
       Adw.HeaderBar {
-        MenuButton {
+        MenuButton menu {
           primary: true;
           menu-model: main-menu;
           icon-name: "open-menu-symbolic";
           tooltip-text: _("Main Menu");
-        }
-        DropDown provider_selector { 
-          styles ["flat"]
         }
         styles ["flat"]
       }

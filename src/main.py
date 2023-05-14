@@ -120,12 +120,27 @@ class BavarderApplication(Adw.Application):
         self.close_all_without_dialog = self.settings.get_boolean(
             "close-all-without-dialog"
         )
+        self.create_stateful_action(
+            "set_provider",
+            GLib.VariantType.new("s"),
+            GLib.Variant("s", self.latest_provider),
+            self.on_set_provider_action
+        )
+
         self.use_theme = False
+
+    def on_set_provider_action(self, action, *args):
+        self.provider = args[0].get_string()
+        print("Setting provider to", self.provider)
+
+        Gio.SimpleAction.set_state(self.lookup_action("set_provider"), args[0])
+
 
     def quitting(self, *args, **kwargs):
         """Called before closing main window."""
         self.settings.set_strv("enabled-providers", list(self.enabled_providers))
-        self.settings.set_string("latest-provider", self.get_provider().slug)
+        self.settings.set_string("latest-provider", self.provider)
+
 
         print("Saving providers data...")
 
@@ -147,11 +162,6 @@ class BavarderApplication(Adw.Application):
         self.load_dropdown(win)
         self.load()
         print(self.latest_provider)
-        for k, p in self.providers.items():
-            if p.slug == self.latest_provider:
-                print("Setting selected provider to", k)
-                self.win.provider_selector.set_selected(k)
-                break
 
         win.web_view = None
         win.web_view_pending_html = None
@@ -211,10 +221,6 @@ class BavarderApplication(Adw.Application):
         self.win.prompt_text_view.get_buffer().set_text("")
         self.win.prompt_text_view.grab_focus()
 
-    def get_provider(self):
-        print(self.providers)
-        return self.providers[self.win.provider_selector.props.selected]
-
     def do_activate(self):
         """Called when the application is activated.
 
@@ -226,34 +232,48 @@ class BavarderApplication(Adw.Application):
 
     def load_dropdown(self, window=None):
 
-        if window is None:
-            window = self.win
+        self.menu_model = Gio.Menu()
+        self.menu_model.append_item(Gio.MenuItem.new(label=_("New Window"), detailed_action="app.new"))
 
-        self.provider_selector_model = Gtk.StringList()
+        section_menu = Gio.Menu()
+
+        provider_menu = Gio.Menu()
+
+
         self.providers = {}
-
         self.providers_data = self.settings.get_value("providers-data")
         print(self.providers_data)
         print(self.enabled_providers)
 
-        for provider, i in zip(
-            self.enabled_providers, range(len(self.enabled_providers))
-        ):
+
+        for provider in self.enabled_providers:
             print("Loading provider", provider)
             try:
-                self.provider_selector_model.append(PROVIDERS[provider].name)
+                item = PROVIDERS[provider]
+                item_model = Gio.MenuItem()
+                item_model.set_label(item.name)
+                item_model.set_action_and_target_value(
+                    "app.set_provider",
+                    GLib.Variant("s", item.slug))
+                provider_menu.append_item(item_model)
             except KeyError:
                 print("Provider", provider, "not found")
-                self.enabled_providers.remove(provider)
                 continue
             else:
                 try:
-                    self.providers[i]  # doesn't re load if already loaded
+                    self.providers[item.slug]  # doesn't re load if already loaded
                 except KeyError:
-                    self.providers[i] = PROVIDERS[provider](window, self)
+                    self.providers[item.slug] = PROVIDERS[provider](window, self)
 
-        window.provider_selector.set_model(self.provider_selector_model)
-        window.provider_selector.connect("notify", self.on_provider_selector_notify)
+        section_menu.append_submenu(_("Providers"), provider_menu)
+
+        section_menu.append_item(Gio.MenuItem.new(label=_("Preferences"), detailed_action="app.preferences"))
+        section_menu.append_item(Gio.MenuItem.new(label=_("Keyboard Shortcuts"), detailed_action="win.show-help-overlay"))
+        section_menu.append_item(Gio.MenuItem.new(label=_("About Bavarder"), detailed_action="app.about"))
+
+        self.menu_model.append_section(None, section_menu)
+
+        window.menu.set_menu_model(self.menu_model)
 
     def load(self):
         for p in self.providers.values():
@@ -361,9 +381,6 @@ Clear After Send: {self.clear_after_send}
                 Gdk.Display.get_default().get_clipboard().set(text)
 
                 self.win.toast_overlay.add_toast(toast)
-
-    def ask(self, prompt):
-        return self.providers[self.provider].ask(prompt)
 
     @staticmethod
     def on_click_link(web_view, decision, _decision_type):
@@ -1089,11 +1106,10 @@ Clear After Send: {self.clear_after_send}
             self.win.ask_button.set_visible(False)
             self.win.wait_button.set_visible(True)
             self.win.stop_button.set_visible(True)
-            self.provider = self.win.provider_selector.props.selected
 
             def thread_run():
                 try:
-                    response = self.ask(self.prompt)
+                    response = self.providers[self.provider].ask(self.prompt)
                 except GLib.Error as e:
                     response = e.message
                 GLib.idle_add(cleanup, response)
@@ -1160,6 +1176,16 @@ Clear After Send: {self.clear_after_send}
         self.add_action(action)
         if shortcuts:
             self.set_accels_for_action(f"app.{name}", shortcuts)
+
+    def create_stateful_action(self, name, parameter_type, initial_state, callback, shortcuts=None):
+        """Add a stateful application action."""
+
+        action = Gio.SimpleAction.new_stateful(
+            name, parameter_type, initial_state)
+        action.connect("activate", callback)
+        self.add_action(action)
+        if shortcuts:
+            self.parent.set_accels_for_action(f"app.{name}", shortcuts)
 
 
 def main(version):
