@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-14 16:00+0200\n"
-"PO-Revision-Date: 2023-05-14 09:43+0000\n"
+"PO-Revision-Date: 2023-05-15 16:47+0000\n"
 "Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
@@ -39,10 +39,8 @@ msgid "Screenshot of Main UI"
 msgstr "主界面的屏幕截图"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:22
-#, fuzzy
-#| msgid "Screenshot of Main UI"
 msgid "Screenshot of Preferences UI"
-msgstr "主界面的屏幕截图"
+msgstr "首选项界面的屏幕截图"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -62,12 +60,12 @@ msgstr "问"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "关闭当前窗口"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "关闭全部窗口"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
@@ -110,11 +108,11 @@ msgstr "将使用没有格式化的纯文本"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "毫无警告地关闭所有窗口"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
-msgstr ""
+msgstr "所有窗口将在没有警告的情况下关闭，这可能导致数据丢失"
 
 #: data/ui/preferences.blp:43 src/main.py:275
 msgid "Providers"
@@ -165,8 +163,6 @@ msgid "About Bavarder"
 msgstr "关于 Bavarder"
 
 #: src/main.py:243
-#, fuzzy
-#| msgid "New window"
 msgid "New Window"
 msgstr "新窗口"
 
