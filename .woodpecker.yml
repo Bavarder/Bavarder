@@ -17,6 +17,7 @@ pipeline:
     commands:
       - nix-env -iA nixpkgs.flatpak-builder
       - fish_add_path ~/.nix-profile/bin
+      - cd /home/0xmrtt/Bavarder
       - flatpak-builder --repo=repo --force-clean build build-aux/flatpak/io.github.Bavarder.Bavarder.json
       - flatpak build-bundle repo bavarder.flatpak io.github.Bavarder.Bavarder
       - ls -la
