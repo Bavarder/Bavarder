@@ -27,6 +27,7 @@ pipeline:
     commands:
       - nix-env -iA nixpkgs.gettext
       - fish_add_path ~/.nix-profile/bin
+      - cd /home/0xmrtt/Bavarder
       - bash po/update-pot.sh
       - git add po/Bavarder.pot
       - git commit -m "Update"
