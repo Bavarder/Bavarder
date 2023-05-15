@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-13 13:03+0200\n"
+"POT-Creation-Date: 2023-05-14 16:00+0200\n"
 "PO-Revision-Date: 2023-05-14 07:13+0000\n"
 "Last-Translator: artnay <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
@@ -39,6 +39,12 @@ msgstr "0xMRTT"
 msgid "Screenshot of Main UI"
 msgstr "Kuvakaappaus käyttöliittymästä"
 
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:22
+#, fuzzy
+#| msgid "Screenshot of Main UI"
+msgid "Screenshot of Preferences UI"
+msgstr "Kuvakaappaus käyttöliittymästä"
+
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
 msgid "General"
@@ -56,25 +62,30 @@ msgstr "Kysy"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
-msgid "Quit"
-msgstr "Lopeta"
+msgid "Close current window"
+msgstr ""
 
 #: data/ui/help-overlay.ui:32
+msgctxt "shortcut window"
+msgid "Close all windows"
+msgstr ""
+
+#: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Asetukset"
 
-#: data/ui/help-overlay.ui:38
+#: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
 msgid "Copy response"
 msgstr "Kopioi vastaus"
 
-#: data/ui/help-overlay.ui:44
+#: data/ui/help-overlay.ui:50
 msgctxt "shortcut window"
 msgid "Clear"
 msgstr "Tyhjennä"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:229
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:277
 msgid "Preferences"
 msgstr "Asetukset"
 
@@ -98,7 +109,15 @@ msgstr "Käytä raakatekstiä tulosteena"
 msgid "The plain text without formatting will be used"
 msgstr "Käytetään raakatekstiä ilman muotoilua"
 
+#: data/ui/preferences.blp:33
+msgid "Close all windows without warning"
+msgstr ""
+
 #: data/ui/preferences.blp:34
+msgid "All windows will be closed without warning, this can lead to data loss"
+msgstr ""
+
+#: data/ui/preferences.blp:43 src/main.py:275
 msgid "Providers"
 msgstr "Palveluntarjoajat"
 
@@ -106,53 +125,51 @@ msgstr "Palveluntarjoajat"
 msgid "Main Menu"
 msgstr "Päävalikko"
 
-#: data/ui/window.blp:37 src/provider/base.py:50
+#: data/ui/window.blp:34 src/provider/base.py:50
 msgid "No network connection"
 msgstr "Ei verkkoyhteyttä"
 
-#: data/ui/window.blp:52
+#: data/ui/window.blp:49
 msgid "Message"
 msgstr "Viesti"
 
-#: data/ui/window.blp:85 data/ui/window.blp:201
+#: data/ui/window.blp:82 data/ui/window.blp:198
 msgid "Copy to Clipboard"
 msgstr "Kopioi leikepöydälle"
 
-#: data/ui/window.blp:109
+#: data/ui/window.blp:106
 msgid "Ask"
 msgstr "Kysy"
 
-#: data/ui/window.blp:118
+#: data/ui/window.blp:115
 msgid "Wait"
 msgstr "Odota"
 
-#: data/ui/window.blp:133
+#: data/ui/window.blp:130
 msgid "Response"
 msgstr "Vastaus"
 
-#: data/ui/window.blp:211
+#: data/ui/window.blp:208
 msgid "Stop"
 msgstr "Lopeta"
 
-#: data/ui/window.blp:234
-msgid "Keyboard Shortcuts"
-msgstr "Pikanäppäimet"
-
-#: data/ui/window.blp:239
+#: data/ui/window.blp:226
 msgid "New window"
 msgstr "Uusi ikkuna"
 
-#: data/ui/window.blp:244
+#: data/ui/window.blp:237 src/main.py:278
+msgid "Keyboard Shortcuts"
+msgstr "Pikanäppäimet"
+
+#: data/ui/window.blp:242 src/main.py:279
 msgid "About Bavarder"
 msgstr "Tietoja - Bavarder"
 
-#: src/main.py:262
-msgid "Special thanks to"
-msgstr "Erityiskiitokset"
-
-#: src/main.py:308
-msgid "Text copied"
-msgstr "Teksti kopioitu"
+#: src/main.py:243
+#, fuzzy
+#| msgid "New window"
+msgid "New Window"
+msgstr "Uusi ikkuna"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -165,6 +182,16 @@ msgstr "Avaa asetukset"
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
 msgstr "Cat GPT"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Quit"
+#~ msgstr "Lopeta"
+
+#~ msgid "Special thanks to"
+#~ msgstr "Erityiskiitokset"
+
+#~ msgid "Text copied"
+#~ msgstr "Teksti kopioitu"
 
 #~ msgid "Quit"
 #~ msgstr "Lopeta"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-13 13:03+0200\n"
+"POT-Creation-Date: 2023-05-14 16:00+0200\n"
 "PO-Revision-Date: 2023-05-12 14:36+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
@@ -39,6 +39,12 @@ msgstr "0xMRTT"
 msgid "Screenshot of Main UI"
 msgstr "Captura da tela principal"
 
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:22
+#, fuzzy
+#| msgid "Screenshot of Main UI"
+msgid "Screenshot of Preferences UI"
+msgstr "Captura da tela principal"
+
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
 msgid "General"
@@ -56,29 +62,34 @@ msgstr "Perguntar"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
-msgid "Quit"
-msgstr "Sair"
+msgid "Close current window"
+msgstr ""
 
 #: data/ui/help-overlay.ui:32
+msgctxt "shortcut window"
+msgid "Close all windows"
+msgstr ""
+
+#: data/ui/help-overlay.ui:38
 #, fuzzy
 #| msgid "Preferences"
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Preferências"
 
-#: data/ui/help-overlay.ui:38
+#: data/ui/help-overlay.ui:44
 #, fuzzy
 #| msgid "Response"
 msgctxt "shortcut window"
 msgid "Copy response"
 msgstr "Resposta"
 
-#: data/ui/help-overlay.ui:44
+#: data/ui/help-overlay.ui:50
 msgctxt "shortcut window"
 msgid "Clear"
 msgstr "Limpar"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:229
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:277
 msgid "Preferences"
 msgstr "Preferências"
 
@@ -102,7 +113,15 @@ msgstr ""
 msgid "The plain text without formatting will be used"
 msgstr ""
 
+#: data/ui/preferences.blp:33
+msgid "Close all windows without warning"
+msgstr ""
+
 #: data/ui/preferences.blp:34
+msgid "All windows will be closed without warning, this can lead to data loss"
+msgstr ""
+
+#: data/ui/preferences.blp:43 src/main.py:275
 msgid "Providers"
 msgstr "Provedores"
 
@@ -110,52 +129,48 @@ msgstr "Provedores"
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: data/ui/window.blp:37 src/provider/base.py:50
+#: data/ui/window.blp:34 src/provider/base.py:50
 msgid "No network connection"
 msgstr "Nenhuma conexão de rede"
 
-#: data/ui/window.blp:52
+#: data/ui/window.blp:49
 msgid "Message"
 msgstr "Mensagem"
 
-#: data/ui/window.blp:85 data/ui/window.blp:201
+#: data/ui/window.blp:82 data/ui/window.blp:198
 msgid "Copy to Clipboard"
 msgstr "Copiar para área de transferência"
 
-#: data/ui/window.blp:109
+#: data/ui/window.blp:106
 msgid "Ask"
 msgstr "Perguntar"
 
-#: data/ui/window.blp:118
+#: data/ui/window.blp:115
 msgid "Wait"
 msgstr "Espere"
 
-#: data/ui/window.blp:133
+#: data/ui/window.blp:130
 msgid "Response"
 msgstr "Resposta"
 
-#: data/ui/window.blp:211
+#: data/ui/window.blp:208
 msgid "Stop"
 msgstr "Parar"
 
-#: data/ui/window.blp:234
-msgid "Keyboard Shortcuts"
-msgstr "Atalhos do teclado"
-
-#: data/ui/window.blp:239
+#: data/ui/window.blp:226
 msgid "New window"
 msgstr ""
 
-#: data/ui/window.blp:244
+#: data/ui/window.blp:237 src/main.py:278
+msgid "Keyboard Shortcuts"
+msgstr "Atalhos do teclado"
+
+#: data/ui/window.blp:242 src/main.py:279
 msgid "About Bavarder"
 msgstr "Sobre Bavarder"
 
-#: src/main.py:262
-msgid "Special thanks to"
-msgstr "Agradecimentos especiais para"
-
-#: src/main.py:308
-msgid "Text copied"
+#: src/main.py:243
+msgid "New Window"
 msgstr ""
 
 #: src/provider/base.py:43
@@ -170,6 +185,13 @@ msgstr "Abrir configurações"
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
 msgstr "Cat GPT"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Quit"
+#~ msgstr "Sair"
+
+#~ msgid "Special thanks to"
+#~ msgstr "Agradecimentos especiais para"
 
 #~ msgid "Quit"
 #~ msgstr "Sair"

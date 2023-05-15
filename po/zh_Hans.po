@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-13 13:03+0200\n"
+"POT-Creation-Date: 2023-05-14 16:00+0200\n"
 "PO-Revision-Date: 2023-05-14 09:43+0000\n"
 "Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
@@ -38,6 +38,12 @@ msgstr "0xMRTT"
 msgid "Screenshot of Main UI"
 msgstr "主界面的屏幕截图"
 
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:22
+#, fuzzy
+#| msgid "Screenshot of Main UI"
+msgid "Screenshot of Preferences UI"
+msgstr "主界面的屏幕截图"
+
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
 msgid "General"
@@ -55,25 +61,30 @@ msgstr "问"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
-msgid "Quit"
-msgstr "退出"
+msgid "Close current window"
+msgstr ""
 
 #: data/ui/help-overlay.ui:32
+msgctxt "shortcut window"
+msgid "Close all windows"
+msgstr ""
+
+#: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "首选项"
 
-#: data/ui/help-overlay.ui:38
+#: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
 msgid "Copy response"
 msgstr "复制回复"
 
-#: data/ui/help-overlay.ui:44
+#: data/ui/help-overlay.ui:50
 msgctxt "shortcut window"
 msgid "Clear"
 msgstr "清除"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:229
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:277
 msgid "Preferences"
 msgstr "首选项"
 
@@ -97,7 +108,15 @@ msgstr "使用纯文本进行输出"
 msgid "The plain text without formatting will be used"
 msgstr "将使用没有格式化的纯文本"
 
+#: data/ui/preferences.blp:33
+msgid "Close all windows without warning"
+msgstr ""
+
 #: data/ui/preferences.blp:34
+msgid "All windows will be closed without warning, this can lead to data loss"
+msgstr ""
+
+#: data/ui/preferences.blp:43 src/main.py:275
 msgid "Providers"
 msgstr "提供者"
 
@@ -105,53 +124,51 @@ msgstr "提供者"
 msgid "Main Menu"
 msgstr "主菜单"
 
-#: data/ui/window.blp:37 src/provider/base.py:50
+#: data/ui/window.blp:34 src/provider/base.py:50
 msgid "No network connection"
 msgstr "无网络连接"
 
-#: data/ui/window.blp:52
+#: data/ui/window.blp:49
 msgid "Message"
 msgstr "消息"
 
-#: data/ui/window.blp:85 data/ui/window.blp:201
+#: data/ui/window.blp:82 data/ui/window.blp:198
 msgid "Copy to Clipboard"
 msgstr "复制到剪贴板"
 
-#: data/ui/window.blp:109
+#: data/ui/window.blp:106
 msgid "Ask"
 msgstr "询问"
 
-#: data/ui/window.blp:118
+#: data/ui/window.blp:115
 msgid "Wait"
 msgstr "等待"
 
-#: data/ui/window.blp:133
+#: data/ui/window.blp:130
 msgid "Response"
 msgstr "回复"
 
-#: data/ui/window.blp:211
+#: data/ui/window.blp:208
 msgid "Stop"
 msgstr "停止"
 
-#: data/ui/window.blp:234
-msgid "Keyboard Shortcuts"
-msgstr "键盘快捷键"
-
-#: data/ui/window.blp:239
+#: data/ui/window.blp:226
 msgid "New window"
 msgstr "新窗口"
 
-#: data/ui/window.blp:244
+#: data/ui/window.blp:237 src/main.py:278
+msgid "Keyboard Shortcuts"
+msgstr "键盘快捷键"
+
+#: data/ui/window.blp:242 src/main.py:279
 msgid "About Bavarder"
 msgstr "关于 Bavarder"
 
-#: src/main.py:262
-msgid "Special thanks to"
-msgstr "特别感谢"
-
-#: src/main.py:308
-msgid "Text copied"
-msgstr "复制文本"
+#: src/main.py:243
+#, fuzzy
+#| msgid "New window"
+msgid "New Window"
+msgstr "新窗口"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -164,3 +181,13 @@ msgstr "打开设置"
 #: src/provider/catgpt.py:9
 msgid "Cat GPT"
 msgstr "Cat GPT"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Quit"
+#~ msgstr "退出"
+
+#~ msgid "Special thanks to"
+#~ msgstr "特别感谢"
+
+#~ msgid "Text copied"
+#~ msgstr "复制文本"
