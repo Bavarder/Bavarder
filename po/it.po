@@ -6,13 +6,14 @@
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # phaerrax <davide.ferracin@protonmail.com>, 2023.
 # elgandoz <gandi.marco@gmail.com>, 2023.
+# CraftWorksMC <thelonegamer87@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-14 16:00+0200\n"
-"PO-Revision-Date: 2023-05-13 13:25+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-16 11:37+0000\n"
+"Last-Translator: CraftWorksMC <thelonegamer87@gmail.com>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/it/>\n"
 "Language: it\n"
@@ -41,10 +42,8 @@ msgid "Screenshot of Main UI"
 msgstr "Schermata dell'interfaccia principale"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:22
-#, fuzzy
-#| msgid "Screenshot of Main UI"
 msgid "Screenshot of Preferences UI"
-msgstr "Schermata dell'interfaccia principale"
+msgstr "Schermata dell'interfaccia delle preferenze"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -64,26 +63,22 @@ msgstr "Chiedi"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Chiudi la finestra corrente"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Chiudi tutte le finestre"
 
 #: data/ui/help-overlay.ui:38
-#, fuzzy
-#| msgid "Preferences"
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Preferenze"
 
 #: data/ui/help-overlay.ui:44
-#, fuzzy
-#| msgid "Response"
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr "Risposta"
+msgstr "Copia Risposta"
 
 #: data/ui/help-overlay.ui:50
 msgctxt "shortcut window"
@@ -108,19 +103,21 @@ msgstr "Il prompt verrà svuotato dopo l'invio"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Utlizzare testo semplice per l'output"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "Il testo semplice senza formattazione verrà usato"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Chiudi tutte le finestre senza avvisare"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Tutte le finestre verranno chiuse senza avviso, questo può portare alla "
+"perdita di dati"
 
 #: data/ui/preferences.blp:43 src/main.py:275
 msgid "Providers"
@@ -171,8 +168,6 @@ msgid "About Bavarder"
 msgstr "Informazioni su Bavarder"
 
 #: src/main.py:243
-#, fuzzy
-#| msgid "New window"
 msgid "New Window"
 msgstr "Nuova finestra"
 
