@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 16:00+0200\n"
+"POT-Creation-Date: 2023-05-15 17:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in:3
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:4 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:4
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:57 data/ui/window.blp:7
 msgid "Bavarder"
 msgstr ""
 
@@ -37,6 +38,138 @@ msgstr ""
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:22
 msgid "Screenshot of Preferences UI"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:58
+msgid "Chat"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:59
+msgid "GPT"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:60
+msgid "ChatGPT"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:61
+msgid "AI"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:62
+msgid "OpenAI"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:68
+msgid "Fix Theming support of the new render widget"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:69
+msgid "Add the ability to have multiple windows open at the same time"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:70
+msgid "Update preferences UI"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:71
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:86
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:120
+msgid "Fix some bugs"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:72
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:87
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:96
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:122
+msgid "Update translations"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:73
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:88
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:97
+msgid "Add better error handling"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:78
+msgid "Add support of formatting in the response view using Markdown"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:79
+msgid "Allow disabling the new render method"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:80
+msgid "Add description of providers"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:81
+msgid "Add help for getting a token for providers"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:82
+msgid "New website including some help for providers"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:83
+msgid "Fix an issue which caused the app to spin forever"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:84
+msgid "Remove Quit entry in the app menu"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:85
+msgid "Fix keyboard shortcuts"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:93
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:102
+msgid "Fix an issue which caused the app to crash randomly"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:94
+msgid "Add the ability to enable/disable providers from the preferences"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:95
+msgid "Add more keyboard shortcuts"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:103
+msgid "Add save/load of settings"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:108
+msgid "Fix HuggingChat (again)"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:113
+msgid "Fix HuggingChat"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:118
+msgid "Add multiple providers support"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:119
+msgid "Make HuggingChat the default provider"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:121
+msgid "Focus on the response entry"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:127
+msgid "Fix appdata not having release tags"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:132
+msgid "Change app ID to io.github.Bavarder.Bavarder"
+msgstr ""
+
+#: data/io.github.Bavarder.Bavarder.appdata.xml.in:137
+msgid "First release of Bavarder"
 msgstr ""
 
 #: data/ui/help-overlay.ui:11
@@ -79,7 +212,7 @@ msgctxt "shortcut window"
 msgid "Clear"
 msgstr ""
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:277
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:280
 msgid "Preferences"
 msgstr ""
 
@@ -111,7 +244,7 @@ msgstr ""
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
 
-#: data/ui/preferences.blp:43 src/main.py:275
+#: data/ui/preferences.blp:43 src/main.py:278
 msgid "Providers"
 msgstr ""
 
@@ -151,15 +284,15 @@ msgstr ""
 msgid "New window"
 msgstr ""
 
-#: data/ui/window.blp:237 src/main.py:278
+#: data/ui/window.blp:237 src/main.py:281
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/window.blp:242 src/main.py:279
+#: data/ui/window.blp:242 src/main.py:282
 msgid "About Bavarder"
 msgstr ""
 
-#: src/main.py:243
+#: src/main.py:246
 msgid "New Window"
 msgstr ""
 
@@ -172,5 +305,5 @@ msgid "Open settings"
 msgstr ""
 
 #: src/provider/catgpt.py:9
-msgid "Cat GPT"
+msgid "CatGPT"
 msgstr ""
