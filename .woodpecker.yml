@@ -21,7 +21,7 @@ pipeline:
       - flatpak-builder --repo=repo --force-clean build build-aux/flatpak/io.github.Bavarder.Bavarder.json
       - flatpak build-bundle repo bavarder.flatpak io.github.Bavarder.Bavarder
       - ls -la
-      - curl --user 0xmrtt:$ACCESS_TOKEN --upload-file bavarder.flatpak https://git.exozy.me/api/packages/$CI_REPO_OWNER/generic/$CI_REPO_NAME/$CI_BUILD_NUMBER/bavarder.flatpak
+      - curl --user 0xmrtt:$ACCESS_TOKEN --upload-file bavarder.flatpak "https://git.exozy.me/api/packages/$CI_REPO_OWNER/generic/$CI_REPO_NAME/$CI_BUILD_NUMBER/bavarder.flatpak"
   translate:
     image: fish
     secrets: [ access_token ]
