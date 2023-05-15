@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-14 16:00+0200\n"
-"PO-Revision-Date: 2023-05-14 07:13+0000\n"
+"PO-Revision-Date: 2023-05-15 16:47+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -39,10 +39,8 @@ msgid "Screenshot of Main UI"
 msgstr "Schermfoto van het hoofdscherm"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:22
-#, fuzzy
-#| msgid "Screenshot of Main UI"
 msgid "Screenshot of Preferences UI"
-msgstr "Schermfoto van het hoofdscherm"
+msgstr "Schermfoto van de voorkeuren"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -62,12 +60,12 @@ msgstr "Vraag stellen"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Huidig venster sluiten"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Alle vensters sluiten"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
@@ -110,11 +108,13 @@ msgstr "Er wordt platte tekst (dus zonder opmaak) gebruikt"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Alle vensters zonder te vragen afsluiten"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Alle vensters worden zonder bevestiging gesloten, wat tot gegevensverlies "
+"kan leiden"
 
 #: data/ui/preferences.blp:43 src/main.py:275
 msgid "Providers"
@@ -165,8 +165,6 @@ msgid "About Bavarder"
 msgstr "Over Bavarder"
 
 #: src/main.py:243
-#, fuzzy
-#| msgid "New window"
 msgid "New Window"
 msgstr "Nieuw venster"
 
