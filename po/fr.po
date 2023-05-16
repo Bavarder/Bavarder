@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-16 14:05+0000\n"
+"POT-Creation-Date: 2023-05-16 20:22+0000\n"
 "PO-Revision-Date: 2023-05-16 14:07+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
@@ -67,7 +67,7 @@ msgctxt "shortcut window"
 msgid "Clear"
 msgstr "Vider"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:280
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:297
 msgid "Preferences"
 msgstr "Préférences"
 
@@ -101,7 +101,15 @@ msgstr ""
 "Toutes les fenêtres vont être fermées sans avertissement, cela peut créer "
 "des pertes de données"
 
-#: data/ui/preferences.blp:43 src/main.py:278
+#: data/ui/preferences.blp:42
+msgid "Look for provider news"
+msgstr ""
+
+#: data/ui/preferences.blp:43
+msgid "News about issues with providers will be fetched from Bavarder website"
+msgstr ""
+
+#: data/ui/preferences.blp:52 src/main.py:295
 msgid "Providers"
 msgstr "Fournisseurs"
 
@@ -141,15 +149,19 @@ msgstr "Stop"
 msgid "New window"
 msgstr "Nouvelle fenêtre"
 
-#: data/ui/window.blp:237 src/main.py:281
+#: data/ui/window.blp:237 src/main.py:298
 msgid "Keyboard Shortcuts"
 msgstr "Raccourcis clavier"
 
-#: data/ui/window.blp:242 src/main.py:282
+#: data/ui/window.blp:242 src/main.py:299
 msgid "About Bavarder"
 msgstr "À propos de Bavarder"
 
-#: src/main.py:246
+#: src/main.py:150
+msgid "New version available!"
+msgstr ""
+
+#: src/main.py:266
 msgid "New Window"
 msgstr "Nouvelle Fenêtre"
 
