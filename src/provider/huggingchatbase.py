@@ -2,6 +2,7 @@ from .base import BavarderProvider
 
 from hgchat import HGChat
 import socket
+import requests
 
 
 from gi.repository import Gtk, Adw, GLib
@@ -14,8 +15,11 @@ class BaseHuggingChatProvider(BavarderProvider):
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
-        self.chat = HGChat(self.model)
-
+        try:
+            self.chat = HGChat(self.model)
+        except requests.exceptions.ConnectionError:
+            pass
+        
     def ask(self, prompt):
         try:
             response = self.chat.ask(prompt)
