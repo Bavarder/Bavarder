@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-15 17:31+0000\n"
-"PO-Revision-Date: 2023-05-15 16:47+0000\n"
-"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
+"PO-Revision-Date: 2023-05-16 12:00+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -45,7 +45,7 @@ msgstr "Schermfoto van de voorkeuren"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:58
 msgid "Chat"
-msgstr ""
+msgstr "Chat"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:59
 #, fuzzy
@@ -63,7 +63,7 @@ msgstr ""
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:62
 msgid "OpenAI"
-msgstr ""
+msgstr "OpenAI"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:68
 msgid "Fix Theming support of the new render widget"
@@ -90,7 +90,7 @@ msgstr ""
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:96
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:122
 msgid "Update translations"
-msgstr ""
+msgstr "- Bijgewerkte vertalingen"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:73
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:88
@@ -319,7 +319,7 @@ msgstr "Voorkeuren openen"
 
 #: src/provider/catgpt.py:9
 msgid "CatGPT"
-msgstr ""
+msgstr "Cat GPT"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
