@@ -13,7 +13,7 @@ clone:
 pipeline:
   build:
     image: fish
-    secrets: [ access_token ]
+    secrets: [ access_token, codeberg_token ]
     commands:
       - nix-env -iA nixpkgs.flatpak-builder
       - fish_add_path ~/.nix-profile/bin
@@ -26,7 +26,6 @@ pipeline:
 
   translate:
     image: fish
-    secrets: [ access_token, codeberg_token ]
     commands:
       - nix-env -iA nixpkgs.gettext
       - fish_add_path ~/.nix-profile/bin
