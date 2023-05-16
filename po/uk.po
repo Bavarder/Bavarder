@@ -12,16 +12,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-15 17:31+0000\n"
-"PO-Revision-Date: 2023-05-14 07:13+0000\n"
-"Last-Translator: volkov <d2oo1dle2x@gmail.com>\n"
+"PO-Revision-Date: 2023-05-16 12:00+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in:3
@@ -51,7 +51,7 @@ msgstr "Знімок головного інтерфейсу"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:58
 msgid "Chat"
-msgstr ""
+msgstr "Бесіда"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:59
 #, fuzzy
@@ -69,7 +69,7 @@ msgstr ""
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:62
 msgid "OpenAI"
-msgstr ""
+msgstr "OpenAI"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:68
 msgid "Fix Theming support of the new render widget"
@@ -326,7 +326,7 @@ msgstr "Відкрити налаштування"
 
 #: src/provider/catgpt.py:9
 msgid "CatGPT"
-msgstr ""
+msgstr "Кіт GPT"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
