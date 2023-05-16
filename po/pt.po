@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-15 17:31+0000\n"
-"PO-Revision-Date: 2023-05-12 14:36+0000\n"
+"PO-Revision-Date: 2023-05-16 12:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pt/>\n"
@@ -48,7 +48,7 @@ msgstr "Captura da tela principal"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:58
 msgid "Chat"
-msgstr ""
+msgstr "Conversas"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:59
 #, fuzzy
@@ -325,7 +325,7 @@ msgstr "Abrir configurações"
 
 #: src/provider/catgpt.py:9
 msgid "CatGPT"
-msgstr ""
+msgstr "Cat GPT"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
