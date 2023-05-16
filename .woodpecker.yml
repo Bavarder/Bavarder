@@ -35,5 +35,4 @@ pipeline:
       - git commit -m "Update"
       - git push origin main
     when:
-      event: cron
-      cron: "Update POT"
+      event: [manual]
