@@ -11,16 +11,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 11:38+0000\n"
-"PO-Revision-Date: 2023-05-16 12:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-16 14:05+0000\n"
+"Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in:3
@@ -51,18 +51,16 @@ msgid "Chat"
 msgstr "Чат"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:59
-#, fuzzy
-#| msgid "Cat GPT"
 msgid "GPT"
-msgstr "Cat GPT"
+msgstr "GPT"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:60
 msgid "ChatGPT"
-msgstr ""
+msgstr "ChatGPT"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:61
 msgid "AI"
-msgstr ""
+msgstr "AI"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:62
 msgid "OpenAI"
@@ -70,121 +68,117 @@ msgstr "OpenAI"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:68
 msgid "Fix Theming support of the new render widget"
-msgstr ""
+msgstr "Исправить поддержку оформления для нового виджета рендеринга"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:69
 msgid "Add the ability to have multiple windows open at the same time"
-msgstr ""
+msgstr "Добавить возможность одновременного открытия нескольких окон"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:70
-#, fuzzy
-#| msgid "Preferences"
 msgid "Update preferences UI"
-msgstr "Параметры"
+msgstr "Обновление интерфейса параметров"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:71
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:86
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:120
 msgid "Fix some bugs"
-msgstr ""
+msgstr "Исправление некоторых ошибок"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:72
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:87
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:96
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:122
 msgid "Update translations"
-msgstr ""
+msgstr "Обновления переводов"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:73
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:88
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:97
 msgid "Add better error handling"
-msgstr ""
+msgstr "Добавлена улучшенная обработка ошибок"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:78
 msgid "Add support of formatting in the response view using Markdown"
 msgstr ""
+"Добавлена поддержка форматирования в представлении ответа с помощью Markdown"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:79
 msgid "Allow disabling the new render method"
-msgstr ""
+msgstr "Разрешить отключение нового метода рендеринга"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:80
 msgid "Add description of providers"
-msgstr ""
+msgstr "Добавлены описания провайдеров"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:81
 msgid "Add help for getting a token for providers"
-msgstr ""
+msgstr "Добавлена справка по получению токена для провайдеров"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:82
 msgid "New website including some help for providers"
-msgstr ""
+msgstr "Новый веб-сайт, включающий некоторую справку для провайдеров"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:83
 msgid "Fix an issue which caused the app to spin forever"
-msgstr ""
+msgstr "Исправлена проблема, из-за которой приложение крутилось вечно"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:84
 msgid "Remove Quit entry in the app menu"
-msgstr ""
+msgstr "Удален пункт \"Выход\" из меню приложения"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:85
-#, fuzzy
-#| msgid "Keyboard Shortcuts"
 msgid "Fix keyboard shortcuts"
-msgstr "Комбинации клавиш"
+msgstr "Исправление комбинаций клавиш"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:93
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:102
 msgid "Fix an issue which caused the app to crash randomly"
 msgstr ""
+"Исправление проблемы, которая приводила к случайным сбоям в работе приложения"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:94
 msgid "Add the ability to enable/disable providers from the preferences"
-msgstr ""
+msgstr "Добавлена возможность включать/выключать провайдеров в параметрах"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:95
-#, fuzzy
-#| msgid "Keyboard Shortcuts"
 msgid "Add more keyboard shortcuts"
-msgstr "Комбинации клавиш"
+msgstr "Добавьте больше комбинаций клавиш"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:103
 msgid "Add save/load of settings"
-msgstr ""
+msgstr "Добавлено сохранение/загрузка настроек"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:108
 msgid "Fix HuggingChat (again)"
-msgstr ""
+msgstr "Исправить HuggingChat (снова)"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:113
 msgid "Fix HuggingChat"
-msgstr ""
+msgstr "Исправить HuggingChat"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:118
 msgid "Add multiple providers support"
-msgstr ""
+msgstr "Добавлена поддержка нескольких провайдеров"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:119
 msgid "Make HuggingChat the default provider"
-msgstr ""
+msgstr "Сделать HuggingChat провайдером по умолчанию"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:121
 msgid "Focus on the response entry"
-msgstr ""
+msgstr "Фокусировка на поле ввода ответа"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:127
 msgid "Fix appdata not having release tags"
-msgstr ""
+msgstr "Исправление отсутствия тегов релиза appdata"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:132
 msgid "Change app ID to io.github.Bavarder.Bavarder"
-msgstr ""
+msgstr "Изменить app ID на io.github.Bavarder.Bavarder"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:137
 msgid "First release of Bavarder"
-msgstr ""
+msgstr "Первый выпуск Bavarder"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
