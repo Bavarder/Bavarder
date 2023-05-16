@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-16 11:38+0000\n"
+"POT-Creation-Date: 2023-05-16 14:04+0000\n"
 "PO-Revision-Date: 2023-05-16 14:05+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
@@ -20,160 +20,9 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in:3
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:4
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:57 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in:3 data/ui/window.blp:7
 msgid "Bavarder"
 msgstr "Bavarder"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:5
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:13
-msgid "Chit-chat with an AI"
-msgstr "Babbel met een KI"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:6
-msgid "0xMRTT"
-msgstr "0xMRTT"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:18
-msgid "Screenshot of Main UI"
-msgstr "Schermfoto van het hoofdscherm"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:22
-msgid "Screenshot of Preferences UI"
-msgstr "Schermfoto van de voorkeuren"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:58
-msgid "Chat"
-msgstr "Gesprek"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:59
-msgid "GPT"
-msgstr "GPT"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:60
-msgid "ChatGPT"
-msgstr "ChatGPT"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:61
-msgid "AI"
-msgstr "KI"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:62
-msgid "OpenAI"
-msgstr "OpenAI"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:68
-msgid "Fix Theming support of the new render widget"
-msgstr "Opgelost: thema-ondersteuning van het nieuwe weergave-element"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:69
-msgid "Add the ability to have multiple windows open at the same time"
-msgstr "Nieuw: mogelijkheid om meerdere vensters tegelijkertijd te openen"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:70
-msgid "Update preferences UI"
-msgstr "Bijgewerkt: vormgeving van voorkeurenscherm"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:71
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:86
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:120
-msgid "Fix some bugs"
-msgstr "Opgelost: enkele bugs"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:72
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:87
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:96
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:122
-msgid "Update translations"
-msgstr "Bijgewerkt: vertalingen"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:73
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:88
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:97
-msgid "Add better error handling"
-msgstr "Verbeterd: betere foutafhandeling"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:78
-msgid "Add support of formatting in the response view using Markdown"
-msgstr "Nieuw: ondersteuning voor markdownopmaak in de antwoordweergave"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:79
-msgid "Allow disabling the new render method"
-msgstr "Nieuw: mogelijkheid om de nieuwe weergavemethode uit te schakelen"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:80
-msgid "Add description of providers"
-msgstr "Nieuw: beschrijving van diensten"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:81
-msgid "Add help for getting a token for providers"
-msgstr "Nieuw: hulp omtrent het ophalen van een toegangssleutel van diensten"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:82
-msgid "New website including some help for providers"
-msgstr "Nieuw: websitie met hulp omtrent diensten"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:83
-msgid "Fix an issue which caused the app to spin forever"
-msgstr "Opgelost: probleem waarbij de toepassing eindeloos bleef laden"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:84
-msgid "Remove Quit entry in the app menu"
-msgstr "Nieuw: afsluitoptie in het menu verwijderd"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:85
-msgid "Fix keyboard shortcuts"
-msgstr "Opgelost: sneltoetsen"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:93
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:102
-msgid "Fix an issue which caused the app to crash randomly"
-msgstr "Opgelost: probleem waarbij de toepassing zo nu en dan kon crashen"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:94
-msgid "Add the ability to enable/disable providers from the preferences"
-msgstr "Nieuw: mogelijkheid om diensten in/uit te schakelen in de voorkeuren"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:95
-msgid "Add more keyboard shortcuts"
-msgstr "Nieuw: meer sneltoetsen"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:103
-msgid "Add save/load of settings"
-msgstr "Nieuw: voorkeuren bewaren/laden"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:108
-msgid "Fix HuggingChat (again)"
-msgstr "Opgelost: HuggingChat (nogmaals)"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:113
-msgid "Fix HuggingChat"
-msgstr "Opgelost: HuggingChat"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:118
-msgid "Add multiple providers support"
-msgstr "Nieuw: ondersteuning voor meerdere diensten"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:119
-msgid "Make HuggingChat the default provider"
-msgstr "Nieuw: HuggingChat is voortaan de standaarddienst"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:121
-msgid "Focus on the response entry"
-msgstr "Nieuw: focus ligt voortaan op antwoorden"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:127
-msgid "Fix appdata not having release tags"
-msgstr "Opgelost: appdata bevatte geen uitgavelabels"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:132
-msgid "Change app ID to io.github.Bavarder.Bavarder"
-msgstr "Gewijzigd: toepassings-id naar io.github.Bavarder.Bavarder"
-
-#: data/io.github.Bavarder.Bavarder.appdata.xml.in:137
-msgid "First release of Bavarder"
-msgstr "De allereerste versie"
 
 #: data/ui/help-overlay.ui:11
 msgctxt "shortcut window"
@@ -312,6 +161,113 @@ msgstr "Voorkeuren openen"
 #: src/provider/catgpt.py:9
 msgid "CatGPT"
 msgstr "Cat GPT"
+
+#~ msgid "Chit-chat with an AI"
+#~ msgstr "Babbel met een KI"
+
+#~ msgid "0xMRTT"
+#~ msgstr "0xMRTT"
+
+#~ msgid "Screenshot of Main UI"
+#~ msgstr "Schermfoto van het hoofdscherm"
+
+#~ msgid "Screenshot of Preferences UI"
+#~ msgstr "Schermfoto van de voorkeuren"
+
+#~ msgid "Chat"
+#~ msgstr "Gesprek"
+
+#~ msgid "GPT"
+#~ msgstr "GPT"
+
+#~ msgid "ChatGPT"
+#~ msgstr "ChatGPT"
+
+#~ msgid "AI"
+#~ msgstr "KI"
+
+#~ msgid "OpenAI"
+#~ msgstr "OpenAI"
+
+#~ msgid "Fix Theming support of the new render widget"
+#~ msgstr "Opgelost: thema-ondersteuning van het nieuwe weergave-element"
+
+#~ msgid "Add the ability to have multiple windows open at the same time"
+#~ msgstr "Nieuw: mogelijkheid om meerdere vensters tegelijkertijd te openen"
+
+#~ msgid "Update preferences UI"
+#~ msgstr "Bijgewerkt: vormgeving van voorkeurenscherm"
+
+#~ msgid "Fix some bugs"
+#~ msgstr "Opgelost: enkele bugs"
+
+#~ msgid "Update translations"
+#~ msgstr "Bijgewerkt: vertalingen"
+
+#~ msgid "Add better error handling"
+#~ msgstr "Verbeterd: betere foutafhandeling"
+
+#~ msgid "Add support of formatting in the response view using Markdown"
+#~ msgstr "Nieuw: ondersteuning voor markdownopmaak in de antwoordweergave"
+
+#~ msgid "Allow disabling the new render method"
+#~ msgstr "Nieuw: mogelijkheid om de nieuwe weergavemethode uit te schakelen"
+
+#~ msgid "Add description of providers"
+#~ msgstr "Nieuw: beschrijving van diensten"
+
+#~ msgid "Add help for getting a token for providers"
+#~ msgstr ""
+#~ "Nieuw: hulp omtrent het ophalen van een toegangssleutel van diensten"
+
+#~ msgid "New website including some help for providers"
+#~ msgstr "Nieuw: websitie met hulp omtrent diensten"
+
+#~ msgid "Fix an issue which caused the app to spin forever"
+#~ msgstr "Opgelost: probleem waarbij de toepassing eindeloos bleef laden"
+
+#~ msgid "Remove Quit entry in the app menu"
+#~ msgstr "Nieuw: afsluitoptie in het menu verwijderd"
+
+#~ msgid "Fix keyboard shortcuts"
+#~ msgstr "Opgelost: sneltoetsen"
+
+#~ msgid "Fix an issue which caused the app to crash randomly"
+#~ msgstr "Opgelost: probleem waarbij de toepassing zo nu en dan kon crashen"
+
+#~ msgid "Add the ability to enable/disable providers from the preferences"
+#~ msgstr ""
+#~ "Nieuw: mogelijkheid om diensten in/uit te schakelen in de voorkeuren"
+
+#~ msgid "Add more keyboard shortcuts"
+#~ msgstr "Nieuw: meer sneltoetsen"
+
+#~ msgid "Add save/load of settings"
+#~ msgstr "Nieuw: voorkeuren bewaren/laden"
+
+#~ msgid "Fix HuggingChat (again)"
+#~ msgstr "Opgelost: HuggingChat (nogmaals)"
+
+#~ msgid "Fix HuggingChat"
+#~ msgstr "Opgelost: HuggingChat"
+
+#~ msgid "Add multiple providers support"
+#~ msgstr "Nieuw: ondersteuning voor meerdere diensten"
+
+#~ msgid "Make HuggingChat the default provider"
+#~ msgstr "Nieuw: HuggingChat is voortaan de standaarddienst"
+
+#~ msgid "Focus on the response entry"
+#~ msgstr "Nieuw: focus ligt voortaan op antwoorden"
+
+#~ msgid "Fix appdata not having release tags"
+#~ msgstr "Opgelost: appdata bevatte geen uitgavelabels"
+
+#~ msgid "Change app ID to io.github.Bavarder.Bavarder"
+#~ msgstr "Gewijzigd: toepassings-id naar io.github.Bavarder.Bavarder"
+
+#~ msgid "First release of Bavarder"
+#~ msgstr "De allereerste versie"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
