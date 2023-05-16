@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-16 19:43+0000\n"
+"POT-Creation-Date: 2023-05-16 19:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgctxt "shortcut window"
 msgid "Clear"
 msgstr ""
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:302
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:294
 msgid "Preferences"
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr ""
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
 
-#: data/ui/preferences.blp:43 src/main.py:300
+#: data/ui/preferences.blp:43 src/main.py:292
 msgid "Providers"
 msgstr ""
 
@@ -133,15 +133,15 @@ msgstr ""
 msgid "New window"
 msgstr ""
 
-#: data/ui/window.blp:237 src/main.py:303
+#: data/ui/window.blp:237 src/main.py:295
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/window.blp:242 src/main.py:304
+#: data/ui/window.blp:242 src/main.py:296
 msgid "About Bavarder"
 msgstr ""
 
-#: src/main.py:268
+#: src/main.py:263
 msgid "New Window"
 msgstr ""
 
