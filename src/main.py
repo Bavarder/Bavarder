@@ -45,6 +45,7 @@ import os
 import markdown
 import tempfile
 import re
+import requests
 
 class Step(IntEnum):
     CONVERT_HTML = auto()
@@ -81,12 +82,27 @@ class KillableThread(threading.Thread):
     def kill(self):
         self.killed = True
 
- 
+
+ANNOUCEMENT_URL = "https://bavarder.codeberg.page/annoucements.json"
+
+class Annoucements:
+    def __init__(self):
+        self.annoucements = {}
+        self.load()
+
+    def load(self):
+        try:
+            self.annoucements = requests.get(ANNOUCEMENT_URL).json()
+        except:
+            pass
+
 
 
 
 class BavarderApplication(Adw.Application):
     """The main application singleton class."""
+
+    annoucements = {}
 
     def __init__(self):
         super().__init__(
@@ -129,7 +145,11 @@ class BavarderApplication(Adw.Application):
             self.on_set_provider_action
         )
 
+        self.load_annoucements()
         self.use_theme = False
+
+    def load_annoucements(self):
+        self.annoucements = requests.get(ANNOUCEMENT_URL).json()
 
     def on_open_help(self, action, *args):
         GLib.spawn_command_line_async(
@@ -241,6 +261,8 @@ class BavarderApplication(Adw.Application):
         self.win.prompt_text_view.grab_focus()
 
     def load_dropdown(self, window=None):
+        if window is None:
+            window = self.props.active_window
 
         self.menu_model = Gio.Menu()
         self.menu_model.append_item(Gio.MenuItem.new(label=_("New Window"), detailed_action="app.new"))
@@ -1070,20 +1092,20 @@ Close All Without Dialog: {self.close_all_without_dialog}
                 --kbd-shadow-color: #8c939a;
             """
             DARK_CUSTOM_STYLE = """
-             --text-color: {card_fg_color};
-            --background-color: {card_bg_color};
-            --alt-background-color: {view_bg_color};
-            --link-color: {accent_fg_color};
-            --blockquote-text-color: {card_fg_color};
-            --blockquote-border-color: {card_bg_color};
-            --header-border-color: {headerbar_border_color};
-            --hr-background-color: {headerbar_bg_color};
-            --table-tr-border-color: {headerbar_border_color};
-            --table-td-border-color: {headerbar_border_color};
-            --kbd-text-color: #ffffff;
-            --kbd-background-color: #4a4a4a;
-            --kbd-border-color: #1f1f1f;
-            --kbd-shadow-color: #1e1e1e;
+                --text-color: {card_fg_color};
+                --background-color: {card_bg_color};
+                --alt-background-color: {view_bg_color};
+                --link-color: {accent_fg_color};
+                --blockquote-text-color: {card_fg_color};
+                --blockquote-border-color: {card_bg_color};
+                --header-border-color: {headerbar_border_color};
+                --hr-background-color: {headerbar_bg_color};
+                --table-tr-border-color: {headerbar_border_color};
+                --table-td-border-color: {headerbar_border_color};
+                --kbd-text-color: #ffffff;
+                --kbd-background-color: #4a4a4a;
+                --kbd-border-color: #1f1f1f;
+                --kbd-shadow-color: #1e1e1e;
             """
 
             if os.path.exists(os.path.expanduser("~/.config/gtk-4.0/gtk.css")):
@@ -1107,6 +1129,17 @@ Close All Without Dialog: {self.close_all_without_dialog}
 
     def on_ask_action(self, widget, _):
         """Callback for the app.ask action."""
+
+        self.win.banner.set_revealed(False)
+
+        for an in self.annoucements.values():
+            print(an)
+            if an["provider"] == self.provider:
+                if an["status"] == "open":
+                    self.win.banner.set_title(an["message"])
+                    self.win.banner.set_revealed(True)
+                    return
+                break
 
         self.prompt = self.win.prompt_text_view.get_buffer().props.text.strip()
 
