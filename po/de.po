@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-15 17:31+0000\n"
-"PO-Revision-Date: 2023-05-13 13:25+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
+"PO-Revision-Date: 2023-05-16 12:00+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -48,7 +48,7 @@ msgstr "Screenshot der Hauptbenutzeroberfläche"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:58
 msgid "Chat"
-msgstr ""
+msgstr "Unterhaltung"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:59
 #, fuzzy
@@ -93,7 +93,7 @@ msgstr ""
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:96
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:122
 msgid "Update translations"
-msgstr ""
+msgstr "- Aktualisierte Übersetzungen"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:73
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:88
@@ -323,7 +323,7 @@ msgstr "Einstellungen öffnen"
 
 #: src/provider/catgpt.py:9
 msgid "CatGPT"
-msgstr ""
+msgstr "Katze GPT"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
