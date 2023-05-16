@@ -60,9 +60,25 @@
 	  <keyword>ChatGPT</keyword>
 	  <keyword>AI</keyword>
 		<keyword>OpenAI</keyword>
+    <keyword>Open Assistant</keyword>
+    <keyword>HuggingFace</keyword>
 	</keywords>
 
   <releases>
+    <release version="0.2.2" date="2023-5-16" type="stable">
+      <description>
+        <p>Allow fetching news about providers and check if there is some issues about them</p>
+        <p>Hugging Chat is now disabled because of a change which require to login</p>
+        <p>Providers moved to the menu</p>
+        <p>Update screenshots</p>
+        <p>Fix some bugs</p>
+        <p>Update translations</p>
+        <p>Add CI</p>
+        <p>Add support for launching Bavarder offline</p>
+        <p>Update Blueprint to v0.8.0</p>
+        <p>Add better error handling</p>
+      </description>
+    </release>
     <release version="0.2.1" date="2023-5-13" type="stable">
       <description>
         <p>Fix Theming support of the new render widget</p>
