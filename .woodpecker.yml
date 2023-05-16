@@ -34,3 +34,6 @@ pipeline:
       - git add po/Bavarder.pot
       - git commit -m "Update"
       - git push origin main
+    when:
+      event: cron
+      cron: "Update POT"
