@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 20:22+0000\n"
-"PO-Revision-Date: 2023-05-16 14:05+0000\n"
+"PO-Revision-Date: 2023-05-16 20:52+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -100,11 +100,12 @@ msgstr ""
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Nieuws over de diensten"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Nieuws omtrent problemen met diensten wordt opgehaald van de Bavarderwebsite"
 
 #: data/ui/preferences.blp:52 src/main.py:295
 msgid "Providers"
@@ -156,7 +157,7 @@ msgstr "Over Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr ""
+msgstr "Er is een nieuwe versie beschikbaar!"
 
 #: src/main.py:266
 msgid "New Window"
@@ -172,7 +173,7 @@ msgstr "Voorkeuren openen"
 
 #: src/provider/catgpt.py:9
 msgid "CatGPT"
-msgstr "Cat GPT"
+msgstr "CatGPT"
 
 #~ msgid "Chit-chat with an AI"
 #~ msgstr "Babbel met een KI"
