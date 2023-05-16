@@ -158,8 +158,6 @@ class BavarderApplication(Adw.Application):
 
     def on_set_provider_action(self, action, *args):
         self.provider = args[0].get_string()
-        print("Setting provider to", self.provider)
-
         Gio.SimpleAction.set_state(self.lookup_action("set_provider"), args[0])
 
 
@@ -188,8 +186,6 @@ class BavarderApplication(Adw.Application):
         win.connect("close-request", self.quitting)
         self.load_dropdown(win)
         self.load()
-        print(self.latest_provider)
-
         win.web_view = None
         win.web_view_pending_html = None
         win.loading = False
@@ -242,7 +238,6 @@ class BavarderApplication(Adw.Application):
         r = {}
         for k, p in self.providers.items():
             r[p.slug] = json.dumps(p.save())
-        print(r)
         data = GLib.Variant("a{ss}", r)
         self.settings.set_value("providers-data", data)
 
@@ -274,9 +269,6 @@ class BavarderApplication(Adw.Application):
 
         self.providers = {}
         self.providers_data = self.settings.get_value("providers-data")
-        print(self.providers_data)
-        print(self.enabled_providers)
-
 
         for provider in self.enabled_providers:
             print("Loading provider", provider)
@@ -309,7 +301,6 @@ class BavarderApplication(Adw.Application):
 
     def load(self):
         for p in self.providers.values():
-            print(self.providers_data)
             try:
                 p.load(data=json.loads(self.providers_data[p.slug]))
             except KeyError:  # provider not in data
@@ -1133,7 +1124,6 @@ Close All Without Dialog: {self.close_all_without_dialog}
         self.win.banner.set_revealed(False)
 
         for an in self.annoucements.values():
-            print(an)
             if an["provider"] == self.provider:
                 if an["status"] == "open":
                     self.win.banner.set_title(an["message"])
