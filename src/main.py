@@ -85,19 +85,6 @@ class KillableThread(threading.Thread):
 
 ANNOUCEMENT_URL = "https://bavarder.codeberg.page/annoucements.json"
 
-class Annoucements:
-    def __init__(self):
-        self.annoucements = {}
-        self.load()
-
-    def load(self):
-        try:
-            self.annoucements = requests.get(ANNOUCEMENT_URL).json()
-        except:
-            pass
-
-
-
 
 class BavarderApplication(Adw.Application):
     """The main application singleton class."""
@@ -144,12 +131,26 @@ class BavarderApplication(Adw.Application):
             GLib.Variant("s", self.latest_provider),
             self.on_set_provider_action
         )
-
-        self.load_annoucements()
+        self.allow_remote_fetching = self.settings.get_boolean("allow-remote-fetching")
         self.use_theme = False
 
     def load_annoucements(self):
-        self.annoucements = requests.get(ANNOUCEMENT_URL).json()
+        try:
+            self.annoucements = requests.get(ANNOUCEMENT_URL).json()
+        except:
+            pass
+        else:
+            try:
+                self.latest = self.annoucements["latest"]
+                del self.annoucements["latest"]
+            except:
+                pass
+            else:
+                if not self.latest in version:
+                    self.win.banner.set_title(_("New version available!"))
+                    self.win.banner.set_revealed(True)
+
+
 
     def on_open_help(self, action, *args):
         GLib.spawn_command_line_async(
@@ -253,6 +254,8 @@ class BavarderApplication(Adw.Application):
         necessary.
         """
         self.new_window()
+        if self.allow_remote_fetching:
+            self.load_annoucements()
         self.win.prompt_text_view.grab_focus()
 
     def load_dropdown(self, window=None):
@@ -1127,6 +1130,8 @@ Close All Without Dialog: {self.close_all_without_dialog}
             if an["provider"] == self.provider:
                 if an["status"] == "open":
                     self.win.banner.set_title(an["message"])
+                    self.win.banner.props.button_label = "Open settings"
+                    self.win.banner.connect("button-clicked", self.on_preferences_action)
                     self.win.banner.set_revealed(True)
                     return
                 break

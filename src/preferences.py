@@ -11,6 +11,7 @@ class Preferences(Adw.PreferencesWindow):
     provider_group = Gtk.Template.Child()
     use_text_view_switch = Gtk.Template.Child()
     close_all_without_dialog_switch = Gtk.Template.Child()
+    allow_remote_fetching_switch = Gtk.Template.Child()
 
     def __init__(self, application, **kwargs):
         super().__init__(**kwargs)
@@ -31,6 +32,11 @@ class Preferences(Adw.PreferencesWindow):
         self.close_all_without_dialog_switch.set_active(self.app.close_all_without_dialog)
         self.close_all_without_dialog_switch.connect(
             "notify::active", self.on_close_all_without_dialog_switch_toggled
+        )
+
+        self.allow_remote_fetching_switch.set_active(self.app.allow_remote_fetching)
+        self.allow_remote_fetching_switch.connect(
+            "notify::active", self.on_allow_remote_fetching_switch_toggled
         )
 
         self.setup_providers()
@@ -61,6 +67,15 @@ class Preferences(Adw.PreferencesWindow):
         else:
             self.settings.set_boolean("close-all-without-dialog", False)
             self.app.close_all_without_dialog = False
+
+    def on_allow_remote_fetching_switch_toggled(self, widget, *args):
+        """Callback for the allow_remote_fetching_switch toggled event."""
+        if widget.get_active():
+            self.settings.set_boolean("allow-remote-fetching", True)
+            self.app.allow_remote_fetching = True
+        else:
+            self.settings.set_boolean("allow-remote-fetching", False)
+            self.app.allow_remote_fetching = False
 
     def setup_providers(self):
         # for provider in self.app.providers.values():

@@ -37,6 +37,15 @@ template Preferences : Adw.PreferencesWindow {
           valign: center;
         }
       }
+
+      Adw.ActionRow {
+        title: _("Look for provider news");
+        subtitle: _("News about issues with providers will be fetched from Bavarder website");
+        activatable-widget: allow_remote_fetching_switch;
+        Gtk.Switch allow_remote_fetching_switch {
+          valign: center;
+        }
+      }
     }
 
     Adw.PreferencesGroup provider_group {
