@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 14:04+0000\n"
-"PO-Revision-Date: 2023-05-16 14:05+0000\n"
+"PO-Revision-Date: 2023-05-16 14:07+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -45,12 +45,12 @@ msgstr "Demander"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Fermer la fenêtre actuelle"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Fermer toutes les fenêtres"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
@@ -93,11 +93,13 @@ msgstr "Le texte brut sans mise en forme sera utilisé"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Fermer toutes les fenêtres sans avertissement"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Toutes les fenêtres vont être fermées sans avertissement, cela peut créer "
+"des pertes de données"
 
 #: data/ui/preferences.blp:43 src/main.py:278
 msgid "Providers"
@@ -148,10 +150,8 @@ msgid "About Bavarder"
 msgstr "À propos de Bavarder"
 
 #: src/main.py:246
-#, fuzzy
-#| msgid "New window"
 msgid "New Window"
-msgstr "Nouvelle fenêtre"
+msgstr "Nouvelle Fenêtre"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
