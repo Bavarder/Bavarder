@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-15 17:31+0000\n"
-"PO-Revision-Date: 2023-05-15 16:47+0000\n"
-"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
+"PO-Revision-Date: 2023-05-16 12:00+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -45,7 +45,7 @@ msgstr "首选项界面的屏幕截图"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:58
 msgid "Chat"
-msgstr ""
+msgstr "聊天"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:59
 #, fuzzy
@@ -90,7 +90,7 @@ msgstr ""
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:96
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:122
 msgid "Update translations"
-msgstr ""
+msgstr "- 更新了新的翻译。"
 
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:73
 #: data/io.github.Bavarder.Bavarder.appdata.xml.in:88
@@ -317,7 +317,7 @@ msgstr "打开设置"
 
 #: src/provider/catgpt.py:9
 msgid "CatGPT"
-msgstr ""
+msgstr "Cat GPT"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Quit"
