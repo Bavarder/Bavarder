@@ -54,6 +54,15 @@ You can either use your GNOME Software and search for "Bavarder" or you can run
 flatpak install io.github.Bavarder.Bavarder
 ```
 
+### Latest
+
+You can download a flatpak from the latest commit [here](https://codeberg.org/Bavarder/-/packages/generic/bavarder/). Download the file and run:
+
+```
+flatpak install bavarder.flatpak
+```
+
+
 #### From Source
 
 Clone the repo and run `flatpak-builder`
