@@ -7,13 +7,14 @@
 # phaerrax <davide.ferracin@protonmail.com>, 2023.
 # elgandoz <gandi.marco@gmail.com>, 2023.
 # CraftWorksMC <thelonegamer87@gmail.com>, 2023.
+# maymage <maymage@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 20:36+0000\n"
-"PO-Revision-Date: 2023-05-16 12:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-17 11:04+0000\n"
+"Last-Translator: maymage <maymage@gmail.com>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/it/>\n"
 "Language: it\n"
@@ -159,7 +160,7 @@ msgstr "Informazioni su Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr ""
+msgstr "Nuova versione disponibile!"
 
 #: src/main.py:266
 msgid "New Window"
