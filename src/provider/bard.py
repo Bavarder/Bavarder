@@ -11,7 +11,7 @@ class BardProvider(BavarderProvider):
     name = "Bard"
     slug = "bard"
     version = "0.1.0"
-    url = "https://bavarder.codeberg.page/docs/providers/bard.html"
+    url = "https://bavarder.codeberg.page/help/bavarder"
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
