@@ -72,6 +72,7 @@ class Preferences(Adw.PreferencesWindow):
         """Callback for the allow_remote_fetching_switch toggled event."""
         if widget.get_active():
             self.settings.set_boolean("allow-remote-fetching", True)
+            self.app.load_annoucements()
             self.app.allow_remote_fetching = True
         else:
             self.settings.set_boolean("allow-remote-fetching", False)

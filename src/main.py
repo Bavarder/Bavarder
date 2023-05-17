@@ -1126,14 +1126,19 @@ Close All Without Dialog: {self.close_all_without_dialog}
 
         self.win.banner.set_revealed(False)
 
-        for an in self.annoucements.values():
+        for key, an in self.annoucements.items():
             if an["provider"] == self.provider:
                 if an["status"] == "open":
-                    self.win.banner.set_title(an["message"])
-                    self.win.banner.props.button_label = "Open settings"
-                    self.win.banner.connect("button-clicked", self.on_preferences_action)
-                    self.win.banner.set_revealed(True)
-                    return
+                    match an["action"]:
+                        case "error": # show an error banner with a button to open settings
+                            self.win.banner.set_title(an["message"])
+                            self.win.banner.props.button_label = "Open settings"
+                            self.win.banner.connect("button-clicked", self.on_preferences_action)
+                            self.win.banner.set_revealed(True)
+                        case _:
+                            self.win.banner.set_title(an["message"])
+                            self.win.banner.set_revealed(True)
+                del self.annoucements[key]
                 break
 
         self.prompt = self.win.prompt_text_view.get_buffer().props.text.strip()
@@ -1151,6 +1156,8 @@ Close All Without Dialog: {self.close_all_without_dialog}
                     response = self.providers[self.provider].ask(self.prompt)
                 except GLib.Error as e:
                     response = e.message
+                except KeyError:
+                    del self.providers[self.provider]
                 GLib.idle_add(cleanup, response)
 
             def cleanup(response):

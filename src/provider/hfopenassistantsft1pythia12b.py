@@ -47,3 +47,8 @@ class HuggingFaceOpenAssistantSFT1PythiaProvider(BaseHFProvider):
             print(response)
             GLib.idle_add(self.update_response, response)
             return response
+
+class HuggingChatMask(HuggingFaceOpenAssistantSFT1PythiaProvider):
+    url = "https://bavarder.codeberg.page/help/huggingchat"
+    name = "Open-Assistant SFT-1 12B Model (HuggingChat)"
+    slug = "huggingchat"
