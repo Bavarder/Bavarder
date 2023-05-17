@@ -5,7 +5,7 @@ providers_sources = [
   '__init__.py',
   'alpacalora.py',
   'baichat.py',
-  'bard.py',
+  # 'bard.py',
   'base.py',
   'catgpt.py',
   'hfdialogpt.py',
@@ -15,14 +15,14 @@ providers_sources = [
   'hfgpt2large.py',
   'hfgpt2xl.py',
   'hfopenassistantsft1pythia12b.py',
-  'huggingchat.py',
-  'huggingchatbase.py',
+  # 'huggingchat.py',
+  # 'huggingchatbase.py',
   'huggingface.py',
   'openai.py',
   'openaigpt4.py',
   'openaigpt35turbo.py',
   'openaitextdavinci003.py',
-  'starcoder.py',
+  # 'starcoder.py',
 ]
 
 PY_INSTALLDIR.install_sources(providers_sources, subdir: providers_dir)

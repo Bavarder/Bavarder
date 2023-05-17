@@ -1,4 +1,4 @@
-from .huggingchat import HuggingChatProvider
+#from .huggingchat import HuggingChatProvider
 from .baichat import BAIChatProvider
 from .openaigpt35turbo import OpenAIGPT35TurboProvider
 from .openaigpt4 import OpenAIGPT4Provider
@@ -13,7 +13,7 @@ from .hfdialogpt import HuggingFaceDialoGPTLargeProvider
 from .bard import BardProvider
 from .hfgpt2large import HuggingFaceGPT2LargeProvider
 from .hfgpt2xl import HuggingFaceGPT2XLProvider
-from .starcoder import StarCoderProvider
+#from .starcoder import StarCoderProvider
 
 PROVIDERS = {
     "alpacalora": AlpacaLoRAProvider,
@@ -27,9 +27,9 @@ PROVIDERS = {
     "hfgpt2large": HuggingFaceGPT2LargeProvider,
     "hfgpt2xl": HuggingFaceGPT2XLProvider,
     "hfopenassistantsft1pythia12b": HuggingFaceOpenAssistantSFT1PythiaProvider,
-    "huggingchat": HuggingChatProvider,
+    "huggingchat": HuggingFaceOpenAssistantSFT1PythiaProvider, # hugging chat is replaced by open assistant
     "openaigpt35turbo": OpenAIGPT35TurboProvider,
     "openaigpt4": OpenAIGPT4Provider,
     "openaitextdavinci003": OpenAITextDavinci003,
-    "starcoder": StarCoderProvider,
+    # "starcoder": StarCoderProvider,
 }
