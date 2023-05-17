@@ -5,13 +5,14 @@
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
+# maymage <maymage@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 20:36+0000\n"
-"PO-Revision-Date: 2023-05-16 20:52+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-17 11:04+0000\n"
+"Last-Translator: maymage <maymage@gmail.com>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -33,7 +34,7 @@ msgstr "Allgemein"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Verknüpfungen anzeigen"
+msgstr "Tastenkürzel anzeigen"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
@@ -43,12 +44,12 @@ msgstr "Fragen"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Aktuelles Fenster schließen"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Alle Fenster schließen"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
@@ -83,27 +84,29 @@ msgstr "Die Eingabeaufforderung wird nach dem Senden gelöscht"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr "Verwenden Sie für die Ausgabe Klartext"
+msgstr "Klartextausgabe verwenden"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr "Es wird der reine Text ohne Formatierung verwendet"
+msgstr "Es wird Reintext ohne Formatierung verwendet"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Alle Fenster ohne Warnung schließen"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Alle Fester werden ohne Warnung geschlossen, dies kann zu Datenverlust führen"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Nach neuen Anbietern suchen"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Neuigkeiten zu Anbieterproblemen werden von der Bavarder Webseite bezogen"
 
 #: data/ui/preferences.blp:52 src/main.py:295
 msgid "Providers"
@@ -147,7 +150,7 @@ msgstr "Neues Fenster"
 
 #: data/ui/window.blp:237 src/main.py:298
 msgid "Keyboard Shortcuts"
-msgstr "Tastatürkürzel"
+msgstr "Tastenkürzel"
 
 #: data/ui/window.blp:242 src/main.py:299
 msgid "About Bavarder"
@@ -155,11 +158,9 @@ msgstr "Über Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr "Neue Version verfügbar."
+msgstr "Neue Version verfügbar!"
 
 #: src/main.py:266
-#, fuzzy
-#| msgid "New window"
 msgid "New Window"
 msgstr "Neues Fenster"
 
@@ -173,6 +174,7 @@ msgid "Open settings"
 msgstr "Einstellungen öffnen"
 
 #: src/provider/catgpt.py:9
+#, fuzzy
 msgid "CatGPT"
 msgstr "Katze GPT"
 
