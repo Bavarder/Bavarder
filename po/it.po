@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-16 20:36+0000\n"
-"PO-Revision-Date: 2023-05-17 11:04+0000\n"
+"PO-Revision-Date: 2023-05-18 00:37+0000\n"
 "Last-Translator: maymage <maymage@gmail.com>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/it/>\n"
@@ -61,7 +61,7 @@ msgstr "Preferenze"
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr "Copia Risposta"
+msgstr "Copia risposta"
 
 #: data/ui/help-overlay.ui:50
 msgctxt "shortcut window"
@@ -73,6 +73,7 @@ msgid "Preferences"
 msgstr "Preferenze"
 
 #: data/ui/preferences.blp:12
+#, fuzzy
 msgid "Prompt"
 msgstr "Prompt"
 
@@ -81,10 +82,12 @@ msgid "Clear prompt after send"
 msgstr "Svuota il prompt dopo l'invio"
 
 #: data/ui/preferences.blp:16
+#, fuzzy
 msgid "The prompt will be cleared after send"
 msgstr "Il prompt verrà svuotato dopo l'invio"
 
 #: data/ui/preferences.blp:24
+#, fuzzy
 msgid "Use plain text for output"
 msgstr "Utlizzare testo semplice per l'output"
 
@@ -104,11 +107,13 @@ msgstr ""
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Cerca nuovi gestori"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Notizie su problemi con i gestori verranno recuperate dal sito web di "
+"Bavander"
 
 #: data/ui/preferences.blp:52 src/main.py:295
 msgid "Providers"
