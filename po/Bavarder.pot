@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-16 20:36+0000\n"
+"POT-Creation-Date: 2023-05-17 17:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -163,8 +163,4 @@ msgstr ""
 
 #: src/provider/base.py:45
 msgid "Open settings"
-msgstr ""
-
-#: src/provider/catgpt.py:9
-msgid "CatGPT"
 msgstr ""
