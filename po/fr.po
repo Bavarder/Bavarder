@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-17 17:12+0200\n"
-"PO-Revision-Date: 2023-05-16 14:07+0000\n"
+"PO-Revision-Date: 2023-05-18 07:49+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -103,11 +103,13 @@ msgstr ""
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Chercher des informations à propos des fournisseurs"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Des informations à propos des problèmes avec les fournisseurs seront "
+"téléchargées depuis le site de Bavarder"
 
 #: data/ui/preferences.blp:52 src/main.py:295
 msgid "Providers"
@@ -159,7 +161,7 @@ msgstr "À propos de Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr ""
+msgstr "Nouvelle version disponible !"
 
 #: src/main.py:266
 msgid "New Window"
