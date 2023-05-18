@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-16 20:36+0000\n"
+"POT-Creation-Date: 2023-05-17 17:12+0200\n"
 "PO-Revision-Date: 2023-05-17 11:04+0000\n"
 "Last-Translator: maymage <maymage@gmail.com>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
@@ -173,10 +173,9 @@ msgstr ""
 msgid "Open settings"
 msgstr "Einstellungen öffnen"
 
-#: src/provider/catgpt.py:9
 #, fuzzy
-msgid "CatGPT"
-msgstr "Katze GPT"
+#~ msgid "CatGPT"
+#~ msgstr "Katze GPT"
 
 #~ msgid "Chit-chat with an AI"
 #~ msgstr "Plaudern Sie mit GPT"

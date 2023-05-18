@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-16 20:36+0000\n"
+"POT-Creation-Date: 2023-05-17 17:12+0200\n"
 "PO-Revision-Date: 2023-05-16 12:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
@@ -167,10 +167,6 @@ msgstr ""
 
 #: src/provider/base.py:45
 msgid "Open settings"
-msgstr ""
-
-#: src/provider/catgpt.py:9
-msgid "CatGPT"
 msgstr ""
 
 #~ msgid "Chat"
