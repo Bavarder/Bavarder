@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-17 17:12+0200\n"
-"PO-Revision-Date: 2023-05-16 12:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-19 15:34+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
 "Language: es\n"
@@ -46,12 +46,12 @@ msgstr "Preguntar"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Cerrar la ventana actual"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Cerrar todas las ventanas"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
@@ -86,27 +86,31 @@ msgstr "La entrada será borrada después de enviar"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Utiliza el texto sin formato para la salida"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "Se utilizará el texto sin formato"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Cerrar todas las ventanas sin previo aviso"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Todas las ventanas se cerrarán sin previo aviso, lo que puede provocar la "
+"pérdida de datos"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Buscar las noticias de los proveedores"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Las noticias con los problemas de los proveedores se buscarán en la página "
+"web de Bavarder"
 
 #: data/ui/preferences.blp:52 src/main.py:295
 msgid "Providers"
@@ -142,11 +146,11 @@ msgstr "Respuesta"
 
 #: data/ui/window.blp:208
 msgid "Stop"
-msgstr "Parar"
+msgstr "Detener"
 
 #: data/ui/window.blp:226
 msgid "New window"
-msgstr ""
+msgstr "Nueva ventana"
 
 #: data/ui/window.blp:237 src/main.py:298
 msgid "Keyboard Shortcuts"
@@ -158,11 +162,11 @@ msgstr "Sobre Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr ""
+msgstr "¡Una nueva versión está disponible!"
 
 #: src/main.py:266
 msgid "New Window"
-msgstr ""
+msgstr "Nueva Ventana"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
