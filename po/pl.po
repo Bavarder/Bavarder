@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-17 17:12+0200\n"
-"PO-Revision-Date: 2023-05-16 12:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-19 15:34+0000\n"
+"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pl/>\n"
 "Language: pl\n"
@@ -45,12 +45,12 @@ msgstr "Zapytaj"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Zamknij bieżące okno"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Zamknij wszystkie okna"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
@@ -93,11 +93,13 @@ msgstr "Użyty zostanie zwykły tekst bez formatowania"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Zamknij wszystkie okna bez ostrzeżenia"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Wszystkie okna zostaną zamknięte bez żadnego ostrzeżenia, może to spowodować "
+"utratę danych"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
@@ -157,11 +159,9 @@ msgstr "O Bavarderze"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr ""
+msgstr "Dostępna jest nowa wersja!"
 
 #: src/main.py:266
-#, fuzzy
-#| msgid "New window"
 msgid "New Window"
 msgstr "Nowe okno"
 
