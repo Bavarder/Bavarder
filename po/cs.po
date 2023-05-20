@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-17 17:12+0200\n"
-"PO-Revision-Date: 2023-05-16 12:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-20 07:53+0000\n"
+"Last-Translator: muznyo <codeberg.vqtek@simplelogin.com>\n"
 "Language-Team: Czech <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/cs/>\n"
 "Language: cs\n"
@@ -43,12 +43,12 @@ msgstr "Zeptat se"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Zavřít aktuální okno"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Zavřít všechna okna"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
@@ -91,19 +91,19 @@ msgstr "Použije se prostý text bez formátování"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Zavřít všechna okna bez varování"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
-msgstr ""
+msgstr "Všechna okna se bez varování zavřou, což může vést ke ztrátě dat"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Podívat se na novinky od poskytovatelů"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr ""
+msgstr "Zprávy o problémech s poskytovateli budou získávány ze stránek Bavarder"
 
 #: data/ui/preferences.blp:52 src/main.py:295
 msgid "Providers"
@@ -155,11 +155,9 @@ msgstr "O Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr ""
+msgstr "Nová verze je k dispozici!"
 
 #: src/main.py:266
-#, fuzzy
-#| msgid "New window"
 msgid "New Window"
 msgstr "Nové okno"
 
