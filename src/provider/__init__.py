@@ -2,7 +2,7 @@
 from .baichat import BAIChatProvider
 from .openaigpt35turbo import OpenAIGPT35TurboProvider
 from .openaigpt4 import OpenAIGPT4Provider
-from .openaicustom import OpenAICustomProvider
+from .openaicustom import OpenAICustomProvider, LocalModel
 from .catgpt import CatGPTProvider
 from .openaitextdavinci003 import OpenAITextDavinci003
 from .alpacalora import AlpacaLoRAProvider
@@ -29,6 +29,7 @@ PROVIDERS = {
     "hfgpt2xl": HuggingFaceGPT2XLProvider,
     "hfopenassistantsft1pythia12b": HuggingFaceOpenAssistantSFT1PythiaProvider,
     "huggingchat": HuggingChatMask, # hugging chat is replaced by open assistant
+    "local": LocalModel,
     "openaicustom": OpenAICustomProvider,
     "openaigpt35turbo": OpenAIGPT35TurboProvider,
     "openaigpt4": OpenAIGPT4Provider,

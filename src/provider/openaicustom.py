@@ -5,10 +5,8 @@ from gi.repository import Gtk, Adw, GLib
 import openai
 
 class OpenAICustomProvider(BaseOpenAIProvider):
-    name = "OpenAI Custom model"
+    name = "OpenAI Custom Model"
     slug = "openaicustom"
-    url = "https://bavarder.codeberg.page/help/openaicustom"
-
 
     def preferences(self, win):
         self.pref_win = win
@@ -78,3 +76,8 @@ class OpenAICustomProvider(BaseOpenAIProvider):
         about_button.set_valign(Gtk.Align.CENTER)
         about_button.connect("clicked", self.open_documentation)
         return about_button
+
+class LocalModel(OpenAICustomProvider):
+    name = "Local Model"
+    slug = "local"
+    url = "https://bavarder.codeberg.page/help/local" # just for the url :)
