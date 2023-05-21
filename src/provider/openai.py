@@ -55,6 +55,10 @@ class BaseOpenAIProvider(BavarderProvider):
                 self.win.banner.props.button_label = ""
                 self.win.banner.set_revealed(True)
                 return ""
+            except openai.error.APIError:
+                self.win.banner.props.title = "API Error"
+                self.win.banner.props.button_label = ""
+                self.win.banner.set_revealed(True)
             except socket.gaierror:
                 self.no_connection()
                 return ""
