@@ -8,6 +8,8 @@ class OpenAICustomProvider(BaseOpenAIProvider):
     name = "OpenAI Custom Model"
     slug = "openaicustom"
 
+    api_base = ""
+
     def preferences(self, win):
         self.pref_win = win
 
@@ -27,7 +29,7 @@ class OpenAICustomProvider(BaseOpenAIProvider):
 
         self.api_url_row = Adw.EntryRow()
         self.api_url_row.connect("apply", self.on_apply)
-        self.api_url_row.props.text = openai.api_base or ""
+        self.api_url_row.props.text = self.api_base or ""
         self.api_url_row.props.title = "API Url"
         self.api_url_row.set_show_apply_button(True)
         self.api_url_row.add_suffix(self.how_to_get_a_token())
@@ -50,21 +52,25 @@ class OpenAICustomProvider(BaseOpenAIProvider):
         self.hide_banner()
         api_key = self.api_row.get_text()
         openai.api_key = api_key
-        openai.api_base = self.api_url_row.get_text()
+        self.api_base = self.api_url_row.get_text()
+        openai.api_base = self.api_base
         self.model = str(self.model_row.get_text())
 
     def save(self):
         return {
             "api_key": openai.api_key,
-            "api_base": openai.api_base,
+            "api_base": self.api_base,
             "model": self.model,
         }
 
     def load(self, data):
         if data["api_key"]:
             openai.api_key = data["api_key"]
+        else:
+            openai.api_key = ""
         if data["api_base"]:
-            openai.api_base = data["api_base"]
+            self.api_base = data["api_base"]
+            openai.api_base = self.api_base
         if data["model"]:
             self.model = data["model"]
 
