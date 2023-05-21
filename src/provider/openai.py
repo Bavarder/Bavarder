@@ -83,16 +83,30 @@ class BaseOpenAIProvider(BavarderProvider):
         self.api_row.add_suffix(self.how_to_get_a_token())
         self.expander.add_row(self.api_row)
 
+        self.api_url_row = Adw.EntryRow()
+        self.api_url_row.connect("apply", self.on_apply)
+        self.api_url_row.props.text = openai.api_key or ""
+        self.api_url_row.props.title = "API Url"
+        self.api_url_row.set_show_apply_button(True)
+        self.api_url_row.add_suffix(self.how_to_get_a_token())
+        self.expander.add_row(self.api_url_row)
+
         return self.expander
 
     def on_apply(self, widget):
         self.hide_banner()
         api_key = self.api_row.get_text()
         openai.api_key = api_key
+        openai.api_base = self.api_url_row.get_text()
 
     def save(self):
-        return {"api_key": openai.api_key}
+        return {
+            "api_key": openai.api_key,
+            "api_base": openai.api_base,
+        }
 
     def load(self, data):
         if data["api_key"]:
             openai.api_key = data["api_key"]
+        if data["api_base"]:
+            openai.api_base = data["api_base"]
