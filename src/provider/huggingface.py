@@ -6,6 +6,7 @@ import socket
 
 from gi.repository import Gtk, Adw, GLib
 
+# from text_generation import InferenceAPIClient
 
 class BaseHFProvider(BavarderProvider):
     name = None
@@ -16,6 +17,7 @@ class BaseHFProvider(BavarderProvider):
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
         self.api_key = None
+        # self.client = InferenceAPIClient(self.model)
 
     def ask(self, prompt):
         try:
@@ -43,6 +45,11 @@ class BaseHFProvider(BavarderProvider):
         except socket.gaierror:
             self.no_connection()
             return ""
+        except Exception as e:
+            print(e)
+            self.win.banner.props.title = str(e)
+            self.win.banner.props.button_label = ""
+            self.win.banner.set_revealed(True)
         else:
             self.hide_banner()
             print(response)
