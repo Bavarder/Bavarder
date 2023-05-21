@@ -19,6 +19,7 @@ providers_sources = [
   # 'huggingchatbase.py',
   'huggingface.py',
   'openai.py',
+  'openaicustom.py',
   'openaigpt4.py',
   'openaigpt35turbo.py',
   'openaitextdavinci003.py',
