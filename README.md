@@ -40,9 +40,9 @@
 </p>
 </a>
 
-## About the name
+## Usage
 
-Bavarder is a french word, the definiton of Bavarder is "Parler abondamment de choses sans grande portée" (Talking a lot about things that don't matter) (Larousse) which can be translated by Chit-Chat (informal conversation about matters that are not important). For non-french speakers, Bavarder can be hard to speak, it's prounouced as [bavaʀde]. Hear [here](https://youtu.be/9Qoogwxo5YA)
+Documentation is available [here](https://bavarder.codeberg.page)
 
 ## Installation
 
@@ -61,7 +61,6 @@ You can download a flatpak from the latest commit [here](https://codeberg.org/Ba
 ```
 flatpak install bavarder.flatpak
 ```
-
 
 #### From Source
 
@@ -95,6 +94,10 @@ You can translate Bavarder using Codeberg Translate
 
 - [GitHub](https://github.com/Bavarder/Bavarder)
 - [Codeberg](https://codeberg.org/Bavarder/Bavarder)
+
+## About the name
+
+Bavarder is a french word, the definiton of Bavarder is "Parler abondamment de choses sans grande portée" (Talking a lot about things that don't matter) (Larousse) which can be translated by Chit-Chat (informal conversation about matters that are not important). For non-french speakers, Bavarder can be hard to speak, it's prounouced as [bavaʀde]. Hear [here](https://youtu.be/9Qoogwxo5YA)
 
 ## See also 
 
