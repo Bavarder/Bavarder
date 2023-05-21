@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-17 17:12+0200\n"
+"POT-Creation-Date: 2023-05-21 22:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgctxt "shortcut window"
 msgid "Clear"
 msgstr ""
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:297
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:300
 msgid "Preferences"
 msgstr ""
 
@@ -101,7 +101,7 @@ msgstr ""
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
 
-#: data/ui/preferences.blp:52 src/main.py:295
+#: data/ui/preferences.blp:52 src/main.py:298
 msgid "Providers"
 msgstr ""
 
@@ -141,19 +141,19 @@ msgstr ""
 msgid "New window"
 msgstr ""
 
-#: data/ui/window.blp:237 src/main.py:298
+#: data/ui/window.blp:237 src/main.py:301
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: data/ui/window.blp:242 src/main.py:299
+#: data/ui/window.blp:242 src/main.py:302
 msgid "About Bavarder"
 msgstr ""
 
-#: src/main.py:150
+#: src/main.py:151
 msgid "New version available!"
 msgstr ""
 
-#: src/main.py:266
+#: src/main.py:267
 msgid "New Window"
 msgstr ""
 
