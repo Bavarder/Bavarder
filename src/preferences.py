@@ -89,9 +89,11 @@ class Preferences(Adw.PreferencesWindow):
         #     row.props.title = "No providers available"
         #     self.provider_group.add(row)
         for provider in PROVIDERS.values():
-            try:
+            if provider.slug in self.app.providers:
                 self.provider_group.add(
-                    provider(self.app.win, self.app).preferences(self)
+                    self.app.providers[provider.slug].preferences(win=self.app.win)
                 )
-            except TypeError:
-                pass
+            else:
+                self.provider_group.add(
+                    provider(self.app.win, self.app).preferences(win=self.app.win)
+                )

@@ -133,6 +133,7 @@ class BavarderApplication(Adw.Application):
         )
         self.allow_remote_fetching = self.settings.get_boolean("allow-remote-fetching")
         self.use_theme = False
+        self.providers = {}
 
     def load_annoucements(self):
         try:
@@ -274,24 +275,26 @@ class BavarderApplication(Adw.Application):
         self.providers_data = self.settings.get_value("providers-data")
 
         for provider in self.enabled_providers:
-            print("Loading provider", provider)
-            try:
-                item = PROVIDERS[provider]
-                item_model = Gio.MenuItem()
-                item_model.set_label(item.name)
-                item_model.set_action_and_target_value(
-                    "app.set_provider",
-                    GLib.Variant("s", item.slug))
-                provider_menu.append_item(item_model)
-            except KeyError:
-                print("Provider", provider, "not found")
-                continue
+            if provider in self.providers:
+                p = self.providers[provider]
+                name = p.name
+                slug = p.slug
             else:
                 try:
-                    self.providers[item.slug]  # doesn't re load if already loaded
+                    p = PROVIDERS[provider]
+                    name = p.name
+                    slug = p.slug
                 except KeyError:
-                    self.providers[item.slug] = PROVIDERS[provider](window, self)
+                    continue
+                else:
+                    self.providers[slug] = PROVIDERS[provider](window, self)
 
+            item_model = Gio.MenuItem()
+            item_model.set_label(name)
+            item_model.set_action_and_target_value(
+                "app.set_provider",
+                GLib.Variant("s", slug))
+            provider_menu.append_item(item_model)
         section_menu.append_submenu(_("Providers"), provider_menu)
 
         section_menu.append_item(Gio.MenuItem.new(label=_("Preferences"), detailed_action="app.preferences"))
