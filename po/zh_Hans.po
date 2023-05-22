@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-18 07:47+0000\n"
-"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
+"PO-Revision-Date: 2023-05-22 16:39+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -207,7 +207,7 @@ msgstr ""
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr ""
+msgstr "API 密钥"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
@@ -215,7 +215,7 @@ msgstr ""
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr ""
+msgstr "型号"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
