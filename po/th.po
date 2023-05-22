@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-17 17:12+0200\n"
+"POT-Creation-Date: 2023-05-22 18:33+0200\n"
 "PO-Revision-Date: 2023-05-16 12:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Thai <https://translate.codeberg.org/projects/bavarder/"
@@ -64,7 +64,7 @@ msgctxt "shortcut window"
 msgid "Clear"
 msgstr "ล้าง"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:297
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:299
 msgid "Preferences"
 msgstr "การตั้งค่า"
 
@@ -104,7 +104,7 @@ msgstr ""
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
 
-#: data/ui/preferences.blp:52 src/main.py:295
+#: data/ui/preferences.blp:52 src/main.py:297
 msgid "Providers"
 msgstr "ผู้ให้บริการ"
 
@@ -144,11 +144,11 @@ msgstr "Stop"
 msgid "New window"
 msgstr ""
 
-#: data/ui/window.blp:237 src/main.py:298
+#: data/ui/window.blp:237 src/main.py:300
 msgid "Keyboard Shortcuts"
 msgstr "แป้นพิมพ์ลัด"
 
-#: data/ui/window.blp:242 src/main.py:299
+#: data/ui/window.blp:242 src/main.py:301
 msgid "About Bavarder"
 msgstr "เกี่ยวกับแบบวาร์เดอร์"
 
@@ -167,6 +167,57 @@ msgstr "ไม่มีรหัส API คุณสามารถระบุ�
 #: src/provider/base.py:45
 msgid "Open settings"
 msgstr "เปิดการตั้งค่า"
+
+#: src/provider/base.py:81
+#, fuzzy
+#| msgid "About Bavarder"
+msgid "About provider"
+msgstr "เกี่ยวกับแบบวาร์เดอร์"
+
+#: src/provider/base.py:95
+msgid "How to get a token"
+msgstr ""
+
+#: src/provider/base.py:118
+msgid "No preferences available"
+msgstr ""
+
+#: src/provider/openai.py:27
+msgid "Prompt too long, splitting into chunks."
+msgstr ""
+
+#: src/provider/openai.py:49
+msgid "You don't have access to this model"
+msgstr ""
+
+#: src/provider/openai.py:54
+msgid ""
+"You exceeded your current quota, please check your plan and billing details."
+msgstr ""
+
+#: src/provider/openai.py:59
+msgid "API Error"
+msgstr ""
+
+#: src/provider/openai.py:70
+msgid "No model selected, you can choose one in preferences"
+msgstr ""
+
+#: src/provider/huggingface.py:73
+msgid "API Key"
+msgstr ""
+
+#: src/provider/openaicustom.py:33
+msgid "API Url"
+msgstr ""
+
+#: src/provider/openaicustom.py:40
+msgid "Model"
+msgstr ""
+
+#: src/provider/openaicustom.py:80
+msgid "How to choose a model"
+msgstr ""
 
 #~ msgid "CatGPT"
 #~ msgstr "แมว GPT"

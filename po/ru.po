@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-17 17:12+0200\n"
+"POT-Creation-Date: 2023-05-22 18:33+0200\n"
 "PO-Revision-Date: 2023-05-17 11:04+0000\n"
 "Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
@@ -67,7 +67,7 @@ msgctxt "shortcut window"
 msgid "Clear"
 msgstr "Очистить"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:297
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:299
 msgid "Preferences"
 msgstr "Параметры"
 
@@ -109,7 +109,7 @@ msgstr "Искать новости о провайдерах"
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr "Новости о проблемах с провайдерами будут получены с сайта Bavarder"
 
-#: data/ui/preferences.blp:52 src/main.py:295
+#: data/ui/preferences.blp:52 src/main.py:297
 msgid "Providers"
 msgstr "Провайдеры"
 
@@ -149,11 +149,11 @@ msgstr "Остановить"
 msgid "New window"
 msgstr "Новое окно"
 
-#: data/ui/window.blp:237 src/main.py:298
+#: data/ui/window.blp:237 src/main.py:300
 msgid "Keyboard Shortcuts"
 msgstr "Комбинации клавиш"
 
-#: data/ui/window.blp:242 src/main.py:299
+#: data/ui/window.blp:242 src/main.py:301
 msgid "About Bavarder"
 msgstr "О Bavarder"
 
@@ -172,6 +172,59 @@ msgstr "Ключ API не предоставлен, вы можете предо
 #: src/provider/base.py:45
 msgid "Open settings"
 msgstr "Открыть настройки"
+
+#: src/provider/base.py:81
+#, fuzzy
+#| msgid "About Bavarder"
+msgid "About provider"
+msgstr "О Bavarder"
+
+#: src/provider/base.py:95
+msgid "How to get a token"
+msgstr ""
+
+#: src/provider/base.py:118
+#, fuzzy
+#| msgid "New version available!"
+msgid "No preferences available"
+msgstr "Доступна новая версия!"
+
+#: src/provider/openai.py:27
+msgid "Prompt too long, splitting into chunks."
+msgstr ""
+
+#: src/provider/openai.py:49
+msgid "You don't have access to this model"
+msgstr ""
+
+#: src/provider/openai.py:54
+msgid ""
+"You exceeded your current quota, please check your plan and billing details."
+msgstr ""
+
+#: src/provider/openai.py:59
+msgid "API Error"
+msgstr ""
+
+#: src/provider/openai.py:70
+msgid "No model selected, you can choose one in preferences"
+msgstr ""
+
+#: src/provider/huggingface.py:73
+msgid "API Key"
+msgstr ""
+
+#: src/provider/openaicustom.py:33
+msgid "API Url"
+msgstr ""
+
+#: src/provider/openaicustom.py:40
+msgid "Model"
+msgstr ""
+
+#: src/provider/openaicustom.py:80
+msgid "How to choose a model"
+msgstr ""
 
 #~ msgid "CatGPT"
 #~ msgstr "CatGPT"
