@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:39+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-22 22:01+0000\n"
+"Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
 "Language: ru\n"
@@ -174,49 +174,47 @@ msgid "Open settings"
 msgstr "Открыть настройки"
 
 #: src/provider/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "О Bavarder"
+msgstr "О Провайдере"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
 msgstr "Как получить токен"
 
 #: src/provider/base.py:118
-#, fuzzy
-#| msgid "New version available!"
 msgid "No preferences available"
-msgstr "Доступна новая версия!"
+msgstr "Параметры отсутствуют"
 
 #: src/provider/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "Запрос слишком длинный, разбиваем на фрагменты."
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Вы не имеете доступа к этой модели"
 
 #: src/provider/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
+"Вы превысили текущую квоту, пожалуйста, проверьте информацию о вашем "
+"тарифном плане и счетах."
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "Ошибка API"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Модель не выбрана, вы можете выбрать ее в параметрах"
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr ""
+msgstr "Ключ API"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "Url-адрес API"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
@@ -224,7 +222,7 @@ msgstr "Модель"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Как выбрать модель"
 
 #~ msgid "CatGPT"
 #~ msgstr "CatGPT"
