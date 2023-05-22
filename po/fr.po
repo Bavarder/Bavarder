@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-18 07:49+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
+"PO-Revision-Date: 2023-05-22 16:39+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -184,7 +184,7 @@ msgstr "À propos de Bavarder"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "Comment obtenir un jeton"
 
 #: src/provider/base.py:118
 #, fuzzy
@@ -215,7 +215,7 @@ msgstr ""
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr ""
+msgstr "Clé d'API"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
@@ -223,7 +223,7 @@ msgstr ""
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr ""
+msgstr "Modèle"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
