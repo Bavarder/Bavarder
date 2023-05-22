@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:39+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-22 19:05+0000\n"
+"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -172,49 +172,47 @@ msgid "Open settings"
 msgstr "Voorkeuren openen"
 
 #: src/provider/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "Over Bavarder"
+msgstr "Over deze dienst"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
 msgstr "Hoe verkrijg ik een sleutel?"
 
 #: src/provider/base.py:118
-#, fuzzy
-#| msgid "New version available!"
 msgid "No preferences available"
-msgstr "Er is een nieuwe versie beschikbaar!"
+msgstr "Er zijn geen voorkeuren beschikbaar"
 
 #: src/provider/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "De invoer is te lang — deze wordt opgedeeld."
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Je hebt geen toegang tot dit model"
 
 #: src/provider/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
+"Je hebt de huidige quota overschreven. Controleer je abonnement en "
+"factuurgegevens."
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "Api-foutmelding"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Geen model gekozen - kies er een in de voorkeuren"
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr "API-sleutel"
+msgstr "Api-sleutel"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "Api-url"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
@@ -222,7 +220,7 @@ msgstr "Model"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Hoe kies ik een model?"
 
 #~ msgid "CatGPT"
 #~ msgstr "CatGPT"
