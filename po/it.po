@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-22 19:05+0000\n"
+"Last-Translator: maymage <maymage@gmail.com>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/it/>\n"
 "Language: it\n"
@@ -73,7 +73,6 @@ msgid "Preferences"
 msgstr "Preferenze"
 
 #: data/ui/preferences.blp:12
-#, fuzzy
 msgid "Prompt"
 msgstr "Prompt"
 
@@ -82,14 +81,12 @@ msgid "Clear prompt after send"
 msgstr "Svuota il prompt dopo l'invio"
 
 #: data/ui/preferences.blp:16
-#, fuzzy
 msgid "The prompt will be cleared after send"
 msgstr "Il prompt verrà svuotato dopo l'invio"
 
 #: data/ui/preferences.blp:24
-#, fuzzy
 msgid "Use plain text for output"
-msgstr "Utlizzare testo semplice per l'output"
+msgstr "Utlizzare testo semplice per il rendimento"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
@@ -181,41 +178,39 @@ msgid "Open settings"
 msgstr "Apri impostazioni"
 
 #: src/provider/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "Informazioni su Bavarder"
+msgstr "Sul gestore"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "Come avere una chiave"
 
 #: src/provider/base.py:118
-#, fuzzy
-#| msgid "New version available!"
 msgid "No preferences available"
-msgstr "Nuova versione disponibile!"
+msgstr "Impostazioni non disponibili"
 
 #: src/provider/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "Promt troppo lungo, frazionando in pezzi."
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Non ha accesso a questo modello"
 
 #: src/provider/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
+"Superato la quota corrente, perfavore contrallare il proprio piano ed i "
+"dettagli della fatturazione."
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "Errore API"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Nessun modello selezionato, puo scegliere uno nelle impostazioni"
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
@@ -223,7 +218,7 @@ msgstr "Chiave API"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "API Url"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
@@ -231,7 +226,7 @@ msgstr "Modello"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Come selezionare un modello"
 
 #~ msgid "CatGPT"
 #~ msgstr "Cat GPT"
