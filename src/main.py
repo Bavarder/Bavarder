@@ -34,7 +34,6 @@ from .window import BavarderWindow
 from .preferences import Preferences
 from enum import auto, IntEnum
 
-from gettext import gettext as _
 from .constants import app_id, version, build_type
 
 from tempfile import NamedTemporaryFile
