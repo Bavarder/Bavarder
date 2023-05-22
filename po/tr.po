@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-16 12:00+0000\n"
+"PO-Revision-Date: 2023-05-22 16:39+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/tr/>\n"
@@ -183,7 +183,7 @@ msgstr "Bavarder Hakkında"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "Token nasıl alınır"
 
 #: src/provider/base.py:118
 msgid "No preferences available"
@@ -220,7 +220,7 @@ msgstr ""
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr ""
+msgstr "Model:"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
