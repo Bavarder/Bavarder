@@ -30,14 +30,14 @@ class OpenAICustomProvider(BaseOpenAIProvider):
         self.api_url_row = Adw.EntryRow()
         self.api_url_row.connect("apply", self.on_apply)
         self.api_url_row.props.text = self.api_base or ""
-        self.api_url_row.props.title = "API Url"
+        self.api_url_row.props.title = _("API Url")
         self.api_url_row.set_show_apply_button(True)
         self.api_url_row.add_suffix(self.how_to_get_a_token())
         self.expander.add_row(self.api_url_row)
 
         self.model_row = Adw.EntryRow()
         self.model_row.connect("apply", self.on_apply)
-        self.model_row.props.title = "Model"
+        self.model_row.props.title = _("Model")
         if self.model:
             self.model_row.props.text = str(self.model)
         else:
@@ -77,7 +77,7 @@ class OpenAICustomProvider(BaseOpenAIProvider):
     def how_to_choose_model(self):
         about_button = Gtk.Button()
         about_button.set_icon_name("dialog-information-symbolic")
-        about_button.set_tooltip_text("How to choose a model")
+        about_button.set_tooltip_text(_("How to choose a model"))
         about_button.add_css_class("flat")
         about_button.set_valign(Gtk.Align.CENTER)
         about_button.connect("clicked", self.open_documentation)

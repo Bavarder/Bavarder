@@ -78,7 +78,7 @@ class BavarderProvider:
 
         about_button = Gtk.MenuButton()
         about_button.set_icon_name("help-about-symbolic")
-        about_button.set_tooltip_text("About provider")
+        about_button.set_tooltip_text(_("About provider"))
         about_button.add_css_class("flat")
         about_button.set_valign(Gtk.Align.CENTER)
         about_button.set_popover(popover)
@@ -92,7 +92,7 @@ class BavarderProvider:
     def how_to_get_a_token(self):
         about_button = Gtk.Button()
         about_button.set_icon_name("dialog-information-symbolic")
-        about_button.set_tooltip_text("How to get a token")
+        about_button.set_tooltip_text(_("How to get a token"))
         about_button.add_css_class("flat")
         about_button.set_valign(Gtk.Align.CENTER)
         about_button.connect("clicked", self.open_documentation)
@@ -115,7 +115,7 @@ class BavarderProvider:
         self.expander.add_action(self.enable_switch())
 
         self.no_pref_row = Adw.ActionRow()
-        self.no_pref_row.props.title = "No preferences available"
+        self.no_pref_row.props.title = _("No preferences available")
         self.expander.add_row(self.no_pref_row)
 
         return self.expander

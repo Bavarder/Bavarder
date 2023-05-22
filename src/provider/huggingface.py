@@ -70,7 +70,7 @@ class BaseHFProvider(BavarderProvider):
 
             self.api_row = Adw.PasswordEntryRow()
             self.api_row.connect("apply", self.on_apply)
-            self.api_row.props.title = "API Key"
+            self.api_row.props.title = _("API Key")
             self.api_row.props.text = self.api_key or ""
             self.api_row.add_suffix(self.how_to_get_a_token())
             self.api_row.set_show_apply_button(True)

@@ -24,7 +24,7 @@ class BaseOpenAIProvider(BavarderProvider):
             prompt = self.chunk(prompt)
             try:
                 if isinstance(prompt, list):
-                    self.win.banner.props.title = "Prompt too long, splitting into chunks."
+                    self.win.banner.props.title = _("Prompt too long, splitting into chunks.")
                     self.win.banner.props.button_label = ""
                     self.win.banner.set_revealed(True)
                     response = ""
@@ -46,17 +46,17 @@ class BaseOpenAIProvider(BavarderProvider):
                 self.no_api_key()
                 return ""
             except openai.error.InvalidRequestError:
-                self.win.banner.props.title = "You don't have access to this model"
+                self.win.banner.props.title = _("You don't have access to this model")
                 self.win.banner.props.button_label = ""
                 self.win.banner.set_revealed(True)
                 return ""
             except openai.error.RateLimitError:
-                self.win.banner.props.title = "You exceeded your current quota, please check your plan and billing details."
+                self.win.banner.props.title = _("You exceeded your current quota, please check your plan and billing details.")
                 self.win.banner.props.button_label = ""
                 self.win.banner.set_revealed(True)
                 return ""
             except openai.error.APIError:
-                self.win.banner.props.title = "API Error"
+                self.win.banner.props.title = _("API Error")
                 self.win.banner.props.button_label = ""
                 self.win.banner.set_revealed(True)
             except socket.gaierror:
@@ -67,7 +67,7 @@ class BaseOpenAIProvider(BavarderProvider):
                 GLib.idle_add(self.update_response, response)
                 return response
         else:
-            self.no_api_key(title="No model selected, you can choose one in preferences")
+            self.no_api_key(title=_("No model selected, you can choose one in preferences"))
             return ""
 
 
