@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-16 20:52+0000\n"
-"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
+"PO-Revision-Date: 2023-05-22 16:39+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -179,7 +179,7 @@ msgstr "Over Bavarder"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "Hoe verkrijg ik een sleutel?"
 
 #: src/provider/base.py:118
 #, fuzzy
@@ -210,7 +210,7 @@ msgstr ""
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr ""
+msgstr "API-sleutel"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
@@ -218,7 +218,7 @@ msgstr ""
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr ""
+msgstr "Model"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
