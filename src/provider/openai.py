@@ -94,7 +94,7 @@ class BaseOpenAIProvider(BavarderProvider):
 
         self.api_url_row = Adw.EntryRow()
         self.api_url_row.connect("apply", self.on_apply)
-        self.api_url_row.props.text = openai.api_key or ""
+        self.api_url_row.props.text = openai.api_base or ""
         self.api_url_row.props.title = "API Url"
         self.api_url_row.set_show_apply_button(True)
         self.api_url_row.add_suffix(self.how_to_get_base_url())
