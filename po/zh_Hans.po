@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:39+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-25 07:37+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -169,41 +169,37 @@ msgid "Open settings"
 msgstr "打开设置"
 
 #: src/provider/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "关于 Bavarder"
+msgstr "关于供应商"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "如何获得 token"
 
 #: src/provider/base.py:118
-#, fuzzy
-#| msgid "New version available!"
 msgid "No preferences available"
-msgstr "新版本可用！"
+msgstr "没有可用的选项"
 
 #: src/provider/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "提示太长，分裂成块。"
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "您无权访问此模型"
 
 #: src/provider/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
-msgstr ""
+msgstr "您超出了当前配额，请检查您的计划和账单明细。"
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "API 错误"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "没有选择模型，您可以在选项中选择一个"
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
@@ -211,15 +207,15 @@ msgstr "API 密钥"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "API 地址"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr "型号"
+msgstr "模型"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "如何选择一个模型"
 
 #~ msgid "CatGPT"
 #~ msgstr "Cat GPT"
