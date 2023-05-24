@@ -7,13 +7,14 @@
 # Orest58008 <orest58008@tuta.io>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # volkov <d2oo1dle2x@gmail.com>, 2023.
+# Anatolii Bielibov <anatoly136ua@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-25 07:37+0000\n"
+"Last-Translator: Anatolii Bielibov <anatoly136ua@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/uk/>\n"
 "Language: uk\n"
@@ -36,7 +37,7 @@ msgstr "Загальні"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "Показати комбінації клавіш"
+msgstr "Показати клавіатурні скорочення"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
@@ -46,17 +47,17 @@ msgstr "Запитати"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Закрити поточне вікно"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Закрити всі вікна"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
 msgid "Preferences"
-msgstr "Опції"
+msgstr "Налаштування"
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
@@ -70,7 +71,7 @@ msgstr "Очистити"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:299
 msgid "Preferences"
-msgstr "Опції"
+msgstr "Налаштування"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
@@ -78,16 +79,15 @@ msgstr "Запит"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr "Очистити запит після надсилання"
+msgstr "Очищати запит після надсилання"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr "Запит буде очищений після надсилання"
+msgstr "Поле запиту буде очищене після надсилання"
 
 #: data/ui/preferences.blp:24
-#, fuzzy
 msgid "Use plain text for output"
-msgstr "Використовувати звичайний текст для виводу"
+msgstr "Виводити звичайний текст"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
@@ -95,19 +95,20 @@ msgstr "Звичайний текст, без форматування, буде
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Закривати всі вікна без попередження"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Усі вікна закриватимуться без попередження, це може призвести до втрати даних"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Шукати новини про постачальників"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr ""
+msgstr "Новини про проблеми з постачальниками надходитимуть з вебсайту Bavarder"
 
 #: data/ui/preferences.blp:52 src/main.py:297
 msgid "Providers"
@@ -115,11 +116,11 @@ msgstr "Постачальники"
 
 #: data/ui/window.blp:28
 msgid "Main Menu"
-msgstr "Головне Меню"
+msgstr "Головне меню"
 
 #: data/ui/window.blp:34 src/provider/base.py:50
 msgid "No network connection"
-msgstr "Відсутнє з'єднання з мережею"
+msgstr "Відсутнє з’єднання з мережею"
 
 #: data/ui/window.blp:49
 msgid "Message"
@@ -127,7 +128,7 @@ msgstr "Повідомлення"
 
 #: data/ui/window.blp:82 data/ui/window.blp:198
 msgid "Copy to Clipboard"
-msgstr "Копіювати"
+msgstr "Копіювати до буфера обміну"
 
 #: data/ui/window.blp:106
 msgid "Ask"
@@ -151,7 +152,7 @@ msgstr "Нове вікно"
 
 #: data/ui/window.blp:237 src/main.py:300
 msgid "Keyboard Shortcuts"
-msgstr "Комбінації Клавіш"
+msgstr "Клавіатурні скорочення"
 
 #: data/ui/window.blp:242 src/main.py:301
 msgid "About Bavarder"
@@ -159,11 +160,9 @@ msgstr "Про Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr ""
+msgstr "Доступна нова версія!"
 
 #: src/main.py:266
-#, fuzzy
-#| msgid "New window"
 msgid "New Window"
 msgstr "Нове вікно"
 
@@ -176,10 +175,8 @@ msgid "Open settings"
 msgstr "Відкрити налаштування"
 
 #: src/provider/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "Про Bavarder"
+msgstr "Про постачальника"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
@@ -187,36 +184,40 @@ msgstr "Як отримати токен"
 
 #: src/provider/base.py:118
 msgid "No preferences available"
-msgstr ""
+msgstr "Налаштування відсутні"
 
 #: src/provider/openai.py:27
+#, fuzzy
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "Завеликий запит, розділяємо на шматки."
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Ви не маєте доступу до цієї моделі"
 
 #: src/provider/openai.py:54
+#, fuzzy
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
+"Ви перевищили свою поточну квоту — будь ласка, перевірте свій тарифний план "
+"і платіжні дані."
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "Помилка API"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Модель не вибрано, виберіть будь-яку в налаштуваннях"
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr ""
+msgstr "Ключ API"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "URL-адреса API"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
@@ -224,7 +225,7 @@ msgstr "Модель"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Як вибрати модель"
 
 #~ msgid "CatGPT"
 #~ msgstr "Кіт GPT"
