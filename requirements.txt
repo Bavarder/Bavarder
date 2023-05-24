@@ -17,3 +17,4 @@ requests
 text-generation
 gradio_client
 transformers
+tensorflow
