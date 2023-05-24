@@ -24,7 +24,7 @@ providers_sources = [
   'openaigpt4.py',
   'openaigpt35turbo.py',
   'openaitextdavinci003.py',
-  'stablelm.py,
+  'stablelm.py',
   'starcoder.py',
   'transformer.py',
 ]
