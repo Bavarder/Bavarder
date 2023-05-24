@@ -10,5 +10,6 @@ openai
 pymdown-extensions
 requests
 text-generation
+gradio_client
 setuptools_rust # must be before transformers
 transformers

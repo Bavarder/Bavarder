@@ -8,6 +8,7 @@ providers_sources = [
   # 'bard.py',
   'base.py',
   'catgpt.py',
+  'gradio.py',
   'hfdialogpt.py',
   'hfgoogleflant5xxl.py',
   'hfgoogleflanu12.py',
@@ -23,6 +24,7 @@ providers_sources = [
   'openaigpt4.py',
   'openaigpt35turbo.py',
   'openaitextdavinci003.py',
+  'stablelm.py,
   'starcoder.py',
   'transformer.py',
 ]
