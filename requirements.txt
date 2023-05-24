@@ -10,3 +10,4 @@ openai
 pymdown-extensions
 requests
 text-generation
+transformers

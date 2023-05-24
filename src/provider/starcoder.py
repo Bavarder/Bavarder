@@ -1,7 +1,7 @@
-from .huggingchatbase import BaseHuggingChatProvider
+from .transformer import BaseTransformerProvider
 
 
-class StarCoderProvider(BaseHuggingChatProvider):
+class StarCoderProvider(BaseTransformerProvider):
     name = "Star Coder"
     slug = "starcoder"
-    model = "bigcode/starcoder"
+    checkpoint = "bigcode/starcoder"
