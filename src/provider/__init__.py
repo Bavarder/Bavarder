@@ -15,7 +15,7 @@ from .hfdialogpt import HuggingFaceDialoGPTLargeProvider
 from .hfgpt2large import HuggingFaceGPT2LargeProvider
 from .hfgpt2xl import HuggingFaceGPT2XLProvider
 from .stablelm import StableLMProvider
-# from .starcoder import StarCoderProvider
+from .starcoder import StarCoderProvider
 
 PROVIDERS = {
     "alpacalora": AlpacaLoRAProvider,

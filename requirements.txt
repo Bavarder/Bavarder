@@ -2,6 +2,11 @@
 # chmod +x flatpak-pip-generator
 # ./flatpak-pip-generator --requirements-file=requirements.txt --output pypi-dependencies
 
+# use https://johannesjh.github.io/req2flatpak/main/cli.html
+
+# 1. pip-compile -o r.txt requirements.txt
+# 2. ./req2flatpak.py --requirements-file requirements.txt --target-platforms  310-x86_64 310-aarch64 > build-aux/pypi-dependencies.json
+
 Pygments
 baichat_py
 googlebardpy

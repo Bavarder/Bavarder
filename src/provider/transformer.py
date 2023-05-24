@@ -13,14 +13,18 @@ class BaseTransformerProvider(BavarderProvider):
     slug = None
     checkpoint = None
     device = "cpu"
+    is_setup = False
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
 
+    def setup(self):
         self.tokenizer = AutoTokenizer.from_pretrained(self.checkpoint)
         self.model = AutoModelForCausalLM.from_pretrained(self.checkpoint).to(self.device)
 
     def ask(self, prompt):
+        if not self.is_setup:
+            self.setup()
         try:
             inputs = tokenizer.encode(prompt, return_tensors="pt").to(self.device)
             outputs = model.generate(inputs)

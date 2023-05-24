@@ -19,12 +19,13 @@ class BaseGradioProvider(BavarderProvider):
         self.client = Client(self.url)
 
     def ask(self, prompt):
+        print("ASKING " + "="*100)
         try:
-            result = client.predict(
+            response = self.client.predict(
 				prompt,	# str representing string value in 'Chat Message Box' Textbox component
-				"null",	# str representing filepath to JSON file in 'parameter_3' Chatbot component
 				fn_index=0
             )
+            print(response)
         except Exception as e:
             print(e)
             self.win.banner.props.title = str(e)

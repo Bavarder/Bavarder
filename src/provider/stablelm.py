@@ -1,6 +1,6 @@
-from .gradio import BaseGradioProvider
+from .huggingface import BaseHFProvider
 
-class StableLMProvider(BaseGradioProvider):
+class StableLMProvider(BaseHFProvider):
     name = "StableLM"
     slug = "stablelm"
-    url = "https://stabilityai-stablelm-tuned-alpha-chat.hf.space/"
+    model = "stabilityai/stablelm-tuned-alpha-3b"
