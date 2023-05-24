@@ -10,4 +10,5 @@ openai
 pymdown-extensions
 requests
 text-generation
+setuptools_rust # must be before transformers
 transformers
