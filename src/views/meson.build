@@ -3,6 +3,7 @@ views_dir = join_paths(moduledir, 'views')
 
 views_sources = [
   '__init__.py',
+  'about_window.py',
   'main_window.py',
   'preferences_window.py',
 ]

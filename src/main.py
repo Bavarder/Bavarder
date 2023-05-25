@@ -32,6 +32,7 @@ gi.require_version('WebKit', '6.0')
 from gi.repository import Gtk, Gio, Adw, Gdk, GLib, Gst, WebKit
 from .views.main_window import BavarderWindow
 from .views.preferences_window import Preferences
+from .views.about_window import BavarderAboutWindow
 from enum import auto, IntEnum
 
 from .constants import app_id, version, build_type
@@ -319,55 +320,8 @@ class BavarderApplication(Adw.Application):
 
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
-        about = Adw.AboutWindow(
-            transient_for=self.props.active_window,
-            application_name="Bavarder",
-            application_icon=app_id,
-            developer_name="0xMRTT",
-            developers=["0xMRTT https://github.com/0xMRTT"],
-            designers=["David Lapshin https://github.com/daudix-UFO"],
-            artists=["David Lapshin https://github.com/daudix-UFO"],
-            documenters=[],
-            translator_credits="""0xMRTT <0xmrtt@proton.me>
-                David Lapshin <ddaudix@gmail.com>
-                Morgan Antonsson <morgan.antonsson@gmail.com>
-                thepoladov13 <thepoladov@protonmail.com>
-                Muznyo <codeberg.vqtek@simplelogin.com>
-                Deimidis <gmovia@pm.me>
-                sjdonado <jsrd98@gmail.com>
-                artnay <jiri.gronroos@iki.fi>
-                Rene Coty <irenee.thirion@e.email>
-                galegovski <galegovski@outlook.com>""",
-            license_type=Gtk.License.GPL_3_0,
-            version=version,
-            website="https://bavarder.codeberg.page",
-            issue_url="https://github.com/Bavarder/Bavarder/issues",
-            support_url="https://codeberg.org/Bavarder/Bavarder/issues",
-            copyright="© 2023 0xMRTT",
-        )
-
-        about.add_acknowledgement_section(
-            "Special thanks to",
-            [
-                "Telegraph https://apps.gnome.org/app/io.github.fkinoshita.Telegraph",
-                "Apostrophe https://apps.gnome.org/app/org.gnome.gitlab.somas.Apostrophe",
-            ],
-        )
-        about.set_debug_info(
-            f"""{app_id} {version}
-Environment: {os.environ.get("XDG_CURRENT_DESKTOP", "Unknown")}
-Gtk: {Gtk.MAJOR_VERSION}.{Gtk.MINOR_VERSION}.{Gtk.MICRO_VERSION}
-Python: {platform.python_version()}
-OS: {platform.system()} {platform.release()} {platform.version()}
-Providers: {self.enabled_providers}
-Use Theme: {self.use_theme}
-Use Text View: {self.use_text_view}
-Clear After Send: {self.clear_after_send}
-Close All Without Dialog: {self.close_all_without_dialog}
-Current Provider: {self.provider}
-"""
-        )
-        about.present()
+        about = BavarderAboutWindow(self.win)
+        about.show_about()
 
     def on_preferences_action(self, widget, *args, **kwargs):
         """Callback for the app.preferences action."""
