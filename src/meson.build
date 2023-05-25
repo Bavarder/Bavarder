@@ -24,6 +24,7 @@ configure_file(
 bavarder_sources = [
   '__init__.py',
   'main.py',
+  'threading.py',
 ]
 
 PY_INSTALLDIR.install_sources(bavarder_sources, subdir: moduledir)
