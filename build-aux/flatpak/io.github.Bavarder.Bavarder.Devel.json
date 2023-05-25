@@ -1,7 +1,7 @@
 {
-    "app-id" : "io.github.Bavarder.Bavarder",
+    "app-id" : "io.github.Bavarder.Bavarder.Devel",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "master",
     "sdk" : "org.gnome.Sdk",
     "command" : "bavarder",
     "finish-args" : [
@@ -32,7 +32,7 @@
                 {
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/jwestman/blueprint-compiler.git",
-                    "tag" : "v0.8.1"
+                    "branch" : "main"
                 }
             ]
         },
@@ -41,7 +41,7 @@
             "builddir" : true,
             "buildsystem" : "meson",
             "config-opts": [
-                "-Dbuildtype=release"
+                "-Dbuildtype=debug"
             ],
             "sources" : [
                 {
