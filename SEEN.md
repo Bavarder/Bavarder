@@ -14,6 +14,7 @@
 - https://wiredgorilla.com/introducing-bavarder-a-user-friendly-linux-desktop-app-for-quick-chatgpt-interaction/
 - https://www.linuxconsultant.org/bavarder-is-a-chatgpt-app-for-linux-desktops/
 - https://www.linuxlinks.com/machine-learning-linux-bavarder/
+- https://www.root.cz/clanky/softwarova-sklizen-24-5-2023-organizace-casu-systemem-kanban/
 
 ## Youtube
 
