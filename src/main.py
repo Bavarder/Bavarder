@@ -372,7 +372,7 @@ Current Provider: {self.provider}
     def on_preferences_action(self, widget, *args, **kwargs):
         """Callback for the app.preferences action."""
         preferences = Preferences(
-            application=self, transient_for=self.props.active_window
+            parent=self.win
         )
         preferences.present()
 

@@ -1,4 +1,6 @@
-from gi.repository import Gtk, Adw
+from gi.repository import Gtk, Adw, Gio
+
+from bavarder.constants import app_id
 
 from bavarder.providers import PROVIDERS
 
@@ -13,11 +15,23 @@ class Preferences(Adw.PreferencesWindow):
     close_all_without_dialog_switch = Gtk.Template.Child()
     allow_remote_fetching_switch = Gtk.Template.Child()
 
-    def __init__(self, application, **kwargs):
+    def __init__(self, parent, **kwargs):
         super().__init__(**kwargs)
 
-        self.app = application
-        self.settings = application.settings
+        self.parent = parent
+        self.settings = parent.settings
+
+        self.app = self.parent.get_application()
+        self.win = self.app.get_active_window()
+
+        self.set_transient_for(self.win)
+
+        self.setup()
+
+    def setup(self):
+        self.setup_signals()
+
+    def setup_signals(self):
 
         self.clear_after_send_switch.set_active(self.app.clear_after_send)
         self.clear_after_send_switch.connect(
