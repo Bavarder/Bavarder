@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-	<id>io.github.Bavarder.Bavarder</id>
+	<id>@APP_ID@</id>
 	<name>Bavarder</name>
 	<summary>Chit-chat with an AI</summary>
 	<developer_name>0xMRTT</developer_name>
   <metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
-  <launchable type="desktop-id">io.github.Bavarder.Bavarder.desktop</launchable>
+  <launchable type="desktop-id">@APP_ID@.desktop</launchable>
   <content_rating type="oars-1.1"/>
 
 	<description>
@@ -24,10 +24,10 @@
     </screenshot>
 	</screenshots>
 
-	<url type="bugtracker">https://codeberg.org/Bavarder/Bavarder/issues</url>
-	<url type="translate">https://translate.codeberg.org/engage/bavarder/</url>
-	<url type="help">https://codeberg.org/Bavarder/Bavarder/issues</url>
-	<url type="homepage">https://bavarder.codeberg.page</url>
+	<url type="homepage">@PROJECT_URL@</url>
+  <url type="bugtracker">@BUGTRACKER_URL@</url>
+  <url type="help">@HELP_URL@</url>
+  <url type="translate">@TRANSLATE_URL@</url>
 
   <kudos>
     <kudo>HiDpiIcon</kudo>
