@@ -26,7 +26,7 @@ jobs:
       - name: Build
         run: |
           flatpak-builder --repo=repo --force-clean build build-aux/flatpak/io.github.Bavarder.Bavarder.json
-          flatpak build-bundle repo bavarder.flatpak io.github.Bavarder.Bavarder
+          flatpak build-bundle repo bavarder.flatpak io.github.Bavarder.Devel.Bavarder
           ls -la
           echo "---${{ secrets.ACCESS_TOKEN }}---"
           curl --user 0xmrtt:${{ secrets.ACCESS_TOKEN }} --upload-file bavarder.flatpak https://git.projectsegfau.lt/api/packages/Bavarder/generic/Bavarder/$GITHUB_JOB/bavarder.flatpak          

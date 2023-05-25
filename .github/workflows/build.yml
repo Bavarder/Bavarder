@@ -31,6 +31,6 @@ jobs:
         with:
           repository-name: gnome-44
           bundle: bavarder.flatpak
-          manifest-path: build-aux/flatpak/io.github.Bavarder.Bavarder.json
+          manifest-path: build-aux/flatpak/io.github.Bavarder.Bavarder.Devel.json
           cache-key: flatpak-builder-${{ github.sha }}
           arch: ${{ matrix.arch }}
