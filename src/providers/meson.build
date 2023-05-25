@@ -1,5 +1,5 @@
 
-providers_dir = join_paths(moduledir, 'provider')
+providers_dir = join_paths(moduledir, 'providers')
 
 providers_sources = [
   '__init__.py',

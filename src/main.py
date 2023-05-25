@@ -38,7 +38,7 @@ from .constants import app_id, version, build_type
 
 from tempfile import NamedTemporaryFile
 
-from .provider import PROVIDERS
+from .providers import PROVIDERS
 import platform
 import os
 import markdown
