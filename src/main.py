@@ -30,8 +30,8 @@ gi.require_version("Gst", "1.0")
 gi.require_version('WebKit', '6.0')
 
 from gi.repository import Gtk, Gio, Adw, Gdk, GLib, Gst, WebKit
-from .window import BavarderWindow
-from .preferences import Preferences
+from .views.main_window import BavarderWindow
+from .views.preferences_window import Preferences
 from enum import auto, IntEnum
 
 from .constants import app_id, version, build_type
@@ -92,7 +92,7 @@ class BavarderApplication(Adw.Application):
 
     def __init__(self):
         super().__init__(
-            application_id="io.github.Bavarder.Bavarder",
+            application_id=app_id,
             flags=Gio.ApplicationFlags.DEFAULT_FLAGS,
         )
         self.create_action("quit_all", self.on_close_all, ["<primary>q"])
@@ -111,7 +111,7 @@ class BavarderApplication(Adw.Application):
         # self.create_action("speak", self.on_speak_action, ["<primary>S"])
         # self.create_action("listen", self.on_listen_action, ["<primary>L"])
 
-        self.settings = Gio.Settings(schema_id="io.github.Bavarder.Bavarder")
+        self.settings = Gio.Settings(schema_id=app_id)
 
         self.clear_after_send = self.settings.get_boolean("clear-after-send")
         self.use_text_view = self.settings.get_boolean("use-text-view")

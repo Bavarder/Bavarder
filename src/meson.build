@@ -24,10 +24,9 @@ configure_file(
 bavarder_sources = [
   '__init__.py',
   'main.py',
-  'preferences.py',
-  'window.py',
 ]
 
 PY_INSTALLDIR.install_sources(bavarder_sources, subdir: moduledir)
 
 subdir('providers')
+subdir('views')
