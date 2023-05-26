@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:39+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-27 08:37+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
 "Language: es\n"
@@ -178,57 +178,56 @@ msgid "Open settings"
 msgstr "Abrir configuraciones"
 
 #: src/provider/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "Sobre Bavarder"
+msgstr "Acerca del proveedor"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "Cómo conseguir un token"
 
 #: src/provider/base.py:118
-#, fuzzy
-#| msgid "New version available!"
 msgid "No preferences available"
-msgstr "¡Una nueva versión está disponible!"
+msgstr "No existen preferencias"
 
 #: src/provider/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "Prompt demasiado largo, dividido en trozos."
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "No tienes acceso a este modelo"
 
 #: src/provider/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
+"Has superado tu cuota actual, por favor comprueba los detalles de tu plan y "
+"la facturación."
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "Error de la API"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
 msgstr ""
+"No hay ningún modelo seleccionado, puedes elegir uno en las preferencias"
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr ""
+msgstr "Clave de la API"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "Dirección url de la API"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr "Modelo:"
+msgstr "Modelo"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Cómo elegir un modelo"
 
 #~ msgid "CatGPT"
 #~ msgstr "Charla GPT"
