@@ -31,3 +31,4 @@ PY_INSTALLDIR.install_sources(bavarder_sources, subdir: moduledir)
 
 subdir('providers')
 subdir('views')
+subdir('widgets')

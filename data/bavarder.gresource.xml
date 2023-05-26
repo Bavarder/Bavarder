@@ -2,6 +2,7 @@
 <gresources>
   <gresource prefix="/io/github/Bavarder/Bavarder">
     <file preprocess="xml-stripblanks">ui/window.ui</file>
+    <file preprocess="xml-stripblanks">ui/message_bubble.ui</file>
     <file preprocess="xml-stripblanks" alias="gtk/help-overlay.ui">ui/help-overlay.ui</file>
     <file preprocess="xml-stripblanks">ui/preferences.ui</file>
     <file>style.css</file>

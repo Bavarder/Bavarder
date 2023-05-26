@@ -20,6 +20,7 @@
 from gi.repository import Adw
 from gi.repository import Gtk, Gio
 
+from bavarder.widgets.message_bubble import MessageBubble
 
 @Gtk.Template(resource_path="/io/github/Bavarder/Bavarder/ui/window.ui")
 class BavarderWindow(Adw.ApplicationWindow):
