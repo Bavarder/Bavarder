@@ -1,4 +1,4 @@
-# Where Bavarder has been saw
+# Where Bavarder has been seen
 
 ## Press
 
