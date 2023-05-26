@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-27 08:37+0000\n"
+"Last-Translator: muznyo <codeberg.vqtek@simplelogin.com>\n"
 "Language-Team: Czech <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/cs/>\n"
 "Language: cs\n"
@@ -171,41 +171,39 @@ msgid "Open settings"
 msgstr "Otevřít nastavení"
 
 #: src/provider/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "O Bavarder"
+msgstr "O poskytovateli"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "Jak získat token"
 
 #: src/provider/base.py:118
-#, fuzzy
-#| msgid "New version available!"
 msgid "No preferences available"
-msgstr "Nová verze je k dispozici!"
+msgstr "Žádná nastavení nejsou k dispozici"
 
 #: src/provider/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "Dotaz je příliš dlouhý, rozděluji jej na části."
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Nemáte přístup k tomuto modelu"
 
 #: src/provider/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
+"Překročili jste svůj limit, zkontrolujte prosím svůj tarif a fakturační "
+"údaje."
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "API chyba"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Není vybrán model, vyberte si jeden z nastavení"
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
@@ -213,15 +211,15 @@ msgstr "Klíč API"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "API Url"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr "Ukládání záloh:"
+msgstr "Model"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Jak vybrat model"
 
 #~ msgid "CatGPT"
 #~ msgstr "Cat GPT"
