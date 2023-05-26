@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:39+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
+"PO-Revision-Date: 2023-05-27 08:37+0000\n"
+"Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -65,7 +65,7 @@ msgstr "Copier la réponse"
 #: data/ui/help-overlay.ui:50
 msgctxt "shortcut window"
 msgid "Clear"
-msgstr "Vider"
+msgstr "Effacer"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:299
 msgid "Preferences"
@@ -161,11 +161,11 @@ msgstr "À propos de Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr "Nouvelle version disponible !"
+msgstr "Nouvelle version disponible !"
 
 #: src/main.py:266
 msgid "New Window"
-msgstr "Nouvelle Fenêtre"
+msgstr "Nouvelle fenêtre"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -190,11 +190,11 @@ msgstr "Aucune préférences disponibles"
 
 #: src/provider/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr "Invite trop longue, découpage morceaux."
+msgstr "Requête trop longue, découpage en morceaux."
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr "Vous n'avez pas accès à ce modèle"
+msgstr "Vous n’avez pas accès à ce modèle"
 
 #: src/provider/openai.py:54
 msgid ""
@@ -205,7 +205,7 @@ msgstr ""
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr "Erreur d'API"
+msgstr "Erreur d’API"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
@@ -214,11 +214,11 @@ msgstr ""
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr "Clé d'API"
+msgstr "Clé d’API"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr "Url d'API"
+msgstr "URL d’API"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
