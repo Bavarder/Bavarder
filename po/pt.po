@@ -5,13 +5,14 @@
 #
 # galegovski <galegovski@outlook.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
+# aresende <contact@aresende.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:39+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-27 08:37+0000\n"
+"Last-Translator: aresende <contact@aresende.com>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pt/>\n"
 "Language: pt\n"
@@ -43,26 +44,22 @@ msgstr "Perguntar"
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Fechar janela atual"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Fechar todas as janelas"
 
 #: data/ui/help-overlay.ui:38
-#, fuzzy
-#| msgid "Preferences"
 msgctxt "shortcut window"
 msgid "Preferences"
 msgstr "Preferências"
 
 #: data/ui/help-overlay.ui:44
-#, fuzzy
-#| msgid "Response"
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr "Resposta"
+msgstr "Copiar resposta"
 
 #: data/ui/help-overlay.ui:50
 msgctxt "shortcut window"
@@ -87,27 +84,31 @@ msgstr "O prompt será limpo após o envio"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Usar apenas texto nos resultados"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "Apenas o texto sem formatação será utilizado"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Fechar todas as janelas sem alerta"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Todas as janelas serão fechadas sem aviso e isso pode ocasionar em perda de "
+"dados"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Procurar por novidades acerca do provedor"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Novidades sobre problemas com provedores serão consultadas através site "
+"oficial de Barvarder"
 
 #: data/ui/preferences.blp:52 src/main.py:297
 msgid "Providers"
@@ -147,7 +148,7 @@ msgstr "Parar"
 
 #: data/ui/window.blp:226
 msgid "New window"
-msgstr ""
+msgstr "Nova janela"
 
 #: data/ui/window.blp:237 src/main.py:300
 msgid "Keyboard Shortcuts"
@@ -159,11 +160,11 @@ msgstr "Sobre Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr ""
+msgstr "Nova versão disponível!"
 
 #: src/main.py:266
 msgid "New Window"
-msgstr ""
+msgstr "Nova janela"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -175,55 +176,55 @@ msgid "Open settings"
 msgstr "Abrir configurações"
 
 #: src/provider/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "Sobre Bavarder"
+msgstr "Sobre provedor"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "Como adquirir um token"
 
 #: src/provider/base.py:118
 msgid "No preferences available"
-msgstr ""
+msgstr "Nenhuma configuração disponível"
 
 #: src/provider/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "Informação de entrada muito longa. Divida o texto em pedaços menores."
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Você não possui acesso a esse modelo"
 
 #: src/provider/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
+"Você excedeu sua cota de requisições. Por favor, consulte seu plano e "
+"detalhes de pagamento."
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "Erro em API"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Nenhum modelo selecionado. Escolha um através das configurações"
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr ""
+msgstr "Chave de API"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "API URL"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr "Modo"
+msgstr "Modelo"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Como escolher um modelo"
 
 #~ msgid "CatGPT"
 #~ msgstr "Cat GPT"
