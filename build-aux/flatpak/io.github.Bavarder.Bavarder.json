@@ -48,6 +48,20 @@
             ]
         },
         {
+            "name": "libyaml",
+            "buildsystem": "autotools",
+            "builddir": true,
+            "config-opts": [
+                "--libdir=/app/lib"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/yaml/libyaml"
+                }
+            ]
+        },
+        {
             "name": "appstream",
             "buildsystem": "meson",
             "sources": [
