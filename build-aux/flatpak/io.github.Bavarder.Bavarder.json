@@ -62,6 +62,34 @@
             ]
         },
         {
+            "name": "lmdb",
+            "buildsystem": "simple",
+            "subdir": "libraries/liblmdb",
+            "build-commands": [
+                "make install prefix=/ DESTDIR=/app"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://git.openldap.org/openldap/openldap.git"
+                }
+            ]
+        },
+        {
+            "name": "libxmlb",
+            "buildsystem": "meson",
+            "config-opts": [
+                "-Dgtkdoc=false"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://github.com/hughsie/libxmlb.git",
+                    "branch": "main"
+                }
+            ]
+        },
+        {
             "name": "appstream",
             "buildsystem": "meson",
             "sources": [
