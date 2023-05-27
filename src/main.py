@@ -1000,8 +1000,8 @@ class BavarderApplication(Adw.Application):
                             }
                         }"""
             CUSTOM_STYLE = """
-                --text-color: {card_fg_color};
-                --background-color: {card_bg_color};
+                --text-color: {view_fg_color};
+                --background-color: {view_bg_color};
                 --alt-background-color: {view_bg_color};
                 --link-color: {accent_fg_color};
                 --blockquote-text-color: {card_fg_color};
@@ -1016,8 +1016,8 @@ class BavarderApplication(Adw.Application):
                 --kbd-shadow-color: #8c939a;
             """
             DARK_CUSTOM_STYLE = """
-                --text-color: {card_fg_color};
-                --background-color: {card_bg_color};
+                --text-color: {view_fg_color};
+                --background-color: {view_bg_color};
                 --alt-background-color: {view_bg_color};
                 --link-color: {accent_fg_color};
                 --blockquote-text-color: {card_fg_color};
@@ -1036,6 +1036,8 @@ class BavarderApplication(Adw.Application):
                 self.use_theme = True
                 variables, palette, css = self.parse_css(os.path.expanduser("~/.config/gtk-4.0/gtk.css"))
                 variables["card_fg_color"] = variables.get("card_fg_color", "#2e3436")
+                variables["view_fg_color"] = variables.get("view_fg_color", "#2e3436")
+                variables["dark_3"] = variables.get("dark_3", "#3d3846")
                 variables["card_bg_color"] = variables.get("card_bg_color", "#f6f5f4")
                 variables["view_bg_color"] = variables.get("view_bg_color", "#edeeef")
                 variables["accent_fg_color"] = variables.get("accent_fg_color", "#0d71de")
