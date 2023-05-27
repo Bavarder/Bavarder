@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-27 14:05+0000\n"
+"PO-Revision-Date: 2023-05-27 14:51+0000\n"
 "Last-Translator: xosecalvo <xosecalvo@gmail.com>\n"
 "Language-Team: Galician <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/gl/>\n"
@@ -32,89 +32,92 @@ msgstr "Xeral"
 #: data/ui/help-overlay.ui:14
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr ""
+msgstr "Mostrar atallos"
 
 #: data/ui/help-overlay.ui:20
 msgctxt "shortcut window"
 msgid "Ask"
-msgstr ""
+msgstr "Preguntar"
 
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Pechar esta xanela"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Pechar todas as xanelas"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
 msgid "Preferences"
-msgstr "Axustes"
+msgstr "Preferencias"
 
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr ""
+msgstr "Copiar resposta"
 
 #: data/ui/help-overlay.ui:50
 msgctxt "shortcut window"
 msgid "Clear"
-msgstr "limpar"
+msgstr "Limpar"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:299
 msgid "Preferences"
-msgstr "Axustes"
+msgstr "Preferencias"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "Pé"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Limpar pé despois de enviar"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "O pé límpase após ser enviado"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Empregar texto simple para a saída"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "Emprégase texto simple sen formato"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Pechar todas as xanelas sen avisar"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Todas as xanelas péchanse sen avisar; isto pode provocar a perda de datos"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Procurar novas do forcenecedor"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Obtéñense novas relacionadas con problemas cos fornecedores desde o sitio "
+"web de Bavarder"
 
 #: data/ui/preferences.blp:52 src/main.py:297
 msgid "Providers"
-msgstr ""
+msgstr "Fornecedores"
 
 #: data/ui/window.blp:28
 msgid "Main Menu"
-msgstr ""
+msgstr "Menú principal"
 
 #: data/ui/window.blp:34 src/provider/base.py:50
 msgid "No network connection"
-msgstr "Se conexión a rede."
+msgstr "Sen conexión a rede"
 
 #: data/ui/window.blp:49
 msgid "Message"
@@ -126,15 +129,15 @@ msgstr "Copiar ao portapapeis"
 
 #: data/ui/window.blp:106
 msgid "Ask"
-msgstr ""
+msgstr "Preguntar"
 
 #: data/ui/window.blp:115
 msgid "Wait"
-msgstr ""
+msgstr "Agardar"
 
 #: data/ui/window.blp:130
 msgid "Response"
-msgstr ""
+msgstr "Resposta"
 
 #: data/ui/window.blp:208
 msgid "Stop"
@@ -142,35 +145,35 @@ msgstr "Parar"
 
 #: data/ui/window.blp:226
 msgid "New window"
-msgstr ""
+msgstr "Nova xanela"
 
 #: data/ui/window.blp:237 src/main.py:300
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Atallos de teclado"
 
 #: data/ui/window.blp:242 src/main.py:301
 msgid "About Bavarder"
-msgstr ""
+msgstr "Sobre o Bavarder"
 
 #: src/main.py:150
 msgid "New version available!"
-msgstr ""
+msgstr "Nova versión dispoñíbel!"
 
 #: src/main.py:266
 msgid "New Window"
-msgstr ""
+msgstr "Nova xanela"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "Non se forneceu ningunha API; pode fornecer unha na configuración"
 
 #: src/provider/base.py:45
 msgid "Open settings"
-msgstr "Abrir axustes"
+msgstr "Abrir configuración"
 
 #: src/provider/base.py:81
 msgid "About provider"
-msgstr ""
+msgstr "Sobre o fornecedor"
 
 #: src/provider/base.py:95
 msgid "How to get a token"
@@ -178,41 +181,42 @@ msgstr ""
 
 #: src/provider/base.py:118
 msgid "No preferences available"
-msgstr ""
+msgstr "Non hai ningunha preferencia dispoñíbel"
 
 #: src/provider/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "O pé é demasiado longo; divídese en anacos."
 
 #: src/provider/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Vostede non ten acceso a este modelo"
 
 #: src/provider/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
+"Excedeu a cota actual; comprobe o seu plan e os detalles de facturación."
 
 #: src/provider/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "Erro da API"
 
 #: src/provider/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Ningún modelo seleccionado; pode escoller un nas preferencias"
 
 #: src/provider/huggingface.py:73
 msgid "API Key"
-msgstr ""
+msgstr "Chave da API"
 
 #: src/provider/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "URL da API"
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr "Modo:"
+msgstr "Modelo"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Como escoller un modelo"
