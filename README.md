@@ -58,7 +58,7 @@ flatpak install io.github.Bavarder.Bavarder
 
 You can download a flatpak from the latest commit [here](https://codeberg.org/Bavarder/-/packages/generic/bavarder/). Download the file and run:
 
-```
+``` shell
 flatpak install bavarder.flatpak
 ```
 
@@ -88,11 +88,12 @@ See [`SEEN.md`](./SEEN.md) for a list of articles and posts about Bavarder
 <img src="https://translate.codeberg.org/widgets/bavarder/-/multi-auto.svg" alt="Translation status" />
 </a>
 
-You can translate Bavarder using Codeberg Translate
+You can translate Bavarder using [Codeberg Translate](https://translate.codeberg.org/engage/bavarder/)
 
 ### Mirrors
 
 - [GitHub](https://github.com/Bavarder/Bavarder)
+- [GitLab](https://gitlab.com/Bavarder/Bavarder)
 - [Codeberg](https://codeberg.org/Bavarder/Bavarder)
 
 ## About the name
