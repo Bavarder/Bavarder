@@ -5,13 +5,14 @@
 #
 # osiixy <osiixy@gmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
+# elementbound <ezittgtx@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-22 18:33+0200\n"
-"PO-Revision-Date: 2023-05-22 16:39+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-28 03:37+0000\n"
+"Last-Translator: elementbound <ezittgtx@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/hu/>\n"
 "Language: hu\n"
@@ -43,12 +44,12 @@ msgstr ""
 #: data/ui/help-overlay.ui:26
 msgctxt "shortcut window"
 msgid "Close current window"
-msgstr ""
+msgstr "Ablak bezárása"
 
 #: data/ui/help-overlay.ui:32
 msgctxt "shortcut window"
 msgid "Close all windows"
-msgstr ""
+msgstr "Összes ablak bezárása"
 
 #: data/ui/help-overlay.ui:38
 msgctxt "shortcut window"
@@ -58,7 +59,7 @@ msgstr "Beállítások"
 #: data/ui/help-overlay.ui:44
 msgctxt "shortcut window"
 msgid "Copy response"
-msgstr ""
+msgstr "Válasz másolása"
 
 #: data/ui/help-overlay.ui:50
 msgctxt "shortcut window"
@@ -96,6 +97,8 @@ msgstr ""
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Minden ablak be fog záródni figyelmeztetés nélkül; ez adatvesztéshez is "
+"vezethet"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
@@ -107,7 +110,7 @@ msgstr ""
 
 #: data/ui/preferences.blp:52 src/main.py:297
 msgid "Providers"
-msgstr ""
+msgstr "Szolgáltatók"
 
 #: data/ui/window.blp:28
 msgid "Main Menu"
@@ -135,7 +138,7 @@ msgstr ""
 
 #: data/ui/window.blp:130
 msgid "Response"
-msgstr ""
+msgstr "Válasz"
 
 #: data/ui/window.blp:208
 msgid "Stop"
@@ -143,7 +146,7 @@ msgstr "Megállítás"
 
 #: data/ui/window.blp:226
 msgid "New window"
-msgstr ""
+msgstr "Új ablak"
 
 #: data/ui/window.blp:237 src/main.py:300
 msgid "Keyboard Shortcuts"
@@ -159,7 +162,7 @@ msgstr ""
 
 #: src/main.py:266
 msgid "New Window"
-msgstr ""
+msgstr "Új ablak"
 
 #: src/provider/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -212,7 +215,7 @@ msgstr ""
 
 #: src/provider/openaicustom.py:40
 msgid "Model"
-msgstr "Mód:"
+msgstr "Modell"
 
 #: src/provider/openaicustom.py:80
 msgid "How to choose a model"
