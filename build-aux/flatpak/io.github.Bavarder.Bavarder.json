@@ -111,7 +111,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/gtk.git",
-                    "tag": "4.11.2"
+                    "branch": "main"
                 }
             ]
         },
