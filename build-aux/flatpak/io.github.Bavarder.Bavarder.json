@@ -92,6 +92,10 @@
         {
             "name": "appstream",
             "buildsystem": "meson",
+            "config-opts": [
+                "-Dstemming=false",
+                "-Dapidocs=false"
+            ],
             "sources": [
                 {
                     "type": "git",
