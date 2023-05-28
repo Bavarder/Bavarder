@@ -1,6 +1,6 @@
 from .base import BavarderProvider
 
-from baichat_py import BAIChat
+from baichat_py import Completion
 import socket
 
 from gi.repository import Gtk, Adw, GLib
@@ -12,11 +12,13 @@ class BAIChatProvider(BavarderProvider):
 
     def __init__(self, win, app, *args, **kwargs):
         super().__init__(win, app, *args, **kwargs)
-        self.chat = BAIChat(sync=True)
 
     def ask(self, prompt):
         try:
-            response = self.chat.sync_ask(prompt)
+            response = ""
+            for token in Completion.create(prompt):
+                response += token
+            GLib.idle_add(self.update_response, response)
         except KeyError:
             self.win.banner.set_revealed(False)
             return ""
@@ -25,8 +27,8 @@ class BAIChatProvider(BavarderProvider):
             return ""
         else:
             self.win.banner.set_revealed(False)
-            GLib.idle_add(self.update_response, response.text)
-            return response.text
+            GLib.idle_add(self.update_response, response)
+            return response
 
     @property
     def require_api_key(self):
