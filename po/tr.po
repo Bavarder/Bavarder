@@ -5,13 +5,14 @@
 #
 # keyiflerolsun <keyiflerolsun@gmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
+# oktay454 <oktay@e.email>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-27 16:57+0200\n"
-"PO-Revision-Date: 2023-05-22 16:39+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-28 12:22+0000\n"
+"Last-Translator: oktay454 <oktay@e.email>\n"
 "Language-Team: Turkish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/tr/>\n"
 "Language: tr\n"
@@ -43,27 +44,30 @@ msgstr "Gönderimden sonra giriş alanı temizlenecek"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Çıktı için düz metin kullanın"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "Biçimsiz düz metin kullanılacaktır"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Uyarı vermeden tüm pencereleri kapatın"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"Tüm pencereler uyarılmadan kapatılacaktır, bu veri kaybına neden olabilir"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Sağlayıcı haberlerini arayın"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Sağlayıcılarla ilgili sorunlar hakkındaki haberler Bavarder web sitesinden "
+"alınacaktır"
 
 #: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
@@ -122,10 +126,8 @@ msgid "Open settings"
 msgstr "Ayarları aç"
 
 #: src/providers/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "Bavarder Hakkında"
+msgstr "Sağlayıcı hakkında"
 
 #: src/providers/base.py:95
 msgid "How to get a token"
@@ -133,36 +135,38 @@ msgstr "Token nasıl alınır"
 
 #: src/providers/base.py:118
 msgid "No preferences available"
-msgstr ""
+msgstr "Kullanılabilir tercih yok"
 
 #: src/providers/huggingface.py:73 src/providers/transformer.py:68
 msgid "API Key"
-msgstr ""
+msgstr "API Anahtarı"
 
 #: src/providers/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "İstek çok uzun, parçalara ayırıyor."
 
 #: src/providers/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Bu modele erişiminiz yok"
 
 #: src/providers/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
+"Mevcut kotanızı aştınız, lütfen planınızı ve fatura ayrıntılarınızı kontrol "
+"edin."
 
 #: src/providers/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "API Hatası"
 
 #: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Seçili model yok, tercihlerden birini seçebilirsiniz"
 
 #: src/providers/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "API URL"
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
@@ -170,7 +174,7 @@ msgstr "Model:"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Bir model nasıl seçilir"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -182,15 +186,13 @@ msgstr "0xMRTT"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Telif hakkı © 2023 0xMRTT"
 
 #: src/main.py:124
 msgid "New version available!"
-msgstr ""
+msgstr "Yeni sürüm mevcut!"
 
 #: src/main.py:240
-#, fuzzy
-#| msgid "New window"
 msgid "New Window"
 msgstr "Yeni Pencere"
 
