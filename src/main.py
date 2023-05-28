@@ -377,8 +377,7 @@ class BavarderApplication(Adw.Application):
                 self.win.web_view.set_hexpand(True)
                 self.win.web_view.set_vexpand(True)
 
-                self.win.response_stack.add_child(self.win.web_view)
-                self.win.response_stack.set_visible_child(self.win.web_view)
+                self.win.scrolled_response_window.set_child(self.win.web_view)
             
             if self.win.web_view.is_loading():
                 self.win.web_view_pending_html = html
@@ -1053,7 +1052,6 @@ class BavarderApplication(Adw.Application):
             self.show(TEMPLATE.replace("{response}", response).replace("{theme_css}", theme_css), Step.LOAD_WEBVIEW)
         else:
             self.win.bot_text_view.get_buffer().props.text = response
-            self.win.response_stack.set_visible_child_name("page_response")
 
     def on_ask_action(self, widget, _):
         """Callback for the app.ask action."""

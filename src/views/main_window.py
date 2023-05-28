@@ -12,7 +12,6 @@ class BavarderWindow(Adw.ApplicationWindow):
     ask_button = Gtk.Template.Child()
     scrolled_response_window = Gtk.Template.Child()
     bot_text_view = Gtk.Template.Child()
-    response_stack = Gtk.Template.Child()
     banner = Gtk.Template.Child()
     stop_button = Gtk.Template.Child()
     # listen = Gtk.Template.Child()

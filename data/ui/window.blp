@@ -66,35 +66,19 @@ template $BavarderWindow : Adw.ApplicationWindow {
                       hexpand: true;
                       vexpand: true;
 
-                      styles ["card", "text-box"]
+                      styles [ "text-box"]
 
                       ScrolledWindow scrolled_response_window {
                         margin-top: 12;
                         margin-bottom: 0;
                         margin-start: 12;
                         margin-end: 12;
-                        styles ["scrolled-window"]
                         
-                        Gtk.Stack response_stack {
-                          vexpand: true;
+                        TextView bot_text_view {
+                          wrap-mode: word_char;
                           hexpand: true;
-                          Gtk.StackPage {
-                            name: "page_response";
-                            child: TextView bot_text_view {
-                              wrap-mode: word_char;
-                              hexpand: true;
-                              vexpand: true;
-                              editable: false;
-                            };
-                          }
-
-                          // Gtk.StackPage {
-                          //   name: "page_offline";
-                          //   child: Adw.StatusPage {
-                          //     //icon-name: "network-wireless-offline-symbolic";
-                          //     title: _("Offline");
-                          //   };
-                          // }
+                          vexpand: true;
+                          editable: false;
                         }
                         
                       }
