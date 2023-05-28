@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-22 18:33+0200\n"
+"POT-Creation-Date: 2023-05-27 16:57+0200\n"
 "PO-Revision-Date: 2023-05-27 08:37+0000\n"
 "Last-Translator: aresende <contact@aresende.com>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
@@ -22,51 +22,11 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/help-overlay.ui:11
-msgctxt "shortcut window"
-msgid "General"
-msgstr "Geral"
-
-#: data/ui/help-overlay.ui:14
-msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr "Mostrar Atalhos"
-
-#: data/ui/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Ask"
-msgstr "Perguntar"
-
-#: data/ui/help-overlay.ui:26
-msgctxt "shortcut window"
-msgid "Close current window"
-msgstr "Fechar janela atual"
-
-#: data/ui/help-overlay.ui:32
-msgctxt "shortcut window"
-msgid "Close all windows"
-msgstr "Fechar todas as janelas"
-
-#: data/ui/help-overlay.ui:38
-msgctxt "shortcut window"
-msgid "Preferences"
-msgstr "Preferências"
-
-#: data/ui/help-overlay.ui:44
-msgctxt "shortcut window"
-msgid "Copy response"
-msgstr "Copiar resposta"
-
-#: data/ui/help-overlay.ui:50
-msgctxt "shortcut window"
-msgid "Clear"
-msgstr "Limpar"
-
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:299
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
 msgid "Preferences"
 msgstr "Preferências"
 
@@ -110,7 +70,7 @@ msgstr ""
 "Novidades sobre problemas com provedores serão consultadas através site "
 "oficial de Barvarder"
 
-#: data/ui/preferences.blp:52 src/main.py:297
+#: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
 msgstr "Provedores"
 
@@ -118,7 +78,7 @@ msgstr "Provedores"
 msgid "Main Menu"
 msgstr "Menu principal"
 
-#: data/ui/window.blp:34 src/provider/base.py:50
+#: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
 msgstr "Nenhuma conexão de rede"
 
@@ -150,90 +110,131 @@ msgstr "Parar"
 msgid "New window"
 msgstr "Nova janela"
 
-#: data/ui/window.blp:237 src/main.py:300
+#: data/ui/window.blp:237 src/main.py:274
 msgid "Keyboard Shortcuts"
 msgstr "Atalhos do teclado"
 
-#: data/ui/window.blp:242 src/main.py:301
+#: data/ui/window.blp:242 src/main.py:275
 msgid "About Bavarder"
 msgstr "Sobre Bavarder"
 
-#: src/main.py:150
-msgid "New version available!"
-msgstr "Nova versão disponível!"
-
-#: src/main.py:266
-msgid "New Window"
-msgstr "Nova janela"
-
-#: src/provider/base.py:43
+#: src/providers/base.py:43
 msgid "No API key provided, you can provide one in settings"
 msgstr ""
 "Nenhuma chave de API fornecida, você pode fornecer uma nas configurações"
 
-#: src/provider/base.py:45
+#: src/providers/base.py:45
 msgid "Open settings"
 msgstr "Abrir configurações"
 
-#: src/provider/base.py:81
+#: src/providers/base.py:81
 msgid "About provider"
 msgstr "Sobre provedor"
 
-#: src/provider/base.py:95
+#: src/providers/base.py:95
 msgid "How to get a token"
 msgstr "Como adquirir um token"
 
-#: src/provider/base.py:118
+#: src/providers/base.py:118
 msgid "No preferences available"
 msgstr "Nenhuma configuração disponível"
 
-#: src/provider/openai.py:27
+#: src/providers/huggingface.py:73 src/providers/transformer.py:68
+msgid "API Key"
+msgstr "Chave de API"
+
+#: src/providers/openai.py:27
 msgid "Prompt too long, splitting into chunks."
 msgstr "Informação de entrada muito longa. Divida o texto em pedaços menores."
 
-#: src/provider/openai.py:49
+#: src/providers/openai.py:49
 msgid "You don't have access to this model"
 msgstr "Você não possui acesso a esse modelo"
 
-#: src/provider/openai.py:54
+#: src/providers/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
 "Você excedeu sua cota de requisições. Por favor, consulte seu plano e "
 "detalhes de pagamento."
 
-#: src/provider/openai.py:59
+#: src/providers/openai.py:59
 msgid "API Error"
 msgstr "Erro em API"
 
-#: src/provider/openai.py:70
+#: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
 msgstr "Nenhum modelo selecionado. Escolha um através das configurações"
 
-#: src/provider/huggingface.py:73
-msgid "API Key"
-msgstr "Chave de API"
-
-#: src/provider/openaicustom.py:33
+#: src/providers/openaicustom.py:33
 msgid "API Url"
 msgstr "API URL"
 
-#: src/provider/openaicustom.py:40
+#: src/providers/openaicustom.py:40
 msgid "Model"
 msgstr "Modelo"
 
-#: src/provider/openaicustom.py:80
+#: src/providers/openaicustom.py:80
 msgid "How to choose a model"
 msgstr "Como escolher um modelo"
+
+#: src/views/about_window.py:12
+msgid "translator-credits"
+msgstr ""
+
+#: src/views/about_window.py:26
+msgid "0xMRTT"
+msgstr "0xMRTT"
+
+#: src/views/about_window.py:44
+msgid "Copyright © 2023 0xMRTT"
+msgstr ""
+
+#: src/main.py:124
+msgid "New version available!"
+msgstr "Nova versão disponível!"
+
+#: src/main.py:240
+msgid "New Window"
+msgstr "Nova janela"
+
+#~ msgctxt "shortcut window"
+#~ msgid "General"
+#~ msgstr "Geral"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Shortcuts"
+#~ msgstr "Mostrar Atalhos"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Ask"
+#~ msgstr "Perguntar"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Close current window"
+#~ msgstr "Fechar janela atual"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Close all windows"
+#~ msgstr "Fechar todas as janelas"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Preferences"
+#~ msgstr "Preferências"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Copy response"
+#~ msgstr "Copiar resposta"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Clear"
+#~ msgstr "Limpar"
 
 #~ msgid "CatGPT"
 #~ msgstr "Cat GPT"
 
 #~ msgid "Chit-chat with an AI"
 #~ msgstr "Bate-papo com uma IA"
-
-#~ msgid "0xMRTT"
-#~ msgstr "0xMRTT"
 
 #~ msgid "Screenshot of Main UI"
 #~ msgstr "Captura da tela principal"

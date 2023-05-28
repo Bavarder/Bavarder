@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-22 18:33+0200\n"
+"POT-Creation-Date: 2023-05-27 16:57+0200\n"
 "PO-Revision-Date: 2023-05-25 07:37+0000\n"
 "Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
@@ -20,51 +20,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/help-overlay.ui:11
-msgctxt "shortcut window"
-msgid "General"
-msgstr "常规"
-
-#: data/ui/help-overlay.ui:14
-msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr "显示快捷方式"
-
-#: data/ui/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Ask"
-msgstr "问"
-
-#: data/ui/help-overlay.ui:26
-msgctxt "shortcut window"
-msgid "Close current window"
-msgstr "关闭当前窗口"
-
-#: data/ui/help-overlay.ui:32
-msgctxt "shortcut window"
-msgid "Close all windows"
-msgstr "关闭全部窗口"
-
-#: data/ui/help-overlay.ui:38
-msgctxt "shortcut window"
-msgid "Preferences"
-msgstr "首选项"
-
-#: data/ui/help-overlay.ui:44
-msgctxt "shortcut window"
-msgid "Copy response"
-msgstr "复制回复"
-
-#: data/ui/help-overlay.ui:50
-msgctxt "shortcut window"
-msgid "Clear"
-msgstr "清除"
-
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:299
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
 msgid "Preferences"
 msgstr "首选项"
 
@@ -104,7 +64,7 @@ msgstr "寻找提供商新闻"
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr "有关提供商问题的新闻将从 Bavarder 网站获取"
 
-#: data/ui/preferences.blp:52 src/main.py:297
+#: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
 msgstr "提供者"
 
@@ -112,7 +72,7 @@ msgstr "提供者"
 msgid "Main Menu"
 msgstr "主菜单"
 
-#: data/ui/window.blp:34 src/provider/base.py:50
+#: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
 msgstr "无网络连接"
 
@@ -144,87 +104,128 @@ msgstr "停止"
 msgid "New window"
 msgstr "新窗口"
 
-#: data/ui/window.blp:237 src/main.py:300
+#: data/ui/window.blp:237 src/main.py:274
 msgid "Keyboard Shortcuts"
 msgstr "键盘快捷键"
 
-#: data/ui/window.blp:242 src/main.py:301
+#: data/ui/window.blp:242 src/main.py:275
 msgid "About Bavarder"
 msgstr "关于 Bavarder"
 
-#: src/main.py:150
-msgid "New version available!"
-msgstr "新版本可用！"
-
-#: src/main.py:266
-msgid "New Window"
-msgstr "新窗口"
-
-#: src/provider/base.py:43
+#: src/providers/base.py:43
 msgid "No API key provided, you can provide one in settings"
 msgstr "没有提供API密钥，您可以在设置中提供一个"
 
-#: src/provider/base.py:45
+#: src/providers/base.py:45
 msgid "Open settings"
 msgstr "打开设置"
 
-#: src/provider/base.py:81
+#: src/providers/base.py:81
 msgid "About provider"
 msgstr "关于供应商"
 
-#: src/provider/base.py:95
+#: src/providers/base.py:95
 msgid "How to get a token"
 msgstr "如何获得 token"
 
-#: src/provider/base.py:118
+#: src/providers/base.py:118
 msgid "No preferences available"
 msgstr "没有可用的选项"
 
-#: src/provider/openai.py:27
+#: src/providers/huggingface.py:73 src/providers/transformer.py:68
+msgid "API Key"
+msgstr "API 密钥"
+
+#: src/providers/openai.py:27
 msgid "Prompt too long, splitting into chunks."
 msgstr "提示太长，分裂成块。"
 
-#: src/provider/openai.py:49
+#: src/providers/openai.py:49
 msgid "You don't have access to this model"
 msgstr "您无权访问此模型"
 
-#: src/provider/openai.py:54
+#: src/providers/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr "您超出了当前配额，请检查您的计划和账单明细。"
 
-#: src/provider/openai.py:59
+#: src/providers/openai.py:59
 msgid "API Error"
 msgstr "API 错误"
 
-#: src/provider/openai.py:70
+#: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
 msgstr "没有选择模型，您可以在选项中选择一个"
 
-#: src/provider/huggingface.py:73
-msgid "API Key"
-msgstr "API 密钥"
-
-#: src/provider/openaicustom.py:33
+#: src/providers/openaicustom.py:33
 msgid "API Url"
 msgstr "API 地址"
 
-#: src/provider/openaicustom.py:40
+#: src/providers/openaicustom.py:40
 msgid "Model"
 msgstr "模型"
 
-#: src/provider/openaicustom.py:80
+#: src/providers/openaicustom.py:80
 msgid "How to choose a model"
 msgstr "如何选择一个模型"
+
+#: src/views/about_window.py:12
+msgid "translator-credits"
+msgstr ""
+
+#: src/views/about_window.py:26
+msgid "0xMRTT"
+msgstr "0xMRTT"
+
+#: src/views/about_window.py:44
+msgid "Copyright © 2023 0xMRTT"
+msgstr ""
+
+#: src/main.py:124
+msgid "New version available!"
+msgstr "新版本可用！"
+
+#: src/main.py:240
+msgid "New Window"
+msgstr "新窗口"
+
+#~ msgctxt "shortcut window"
+#~ msgid "General"
+#~ msgstr "常规"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Shortcuts"
+#~ msgstr "显示快捷方式"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Ask"
+#~ msgstr "问"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Close current window"
+#~ msgstr "关闭当前窗口"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Close all windows"
+#~ msgstr "关闭全部窗口"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Preferences"
+#~ msgstr "首选项"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Copy response"
+#~ msgstr "复制回复"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Clear"
+#~ msgstr "清除"
 
 #~ msgid "CatGPT"
 #~ msgstr "Cat GPT"
 
 #~ msgid "Chit-chat with an AI"
 #~ msgstr "与AI一起聊天"
-
-#~ msgid "0xMRTT"
-#~ msgstr "0xMRTT"
 
 #~ msgid "Screenshot of Main UI"
 #~ msgstr "主界面的屏幕截图"

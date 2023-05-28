@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-22 18:33+0200\n"
+"POT-Creation-Date: 2023-05-27 16:57+0200\n"
 "PO-Revision-Date: 2023-05-25 07:37+0000\n"
 "Last-Translator: Anatolii Bielibov <anatoly136ua@gmail.com>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
@@ -21,55 +21,15 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/help-overlay.ui:11
-msgctxt "shortcut window"
-msgid "General"
-msgstr "Загальні"
-
-#: data/ui/help-overlay.ui:14
-msgctxt "shortcut window"
-msgid "Show Shortcuts"
-msgstr "Показати клавіатурні скорочення"
-
-#: data/ui/help-overlay.ui:20
-msgctxt "shortcut window"
-msgid "Ask"
-msgstr "Запитати"
-
-#: data/ui/help-overlay.ui:26
-msgctxt "shortcut window"
-msgid "Close current window"
-msgstr "Закрити поточне вікно"
-
-#: data/ui/help-overlay.ui:32
-msgctxt "shortcut window"
-msgid "Close all windows"
-msgstr "Закрити всі вікна"
-
-#: data/ui/help-overlay.ui:38
-msgctxt "shortcut window"
-msgid "Preferences"
-msgstr "Налаштування"
-
-#: data/ui/help-overlay.ui:44
-msgctxt "shortcut window"
-msgid "Copy response"
-msgstr "Копіювати відповідь"
-
-#: data/ui/help-overlay.ui:50
-msgctxt "shortcut window"
-msgid "Clear"
-msgstr "Очистити"
-
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:299
+#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
 msgid "Preferences"
 msgstr "Налаштування"
 
@@ -108,9 +68,10 @@ msgstr "Шукати новини про постачальників"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr "Новини про проблеми з постачальниками надходитимуть з вебсайту Bavarder"
+msgstr ""
+"Новини про проблеми з постачальниками надходитимуть з вебсайту Bavarder"
 
-#: data/ui/preferences.blp:52 src/main.py:297
+#: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
 msgstr "Постачальники"
 
@@ -118,7 +79,7 @@ msgstr "Постачальники"
 msgid "Main Menu"
 msgstr "Головне меню"
 
-#: data/ui/window.blp:34 src/provider/base.py:50
+#: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
 msgstr "Відсутнє з’єднання з мережею"
 
@@ -150,52 +111,48 @@ msgstr "Зупинити"
 msgid "New window"
 msgstr "Нове вікно"
 
-#: data/ui/window.blp:237 src/main.py:300
+#: data/ui/window.blp:237 src/main.py:274
 msgid "Keyboard Shortcuts"
 msgstr "Клавіатурні скорочення"
 
-#: data/ui/window.blp:242 src/main.py:301
+#: data/ui/window.blp:242 src/main.py:275
 msgid "About Bavarder"
 msgstr "Про Bavarder"
 
-#: src/main.py:150
-msgid "New version available!"
-msgstr "Доступна нова версія!"
-
-#: src/main.py:266
-msgid "New Window"
-msgstr "Нове вікно"
-
-#: src/provider/base.py:43
+#: src/providers/base.py:43
 msgid "No API key provided, you can provide one in settings"
 msgstr "Відсутній ключ API, надайте його в налаштуваннях"
 
-#: src/provider/base.py:45
+#: src/providers/base.py:45
 msgid "Open settings"
 msgstr "Відкрити налаштування"
 
-#: src/provider/base.py:81
+#: src/providers/base.py:81
 msgid "About provider"
 msgstr "Про постачальника"
 
-#: src/provider/base.py:95
+#: src/providers/base.py:95
 msgid "How to get a token"
 msgstr "Як отримати токен"
 
-#: src/provider/base.py:118
+#: src/providers/base.py:118
 msgid "No preferences available"
 msgstr "Налаштування відсутні"
 
-#: src/provider/openai.py:27
+#: src/providers/huggingface.py:73 src/providers/transformer.py:68
+msgid "API Key"
+msgstr "Ключ API"
+
+#: src/providers/openai.py:27
 #, fuzzy
 msgid "Prompt too long, splitting into chunks."
 msgstr "Завеликий запит, розділяємо на шматки."
 
-#: src/provider/openai.py:49
+#: src/providers/openai.py:49
 msgid "You don't have access to this model"
 msgstr "Ви не маєте доступу до цієї моделі"
 
-#: src/provider/openai.py:54
+#: src/providers/openai.py:54
 #, fuzzy
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
@@ -203,38 +160,83 @@ msgstr ""
 "Ви перевищили свою поточну квоту — будь ласка, перевірте свій тарифний план "
 "і платіжні дані."
 
-#: src/provider/openai.py:59
+#: src/providers/openai.py:59
 msgid "API Error"
 msgstr "Помилка API"
 
-#: src/provider/openai.py:70
+#: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
 msgstr "Модель не вибрано, виберіть будь-яку в налаштуваннях"
 
-#: src/provider/huggingface.py:73
-msgid "API Key"
-msgstr "Ключ API"
-
-#: src/provider/openaicustom.py:33
+#: src/providers/openaicustom.py:33
 msgid "API Url"
 msgstr "URL-адреса API"
 
-#: src/provider/openaicustom.py:40
+#: src/providers/openaicustom.py:40
 msgid "Model"
 msgstr "Модель"
 
-#: src/provider/openaicustom.py:80
+#: src/providers/openaicustom.py:80
 msgid "How to choose a model"
 msgstr "Як вибрати модель"
+
+#: src/views/about_window.py:12
+msgid "translator-credits"
+msgstr ""
+
+#: src/views/about_window.py:26
+msgid "0xMRTT"
+msgstr "0xMRTT"
+
+#: src/views/about_window.py:44
+msgid "Copyright © 2023 0xMRTT"
+msgstr ""
+
+#: src/main.py:124
+msgid "New version available!"
+msgstr "Доступна нова версія!"
+
+#: src/main.py:240
+msgid "New Window"
+msgstr "Нове вікно"
+
+#~ msgctxt "shortcut window"
+#~ msgid "General"
+#~ msgstr "Загальні"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Show Shortcuts"
+#~ msgstr "Показати клавіатурні скорочення"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Ask"
+#~ msgstr "Запитати"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Close current window"
+#~ msgstr "Закрити поточне вікно"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Close all windows"
+#~ msgstr "Закрити всі вікна"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Preferences"
+#~ msgstr "Налаштування"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Copy response"
+#~ msgstr "Копіювати відповідь"
+
+#~ msgctxt "shortcut window"
+#~ msgid "Clear"
+#~ msgstr "Очистити"
 
 #~ msgid "CatGPT"
 #~ msgstr "Кіт GPT"
 
 #~ msgid "Chit-chat with an AI"
 #~ msgstr "Побалакати з ШІ"
-
-#~ msgid "0xMRTT"
-#~ msgstr "0xMRTT"
 
 #~ msgid "Screenshot of Main UI"
 #~ msgstr "Знімок головного інтерфейсу"
