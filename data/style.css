@@ -13,3 +13,11 @@
   box-shadow: inset 0 -1px alpha(@shade_color, .75);
   background: linear-gradient(to top, alpha(@shade_color, .75), transparent 4px);
 }
+
+
+/* Global */
+
+scrolledwindow > viewport > clamp > box {
+  margin: 42px 12px;
+  border-spacing: 24px;
+}

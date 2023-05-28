@@ -1044,7 +1044,9 @@ class BavarderApplication(Adw.Application):
                 variables["headerbar_border_color"] = variables.get("headerbar_border_color", "#e1e2e4")
                 variables["headerbar_bg_color"] = variables.get("headerbar_bg_color", "#d8dadd")
                 theme_css = ":root {\n" + CUSTOM_STYLE.format(**variables) + " \n}\n" + "@media (prefers-color-scheme: dark) {\n:root {\n" + \
-                     DARK_CUSTOM_STYLE.format(**variables) + "\n}\n}\n" + css
+                     DARK_CUSTOM_STYLE.format(**variables) + "\n}\n}\n" 
+                print(theme_css)
+                theme_css += css
             else:
                 self.use_theme = False
                 theme_css = ADWAITA_STYLE
@@ -1078,9 +1080,13 @@ class BavarderApplication(Adw.Application):
         if self.prompt == "" or self.prompt is None:  # empty prompt
             return
         else:
+            self.win.spinner = Gtk.Spinner()
+            self.win.spinner.set_margin_top(8)
+            self.win.spinner.set_margin_bottom(8)
+            self.win.spinner.set_margin_start(8)
+            self.win.spinner.set_margin_end(8)
+            self.win.ask_button.set_child(self.win.spinner)
             self.win.spinner.start()
-            self.win.ask_button.set_visible(False)
-            self.win.wait_button.set_visible(True)
             self.win.stop_button.set_visible(True)
 
             def thread_run():
@@ -1094,8 +1100,7 @@ class BavarderApplication(Adw.Application):
 
             def cleanup(response):
                 self.win.spinner.stop()
-                self.win.ask_button.set_visible(True)
-                self.win.wait_button.set_visible(False)
+                self.win.ask_button.set_icon_name("paper-plane-symbolic")
                 self.win.stop_button.set_visible(False)
                 GLib.idle_add(self.update_response, response)
                 self.t.join()
