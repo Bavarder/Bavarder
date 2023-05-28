@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-27 16:57+0200\n"
-"PO-Revision-Date: 2023-05-28 12:22+0000\n"
+"PO-Revision-Date: 2023-05-29 15:20+0000\n"
 "Last-Translator: oktay454 <oktay@e.email>\n"
 "Language-Team: Turkish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/tr/>\n"
@@ -36,11 +36,11 @@ msgstr "Girdi"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr "Gönderdikten sonra giriş alanını temizle"
+msgstr "Gönderdikten sonra girdi alanını temizle"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr "Gönderimden sonra giriş alanı temizlenecek"
+msgstr "Gönderimden sonra girdi alanı temizlenecek"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
@@ -48,7 +48,7 @@ msgstr "Çıktı için düz metin kullanın"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr "Biçimsiz düz metin kullanılacaktır"
+msgstr "Biçimlendirilmemiş düz metin kullanılacaktır"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
@@ -107,7 +107,7 @@ msgstr "Dur"
 
 #: data/ui/window.blp:226
 msgid "New window"
-msgstr "Yeni Pencere"
+msgstr "Yeni pencere"
 
 #: data/ui/window.blp:237 src/main.py:274
 msgid "Keyboard Shortcuts"
@@ -131,7 +131,7 @@ msgstr "Sağlayıcı hakkında"
 
 #: src/providers/base.py:95
 msgid "How to get a token"
-msgstr "Token nasıl alınır"
+msgstr "Jeton nasıl alınır"
 
 #: src/providers/base.py:118
 msgid "No preferences available"
@@ -143,7 +143,7 @@ msgstr "API Anahtarı"
 
 #: src/providers/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr "İstek çok uzun, parçalara ayırıyor."
+msgstr "Girdi çok uzun, parçalara ayırıyor."
 
 #: src/providers/openai.py:49
 msgid "You don't have access to this model"
@@ -170,7 +170,7 @@ msgstr "API URL"
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
-msgstr "Model:"
+msgstr "Model"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
@@ -179,8 +179,9 @@ msgstr "Bir model nasıl seçilir"
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr ""
+"Kemal Oktay Aktoğan | @oktay454 | oktay@e.email\n"
 "Launchpad Contributions:\n"
-" Kudret EMRE https://launchpad.net/~kudretemre"
+"  Kudret EMRE https://launchpad.net/~kudretemre"
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
