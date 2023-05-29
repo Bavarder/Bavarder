@@ -15,6 +15,7 @@
 - https://www.linuxconsultant.org/bavarder-is-a-chatgpt-app-for-linux-desktops/
 - https://www.linuxlinks.com/machine-learning-linux-bavarder/
 - https://www.root.cz/clanky/softwarova-sklizen-24-5-2023-organizace-casu-systemem-kanban/
+- https://www.makeuseof.com/use-chatgpt-on-linux-with-bavarder/
 
 ## Youtube
 
