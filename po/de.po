@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-27 16:57+0200\n"
-"PO-Revision-Date: 2023-05-29 15:20+0000\n"
+"PO-Revision-Date: 2023-05-30 04:37+0000\n"
 "Last-Translator: maymage <maymage@gmail.com>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
@@ -178,9 +178,7 @@ msgstr "Wie Sie ein Modell wählen"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"Florian Diesch https://launchpad.net/~diesch"
+msgstr "Übersetzerwürdigung"
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
