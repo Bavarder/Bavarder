@@ -22,8 +22,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/97/ff/655edab7d79c6bcb1baf475c0ae0bcf219f8fe96e837c0f0065988e87993/curl_cffi-0.5.6.tar.gz",
-                    "sha256": "30eea55149bd66dbb11aa467e3b4e039085bfac38da7fb8ae694425d9b7061da"
+                    "url": "https://files.pythonhosted.org/packages/d1/6f/5d591a5628423af4598e2d6ff0861fcbc554cc259590fac9f97d9c984611/curl_cffi-0.5.6-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+                    "sha256": "7a9df9fabff038f1ac9e7e6f32b5edb5d8df8c2eec64f53f513de1766c17ffdb"
                 },
                 {
                     "type": "file",

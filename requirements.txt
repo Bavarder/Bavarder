@@ -15,3 +15,12 @@ pymdown-extensions
 requests
 text-generation
 gradio_client
+
+
+# replace the curl-cffi entry with 
+# {
+#     "type": "file",
+#     "url": "https://files.pythonhosted.org/packages/d1/6f/5d591a5628423af4598e2d6ff0861fcbc554cc259590fac9f97d9c984611/curl_cffi-0.5.6-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+#     "sha256": "7a9df9fabff038f1ac9e7e6f32b5edb5d8df8c2eec64f53f513de1766c17ffdb"
+# },
+#
