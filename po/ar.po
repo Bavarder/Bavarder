@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-27 16:57+0200\n"
-"PO-Revision-Date: 2023-05-31 13:37+0000\n"
+"PO-Revision-Date: 2023-06-01 02:37+0000\n"
 "Last-Translator: nakibrayan2 <codeberg.org.quoz7@aleeas.com>\n"
 "Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ar/>\n"
@@ -30,16 +30,19 @@ msgid "Preferences"
 msgstr "التفضيلات"
 
 #: data/ui/preferences.blp:12
+#, fuzzy
 msgid "Prompt"
-msgstr ""
+msgstr "موجه"
 
 #: data/ui/preferences.blp:15
+#, fuzzy
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "مسح نصح الموجه بعد الإرسال"
 
 #: data/ui/preferences.blp:16
+#, fuzzy
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "سيتم مسح نص الموجه بعد الإرسال"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
@@ -60,7 +63,7 @@ msgstr ""
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr "البحث عن أخبار المزود"
+msgstr "البحث عن أخبار مزود الخدمة"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
@@ -78,7 +81,7 @@ msgstr "القائمة الرئيسية"
 
 #: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
-msgstr "ليس هناك اتصال بالشبكة."
+msgstr "ليس هناك اتصال بالشبكة"
 
 #: data/ui/window.blp:49
 msgid "Message"
@@ -141,17 +144,19 @@ msgid "API Key"
 msgstr "مفتاح API"
 
 #: src/providers/openai.py:27
+#, fuzzy
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "النص في الموجه طويل ، يمكن تقسيمة إلى قطع"
 
 #: src/providers/openai.py:49
 msgid "You don't have access to this model"
 msgstr "ليس لديك حق الوصول إلى هذا النموذج"
 
 #: src/providers/openai.py:54
+#, fuzzy
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
-msgstr ""
+msgstr "لقد تجاوزت حصتك الحالية ، يرجى التأكد من إشتراكك و تفاصيل الفواتير."
 
 #: src/providers/openai.py:59
 msgid "API Error"
