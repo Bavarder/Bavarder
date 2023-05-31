@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-27 16:57+0200\n"
-"PO-Revision-Date: 2023-05-31 13:22+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-31 13:37+0000\n"
+"Last-Translator: nakibrayan2 <codeberg.org.quoz7@aleeas.com>\n"
 "Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ar/>\n"
 "Language: ar\n"
@@ -27,7 +27,7 @@ msgstr "Bavarder"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
 msgid "Preferences"
-msgstr "الخيارات"
+msgstr "التفضيلات"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
@@ -90,15 +90,15 @@ msgstr "النسخ إلى الحافظة"
 
 #: data/ui/window.blp:106
 msgid "Ask"
-msgstr ""
+msgstr "طرح سؤال"
 
 #: data/ui/window.blp:115
 msgid "Wait"
-msgstr ""
+msgstr "يرجى الإنتضار"
 
 #: data/ui/window.blp:130
 msgid "Response"
-msgstr ""
+msgstr "الجواب"
 
 #: data/ui/window.blp:208
 msgid "Stop"
@@ -106,7 +106,7 @@ msgstr "إيقاف"
 
 #: data/ui/window.blp:226
 msgid "New window"
-msgstr ""
+msgstr "نافذة جديدة"
 
 #: data/ui/window.blp:237 src/main.py:274
 msgid "Keyboard Shortcuts"
@@ -114,11 +114,11 @@ msgstr "اختصارات لوحة المفاتيح"
 
 #: data/ui/window.blp:242 src/main.py:275
 msgid "About Bavarder"
-msgstr ""
+msgstr "حول Bavarder"
 
 #: src/providers/base.py:43
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "لم يتم توفير مفتاح API ، يمكنك توفير مفتاح في الإعدادات"
 
 #: src/providers/base.py:45
 msgid "Open settings"
@@ -126,19 +126,19 @@ msgstr "افتح الإعدادات"
 
 #: src/providers/base.py:81
 msgid "About provider"
-msgstr ""
+msgstr "حول مقدم الخدمة"
 
 #: src/providers/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "كيف تحصل على توكن"
 
 #: src/providers/base.py:118
 msgid "No preferences available"
-msgstr ""
+msgstr "لا توجد تفضيلات متاحة"
 
 #: src/providers/huggingface.py:73 src/providers/transformer.py:68
 msgid "API Key"
-msgstr ""
+msgstr "مفتاح API"
 
 #: src/providers/openai.py:27
 msgid "Prompt too long, splitting into chunks."
@@ -146,7 +146,7 @@ msgstr ""
 
 #: src/providers/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "ليس لديك حق الوصول إلى هذا النموذج"
 
 #: src/providers/openai.py:54
 msgid ""
@@ -155,15 +155,15 @@ msgstr ""
 
 #: src/providers/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "خطأ في ال API"
 
 #: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "لم يتم تحديد أي نموذج ، يمكن اختيار نموذج في الإعدادات"
 
 #: src/providers/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "رابط ال API"
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
@@ -171,24 +171,24 @@ msgstr "نموذج"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "كيف تختار نموذج"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
+msgstr "حقوق المترجم"
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "حقوق النشر © 2023 0xMRTT"
 
 #: src/main.py:124
 msgid "New version available!"
-msgstr ""
+msgstr "هنالك إصدار جديد متوفر!"
 
 #: src/main.py:240
 msgid "New Window"
-msgstr ""
+msgstr "نافذة جديدة"
