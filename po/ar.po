@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-27 16:57+0200\n"
 "PO-Revision-Date: 2023-05-31 13:22+0000\n"
-"Last-Translator: nakibrayan2 <codeberg.org.quoz7@aleeas.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ar/>\n"
 "Language: ar\n"
@@ -78,15 +78,15 @@ msgstr "القائمة الرئيسية"
 
 #: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
-msgstr ""
+msgstr "ليس هناك اتصال بالشبكة."
 
 #: data/ui/window.blp:49
 msgid "Message"
-msgstr ""
+msgstr "رسالة"
 
 #: data/ui/window.blp:82 data/ui/window.blp:198
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "النسخ إلى الحافظة"
 
 #: data/ui/window.blp:106
 msgid "Ask"
@@ -102,7 +102,7 @@ msgstr ""
 
 #: data/ui/window.blp:208
 msgid "Stop"
-msgstr ""
+msgstr "إيقاف"
 
 #: data/ui/window.blp:226
 msgid "New window"
@@ -110,7 +110,7 @@ msgstr ""
 
 #: data/ui/window.blp:237 src/main.py:274
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "اختصارات لوحة المفاتيح"
 
 #: data/ui/window.blp:242 src/main.py:275
 msgid "About Bavarder"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: src/providers/base.py:45
 msgid "Open settings"
-msgstr ""
+msgstr "افتح الإعدادات"
 
 #: src/providers/base.py:81
 msgid "About provider"
@@ -167,7 +167,7 @@ msgstr ""
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
-msgstr ""
+msgstr "نموذج"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
