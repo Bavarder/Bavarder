@@ -9,21 +9,25 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-27 16:57+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-05-31 13:22+0000\n"
+"Last-Translator: nakibrayan2 <codeberg.org.quoz7@aleeas.com>\n"
+"Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
+"bavarder/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
-msgstr ""
+msgstr "Bavarder"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
 msgid "Preferences"
-msgstr ""
+msgstr "الخيارات"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
@@ -39,35 +43,38 @@ msgstr ""
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "إستخدام نص عادي للإخراج"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "سيتم إستخدام نص عادي بدون تنسيق"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "إغلاق جميع النوافض بدون سابق إنذار"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
+"سيتم إغلاق جميع النوافذ دون سابق إنذار ، وهذا قد يؤدي إلى فقدان للبيانات"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "البحث عن أخبار المزود"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"سيتم جلب الأخبار المتعلقة بالمشكلات مع مقدمي الخدمة من موقع Bavarder على "
+"الويب"
 
 #: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
-msgstr ""
+msgstr "مقدمي الخدمة"
 
 #: data/ui/window.blp:28
 msgid "Main Menu"
-msgstr ""
+msgstr "القائمة الرئيسية"
 
 #: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
