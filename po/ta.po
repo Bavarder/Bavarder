@@ -9,13 +9,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-27 16:57+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-06-01 16:05+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Tamil <https://translate.codeberg.org/projects/bavarder/"
+"bavarder/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
@@ -23,7 +26,7 @@ msgstr ""
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
 msgid "Preferences"
-msgstr ""
+msgstr "விருப்பத்தேர்வு"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
@@ -75,7 +78,7 @@ msgstr ""
 
 #: data/ui/window.blp:49
 msgid "Message"
-msgstr ""
+msgstr "செய்தி"
 
 #: data/ui/window.blp:82 data/ui/window.blp:198
 msgid "Copy to Clipboard"
@@ -95,7 +98,7 @@ msgstr ""
 
 #: data/ui/window.blp:208
 msgid "Stop"
-msgstr ""
+msgstr "நிறுத்து"
 
 #: data/ui/window.blp:226
 msgid "New window"
