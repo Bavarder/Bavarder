@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-05-22 16:39+0000\n"
+"PO-Revision-Date: 2023-06-03 00:37+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
@@ -100,7 +100,7 @@ msgstr ""
 
 #: data/ui/window.blp:156
 msgid "Try Again"
-msgstr ""
+msgstr "Försök igen"
 
 #: data/ui/window.blp:205
 msgid "Ask"
