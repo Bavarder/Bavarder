@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-27 16:57+0200\n"
-"PO-Revision-Date: 2023-05-25 07:37+0000\n"
+"PO-Revision-Date: 2023-06-02 11:46+0000\n"
 "Last-Translator: thepoladov13 <thepoladov@protonmail.com>\n"
 "Language-Team: Azerbaijani <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/az/>\n"
@@ -178,7 +178,7 @@ msgstr "Bir modeli necə seçmək olar"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
+msgstr "Mehrab Poladov | thepoladov@protonmail.com"
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
@@ -186,7 +186,7 @@ msgstr "0xMRTT"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Müəlliflik hüququ © 2023 0xMRTT"
 
 #: src/main.py:124
 msgid "New version available!"
