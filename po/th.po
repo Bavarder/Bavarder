@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-27 16:57+0200\n"
+"POT-Creation-Date: 2023-06-01 17:40+0000\n"
 "PO-Revision-Date: 2023-05-16 12:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Thai <https://translate.codeberg.org/projects/bavarder/"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Bavarder"
 msgstr "แบบวาร์เดอร์"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
+#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
 msgid "Preferences"
 msgstr "การตั้งค่า"
 
@@ -76,39 +76,43 @@ msgstr "เมนูหลัก"
 msgid "No network connection"
 msgstr "ไม่มีการเชื่อมต่อเครือข่าย"
 
-#: data/ui/window.blp:49
-msgid "Message"
-msgstr "ข้อความ"
-
-#: data/ui/window.blp:82 data/ui/window.blp:198
-msgid "Copy to Clipboard"
-msgstr "คัดลอกไปยังคลิปบอร์ด"
-
-#: data/ui/window.blp:106
-msgid "Ask"
-msgstr "ถาม"
-
-#: data/ui/window.blp:115
-msgid "Wait"
-msgstr "รอ"
-
-#: data/ui/window.blp:130
+#: data/ui/window.blp:61
 msgid "Response"
 msgstr "การตอบสนอง"
 
-#: data/ui/window.blp:208
+#: data/ui/window.blp:113
+msgid "Copy to Clipboard"
+msgstr "คัดลอกไปยังคลิปบอร์ด"
+
+#: data/ui/window.blp:123
 msgid "Stop"
 msgstr "Stop"
 
-#: data/ui/window.blp:226
+#: data/ui/window.blp:152
+msgid "ERROR"
+msgstr ""
+
+#: data/ui/window.blp:153
+msgid "DESCRIPTION"
+msgstr ""
+
+#: data/ui/window.blp:156
+msgid "Try Again"
+msgstr ""
+
+#: data/ui/window.blp:205
+msgid "Ask"
+msgstr "ถาม"
+
+#: data/ui/window.blp:224
 msgid "New window"
 msgstr ""
 
-#: data/ui/window.blp:237 src/main.py:274
+#: data/ui/window.blp:235 src/main.py:274
 msgid "Keyboard Shortcuts"
 msgstr "แป้นพิมพ์ลัด"
 
-#: data/ui/window.blp:242 src/main.py:275
+#: data/ui/window.blp:240 src/main.py:275
 msgid "About Bavarder"
 msgstr "เกี่ยวกับแบบวาร์เดอร์"
 
@@ -190,6 +194,12 @@ msgstr ""
 #: src/main.py:240
 msgid "New Window"
 msgstr ""
+
+#~ msgid "Message"
+#~ msgstr "ข้อความ"
+
+#~ msgid "Wait"
+#~ msgstr "รอ"
 
 #~ msgctxt "shortcut window"
 #~ msgid "General"

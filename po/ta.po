@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-27 16:57+0200\n"
+"POT-Creation-Date: 2023-06-01 17:40+0000\n"
 "PO-Revision-Date: 2023-06-02 11:46+0000\n"
 "Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://translate.codeberg.org/projects/bavarder/"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Bavarder"
 msgstr "பவார்டர்"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
+#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
 msgid "Preferences"
 msgstr "விருப்பத்தேர்வு"
 
@@ -55,8 +55,7 @@ msgstr "எச்சரிக்கை இல்லாமல் அனைத்�
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
-"அனைத்து சாளரங்களும் எச்சரிக்கை இல்லாமல் மூடப்படும், இது தரவு இழப்புக்கு "
-"வழிவகுக்கும்"
+"அனைத்து சாளரங்களும் எச்சரிக்கை இல்லாமல் மூடப்படும், இது தரவு இழப்புக்கு வழிவகுக்கும்"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
@@ -64,9 +63,7 @@ msgstr "வழங்குநர் செய்திகளைத் தேட�
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr ""
-"வழங்குநர்களுடனான சிக்கல்கள் பற்றிய செய்திகள் பவார்டர் இணையதளத்தில் இருந்து "
-"பெறப்படும்"
+msgstr "வழங்குநர்களுடனான சிக்கல்கள் பற்றிய செய்திகள் பவார்டர் இணையதளத்தில் இருந்து பெறப்படும்"
 
 #: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
@@ -80,39 +77,43 @@ msgstr "முதன்மை பட்டியல்"
 msgid "No network connection"
 msgstr "பிணைய இணைப்பு இல்லை"
 
-#: data/ui/window.blp:49
-msgid "Message"
-msgstr "செய்தி"
-
-#: data/ui/window.blp:82 data/ui/window.blp:198
-msgid "Copy to Clipboard"
-msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
-
-#: data/ui/window.blp:106
-msgid "Ask"
-msgstr "கேள்"
-
-#: data/ui/window.blp:115
-msgid "Wait"
-msgstr "காத்திரு"
-
-#: data/ui/window.blp:130
+#: data/ui/window.blp:61
 msgid "Response"
 msgstr "பதில்"
 
-#: data/ui/window.blp:208
+#: data/ui/window.blp:113
+msgid "Copy to Clipboard"
+msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#: data/ui/window.blp:123
 msgid "Stop"
 msgstr "நிறுத்து"
 
-#: data/ui/window.blp:226
+#: data/ui/window.blp:152
+msgid "ERROR"
+msgstr ""
+
+#: data/ui/window.blp:153
+msgid "DESCRIPTION"
+msgstr ""
+
+#: data/ui/window.blp:156
+msgid "Try Again"
+msgstr ""
+
+#: data/ui/window.blp:205
+msgid "Ask"
+msgstr "கேள்"
+
+#: data/ui/window.blp:224
 msgid "New window"
 msgstr "புதிய சாளரம்"
 
-#: data/ui/window.blp:237 src/main.py:274
+#: data/ui/window.blp:235 src/main.py:274
 msgid "Keyboard Shortcuts"
 msgstr "விசைப்பலகை குறுக்குவழிகள்"
 
-#: data/ui/window.blp:242 src/main.py:275
+#: data/ui/window.blp:240 src/main.py:275
 msgid "About Bavarder"
 msgstr "பவார்டர் பற்றி"
 
@@ -152,8 +153,8 @@ msgstr "இந்த மாதிரிக்கான அணுகல் உங
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr ""
-"உங்கள் தற்போதைய ஒதுக்கீட்டை மீறிவிட்டீர்கள், உங்கள் திட்டம் மற்றும் கட்டண "
-"விவரங்களைச் சரிபார்க்கவும்."
+"உங்கள் தற்போதைய ஒதுக்கீட்டை மீறிவிட்டீர்கள், உங்கள் திட்டம் மற்றும் கட்டண விவரங்களைச் "
+"சரிபார்க்கவும்."
 
 #: src/providers/openai.py:59
 msgid "API Error"
@@ -161,9 +162,7 @@ msgstr "API பிழை"
 
 #: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
-"எந்த மாதிரியும் தேர்ந்தெடுக்கப்படவில்லை, விருப்பத்தேர்வுகளில் ஒன்றைத் "
-"தேர்ந்தெடுக்கலாம்"
+msgstr "எந்த மாதிரியும் தேர்ந்தெடுக்கப்படவில்லை, விருப்பத்தேர்வுகளில் ஒன்றைத் தேர்ந்தெடுக்கலாம்"
 
 #: src/providers/openaicustom.py:33
 msgid "API Url"
@@ -196,3 +195,9 @@ msgstr "புதிய பதிப்பு உள்ளது!"
 #: src/main.py:240
 msgid "New Window"
 msgstr "புதிய சாளரம்"
+
+#~ msgid "Message"
+#~ msgstr "செய்தி"
+
+#~ msgid "Wait"
+#~ msgstr "காத்திரு"

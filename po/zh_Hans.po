@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-27 16:57+0200\n"
+"POT-Creation-Date: 2023-06-01 17:40+0000\n"
 "PO-Revision-Date: 2023-06-01 16:05+0000\n"
 "Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
+#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
 msgid "Preferences"
 msgstr "首选项"
 
@@ -76,39 +76,43 @@ msgstr "主菜单"
 msgid "No network connection"
 msgstr "无网络连接"
 
-#: data/ui/window.blp:49
-msgid "Message"
-msgstr "消息"
-
-#: data/ui/window.blp:82 data/ui/window.blp:198
-msgid "Copy to Clipboard"
-msgstr "复制到剪贴板"
-
-#: data/ui/window.blp:106
-msgid "Ask"
-msgstr "询问"
-
-#: data/ui/window.blp:115
-msgid "Wait"
-msgstr "等待"
-
-#: data/ui/window.blp:130
+#: data/ui/window.blp:61
 msgid "Response"
 msgstr "回复"
 
-#: data/ui/window.blp:208
+#: data/ui/window.blp:113
+msgid "Copy to Clipboard"
+msgstr "复制到剪贴板"
+
+#: data/ui/window.blp:123
 msgid "Stop"
 msgstr "停止"
 
-#: data/ui/window.blp:226
+#: data/ui/window.blp:152
+msgid "ERROR"
+msgstr ""
+
+#: data/ui/window.blp:153
+msgid "DESCRIPTION"
+msgstr ""
+
+#: data/ui/window.blp:156
+msgid "Try Again"
+msgstr ""
+
+#: data/ui/window.blp:205
+msgid "Ask"
+msgstr "询问"
+
+#: data/ui/window.blp:224
 msgid "New window"
 msgstr "新窗口"
 
-#: data/ui/window.blp:237 src/main.py:274
+#: data/ui/window.blp:235 src/main.py:274
 msgid "Keyboard Shortcuts"
 msgstr "键盘快捷键"
 
-#: data/ui/window.blp:242 src/main.py:275
+#: data/ui/window.blp:240 src/main.py:275
 msgid "About Bavarder"
 msgstr "关于 Bavarder"
 
@@ -192,6 +196,12 @@ msgstr "新版本可用！"
 #: src/main.py:240
 msgid "New Window"
 msgstr "新窗口"
+
+#~ msgid "Message"
+#~ msgstr "消息"
+
+#~ msgid "Wait"
+#~ msgstr "等待"
 
 #~ msgctxt "shortcut window"
 #~ msgid "General"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-27 16:57+0200\n"
+"POT-Creation-Date: 2023-06-01 17:40+0000\n"
 "PO-Revision-Date: 2023-05-27 08:37+0000\n"
 "Last-Translator: aresende <contact@aresende.com>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:232 src/main.py:273
+#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
 msgid "Preferences"
 msgstr "Preferências"
 
@@ -82,39 +82,43 @@ msgstr "Menu principal"
 msgid "No network connection"
 msgstr "Nenhuma conexão de rede"
 
-#: data/ui/window.blp:49
-msgid "Message"
-msgstr "Mensagem"
-
-#: data/ui/window.blp:82 data/ui/window.blp:198
-msgid "Copy to Clipboard"
-msgstr "Copiar para área de transferência"
-
-#: data/ui/window.blp:106
-msgid "Ask"
-msgstr "Perguntar"
-
-#: data/ui/window.blp:115
-msgid "Wait"
-msgstr "Espere"
-
-#: data/ui/window.blp:130
+#: data/ui/window.blp:61
 msgid "Response"
 msgstr "Resposta"
 
-#: data/ui/window.blp:208
+#: data/ui/window.blp:113
+msgid "Copy to Clipboard"
+msgstr "Copiar para área de transferência"
+
+#: data/ui/window.blp:123
 msgid "Stop"
 msgstr "Parar"
 
-#: data/ui/window.blp:226
+#: data/ui/window.blp:152
+msgid "ERROR"
+msgstr ""
+
+#: data/ui/window.blp:153
+msgid "DESCRIPTION"
+msgstr ""
+
+#: data/ui/window.blp:156
+msgid "Try Again"
+msgstr ""
+
+#: data/ui/window.blp:205
+msgid "Ask"
+msgstr "Perguntar"
+
+#: data/ui/window.blp:224
 msgid "New window"
 msgstr "Nova janela"
 
-#: data/ui/window.blp:237 src/main.py:274
+#: data/ui/window.blp:235 src/main.py:274
 msgid "Keyboard Shortcuts"
 msgstr "Atalhos do teclado"
 
-#: data/ui/window.blp:242 src/main.py:275
+#: data/ui/window.blp:240 src/main.py:275
 msgid "About Bavarder"
 msgstr "Sobre Bavarder"
 
@@ -197,6 +201,12 @@ msgstr "Nova versão disponível!"
 #: src/main.py:240
 msgid "New Window"
 msgstr "Nova janela"
+
+#~ msgid "Message"
+#~ msgstr "Mensagem"
+
+#~ msgid "Wait"
+#~ msgstr "Espere"
 
 #~ msgctxt "shortcut window"
 #~ msgid "General"
