@@ -8,13 +8,15 @@
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # volkov <d2oo1dle2x@gmail.com>, 2023.
 # Anatolii Bielibov <anatoly136ua@gmail.com>, 2023.
+# Anatolii Bielibov <Anatoly136UA@users.noreply.translate.codeberg.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-06-02 11:46+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-06-04 00:37+0000\n"
+"Last-Translator: Anatolii Bielibov <Anatoly136UA@users.noreply.translate."
+"codeberg.org>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/uk/>\n"
 "Language: uk\n"
@@ -97,11 +99,11 @@ msgstr "Зупинити"
 
 #: data/ui/window.blp:152
 msgid "ERROR"
-msgstr ""
+msgstr "ПОМИЛКА"
 
 #: data/ui/window.blp:153
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "ОПИС"
 
 #: data/ui/window.blp:156
 msgid "Try Again"
