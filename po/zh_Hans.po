@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-06-02 11:46+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-06-05 03:29+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -90,11 +90,11 @@ msgstr "停止"
 
 #: data/ui/window.blp:152
 msgid "ERROR"
-msgstr ""
+msgstr "错误"
 
 #: data/ui/window.blp:153
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "描述"
 
 #: data/ui/window.blp:156
 msgid "Try Again"
