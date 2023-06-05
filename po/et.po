@@ -9,13 +9,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-06-05 03:29+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Estonian <https://translate.codeberg.org/projects/bavarder/"
+"bavarder/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
@@ -23,7 +26,7 @@ msgstr ""
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
 msgid "Preferences"
-msgstr ""
+msgstr "Eelistused"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
@@ -83,7 +86,7 @@ msgstr ""
 
 #: data/ui/window.blp:123
 msgid "Stop"
-msgstr ""
+msgstr "Stopp"
 
 #: data/ui/window.blp:152
 msgid "ERROR"
@@ -95,7 +98,7 @@ msgstr ""
 
 #: data/ui/window.blp:156
 msgid "Try Again"
-msgstr ""
+msgstr "Proovi uuesti"
 
 #: data/ui/window.blp:205
 msgid "Ask"
@@ -107,7 +110,7 @@ msgstr ""
 
 #: data/ui/window.blp:235 src/main.py:274
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Klaviatuuri kiirvalikud"
 
 #: data/ui/window.blp:240 src/main.py:275
 msgid "About Bavarder"
@@ -119,7 +122,7 @@ msgstr ""
 
 #: src/providers/base.py:45
 msgid "Open settings"
-msgstr ""
+msgstr "Ava seadistused"
 
 #: src/providers/base.py:81
 msgid "About provider"
