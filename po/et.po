@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-06-05 03:29+0000\n"
+"PO-Revision-Date: 2023-06-05 19:37+0000\n"
 "Last-Translator: vabaME <vaba@riseup.net>\n"
 "Language-Team: Estonian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/et/>\n"
@@ -30,59 +30,61 @@ msgstr "Eelistused"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "Viip"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Kustuta viip pärast saatmist"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "Viip kustutatakse pärast saatmist"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Kasuta väljundiks lihtteksti"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "Kasutatakse vorminguta lihtteksti"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Sulge kõik aknad ilma hoiatuseta"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
-msgstr ""
+msgstr "Kõik aknad suletakse hoiatamata, see võib põhjustada andmete kadumise"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Otsi teenusepakkuja uudiseid"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Uudised teenusepakkujatega seotud probleemide kohta hangitakse Bavarderi "
+"veebisaidilt"
 
 #: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
-msgstr ""
+msgstr "Teenusepakkujad"
 
 #: data/ui/window.blp:28
 msgid "Main Menu"
-msgstr ""
+msgstr "Peamenüü"
 
 #: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
-msgstr ""
+msgstr "Võrguühendus puudub"
 
 #: data/ui/window.blp:61
 msgid "Response"
-msgstr ""
+msgstr "Vastus"
 
 #: data/ui/window.blp:113
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "Kopeeri lõikelauale"
 
 #: data/ui/window.blp:123
 msgid "Stop"
@@ -90,11 +92,11 @@ msgstr "Stopp"
 
 #: data/ui/window.blp:152
 msgid "ERROR"
-msgstr ""
+msgstr "VIGA"
 
 #: data/ui/window.blp:153
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "KIRJELDUS"
 
 #: data/ui/window.blp:156
 msgid "Try Again"
@@ -102,11 +104,11 @@ msgstr "Proovi uuesti"
 
 #: data/ui/window.blp:205
 msgid "Ask"
-msgstr ""
+msgstr "Küsi"
 
 #: data/ui/window.blp:224
 msgid "New window"
-msgstr ""
+msgstr "Uus aken"
 
 #: data/ui/window.blp:235 src/main.py:274
 msgid "Keyboard Shortcuts"
@@ -114,11 +116,11 @@ msgstr "Klaviatuuri kiirvalikud"
 
 #: data/ui/window.blp:240 src/main.py:275
 msgid "About Bavarder"
-msgstr ""
+msgstr "Teave"
 
 #: src/providers/base.py:43
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "API-võtit ei pakuta, saad selle seadistustes sisestada"
 
 #: src/providers/base.py:45
 msgid "Open settings"
@@ -126,7 +128,7 @@ msgstr "Ava seadistused"
 
 #: src/providers/base.py:81
 msgid "About provider"
-msgstr ""
+msgstr "Pakkuja kohta"
 
 #: src/providers/base.py:95
 msgid "How to get a token"
@@ -134,44 +136,44 @@ msgstr ""
 
 #: src/providers/base.py:118
 msgid "No preferences available"
-msgstr ""
+msgstr "No preferences available"
 
 #: src/providers/huggingface.py:73 src/providers/transformer.py:68
 msgid "API Key"
-msgstr ""
+msgstr "API võti"
 
 #: src/providers/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "Viip liiga pikk, jaguneb tükkideks."
 
 #: src/providers/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Sul pole sellele mudelile juurdepääsu"
 
 #: src/providers/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
-msgstr ""
+msgstr "Ületasid oma praeguse kvoodi, kontrolli oma plaani ja arveldusandmeid."
 
 #: src/providers/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "API viga"
 
 #: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Ühtegi mudelit pole valitud, saate ühe valida eelistustes"
 
 #: src/providers/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "API Url"
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
-msgstr ""
+msgstr "Mudel"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Kuidas valida mudelit"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -179,16 +181,16 @@ msgstr ""
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Autoriõigus © 2023 0xMRTT"
 
 #: src/main.py:124
 msgid "New version available!"
-msgstr ""
+msgstr "Uus versioon on saadaval!"
 
 #: src/main.py:240
 msgid "New Window"
-msgstr ""
+msgstr "Uus aken"
