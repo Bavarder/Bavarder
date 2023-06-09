@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-06-03 00:37+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-06-09 12:26+0000\n"
+"Last-Translator: artnay <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fi/>\n"
 "Language: fi\n"
@@ -94,11 +94,11 @@ msgstr "Lopeta"
 
 #: data/ui/window.blp:152
 msgid "ERROR"
-msgstr ""
+msgstr "VIRHE"
 
 #: data/ui/window.blp:153
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "KUVAUS"
 
 #: data/ui/window.blp:156
 msgid "Try Again"
@@ -129,20 +129,16 @@ msgid "Open settings"
 msgstr "Avaa asetukset"
 
 #: src/providers/base.py:81
-#, fuzzy
-#| msgid "About Bavarder"
 msgid "About provider"
-msgstr "Tietoja - Bavarder"
+msgstr "Tietoja palveluntarjoajasta"
 
 #: src/providers/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "Miten saat poletin"
 
 #: src/providers/base.py:118
-#, fuzzy
-#| msgid "New version available!"
 msgid "No preferences available"
-msgstr "Uusi versio saatavilla!"
+msgstr "Asetuksia ei ole saatavilla"
 
 #: src/providers/huggingface.py:73 src/providers/transformer.py:68
 msgid "API Key"
@@ -150,42 +146,43 @@ msgstr "API-avain"
 
 #: src/providers/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "Kehote on liian pitkä, pilkotaan osiin."
 
 #: src/providers/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Sinulla ei ole pääsyä tähän malliin"
 
 #: src/providers/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
-msgstr ""
+msgstr "Ylitit kiintiösi, tarkista käyttämäsi tilaus ja maksutapatiedot."
 
 #: src/providers/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "API-virhe"
 
 #: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Mallia ei ole valittu. Valitse malli asetuksista"
 
 #: src/providers/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "API:n osoite"
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
-msgstr "Tila:"
+msgstr "Malli"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Miten valita malli"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr ""
+"Jiri Grönroos\n"
 "Launchpad Contributions:\n"
-"  Kimmo Kujansuu https://launchpad.net/~mahtiankka"
+"Kimmo Kujansuu https://launchpad.net/~mahtiankka"
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
@@ -193,7 +190,7 @@ msgstr "0xMRTT"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Tekijänoikeus © 2023 0xMRTT"
 
 #: src/main.py:124
 msgid "New version available!"
