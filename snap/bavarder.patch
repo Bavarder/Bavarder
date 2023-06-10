@@ -1,0 +1,23 @@
+diff -Naur a/data/io.github.Bavarder.Bavarder.appdata.xml.in b/data/io.github.Bavarder.Bavarder.appdata.xml.in
+--- a/data/io.github.Bavarder.Bavarder.appdata.xml.in	2023-06-09 11:17:01.939402268 +0530
++++ b/data/io.github.Bavarder.Bavarder.appdata.xml.in	2023-06-09 11:17:25.235254967 +0530
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <component type="desktop">
+ 	<id>io.github.Bavarder.Bavarder</id>
++	<icon type="stock">snap.bavarder.io.github.Bavarder.Bavarder</icon>
+ 	<name>Bavarder</name>
+ 	<summary>Chit-chat with an AI</summary>
+ 	<developer_name>0xMRTT</developer_name>
+diff -Naur a/data/io.github.Bavarder.Bavarder.desktop.in b/data/io.github.Bavarder.Bavarder.desktop.in
+--- a/data/io.github.Bavarder.Bavarder.desktop.in	2023-06-09 11:09:08.652098824 +0530
++++ b/data/io.github.Bavarder.Bavarder.desktop.in	2023-06-09 11:17:37.047177451 +0530
+@@ -1,7 +1,7 @@
+ [Desktop Entry]
+ Name=Bavarder
+ Exec=bavarder
+-Icon=io.github.Bavarder.Bavarder
++Icon=snap.bavarder.io.github.Bavarder.Bavarder
+ Terminal=false
+ Type=Application
+ Categories=GTK;
