@@ -64,6 +64,8 @@ flatpak install bavarder.flatpak
 
 #### From Source
 
+###Flatpak-builder
+
 Clone the repo and run `flatpak-builder`
 
 ``` shell
@@ -71,6 +73,17 @@ git clone https://codeberg.org/Bavarder/Bavarder # or https://github.com/Bavarde
 cd Bavarder
 flatpak-builder --install --user --force-clean repo/ build-aux/flatpak/io.github.Bavarder.Bavarder.json
 ```
+### Meson
+``` shell 
+git clone https://codeberg.org/Bavarder/Bavarder # or https://github.com/Bavarder/Bavarder
+cd Bavarder
+meson setup build # Configure the build environment in subdirectory 'build'
+meson compile -C build
+meson check -C build
+meson install -C build
+chmod 0755 /usr/local/bin/bavarder # Fix binary permissions
+```
+
 
 ### Others
 
