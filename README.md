@@ -64,7 +64,7 @@ flatpak install bavarder.flatpak
 
 #### From Source
 
-###Flatpak-builder
+### Flatpak-builder
 
 Clone the repo and run `flatpak-builder`
 
