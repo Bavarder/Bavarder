@@ -50,17 +50,17 @@ template $BavarderWindow : Adw.ApplicationWindow {
           Box {
             orientation: vertical;
 
+
             Stack stack {
               transition-type: crossfade;
 
+              styles [ "card"]
+              
               Gtk.StackPage {
                 name: "page_content";
                 child: Overlay overlay {
 
                   Adw.PreferencesGroup bot_group {
-                    title: _("Response");
-
-
                     Box {
                       orientation: vertical;
                       hexpand: true;
@@ -162,7 +162,7 @@ template $BavarderWindow : Adw.ApplicationWindow {
               }           
             }
 
-            Separator {}
+            // Separator {}
 
             Adw.Clamp {
               vexpand: false;
@@ -170,14 +170,16 @@ template $BavarderWindow : Adw.ApplicationWindow {
               maximum-size: 750;
               tightening-threshold: 550;
 
+              margin-top: 8;
+              margin-bottom: 8;
+
               Box {
 
-                styles [ "toolbar" ]
+                // Button {
+                //   valign: end;
+                //   icon-name: "mail-attachment-symbolic";
+                // }
 
-                Button {
-                  valign: end;
-                  icon-name: "mail-attachment-symbolic";
-                }
 
                 ScrolledWindow {
                   vexpand: true;
@@ -186,13 +188,19 @@ template $BavarderWindow : Adw.ApplicationWindow {
                   max-content-height: 200;
                   propagate-natural-height: true;
 
-                  styles ["scrolled-window"]
+                  styles [ "scrolled-window" ]
+
 
                   TextView prompt_text_view {
+
+                    styles [ "entry "]
+
                     hexpand: true;
                     accepts-tab: false;
                     top-margin: 7;
                     bottom-margin: 7;
+                    left-margin: 5;
+                    right-margin: 5;
                     wrap-mode: word;
                     buffer: TextBuffer { };
                   }
@@ -200,6 +208,8 @@ template $BavarderWindow : Adw.ApplicationWindow {
 
                 Button ask_button {
                   valign: end;
+                  
+                  margin-start: 5;
 
                   icon-name: "paper-plane-symbolic";
                   tooltip-text: _("Ask");

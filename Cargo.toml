@@ -1,0 +1,26 @@
+[package]
+name = "bavarder"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+env_logger = "0.10.0"
+
+[dependencies.gtk]
+package = "gtk4"
+version = "0.6.2"
+features = ["v4_10", "xml_validation"]
+
+[dependencies.gio]
+package = "gio"
+version = "0.17.0"
+features = ["v2_74"]
+
+[dependencies.adw]
+package = "libadwaita"
+version = "0.4.1"
+features = ["v1_4"]
+
+[dependencies.gettext-rs]
+version = "0.7.0"
+features = ["gettext-system"]

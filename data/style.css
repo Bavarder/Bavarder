@@ -21,3 +21,24 @@ scrolledwindow > viewport > clamp > box {
   margin: 42px 12px;
   border-spacing: 24px;
 }
+
+entry:disabled {
+  border-color: transparent;
+  color: @view_fg_color;
+  background: none;
+}
+
+entry textview {
+  color: @view_fg_color;
+  background: none;
+}
+
+entry text {
+  color: @view_fg_color;
+  background: none;
+}
+
+
+entry .inline-pill {
+	margin-bottom: -0.5em;
+}
