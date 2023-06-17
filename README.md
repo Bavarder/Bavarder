@@ -20,11 +20,14 @@
 <br>
 
 <p align="center">
- <a href="https://translate.codeberg.org/engage/bavarder/">
-  <img src="https://translate.codeberg.org/widgets/bavarder/-/svg-badge.svg" alt="Translation status" />
+   <a href="https://translate.codeberg.org/engage/bavarder/">
+    <img src="https://translate.codeberg.org/widgets/bavarder/-/svg-badge.svg" alt="Translation status" />
   </a>
   <a href="https://repology.org/project/bavarder/versions">
     <img alt="Packaging status" src="https://repology.org/badge/tiny-repos/bavarder.svg">
+  </a>
+  <a href="https://snapcraft.io/bavarder">
+    <img alt="bavarder" src="https://snapcraft.io/bavarder/badge.svg" />
   </a>
 </p>
 
