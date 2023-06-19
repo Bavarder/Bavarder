@@ -4,6 +4,10 @@ adopt-info: bavarder
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs and slots
 
+architectures:
+  - build-on: amd64
+  - build-on: arm64
+
 layout:
   /usr/lib/x86_64-linux-gnu/webkitgtk-6.0:
     bind: $SNAP/webkitgtk-platform/usr/lib/x86_64-linux-gnu/webkitgtk-6.0
