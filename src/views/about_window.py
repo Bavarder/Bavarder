@@ -54,6 +54,12 @@ class BavarderAboutWindow:
                 "Apostrophe https://apps.gnome.org/app/org.gnome.gitlab.somas.Apostrophe",
             ],
         )
+        self.about_window.add_credit_section(
+            _("Packaging"),
+            [
+                _("Soumyadeep Ghosh https://codeberg.org/soumyadghosh")
+            ]
+        )
         self.about_window.set_debug_info(
             f"""{constants.app_id} {constants.version}
 Environment: {os.environ.get("XDG_CURRENT_DESKTOP", "Unknown")}
