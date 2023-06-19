@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-06-02 11:46+0000\n"
+"PO-Revision-Date: 2023-06-20 04:02+0000\n"
 "Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ta/>\n"
@@ -26,7 +26,7 @@ msgstr "பவார்டர்"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
 msgid "Preferences"
-msgstr "விருப்பத்தேர்வு"
+msgstr "விருப்பத்தேர்வுகள்"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
@@ -91,15 +91,15 @@ msgstr "நிறுத்து"
 
 #: data/ui/window.blp:152
 msgid "ERROR"
-msgstr ""
+msgstr "பிழை"
 
 #: data/ui/window.blp:153
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "விளக்கம்"
 
 #: data/ui/window.blp:156
 msgid "Try Again"
-msgstr ""
+msgstr "மீண்டும் முயற்சிக்கவும்"
 
 #: data/ui/window.blp:205
 msgid "Ask"
