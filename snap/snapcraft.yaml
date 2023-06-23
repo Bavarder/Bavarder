@@ -27,7 +27,7 @@ parts:
     # See 'snapcraft plugins'
     plugin: meson
     source: https://github.com/Bavarder/Bavarder.git
-    source-tag: '0.2.3'
+    source-tag: '0.2.4'
     meson-parameters:
       - --prefix=/snap/bavarder/current/usr
       - -Dbuildtype=release
