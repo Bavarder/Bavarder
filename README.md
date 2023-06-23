@@ -59,10 +59,10 @@ flatpak install io.github.Bavarder.Bavarder
 
 ### Latest
 
-You can download a flatpak from the latest commit [here](https://codeberg.org/Bavarder/-/packages/generic/bavarder/). Download the file and run:
+You can download a flatpak from the latest commit [here](https://codeberg.org/Bavarder/-/packages/generic/bavarder/). Run
 
 ``` shell
-flatpak install bavarder.flatpak
+curl -s -o bavarder.flatpak https://codeberg.org/api/packages/Bavarder/generic/Bavarder/164/bavarder.flatpak && flatpak install --user bavarder.flatpak -y 
 ```
 
 #### From Source
