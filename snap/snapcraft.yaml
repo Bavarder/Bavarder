@@ -21,7 +21,7 @@ parts:
       - --prefix=/usr
     override-prime: |
       echo 'Skip'
-   
+
   bavarder:
     after: [blueprint-compiler]
     # See 'snapcraft plugins'
@@ -40,7 +40,7 @@ parts:
     override-pull: |
       craftctl default
       patch -p1 < $CRAFT_PROJECT_DIR/snap/bavarder.patch
-      pip install --prefix=$CRAFT_PART_INSTALL/usr baichat-py==0.2.1 googlebardpy==0.1.0 openai==0.27.7 pymdown-extensions==10.0.1 requests==2.30.0 text-generation==0.5.2 gradio-client==0.2.5 lxml
+      pip install --prefix=$CRAFT_PART_INSTALL/usr baichat-py==0.3.0 googlebardpy==0.1.0 openai==0.27.7 pymdown-extensions==10.0.1 requests==2.31.0 text-generation==0.5.2 gradio-client==0.2.5 lxml
     override-build: |
       craftctl default
       mkdir -p $CRAFT_PART_INSTALL/meta/gui
@@ -50,12 +50,12 @@ parts:
         mv $i "`dirname $i`/snap.$CRAFT_PROJECT_NAME.`basename $i`"
       done
       sed -e '1c#!/usr/bin/python3' -i $CRAFT_PART_INSTALL/usr/local/bin/*
-      sed -e '1c#!/usr/bin/env python3' -i $CRAFT_PART_INSTALL/snap/bavarder/current/usr/bin/bavarder 
-      chmod +x $CRAFT_PART_INSTALL/snap/bavarder/current/usr/bin/bavarder 
+      sed -e '1c#!/usr/bin/env python3' -i $CRAFT_PART_INSTALL/snap/bavarder/current/usr/bin/bavarder
+      chmod +x $CRAFT_PART_INSTALL/snap/bavarder/current/usr/bin/bavarder
     parse-info: [usr/share/appdata/io.github.Bavarder.Bavarder.appdata.xml]
     organize:
       snap/bavarder/current: .
-      usr/local: usr    
+      usr/local: usr
     prime:
       - -snap/bavarder
   gst:
@@ -75,21 +75,21 @@ plugs:
     interface: content
     target: $SNAP/webkitgtk-platform
     default-provider: webkitgtk-6-gnome-2204
- 
+
 slots:
   bavarder:
     interface: dbus
     bus: session
     name: io.github.Bavarder.Bavarder
-    
+
 apps:
   bavarder:
     command: usr/bin/bavarder
     extensions: [gnome]
     common-id: io.github.Bavarder.Bavarder
     environment:
-      PYTHONPATH: $SNAP/usr/lib/python3.10/dist-packages:$PYTHONPATH 
-      GI_TYPELIB_PATH: $SNAP/webkitgtk-platform/usr/lib/$CRAFT_ARCH_TRIPLET/girepository-1.0:$GI_TYPELIB_PATH   
+      PYTHONPATH: $SNAP/usr/lib/python3.10/dist-packages:$PYTHONPATH
+      GI_TYPELIB_PATH: $SNAP/webkitgtk-platform/usr/lib/$CRAFT_ARCH_TRIPLET/girepository-1.0:$GI_TYPELIB_PATH
       LD_LIBRARY_PATH: $SNAP/webkitgtk-platform/usr/lib/$SNAPCRAFT_ARCH_TRIPLET:$SNAP/webkitgtk-platform/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/webkitgtk-6.0:$LD_LIBRARY_PATH
     plugs:
       - network
