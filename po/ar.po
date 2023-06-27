@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-06-03 00:37+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-06-28 06:02+0000\n"
+"Last-Translator: nakibrayan2 <codeberg.org.quoz7@aleeas.com>\n"
 "Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ar/>\n"
 "Language: ar\n"
@@ -19,38 +19,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
-msgstr "Bavarder"
+msgstr "ثرثرة"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
 msgid "Preferences"
 msgstr "التفضيلات"
 
 #: data/ui/preferences.blp:12
-#, fuzzy
 msgid "Prompt"
 msgstr "موجه"
 
 #: data/ui/preferences.blp:15
-#, fuzzy
 msgid "Clear prompt after send"
 msgstr "مسح نصح الموجه بعد الإرسال"
 
 #: data/ui/preferences.blp:16
-#, fuzzy
 msgid "The prompt will be cleared after send"
 msgstr "سيتم مسح نص الموجه بعد الإرسال"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr "إستخدام نص عادي للإخراج"
+msgstr "إستخدام نص بدون تنسيق للإخراج"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr "سيتم إستخدام نص عادي بدون تنسيق"
+msgstr "سيتم استخدام نص بدون تنسيق"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
@@ -68,8 +65,7 @@ msgstr "البحث عن أخبار مزود الخدمة"
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
-"سيتم جلب الأخبار المتعلقة بالمشكلات مع مقدمي الخدمة من موقع Bavarder على "
-"الويب"
+"سيتم جلب الأخبار المتعلقة بالمشكلات مع مقدمي الخدمة من موقع ثرثرة على الويب"
 
 #: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
@@ -81,7 +77,7 @@ msgstr "القائمة الرئيسية"
 
 #: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
-msgstr "ليس هناك اتصال بالشبكة"
+msgstr "لا يوجد اتصال بالشبكة"
 
 #: data/ui/window.blp:61
 msgid "Response"
@@ -97,11 +93,11 @@ msgstr "إيقاف"
 
 #: data/ui/window.blp:152
 msgid "ERROR"
-msgstr ""
+msgstr "خطأ"
 
 #: data/ui/window.blp:153
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "وصف"
 
 #: data/ui/window.blp:156
 msgid "Try Again"
@@ -109,11 +105,11 @@ msgstr "حاول مرة أخرى"
 
 #: data/ui/window.blp:205
 msgid "Ask"
-msgstr "طرح سؤال"
+msgstr "طرح السؤال"
 
 #: data/ui/window.blp:224
 msgid "New window"
-msgstr "نافذة جديدة"
+msgstr "إنشاء نافذة جديدة"
 
 #: data/ui/window.blp:235 src/main.py:274
 msgid "Keyboard Shortcuts"
@@ -121,15 +117,15 @@ msgstr "اختصارات لوحة المفاتيح"
 
 #: data/ui/window.blp:240 src/main.py:275
 msgid "About Bavarder"
-msgstr "حول Bavarder"
+msgstr "حول ثرثرة"
 
 #: src/providers/base.py:43
 msgid "No API key provided, you can provide one in settings"
-msgstr "لم يتم توفير مفتاح API ، يمكنك توفير مفتاح في الإعدادات"
+msgstr "لم يتم توفير مفتاح API ، يمكن توفير مفتاح في التفضيلات"
 
 #: src/providers/base.py:45
 msgid "Open settings"
-msgstr "افتح الإعدادات"
+msgstr "فتح التفضيلات"
 
 #: src/providers/base.py:81
 msgid "About provider"
@@ -137,7 +133,7 @@ msgstr "حول مقدم الخدمة"
 
 #: src/providers/base.py:95
 msgid "How to get a token"
-msgstr "كيف تحصل على توكن"
+msgstr "كيفية التحصل على توكن"
 
 #: src/providers/base.py:118
 msgid "No preferences available"
@@ -148,31 +144,29 @@ msgid "API Key"
 msgstr "مفتاح API"
 
 #: src/providers/openai.py:27
-#, fuzzy
 msgid "Prompt too long, splitting into chunks."
-msgstr "النص في الموجه طويل ، يمكن تقسيمة إلى قطع"
+msgstr "النص في الموجه طويل جدا ، سيتم تقسيمة إلى قطع."
 
 #: src/providers/openai.py:49
 msgid "You don't have access to this model"
 msgstr "ليس لديك حق الوصول إلى هذا النموذج"
 
 #: src/providers/openai.py:54
-#, fuzzy
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
 msgstr "لقد تجاوزت حصتك الحالية ، يرجى التأكد من إشتراكك و تفاصيل الفواتير."
 
 #: src/providers/openai.py:59
 msgid "API Error"
-msgstr "خطأ في ال API"
+msgstr "خطأ في API"
 
 #: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr "لم يتم تحديد أي نموذج ، يمكن اختيار نموذج في الإعدادات"
+msgstr "لم يتم تحديد أي نموذج ، يمكن اختيار نموذج في التفضيلات"
 
 #: src/providers/openaicustom.py:33
 msgid "API Url"
-msgstr "رابط ال API"
+msgstr "رابط API"
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
@@ -180,11 +174,11 @@ msgstr "نموذج"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
-msgstr "كيف تختار نموذج"
+msgstr "كيفية اختيار نموذج"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr "حقوق المترجم"
+msgstr "حقوق المترجمين"
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
