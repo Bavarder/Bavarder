@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-06-03 04:18+0000\n"
+"PO-Revision-Date: 2023-07-04 02:38+0000\n"
 "Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pl/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
@@ -68,6 +68,8 @@ msgstr "Szukaj dostawcy wiadomości"
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
 msgstr ""
+"Wiadomości o problemach z dostawcami będą pobierane ze strony internetowej "
+"Bavarder"
 
 #: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
@@ -156,7 +158,7 @@ msgstr "Nie posiadasz dostępu do tego modelu"
 #: src/providers/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
-msgstr ""
+msgstr "Przekroczono bieżący limit, sprawdź swój plan i szczegóły rozliczeń."
 
 #: src/providers/openai.py:59
 msgid "API Error"
@@ -172,7 +174,7 @@ msgstr "Adres Url API"
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
-msgstr "Tryb:"
+msgstr "Model"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
