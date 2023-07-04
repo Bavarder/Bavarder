@@ -6,13 +6,14 @@
 # osiixy <osiixy@gmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # elementbound <ezittgtx@gmail.com>, 2023.
+# ViBE <vibe@hotmail.hu>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-06-03 00:37+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-04 09:56+0000\n"
+"Last-Translator: ViBE <vibe@hotmail.hu>\n"
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/hu/>\n"
 "Language: hu\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
@@ -74,7 +75,7 @@ msgstr "Szolgáltatók"
 
 #: data/ui/window.blp:28
 msgid "Main Menu"
-msgstr ""
+msgstr "Menü"
 
 #: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
@@ -118,7 +119,7 @@ msgstr "Gyorsbillentyűk"
 
 #: data/ui/window.blp:240 src/main.py:275
 msgid "About Bavarder"
-msgstr ""
+msgstr "Névjegy"
 
 #: src/providers/base.py:43
 msgid "No API key provided, you can provide one in settings"
@@ -130,7 +131,7 @@ msgstr "Beállítások megnyitása"
 
 #: src/providers/base.py:81
 msgid "About provider"
-msgstr ""
+msgstr "Névjegy"
 
 #: src/providers/base.py:95
 msgid "How to get a token"
@@ -185,15 +186,15 @@ msgstr ""
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Szerzői jog © 2023 0xMRTT"
 
 #: src/main.py:124
 msgid "New version available!"
-msgstr ""
+msgstr "Új verzió érthető el."
 
 #: src/main.py:240
 msgid "New Window"
