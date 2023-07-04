@@ -7,13 +7,14 @@
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # elementbound <ezittgtx@gmail.com>, 2023.
 # ViBE <vibe@hotmail.hu>, 2023.
+# ViBE <vibe@protonmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-07-04 09:56+0000\n"
-"Last-Translator: ViBE <vibe@hotmail.hu>\n"
+"PO-Revision-Date: 2023-07-04 10:59+0000\n"
+"Last-Translator: ViBE <vibe@protonmail.com>\n"
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/hu/>\n"
 "Language: hu\n"
@@ -33,41 +34,41 @@ msgstr "Beállítások"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "Parancsablak"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "Elküldött üzenet automatikus törlése"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "Az elküldött üzenet automatikusan törlésre kerül a parancsablakból"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "Válasz kezelése egyszerű szövegként"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "A kapott válasz nem lesz megformázva"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "Program bezárása figyelmeztetés nélkül"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
 msgstr ""
-"Minden ablak be fog záródni figyelmeztetés nélkül; ez adatvesztéshez is "
-"vezethet"
+"Minden ablak bezárásra kerül figyelmeztetés nélkül. Ez adatvesztést "
+"eredményezhet"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "Hírek megjelenítése"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr ""
+msgstr "A szolgáltatókkal kapcsolatban információ jelenhet meg az alkalmazásban"
 
 #: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
@@ -87,19 +88,19 @@ msgstr "Válasz"
 
 #: data/ui/window.blp:113
 msgid "Copy to Clipboard"
-msgstr "Másolás a vágólapra"
+msgstr "Másolás vágólapra"
 
 #: data/ui/window.blp:123
 msgid "Stop"
-msgstr "Megállítás"
+msgstr "Megszakítás"
 
 #: data/ui/window.blp:152
 msgid "ERROR"
-msgstr ""
+msgstr "HIBA"
 
 #: data/ui/window.blp:153
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "LEÍRÁS"
 
 #: data/ui/window.blp:156
 msgid "Try Again"
@@ -107,7 +108,7 @@ msgstr "Próbálja újra"
 
 #: data/ui/window.blp:205
 msgid "Ask"
-msgstr ""
+msgstr "Kérdés küldése"
 
 #: data/ui/window.blp:224
 msgid "New window"
@@ -123,7 +124,7 @@ msgstr "Névjegy"
 
 #: src/providers/base.py:43
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "Nincs megadva API-kulcs. A beállításokban adhat hozzá"
 
 #: src/providers/base.py:45
 msgid "Open settings"
@@ -131,44 +132,44 @@ msgstr "Beállítások megnyitása"
 
 #: src/providers/base.py:81
 msgid "About provider"
-msgstr "Névjegy"
+msgstr "Információ a szolgáltatóról"
 
 #: src/providers/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "API.kulcs beszerzése"
 
 #: src/providers/base.py:118
 msgid "No preferences available"
-msgstr ""
+msgstr "Nincs elérhető beállítás"
 
 #: src/providers/huggingface.py:73 src/providers/transformer.py:68
 msgid "API Key"
-msgstr ""
+msgstr "API-kulcs"
 
 #: src/providers/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "A parancs túl hosszú, ezért részletekben lesz elküldve."
 
 #: src/providers/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "Nincs hozzáférése ehhez a modellhez"
 
 #: src/providers/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
-msgstr ""
+msgstr "Elérte a napi kvótát. Kérem, ellenőrizze az előfizetés részleteit!"
 
 #: src/providers/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "API hiba"
 
 #: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "Nincs modell kiválasztva. A beállításokban tudja kiválasztani"
 
 #: src/providers/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "API-hivatkozás"
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
@@ -176,13 +177,11 @@ msgstr "Modell"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "Modell kiválasztása"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Kulhanek László https://launchpad.net/~hunyos"
+msgstr "ViBE"
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
