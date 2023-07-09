@@ -6,7 +6,6 @@
 # osiixy <osiixy@gmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # elementbound <ezittgtx@gmail.com>, 2023.
-# ViBE <vibe@hotmail.hu>, 2023.
 # ViBE <vibe@protonmail.com>, 2023.
 msgid ""
 msgstr ""
