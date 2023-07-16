@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
-"PO-Revision-Date: 2023-07-16 14:33+0000\n"
+"PO-Revision-Date: 2023-07-17 02:38+0000\n"
 "Last-Translator: PeterDaveHello <hsu@peterdavehello.org>\n"
 "Language-Team: Chinese (Traditional) <https://translate.codeberg.org/"
 "projects/bavarder/bavarder/zh_Hant/>\n"
@@ -110,15 +110,15 @@ msgstr "新視窗"
 
 #: data/ui/window.blp:235 src/main.py:274
 msgid "Keyboard Shortcuts"
-msgstr "快捷鍵"
+msgstr "鍵盤快速鍵"
 
 #: data/ui/window.blp:240 src/main.py:275
 msgid "About Bavarder"
-msgstr ""
+msgstr "關於 Bavarder"
 
 #: src/providers/base.py:43
 msgid "No API key provided, you can provide one in settings"
-msgstr ""
+msgstr "未提供 API 金鑰，您可以在設定中提供一個"
 
 #: src/providers/base.py:45
 msgid "Open settings"
@@ -126,69 +126,69 @@ msgstr "開啟設定"
 
 #: src/providers/base.py:81
 msgid "About provider"
-msgstr ""
+msgstr "關於"
 
 #: src/providers/base.py:95
 msgid "How to get a token"
-msgstr ""
+msgstr "如何取得金鑰"
 
 #: src/providers/base.py:118
 msgid "No preferences available"
-msgstr ""
+msgstr "無可用偏好設定"
 
 #: src/providers/huggingface.py:73 src/providers/transformer.py:68
 msgid "API Key"
-msgstr ""
+msgstr "API 金鑰"
 
 #: src/providers/openai.py:27
 msgid "Prompt too long, splitting into chunks."
-msgstr ""
+msgstr "提示太長，拆分成片段。"
 
 #: src/providers/openai.py:49
 msgid "You don't have access to this model"
-msgstr ""
+msgstr "您無法存取此模型"
 
 #: src/providers/openai.py:54
 msgid ""
 "You exceeded your current quota, please check your plan and billing details."
-msgstr ""
+msgstr "您超過了目前的額度，請檢查您的方案和帳單詳細資訊。"
 
 #: src/providers/openai.py:59
 msgid "API Error"
-msgstr ""
+msgstr "API 錯誤"
 
 #: src/providers/openai.py:70
 msgid "No model selected, you can choose one in preferences"
-msgstr ""
+msgstr "未選擇模型，您可以在偏好設定中選擇一個"
 
 #: src/providers/openaicustom.py:33
 msgid "API Url"
-msgstr ""
+msgstr "API 網址"
 
 #: src/providers/openaicustom.py:40
 msgid "Model"
-msgstr ""
+msgstr "模型"
 
 #: src/providers/openaicustom.py:80
 msgid "How to choose a model"
-msgstr ""
+msgstr "如何選擇模型"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
+msgstr "翻譯者致謝"
 
 #: src/views/about_window.py:26
 msgid "0xMRTT"
-msgstr ""
+msgstr "0xMRTT"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "版權所有 © 2023 0xMRTT"
 
 #: src/main.py:124
 msgid "New version available!"
-msgstr ""
+msgstr "有新版本可用！"
 
 #: src/main.py:240
 msgid "New Window"
-msgstr ""
+msgstr "新視窗"
