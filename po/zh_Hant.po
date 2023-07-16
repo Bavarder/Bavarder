@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-01 17:40+0000\n"
 "PO-Revision-Date: 2023-07-16 14:33+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: PeterDaveHello <hsu@peterdavehello.org>\n"
 "Language-Team: Chinese (Traditional) <https://translate.codeberg.org/"
 "projects/bavarder/bavarder/zh_Hant/>\n"
 "Language: zh_Hant\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
 msgid "Bavarder"
-msgstr ""
+msgstr "Bavarder"
 
 #: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
 msgid "Preferences"
@@ -30,47 +30,47 @@ msgstr "偏好設定"
 
 #: data/ui/preferences.blp:12
 msgid "Prompt"
-msgstr ""
+msgstr "提示"
 
 #: data/ui/preferences.blp:15
 msgid "Clear prompt after send"
-msgstr ""
+msgstr "送出後清除提示"
 
 #: data/ui/preferences.blp:16
 msgid "The prompt will be cleared after send"
-msgstr ""
+msgstr "提示將在送出後清除"
 
 #: data/ui/preferences.blp:24
 msgid "Use plain text for output"
-msgstr ""
+msgstr "使用純文字輸出"
 
 #: data/ui/preferences.blp:25
 msgid "The plain text without formatting will be used"
-msgstr ""
+msgstr "將使用不含格式的純文字"
 
 #: data/ui/preferences.blp:33
 msgid "Close all windows without warning"
-msgstr ""
+msgstr "不經警告關閉所有視窗"
 
 #: data/ui/preferences.blp:34
 msgid "All windows will be closed without warning, this can lead to data loss"
-msgstr ""
+msgstr "所有視窗將在未經警告的情況下關閉，可能導致資料遺失"
 
 #: data/ui/preferences.blp:42
 msgid "Look for provider news"
-msgstr ""
+msgstr "取得服務提供者更新資訊"
 
 #: data/ui/preferences.blp:43
 msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr ""
+msgstr "有關服務提供者問題的更新資訊將從 Bavarder 網站取得"
 
 #: data/ui/preferences.blp:52 src/main.py:271
 msgid "Providers"
-msgstr ""
+msgstr "服務提供者"
 
 #: data/ui/window.blp:28
 msgid "Main Menu"
-msgstr ""
+msgstr "主選單"
 
 #: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
