@@ -98,15 +98,15 @@ msgstr "描述"
 
 #: data/ui/window.blp:156
 msgid "Try Again"
-msgstr "再試一次"
+msgstr "重試"
 
 #: data/ui/window.blp:205
 msgid "Ask"
-msgstr ""
+msgstr "詢問"
 
 #: data/ui/window.blp:224
 msgid "New window"
-msgstr ""
+msgstr "新視窗"
 
 #: data/ui/window.blp:235 src/main.py:274
 msgid "Keyboard Shortcuts"
