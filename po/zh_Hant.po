@@ -74,11 +74,11 @@ msgstr "主選單"
 
 #: data/ui/window.blp:34 src/providers/base.py:50
 msgid "No network connection"
-msgstr "沒有網路連線。"
+msgstr "無網路連線"
 
 #: data/ui/window.blp:61
 msgid "Response"
-msgstr ""
+msgstr "回應"
 
 #: data/ui/window.blp:113
 msgid "Copy to Clipboard"
@@ -90,11 +90,11 @@ msgstr "停止"
 
 #: data/ui/window.blp:152
 msgid "ERROR"
-msgstr ""
+msgstr "錯誤"
 
 #: data/ui/window.blp:153
 msgid "DESCRIPTION"
-msgstr ""
+msgstr "描述"
 
 #: data/ui/window.blp:156
 msgid "Try Again"
