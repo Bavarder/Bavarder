@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-19 20:24+0200\n"
-"PO-Revision-Date: 2023-07-19 14:04+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-20 10:38+0000\n"
+"Last-Translator: maymage <maymage@gmail.com>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -28,10 +28,8 @@ msgid "Bavarder"
 msgstr "Bavarder"
 
 #: src/providers/catgpt.py:7
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with a Cat"
-msgstr "Plaudern Sie mit GPT"
+msgstr "Plaudere mit einer Katze"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
@@ -46,14 +44,12 @@ msgid "Copyright © 2023 0xMRTT"
 msgstr "Urheberrechte © 2023 0xMRTT"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
-msgstr "Modell"
+msgstr "Modelle"
 
 #: src/views/preferences_window.py:54
 msgid "Download more models"
-msgstr ""
+msgstr "Weitere Modelle herunterladen"
 
 #: src/views/preferences_window.blp:5 src/views/window.py:170
 #: src/views/window.py:192 src/views/window.blp:218
@@ -66,17 +62,15 @@ msgstr "Anbieter"
 
 #: src/views/window.py:241
 msgid "Generating response"
-msgstr ""
+msgstr "Antwort generieren"
 
 #: src/views/window.py:242
 msgid "Cancel"
 msgstr "Abbrechen"
 
 #: src/views/window.blp:33 src/main.py:147
-#, fuzzy
-#| msgid "Chat"
 msgid "New Chat"
-msgstr "Unterhaltung"
+msgstr "Neue Unterhaltung"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
@@ -91,14 +85,12 @@ msgid "Chat"
 msgstr "Unterhaltung"
 
 #: src/views/window.blp:115
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chat"
-msgstr "Unterhaltung"
+msgstr "Keine Unterhaltung"
 
 #: src/views/window.blp:120
 msgid "No Internet"
-msgstr ""
+msgstr "Kein Netzwerk"
 
 #: src/views/window.blp:179
 msgid "Ask"
@@ -115,12 +107,12 @@ msgstr "Über Bavarder"
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Modell %s herunterladen"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "Modell %s heruntergeladen!"
 
 #: src/widgets/item.blp:100
 msgid "Edit"
@@ -136,28 +128,29 @@ msgstr "Nutzer"
 
 #: src/widgets/item.py:121
 msgid "Assistant"
-msgstr "Assistent/in:"
+msgstr "Assistent"
 
 #: src/widgets/model_item.py:31
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "Modell %s gelöscht!"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
 msgid "Edit Title"
-msgstr ""
+msgstr "Titel bearbeiten"
 
 #: src/widgets/thread_item.py:46
 msgid "Set Title"
-msgstr ""
+msgstr "Titel festlegen"
 
 #: src/main.py:227
 msgid "Please download a model from Preferences!"
-msgstr ""
+msgstr "Bitte ein Modell von den Einstellungen laden!"
 
 #: src/main.py:240
+#, fuzzy
 msgid "Please enable a provider from the Brain Menu"
-msgstr ""
+msgstr "Bitte einen Anbieter vom Brain Menu einschalten"
 
 #~ msgid "Prompt"
 #~ msgstr "Eingabeaufforderung"
