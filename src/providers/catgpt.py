@@ -1,24 +1,35 @@
-from .base import BavarderProvider
-
 from random import choice, randint
 
-from gi.repository import Gtk, Adw, GLib
+from .base import BaseProvider
+
+class CatGPTProvider(BaseProvider):
+    name = "Cat GPT"
+    description = _("Chit-Chat with a Cat")
+
+    def ask(self, prompt, _):
+        return """
+# H1
+## H2
+### H3
+
+Alternatively, for H1 , an underline-ish style:
+
+Alt-H1
+======
 
 
-class CatGPTProvider(BavarderProvider):
-    name = "CatGPT"
-    slug = "catgpt"
-    description = "🐱️"
-    version = "0.1.0"
-    developer_name = "Astrid Yu"
-    developers = ["Astrid Yu https://github.com/ifd3f"]
+1. First ordered list item
+2. Another item
 
-    def __init__(self, win, app, *args, **kwargs):
-        super().__init__(win, app, *args, **kwargs)
-        self.chat = None
+* Unordered list can use asterisks
+- Or minuses
++ Or pluses
 
-    def ask(self, prompt):
-        return " ".join([self.pick_generator()() for i in range(randint(1, 12))])
+```
+$ ls
+```
+        """
+        #return " ".join([self.pick_generator()() for i in range(randint(1, 12))])
 
     def pick_generator(self):
         if randint(1, 15) == 1:
@@ -46,13 +57,3 @@ class CatGPTProvider(BavarderProvider):
                 lambda: "nya" * randint(1, 3) + "ny" + "a" * randint(1, 10),
             ]
         )
-
-    @property
-    def require_api_key(self):
-        return False
-
-    def save(self):
-        return {}
-
-    def load(self, data):
-        pass

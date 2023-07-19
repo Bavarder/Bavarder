@@ -4,177 +4,6 @@
     "build-commands": [],
     "modules": [
         {
-            "name": "python3-baichat_py",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"baichat_py\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/6f/a9/aad1eb9134fe0574b281ad1308fe029cf4ec1ba49ba0a061a18dd3ced789/baichat_py-0.3.0-py3-none-any.whl",
-                    "sha256": "aa641939844ea364dcee0c4f40cdca2c42b7d6ed5f0cb360c29f7e35300259d0"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/2b/a8/050ab4f0c3d4c1b8aaa805f70e26e84d0e27004907c5b8ecc1d31815f92a/cffi-1.15.1.tar.gz",
-                    "sha256": "d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d1/6f/5d591a5628423af4598e2d6ff0861fcbc554cc259590fac9f97d9c984611/curl_cffi-0.5.6-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-                    "sha256": "7a9df9fabff038f1ac9e7e6f32b5edb5d8df8c2eec64f53f513de1766c17ffdb"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/8d/f3/28e7af53e09c9218140901dc23fdd75cdaf3e64d1d06f61801cf2a841bcb/fake_useragent-1.1.3-py3-none-any.whl",
-                    "sha256": "695d3b1bf7d11d04ab0f971fb73b0ca8de98b78bbadfbc8bacbc9a48423f7531"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/62/d5/5f610ebe421e85889f2e55e33b7f9a6795bd982198517d912eb1c76e1a53/pycparser-2.21-py2.py3-none-any.whl",
-                    "sha256": "8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"
-                }
-            ]
-        },
-        {
-            "name": "python3-googlebardpy",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"googlebardpy\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/9d/19/59961b522e6757f0c9097e4493fa906031b95b3ebe9360b2c3083561a6b4/certifi-2023.5.7-py3-none-any.whl",
-                    "sha256": "c6c2e98f5c7869efca1f8916fed228dd91539f9f1b444c314c06eef02980c716"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz",
-                    "sha256": "34e0a2f9c370eb95597aae63bf85eb5e96826d81e3dcf88b8886012906f509b5"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a8/40/30a6440d5ceec49fc268710705b89e654fc854d9b8754850228deaf64892/googlebardpy-0.1.0-py3-none-any.whl",
-                    "sha256": "12e65fdfe99392cbb5e8f93572340b757cd9d7aa83391316eaea3a1527995ef2"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl",
-                    "sha256": "90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl",
-                    "sha256": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4b/1d/f8383ef593114755429c307449e7717b87044b3bcd5f7860b89b1f759e34/urllib3-2.0.2-py3-none-any.whl",
-                    "sha256": "d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e"
-                }
-            ]
-        },
-        {
-            "name": "python3-openai",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"openai\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c2/fd/1ff4da09ca29d8933fda3f3514980357e25419ce5e0f689041edb8f17dab/aiohttp-3.8.4.tar.gz",
-                    "sha256": "bf2e1a9162c1e441bf805a1fd166e249d574ca04e03b34f97e2928769e91ab5c"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/76/ac/a7305707cb852b7e16ff80eaf5692309bde30e2b1100a1fcacdc8f731d97/aiosignal-1.3.1-py3-none-any.whl",
-                    "sha256": "f8376fb07dd1e86a584e4fcdec80b36b7f81aac666ebc724e2c090300dd83b17"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d6/c1/8991e7c5385b897b8c020cdaad718c5b087a6626d1d11a23e1ea87e325a7/async_timeout-4.0.2-py3-none-any.whl",
-                    "sha256": "8ca1e4fcf50d07413d66d1a5e416e42cfdf5851c981d679a09851a6853383b3c"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl",
-                    "sha256": "1f28b4522cdc2fb4256ac1a020c78acf9cba2c6b461ccd2c126f3aa8e8335d04"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/9d/19/59961b522e6757f0c9097e4493fa906031b95b3ebe9360b2c3083561a6b4/certifi-2023.5.7-py3-none-any.whl",
-                    "sha256": "c6c2e98f5c7869efca1f8916fed228dd91539f9f1b444c314c06eef02980c716"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz",
-                    "sha256": "34e0a2f9c370eb95597aae63bf85eb5e96826d81e3dcf88b8886012906f509b5"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e9/10/d629476346112b85c912527b9080944fd2c39a816c2225413dbc0bb6fcc0/frozenlist-1.3.3.tar.gz",
-                    "sha256": "58bcc55721e8a90b88332d6cd441261ebb22342e238296bb330968952fbb3a6a"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl",
-                    "sha256": "90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4a/15/bd620f7a6eb9aa5112c4ef93e7031bcd071e0611763d8e17706ef8ba65e0/multidict-6.0.4.tar.gz",
-                    "sha256": "3666906492efb76453c0e7b97f2cf459b0682e7402c0489a95484965dbc1da49"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/35/c3/de7124146c3edbe8fd8163028d9ac998f2fd5dcda9225655f1d4ed684bbc/openai-0.27.7-py3-none-any.whl",
-                    "sha256": "788fb7fa85bf7caac6c1ed7eea5984254a1bdaf09ef485acf0e5718c8b2dc25a"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl",
-                    "sha256": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e6/02/a2cff6306177ae6bc73bc0665065de51dfb3b9db7373e122e2735faf0d97/tqdm-4.65.0-py3-none-any.whl",
-                    "sha256": "c4f53a17fe37e132815abceec022631be8ffe1b9381c2e6e30aa70edc99e9671"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4b/1d/f8383ef593114755429c307449e7717b87044b3bcd5f7860b89b1f759e34/urllib3-2.0.2-py3-none-any.whl",
-                    "sha256": "d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/5f/3f/04b3c5e57844fb9c034b09c5cb6d2b43de5d64a093c30529fd233e16cf09/yarl-1.9.2.tar.gz",
-                    "sha256": "04ab9d4b9f587c06d801c2abfe9317b77cdf996c65a90d5e84ecc45010823571"
-                }
-            ]
-        },
-        {
-            "name": "python3-pymdown-extensions",
-            "buildsystem": "simple",
-            "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"pymdown-extensions\" --no-build-isolation"
-            ],
-            "sources": [
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz",
-                    "sha256": "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/a2/17/607fc71d709c0df9cca39ed57ed6f8b1cb77863073004c7def8a02a45fe2/pymdown_extensions-10.0.1-py3-none-any.whl",
-                    "sha256": "ae66d84013c5d027ce055693e09a4628b67e9dec5bce05727e45b0918e36f274"
-                }
-            ]
-        },
-        {
             "name": "python3-requests",
             "buildsystem": "simple",
             "build-commands": [
@@ -188,8 +17,8 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz",
-                    "sha256": "34e0a2f9c370eb95597aae63bf85eb5e96826d81e3dcf88b8886012906f509b5"
+                    "url": "https://files.pythonhosted.org/packages/2a/53/cf0a48de1bdcf6ff6e1c9a023f5f523dfe303e4024f216feac64b6eb7f67/charset-normalizer-3.2.0.tar.gz",
+                    "sha256": "3bb3d25a8e6c0aedd251753a79ae98a093c7e7b471faa3aa9a93a81431987ace"
                 },
                 {
                     "type": "file",
@@ -203,231 +32,64 @@
                 },
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4b/1d/f8383ef593114755429c307449e7717b87044b3bcd5f7860b89b1f759e34/urllib3-2.0.2-py3-none-any.whl",
-                    "sha256": "d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e"
+                    "url": "https://files.pythonhosted.org/packages/8a/03/ad9306a50d05c166e3456fe810f33cee2b8b2a7a6818ec5d4908c4ec6b36/urllib3-2.0.3-py3-none-any.whl",
+                    "sha256": "48e7fafa40319d358848e1bc6809b208340fafe2096f1725d05d67443d0483d1"
                 }
             ]
         },
         {
-            "name": "python3-text-generation",
+            "name": "python3-tqdm",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"text-generation\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"tqdm\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz",
-                    "sha256": "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c2/fd/1ff4da09ca29d8933fda3f3514980357e25419ce5e0f689041edb8f17dab/aiohttp-3.8.4.tar.gz",
-                    "sha256": "bf2e1a9162c1e441bf805a1fd166e249d574ca04e03b34f97e2928769e91ab5c"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/76/ac/a7305707cb852b7e16ff80eaf5692309bde30e2b1100a1fcacdc8f731d97/aiosignal-1.3.1-py3-none-any.whl",
-                    "sha256": "f8376fb07dd1e86a584e4fcdec80b36b7f81aac666ebc724e2c090300dd83b17"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d6/c1/8991e7c5385b897b8c020cdaad718c5b087a6626d1d11a23e1ea87e325a7/async_timeout-4.0.2-py3-none-any.whl",
-                    "sha256": "8ca1e4fcf50d07413d66d1a5e416e42cfdf5851c981d679a09851a6853383b3c"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/f0/eb/fcb708c7bf5056045e9e98f62b93bd7467eb718b0202e7698eb11d66416c/attrs-23.1.0-py3-none-any.whl",
-                    "sha256": "1f28b4522cdc2fb4256ac1a020c78acf9cba2c6b461ccd2c126f3aa8e8335d04"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/9d/19/59961b522e6757f0c9097e4493fa906031b95b3ebe9360b2c3083561a6b4/certifi-2023.5.7-py3-none-any.whl",
-                    "sha256": "c6c2e98f5c7869efca1f8916fed228dd91539f9f1b444c314c06eef02980c716"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz",
-                    "sha256": "34e0a2f9c370eb95597aae63bf85eb5e96826d81e3dcf88b8886012906f509b5"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ad/73/b094a662ae05cdc4ec95bc54e434e307986a5de5960166b8161b7c1373ee/filelock-3.12.0-py3-none-any.whl",
-                    "sha256": "ad98852315c2ab702aeb628412cbf7e95b7ce8c3bf9565670b4eaecf1db370a9"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e9/10/d629476346112b85c912527b9080944fd2c39a816c2225413dbc0bb6fcc0/frozenlist-1.3.3.tar.gz",
-                    "sha256": "58bcc55721e8a90b88332d6cd441261ebb22342e238296bb330968952fbb3a6a"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ec/4e/397b234a369df06ec782666fcdf9791d125ca6de48729814b381af8c6c03/fsspec-2023.5.0-py3-none-any.whl",
-                    "sha256": "51a4ad01a5bb66fcc58036e288c0d53d3975a0df2a5dc59a93b59bade0391f2a"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/58/34/c57b951aecd0248845932c1cfc15721237c50e463f26b0536673bcb76f4f/huggingface_hub-0.14.1-py3-none-any.whl",
-                    "sha256": "9fc619170d800ff3793ad37c9757c255c8783051e1b5b00501205eb43ccc4f27"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl",
-                    "sha256": "90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4a/15/bd620f7a6eb9aa5112c4ef93e7031bcd071e0611763d8e17706ef8ba65e0/multidict-6.0.4.tar.gz",
-                    "sha256": "3666906492efb76453c0e7b97f2cf459b0682e7402c0489a95484965dbc1da49"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ab/c3/57f0601a2d4fe15de7a553c00adbc901425661bf048f2a22dfc500caf121/packaging-23.1-py3-none-any.whl",
-                    "sha256": "994793af429502c4ea2ebf6bf664629d07c1a9fe974af92966e4b8d2df7edc61"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/23/65/2aa13873e9e0084ecaec00fbe6c6096b65e1ab99ba66bdbf7e4e7c4cc915/pydantic-1.10.8.tar.gz",
-                    "sha256": "1410275520dfa70effadf4c21811d755e7ef9bb1f1d077a21958153a92c8d9ca"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl",
-                    "sha256": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/83/14/643c55e7cf845db3c1ac96cd624511d56c50386f3760448e7dc2ff58f1c1/text_generation-0.5.2-py3-none-any.whl",
-                    "sha256": "110dd5b05f8ec9cef00f3977001f1ce0464b133b14d4939b15260b0e863c942d"
-                },
-                {
-                    "type": "file",
                     "url": "https://files.pythonhosted.org/packages/e6/02/a2cff6306177ae6bc73bc0665065de51dfb3b9db7373e122e2735faf0d97/tqdm-4.65.0-py3-none-any.whl",
                     "sha256": "c4f53a17fe37e132815abceec022631be8ffe1b9381c2e6e30aa70edc99e9671"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/38/60/300ad6f93adca578bf05d5f6cd1d854b7d140bebe2f9829561aa9977d9f3/typing_extensions-4.6.2-py3-none-any.whl",
-                    "sha256": "3a8b36f13dd5fdc5d1b16fe317f5668545de77fa0b8e02006381fd49d731ab98"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4b/1d/f8383ef593114755429c307449e7717b87044b3bcd5f7860b89b1f759e34/urllib3-2.0.2-py3-none-any.whl",
-                    "sha256": "d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/5f/3f/04b3c5e57844fb9c034b09c5cb6d2b43de5d64a093c30529fd233e16cf09/yarl-1.9.2.tar.gz",
-                    "sha256": "04ab9d4b9f587c06d801c2abfe9317b77cdf996c65a90d5e84ecc45010823571"
                 }
             ]
         },
         {
-            "name": "python3-gradio_client",
+            "name": "python3-charset-normalizer",
             "buildsystem": "simple",
             "build-commands": [
-                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"gradio_client\" --no-build-isolation"
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"charset-normalizer\" --no-build-isolation"
             ],
             "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/36/2b/61d51a2c4f25ef062ae3f74576b01638bebad5e045f747ff12643df63844/PyYAML-6.0.tar.gz",
-                    "sha256": "68fb519c14306fec9720a2a5b45bc9f0c8d1b9c72adf45c37baedfcd949c35a2"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/68/fe/7ce1926952c8a403b35029e194555558514b365ad77d75125f521a2bec62/anyio-3.7.0-py3-none-any.whl",
-                    "sha256": "eddca883c4175f14df8aedce21054bfca3adb70ffe76a9f607aef9d7fa2ea7f0"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/9d/19/59961b522e6757f0c9097e4493fa906031b95b3ebe9360b2c3083561a6b4/certifi-2023.5.7-py3-none-any.whl",
-                    "sha256": "c6c2e98f5c7869efca1f8916fed228dd91539f9f1b444c314c06eef02980c716"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ff/d7/8d757f8bd45be079d76309248845a04f09619a7b17d6dfc8c9ff6433cac2/charset-normalizer-3.1.0.tar.gz",
-                    "sha256": "34e0a2f9c370eb95597aae63bf85eb5e96826d81e3dcf88b8886012906f509b5"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/61/97/17ed81b7a8d24d8f69b62c0db37abbd8c0042d4b3fc429c73dab986e7483/exceptiongroup-1.1.1-py3-none-any.whl",
-                    "sha256": "232c37c63e4f682982c8b6459f33a8981039e5fb8756b2074364e5055c498c9e"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ad/73/b094a662ae05cdc4ec95bc54e434e307986a5de5960166b8161b7c1373ee/filelock-3.12.0-py3-none-any.whl",
-                    "sha256": "ad98852315c2ab702aeb628412cbf7e95b7ce8c3bf9565670b4eaecf1db370a9"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ec/4e/397b234a369df06ec782666fcdf9791d125ca6de48729814b381af8c6c03/fsspec-2023.5.0-py3-none-any.whl",
-                    "sha256": "51a4ad01a5bb66fcc58036e288c0d53d3975a0df2a5dc59a93b59bade0391f2a"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/86/ed/3b8b8df6c66f5fd8ab3e458e2086502d7208557e9bbc31592d4c732cf1d3/gradio_client-0.2.5-py3-none-any.whl",
-                    "sha256": "922a5188c93797adce023b4caa655318b9c09834095d31763443c1e7a707e301"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/95/04/ff642e65ad6b90db43e668d70ffb6736436c7ce41fcc549f4e9472234127/h11-0.14.0-py3-none-any.whl",
-                    "sha256": "e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4d/32/b908f673ccef12b6425b848a541264ee3d95f5f571f18f6ab0d8c311442e/httpcore-0.17.2-py3-none-any.whl",
-                    "sha256": "5581b9c12379c4288fe70f43c710d16060c10080617001e6b22a3b6dbcbefd36"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ec/91/e41f64f03d2a13aee7e8c819d82ee3aa7cdc484d18c0ae859742597d5aa0/httpx-0.24.1-py3-none-any.whl",
-                    "sha256": "06781eb9ac53cde990577af654bd990a4949de37a28bdb4a230d434f3a30b9bd"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/58/34/c57b951aecd0248845932c1cfc15721237c50e463f26b0536673bcb76f4f/huggingface_hub-0.14.1-py3-none-any.whl",
-                    "sha256": "9fc619170d800ff3793ad37c9757c255c8783051e1b5b00501205eb43ccc4f27"
-                },
+                    "url": "https://files.pythonhosted.org/packages/2a/53/cf0a48de1bdcf6ff6e1c9a023f5f523dfe303e4024f216feac64b6eb7f67/charset-normalizer-3.2.0.tar.gz",
+                    "sha256": "3bb3d25a8e6c0aedd251753a79ae98a093c7e7b471faa3aa9a93a81431987ace"
+                }
+            ]
+        },
+        {
+            "name": "python3-idna",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"idna\" --no-build-isolation"
+            ],
+            "sources": [
                 {
                     "type": "file",
                     "url": "https://files.pythonhosted.org/packages/fc/34/3030de6f1370931b9dbb4dad48f6ab1015ab1d32447850b9fc94e60097be/idna-3.4-py3-none-any.whl",
                     "sha256": "90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"
-                },
+                }
+            ]
+        },
+        {
+            "name": "python3-urllib3",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"urllib3\" --no-build-isolation"
+            ],
+            "sources": [
                 {
                     "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/ab/c3/57f0601a2d4fe15de7a553c00adbc901425661bf048f2a22dfc500caf121/packaging-23.1-py3-none-any.whl",
-                    "sha256": "994793af429502c4ea2ebf6bf664629d07c1a9fe974af92966e4b8d2df7edc61"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/70/8e/0e2d847013cb52cd35b38c009bb167a1a26b2ce6cd6965bf26b47bc0bf44/requests-2.31.0-py3-none-any.whl",
-                    "sha256": "58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/c3/a0/5dba8ed157b0136607c7f2151db695885606968d1fae123dc3391e0cfdbf/sniffio-1.3.0-py3-none-any.whl",
-                    "sha256": "eecefdce1e5bbfb7ad2eeaabf7c1eeb404d7757c379bd1f7e5cce9d8bf425384"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/e6/02/a2cff6306177ae6bc73bc0665065de51dfb3b9db7373e122e2735faf0d97/tqdm-4.65.0-py3-none-any.whl",
-                    "sha256": "c4f53a17fe37e132815abceec022631be8ffe1b9381c2e6e30aa70edc99e9671"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/38/60/300ad6f93adca578bf05d5f6cd1d854b7d140bebe2f9829561aa9977d9f3/typing_extensions-4.6.2-py3-none-any.whl",
-                    "sha256": "3a8b36f13dd5fdc5d1b16fe317f5668545de77fa0b8e02006381fd49d731ab98"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/4b/1d/f8383ef593114755429c307449e7717b87044b3bcd5f7860b89b1f759e34/urllib3-2.0.2-py3-none-any.whl",
-                    "sha256": "d055c2f9d38dc53c808f6fdc8eab7360b6fdbbde02340ed25cfbcd817c62469e"
-                },
-                {
-                    "type": "file",
-                    "url": "https://files.pythonhosted.org/packages/d8/3b/2ed38e52eed4cf277f9df5f0463a99199a04d9e29c9e227cfafa57bd3993/websockets-11.0.3.tar.gz",
-                    "sha256": "88fc51d9a26b10fc331be344f1781224a375b78488fc343620184e95a4b27016"
+                    "url": "https://files.pythonhosted.org/packages/8a/03/ad9306a50d05c166e3456fe810f33cee2b8b2a7a6818ec5d4908c4ec6b36/urllib3-2.0.3-py3-none-any.whl",
+                    "sha256": "48e7fafa40319d358848e1bc6809b208340fafe2096f1725d05d67443d0483d1"
                 }
             ]
         }

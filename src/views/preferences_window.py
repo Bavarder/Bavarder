@@ -1,19 +1,19 @@
 from gi.repository import Gtk, Adw, Gio
 
-from bavarder.constants import app_id
+from bavarder.constants import app_id, rootdir
+from bavarder.providers.provider_item import Provider
+from bavarder.widgets.model_item import Model
+from bavarder.widgets.download_row import DownloadRow
 
-from bavarder.providers import PROVIDERS
+from gpt4all import GPT4All
 
-
-@Gtk.Template(resource_path="/io/github/Bavarder/Bavarder/ui/preferences.ui")
-class Preferences(Adw.PreferencesWindow):
+@Gtk.Template(resource_path=f"{rootdir}/ui/preferences_window.ui")
+class PreferencesWindow(Adw.PreferencesWindow):
     __gtype_name__ = "Preferences"
 
-    clear_after_send_switch = Gtk.Template.Child()
     provider_group = Gtk.Template.Child()
-    use_text_view_switch = Gtk.Template.Child()
-    close_all_without_dialog_switch = Gtk.Template.Child()
-    allow_remote_fetching_switch = Gtk.Template.Child()
+    general_page = Gtk.Template.Child()
+    model_group = Gtk.Template.Child()
 
     def __init__(self, parent, **kwargs):
         super().__init__(**kwargs)
@@ -30,84 +30,32 @@ class Preferences(Adw.PreferencesWindow):
 
     def setup(self):
         self.setup_signals()
+        self.load_providers()
+        self.load_models()
 
     def setup_signals(self):
+        pass
 
-        self.clear_after_send_switch.set_active(self.app.clear_after_send)
-        self.clear_after_send_switch.connect(
-            "notify::active", self.on_clear_after_send_switch_toggled
-        )
+    def load_providers(self):
+        for provider in self.app.providers.values():
+            p = Provider(self.app, self, provider)
+            self.provider_group.add(p)
 
-        self.use_text_view_switch.set_active(self.app.use_text_view)
-        self.use_text_view_switch.connect(
-            "notify::active", self.on_use_text_view_switch_toggled
-        )
-
-        self.close_all_without_dialog_switch.set_active(self.app.close_all_without_dialog)
-        self.close_all_without_dialog_switch.connect(
-            "notify::active", self.on_close_all_without_dialog_switch_toggled
-        )
-
-        self.allow_remote_fetching_switch.set_active(self.app.allow_remote_fetching)
-        self.allow_remote_fetching_switch.connect(
-            "notify::active", self.on_allow_remote_fetching_switch_toggled
-        )
-
-        self.setup_providers()
-
-    def on_clear_after_send_switch_toggled(self, widget, *args):
-        """Callback for the clear_after_send_switch toggled event."""
-        if widget.get_active():
-            self.settings.set_boolean("clear-after-send", True)
-            self.app.clear_after_send = True
+    def load_models(self):
+        self.general_page.remove(self.model_group)
+        self.model_group = Adw.PreferencesGroup()
+        self.model_group.set_title(_("Models"))
+        
+        for model in self.app.models:
+            p = Model(self.app, self, model)
+            self.model_group.add(p)
         else:
-            self.settings.set_boolean("clear-after-send", False)
-            self.app.clear_after_send = False
+            self.no_models_available = Adw.ExpanderRow()
+            self.no_models_available.set_title(_("Download more models"))
 
-    def on_use_text_view_switch_toggled(self, widget, *args):
-        """Callback for the use_text_view_switch toggled event."""
-        if widget.get_active():
-            self.settings.set_boolean("use-text-view", True)
-            self.app.use_text_view = True
-        else:
-            self.settings.set_boolean("use-text-view", False)
-            self.app.use_text_view = False
+            for model in GPT4All.list_models():
+                self.no_models_available.add_row(DownloadRow(self.app, self, model))
 
-    def on_close_all_without_dialog_switch_toggled(self, widget, *args):
-        """Callback for the close_all_without_dialog_switch toggled event."""
-        if widget.get_active():
-            self.settings.set_boolean("close-all-without-dialog", True)
-            self.app.close_all_without_dialog = True
-        else:
-            self.settings.set_boolean("close-all-without-dialog", False)
-            self.app.close_all_without_dialog = False
+            self.model_group.add(self.no_models_available)
 
-    def on_allow_remote_fetching_switch_toggled(self, widget, *args):
-        """Callback for the allow_remote_fetching_switch toggled event."""
-        if widget.get_active():
-            self.settings.set_boolean("allow-remote-fetching", True)
-            self.app.load_annoucements()
-            self.app.allow_remote_fetching = True
-        else:
-            self.settings.set_boolean("allow-remote-fetching", False)
-            self.app.allow_remote_fetching = False
-
-    def setup_providers(self):
-        # for provider in self.app.providers.values():
-        #     try:
-        #         self.provider_group.add(provider.preferences(self))
-        #     except TypeError:  # no prefs
-        #         pass
-        # else:
-        #     row = Adw.ActionRow()
-        #     row.props.title = "No providers available"
-        #     self.provider_group.add(row)
-        for provider in PROVIDERS.values():
-            if provider.slug in self.app.providers:
-                self.provider_group.add(
-                    self.app.providers[provider.slug].preferences(win=self.app.win)
-                )
-            else:
-                self.provider_group.add(
-                    provider(self.app.win, self.app).preferences(win=self.app.win)
-                )
+        self.general_page.add(self.model_group)

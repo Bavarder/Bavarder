@@ -1,0 +1,11 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $Model : Adw.ActionRow {
+    [suffix]
+    Button delete_button {
+        valign: center;
+        icon-name: "user-trash-symbolic";
+        clicked => $on_delete_button_clicked();
+    }
+}

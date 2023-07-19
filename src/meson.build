@@ -1,8 +1,30 @@
-pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-moduledir = join_paths(pkgdatadir, 'bavarder')
 gnome = import('gnome')
 
 python = import('python')
+
+blueprints = custom_target('blueprints',
+  input: files(
+    'gtk/help-overlay.blp',
+    'views/preferences_window.blp',
+    'views/window.blp',
+    'widgets/thread_item.blp',
+    'widgets/item.blp',
+    'widgets/model_item.blp',
+    'widgets/download_row.blp',
+    'widgets/code_block.blp',
+    'providers/provider_item.blp',
+  ),
+  output: '.',
+  command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@']
+)
+
+gnome.compile_resources('bavarder',
+  'bavarder.gresource.xml',
+  gresource_bundle: true,
+  install: true,
+  install_dir: PKGDATA_DIR,
+  dependencies: blueprints
+)
 
 configure_file(
   input: 'bavarder.in',
@@ -18,17 +40,17 @@ configure_file(
   output: 'constants.py',
   configuration: conf,
   install: true,
-  install_dir: moduledir
+  install_dir: MODULE_DIR
 )
 
 bavarder_sources = [
   '__init__.py',
   'main.py',
-  'threading.py',
+  'threading.py'
 ]
 
-PY_INSTALLDIR.install_sources(bavarder_sources, subdir: moduledir)
+PY_INSTALLDIR.install_sources(bavarder_sources, subdir: MODULE_DIR)
 
-subdir('providers')
 subdir('views')
 subdir('widgets')
+subdir('providers')

@@ -1,0 +1,75 @@
+using Gtk 4.0;
+using Adw 1;
+using GtkSource 5;
+
+template $CodeBlock : Gtk.Widget {
+    layout-manager: BinLayout {};
+    vexpand: true;
+
+    height-request: 50;
+
+    Overlay {
+
+        [overlay]
+        Button {
+          styles [
+            "circular",
+          ]
+          icon-name: "terminal-symbolic";
+          halign: end;
+          valign: start;
+          margin-top: 7;
+          margin-end: 7;
+          clicked => $run();
+        }
+  
+        Box box {
+            orientation: vertical;
+            vexpand: true;
+            hexpand: true;
+
+            Box view {
+                vexpand: true;
+                hexpand: true;
+                GtkSource.View source_view {
+                    vexpand: true;
+                    hexpand: true;
+                    buffer: GtkSource.Buffer buffer {};
+                    editable: true;
+                    monospace: true;
+                    show-line-marks: true;
+                    show-line-numbers: true;
+                    smart-backspace: true;
+                    margin-top: 5;
+                    margin-bottom: 5;
+                    styles [ "codeview", "card" ]
+                }
+            }
+
+            Box output {
+                visible: false;
+                vexpand: true;
+                hexpand: true;
+                
+                GtkSource.View output_source_view {
+                    vexpand: true;
+                    hexpand: true;
+                    buffer: GtkSource.Buffer output_buffer {};
+                    editable: false;
+                    monospace: true;
+                    show-line-marks: true;
+                    show-line-numbers: true;
+                    margin-top: 5;
+                    margin-bottom: 5;
+                    styles [ "codeview", "card" ]
+                }
+
+                
+            }
+
+        }
+
+        
+
+    }
+}

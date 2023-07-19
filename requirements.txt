@@ -2,25 +2,8 @@
 # chmod +x flatpak-pip-generator
 # ./flatpak-pip-generator --requirements-file=requirements.txt --output pypi-dependencies
 
-# use https://johannesjh.github.io/req2flatpak/main/cli.html
-# 1. pip-compile -o r.txt requirements.txt
-# 2. ./req2flatpak.py --requirements-file requirements.txt --target-platforms  310-x86_64 310-aarch64 > build-aux/pypi-dependencies.json
-
-Pygments
-baichat_py
-googlebardpy
-markdown
-openai
-pymdown-extensions
 requests
-text-generation
-gradio_client
-
-
-# replace the curl-cffi entry with 
-# {
-#     "type": "file",
-#     "url": "https://files.pythonhosted.org/packages/d1/6f/5d591a5628423af4598e2d6ff0861fcbc554cc259590fac9f97d9c984611/curl_cffi-0.5.6-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
-#     "sha256": "7a9df9fabff038f1ac9e7e6f32b5edb5d8df8c2eec64f53f513de1766c17ffdb"
-# },
-#
+tqdm
+charset-normalizer
+idna
+urllib3

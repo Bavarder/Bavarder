@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist gettext-domain="bavarder">
 	<schema id="@APP_ID@" path="/io/github/Bavarder/Bavarder/">
+		<key name="local-mode" type="b">
+			<default>true</default>
+		</key>
+		<key name="current-provider" type="s">
+			<default>'cat-gpt'</default>
+		</key>
+		<key name="model" type="s">
+			<default>'ggml-model-gpt4all-falcon-q4_0.bin'</default>
+		</key>
 		<key name="width" type="i">
 			<default>350</default>
 		</key>
@@ -13,26 +22,6 @@
 		<key name="is-fullscreen" type="b">
 			<default>false</default>
 		</key>
-		<key name="clear-after-send" type="b">
-			<default>false</default>
-		</key>
-		<key name="enabled-providers" type="as">
-			<default>["baichat",  "hfopenassistantsft1pythia12b", "catgpt", "openaigpt35turbo"]</default>
-		</key>
-		<key name="latest-provider" type="s">
-			<default>'hfopenassistantsft1pythia12b'</default>
-		</key>
-		<key name="providers-data" type="a{ss}">
-			<default>{}</default>
-		</key>
-		<key name="use-text-view" type="b">
-			<default>false</default>
-		</key>
-		<key name="close-all-without-dialog" type="b">
-			<default>false</default>
-		</key>
-		<key name="allow-remote-fetching" type="b">
-			<default>true</default>
-		</key>
+
 	</schema>
 </schemalist>

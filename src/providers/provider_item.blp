@@ -1,0 +1,15 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $Provider : Adw.ExpanderRow {
+    [suffix]
+    Switch enable_switch {
+        state-set => $on_switch_state_changed();
+        valign: center;
+    }
+
+    Adw.ActionRow no_preferences_available {
+        title: _("No preferences available");
+    }
+
+}

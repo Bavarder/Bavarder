@@ -1,179 +1,358 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-	<id>@APP_ID@</id>
-	<name>Bavarder</name>
-	<summary>Chit-chat with an AI</summary>
-	<developer_name>0xMRTT</developer_name>
-  <metadata_license>CC0-1.0</metadata_license>
-	<project_license>GPL-3.0-or-later</project_license>
-  <launchable type="desktop-id">@APP_ID@.desktop</launchable>
-  <content_rating type="oars-1.1"/>
-
+	<id>
+		@APP_ID@
+	</id>
+	<name>
+		Bavarder
+	</name>
+	<summary>
+		Chit-chat with an AI
+	</summary>
+	<developer_name>
+		0xMRTT
+	</developer_name>
+	<metadata_license>
+		CC0-1.0
+	</metadata_license>
+	<project_license>
+		GPL-3.0-or-later
+	</project_license>
+	<launchable type="desktop-id">
+		@APP_ID@.desktop
+	</launchable>
+	<content_rating type="oars-1.1" />
 	<description>
-	  <p>Chit-chat with an AI</p>
+		<p>
+			Chit-chat with an AI
+		</p>
 	</description>
-
 	<screenshots>
-	  <screenshot width="472" height="622">
-      <caption>Screenshot of Main UI</caption>
-      <image type="source">https://codeberg.org/Bavarder/Bavarder/raw/branch/main/data/screenshots/preview.png</image>
+		<screenshot width="472" height="622">
+			<caption>
+				Screenshot of Main UI
+			</caption>
+			<image type="source">
+				https://codeberg.org/Bavarder/Bavarder/raw/branch/main/data/screenshots/preview.png
+			</image>
 		</screenshot>
-    <screenshot width="724" height="732">
-      <caption>Screenshot of Preferences UI</caption>
-      <image type="source">https://codeberg.org/Bavarder/Bavarder/raw/branch/main/data/screenshots/preferences.png</image>
-    </screenshot>
+		<screenshot width="724" height="732">
+			<caption>
+				Screenshot of Preferences UI
+			</caption>
+			<image type="source">
+				https://codeberg.org/Bavarder/Bavarder/raw/branch/main/data/screenshots/preferences.png
+			</image>
+		</screenshot>
 	</screenshots>
-
-	<url type="homepage">@PROJECT_URL@</url>
-  <url type="bugtracker">@BUGTRACKER_URL@</url>
-  <url type="help">@HELP_URL@</url>
-  <url type="translate">@TRANSLATE_URL@</url>
-
-  <kudos>
-    <kudo>HiDpiIcon</kudo>
-    <kudo>ModernToolkit</kudo>
-  </kudos>
-
-  <custom>
-    <value key="Purism::form_factor">workstation</value>
-    <value key="Purism::form_factor">mobile</value>
-  </custom>
-
-  <requires>
-    <display_length compare="ge">360</display_length>
-  </requires>
-
-  <categories>
-    <category>Utility</category>
-  </categories>
-
-  <recommends>
-    <control>keyboard</control>
-    <control>pointing</control>
-    <control>touch</control>
-  </recommends>
-
+	<url type="homepage">
+		@PROJECT_URL@
+	</url>
+	<url type="bugtracker">
+		@BUGTRACKER_URL@
+	</url>
+	<url type="help">
+		@HELP_URL@
+	</url>
+	<url type="translate">
+		@TRANSLATE_URL@
+	</url>
+	<kudos>
+		<kudo>
+			HiDpiIcon
+		</kudo>
+		<kudo>
+			ModernToolkit
+		</kudo>
+	</kudos>
+	<custom>
+		<value key="Purism::form_factor">
+			workstation
+		</value>
+		<value key="Purism::form_factor">
+			mobile
+		</value>
+	</custom>
+	<requires>
+		<display_length compare="ge">
+			360
+		</display_length>
+	</requires>
+	<categories>
+		<category>
+			Utility
+		</category>
+	</categories>
+	<recommends>
+		<control>
+			keyboard
+		</control>
+		<control>
+			pointing
+		</control>
+		<control>
+			touch
+		</control>
+	</recommends>
 	<keywords>
-		<keyword>Bavarder</keyword>
-	  <keyword>Chat</keyword>
-		<keyword>GPT</keyword>
-	  <keyword>ChatGPT</keyword>
-	  <keyword>AI</keyword>
-		<keyword>OpenAI</keyword>
-    <keyword>Open Assistant</keyword>
-    <keyword>HuggingFace</keyword>
+		<keyword>
+			Bavarder
+		</keyword>
+		<keyword>
+			Chat
+		</keyword>
+		<keyword>
+			GPT
+		</keyword>
+		<keyword>
+			ChatGPT
+		</keyword>
+		<keyword>
+			AI
+		</keyword>
+		<keyword>
+			OpenAI
+		</keyword>
+		<keyword>
+			Open Assistant
+		</keyword>
+		<keyword>
+			HuggingFace
+		</keyword>
 	</keywords>
-
-  <releases>
-    <release version="0.2.4" date="2023-6-16" type="stable">
-      <description>
-        <p>New UI</p>
-        <p>Faster BaiChat</p>
-        <p>Fix some bugs</p>
-        <p>Update translations</p>
-        <p>Add better error handling</p>
-      </description>
-    </release>
-    <release version="0.2.3" date="2023-5-21" type="stable">
-      <description>
-        <p>Add the ability to use local model</p>
-        <p>Add the ability to use custom model in OpenAI</p>
-        <p>Make loading mechanism faster</p>
-        <p>Fix some bugs</p>
-        <p>Update translations</p>
-        <p>Add CI</p>
-        <p>Add support for launching Bavarder offline</p>
-        <p>Update Blueprint to v0.8.0</p>
-        <p>Add better error handling</p>
-      </description>
-    </release>
-    <release version="0.2.2" date="2023-5-16" type="stable">
-      <description>
-        <p>Allow fetching news about providers and check if there is some issues about them</p>
-        <p>Hugging Chat is now disabled because of a change which require to login</p>
-        <p>Providers moved to the menu</p>
-        <p>Update screenshots</p>
-        <p>Fix some bugs</p>
-        <p>Update translations</p>
-        <p>Add CI</p>
-        <p>Add support for launching Bavarder offline</p>
-        <p>Update Blueprint to v0.8.0</p>
-        <p>Add better error handling</p>
-      </description>
-    </release>
-    <release version="0.2.1" date="2023-5-13" type="stable">
-      <description>
-        <p>Fix Theming support of the new render widget</p>
-        <p>Add the ability to have multiple windows open at the same time</p>
-        <p>Update preferences UI</p>
-        <p>Fix some bugs</p>
-        <p>Update translations</p>
-        <p>Add better error handling</p>
-      </description>
-    </release>
-    <release version="0.2.0" date="2023-5-11" type="stable">
-      <description>
-        <p>Add support of formatting in the response view using Markdown</p>
-        <p>Allow disabling the new render method </p>
-        <p>Add description of providers</p>
-        <p>Add help for getting a token for providers</p>
-        <p>New website including some help for providers</p>
-        <p>Fix an issue which caused the app to spin forever</p>
-        <p>Remove Quit entry in the app menu</p>
-        <p>Fix keyboard shortcuts</p>
-        <p>Fix some bugs</p>
-        <p>Update translations</p>
-        <p>Add better error handling</p>
-      </description>
-    </release>
-    <release version="0.1.7" date="2023-5-7" type="stable">
-      <description>
-        <p>Fix an issue which caused the app to crash randomly</p>
-        <p>Add the ability to enable/disable providers from the preferences</p>
-        <p>Add more keyboard shortcuts</p>
-        <p>Update translations</p>
-        <p>Add better error handling</p>
-      </description>
-    </release>
-    <release version="0.1.6" date="2023-5-6" type="stable">
-      <description>
-        <p>Fix an issue which caused the app to crash randomly</p>
-        <p>Add save/load of settings</p>
-      </description>
-    </release>
-    <release version="0.1.5" date="2023-5-4" type="stable">
-      <description>
-        <p>Fix HuggingChat (again)</p>
-      </description>
-    </release>
-    <release version="0.1.4" date="2023-5-4" type="stable">
-      <description>
-        <p>Fix HuggingChat</p>
-      </description>
-    </release>
-  	<release version="0.1.3" date="2023-5-4" type="stable">
-      <description>
-        <p>Add multiple providers support</p>
-        <p>Make HuggingChat the default provider</p>
-        <p>Fix some bugs</p>
-        <p>Focus on the response entry</p>
-        <p>Update translations</p>
-      </description>
-    </release>
-    <release version="0.1.2" date="2023-4-27" type="stable">
-      <description>
-        <p>Fix appdata not having release tags</p>
-      </description>
-    </release>
-    <release version="0.1.1" date="2023-4-27" type="stable">
-      <description>
-        <p>Change app ID to io.github.Bavarder.Bavarder</p>
-      </description>
-    </release>
-    <release version="0.1.0" date="2023-4-27" type="stable">
-      <description>
-        <p>First release of Bavarder</p>
-      </description>
-    </release>
-  </releases>
+	<releases>
+		<release version="1.0.0" date="2023-7-19" type="stable">
+			<description>
+				<p>
+					Brand new UI
+				</p>
+			</description>
+		</release>
+		<release version="0.2.4" date="2023-6-16" type="stable">
+			<description>
+				<p>
+					New UI
+				</p>
+				<p>
+					Faster BaiChat
+				</p>
+				<p>
+					Fix some bugs
+				</p>
+				<p>
+					Update translations
+				</p>
+				<p>
+					Add better error handling
+				</p>
+			</description>
+		</release>
+		<release version="0.2.3" date="2023-5-21" type="stable">
+			<description>
+				<p>
+					Add the ability to use local model
+				</p>
+				<p>
+					Add the ability to use custom model in OpenAI
+				</p>
+				<p>
+					Make loading mechanism faster
+				</p>
+				<p>
+					Fix some bugs
+				</p>
+				<p>
+					Update translations
+				</p>
+				<p>
+					Add CI
+				</p>
+				<p>
+					Add support for launching Bavarder offline
+				</p>
+				<p>
+					Update Blueprint to v0.8.0
+				</p>
+				<p>
+					Add better error handling
+				</p>
+			</description>
+		</release>
+		<release version="0.2.2" date="2023-5-16" type="stable">
+			<description>
+				<p>
+					Allow fetching news about providers and check if there is some issues about them
+				</p>
+				<p>
+					Hugging Chat is now disabled because of a change which require to login
+				</p>
+				<p>
+					Providers moved to the menu
+				</p>
+				<p>
+					Update screenshots
+				</p>
+				<p>
+					Fix some bugs
+				</p>
+				<p>
+					Update translations
+				</p>
+				<p>
+					Add CI
+				</p>
+				<p>
+					Add support for launching Bavarder offline
+				</p>
+				<p>
+					Update Blueprint to v0.8.0
+				</p>
+				<p>
+					Add better error handling
+				</p>
+			</description>
+		</release>
+		<release version="0.2.1" date="2023-5-13" type="stable">
+			<description>
+				<p>
+					Fix Theming support of the new render widget
+				</p>
+				<p>
+					Add the ability to have multiple windows open at the same time
+				</p>
+				<p>
+					Update preferences UI
+				</p>
+				<p>
+					Fix some bugs
+				</p>
+				<p>
+					Update translations
+				</p>
+				<p>
+					Add better error handling
+				</p>
+			</description>
+		</release>
+		<release version="0.2.0" date="2023-5-11" type="stable">
+			<description>
+				<p>
+					Add support of formatting in the response view using Markdown
+				</p>
+				<p>
+					Allow disabling the new render method
+				</p>
+				<p>
+					Add description of providers
+				</p>
+				<p>
+					Add help for getting a token for providers
+				</p>
+				<p>
+					New website including some help for providers
+				</p>
+				<p>
+					Fix an issue which caused the app to spin forever
+				</p>
+				<p>
+					Remove Quit entry in the app menu
+				</p>
+				<p>
+					Fix keyboard shortcuts
+				</p>
+				<p>
+					Fix some bugs
+				</p>
+				<p>
+					Update translations
+				</p>
+				<p>
+					Add better error handling
+				</p>
+			</description>
+		</release>
+		<release version="0.1.7" date="2023-5-7" type="stable">
+			<description>
+				<p>
+					Fix an issue which caused the app to crash randomly
+				</p>
+				<p>
+					Add the ability to enable/disable providers from the preferences
+				</p>
+				<p>
+					Add more keyboard shortcuts
+				</p>
+				<p>
+					Update translations
+				</p>
+				<p>
+					Add better error handling
+				</p>
+			</description>
+		</release>
+		<release version="0.1.6" date="2023-5-6" type="stable">
+			<description>
+				<p>
+					Fix an issue which caused the app to crash randomly
+				</p>
+				<p>
+					Add save/load of settings
+				</p>
+			</description>
+		</release>
+		<release version="0.1.5" date="2023-5-4" type="stable">
+			<description>
+				<p>
+					Fix HuggingChat (again)
+				</p>
+			</description>
+		</release>
+		<release version="0.1.4" date="2023-5-4" type="stable">
+			<description>
+				<p>
+					Fix HuggingChat
+				</p>
+			</description>
+		</release>
+		<release version="0.1.3" date="2023-5-4" type="stable">
+			<description>
+				<p>
+					Add multiple providers support
+				</p>
+				<p>
+					Make HuggingChat the default provider
+				</p>
+				<p>
+					Fix some bugs
+				</p>
+				<p>
+					Focus on the response entry
+				</p>
+				<p>
+					Update translations
+				</p>
+			</description>
+		</release>
+		<release version="0.1.2" date="2023-4-27" type="stable">
+			<description>
+				<p>
+					Fix appdata not having release tags
+				</p>
+			</description>
+		</release>
+		<release version="0.1.1" date="2023-4-27" type="stable">
+			<description>
+				<p>
+					Change app ID to io.github.Bavarder.Bavarder
+				</p>
+			</description>
+		</release>
+		<release version="0.1.0" date="2023-4-27" type="stable">
+			<description>
+				<p>
+					First release of Bavarder
+				</p>
+			</description>
+		</release>
+	</releases>
 </component>

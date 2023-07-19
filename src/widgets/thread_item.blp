@@ -1,0 +1,46 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ThreadItem : Box {
+  orientation: horizontal;
+  styles ["flat"]
+
+  Stack value-stack {
+    styles ["flat"]
+    valign: center;
+    hhomogeneous: false;
+    interpolate-size: true;
+    transition-type: crossfade;
+
+    Gtk.Inscription label {
+      hexpand: true;
+      xalign: 0;
+      text-overflow: ellipsize_end;
+    }
+
+    Entry text-value {
+      styles ["flat"]
+    }
+  }
+
+  ToggleButton text-value-toggle {
+    valign: center;
+    icon-name: "document-edit-symbolic";
+    tooltip-text: _("Edit Title");
+    styles ["flat"]
+
+    toggled => $on_text_value_toggled();
+  }
+
+  Button delete_button {
+    styles ["flat"]
+    icon-name: "user-trash-symbolic";
+    clicked => $on_delete_button_clicked();
+  }
+
+  Button star_button {
+    styles ["flat"]
+    icon-name: "non-starred-symbolic"; // starred-symbolic
+    clicked => $on_star_button_clicked();
+  }
+}

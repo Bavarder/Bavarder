@@ -1,0 +1,231 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $BavarderWindow : Adw.ApplicationWindow {
+
+  title: _("Bavarder");
+  default-width: 350;
+  default-height: 500;
+  width-request: 360;
+  height-request: 200;
+
+  ShortcutController {
+    Shortcut {
+      trigger: "<primary>q";
+      action: "action(window.close)";
+    }
+  }
+
+
+
+  Adw.ToastOverlay toast_overlay {
+    Adw.NavigationSplitView split_view {
+      max-sidebar-width: 260;
+      sidebar-width-fraction: 0.38;
+      sidebar: Adw.NavigationPage {
+        title: _("Bavarder");
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar {
+            [start]
+            Button new_chat {
+              icon-name: "chat-message-new-symbolic";
+              tooltip-text: _("New Chat");
+              clicked => $on_new_chat_action();
+            }
+            [end]
+            MenuButton menu_button {
+              primary: true;
+              menu-model: main-menu;
+              icon-name: "open-menu-symbolic";
+              tooltip-text: _("Main Menu");
+
+            }
+          }
+          content: Gtk.ScrolledWindow {
+            hscrollbar-policy: never;
+            child: Gtk.ListBox threads_list {
+              selection-mode: browse;
+              row-activated => $threads_row_activated_cb();
+              styles ["navigation-sidebar"]
+            };
+          };
+        };
+      };
+      content: Adw.NavigationPage message_page {
+        tag: "message";
+        title: _("Message");
+        child: Adw.ToolbarView {
+          [top]
+          Adw.HeaderBar {
+            [start]
+            Gtk.ToggleButton local_mode_toggle {
+              icon-name: 'cloud-disabled-symbolic';
+              toggled => $on_local_mode_toggled();
+            }
+
+            [title]
+            Adw.WindowTitle title {
+              title: _("Chat");
+            }
+
+            [end]
+            Button clear_all_button {
+              icon-name: 'edit-clear-all-symbolic';
+              clicked => $on_clear_all();
+              visible: false;
+            }
+
+            [end]
+            MenuButton model_selector_button {
+              icon-name: 'brain-augemnted-symbolic';
+              visible: false;
+            }
+
+            [end]
+            MenuButton provider_selector_button {
+              icon-name: 'brain-augemnted-symbolic';
+              visible: false;
+            }
+
+          }
+          
+          [top]
+          Adw.Banner banner {
+
+          }
+
+          content: Overlay {
+            // [overlay]
+            // Button {
+            //   styles [
+            //     "circular",
+            //   ]
+            //   icon-name: "go-bottom-symbolic";
+            //   halign: end;
+            //   valign: end;
+            //   margin-bottom: 7;
+            //   margin-end: 7;
+            //   clicked => $scroll_down();
+            // }
+
+            Stack stack {
+
+              Adw.StatusPage status_no_chat {
+                title: _("No Chat");
+                icon-name: "chat-message-new-symbolic";
+              }
+
+              Adw.StatusPage status_no_internet {
+                title: _("No Internet");
+                icon-name: "network-disconnect-symbolic";
+              }
+
+              // Message List
+              ScrolledWindow main {
+                //vexpand: true;
+                hscrollbar-policy: never;
+                //edge-overshot => $handle_edge_reached() swapped;
+
+                Adw.Clamp {
+                //  vexpand: false;
+                //  hexpand: true;
+                  maximum-size: 1200;
+                //  tightening-threshold: 550;
+                //  margin-bottom: 4;
+                //  margin-start: 12;
+                //  margin-end: 12;
+
+                  ListBox main_list {
+                    styles [
+                      "message-list",
+                      "background"
+                    ]
+                    selection-mode: none;
+                    show-separators: false;
+                    hexpand: true;
+                    vexpand: false;
+                  }
+                }
+                    
+                
+              }
+            }
+            
+          };
+
+          [bottom]
+          Gtk.Box toolbar {
+            orientation: vertical;
+            visible: true;
+
+            Gtk.Box {
+              orientation: horizontal;
+
+              ScrolledWindow scrolled_window {
+                vexpand: true;
+                hexpand: true;
+                vscrollbar-policy: external;
+                max-content-height: 100;
+                propagate-natural-height: true;
+              }
+
+              Button ask_button {
+                valign: end;
+
+                margin-start: 5;
+
+                icon-name: "paper-plane-symbolic";
+                tooltip-text: _("Ask");
+                halign: end;
+                clicked => $on_ask();
+                styles ["suggested-action", "circular"]
+              }
+            }
+
+            styles ["small-pill", "toolbar" ]
+          }
+
+
+
+        };
+      };
+    }
+  }
+
+  Adw.Breakpoint {
+    condition ("max-width: 400sp")
+    setters {
+      split_view.collapsed: true;
+
+    }
+  }
+
+  Adw.Breakpoint {
+    condition ("max-width: 500sp")
+    //unapply => $one_pane_unapply_cb();
+    setters {
+      split_view.sidebar-width-fraction: 0.33;
+      split_view.collapsed: true;
+    }
+  }
+
+
+}
+
+menu main-menu {
+  item {
+    label: _("Preferences");
+    action: "app.preferences";
+  }
+
+  item {
+    label: _("Keyboard Shortcuts");
+    action: "win.show-help-overlay";
+  }
+
+  item {
+    label: _("About Bavarder");
+    action: "app.about";
+  }
+}

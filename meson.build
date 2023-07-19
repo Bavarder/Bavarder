@@ -1,5 +1,5 @@
 project('bavarder',
-          version: '0.2.4',
+          version: '0.1.0',
     meson_version: '>= 0.62.0',
   default_options: [ 'warning_level=2', 'werror=false', ],
 )
@@ -10,11 +10,16 @@ python = import('python')
 
 # Constants
 PROJECT_RDNN_NAME = 'io.github.Bavarder.Bavarder'
-BUGTRACKER_URL = 'https://codeberg.org/Bavarder/Bavarder/issues'
-HELP_URL = 'https://codeberg.orgBavarder/Bavarder/issues'
-TRANSLATE_URL = 'https://translate.codeberg.org/engage/bavarder/'
+BUGTRACKER_URL = 'https://gnome.org'
+HELP_URL = 'https://gnome.org'
+TRANSLATE_URL = 'https://gnome.org'
 
-PROJECT_URL = 'https://bavarder.codeberg.page'
+PROJECT_URL = 'https://gnome.org'
+
+dependency('gtk4', version: '>= 4.5.0')
+dependency('libadwaita-1', version: '>= 1.3.99')
+dependency('libportal', version: '>= 0.6')
+dependency('gtksourceview-5', version: '>= 5')
 
 git_bin = find_program('git', required: false)
 

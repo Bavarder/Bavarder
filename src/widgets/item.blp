@@ -1,0 +1,110 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $Item : Box {
+  margin-top: 10;
+  margin-bottom: 10;
+  spacing: 10;
+
+  Adw.Avatar avatar {
+    styles [
+      "avatar-other",
+    ]
+    valign: start;
+    size: 36;
+  }
+
+  Box {
+    orientation: vertical;
+
+    Box message_bubble {
+      spacing: 2;
+      orientation: vertical;
+
+      styles [
+        "message-bubble",
+      ]
+
+
+      Box header {
+        orientation: horizontal;
+
+        Label user {
+          hexpand: true;
+          halign: start;
+          ellipsize: end;
+          selectable: true;
+          margin-end: 15;
+          styles [ "heading" ]
+        }
+      }
+
+      Box message_box {
+        orientation: vertical;
+
+
+        Box content {
+          orientation: vertical;
+
+        }
+
+        Box {
+          vexpand: true;
+          hexpand: true;
+          valign: end;
+
+          Label model {
+            styles [
+              "dim-label",
+              "caption",
+              "timestamp",
+            ]
+
+            justify: left;
+            vexpand: true;
+            hexpand: true;
+            halign: start;
+          }
+
+          // Timestamp label
+          Label timestamp {
+            styles [
+              "dim-label",
+              "caption",
+              "timestamp",
+            ]
+
+            justify: right;
+            vexpand: true;
+            hexpand: true;
+            halign: end;
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+}
+
+
+PopoverMenu popover {
+  menu-model: popover-model;
+}
+
+menu popover-model {
+  section {
+    item {
+      label: _("Edit");
+      action: "event.edit";
+    }
+  }
+  section {
+    item {
+      label: _("Remove");
+      action: "event.delete";
+    }
+  }
+}

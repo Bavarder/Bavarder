@@ -1,7 +1,7 @@
 {
     "app-id" : "io.github.Bavarder.Bavarder",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "44",
+    "runtime-version" : "master",
     "sdk" : "org.gnome.Sdk",
     "command" : "bavarder",
     "finish-args" : [
@@ -10,7 +10,7 @@
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland",
-        "--filesystem=xdg-config/gtk-4.0"
+        "--talk-name=org.freedesktop.Flatpak"
     ],
     "cleanup" : [
         "/include",
@@ -24,9 +24,7 @@
         "*.a"
     ],
     "modules" : [
-       
-        "pypi-dependencies.json",
-        {
+         {
             "name" : "blueprint-compiler",
             "buildsystem" : "meson",
             "sources" : [
@@ -38,16 +36,47 @@
             ]
         },
         {
-            "name" : "bavarder",
-            "builddir" : true,
+            "name" : "libportal",
             "buildsystem" : "meson",
+
             "config-opts": [
-                "-Dbuildtype=release"
+              "-Dbackend-gtk4=enabled",
+              "-Dportal-tests=false",
+              "-Ddocs=false"
             ],
             "sources" : [
                 {
+                    "type" : "git",
+                    "url" : "https://github.com/flatpak/libportal.git",
+                    "branch": "main"
+
+                }
+            ]
+        },
+        "pypi-dependencies.json",
+        {
+          "name": "gpt4all",
+          "buildsystem": "simple",
+          "build-commands": [
+            "cd gpt4all-backend/ && mkdir build && cd build && cmake .. && cmake --build . --parallel",
+            "cd gpt4all-bindings/python && pip wheel --no-deps -w dist . && ls && ls dist && pip3 install \"dist/gpt4all-1.0.6-py3-none-any.whl\" --verbose --exists-action=i --no-index --prefix=${FLATPAK_DEST}  --no-build-isolation"
+          ],
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/nomic-ai/gpt4all",
+              "branch": "main"
+            }
+          ]
+        },
+        {
+            "name" : "bavarder",
+            "builddir" : true,
+            "buildsystem" : "meson",
+            "sources" : [
+                {
                     "type" : "dir",
-                    "path" : "../../."
+        	    "path" : "../../."
                 }
             ]
         }

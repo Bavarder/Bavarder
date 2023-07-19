@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/github/Bavarder/Bavarder">
+    <file preprocess="xml-stripblanks" alias="ui/window.ui">views/window.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/preferences_window.ui">views/preferences_window.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/thread_item.ui">widgets/thread_item.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/item.ui">widgets/item.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/provider_item.ui">providers/provider_item.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/model_item.ui">widgets/model_item.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/download_row.ui">widgets/download_row.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/code_block.ui">widgets/code_block.ui</file>
+    <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
+    <file>style.css</file>
+  </gresource>
+
+  <gresource prefix="/io/github/Bavarder/Bavarder/icons/scalable/actions/">
+    <file preprocess="xml-stripblanks" alias="check-round-outline-symbolic.svg">../data/icons/hicolor/scalable/actions/check-round-outline-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="paper-plane-symbolic.svg">../data/icons/hicolor/scalable/actions/paper-plane-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="cloud-disabled-symbolic.svg">../data/icons/hicolor/scalable/actions/cloud-disabled-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="cloud-filled-symbolic.svg">../data/icons/hicolor/scalable/actions/cloud-filled-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="brain-augemnted-symbolic.svg">../data/icons/hicolor/scalable/actions/brain-augemnted-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="chat-message-new-symbolic.svg">../data/icons/hicolor/scalable/actions/chat-message-new-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="network-disconnected-symbolic.svg">../data/icons/hicolor/scalable/actions/network-disconnected-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="bot-symbolic.svg">../data/icons/hicolor/scalable/actions/bot-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="terminal-symbolic.svg">../data/icons/hicolor/scalable/actions/terminal-symbolic.svg</file>
+  </gresource>
+</gresources>

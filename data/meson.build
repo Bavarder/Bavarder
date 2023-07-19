@@ -1,7 +1,4 @@
 gnome = import('gnome')
-pkgdatadir = join_paths(get_option('prefix'), get_option('datadir'), meson.project_name())
-
-subdir('ui')
 
 desktop_file = i18n.merge_file(
   input: configure_file(
@@ -22,15 +19,6 @@ if desktop_utils.found()
     args: [desktop_file.full_path()]
   )
 endif
-
-gnome.compile_resources('bavarder',
-  'bavarder.gresource.xml',
-  gresource_bundle: true,
-  source_dir: meson.current_build_dir(),
-  install: true,
-  install_dir: PKGDATA_DIR,
-  dependencies: blueprints
-)
 
 appstream_file = i18n.merge_file(
   input: configure_file(
