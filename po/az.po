@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-19 12:39+0200\n"
-"PO-Revision-Date: 2023-06-03 00:37+0000\n"
+"PO-Revision-Date: 2023-07-19 14:04+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Azerbaijani <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/az/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26
@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/views/window.py:228
 msgid "Cancel"
-msgstr ""
+msgstr "Ləğv et"
 
 #: src/views/window.blp:33 src/main.py:146
 msgid "New Chat"
@@ -123,7 +123,7 @@ msgstr ""
 
 #: src/widgets/item.blp:79
 msgid "Edit"
-msgstr ""
+msgstr "Düzəliş et"
 
 #: src/widgets/item.blp:85
 msgid "Remove"
