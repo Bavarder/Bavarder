@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-19 12:39+0200\n"
-"PO-Revision-Date: 2023-07-08 19:38+0000\n"
+"PO-Revision-Date: 2023-07-19 14:04+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Thai <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/th/>\n"
@@ -72,7 +72,7 @@ msgstr ""
 
 #: src/views/window.py:228
 msgid "Cancel"
-msgstr ""
+msgstr "ยกเลิก"
 
 #: src/views/window.blp:33 src/main.py:146
 msgid "New Chat"
@@ -88,7 +88,7 @@ msgstr "ข้อความ"
 
 #: src/views/window.blp:69
 msgid "Chat"
-msgstr ""
+msgstr "พูดคุย"
 
 #: src/views/window.blp:115
 msgid "No Chat"
@@ -122,15 +122,15 @@ msgstr ""
 
 #: src/widgets/item.blp:79
 msgid "Edit"
-msgstr ""
+msgstr "แก้ไข"
 
 #: src/widgets/item.blp:85
 msgid "Remove"
-msgstr ""
+msgstr "ลบ"
 
 #: src/widgets/item.py:137
 msgid "User"
-msgstr ""
+msgstr "ผู้ใช้งาน"
 
 #: src/widgets/item.py:141
 msgid "Assistant"
