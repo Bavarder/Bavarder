@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-19 12:39+0200\n"
-"PO-Revision-Date: 2023-07-19 14:04+0000\n"
+"PO-Revision-Date: 2023-07-19 18:27+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -49,14 +49,12 @@ msgid "Copyright © 2023 Bavarder Developers"
 msgstr ""
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
-msgstr "Modèle"
+msgstr "Modèles"
 
 #: src/views/preferences_window.py:54
 msgid "Download more models"
-msgstr ""
+msgstr "Télécharger plus de modèles"
 
 #: src/views/preferences_window.blp:5 src/views/window.py:156
 #: src/views/window.py:178 src/views/window.blp:218
@@ -69,17 +67,15 @@ msgstr "Fournisseurs"
 
 #: src/views/window.py:227
 msgid "Generating response"
-msgstr ""
+msgstr "En train de générer une réponse"
 
 #: src/views/window.py:228
 msgid "Cancel"
 msgstr "Annuler"
 
 #: src/views/window.blp:33 src/main.py:146
-#, fuzzy
-#| msgid "Chat"
 msgid "New Chat"
-msgstr "Discussion"
+msgstr "Nouvelle Discussion"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
@@ -94,14 +90,12 @@ msgid "Chat"
 msgstr "Discussion"
 
 #: src/views/window.blp:115
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chat"
-msgstr "Discussion"
+msgstr "Pas de Discussion"
 
 #: src/views/window.blp:120
 msgid "No Internet"
-msgstr ""
+msgstr "Pas d'Internet"
 
 #: src/views/window.blp:179
 msgid "Ask"
@@ -118,12 +112,12 @@ msgstr "À propos de Bavarder"
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Téléchargement du modèle %s"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "Modèle %s téléchargé !"
 
 #: src/widgets/item.blp:79
 msgid "Edit"
@@ -144,23 +138,23 @@ msgstr "Assistante :"
 #: src/widgets/model_item.py:30
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "Modèle %s supprimé !"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
 msgid "Edit Title"
-msgstr ""
+msgstr "Modifier le Titre"
 
 #: src/widgets/thread_item.py:46
 msgid "Set Title"
-msgstr ""
+msgstr "Définire le Titre"
 
 #: src/main.py:226
 msgid "Please download a model from Preferences!"
-msgstr ""
+msgstr "Merci de télécharger un modèle depuis les Préférences !"
 
 #: src/main.py:239
 msgid "Please enable a provider from the Brain Menu"
-msgstr ""
+msgstr "Merci d'activer un modèle depuis le Menu Cerveau"
 
 #~ msgid "Prompt"
 #~ msgstr "Requête"
