@@ -13,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-19 12:39+0200\n"
 "PO-Revision-Date: 2023-07-19 14:04+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -29,10 +29,8 @@ msgid "Bavarder"
 msgstr "Bavarder"
 
 #: src/providers/catgpt.py:7
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with a Cat"
-msgstr "Bavarder avec GPT"
+msgstr "Bavarder avec un Chat"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
