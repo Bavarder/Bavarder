@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-19 12:39+0200\n"
-"PO-Revision-Date: 2023-07-08 19:38+0000\n"
+"PO-Revision-Date: 2023-07-19 14:04+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Persian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fa/>\n"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/views/window.py:228
 msgid "Cancel"
-msgstr ""
+msgstr "لغو"
 
 #: src/views/window.blp:33 src/main.py:146
 msgid "New Chat"
@@ -89,7 +89,7 @@ msgstr "پیام"
 
 #: src/views/window.blp:69
 msgid "Chat"
-msgstr ""
+msgstr "گپ"
 
 #: src/views/window.blp:115
 msgid "No Chat"
@@ -123,15 +123,15 @@ msgstr ""
 
 #: src/widgets/item.blp:79
 msgid "Edit"
-msgstr ""
+msgstr "ویرایش"
 
 #: src/widgets/item.blp:85
 msgid "Remove"
-msgstr ""
+msgstr "حذف کردن"
 
 #: src/widgets/item.py:137
 msgid "User"
-msgstr ""
+msgstr "کاربر"
 
 #: src/widgets/item.py:141
 msgid "Assistant"
