@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-19 12:39+0200\n"
+"POT-Creation-Date: 2023-07-19 20:24+0200\n"
 "PO-Revision-Date: 2023-07-19 17:56+0000\n"
 "Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
@@ -19,8 +19,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
@@ -40,13 +40,9 @@ msgstr "Параметры отсутствуют"
 msgid "translator-credits"
 msgstr "Давид Лапшин"
 
-#: src/views/about_window.py:26
-msgid "Bavarder Developers"
-msgstr "Разработчики Bavarder"
-
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 Bavarder Developers"
-msgstr "Авторское право © 2023 Разработчики Bavarder"
+msgid "Copyright © 2023 0xMRTT"
+msgstr "Авторское право © 2023 0xMRTT"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
 msgid "Models"
@@ -56,8 +52,8 @@ msgstr "Модели"
 msgid "Download more models"
 msgstr "Загрузить больше моделей"
 
-#: src/views/preferences_window.blp:5 src/views/window.py:156
-#: src/views/window.py:178 src/views/window.blp:218
+#: src/views/preferences_window.blp:5 src/views/window.py:170
+#: src/views/window.py:192 src/views/window.blp:218
 msgid "Preferences"
 msgstr "Параметры"
 
@@ -65,15 +61,15 @@ msgstr "Параметры"
 msgid "Providers"
 msgstr "Провайдеры"
 
-#: src/views/window.py:227
+#: src/views/window.py:241
 msgid "Generating response"
 msgstr "Генерируется ответ"
 
-#: src/views/window.py:228
+#: src/views/window.py:242
 msgid "Cancel"
 msgstr "Отменить"
 
-#: src/views/window.blp:33 src/main.py:146
+#: src/views/window.blp:33 src/main.py:147
 msgid "New Chat"
 msgstr "Новый чат"
 
@@ -119,23 +115,23 @@ msgstr "Загружается модель %s"
 msgid "Model %s downloaded!"
 msgstr "Модель %s загружена!"
 
-#: src/widgets/item.blp:79
+#: src/widgets/item.blp:100
 msgid "Edit"
 msgstr "Изменить"
 
-#: src/widgets/item.blp:85
+#: src/widgets/item.blp:106
 msgid "Remove"
 msgstr "Удалить"
 
-#: src/widgets/item.py:137
+#: src/widgets/item.py:117
 msgid "User"
 msgstr "Пользователь"
 
-#: src/widgets/item.py:141
+#: src/widgets/item.py:121
 msgid "Assistant"
 msgstr "Помощник"
 
-#: src/widgets/model_item.py:30
+#: src/widgets/model_item.py:31
 #, python-format
 msgid "Model %s deleted!"
 msgstr "Модель %s удалена!"
@@ -148,13 +144,19 @@ msgstr "Изменить название"
 msgid "Set Title"
 msgstr "Установить название"
 
-#: src/main.py:226
+#: src/main.py:227
 msgid "Please download a model from Preferences!"
 msgstr "Пожалуйста загрузите модель из Параметров!"
 
-#: src/main.py:239
+#: src/main.py:240
 msgid "Please enable a provider from the Brain Menu"
 msgstr "Пожалуйста включите поставщика из меню \"мозг\""
+
+#~ msgid "Bavarder Developers"
+#~ msgstr "Разработчики Bavarder"
+
+#~ msgid "Copyright © 2023 Bavarder Developers"
+#~ msgstr "Авторское право © 2023 Разработчики Bavarder"
 
 #~ msgid "Prompt"
 #~ msgstr "Поле ввода"
@@ -253,9 +255,6 @@ msgstr "Пожалуйста включите поставщика из меню
 
 #~ msgid "0xMRTT"
 #~ msgstr "0xMRTT"
-
-#~ msgid "Copyright © 2023 0xMRTT"
-#~ msgstr "Авторское право © 2023 0xMRTT"
 
 #~ msgid "New version available!"
 #~ msgstr "Доступна новая версия!"

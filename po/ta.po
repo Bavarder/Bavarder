@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-19 12:39+0200\n"
+"POT-Creation-Date: 2023-07-19 20:24+0200\n"
 "PO-Revision-Date: 2023-07-19 14:02+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Tamil <https://translate.codeberg.org/projects/bavarder/"
@@ -37,13 +37,9 @@ msgstr "விருப்பத்தேர்வுகள் இல்லை"
 msgid "translator-credits"
 msgstr "K.B.Dharun Krishna https://github.com/kbdharun"
 
-#: src/views/about_window.py:26
-msgid "Bavarder Developers"
-msgstr ""
-
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 Bavarder Developers"
-msgstr ""
+msgid "Copyright © 2023 0xMRTT"
+msgstr "பதிப்புரிமை © 2023 0xMRTT"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
 #, fuzzy
@@ -55,8 +51,8 @@ msgstr "மாதிரி"
 msgid "Download more models"
 msgstr ""
 
-#: src/views/preferences_window.blp:5 src/views/window.py:156
-#: src/views/window.py:178 src/views/window.blp:218
+#: src/views/preferences_window.blp:5 src/views/window.py:170
+#: src/views/window.py:192 src/views/window.blp:218
 msgid "Preferences"
 msgstr "விருப்பத்தேர்வுகள்"
 
@@ -64,15 +60,15 @@ msgstr "விருப்பத்தேர்வுகள்"
 msgid "Providers"
 msgstr "வழங்குபவர்கள்"
 
-#: src/views/window.py:227
+#: src/views/window.py:241
 msgid "Generating response"
 msgstr ""
 
-#: src/views/window.py:228
+#: src/views/window.py:242
 msgid "Cancel"
 msgstr "ரத்துசெய்"
 
-#: src/views/window.blp:33 src/main.py:146
+#: src/views/window.blp:33 src/main.py:147
 msgid "New Chat"
 msgstr ""
 
@@ -118,23 +114,23 @@ msgstr ""
 msgid "Model %s downloaded!"
 msgstr ""
 
-#: src/widgets/item.blp:79
+#: src/widgets/item.blp:100
 msgid "Edit"
 msgstr "திருத்து"
 
-#: src/widgets/item.blp:85
+#: src/widgets/item.blp:106
 msgid "Remove"
 msgstr "Remove"
 
-#: src/widgets/item.py:137
+#: src/widgets/item.py:117
 msgid "User"
 msgstr ""
 
-#: src/widgets/item.py:141
+#: src/widgets/item.py:121
 msgid "Assistant"
 msgstr ""
 
-#: src/widgets/model_item.py:30
+#: src/widgets/model_item.py:31
 #, python-format
 msgid "Model %s deleted!"
 msgstr ""
@@ -147,11 +143,11 @@ msgstr ""
 msgid "Set Title"
 msgstr ""
 
-#: src/main.py:226
+#: src/main.py:227
 msgid "Please download a model from Preferences!"
 msgstr ""
 
-#: src/main.py:239
+#: src/main.py:240
 msgid "Please enable a provider from the Brain Menu"
 msgstr ""
 
@@ -253,9 +249,6 @@ msgstr ""
 
 #~ msgid "0xMRTT"
 #~ msgstr "0xMRTT"
-
-#~ msgid "Copyright © 2023 0xMRTT"
-#~ msgstr "பதிப்புரிமை © 2023 0xMRTT"
 
 #~ msgid "New version available!"
 #~ msgstr "புதிய பதிப்பு உள்ளது!"

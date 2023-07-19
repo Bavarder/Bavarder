@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-19 12:39+0200\n"
+"POT-Creation-Date: 2023-07-19 20:24+0200\n"
 "PO-Revision-Date: 2023-07-19 18:27+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
@@ -40,13 +40,9 @@ msgstr "Aucune préférences disponibles"
 msgid "translator-credits"
 msgstr "Irénée Thirion"
 
-#: src/views/about_window.py:26
-msgid "Bavarder Developers"
-msgstr ""
-
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 Bavarder Developers"
-msgstr ""
+msgid "Copyright © 2023 0xMRTT"
+msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
 msgid "Models"
@@ -56,8 +52,8 @@ msgstr "Modèles"
 msgid "Download more models"
 msgstr "Télécharger plus de modèles"
 
-#: src/views/preferences_window.blp:5 src/views/window.py:156
-#: src/views/window.py:178 src/views/window.blp:218
+#: src/views/preferences_window.blp:5 src/views/window.py:170
+#: src/views/window.py:192 src/views/window.blp:218
 msgid "Preferences"
 msgstr "Préférences"
 
@@ -65,15 +61,15 @@ msgstr "Préférences"
 msgid "Providers"
 msgstr "Fournisseurs"
 
-#: src/views/window.py:227
+#: src/views/window.py:241
 msgid "Generating response"
 msgstr "En train de générer une réponse"
 
-#: src/views/window.py:228
+#: src/views/window.py:242
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/views/window.blp:33 src/main.py:146
+#: src/views/window.blp:33 src/main.py:147
 msgid "New Chat"
 msgstr "Nouvelle Discussion"
 
@@ -119,23 +115,23 @@ msgstr "Téléchargement du modèle %s"
 msgid "Model %s downloaded!"
 msgstr "Modèle %s téléchargé !"
 
-#: src/widgets/item.blp:79
+#: src/widgets/item.blp:100
 msgid "Edit"
 msgstr "Modifier"
 
-#: src/widgets/item.blp:85
+#: src/widgets/item.blp:106
 msgid "Remove"
 msgstr "Retirer"
 
-#: src/widgets/item.py:137
+#: src/widgets/item.py:117
 msgid "User"
 msgstr "Utilisateur"
 
-#: src/widgets/item.py:141
+#: src/widgets/item.py:121
 msgid "Assistant"
 msgstr "Assistante :"
 
-#: src/widgets/model_item.py:30
+#: src/widgets/model_item.py:31
 #, python-format
 msgid "Model %s deleted!"
 msgstr "Modèle %s supprimé !"
@@ -148,11 +144,11 @@ msgstr "Modifier le Titre"
 msgid "Set Title"
 msgstr "Définire le Titre"
 
-#: src/main.py:226
+#: src/main.py:227
 msgid "Please download a model from Preferences!"
 msgstr "Merci de télécharger un modèle depuis les Préférences !"
 
-#: src/main.py:239
+#: src/main.py:240
 msgid "Please enable a provider from the Brain Menu"
 msgstr "Merci d'activer un modèle depuis le Menu Cerveau"
 
@@ -257,9 +253,6 @@ msgstr "Merci d'activer un modèle depuis le Menu Cerveau"
 
 #~ msgid "0xMRTT"
 #~ msgstr "0xMRTT"
-
-#~ msgid "Copyright © 2023 0xMRTT"
-#~ msgstr "Copyright © 2023 0xMRTT"
 
 #~ msgid "New version available!"
 #~ msgstr "Nouvelle version disponible !"
