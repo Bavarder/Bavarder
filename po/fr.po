@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-19 20:24+0200\n"
-"PO-Revision-Date: 2023-07-19 18:27+0000\n"
+"PO-Revision-Date: 2023-07-19 18:29+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -129,7 +129,7 @@ msgstr "Utilisateur"
 
 #: src/widgets/item.py:121
 msgid "Assistant"
-msgstr "Assistante :"
+msgstr "Assistant"
 
 #: src/widgets/model_item.py:31
 #, python-format
