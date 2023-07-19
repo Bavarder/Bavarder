@@ -1,5 +1,5 @@
 {
-    "app-id" : "io.github.Bavarder.Bavarder",
+    "app-id" : "io.github.Bavarder.Bavarder.Devel",
     "runtime" : "org.gnome.Platform",
     "runtime-version" : "master",
     "sdk" : "org.gnome.Sdk",
@@ -74,9 +74,8 @@
             "builddir" : true,
             "buildsystem" : "meson",
             "config-opts": [
-                "-Dbuildtype=release"
+                "-Dbuildtype=debug"
             ],
-
             "sources" : [
                 {
                     "type" : "dir",
