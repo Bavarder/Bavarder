@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-01 17:40+0000\n"
+"POT-Creation-Date: 2023-07-19 12:39+0200\n"
 "PO-Revision-Date: 2023-07-08 19:38+0000\n"
 "Last-Translator: albanobattistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
@@ -25,188 +25,256 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.18.1\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
+#: src/views/window.blp:26
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
-msgid "Preferences"
-msgstr "Preferenze"
+#: src/providers/catgpt.py:7
+#, fuzzy
+#| msgid "Chit-chat with an AI"
+msgid "Chit-Chat with a Cat"
+msgstr "Chiacchiera con un'IA"
 
-#: data/ui/preferences.blp:12
-msgid "Prompt"
-msgstr "Prompt"
-
-#: data/ui/preferences.blp:15
-msgid "Clear prompt after send"
-msgstr "Svuota il prompt dopo l'invio"
-
-#: data/ui/preferences.blp:16
-msgid "The prompt will be cleared after send"
-msgstr "Il prompt verrà svuotato dopo l'invio"
-
-#: data/ui/preferences.blp:24
-msgid "Use plain text for output"
-msgstr "Utlizzare testo semplice per il rendimento"
-
-#: data/ui/preferences.blp:25
-msgid "The plain text without formatting will be used"
-msgstr "Il testo semplice senza formattazione verrà usato"
-
-#: data/ui/preferences.blp:33
-msgid "Close all windows without warning"
-msgstr "Chiudi tutte le finestre senza avvisare"
-
-#: data/ui/preferences.blp:34
-msgid "All windows will be closed without warning, this can lead to data loss"
-msgstr ""
-"Tutte le finestre verranno chiuse senza avviso, questo può portare alla "
-"perdita di dati"
-
-#: data/ui/preferences.blp:42
-msgid "Look for provider news"
-msgstr "Cerca nuovi gestori"
-
-#: data/ui/preferences.blp:43
-msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr ""
-"Notizie su problemi con i gestori verranno recuperate dal sito web di "
-"Bavander"
-
-#: data/ui/preferences.blp:52 src/main.py:271
-msgid "Providers"
-msgstr "Fornitori"
-
-#: data/ui/window.blp:28
-msgid "Main Menu"
-msgstr "Menù principale"
-
-#: data/ui/window.blp:34 src/providers/base.py:50
-msgid "No network connection"
-msgstr "Nessuna connessione di rete"
-
-#: data/ui/window.blp:61
-msgid "Response"
-msgstr "Risposta"
-
-#: data/ui/window.blp:113
-msgid "Copy to Clipboard"
-msgstr "Copia negli appunti"
-
-#: data/ui/window.blp:123
-msgid "Stop"
-msgstr "Stop"
-
-#: data/ui/window.blp:152
-msgid "ERROR"
-msgstr "ERRORE"
-
-#: data/ui/window.blp:153
-msgid "DESCRIPTION"
-msgstr "DESCRIZIONE"
-
-#: data/ui/window.blp:156
-msgid "Try Again"
-msgstr "Prova di nuovo"
-
-#: data/ui/window.blp:205
-msgid "Ask"
-msgstr "Chiedi"
-
-#: data/ui/window.blp:224
-msgid "New window"
-msgstr "Nuova finestra"
-
-#: data/ui/window.blp:235 src/main.py:274
-msgid "Keyboard Shortcuts"
-msgstr "Scorciatoie da tastiera"
-
-#: data/ui/window.blp:240 src/main.py:275
-msgid "About Bavarder"
-msgstr "Informazioni su Bavarder"
-
-#: src/providers/base.py:43
-msgid "No API key provided, you can provide one in settings"
-msgstr ""
-"Nessuna chiave API fornita; è possibile fornirne una nelle impostazioni"
-
-#: src/providers/base.py:45
-msgid "Open settings"
-msgstr "Apri impostazioni"
-
-#: src/providers/base.py:81
-msgid "About provider"
-msgstr "Sul gestore"
-
-#: src/providers/base.py:95
-msgid "How to get a token"
-msgstr "Come avere una chiave"
-
-#: src/providers/base.py:118
+#: src/providers/provider_item.blp:12
 msgid "No preferences available"
 msgstr "Impostazioni non disponibili"
-
-#: src/providers/huggingface.py:73 src/providers/transformer.py:68
-msgid "API Key"
-msgstr "Chiave API"
-
-#: src/providers/openai.py:27
-msgid "Prompt too long, splitting into chunks."
-msgstr "Promt troppo lungo, frazionando in pezzi."
-
-#: src/providers/openai.py:49
-msgid "You don't have access to this model"
-msgstr "Non ha accesso a questo modello"
-
-#: src/providers/openai.py:54
-msgid ""
-"You exceeded your current quota, please check your plan and billing details."
-msgstr ""
-"Superato la quota corrente, perfavore contrallare il proprio piano ed i "
-"dettagli della fatturazione."
-
-#: src/providers/openai.py:59
-msgid "API Error"
-msgstr "Errore API"
-
-#: src/providers/openai.py:70
-msgid "No model selected, you can choose one in preferences"
-msgstr "Nessun modello selezionato, puo scegliere uno nelle impostazioni"
-
-#: src/providers/openaicustom.py:33
-msgid "API Url"
-msgstr "API Url"
-
-#: src/providers/openaicustom.py:40
-msgid "Model"
-msgstr "Modello"
-
-#: src/providers/openaicustom.py:80
-msgid "How to choose a model"
-msgstr "Come selezionare un modello"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "Albano Battistella"
 
 #: src/views/about_window.py:26
-msgid "0xMRTT"
-msgstr "0xMRTT"
+msgid "Bavarder Developers"
+msgstr ""
 
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 0xMRTT"
-msgstr "Copyright © 2023 0xMRTT"
+msgid "Copyright © 2023 Bavarder Developers"
+msgstr ""
 
-#: src/main.py:124
-msgid "New version available!"
-msgstr "Nuova versione disponibile!"
+#: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
+#, fuzzy
+#| msgid "Model"
+msgid "Models"
+msgstr "Modello"
 
-#: src/main.py:240
-msgid "New Window"
-msgstr "Nuova finestra"
+#: src/views/preferences_window.py:54
+msgid "Download more models"
+msgstr ""
 
-#~ msgid "Message"
-#~ msgstr "Messaggio"
+#: src/views/preferences_window.blp:5 src/views/window.py:156
+#: src/views/window.py:178 src/views/window.blp:218
+msgid "Preferences"
+msgstr "Preferenze"
+
+#: src/views/preferences_window.blp:13
+msgid "Providers"
+msgstr "Fornitori"
+
+#: src/views/window.py:227
+msgid "Generating response"
+msgstr ""
+
+#: src/views/window.py:228
+msgid "Cancel"
+msgstr ""
+
+#: src/views/window.blp:33 src/main.py:146
+#, fuzzy
+#| msgid "Chat"
+msgid "New Chat"
+msgstr "Chat"
+
+#: src/views/window.blp:41
+msgid "Main Menu"
+msgstr "Menù principale"
+
+#: src/views/window.blp:57
+msgid "Message"
+msgstr "Messaggio"
+
+#: src/views/window.blp:69
+msgid "Chat"
+msgstr "Chat"
+
+#: src/views/window.blp:115
+#, fuzzy
+#| msgid "Chat"
+msgid "No Chat"
+msgstr "Chat"
+
+#: src/views/window.blp:120
+msgid "No Internet"
+msgstr ""
+
+#: src/views/window.blp:179
+msgid "Ask"
+msgstr "Chiedi"
+
+#: src/views/window.blp:223
+msgid "Keyboard Shortcuts"
+msgstr "Scorciatoie da tastiera"
+
+#: src/views/window.blp:228
+msgid "About Bavarder"
+msgstr "Informazioni su Bavarder"
+
+#: src/widgets/download_row.py:29
+#, python-format
+msgid "Downloading model %s"
+msgstr ""
+
+#: src/widgets/download_row.py:45
+#, python-format
+msgid "Model %s downloaded!"
+msgstr ""
+
+#: src/widgets/item.blp:79
+msgid "Edit"
+msgstr ""
+
+#: src/widgets/item.blp:85
+msgid "Remove"
+msgstr ""
+
+#: src/widgets/item.py:137
+msgid "User"
+msgstr ""
+
+#: src/widgets/item.py:141
+msgid "Assistant"
+msgstr ""
+
+#: src/widgets/model_item.py:30
+#, python-format
+msgid "Model %s deleted!"
+msgstr ""
+
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
+msgid "Edit Title"
+msgstr ""
+
+#: src/widgets/thread_item.py:46
+msgid "Set Title"
+msgstr ""
+
+#: src/main.py:226
+msgid "Please download a model from Preferences!"
+msgstr ""
+
+#: src/main.py:239
+msgid "Please enable a provider from the Brain Menu"
+msgstr ""
+
+#~ msgid "Prompt"
+#~ msgstr "Prompt"
+
+#~ msgid "Clear prompt after send"
+#~ msgstr "Svuota il prompt dopo l'invio"
+
+#~ msgid "The prompt will be cleared after send"
+#~ msgstr "Il prompt verrà svuotato dopo l'invio"
+
+#~ msgid "Use plain text for output"
+#~ msgstr "Utlizzare testo semplice per il rendimento"
+
+#~ msgid "The plain text without formatting will be used"
+#~ msgstr "Il testo semplice senza formattazione verrà usato"
+
+#~ msgid "Close all windows without warning"
+#~ msgstr "Chiudi tutte le finestre senza avvisare"
+
+#~ msgid ""
+#~ "All windows will be closed without warning, this can lead to data loss"
+#~ msgstr ""
+#~ "Tutte le finestre verranno chiuse senza avviso, questo può portare alla "
+#~ "perdita di dati"
+
+#~ msgid "Look for provider news"
+#~ msgstr "Cerca nuovi gestori"
+
+#~ msgid ""
+#~ "News about issues with providers will be fetched from Bavarder website"
+#~ msgstr ""
+#~ "Notizie su problemi con i gestori verranno recuperate dal sito web di "
+#~ "Bavander"
+
+#~ msgid "No network connection"
+#~ msgstr "Nessuna connessione di rete"
+
+#~ msgid "Response"
+#~ msgstr "Risposta"
+
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Copia negli appunti"
+
+#~ msgid "Stop"
+#~ msgstr "Stop"
+
+#~ msgid "ERROR"
+#~ msgstr "ERRORE"
+
+#~ msgid "DESCRIPTION"
+#~ msgstr "DESCRIZIONE"
+
+#~ msgid "Try Again"
+#~ msgstr "Prova di nuovo"
+
+#~ msgid "New window"
+#~ msgstr "Nuova finestra"
+
+#~ msgid "No API key provided, you can provide one in settings"
+#~ msgstr ""
+#~ "Nessuna chiave API fornita; è possibile fornirne una nelle impostazioni"
+
+#~ msgid "Open settings"
+#~ msgstr "Apri impostazioni"
+
+#~ msgid "About provider"
+#~ msgstr "Sul gestore"
+
+#~ msgid "How to get a token"
+#~ msgstr "Come avere una chiave"
+
+#~ msgid "API Key"
+#~ msgstr "Chiave API"
+
+#~ msgid "Prompt too long, splitting into chunks."
+#~ msgstr "Promt troppo lungo, frazionando in pezzi."
+
+#~ msgid "You don't have access to this model"
+#~ msgstr "Non ha accesso a questo modello"
+
+#~ msgid ""
+#~ "You exceeded your current quota, please check your plan and billing "
+#~ "details."
+#~ msgstr ""
+#~ "Superato la quota corrente, perfavore contrallare il proprio piano ed i "
+#~ "dettagli della fatturazione."
+
+#~ msgid "API Error"
+#~ msgstr "Errore API"
+
+#~ msgid "No model selected, you can choose one in preferences"
+#~ msgstr "Nessun modello selezionato, puo scegliere uno nelle impostazioni"
+
+#~ msgid "API Url"
+#~ msgstr "API Url"
+
+#~ msgid "How to choose a model"
+#~ msgstr "Come selezionare un modello"
+
+#~ msgid "0xMRTT"
+#~ msgstr "0xMRTT"
+
+#~ msgid "Copyright © 2023 0xMRTT"
+#~ msgstr "Copyright © 2023 0xMRTT"
+
+#~ msgid "New version available!"
+#~ msgstr "Nuova versione disponibile!"
+
+#~ msgid "New Window"
+#~ msgstr "Nuova finestra"
 
 #~ msgid "Wait"
 #~ msgstr "Attendere"
@@ -246,17 +314,11 @@ msgstr "Nuova finestra"
 #~ msgid "CatGPT"
 #~ msgstr "Cat GPT"
 
-#~ msgid "Chit-chat with an AI"
-#~ msgstr "Chiacchiera con un'IA"
-
 #~ msgid "Screenshot of Main UI"
 #~ msgstr "Schermata dell'interfaccia principale"
 
 #~ msgid "Screenshot of Preferences UI"
 #~ msgstr "Schermata dell'interfaccia delle preferenze"
-
-#~ msgid "Chat"
-#~ msgstr "Chat"
 
 #, fuzzy
 #~| msgid "Cat GPT"

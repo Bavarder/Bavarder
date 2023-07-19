@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-01 17:40+0000\n"
+"POT-Creation-Date: 2023-07-19 12:39+0200\n"
 "PO-Revision-Date: 2023-06-28 06:02+0000\n"
 "Last-Translator: nakibrayan2 <codeberg.org.quoz7@aleeas.com>\n"
 "Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
@@ -21,183 +21,246 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Weblate 4.18.1\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
+#: src/views/window.blp:26
 msgid "Bavarder"
 msgstr "ثرثرة"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
-msgid "Preferences"
-msgstr "التفضيلات"
-
-#: data/ui/preferences.blp:12
-msgid "Prompt"
-msgstr "موجه"
-
-#: data/ui/preferences.blp:15
-msgid "Clear prompt after send"
-msgstr "مسح نصح الموجه بعد الإرسال"
-
-#: data/ui/preferences.blp:16
-msgid "The prompt will be cleared after send"
-msgstr "سيتم مسح نص الموجه بعد الإرسال"
-
-#: data/ui/preferences.blp:24
-msgid "Use plain text for output"
-msgstr "إستخدام نص بدون تنسيق للإخراج"
-
-#: data/ui/preferences.blp:25
-msgid "The plain text without formatting will be used"
-msgstr "سيتم استخدام نص بدون تنسيق"
-
-#: data/ui/preferences.blp:33
-msgid "Close all windows without warning"
-msgstr "إغلاق جميع النوافض بدون سابق إنذار"
-
-#: data/ui/preferences.blp:34
-msgid "All windows will be closed without warning, this can lead to data loss"
+#: src/providers/catgpt.py:7
+msgid "Chit-Chat with a Cat"
 msgstr ""
-"سيتم إغلاق جميع النوافذ دون سابق إنذار ، وهذا قد يؤدي إلى فقدان للبيانات"
 
-#: data/ui/preferences.blp:42
-msgid "Look for provider news"
-msgstr "البحث عن أخبار مزود الخدمة"
-
-#: data/ui/preferences.blp:43
-msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr ""
-"سيتم جلب الأخبار المتعلقة بالمشكلات مع مقدمي الخدمة من موقع ثرثرة على الويب"
-
-#: data/ui/preferences.blp:52 src/main.py:271
-msgid "Providers"
-msgstr "مقدمي الخدمة"
-
-#: data/ui/window.blp:28
-msgid "Main Menu"
-msgstr "القائمة الرئيسية"
-
-#: data/ui/window.blp:34 src/providers/base.py:50
-msgid "No network connection"
-msgstr "لا يوجد اتصال بالشبكة"
-
-#: data/ui/window.blp:61
-msgid "Response"
-msgstr "الجواب"
-
-#: data/ui/window.blp:113
-msgid "Copy to Clipboard"
-msgstr "النسخ إلى الحافظة"
-
-#: data/ui/window.blp:123
-msgid "Stop"
-msgstr "إيقاف"
-
-#: data/ui/window.blp:152
-msgid "ERROR"
-msgstr "خطأ"
-
-#: data/ui/window.blp:153
-msgid "DESCRIPTION"
-msgstr "وصف"
-
-#: data/ui/window.blp:156
-msgid "Try Again"
-msgstr "حاول مرة أخرى"
-
-#: data/ui/window.blp:205
-msgid "Ask"
-msgstr "طرح السؤال"
-
-#: data/ui/window.blp:224
-msgid "New window"
-msgstr "إنشاء نافذة جديدة"
-
-#: data/ui/window.blp:235 src/main.py:274
-msgid "Keyboard Shortcuts"
-msgstr "اختصارات لوحة المفاتيح"
-
-#: data/ui/window.blp:240 src/main.py:275
-msgid "About Bavarder"
-msgstr "حول ثرثرة"
-
-#: src/providers/base.py:43
-msgid "No API key provided, you can provide one in settings"
-msgstr "لم يتم توفير مفتاح API ، يمكن توفير مفتاح في التفضيلات"
-
-#: src/providers/base.py:45
-msgid "Open settings"
-msgstr "فتح التفضيلات"
-
-#: src/providers/base.py:81
-msgid "About provider"
-msgstr "حول مقدم الخدمة"
-
-#: src/providers/base.py:95
-msgid "How to get a token"
-msgstr "كيفية التحصل على توكن"
-
-#: src/providers/base.py:118
+#: src/providers/provider_item.blp:12
 msgid "No preferences available"
 msgstr "لا توجد تفضيلات متاحة"
-
-#: src/providers/huggingface.py:73 src/providers/transformer.py:68
-msgid "API Key"
-msgstr "مفتاح API"
-
-#: src/providers/openai.py:27
-msgid "Prompt too long, splitting into chunks."
-msgstr "النص في الموجه طويل جدا ، سيتم تقسيمة إلى قطع."
-
-#: src/providers/openai.py:49
-msgid "You don't have access to this model"
-msgstr "ليس لديك حق الوصول إلى هذا النموذج"
-
-#: src/providers/openai.py:54
-msgid ""
-"You exceeded your current quota, please check your plan and billing details."
-msgstr "لقد تجاوزت حصتك الحالية ، يرجى التأكد من إشتراكك و تفاصيل الفواتير."
-
-#: src/providers/openai.py:59
-msgid "API Error"
-msgstr "خطأ في API"
-
-#: src/providers/openai.py:70
-msgid "No model selected, you can choose one in preferences"
-msgstr "لم يتم تحديد أي نموذج ، يمكن اختيار نموذج في التفضيلات"
-
-#: src/providers/openaicustom.py:33
-msgid "API Url"
-msgstr "رابط API"
-
-#: src/providers/openaicustom.py:40
-msgid "Model"
-msgstr "نموذج"
-
-#: src/providers/openaicustom.py:80
-msgid "How to choose a model"
-msgstr "كيفية اختيار نموذج"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "حقوق المترجمين"
 
 #: src/views/about_window.py:26
-msgid "0xMRTT"
-msgstr "0xMRTT"
+msgid "Bavarder Developers"
+msgstr ""
 
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 0xMRTT"
-msgstr "حقوق النشر © 2023 0xMRTT"
+msgid "Copyright © 2023 Bavarder Developers"
+msgstr ""
 
-#: src/main.py:124
-msgid "New version available!"
-msgstr "هنالك إصدار جديد متوفر!"
+#: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
+#, fuzzy
+#| msgid "Model"
+msgid "Models"
+msgstr "نموذج"
 
-#: src/main.py:240
-msgid "New Window"
-msgstr "نافذة جديدة"
+#: src/views/preferences_window.py:54
+msgid "Download more models"
+msgstr ""
 
-#~ msgid "Message"
-#~ msgstr "رسالة"
+#: src/views/preferences_window.blp:5 src/views/window.py:156
+#: src/views/window.py:178 src/views/window.blp:218
+msgid "Preferences"
+msgstr "التفضيلات"
+
+#: src/views/preferences_window.blp:13
+msgid "Providers"
+msgstr "مقدمي الخدمة"
+
+#: src/views/window.py:227
+msgid "Generating response"
+msgstr ""
+
+#: src/views/window.py:228
+msgid "Cancel"
+msgstr ""
+
+#: src/views/window.blp:33 src/main.py:146
+msgid "New Chat"
+msgstr ""
+
+#: src/views/window.blp:41
+msgid "Main Menu"
+msgstr "القائمة الرئيسية"
+
+#: src/views/window.blp:57
+msgid "Message"
+msgstr "رسالة"
+
+#: src/views/window.blp:69
+msgid "Chat"
+msgstr ""
+
+#: src/views/window.blp:115
+msgid "No Chat"
+msgstr ""
+
+#: src/views/window.blp:120
+msgid "No Internet"
+msgstr ""
+
+#: src/views/window.blp:179
+msgid "Ask"
+msgstr "طرح السؤال"
+
+#: src/views/window.blp:223
+msgid "Keyboard Shortcuts"
+msgstr "اختصارات لوحة المفاتيح"
+
+#: src/views/window.blp:228
+msgid "About Bavarder"
+msgstr "حول ثرثرة"
+
+#: src/widgets/download_row.py:29
+#, python-format
+msgid "Downloading model %s"
+msgstr ""
+
+#: src/widgets/download_row.py:45
+#, python-format
+msgid "Model %s downloaded!"
+msgstr ""
+
+#: src/widgets/item.blp:79
+msgid "Edit"
+msgstr ""
+
+#: src/widgets/item.blp:85
+msgid "Remove"
+msgstr ""
+
+#: src/widgets/item.py:137
+msgid "User"
+msgstr ""
+
+#: src/widgets/item.py:141
+msgid "Assistant"
+msgstr ""
+
+#: src/widgets/model_item.py:30
+#, python-format
+msgid "Model %s deleted!"
+msgstr ""
+
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
+msgid "Edit Title"
+msgstr ""
+
+#: src/widgets/thread_item.py:46
+msgid "Set Title"
+msgstr ""
+
+#: src/main.py:226
+msgid "Please download a model from Preferences!"
+msgstr ""
+
+#: src/main.py:239
+msgid "Please enable a provider from the Brain Menu"
+msgstr ""
+
+#~ msgid "Prompt"
+#~ msgstr "موجه"
+
+#~ msgid "Clear prompt after send"
+#~ msgstr "مسح نصح الموجه بعد الإرسال"
+
+#~ msgid "The prompt will be cleared after send"
+#~ msgstr "سيتم مسح نص الموجه بعد الإرسال"
+
+#~ msgid "Use plain text for output"
+#~ msgstr "إستخدام نص بدون تنسيق للإخراج"
+
+#~ msgid "The plain text without formatting will be used"
+#~ msgstr "سيتم استخدام نص بدون تنسيق"
+
+#~ msgid "Close all windows without warning"
+#~ msgstr "إغلاق جميع النوافض بدون سابق إنذار"
+
+#~ msgid ""
+#~ "All windows will be closed without warning, this can lead to data loss"
+#~ msgstr ""
+#~ "سيتم إغلاق جميع النوافذ دون سابق إنذار ، وهذا قد يؤدي إلى فقدان للبيانات"
+
+#~ msgid "Look for provider news"
+#~ msgstr "البحث عن أخبار مزود الخدمة"
+
+#~ msgid ""
+#~ "News about issues with providers will be fetched from Bavarder website"
+#~ msgstr ""
+#~ "سيتم جلب الأخبار المتعلقة بالمشكلات مع مقدمي الخدمة من موقع ثرثرة على "
+#~ "الويب"
+
+#~ msgid "No network connection"
+#~ msgstr "لا يوجد اتصال بالشبكة"
+
+#~ msgid "Response"
+#~ msgstr "الجواب"
+
+#~ msgid "Copy to Clipboard"
+#~ msgstr "النسخ إلى الحافظة"
+
+#~ msgid "Stop"
+#~ msgstr "إيقاف"
+
+#~ msgid "ERROR"
+#~ msgstr "خطأ"
+
+#~ msgid "DESCRIPTION"
+#~ msgstr "وصف"
+
+#~ msgid "Try Again"
+#~ msgstr "حاول مرة أخرى"
+
+#~ msgid "New window"
+#~ msgstr "إنشاء نافذة جديدة"
+
+#~ msgid "No API key provided, you can provide one in settings"
+#~ msgstr "لم يتم توفير مفتاح API ، يمكن توفير مفتاح في التفضيلات"
+
+#~ msgid "Open settings"
+#~ msgstr "فتح التفضيلات"
+
+#~ msgid "About provider"
+#~ msgstr "حول مقدم الخدمة"
+
+#~ msgid "How to get a token"
+#~ msgstr "كيفية التحصل على توكن"
+
+#~ msgid "API Key"
+#~ msgstr "مفتاح API"
+
+#~ msgid "Prompt too long, splitting into chunks."
+#~ msgstr "النص في الموجه طويل جدا ، سيتم تقسيمة إلى قطع."
+
+#~ msgid "You don't have access to this model"
+#~ msgstr "ليس لديك حق الوصول إلى هذا النموذج"
+
+#~ msgid ""
+#~ "You exceeded your current quota, please check your plan and billing "
+#~ "details."
+#~ msgstr "لقد تجاوزت حصتك الحالية ، يرجى التأكد من إشتراكك و تفاصيل الفواتير."
+
+#~ msgid "API Error"
+#~ msgstr "خطأ في API"
+
+#~ msgid "No model selected, you can choose one in preferences"
+#~ msgstr "لم يتم تحديد أي نموذج ، يمكن اختيار نموذج في التفضيلات"
+
+#~ msgid "API Url"
+#~ msgstr "رابط API"
+
+#~ msgid "How to choose a model"
+#~ msgstr "كيفية اختيار نموذج"
+
+#~ msgid "0xMRTT"
+#~ msgstr "0xMRTT"
+
+#~ msgid "Copyright © 2023 0xMRTT"
+#~ msgstr "حقوق النشر © 2023 0xMRTT"
+
+#~ msgid "New version available!"
+#~ msgstr "هنالك إصدار جديد متوفر!"
+
+#~ msgid "New Window"
+#~ msgstr "نافذة جديدة"
 
 #~ msgid "Wait"
 #~ msgstr "يرجى الإنتضار"

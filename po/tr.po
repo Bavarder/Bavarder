@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-01 17:40+0000\n"
+"POT-Creation-Date: 2023-07-19 12:39+0200\n"
 "PO-Revision-Date: 2023-06-03 00:37+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://translate.codeberg.org/projects/bavarder/"
@@ -22,163 +22,20 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
+#: src/views/window.blp:26
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
-msgid "Preferences"
-msgstr "Tercihler"
+#: src/providers/catgpt.py:7
+#, fuzzy
+#| msgid "Chit-chat with an AI"
+msgid "Chit-Chat with a Cat"
+msgstr "Chit AI ile sohbet edin"
 
-#: data/ui/preferences.blp:12
-msgid "Prompt"
-msgstr "Girdi"
-
-#: data/ui/preferences.blp:15
-msgid "Clear prompt after send"
-msgstr "Gönderdikten sonra girdi alanını temizle"
-
-#: data/ui/preferences.blp:16
-msgid "The prompt will be cleared after send"
-msgstr "Gönderimden sonra girdi alanı temizlenecek"
-
-#: data/ui/preferences.blp:24
-msgid "Use plain text for output"
-msgstr "Çıktı için düz metin kullanın"
-
-#: data/ui/preferences.blp:25
-msgid "The plain text without formatting will be used"
-msgstr "Biçimlendirilmemiş düz metin kullanılacaktır"
-
-#: data/ui/preferences.blp:33
-msgid "Close all windows without warning"
-msgstr "Uyarı vermeden tüm pencereleri kapatın"
-
-#: data/ui/preferences.blp:34
-msgid "All windows will be closed without warning, this can lead to data loss"
-msgstr ""
-"Tüm pencereler uyarılmadan kapatılacaktır, bu veri kaybına neden olabilir"
-
-#: data/ui/preferences.blp:42
-msgid "Look for provider news"
-msgstr "Sağlayıcı haberlerini arayın"
-
-#: data/ui/preferences.blp:43
-msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr ""
-"Sağlayıcılarla ilgili sorunlar hakkındaki haberler Bavarder web sitesinden "
-"alınacaktır"
-
-#: data/ui/preferences.blp:52 src/main.py:271
-msgid "Providers"
-msgstr "Sağlayıcılar"
-
-#: data/ui/window.blp:28
-msgid "Main Menu"
-msgstr "Ana Menü"
-
-#: data/ui/window.blp:34 src/providers/base.py:50
-msgid "No network connection"
-msgstr "Ağ bağlantısı yok"
-
-#: data/ui/window.blp:61
-msgid "Response"
-msgstr "Yanıt"
-
-#: data/ui/window.blp:113
-msgid "Copy to Clipboard"
-msgstr "Panoya kopyala"
-
-#: data/ui/window.blp:123
-msgid "Stop"
-msgstr "Dur"
-
-#: data/ui/window.blp:152
-msgid "ERROR"
-msgstr ""
-
-#: data/ui/window.blp:153
-msgid "DESCRIPTION"
-msgstr ""
-
-#: data/ui/window.blp:156
-msgid "Try Again"
-msgstr "Yeniden deneyin"
-
-#: data/ui/window.blp:205
-msgid "Ask"
-msgstr "Sor"
-
-#: data/ui/window.blp:224
-msgid "New window"
-msgstr "Yeni pencere"
-
-#: data/ui/window.blp:235 src/main.py:274
-msgid "Keyboard Shortcuts"
-msgstr "Klavye kısayolları"
-
-#: data/ui/window.blp:240 src/main.py:275
-msgid "About Bavarder"
-msgstr "Bavarder Hakkında"
-
-#: src/providers/base.py:43
-msgid "No API key provided, you can provide one in settings"
-msgstr "API anahtarı sağlanmadı, ayarlarda bir tane sağlayabilirsiniz"
-
-#: src/providers/base.py:45
-msgid "Open settings"
-msgstr "Ayarları aç"
-
-#: src/providers/base.py:81
-msgid "About provider"
-msgstr "Sağlayıcı hakkında"
-
-#: src/providers/base.py:95
-msgid "How to get a token"
-msgstr "Jeton nasıl alınır"
-
-#: src/providers/base.py:118
+#: src/providers/provider_item.blp:12
 msgid "No preferences available"
 msgstr "Kullanılabilir tercih yok"
-
-#: src/providers/huggingface.py:73 src/providers/transformer.py:68
-msgid "API Key"
-msgstr "API Anahtarı"
-
-#: src/providers/openai.py:27
-msgid "Prompt too long, splitting into chunks."
-msgstr "Girdi çok uzun, parçalara ayırıyor."
-
-#: src/providers/openai.py:49
-msgid "You don't have access to this model"
-msgstr "Bu modele erişiminiz yok"
-
-#: src/providers/openai.py:54
-msgid ""
-"You exceeded your current quota, please check your plan and billing details."
-msgstr ""
-"Mevcut kotanızı aştınız, lütfen planınızı ve fatura ayrıntılarınızı kontrol "
-"edin."
-
-#: src/providers/openai.py:59
-msgid "API Error"
-msgstr "API Hatası"
-
-#: src/providers/openai.py:70
-msgid "No model selected, you can choose one in preferences"
-msgstr "Seçili model yok, tercihlerden birini seçebilirsiniz"
-
-#: src/providers/openaicustom.py:33
-msgid "API Url"
-msgstr "API URL"
-
-#: src/providers/openaicustom.py:40
-msgid "Model"
-msgstr "Model"
-
-#: src/providers/openaicustom.py:80
-msgid "How to choose a model"
-msgstr "Bir model nasıl seçilir"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -188,23 +45,228 @@ msgstr ""
 "  Kudret EMRE https://launchpad.net/~kudretemre"
 
 #: src/views/about_window.py:26
-msgid "0xMRTT"
-msgstr "0xMRTT"
+msgid "Bavarder Developers"
+msgstr ""
 
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 0xMRTT"
-msgstr "Telif hakkı © 2023 0xMRTT"
+msgid "Copyright © 2023 Bavarder Developers"
+msgstr ""
 
-#: src/main.py:124
-msgid "New version available!"
-msgstr "Yeni sürüm mevcut!"
+#: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
+#, fuzzy
+#| msgid "Model"
+msgid "Models"
+msgstr "Model"
 
-#: src/main.py:240
-msgid "New Window"
-msgstr "Yeni Pencere"
+#: src/views/preferences_window.py:54
+msgid "Download more models"
+msgstr ""
 
-#~ msgid "Message"
-#~ msgstr "Mesaj"
+#: src/views/preferences_window.blp:5 src/views/window.py:156
+#: src/views/window.py:178 src/views/window.blp:218
+msgid "Preferences"
+msgstr "Tercihler"
+
+#: src/views/preferences_window.blp:13
+msgid "Providers"
+msgstr "Sağlayıcılar"
+
+#: src/views/window.py:227
+msgid "Generating response"
+msgstr ""
+
+#: src/views/window.py:228
+msgid "Cancel"
+msgstr ""
+
+#: src/views/window.blp:33 src/main.py:146
+#, fuzzy
+#| msgid "Chat"
+msgid "New Chat"
+msgstr "Sohbet"
+
+#: src/views/window.blp:41
+msgid "Main Menu"
+msgstr "Ana Menü"
+
+#: src/views/window.blp:57
+msgid "Message"
+msgstr "Mesaj"
+
+#: src/views/window.blp:69
+msgid "Chat"
+msgstr "Sohbet"
+
+#: src/views/window.blp:115
+#, fuzzy
+#| msgid "Chat"
+msgid "No Chat"
+msgstr "Sohbet"
+
+#: src/views/window.blp:120
+msgid "No Internet"
+msgstr ""
+
+#: src/views/window.blp:179
+msgid "Ask"
+msgstr "Sor"
+
+#: src/views/window.blp:223
+msgid "Keyboard Shortcuts"
+msgstr "Klavye kısayolları"
+
+#: src/views/window.blp:228
+msgid "About Bavarder"
+msgstr "Bavarder Hakkında"
+
+#: src/widgets/download_row.py:29
+#, python-format
+msgid "Downloading model %s"
+msgstr ""
+
+#: src/widgets/download_row.py:45
+#, python-format
+msgid "Model %s downloaded!"
+msgstr ""
+
+#: src/widgets/item.blp:79
+msgid "Edit"
+msgstr ""
+
+#: src/widgets/item.blp:85
+msgid "Remove"
+msgstr ""
+
+#: src/widgets/item.py:137
+msgid "User"
+msgstr ""
+
+#: src/widgets/item.py:141
+msgid "Assistant"
+msgstr ""
+
+#: src/widgets/model_item.py:30
+#, python-format
+msgid "Model %s deleted!"
+msgstr ""
+
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
+msgid "Edit Title"
+msgstr ""
+
+#: src/widgets/thread_item.py:46
+msgid "Set Title"
+msgstr ""
+
+#: src/main.py:226
+msgid "Please download a model from Preferences!"
+msgstr ""
+
+#: src/main.py:239
+msgid "Please enable a provider from the Brain Menu"
+msgstr ""
+
+#~ msgid "Prompt"
+#~ msgstr "Girdi"
+
+#~ msgid "Clear prompt after send"
+#~ msgstr "Gönderdikten sonra girdi alanını temizle"
+
+#~ msgid "The prompt will be cleared after send"
+#~ msgstr "Gönderimden sonra girdi alanı temizlenecek"
+
+#~ msgid "Use plain text for output"
+#~ msgstr "Çıktı için düz metin kullanın"
+
+#~ msgid "The plain text without formatting will be used"
+#~ msgstr "Biçimlendirilmemiş düz metin kullanılacaktır"
+
+#~ msgid "Close all windows without warning"
+#~ msgstr "Uyarı vermeden tüm pencereleri kapatın"
+
+#~ msgid ""
+#~ "All windows will be closed without warning, this can lead to data loss"
+#~ msgstr ""
+#~ "Tüm pencereler uyarılmadan kapatılacaktır, bu veri kaybına neden olabilir"
+
+#~ msgid "Look for provider news"
+#~ msgstr "Sağlayıcı haberlerini arayın"
+
+#~ msgid ""
+#~ "News about issues with providers will be fetched from Bavarder website"
+#~ msgstr ""
+#~ "Sağlayıcılarla ilgili sorunlar hakkındaki haberler Bavarder web "
+#~ "sitesinden alınacaktır"
+
+#~ msgid "No network connection"
+#~ msgstr "Ağ bağlantısı yok"
+
+#~ msgid "Response"
+#~ msgstr "Yanıt"
+
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Panoya kopyala"
+
+#~ msgid "Stop"
+#~ msgstr "Dur"
+
+#~ msgid "Try Again"
+#~ msgstr "Yeniden deneyin"
+
+#~ msgid "New window"
+#~ msgstr "Yeni pencere"
+
+#~ msgid "No API key provided, you can provide one in settings"
+#~ msgstr "API anahtarı sağlanmadı, ayarlarda bir tane sağlayabilirsiniz"
+
+#~ msgid "Open settings"
+#~ msgstr "Ayarları aç"
+
+#~ msgid "About provider"
+#~ msgstr "Sağlayıcı hakkında"
+
+#~ msgid "How to get a token"
+#~ msgstr "Jeton nasıl alınır"
+
+#~ msgid "API Key"
+#~ msgstr "API Anahtarı"
+
+#~ msgid "Prompt too long, splitting into chunks."
+#~ msgstr "Girdi çok uzun, parçalara ayırıyor."
+
+#~ msgid "You don't have access to this model"
+#~ msgstr "Bu modele erişiminiz yok"
+
+#~ msgid ""
+#~ "You exceeded your current quota, please check your plan and billing "
+#~ "details."
+#~ msgstr ""
+#~ "Mevcut kotanızı aştınız, lütfen planınızı ve fatura ayrıntılarınızı "
+#~ "kontrol edin."
+
+#~ msgid "API Error"
+#~ msgstr "API Hatası"
+
+#~ msgid "No model selected, you can choose one in preferences"
+#~ msgstr "Seçili model yok, tercihlerden birini seçebilirsiniz"
+
+#~ msgid "API Url"
+#~ msgstr "API URL"
+
+#~ msgid "How to choose a model"
+#~ msgstr "Bir model nasıl seçilir"
+
+#~ msgid "0xMRTT"
+#~ msgstr "0xMRTT"
+
+#~ msgid "Copyright © 2023 0xMRTT"
+#~ msgstr "Telif hakkı © 2023 0xMRTT"
+
+#~ msgid "New version available!"
+#~ msgstr "Yeni sürüm mevcut!"
+
+#~ msgid "New Window"
+#~ msgstr "Yeni Pencere"
 
 #~ msgid "Wait"
 #~ msgstr "Bekle"
@@ -240,9 +302,6 @@ msgstr "Yeni Pencere"
 #~ msgid "CatGPT"
 #~ msgstr "Cat GPT"
 
-#~ msgid "Chit-chat with an AI"
-#~ msgstr "Chit AI ile sohbet edin"
-
 #~ msgid "Screenshot of Main UI"
 #~ msgstr "Ana Kullanıcı Arayüzü'nün ekran görüntüsü"
 
@@ -250,9 +309,6 @@ msgstr "Yeni Pencere"
 #~| msgid "Screenshot of Main UI"
 #~ msgid "Screenshot of Preferences UI"
 #~ msgstr "Ana Kullanıcı Arayüzü'nün ekran görüntüsü"
-
-#~ msgid "Chat"
-#~ msgstr "Sohbet"
 
 #, fuzzy
 #~| msgid "Cat GPT"

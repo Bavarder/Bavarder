@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-01 17:40+0000\n"
+"POT-Creation-Date: 2023-07-19 12:39+0200\n"
 "PO-Revision-Date: 2023-06-17 10:37+0000\n"
 "Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
@@ -23,189 +23,257 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
+#: src/views/window.blp:26
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
-msgid "Preferences"
-msgstr "Préférences"
+#: src/providers/catgpt.py:7
+#, fuzzy
+#| msgid "Chit-chat with an AI"
+msgid "Chit-Chat with a Cat"
+msgstr "Bavarder avec GPT"
 
-#: data/ui/preferences.blp:12
-msgid "Prompt"
-msgstr "Requête"
-
-#: data/ui/preferences.blp:15
-msgid "Clear prompt after send"
-msgstr "Effacer la requête après envoi"
-
-#: data/ui/preferences.blp:16
-msgid "The prompt will be cleared after send"
-msgstr "La requête sera effacée après envoi"
-
-#: data/ui/preferences.blp:24
-msgid "Use plain text for output"
-msgstr "Utiliser du texte brut pour la sortie"
-
-#: data/ui/preferences.blp:25
-msgid "The plain text without formatting will be used"
-msgstr "Le texte brut sans mise en forme sera utilisé"
-
-#: data/ui/preferences.blp:33
-msgid "Close all windows without warning"
-msgstr "Fermer toutes les fenêtres sans avertissement"
-
-#: data/ui/preferences.blp:34
-msgid "All windows will be closed without warning, this can lead to data loss"
-msgstr ""
-"Toutes les fenêtres vont être fermées sans avertissement, cela peut créer "
-"des pertes de données"
-
-#: data/ui/preferences.blp:42
-msgid "Look for provider news"
-msgstr "Chercher des informations à propos des fournisseurs"
-
-#: data/ui/preferences.blp:43
-msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr ""
-"Des informations à propos des problèmes avec les fournisseurs seront "
-"téléchargées depuis le site de Bavarder"
-
-#: data/ui/preferences.blp:52 src/main.py:271
-msgid "Providers"
-msgstr "Fournisseurs"
-
-#: data/ui/window.blp:28
-msgid "Main Menu"
-msgstr "Menu principal"
-
-#: data/ui/window.blp:34 src/providers/base.py:50
-msgid "No network connection"
-msgstr "Pas de connexion réseau"
-
-#: data/ui/window.blp:61
-msgid "Response"
-msgstr "Réponse"
-
-#: data/ui/window.blp:113
-msgid "Copy to Clipboard"
-msgstr "Copier dans le presse-papiers"
-
-#: data/ui/window.blp:123
-msgid "Stop"
-msgstr "Arrêter"
-
-#: data/ui/window.blp:152
-msgid "ERROR"
-msgstr "Erreur"
-
-#: data/ui/window.blp:153
-msgid "DESCRIPTION"
-msgstr "DESCRIPTION"
-
-#: data/ui/window.blp:156
-msgid "Try Again"
-msgstr "Réessayer"
-
-#: data/ui/window.blp:205
-msgid "Ask"
-msgstr "Demander"
-
-#: data/ui/window.blp:224
-msgid "New window"
-msgstr "Nouvelle fenêtre"
-
-#: data/ui/window.blp:235 src/main.py:274
-msgid "Keyboard Shortcuts"
-msgstr "Raccourcis clavier"
-
-#: data/ui/window.blp:240 src/main.py:275
-msgid "About Bavarder"
-msgstr "À propos de Bavarder"
-
-#: src/providers/base.py:43
-msgid "No API key provided, you can provide one in settings"
-msgstr ""
-"Pas de clé d’API fournie, vous pouvez en ajouter une dans les paramètres"
-
-#: src/providers/base.py:45
-msgid "Open settings"
-msgstr "Ouvrir les paramètres"
-
-#: src/providers/base.py:81
-msgid "About provider"
-msgstr "À propos du fournisseur"
-
-#: src/providers/base.py:95
-msgid "How to get a token"
-msgstr "Comment obtenir un jeton"
-
-#: src/providers/base.py:118
+#: src/providers/provider_item.blp:12
 msgid "No preferences available"
 msgstr "Aucune préférences disponibles"
-
-#: src/providers/huggingface.py:73 src/providers/transformer.py:68
-msgid "API Key"
-msgstr "Clé d’API"
-
-#: src/providers/openai.py:27
-msgid "Prompt too long, splitting into chunks."
-msgstr "Requête trop longue, découpage en morceaux."
-
-#: src/providers/openai.py:49
-msgid "You don't have access to this model"
-msgstr "Vous n’avez pas accès à ce modèle"
-
-#: src/providers/openai.py:54
-msgid ""
-"You exceeded your current quota, please check your plan and billing details."
-msgstr ""
-"Vous avez dépassé votre quota actuel, veuillez vérifier votre forfait et vos "
-"informations de facturation."
-
-#: src/providers/openai.py:59
-msgid "API Error"
-msgstr "Erreur d’API"
-
-#: src/providers/openai.py:70
-msgid "No model selected, you can choose one in preferences"
-msgstr ""
-"Aucun modèle sélectionné, vous pouvez en choisir un dans les préférences"
-
-#: src/providers/openaicustom.py:33
-msgid "API Url"
-msgstr "URL d’API"
-
-#: src/providers/openaicustom.py:40
-msgid "Model"
-msgstr "Modèle"
-
-#: src/providers/openaicustom.py:80
-msgid "How to choose a model"
-msgstr "Comment choisir un modèle"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "Irénée Thirion"
 
 #: src/views/about_window.py:26
-msgid "0xMRTT"
-msgstr "0xMRTT"
+msgid "Bavarder Developers"
+msgstr ""
 
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 0xMRTT"
-msgstr "Copyright © 2023 0xMRTT"
+msgid "Copyright © 2023 Bavarder Developers"
+msgstr ""
 
-#: src/main.py:124
-msgid "New version available!"
-msgstr "Nouvelle version disponible !"
+#: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
+#, fuzzy
+#| msgid "Model"
+msgid "Models"
+msgstr "Modèle"
 
-#: src/main.py:240
-msgid "New Window"
-msgstr "Nouvelle fenêtre"
+#: src/views/preferences_window.py:54
+msgid "Download more models"
+msgstr ""
 
-#~ msgid "Message"
-#~ msgstr "Message"
+#: src/views/preferences_window.blp:5 src/views/window.py:156
+#: src/views/window.py:178 src/views/window.blp:218
+msgid "Preferences"
+msgstr "Préférences"
+
+#: src/views/preferences_window.blp:13
+msgid "Providers"
+msgstr "Fournisseurs"
+
+#: src/views/window.py:227
+msgid "Generating response"
+msgstr ""
+
+#: src/views/window.py:228
+msgid "Cancel"
+msgstr ""
+
+#: src/views/window.blp:33 src/main.py:146
+#, fuzzy
+#| msgid "Chat"
+msgid "New Chat"
+msgstr "Discussion"
+
+#: src/views/window.blp:41
+msgid "Main Menu"
+msgstr "Menu principal"
+
+#: src/views/window.blp:57
+msgid "Message"
+msgstr "Message"
+
+#: src/views/window.blp:69
+msgid "Chat"
+msgstr "Discussion"
+
+#: src/views/window.blp:115
+#, fuzzy
+#| msgid "Chat"
+msgid "No Chat"
+msgstr "Discussion"
+
+#: src/views/window.blp:120
+msgid "No Internet"
+msgstr ""
+
+#: src/views/window.blp:179
+msgid "Ask"
+msgstr "Demander"
+
+#: src/views/window.blp:223
+msgid "Keyboard Shortcuts"
+msgstr "Raccourcis clavier"
+
+#: src/views/window.blp:228
+msgid "About Bavarder"
+msgstr "À propos de Bavarder"
+
+#: src/widgets/download_row.py:29
+#, python-format
+msgid "Downloading model %s"
+msgstr ""
+
+#: src/widgets/download_row.py:45
+#, python-format
+msgid "Model %s downloaded!"
+msgstr ""
+
+#: src/widgets/item.blp:79
+msgid "Edit"
+msgstr ""
+
+#: src/widgets/item.blp:85
+msgid "Remove"
+msgstr ""
+
+#: src/widgets/item.py:137
+msgid "User"
+msgstr ""
+
+#: src/widgets/item.py:141
+msgid "Assistant"
+msgstr ""
+
+#: src/widgets/model_item.py:30
+#, python-format
+msgid "Model %s deleted!"
+msgstr ""
+
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
+msgid "Edit Title"
+msgstr ""
+
+#: src/widgets/thread_item.py:46
+msgid "Set Title"
+msgstr ""
+
+#: src/main.py:226
+msgid "Please download a model from Preferences!"
+msgstr ""
+
+#: src/main.py:239
+msgid "Please enable a provider from the Brain Menu"
+msgstr ""
+
+#~ msgid "Prompt"
+#~ msgstr "Requête"
+
+#~ msgid "Clear prompt after send"
+#~ msgstr "Effacer la requête après envoi"
+
+#~ msgid "The prompt will be cleared after send"
+#~ msgstr "La requête sera effacée après envoi"
+
+#~ msgid "Use plain text for output"
+#~ msgstr "Utiliser du texte brut pour la sortie"
+
+#~ msgid "The plain text without formatting will be used"
+#~ msgstr "Le texte brut sans mise en forme sera utilisé"
+
+#~ msgid "Close all windows without warning"
+#~ msgstr "Fermer toutes les fenêtres sans avertissement"
+
+#~ msgid ""
+#~ "All windows will be closed without warning, this can lead to data loss"
+#~ msgstr ""
+#~ "Toutes les fenêtres vont être fermées sans avertissement, cela peut créer "
+#~ "des pertes de données"
+
+#~ msgid "Look for provider news"
+#~ msgstr "Chercher des informations à propos des fournisseurs"
+
+#~ msgid ""
+#~ "News about issues with providers will be fetched from Bavarder website"
+#~ msgstr ""
+#~ "Des informations à propos des problèmes avec les fournisseurs seront "
+#~ "téléchargées depuis le site de Bavarder"
+
+#~ msgid "No network connection"
+#~ msgstr "Pas de connexion réseau"
+
+#~ msgid "Response"
+#~ msgstr "Réponse"
+
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Copier dans le presse-papiers"
+
+#~ msgid "Stop"
+#~ msgstr "Arrêter"
+
+#~ msgid "ERROR"
+#~ msgstr "Erreur"
+
+#~ msgid "DESCRIPTION"
+#~ msgstr "DESCRIPTION"
+
+#~ msgid "Try Again"
+#~ msgstr "Réessayer"
+
+#~ msgid "New window"
+#~ msgstr "Nouvelle fenêtre"
+
+#~ msgid "No API key provided, you can provide one in settings"
+#~ msgstr ""
+#~ "Pas de clé d’API fournie, vous pouvez en ajouter une dans les paramètres"
+
+#~ msgid "Open settings"
+#~ msgstr "Ouvrir les paramètres"
+
+#~ msgid "About provider"
+#~ msgstr "À propos du fournisseur"
+
+#~ msgid "How to get a token"
+#~ msgstr "Comment obtenir un jeton"
+
+#~ msgid "API Key"
+#~ msgstr "Clé d’API"
+
+#~ msgid "Prompt too long, splitting into chunks."
+#~ msgstr "Requête trop longue, découpage en morceaux."
+
+#~ msgid "You don't have access to this model"
+#~ msgstr "Vous n’avez pas accès à ce modèle"
+
+#~ msgid ""
+#~ "You exceeded your current quota, please check your plan and billing "
+#~ "details."
+#~ msgstr ""
+#~ "Vous avez dépassé votre quota actuel, veuillez vérifier votre forfait et "
+#~ "vos informations de facturation."
+
+#~ msgid "API Error"
+#~ msgstr "Erreur d’API"
+
+#~ msgid "No model selected, you can choose one in preferences"
+#~ msgstr ""
+#~ "Aucun modèle sélectionné, vous pouvez en choisir un dans les préférences"
+
+#~ msgid "API Url"
+#~ msgstr "URL d’API"
+
+#~ msgid "How to choose a model"
+#~ msgstr "Comment choisir un modèle"
+
+#~ msgid "0xMRTT"
+#~ msgstr "0xMRTT"
+
+#~ msgid "Copyright © 2023 0xMRTT"
+#~ msgstr "Copyright © 2023 0xMRTT"
+
+#~ msgid "New version available!"
+#~ msgstr "Nouvelle version disponible !"
+
+#~ msgid "New Window"
+#~ msgstr "Nouvelle fenêtre"
 
 #~ msgid "Wait"
 #~ msgstr "Attendez"
@@ -245,9 +313,6 @@ msgstr "Nouvelle fenêtre"
 #~ msgid "CatGPT"
 #~ msgstr "Cat GPT"
 
-#~ msgid "Chit-chat with an AI"
-#~ msgstr "Bavarder avec GPT"
-
 #~ msgid "Screenshot of Main UI"
 #~ msgstr "Capture d’écran de l’interface principale"
 
@@ -255,9 +320,6 @@ msgstr "Nouvelle fenêtre"
 #~| msgid "Screenshot of Main UI"
 #~ msgid "Screenshot of Preferences UI"
 #~ msgstr "Capture d’écran de l’interface principale"
-
-#~ msgid "Chat"
-#~ msgstr "Discussion"
 
 #~ msgid "GPT"
 #~ msgstr "GPT"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-01 17:40+0000\n"
+"POT-Creation-Date: 2023-07-19 12:39+0200\n"
 "PO-Revision-Date: 2023-06-20 04:02+0000\n"
 "Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://translate.codeberg.org/projects/bavarder/"
@@ -20,184 +20,248 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
+#: src/views/window.blp:26
 msgid "Bavarder"
 msgstr "பவார்டர்"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
-msgid "Preferences"
-msgstr "விருப்பத்தேர்வுகள்"
-
-#: data/ui/preferences.blp:12
-msgid "Prompt"
-msgstr "உள்ளீடு"
-
-#: data/ui/preferences.blp:15
-msgid "Clear prompt after send"
-msgstr "அனுப்பிய பின் உள்ளீட்டை அழிக்கவும்"
-
-#: data/ui/preferences.blp:16
-msgid "The prompt will be cleared after send"
-msgstr "அனுப்பிய பிறகு உள்ளீடு அழிக்கப்படும்"
-
-#: data/ui/preferences.blp:24
-msgid "Use plain text for output"
-msgstr "வெளியீட்டிற்கு எளிய உரையைப் பயன்படுத்தவும்"
-
-#: data/ui/preferences.blp:25
-msgid "The plain text without formatting will be used"
-msgstr "வடிவமைப்பு இல்லாத எளிய உரை பயன்படுத்தப்படும்"
-
-#: data/ui/preferences.blp:33
-msgid "Close all windows without warning"
-msgstr "எச்சரிக்கை இல்லாமல் அனைத்து சாளரங்களையும் மூடு"
-
-#: data/ui/preferences.blp:34
-msgid "All windows will be closed without warning, this can lead to data loss"
+#: src/providers/catgpt.py:7
+msgid "Chit-Chat with a Cat"
 msgstr ""
-"அனைத்து சாளரங்களும் எச்சரிக்கை இல்லாமல் மூடப்படும், இது தரவு இழப்புக்கு வழிவகுக்கும்"
 
-#: data/ui/preferences.blp:42
-msgid "Look for provider news"
-msgstr "வழங்குநர் செய்திகளைத் தேடுங்கள்"
-
-#: data/ui/preferences.blp:43
-msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr "வழங்குநர்களுடனான சிக்கல்கள் பற்றிய செய்திகள் பவார்டர் இணையதளத்தில் இருந்து பெறப்படும்"
-
-#: data/ui/preferences.blp:52 src/main.py:271
-msgid "Providers"
-msgstr "வழங்குபவர்கள்"
-
-#: data/ui/window.blp:28
-msgid "Main Menu"
-msgstr "முதன்மை பட்டியல்"
-
-#: data/ui/window.blp:34 src/providers/base.py:50
-msgid "No network connection"
-msgstr "பிணைய இணைப்பு இல்லை"
-
-#: data/ui/window.blp:61
-msgid "Response"
-msgstr "பதில்"
-
-#: data/ui/window.blp:113
-msgid "Copy to Clipboard"
-msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
-
-#: data/ui/window.blp:123
-msgid "Stop"
-msgstr "நிறுத்து"
-
-#: data/ui/window.blp:152
-msgid "ERROR"
-msgstr "பிழை"
-
-#: data/ui/window.blp:153
-msgid "DESCRIPTION"
-msgstr "விளக்கம்"
-
-#: data/ui/window.blp:156
-msgid "Try Again"
-msgstr "மீண்டும் முயற்சிக்கவும்"
-
-#: data/ui/window.blp:205
-msgid "Ask"
-msgstr "கேள்"
-
-#: data/ui/window.blp:224
-msgid "New window"
-msgstr "புதிய சாளரம்"
-
-#: data/ui/window.blp:235 src/main.py:274
-msgid "Keyboard Shortcuts"
-msgstr "விசைப்பலகை குறுக்குவழிகள்"
-
-#: data/ui/window.blp:240 src/main.py:275
-msgid "About Bavarder"
-msgstr "பவார்டர் பற்றி"
-
-#: src/providers/base.py:43
-msgid "No API key provided, you can provide one in settings"
-msgstr "API விசை எதுவும் வழங்கப்படவில்லை, நீங்கள் அமைப்புகளில் ஒன்றை வழங்கலாம்"
-
-#: src/providers/base.py:45
-msgid "Open settings"
-msgstr "அமைப்புகளைத் திறக்கவும்"
-
-#: src/providers/base.py:81
-msgid "About provider"
-msgstr "வழங்குபவர் பற்றி"
-
-#: src/providers/base.py:95
-msgid "How to get a token"
-msgstr "குறி அடையாளம் பெறுவது எப்படி"
-
-#: src/providers/base.py:118
+#: src/providers/provider_item.blp:12
 msgid "No preferences available"
 msgstr "விருப்பத்தேர்வுகள் இல்லை"
-
-#: src/providers/huggingface.py:73 src/providers/transformer.py:68
-msgid "API Key"
-msgstr "API விசை"
-
-#: src/providers/openai.py:27
-msgid "Prompt too long, splitting into chunks."
-msgstr "உள்ளீடு மிக நீளமானது, துண்டுகளாகப் பிரிக்கப்படுகிறது."
-
-#: src/providers/openai.py:49
-msgid "You don't have access to this model"
-msgstr "இந்த மாதிரிக்கான அணுகல் உங்களிடம் இல்லை"
-
-#: src/providers/openai.py:54
-msgid ""
-"You exceeded your current quota, please check your plan and billing details."
-msgstr ""
-"உங்கள் தற்போதைய ஒதுக்கீட்டை மீறிவிட்டீர்கள், உங்கள் திட்டம் மற்றும் கட்டண விவரங்களைச் "
-"சரிபார்க்கவும்."
-
-#: src/providers/openai.py:59
-msgid "API Error"
-msgstr "API பிழை"
-
-#: src/providers/openai.py:70
-msgid "No model selected, you can choose one in preferences"
-msgstr "எந்த மாதிரியும் தேர்ந்தெடுக்கப்படவில்லை, விருப்பத்தேர்வுகளில் ஒன்றைத் தேர்ந்தெடுக்கலாம்"
-
-#: src/providers/openaicustom.py:33
-msgid "API Url"
-msgstr "API Url"
-
-#: src/providers/openaicustom.py:40
-msgid "Model"
-msgstr "மாதிரி"
-
-#: src/providers/openaicustom.py:80
-msgid "How to choose a model"
-msgstr "ஒரு மாதிரியை எவ்வாறு தேர்வு செய்வது"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "K.B.Dharun Krishna https://github.com/kbdharun"
 
 #: src/views/about_window.py:26
-msgid "0xMRTT"
-msgstr "0xMRTT"
+msgid "Bavarder Developers"
+msgstr ""
 
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 0xMRTT"
-msgstr "பதிப்புரிமை © 2023 0xMRTT"
+msgid "Copyright © 2023 Bavarder Developers"
+msgstr ""
 
-#: src/main.py:124
-msgid "New version available!"
-msgstr "புதிய பதிப்பு உள்ளது!"
+#: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
+#, fuzzy
+#| msgid "Model"
+msgid "Models"
+msgstr "மாதிரி"
 
-#: src/main.py:240
-msgid "New Window"
-msgstr "புதிய சாளரம்"
+#: src/views/preferences_window.py:54
+msgid "Download more models"
+msgstr ""
 
-#~ msgid "Message"
-#~ msgstr "செய்தி"
+#: src/views/preferences_window.blp:5 src/views/window.py:156
+#: src/views/window.py:178 src/views/window.blp:218
+msgid "Preferences"
+msgstr "விருப்பத்தேர்வுகள்"
+
+#: src/views/preferences_window.blp:13
+msgid "Providers"
+msgstr "வழங்குபவர்கள்"
+
+#: src/views/window.py:227
+msgid "Generating response"
+msgstr ""
+
+#: src/views/window.py:228
+msgid "Cancel"
+msgstr ""
+
+#: src/views/window.blp:33 src/main.py:146
+msgid "New Chat"
+msgstr ""
+
+#: src/views/window.blp:41
+msgid "Main Menu"
+msgstr "முதன்மை பட்டியல்"
+
+#: src/views/window.blp:57
+msgid "Message"
+msgstr "செய்தி"
+
+#: src/views/window.blp:69
+msgid "Chat"
+msgstr ""
+
+#: src/views/window.blp:115
+msgid "No Chat"
+msgstr ""
+
+#: src/views/window.blp:120
+msgid "No Internet"
+msgstr ""
+
+#: src/views/window.blp:179
+msgid "Ask"
+msgstr "கேள்"
+
+#: src/views/window.blp:223
+msgid "Keyboard Shortcuts"
+msgstr "விசைப்பலகை குறுக்குவழிகள்"
+
+#: src/views/window.blp:228
+msgid "About Bavarder"
+msgstr "பவார்டர் பற்றி"
+
+#: src/widgets/download_row.py:29
+#, python-format
+msgid "Downloading model %s"
+msgstr ""
+
+#: src/widgets/download_row.py:45
+#, python-format
+msgid "Model %s downloaded!"
+msgstr ""
+
+#: src/widgets/item.blp:79
+msgid "Edit"
+msgstr ""
+
+#: src/widgets/item.blp:85
+msgid "Remove"
+msgstr ""
+
+#: src/widgets/item.py:137
+msgid "User"
+msgstr ""
+
+#: src/widgets/item.py:141
+msgid "Assistant"
+msgstr ""
+
+#: src/widgets/model_item.py:30
+#, python-format
+msgid "Model %s deleted!"
+msgstr ""
+
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
+msgid "Edit Title"
+msgstr ""
+
+#: src/widgets/thread_item.py:46
+msgid "Set Title"
+msgstr ""
+
+#: src/main.py:226
+msgid "Please download a model from Preferences!"
+msgstr ""
+
+#: src/main.py:239
+msgid "Please enable a provider from the Brain Menu"
+msgstr ""
+
+#~ msgid "Prompt"
+#~ msgstr "உள்ளீடு"
+
+#~ msgid "Clear prompt after send"
+#~ msgstr "அனுப்பிய பின் உள்ளீட்டை அழிக்கவும்"
+
+#~ msgid "The prompt will be cleared after send"
+#~ msgstr "அனுப்பிய பிறகு உள்ளீடு அழிக்கப்படும்"
+
+#~ msgid "Use plain text for output"
+#~ msgstr "வெளியீட்டிற்கு எளிய உரையைப் பயன்படுத்தவும்"
+
+#~ msgid "The plain text without formatting will be used"
+#~ msgstr "வடிவமைப்பு இல்லாத எளிய உரை பயன்படுத்தப்படும்"
+
+#~ msgid "Close all windows without warning"
+#~ msgstr "எச்சரிக்கை இல்லாமல் அனைத்து சாளரங்களையும் மூடு"
+
+#~ msgid ""
+#~ "All windows will be closed without warning, this can lead to data loss"
+#~ msgstr ""
+#~ "அனைத்து சாளரங்களும் எச்சரிக்கை இல்லாமல் மூடப்படும், இது தரவு இழப்புக்கு வழிவகுக்கும்"
+
+#~ msgid "Look for provider news"
+#~ msgstr "வழங்குநர் செய்திகளைத் தேடுங்கள்"
+
+#~ msgid ""
+#~ "News about issues with providers will be fetched from Bavarder website"
+#~ msgstr ""
+#~ "வழங்குநர்களுடனான சிக்கல்கள் பற்றிய செய்திகள் பவார்டர் இணையதளத்தில் இருந்து பெறப்படும்"
+
+#~ msgid "No network connection"
+#~ msgstr "பிணைய இணைப்பு இல்லை"
+
+#~ msgid "Response"
+#~ msgstr "பதில்"
+
+#~ msgid "Copy to Clipboard"
+#~ msgstr "கிளிப்போர்டுக்கு நகலெடுக்கவும்"
+
+#~ msgid "Stop"
+#~ msgstr "நிறுத்து"
+
+#~ msgid "ERROR"
+#~ msgstr "பிழை"
+
+#~ msgid "DESCRIPTION"
+#~ msgstr "விளக்கம்"
+
+#~ msgid "Try Again"
+#~ msgstr "மீண்டும் முயற்சிக்கவும்"
+
+#~ msgid "New window"
+#~ msgstr "புதிய சாளரம்"
+
+#~ msgid "No API key provided, you can provide one in settings"
+#~ msgstr "API விசை எதுவும் வழங்கப்படவில்லை, நீங்கள் அமைப்புகளில் ஒன்றை வழங்கலாம்"
+
+#~ msgid "Open settings"
+#~ msgstr "அமைப்புகளைத் திறக்கவும்"
+
+#~ msgid "About provider"
+#~ msgstr "வழங்குபவர் பற்றி"
+
+#~ msgid "How to get a token"
+#~ msgstr "குறி அடையாளம் பெறுவது எப்படி"
+
+#~ msgid "API Key"
+#~ msgstr "API விசை"
+
+#~ msgid "Prompt too long, splitting into chunks."
+#~ msgstr "உள்ளீடு மிக நீளமானது, துண்டுகளாகப் பிரிக்கப்படுகிறது."
+
+#~ msgid "You don't have access to this model"
+#~ msgstr "இந்த மாதிரிக்கான அணுகல் உங்களிடம் இல்லை"
+
+#~ msgid ""
+#~ "You exceeded your current quota, please check your plan and billing "
+#~ "details."
+#~ msgstr ""
+#~ "உங்கள் தற்போதைய ஒதுக்கீட்டை மீறிவிட்டீர்கள், உங்கள் திட்டம் மற்றும் கட்டண விவரங்களைச் "
+#~ "சரிபார்க்கவும்."
+
+#~ msgid "API Error"
+#~ msgstr "API பிழை"
+
+#~ msgid "No model selected, you can choose one in preferences"
+#~ msgstr ""
+#~ "எந்த மாதிரியும் தேர்ந்தெடுக்கப்படவில்லை, விருப்பத்தேர்வுகளில் ஒன்றைத் தேர்ந்தெடுக்கலாம்"
+
+#~ msgid "API Url"
+#~ msgstr "API Url"
+
+#~ msgid "How to choose a model"
+#~ msgstr "ஒரு மாதிரியை எவ்வாறு தேர்வு செய்வது"
+
+#~ msgid "0xMRTT"
+#~ msgstr "0xMRTT"
+
+#~ msgid "Copyright © 2023 0xMRTT"
+#~ msgstr "பதிப்புரிமை © 2023 0xMRTT"
+
+#~ msgid "New version available!"
+#~ msgstr "புதிய பதிப்பு உள்ளது!"
+
+#~ msgid "New Window"
+#~ msgstr "புதிய சாளரம்"
 
 #~ msgid "Wait"
 #~ msgstr "காத்திரு"

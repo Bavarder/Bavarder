@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-01 17:40+0000\n"
+"POT-Creation-Date: 2023-07-19 12:39+0200\n"
 "PO-Revision-Date: 2023-07-17 02:38+0000\n"
 "Last-Translator: PeterDaveHello <hsu@peterdavehello.org>\n"
 "Language-Team: Chinese (Traditional) <https://translate.codeberg.org/"
@@ -20,175 +20,240 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.18.1\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
+#: src/views/window.blp:26
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
-msgid "Preferences"
-msgstr "偏好設定"
+#: src/providers/catgpt.py:7
+msgid "Chit-Chat with a Cat"
+msgstr ""
 
-#: data/ui/preferences.blp:12
-msgid "Prompt"
-msgstr "提示"
-
-#: data/ui/preferences.blp:15
-msgid "Clear prompt after send"
-msgstr "送出後清除提示"
-
-#: data/ui/preferences.blp:16
-msgid "The prompt will be cleared after send"
-msgstr "提示將在送出後清除"
-
-#: data/ui/preferences.blp:24
-msgid "Use plain text for output"
-msgstr "使用純文字輸出"
-
-#: data/ui/preferences.blp:25
-msgid "The plain text without formatting will be used"
-msgstr "將使用不含格式的純文字"
-
-#: data/ui/preferences.blp:33
-msgid "Close all windows without warning"
-msgstr "不經警告關閉所有視窗"
-
-#: data/ui/preferences.blp:34
-msgid "All windows will be closed without warning, this can lead to data loss"
-msgstr "所有視窗將在未經警告的情況下關閉，可能導致資料遺失"
-
-#: data/ui/preferences.blp:42
-msgid "Look for provider news"
-msgstr "取得服務提供者更新資訊"
-
-#: data/ui/preferences.blp:43
-msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr "有關服務提供者問題的更新資訊將從 Bavarder 網站取得"
-
-#: data/ui/preferences.blp:52 src/main.py:271
-msgid "Providers"
-msgstr "服務提供者"
-
-#: data/ui/window.blp:28
-msgid "Main Menu"
-msgstr "主選單"
-
-#: data/ui/window.blp:34 src/providers/base.py:50
-msgid "No network connection"
-msgstr "無網路連線"
-
-#: data/ui/window.blp:61
-msgid "Response"
-msgstr "回應"
-
-#: data/ui/window.blp:113
-msgid "Copy to Clipboard"
-msgstr "複製到剪貼簿"
-
-#: data/ui/window.blp:123
-msgid "Stop"
-msgstr "停止"
-
-#: data/ui/window.blp:152
-msgid "ERROR"
-msgstr "錯誤"
-
-#: data/ui/window.blp:153
-msgid "DESCRIPTION"
-msgstr "描述"
-
-#: data/ui/window.blp:156
-msgid "Try Again"
-msgstr "重試"
-
-#: data/ui/window.blp:205
-msgid "Ask"
-msgstr "詢問"
-
-#: data/ui/window.blp:224
-msgid "New window"
-msgstr "新視窗"
-
-#: data/ui/window.blp:235 src/main.py:274
-msgid "Keyboard Shortcuts"
-msgstr "鍵盤快速鍵"
-
-#: data/ui/window.blp:240 src/main.py:275
-msgid "About Bavarder"
-msgstr "關於 Bavarder"
-
-#: src/providers/base.py:43
-msgid "No API key provided, you can provide one in settings"
-msgstr "未提供 API 金鑰，您可以在設定中提供一個"
-
-#: src/providers/base.py:45
-msgid "Open settings"
-msgstr "開啟設定"
-
-#: src/providers/base.py:81
-msgid "About provider"
-msgstr "關於"
-
-#: src/providers/base.py:95
-msgid "How to get a token"
-msgstr "如何取得金鑰"
-
-#: src/providers/base.py:118
+#: src/providers/provider_item.blp:12
 msgid "No preferences available"
 msgstr "無可用偏好設定"
-
-#: src/providers/huggingface.py:73 src/providers/transformer.py:68
-msgid "API Key"
-msgstr "API 金鑰"
-
-#: src/providers/openai.py:27
-msgid "Prompt too long, splitting into chunks."
-msgstr "提示太長，拆分成片段。"
-
-#: src/providers/openai.py:49
-msgid "You don't have access to this model"
-msgstr "您無法存取此模型"
-
-#: src/providers/openai.py:54
-msgid ""
-"You exceeded your current quota, please check your plan and billing details."
-msgstr "您超過了目前的額度，請檢查您的方案和帳單詳細資訊。"
-
-#: src/providers/openai.py:59
-msgid "API Error"
-msgstr "API 錯誤"
-
-#: src/providers/openai.py:70
-msgid "No model selected, you can choose one in preferences"
-msgstr "未選擇模型，您可以在偏好設定中選擇一個"
-
-#: src/providers/openaicustom.py:33
-msgid "API Url"
-msgstr "API 網址"
-
-#: src/providers/openaicustom.py:40
-msgid "Model"
-msgstr "模型"
-
-#: src/providers/openaicustom.py:80
-msgid "How to choose a model"
-msgstr "如何選擇模型"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "翻譯者致謝"
 
 #: src/views/about_window.py:26
-msgid "0xMRTT"
-msgstr "0xMRTT"
+msgid "Bavarder Developers"
+msgstr ""
 
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 0xMRTT"
-msgstr "版權所有 © 2023 0xMRTT"
+msgid "Copyright © 2023 Bavarder Developers"
+msgstr ""
 
-#: src/main.py:124
-msgid "New version available!"
-msgstr "有新版本可用！"
+#: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
+#, fuzzy
+#| msgid "Model"
+msgid "Models"
+msgstr "模型"
 
-#: src/main.py:240
-msgid "New Window"
-msgstr "新視窗"
+#: src/views/preferences_window.py:54
+msgid "Download more models"
+msgstr ""
+
+#: src/views/preferences_window.blp:5 src/views/window.py:156
+#: src/views/window.py:178 src/views/window.blp:218
+msgid "Preferences"
+msgstr "偏好設定"
+
+#: src/views/preferences_window.blp:13
+msgid "Providers"
+msgstr "服務提供者"
+
+#: src/views/window.py:227
+msgid "Generating response"
+msgstr ""
+
+#: src/views/window.py:228
+msgid "Cancel"
+msgstr ""
+
+#: src/views/window.blp:33 src/main.py:146
+msgid "New Chat"
+msgstr ""
+
+#: src/views/window.blp:41
+msgid "Main Menu"
+msgstr "主選單"
+
+#: src/views/window.blp:57
+msgid "Message"
+msgstr ""
+
+#: src/views/window.blp:69
+msgid "Chat"
+msgstr ""
+
+#: src/views/window.blp:115
+msgid "No Chat"
+msgstr ""
+
+#: src/views/window.blp:120
+msgid "No Internet"
+msgstr ""
+
+#: src/views/window.blp:179
+msgid "Ask"
+msgstr "詢問"
+
+#: src/views/window.blp:223
+msgid "Keyboard Shortcuts"
+msgstr "鍵盤快速鍵"
+
+#: src/views/window.blp:228
+msgid "About Bavarder"
+msgstr "關於 Bavarder"
+
+#: src/widgets/download_row.py:29
+#, python-format
+msgid "Downloading model %s"
+msgstr ""
+
+#: src/widgets/download_row.py:45
+#, python-format
+msgid "Model %s downloaded!"
+msgstr ""
+
+#: src/widgets/item.blp:79
+msgid "Edit"
+msgstr ""
+
+#: src/widgets/item.blp:85
+msgid "Remove"
+msgstr ""
+
+#: src/widgets/item.py:137
+msgid "User"
+msgstr ""
+
+#: src/widgets/item.py:141
+msgid "Assistant"
+msgstr ""
+
+#: src/widgets/model_item.py:30
+#, python-format
+msgid "Model %s deleted!"
+msgstr ""
+
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
+msgid "Edit Title"
+msgstr ""
+
+#: src/widgets/thread_item.py:46
+msgid "Set Title"
+msgstr ""
+
+#: src/main.py:226
+msgid "Please download a model from Preferences!"
+msgstr ""
+
+#: src/main.py:239
+msgid "Please enable a provider from the Brain Menu"
+msgstr ""
+
+#~ msgid "Prompt"
+#~ msgstr "提示"
+
+#~ msgid "Clear prompt after send"
+#~ msgstr "送出後清除提示"
+
+#~ msgid "The prompt will be cleared after send"
+#~ msgstr "提示將在送出後清除"
+
+#~ msgid "Use plain text for output"
+#~ msgstr "使用純文字輸出"
+
+#~ msgid "The plain text without formatting will be used"
+#~ msgstr "將使用不含格式的純文字"
+
+#~ msgid "Close all windows without warning"
+#~ msgstr "不經警告關閉所有視窗"
+
+#~ msgid ""
+#~ "All windows will be closed without warning, this can lead to data loss"
+#~ msgstr "所有視窗將在未經警告的情況下關閉，可能導致資料遺失"
+
+#~ msgid "Look for provider news"
+#~ msgstr "取得服務提供者更新資訊"
+
+#~ msgid ""
+#~ "News about issues with providers will be fetched from Bavarder website"
+#~ msgstr "有關服務提供者問題的更新資訊將從 Bavarder 網站取得"
+
+#~ msgid "No network connection"
+#~ msgstr "無網路連線"
+
+#~ msgid "Response"
+#~ msgstr "回應"
+
+#~ msgid "Copy to Clipboard"
+#~ msgstr "複製到剪貼簿"
+
+#~ msgid "Stop"
+#~ msgstr "停止"
+
+#~ msgid "ERROR"
+#~ msgstr "錯誤"
+
+#~ msgid "DESCRIPTION"
+#~ msgstr "描述"
+
+#~ msgid "Try Again"
+#~ msgstr "重試"
+
+#~ msgid "New window"
+#~ msgstr "新視窗"
+
+#~ msgid "No API key provided, you can provide one in settings"
+#~ msgstr "未提供 API 金鑰，您可以在設定中提供一個"
+
+#~ msgid "Open settings"
+#~ msgstr "開啟設定"
+
+#~ msgid "About provider"
+#~ msgstr "關於"
+
+#~ msgid "How to get a token"
+#~ msgstr "如何取得金鑰"
+
+#~ msgid "API Key"
+#~ msgstr "API 金鑰"
+
+#~ msgid "Prompt too long, splitting into chunks."
+#~ msgstr "提示太長，拆分成片段。"
+
+#~ msgid "You don't have access to this model"
+#~ msgstr "您無法存取此模型"
+
+#~ msgid ""
+#~ "You exceeded your current quota, please check your plan and billing "
+#~ "details."
+#~ msgstr "您超過了目前的額度，請檢查您的方案和帳單詳細資訊。"
+
+#~ msgid "API Error"
+#~ msgstr "API 錯誤"
+
+#~ msgid "No model selected, you can choose one in preferences"
+#~ msgstr "未選擇模型，您可以在偏好設定中選擇一個"
+
+#~ msgid "API Url"
+#~ msgstr "API 網址"
+
+#~ msgid "How to choose a model"
+#~ msgstr "如何選擇模型"
+
+#~ msgid "0xMRTT"
+#~ msgstr "0xMRTT"
+
+#~ msgid "Copyright © 2023 0xMRTT"
+#~ msgstr "版權所有 © 2023 0xMRTT"
+
+#~ msgid "New version available!"
+#~ msgstr "有新版本可用！"
+
+#~ msgid "New Window"
+#~ msgstr "新視窗"

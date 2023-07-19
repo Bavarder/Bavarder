@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-01 17:40+0000\n"
+"POT-Creation-Date: 2023-07-19 12:39+0200\n"
 "PO-Revision-Date: 2023-06-16 06:37+0000\n"
 "Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
@@ -19,189 +19,257 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 data/ui/window.blp:7
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
+#: src/views/window.blp:26
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: data/ui/preferences.blp:5 data/ui/window.blp:230 src/main.py:273
-msgid "Preferences"
-msgstr "Параметры"
+#: src/providers/catgpt.py:7
+#, fuzzy
+#| msgid "Chit-chat with an AI"
+msgid "Chit-Chat with a Cat"
+msgstr "Болтайте с GPT"
 
-#: data/ui/preferences.blp:12
-msgid "Prompt"
-msgstr "Поле ввода"
-
-#: data/ui/preferences.blp:15
-msgid "Clear prompt after send"
-msgstr "Очищать поле ввода после отправки"
-
-#: data/ui/preferences.blp:16
-msgid "The prompt will be cleared after send"
-msgstr "Поле ввода будет очищено после отправки"
-
-#: data/ui/preferences.blp:24
-msgid "Use plain text for output"
-msgstr "Использовать обычный текст для вывода"
-
-#: data/ui/preferences.blp:25
-msgid "The plain text without formatting will be used"
-msgstr "Будет использован обычный текст без форматирования"
-
-#: data/ui/preferences.blp:33
-msgid "Close all windows without warning"
-msgstr "Закрывать все окна без предупреждения"
-
-#: data/ui/preferences.blp:34
-msgid "All windows will be closed without warning, this can lead to data loss"
-msgstr ""
-"Все окна будут закрываться без предупреждения, это может перевести к потере "
-"данных"
-
-#: data/ui/preferences.blp:42
-msgid "Look for provider news"
-msgstr "Искать новости о провайдерах"
-
-#: data/ui/preferences.blp:43
-msgid "News about issues with providers will be fetched from Bavarder website"
-msgstr "Новости о проблемах с провайдерами будут получены с сайта Bavarder"
-
-#: data/ui/preferences.blp:52 src/main.py:271
-msgid "Providers"
-msgstr "Провайдеры"
-
-#: data/ui/window.blp:28
-msgid "Main Menu"
-msgstr "Главное меню"
-
-#: data/ui/window.blp:34 src/providers/base.py:50
-msgid "No network connection"
-msgstr "Нет подключения к сети"
-
-#: data/ui/window.blp:61
-msgid "Response"
-msgstr "Ответ"
-
-#: data/ui/window.blp:113
-msgid "Copy to Clipboard"
-msgstr "Скопировать в буфер обмена"
-
-#: data/ui/window.blp:123
-msgid "Stop"
-msgstr "Остановить"
-
-#: data/ui/window.blp:152
-msgid "ERROR"
-msgstr "ОШИБКА"
-
-#: data/ui/window.blp:153
-msgid "DESCRIPTION"
-msgstr "ОПИСАНИЕ"
-
-#: data/ui/window.blp:156
-msgid "Try Again"
-msgstr "Повторить"
-
-#: data/ui/window.blp:205
-msgid "Ask"
-msgstr "Спросить"
-
-#: data/ui/window.blp:224
-msgid "New window"
-msgstr "Новое окно"
-
-#: data/ui/window.blp:235 src/main.py:274
-msgid "Keyboard Shortcuts"
-msgstr "Комбинации клавиш"
-
-#: data/ui/window.blp:240 src/main.py:275
-msgid "About Bavarder"
-msgstr "О Bavarder"
-
-#: src/providers/base.py:43
-msgid "No API key provided, you can provide one in settings"
-msgstr "Ключ API не предоставлен, вы можете предоставить его в настройках"
-
-#: src/providers/base.py:45
-msgid "Open settings"
-msgstr "Открыть настройки"
-
-#: src/providers/base.py:81
-msgid "About provider"
-msgstr "О Провайдере"
-
-#: src/providers/base.py:95
-msgid "How to get a token"
-msgstr "Как получить токен"
-
-#: src/providers/base.py:118
+#: src/providers/provider_item.blp:12
 msgid "No preferences available"
 msgstr "Параметры отсутствуют"
-
-#: src/providers/huggingface.py:73 src/providers/transformer.py:68
-msgid "API Key"
-msgstr "Ключ API"
-
-#: src/providers/openai.py:27
-msgid "Prompt too long, splitting into chunks."
-msgstr "Запрос слишком длинный, разбиваем на фрагменты."
-
-#: src/providers/openai.py:49
-msgid "You don't have access to this model"
-msgstr "Вы не имеете доступа к этой модели"
-
-#: src/providers/openai.py:54
-msgid ""
-"You exceeded your current quota, please check your plan and billing details."
-msgstr ""
-"Вы превысили текущую квоту, пожалуйста, проверьте информацию о вашем "
-"тарифном плане и счетах."
-
-#: src/providers/openai.py:59
-msgid "API Error"
-msgstr "Ошибка API"
-
-#: src/providers/openai.py:70
-msgid "No model selected, you can choose one in preferences"
-msgstr "Модель не выбрана, вы можете выбрать ее в параметрах"
-
-#: src/providers/openaicustom.py:33
-msgid "API Url"
-msgstr "Url-адрес API"
-
-#: src/providers/openaicustom.py:40
-msgid "Model"
-msgstr "Модель"
-
-#: src/providers/openaicustom.py:80
-msgid "How to choose a model"
-msgstr "Как выбрать модель"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "Давид Лапшин"
 
 #: src/views/about_window.py:26
-msgid "0xMRTT"
-msgstr "0xMRTT"
+msgid "Bavarder Developers"
+msgstr ""
 
 #: src/views/about_window.py:44
-msgid "Copyright © 2023 0xMRTT"
-msgstr "Авторское право © 2023 0xMRTT"
+msgid "Copyright © 2023 Bavarder Developers"
+msgstr ""
 
-#: src/main.py:124
-msgid "New version available!"
-msgstr "Доступна новая версия!"
+#: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
+#, fuzzy
+#| msgid "Model"
+msgid "Models"
+msgstr "Модель"
 
-#: src/main.py:240
-msgid "New Window"
-msgstr "Новое окно"
+#: src/views/preferences_window.py:54
+msgid "Download more models"
+msgstr ""
 
-#~ msgid "Message"
-#~ msgstr "Сообщение"
+#: src/views/preferences_window.blp:5 src/views/window.py:156
+#: src/views/window.py:178 src/views/window.blp:218
+msgid "Preferences"
+msgstr "Параметры"
+
+#: src/views/preferences_window.blp:13
+msgid "Providers"
+msgstr "Провайдеры"
+
+#: src/views/window.py:227
+msgid "Generating response"
+msgstr ""
+
+#: src/views/window.py:228
+msgid "Cancel"
+msgstr ""
+
+#: src/views/window.blp:33 src/main.py:146
+#, fuzzy
+#| msgid "Chat"
+msgid "New Chat"
+msgstr "Чат"
+
+#: src/views/window.blp:41
+msgid "Main Menu"
+msgstr "Главное меню"
+
+#: src/views/window.blp:57
+msgid "Message"
+msgstr "Сообщение"
+
+#: src/views/window.blp:69
+msgid "Chat"
+msgstr "Чат"
+
+#: src/views/window.blp:115
+#, fuzzy
+#| msgid "Chat"
+msgid "No Chat"
+msgstr "Чат"
+
+#: src/views/window.blp:120
+msgid "No Internet"
+msgstr ""
+
+#: src/views/window.blp:179
+msgid "Ask"
+msgstr "Спросить"
+
+#: src/views/window.blp:223
+msgid "Keyboard Shortcuts"
+msgstr "Комбинации клавиш"
+
+#: src/views/window.blp:228
+msgid "About Bavarder"
+msgstr "О Bavarder"
+
+#: src/widgets/download_row.py:29
+#, python-format
+msgid "Downloading model %s"
+msgstr ""
+
+#: src/widgets/download_row.py:45
+#, python-format
+msgid "Model %s downloaded!"
+msgstr ""
+
+#: src/widgets/item.blp:79
+msgid "Edit"
+msgstr ""
+
+#: src/widgets/item.blp:85
+msgid "Remove"
+msgstr ""
+
+#: src/widgets/item.py:137
+msgid "User"
+msgstr ""
+
+#: src/widgets/item.py:141
+msgid "Assistant"
+msgstr ""
+
+#: src/widgets/model_item.py:30
+#, python-format
+msgid "Model %s deleted!"
+msgstr ""
+
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
+msgid "Edit Title"
+msgstr ""
+
+#: src/widgets/thread_item.py:46
+msgid "Set Title"
+msgstr ""
+
+#: src/main.py:226
+msgid "Please download a model from Preferences!"
+msgstr ""
+
+#: src/main.py:239
+msgid "Please enable a provider from the Brain Menu"
+msgstr ""
+
+#~ msgid "Prompt"
+#~ msgstr "Поле ввода"
+
+#~ msgid "Clear prompt after send"
+#~ msgstr "Очищать поле ввода после отправки"
+
+#~ msgid "The prompt will be cleared after send"
+#~ msgstr "Поле ввода будет очищено после отправки"
+
+#~ msgid "Use plain text for output"
+#~ msgstr "Использовать обычный текст для вывода"
+
+#~ msgid "The plain text without formatting will be used"
+#~ msgstr "Будет использован обычный текст без форматирования"
+
+#~ msgid "Close all windows without warning"
+#~ msgstr "Закрывать все окна без предупреждения"
+
+#~ msgid ""
+#~ "All windows will be closed without warning, this can lead to data loss"
+#~ msgstr ""
+#~ "Все окна будут закрываться без предупреждения, это может перевести к "
+#~ "потере данных"
+
+#~ msgid "Look for provider news"
+#~ msgstr "Искать новости о провайдерах"
+
+#~ msgid ""
+#~ "News about issues with providers will be fetched from Bavarder website"
+#~ msgstr "Новости о проблемах с провайдерами будут получены с сайта Bavarder"
+
+#~ msgid "No network connection"
+#~ msgstr "Нет подключения к сети"
+
+#~ msgid "Response"
+#~ msgstr "Ответ"
+
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Скопировать в буфер обмена"
+
+#~ msgid "Stop"
+#~ msgstr "Остановить"
+
+#~ msgid "ERROR"
+#~ msgstr "ОШИБКА"
+
+#~ msgid "DESCRIPTION"
+#~ msgstr "ОПИСАНИЕ"
+
+#~ msgid "Try Again"
+#~ msgstr "Повторить"
+
+#~ msgid "New window"
+#~ msgstr "Новое окно"
+
+#~ msgid "No API key provided, you can provide one in settings"
+#~ msgstr "Ключ API не предоставлен, вы можете предоставить его в настройках"
+
+#~ msgid "Open settings"
+#~ msgstr "Открыть настройки"
+
+#~ msgid "About provider"
+#~ msgstr "О Провайдере"
+
+#~ msgid "How to get a token"
+#~ msgstr "Как получить токен"
+
+#~ msgid "API Key"
+#~ msgstr "Ключ API"
+
+#~ msgid "Prompt too long, splitting into chunks."
+#~ msgstr "Запрос слишком длинный, разбиваем на фрагменты."
+
+#~ msgid "You don't have access to this model"
+#~ msgstr "Вы не имеете доступа к этой модели"
+
+#~ msgid ""
+#~ "You exceeded your current quota, please check your plan and billing "
+#~ "details."
+#~ msgstr ""
+#~ "Вы превысили текущую квоту, пожалуйста, проверьте информацию о вашем "
+#~ "тарифном плане и счетах."
+
+#~ msgid "API Error"
+#~ msgstr "Ошибка API"
+
+#~ msgid "No model selected, you can choose one in preferences"
+#~ msgstr "Модель не выбрана, вы можете выбрать ее в параметрах"
+
+#~ msgid "API Url"
+#~ msgstr "Url-адрес API"
+
+#~ msgid "How to choose a model"
+#~ msgstr "Как выбрать модель"
+
+#~ msgid "0xMRTT"
+#~ msgstr "0xMRTT"
+
+#~ msgid "Copyright © 2023 0xMRTT"
+#~ msgstr "Авторское право © 2023 0xMRTT"
+
+#~ msgid "New version available!"
+#~ msgstr "Доступна новая версия!"
+
+#~ msgid "New Window"
+#~ msgstr "Новое окно"
 
 #~ msgid "Wait"
 #~ msgstr "Ждите"
@@ -241,17 +309,11 @@ msgstr "Новое окно"
 #~ msgid "CatGPT"
 #~ msgstr "CatGPT"
 
-#~ msgid "Chit-chat with an AI"
-#~ msgstr "Болтайте с GPT"
-
 #~ msgid "Screenshot of Main UI"
 #~ msgstr "Снимок экрана главного интерфейса"
 
 #~ msgid "Screenshot of Preferences UI"
 #~ msgstr "Снимок экрана интерфейса параметров"
-
-#~ msgid "Chat"
-#~ msgstr "Чат"
 
 #~ msgid "GPT"
 #~ msgstr "GPT"
