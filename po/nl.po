@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-19 12:39+0200\n"
-"PO-Revision-Date: 2023-07-19 14:04+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-19 17:56+0000\n"
+"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -26,14 +26,12 @@ msgid "Bavarder"
 msgstr "Bavarder"
 
 #: src/providers/catgpt.py:7
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with a Cat"
-msgstr "Babbel met een KI"
+msgstr "Laat de koetjes en kalfjes maar los"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
-msgstr "Er zijn geen voorkeuren beschikbaar"
+msgstr "Er zĳn geen voorkeuren beschikbaar"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -41,21 +39,19 @@ msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 
 #: src/views/about_window.py:26
 msgid "Bavarder Developers"
-msgstr ""
+msgstr "Baverder-ontwikkelaars"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 Bavarder Developers"
-msgstr ""
+msgstr "Auteursrecht © 2023 Bavarder-ontwikkelaars"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
-msgstr "Model"
+msgstr "Modellen"
 
 #: src/views/preferences_window.py:54
 msgid "Download more models"
-msgstr ""
+msgstr "Meer modellen ophalen"
 
 #: src/views/preferences_window.blp:5 src/views/window.py:156
 #: src/views/window.py:178 src/views/window.blp:218
@@ -68,17 +64,15 @@ msgstr "Diensten"
 
 #: src/views/window.py:227
 msgid "Generating response"
-msgstr ""
+msgstr "Bezig met samenstellen van antwoord…"
 
 #: src/views/window.py:228
 msgid "Cancel"
-msgstr "Annuleer"
+msgstr "Annuleren"
 
 #: src/views/window.blp:33 src/main.py:146
-#, fuzzy
-#| msgid "Chat"
 msgid "New Chat"
-msgstr "Gesprek"
+msgstr "Nieuw gesprek"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
@@ -93,14 +87,12 @@ msgid "Chat"
 msgstr "Gesprek"
 
 #: src/views/window.blp:115
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chat"
-msgstr "Gesprek"
+msgstr "Geen gesprek"
 
 #: src/views/window.blp:120
 msgid "No Internet"
-msgstr ""
+msgstr "Geen internetverbinding"
 
 #: src/views/window.blp:179
 msgid "Ask"
@@ -117,12 +109,12 @@ msgstr "Over Bavarder"
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Bezig met ophalen van ‘%s’…"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "‘%s’ is opgehaald!"
 
 #: src/widgets/item.blp:79
 msgid "Edit"
@@ -130,36 +122,36 @@ msgstr "Bewerken"
 
 #: src/widgets/item.blp:85
 msgid "Remove"
-msgstr "Verwijderen"
+msgstr "Verwĳderen"
 
 #: src/widgets/item.py:137
 msgid "User"
-msgstr "gebruiker"
+msgstr "Gebruiker"
 
 #: src/widgets/item.py:141
 msgid "Assistant"
-msgstr ""
+msgstr "Assistent"
 
 #: src/widgets/model_item.py:30
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "‘%s’ is verwĳderd!"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
 msgid "Edit Title"
-msgstr ""
+msgstr "Titel bewerken"
 
 #: src/widgets/thread_item.py:46
 msgid "Set Title"
-msgstr ""
+msgstr "Titel instellen"
 
 #: src/main.py:226
 msgid "Please download a model from Preferences!"
-msgstr ""
+msgstr "Installeer een model via de voorkeuren!"
 
 #: src/main.py:239
 msgid "Please enable a provider from the Brain Menu"
-msgstr ""
+msgstr "Schakel een dienst in via het breinmenu"
 
 #~ msgid "Prompt"
 #~ msgstr "Invoerveld"
