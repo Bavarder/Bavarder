@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-19 20:24+0200\n"
+"POT-Creation-Date: 2023-07-20 14:06+0200\n"
 "PO-Revision-Date: 2023-07-19 17:56+0000\n"
 "Last-Translator: Daudix_UFO <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
@@ -40,9 +40,19 @@ msgstr "Параметры отсутствуют"
 msgid "translator-credits"
 msgstr "Давид Лапшин"
 
+#: src/views/about_window.py:42
+#, fuzzy
+#| msgid "Chit-Chat with a Cat"
+msgid "Chit-Chat with AI"
+msgstr "Болтайте с котом"
+
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
 msgstr "Авторское право © 2023 0xMRTT"
+
+#: src/views/about_window.py:51
+msgid "Translate"
+msgstr ""
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
 msgid "Models"

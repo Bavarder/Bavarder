@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-19 20:24+0200\n"
+"POT-Creation-Date: 2023-07-20 14:06+0200\n"
 "PO-Revision-Date: 2023-07-19 14:02+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
@@ -44,9 +44,19 @@ msgstr "Impostazioni non disponibili"
 msgid "translator-credits"
 msgstr "Albano Battistella"
 
+#: src/views/about_window.py:42
+#, fuzzy
+#| msgid "Chit-chat with an AI"
+msgid "Chit-Chat with AI"
+msgstr "Chiacchiera con un'IA"
+
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
 msgstr "Copyright © 2023 0xMRTT"
+
+#: src/views/about_window.py:51
+msgid "Translate"
+msgstr ""
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
 #, fuzzy
