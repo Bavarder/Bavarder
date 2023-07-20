@@ -9,12 +9,13 @@
   background-color: rgba(184, 134, 17,0.02);
 }
 
-.chat-entry > text { background: none; }
+.chat-entry {
+  background: rgba(0, 0, 0, 0.08);
+}
 
 .message-bubble {
-  font-size: 16px;
   color: @window_fg_color;
-  border-radius: 15px;
+  border-radius: 12px;
   padding: 9px;
   background-color: mix(@window_bg_color, @window_fg_color, .05);
 }
@@ -26,11 +27,11 @@
 }
 
 .avatar-user {
-  opacity: 0;
+  opacity: 1;
 }
 
 .timestamp {
-  font-size: 12px;
+  font-size: 9pt;
   padding-left: 6px;
 }
 
