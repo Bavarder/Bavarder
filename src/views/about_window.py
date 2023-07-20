@@ -34,17 +34,22 @@ class AboutWindow:
                 "0xMRTT https://github.com/0xMRTT",
             ],
             designers=[
-
+                "David Lapshin https://github.com/daudix-UFO",
             ],
             artists=[
-
+                "David Lapshin https://github.com/daudix-UFO",
             ],
-
+            comments=_("Chit-Chat with AI"),
             translator_credits=translator_credits,
             copyright=_("Copyright © 2023 0xMRTT"),
             license_type=Gtk.License.GPL_3_0,
             version=constants.version,
             release_notes_version=constants.rel_ver,
+        )
+
+        self.about_window.add_link(
+            _("Translate"),
+            constants.translate_url
         )
 
         self.about_window.set_debug_info(

@@ -10,11 +10,10 @@ python = import('python')
 
 # Constants
 PROJECT_RDNN_NAME = 'io.github.Bavarder.Bavarder'
-BUGTRACKER_URL = 'https://gnome.org'
-HELP_URL = 'https://gnome.org'
-TRANSLATE_URL = 'https://gnome.org'
-
-PROJECT_URL = 'https://gnome.org'
+BUGTRACKER_URL = 'https://codeberg.org/Bavarder/Bavarder/issues'
+HELP_URL = 'https://matrix.to/#/#bavarder:projectsegfau.lt'
+TRANSLATE_URL = 'https://translate.codeberg.org/engage/bavarder/'
+PROJECT_URL = 'https://bavarder.codeberg.page'
 
 dependency('gtk4', version: '>= 4.5.0')
 dependency('libadwaita-1', version: '>= 1.3.99')

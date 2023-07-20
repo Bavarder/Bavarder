@@ -22,5 +22,6 @@ src/widgets/model_item.py
 src/widgets/thread_item.blp
 src/widgets/thread_item.py
 src/__init__.py
+src/constants.py.in
 src/main.py
 src/threading.py
