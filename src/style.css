@@ -22,7 +22,7 @@
 
 
 .message-bubble-user {
-  background-color: alpha(@accent_bg_color, 0.3);
+  background-color: alpha(@accent_bg_color, .25);
   color: @card_fg_color;
 }
 
