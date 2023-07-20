@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 14:06+0200\n"
-"PO-Revision-Date: 2023-07-20 12:08+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-20 12:10+0000\n"
+"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -38,10 +38,8 @@ msgid "translator-credits"
 msgstr "Heimen Stoffels <vistausss@fastmail.com>"
 
 #: src/views/about_window.py:42
-#, fuzzy
-#| msgid "Chit-Chat with a Cat"
 msgid "Chit-Chat with AI"
-msgstr "Laat de koetjes en kalfjes maar los"
+msgstr "Babbel met een KI"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
