@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 14:06+0200\n"
-"PO-Revision-Date: 2023-07-20 12:08+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-20 22:17+0000\n"
+"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
 "Language: es\n"
@@ -30,10 +30,8 @@ msgid "Bavarder"
 msgstr "Bavarder"
 
 #: src/providers/catgpt.py:7
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with a Cat"
-msgstr "Conversa con una IA"
+msgstr "Charla con un gato"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
@@ -46,10 +44,8 @@ msgstr ""
 "  Hector A. Mantellini https://launchpad.net/~xombra"
 
 #: src/views/about_window.py:42
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with AI"
-msgstr "Conversa con una IA"
+msgstr "Ten un chat con una IA"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -60,14 +56,12 @@ msgid "Translate"
 msgstr "Traducir"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
-msgstr "Modelo"
+msgstr "Modelos"
 
 #: src/views/preferences_window.py:54
 msgid "Download more models"
-msgstr ""
+msgstr "Descargar más modelos"
 
 #: src/views/preferences_window.blp:5 src/views/window.py:170
 #: src/views/window.py:192 src/views/window.blp:218
@@ -80,17 +74,15 @@ msgstr "Proveedores"
 
 #: src/views/window.py:241
 msgid "Generating response"
-msgstr ""
+msgstr "Generando la respuesta"
 
 #: src/views/window.py:242
 msgid "Cancel"
 msgstr "Cancelar"
 
 #: src/views/window.blp:33 src/main.py:147
-#, fuzzy
-#| msgid "Chat"
 msgid "New Chat"
-msgstr "Chat"
+msgstr "Nuevo Chat"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
@@ -105,14 +97,12 @@ msgid "Chat"
 msgstr "Chat"
 
 #: src/views/window.blp:115
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chat"
-msgstr "Chat"
+msgstr "Sin Chat"
 
 #: src/views/window.blp:120
 msgid "No Internet"
-msgstr ""
+msgstr "Sin Internet"
 
 #: src/views/window.blp:179
 msgid "Ask"
@@ -129,12 +119,12 @@ msgstr "Sobre Bavarder"
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Descargando el modelo %s"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "¡Modelo %s descargado!"
 
 #: src/widgets/item.blp:100
 msgid "Edit"
@@ -150,28 +140,28 @@ msgstr "Usuario/a"
 
 #: src/widgets/item.py:121
 msgid "Assistant"
-msgstr ""
+msgstr "Asistente"
 
 #: src/widgets/model_item.py:31
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "¡Modelo %s eliminado!"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
 msgid "Edit Title"
-msgstr ""
+msgstr "Editar el título"
 
 #: src/widgets/thread_item.py:46
 msgid "Set Title"
-msgstr ""
+msgstr "Establecer un título"
 
 #: src/main.py:227
 msgid "Please download a model from Preferences!"
-msgstr ""
+msgstr "¡Descarga un modelo de las Preferencias!"
 
 #: src/main.py:240
 msgid "Please enable a provider from the Brain Menu"
-msgstr ""
+msgstr "Habilita un proveedor desde el menú Brain"
 
 #~ msgid "Prompt"
 #~ msgstr "Entrada"
