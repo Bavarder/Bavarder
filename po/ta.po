@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 14:06+0200\n"
-"PO-Revision-Date: 2023-07-20 12:07+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-20 17:46+0000\n"
+"Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ta/>\n"
 "Language: ta\n"
@@ -27,7 +27,7 @@ msgstr "பவார்டர்"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
-msgstr ""
+msgstr "ஒரு பூனையுடன் சிட் உரையாடல்"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
@@ -39,7 +39,7 @@ msgstr "K.B.Dharun Krishna https://github.com/kbdharun"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr ""
+msgstr "AI உடன் சிட்-உரையாடல்"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -47,17 +47,15 @@ msgstr "பதிப்புரிமை © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Translate"
-msgstr "Translate"
+msgstr "மொழிபெயர்"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
-msgstr "மாதிரி"
+msgstr "மாதிரிகள்"
 
 #: src/views/preferences_window.py:54
 msgid "Download more models"
-msgstr ""
+msgstr "மேலும் மாதிரிகளைப் பதிவிறக்கவும்"
 
 #: src/views/preferences_window.blp:5 src/views/window.py:170
 #: src/views/window.py:192 src/views/window.blp:218
@@ -70,7 +68,7 @@ msgstr "வழங்குபவர்கள்"
 
 #: src/views/window.py:241
 msgid "Generating response"
-msgstr ""
+msgstr "பதிலை உருவாக்குகிறது"
 
 #: src/views/window.py:242
 msgid "Cancel"
@@ -78,7 +76,7 @@ msgstr "ரத்துசெய்"
 
 #: src/views/window.blp:33 src/main.py:147
 msgid "New Chat"
-msgstr ""
+msgstr "புதிய உரையாடல்"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
@@ -90,15 +88,15 @@ msgstr "செய்தி"
 
 #: src/views/window.blp:69
 msgid "Chat"
-msgstr ""
+msgstr "உரையாடல்"
 
 #: src/views/window.blp:115
 msgid "No Chat"
-msgstr ""
+msgstr "உரையாடல்கள் இல்லை"
 
 #: src/views/window.blp:120
 msgid "No Internet"
-msgstr ""
+msgstr "இணையம் இல்லை"
 
 #: src/views/window.blp:179
 msgid "Ask"
@@ -115,12 +113,12 @@ msgstr "பவார்டர் பற்றி"
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "%s மாதிரியைப் பதிவிறக்குகிறது"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "%s மாதிரி பதிவிறக்கப்பட்டது!"
 
 #: src/widgets/item.blp:100
 msgid "Edit"
@@ -128,36 +126,36 @@ msgstr "திருத்து"
 
 #: src/widgets/item.blp:106
 msgid "Remove"
-msgstr "Remove"
+msgstr "அகற்று"
 
 #: src/widgets/item.py:117
 msgid "User"
-msgstr ""
+msgstr "பயனர்"
 
 #: src/widgets/item.py:121
 msgid "Assistant"
-msgstr ""
+msgstr "உதவியாளர்"
 
 #: src/widgets/model_item.py:31
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "மாதிரி %s நீக்கப்பட்டது!"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
 msgid "Edit Title"
-msgstr ""
+msgstr "தலைப்பைத் திருத்து"
 
 #: src/widgets/thread_item.py:46
 msgid "Set Title"
-msgstr ""
+msgstr "தலைப்பை அமைக்கவும்"
 
 #: src/main.py:227
 msgid "Please download a model from Preferences!"
-msgstr ""
+msgstr "விருப்பங்களிலிருந்து மாதிரியைப் பதிவிறக்கவும்!"
 
 #: src/main.py:240
 msgid "Please enable a provider from the Brain Menu"
-msgstr ""
+msgstr "மூளை பட்டியலில் இருந்து வழங்குநரை இயக்கவும்"
 
 #~ msgid "Prompt"
 #~ msgstr "உள்ளீடு"
