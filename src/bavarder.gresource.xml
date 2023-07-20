@@ -19,9 +19,8 @@
     <file preprocess="xml-stripblanks" alias="paper-plane-symbolic.svg">../data/icons/hicolor/scalable/actions/paper-plane-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="cloud-disabled-symbolic.svg">../data/icons/hicolor/scalable/actions/cloud-disabled-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="cloud-filled-symbolic.svg">../data/icons/hicolor/scalable/actions/cloud-filled-symbolic.svg</file>
-    <file preprocess="xml-stripblanks" alias="brain-augemnted-symbolic.svg">../data/icons/hicolor/scalable/actions/brain-augemnted-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="chat-message-new-symbolic.svg">../data/icons/hicolor/scalable/actions/chat-message-new-symbolic.svg</file>
-    <file preprocess="xml-stripblanks" alias="network-disconnected-symbolic.svg">../data/icons/hicolor/scalable/actions/network-disconnected-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="horizontal-arrows-disabled-symbolic.svg">../data/icons/hicolor/scalable/actions/horizontal-arrows-disabled-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="bot-symbolic.svg">../data/icons/hicolor/scalable/actions/bot-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="terminal-symbolic.svg">../data/icons/hicolor/scalable/actions/terminal-symbolic.svg</file>
   </gresource>
