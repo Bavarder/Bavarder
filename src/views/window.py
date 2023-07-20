@@ -123,6 +123,10 @@ class BavarderWindow(Adw.ApplicationWindow):
                 thread = ThreadItem(self, chat)
                 self.threads_list.append(thread)
                 self.threads.append(thread)
+
+                if not chat["content"]:
+                    self.stack.set_visible_child(self.status_no_chat)
+
         else:
             if self.props.default_width < 500:
                 self.thread_stack.set_visible_child(self.status_no_thread)
