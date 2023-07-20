@@ -144,7 +144,7 @@ class BavarderApplication(Adw.Application):
         chat_id += 1
         chat = {
             "id": chat_id,
-            "title": _("New Chat"),
+            "title": _("New Chat %i" % chat_id),
             "starred": False,
             "content": [],
         }
