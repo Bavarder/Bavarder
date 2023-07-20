@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 14:06+0200\n"
-"PO-Revision-Date: 2023-07-19 14:04+0000\n"
+"PO-Revision-Date: 2023-07-20 12:07+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Galician <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/gl/>\n"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: src/views/about_window.py:51
 msgid "Translate"
-msgstr ""
+msgstr "Traducir"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
 #, fuzzy
