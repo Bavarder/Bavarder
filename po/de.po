@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 14:06+0200\n"
-"PO-Revision-Date: 2023-07-20 10:38+0000\n"
-"Last-Translator: maymage <maymage@gmail.com>\n"
+"PO-Revision-Date: 2023-07-20 12:08+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -51,7 +51,7 @@ msgstr "Urheberrechte © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Translate"
-msgstr ""
+msgstr "Übersetzen"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
 msgid "Models"
