@@ -26,10 +26,6 @@
   color: @card_fg_color;
 }
 
-.avatar-user {
-  opacity: 1;
-}
-
 .timestamp {
   font-size: 9pt;
   padding-left: 6px;
