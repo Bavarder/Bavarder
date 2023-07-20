@@ -44,10 +44,48 @@ template $BavarderWindow : Adw.ApplicationWindow {
           }
           content: Gtk.ScrolledWindow {
             hscrollbar-policy: never;
-            child: Gtk.ListBox threads_list {
-              selection-mode: browse;
-              row-activated => $threads_row_activated_cb();
-              styles ["navigation-sidebar"]
+            child: Stack thread_stack {
+              Gtk.ListBox threads_list {
+                selection-mode: browse;
+                row-activated => $threads_row_activated_cb();
+                styles ["navigation-sidebar"]
+              }
+
+              Adw.StatusPage status_no_chat_thread {
+                title: _("No Chat");
+                icon-name: "chat-message-new-symbolic";
+              }
+
+              Adw.StatusPage status_no_thread {
+                icon-name: "io.github.Bavarder.Bavarder";
+                title: _("Bavarder");
+                description: _("Get started by creating a new chat");
+                hexpand: true;
+                vexpand: true;
+
+                child: Gtk.Box {
+                  orientation: vertical;
+                  spacing: 12;
+
+                  Gtk.Button {
+                    valign: center;
+                    halign: center;
+                    clicked => $on_new_chat_action();
+
+                    Adw.ButtonContent {
+                      icon-name: "chat-message-new-symbolic";
+                      tooltip-text: _("New Chat");
+                      label: _("New Chat");
+                      use-underline: true;
+                    }
+
+                    styles [
+                      "suggested-action",
+                      "pill"
+                    ]
+                  }
+                };
+              }
             };
           };
         };
@@ -119,6 +157,37 @@ template $BavarderWindow : Adw.ApplicationWindow {
               Adw.StatusPage status_no_internet {
                 title: _("No Internet");
                 icon-name: "network-disconnect-symbolic";
+              }
+
+              Adw.StatusPage status_no_thread_main {
+                icon-name: "io.github.Bavarder.Bavarder";
+                title: _("Bavarder");
+                description: _("Get started by creating a new chat");
+                hexpand: true;
+                vexpand: true;
+
+                child: Gtk.Box {
+                  orientation: vertical;
+                  spacing: 12;
+
+                  Gtk.Button {
+                    valign: center;
+                    halign: center;
+                    clicked => $on_new_chat_action();
+
+                    Adw.ButtonContent {
+                      icon-name: "chat-message-new-symbolic";
+                      tooltip-text: _("New Chat");
+                      label: _("New Chat");
+                      use-underline: true;
+                    }
+
+                    styles [
+                      "suggested-action",
+                      "pill"
+                    ]
+                  }
+                };
               }
 
               // Message List

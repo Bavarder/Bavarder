@@ -40,6 +40,9 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     main_list = Gtk.Template.Child()
     status_no_chat = Gtk.Template.Child()
+    status_no_chat_thread = Gtk.Template.Child()
+    status_no_thread = Gtk.Template.Child()
+    status_no_thread_main = Gtk.Template.Child()
     status_no_internet = Gtk.Template.Child()
     scrolled_window = Gtk.Template.Child()
     local_mode_toggle = Gtk.Template.Child()
@@ -49,6 +52,7 @@ class BavarderWindow(Adw.ApplicationWindow):
     banner = Gtk.Template.Child()
     toast_overlay = Gtk.Template.Child()
     stack = Gtk.Template.Child()
+    thread_stack = Gtk.Template.Child()
     main = Gtk.Template.Child()
 
     threads = []
@@ -112,13 +116,24 @@ class BavarderWindow(Adw.ApplicationWindow):
     def load_threads(self):
         self.threads_list.remove_all()
         if self.app.data["chats"]:
+            self.thread_stack.set_visible_child(self.threads_list)
             for chat in self.app.data["chats"]:
                 thread = ThreadItem(self, chat)
                 self.threads_list.append(thread)
                 self.threads.append(thread)
                 self.stack.set_visible_child(self.main)
         else:
-            self.stack.set_visible_child(self.status_no_chat)
+            if self.props.default_width < 500:
+                self.thread_stack.set_visible_child(self.status_no_thread)
+                self.stack.set_visible_child(self.status_no_chat)
+            else:
+                self.stack.set_visible_child(self.status_no_thread_main)
+                self.thread_stack.set_visible_child(self.status_no_chat_thread)
+
+    def do_size_allocate(self, width, height, baseline):
+        self.load_threads()
+
+        Adw.ApplicationWindow.do_size_allocate(self, width, height, baseline)
 
     @Gtk.Template.Callback()
     def threads_row_activated_cb(self, *args):
