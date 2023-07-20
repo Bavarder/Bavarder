@@ -114,14 +114,15 @@ class BavarderWindow(Adw.ApplicationWindow):
             return self.chat["content"]
 
     def load_threads(self):
+        print("LOADING")
         self.threads_list.remove_all()
         if self.app.data["chats"]:
             self.thread_stack.set_visible_child(self.threads_list)
+            self.stack.set_visible_child(self.main)
             for chat in self.app.data["chats"]:
                 thread = ThreadItem(self, chat)
                 self.threads_list.append(thread)
                 self.threads.append(thread)
-                self.stack.set_visible_child(self.main)
         else:
             if self.props.default_width < 500:
                 self.thread_stack.set_visible_child(self.status_no_thread)
@@ -130,8 +131,24 @@ class BavarderWindow(Adw.ApplicationWindow):
                 self.stack.set_visible_child(self.status_no_thread_main)
                 self.thread_stack.set_visible_child(self.status_no_chat_thread)
 
+    @Gtk.Template.Callback()
+    def mobile_mode_apply(self, *args):
+        if not self.app.data["chats"]:
+            self.thread_stack.set_visible_child(self.status_no_thread)
+            self.stack.set_visible_child(self.status_no_chat)
+
+    @Gtk.Template.Callback()
+    def mobile_mode_unapply(self, *args):
+        if not self.app.data["chats"]:
+            self.stack.set_visible_child(self.status_no_thread_main)
+            self.thread_stack.set_visible_child(self.status_no_chat_thread)
+
     def do_size_allocate(self, width, height, baseline):
-        self.load_threads()
+        try:
+            self.has_been_allocated
+        except Exception:
+            self.has_been_allocated = True
+            self.load_threads()
 
         Adw.ApplicationWindow.do_size_allocate(self, width, height, baseline)
 

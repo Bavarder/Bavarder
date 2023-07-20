@@ -272,7 +272,8 @@ template $BavarderWindow : Adw.ApplicationWindow {
 
   Adw.Breakpoint {
     condition ("max-width: 500sp")
-    //unapply => $one_pane_unapply_cb();
+    apply => $mobile_mode_apply();
+    unapply => $mobile_mode_unapply();
     setters {
       split_view.sidebar-width-fraction: 0.33;
       split_view.collapsed: true;
