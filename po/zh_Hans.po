@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-20 14:06+0200\n"
-"PO-Revision-Date: 2023-07-20 12:08+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-22 20:38+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -26,10 +26,8 @@ msgid "Bavarder"
 msgstr "Bavarder"
 
 #: src/providers/catgpt.py:7
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with a Cat"
-msgstr "与AI一起聊天"
+msgstr "和猫聊天"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
@@ -38,16 +36,12 @@ msgstr "没有可用的选项"
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr ""
-"Launchpad Contributions:\n"
-"  Wang Dianjin https://launchpad.net/~tuhaihe\n"
-"  aerowolf https://launchpad.net/~aerowolf-tom\n"
-"  长孙弘奕 https://launchpad.net/~krwy0330"
+"yangyangdaji\n"
+"https://github.com/yangyangdaji"
 
 #: src/views/about_window.py:42
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with AI"
-msgstr "与AI一起聊天"
+msgstr "和 AI 聊天"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -58,14 +52,12 @@ msgid "Translate"
 msgstr "翻译"
 
 #: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
 msgstr "模型"
 
 #: src/views/preferences_window.py:54
 msgid "Download more models"
-msgstr ""
+msgstr "下载更多模型"
 
 #: src/views/preferences_window.blp:5 src/views/window.py:170
 #: src/views/window.py:192 src/views/window.blp:218
@@ -78,17 +70,15 @@ msgstr "提供者"
 
 #: src/views/window.py:241
 msgid "Generating response"
-msgstr ""
+msgstr "生成响应"
 
 #: src/views/window.py:242
 msgid "Cancel"
 msgstr "取消"
 
 #: src/views/window.blp:33 src/main.py:147
-#, fuzzy
-#| msgid "Chat"
 msgid "New Chat"
-msgstr "聊天"
+msgstr "新聊天"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
@@ -103,14 +93,12 @@ msgid "Chat"
 msgstr "聊天"
 
 #: src/views/window.blp:115
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chat"
-msgstr "聊天"
+msgstr "无聊天"
 
 #: src/views/window.blp:120
 msgid "No Internet"
-msgstr ""
+msgstr "无网络"
 
 #: src/views/window.blp:179
 msgid "Ask"
@@ -127,12 +115,12 @@ msgstr "关于 Bavarder"
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "正在下载 %s 模型"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "模型 %s 已下载！"
 
 #: src/widgets/item.blp:100
 msgid "Edit"
@@ -148,28 +136,28 @@ msgstr "用户"
 
 #: src/widgets/item.py:121
 msgid "Assistant"
-msgstr ""
+msgstr "助手"
 
 #: src/widgets/model_item.py:31
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "模型 %s 已删除！"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
 msgid "Edit Title"
-msgstr ""
+msgstr "编辑标题"
 
 #: src/widgets/thread_item.py:46
 msgid "Set Title"
-msgstr ""
+msgstr "选择标题"
 
 #: src/main.py:227
 msgid "Please download a model from Preferences!"
-msgstr ""
+msgstr "请从首选项下载模型！"
 
 #: src/main.py:240
 msgid "Please enable a provider from the Brain Menu"
-msgstr ""
+msgstr "请从“大脑”菜单打开提供程序"
 
 #~ msgid "Prompt"
 #~ msgstr "提示词"
