@@ -11,10 +11,10 @@
 			<default>'ggml-model-gpt4all-falcon-q4_0.bin'</default>
 		</key>
 		<key name="width" type="i">
-			<default>350</default>
+			<default>800</default>
 		</key>
 		<key name="height" type="i">
-			<default>500</default>
+			<default>600</default>
 		</key>
 		<key name="is-maximized" type="b">
 			<default>false</default>
