@@ -21,8 +21,6 @@
     <file preprocess="xml-stripblanks" alias="check-round-outline-symbolic.svg">../data/icons/hicolor/scalable/actions/check-round-outline-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="cloud-disabled-symbolic.svg">../data/icons/hicolor/scalable/actions/cloud-disabled-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="cloud-filled-symbolic.svg">../data/icons/hicolor/scalable/actions/cloud-filled-symbolic.svg</file>
-    <file preprocess="xml-stripblanks" alias="horizontal-arrows-disabled-symbolic.svg">../data/icons/hicolor/scalable/actions/horizontal-arrows-disabled-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="paper-plane-symbolic.svg">../data/icons/hicolor/scalable/actions/paper-plane-symbolic.svg</file>
-    <file preprocess="xml-stripblanks" alias="terminal-symbolic.svg">../data/icons/hicolor/scalable/actions/terminal-symbolic.svg</file>
   </gresource>
 </gresources>

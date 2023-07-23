@@ -4,8 +4,9 @@ using Adw 1;
 template $DownloadRow : Adw.ActionRow {
     [suffix]
     Button download {
+        styles ["flat"]
         valign: center;
-        icon-name: "browser-download-symbolic";
+        icon-name: "folder-download-symbolic";
         clicked => $on_download_button_clicked();
     }
 }
