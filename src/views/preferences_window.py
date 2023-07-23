@@ -51,7 +51,7 @@ class PreferencesWindow(Adw.PreferencesWindow):
             self.model_group.add(p)
         else:
             self.no_models_available = Adw.ExpanderRow()
-            self.no_models_available.set_title(_("Download more models"))
+            self.no_models_available.set_title(_("List of available models"))
 
             for model in GPT4All.list_models():
                 self.no_models_available.add_row(DownloadRow(self.app, self, model))

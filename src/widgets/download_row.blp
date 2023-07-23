@@ -2,11 +2,13 @@ using Gtk 4.0;
 using Adw 1;
 
 template $DownloadRow : Adw.ActionRow {
+    activatable-widget: download;
     [suffix]
     Button download {
         styles ["flat"]
         valign: center;
         icon-name: "folder-download-symbolic";
+        tooltip-text: _("Download Model");
         clicked => $on_download_button_clicked();
     }
 }
