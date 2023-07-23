@@ -16,6 +16,7 @@
 
   <gresource prefix="/io/github/Bavarder/Bavarder/icons/scalable/actions/">
     <file preprocess="xml-stripblanks" alias="bot-symbolic.svg">../data/icons/hicolor/scalable/actions/bot-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="chat-bubbles-emtpy-symbolic.svg">../data/icons/hicolor/scalable/actions/chat-bubbles-emtpy-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="chat-message-new-symbolic.svg">../data/icons/hicolor/scalable/actions/chat-message-new-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="check-round-outline-symbolic.svg">../data/icons/hicolor/scalable/actions/check-round-outline-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="cloud-disabled-symbolic.svg">../data/icons/hicolor/scalable/actions/cloud-disabled-symbolic.svg</file>

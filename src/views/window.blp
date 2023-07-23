@@ -52,8 +52,8 @@ template $BavarderWindow : Adw.ApplicationWindow {
               }
 
               Adw.StatusPage status_no_chat_thread {
-                title: _("No Chat");
-                icon-name: "chat-message-new-symbolic";
+                title: _("No Chats");
+                icon-name: "chat-bubbles-emtpy-symbolic";
               }
 
               Adw.StatusPage status_no_thread {
@@ -150,8 +150,9 @@ template $BavarderWindow : Adw.ApplicationWindow {
             Stack stack {
 
               Adw.StatusPage status_no_chat {
-                title: _("No Chat");
-                icon-name: "chat-message-new-symbolic";
+                title: _("No Messages");
+                description: _("Send first message to get started");
+                icon-name: "chat-bubbles-emtpy-symbolic";
               }
 
               Adw.StatusPage status_no_internet {
