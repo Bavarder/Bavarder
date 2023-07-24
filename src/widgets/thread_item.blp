@@ -32,15 +32,34 @@ template $ThreadItem : Box {
     toggled => $on_text_value_toggled();
   }
 
-  Button delete_button {
-    styles ["flat"]
-    icon-name: "user-trash-symbolic";
-    clicked => $on_delete_button_clicked();
-  }
+  //Button delete_button {
+  //  styles ["flat"]
+  //  icon-name: "user-trash-symbolic";
+  //  clicked => $on_delete_button_clicked();
+  //}
 
-  Button star_button {
-    styles ["flat"]
-    icon-name: "non-starred-symbolic"; // starred-symbolic
-    clicked => $on_star_button_clicked();
+  //Button star_button {
+  //  styles ["flat"]
+  //  icon-name: "non-starred-symbolic"; // starred-symbolic
+  //  clicked => $on_star_button_clicked();
+  //}
+}
+
+
+PopoverMenu popover {
+  menu-model: popover-model;
+}
+
+menu popover-model {
+  section {
+    item {
+      label: _("Delete");
+      action: "event.delete";
+    }
+
+    item {
+      label: _("Star");
+      action: "event.star";
+    }
   }
 }

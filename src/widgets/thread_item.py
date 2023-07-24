@@ -10,7 +10,7 @@ class ThreadItem(Gtk.Box):
     text_value = Gtk.Template.Child("text-value")
     value_stack = Gtk.Template.Child("value-stack")
     text_value_toggle = Gtk.Template.Child("text-value-toggle")
-    star_button = Gtk.Template.Child()
+    popover = Gtk.Template.Child()
 
     def __init__(self, parent, chat, **kwargs):
         super().__init__(**kwargs)
@@ -32,10 +32,31 @@ class ThreadItem(Gtk.Box):
 
     def setup(self):
         self.setup_signals()
-        self.update_star()
+
+        evk = Gtk.GestureClick.new()
+        evk.connect("pressed", self.show_menu)
+        evk.set_button(3)
+        self.add_controller(evk)
+
+        #self.update_star()
+
+    def show_menu(self, gesture, data, x, y):
+        self.popover.set_parent(self)
+        self.popover.popup()
 
     def setup_signals(self):
-        pass
+        self.action_group = Gio.SimpleActionGroup()
+        self.create_action("delete", self.on_delete)
+        self.create_action("star", self.on_star)
+        self.insert_action_group("event", self.action_group);
+
+    def create_action(self, name, callback, shortcuts=None):
+        action = Gio.SimpleAction.new(name, None)
+        action.connect("activate", callback)
+        self.action_group.add_action(action)
+
+        if shortcuts:
+            self.set_accels_for_action(f"app.{name}", shortcuts)
 
     @Gtk.Template.Callback()
     def on_text_value_toggled(self, *args):
@@ -58,22 +79,20 @@ class ThreadItem(Gtk.Box):
         self.text_value_toggle.set_tooltip_text(tooltip)
         self.label.set_text(self.label_text)
 
-    @Gtk.Template.Callback()
-    def on_star_button_clicked(self, *args):
+    def on_star(self, *args):
         self.is_starred =  not self.is_starred
         self.update_star()
 
     def update_star(self):
         self.chat["starred"] = self.is_starred
         if self.is_starred:
-            self.star_button.set_icon_name("starred-symbolic")
+            #self.star_button.set_icon_name("starred-symbolic")
             self.label.set_css_classes(["accent"])
         else:
-            self.star_button.set_icon_name("non-starred-symbolic")
+            #self.star_button.set_icon_name("non-starred-symbolic")
             self.label.set_css_classes([])
 
-    @Gtk.Template.Callback()
-    def on_delete_button_clicked(self, *args):
+    def on_delete(self, *args):
         self.app.data["chats"].remove(self.chat)
         self.win.load_threads()
     
