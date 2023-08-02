@@ -111,14 +111,22 @@ class Item(Gtk.Box):
 
         t = self.item["role"].capitalize()
 
-        if t == "User":
+        self.parent = parent
+        self.settings = parent.settings
+
+        self.app = self.parent.get_application()
+        self.win = self.app.get_active_window()
+
+        print(t)
+
+        if t == self.app.user_name: # User
             self.message_bubble.add_css_class("message-bubble-user")
             self.avatar.add_css_class("avatar-user")
-            role = _("User")
-        elif t == "Assistant":
+            role = self.app.user_name
+        elif t == self.app.bot_name: # Assistant
             self.avatar.set_icon_name("bot-symbolic")
             self.user.add_css_class("warning")
-            role = _("Assistant")
+            role = self.app.bot_name
         else:
             role = t
 
@@ -127,12 +135,6 @@ class Item(Gtk.Box):
 
         self.avatar.set_text(role)
         self.user.set_text(role)
-
-        self.parent = parent
-        self.settings = parent.settings
-
-        self.app = self.parent.get_application()
-        self.win = self.app.get_active_window()
 
         self.setup()
 

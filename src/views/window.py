@@ -349,7 +349,7 @@ class BavarderWindow(Adw.ApplicationWindow):
     def add_user_item(self, content):
         self.content.append(
             {
-                "role": "user",
+                "role": self.app.user_name,
                 "content": content,
                 "time": self.get_time(),
             }
@@ -359,7 +359,7 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     def add_assistant_item(self, content):
         c = {
-                "role": "assistant",
+                "role": self.app.bot_name,
                 "content": content,
                 "time": self.get_time(),
             }

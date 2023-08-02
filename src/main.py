@@ -111,6 +111,9 @@ class BavarderApplication(Adw.Application):
             self.on_set_model_action
         )
 
+        self.bot_name = self.settings.get_string("bot-name")
+        self.user_name = self.settings.get_string("user-name")
+
 
     def on_set_provider_action(self, action, *args):
         self.current_provider = args[0].get_string()
@@ -130,6 +133,8 @@ class BavarderApplication(Adw.Application):
             self.settings.set_boolean("local-mode", self.local_mode)
             self.settings.set_string("current-provider", self.current_provider)
             self.settings.set_string("model", self.model_name)
+            self.settings.set_string("bot-name", self.bot_name)
+            self.settings.set_string("user-name", self.user_name)
 
     def on_quit(self, action, *args, **kwargs):
         """Called when the user activates the Quit action."""
@@ -276,6 +281,10 @@ class BavarderApplication(Adw.Application):
     def clear_all_chats(self):
         self.data["chats"] = []
         self.win.load_threads()
+
+    def load_bot_and_user_name(self):
+        print(self.bot_name)
+        print(self.user_name)
 
 def main(version):
     """The application's entry point."""

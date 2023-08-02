@@ -36,6 +36,18 @@ template $Preferences : Adw.PreferencesWindow {
           styles ["destructive-action"]
         }
       }
+
+      Adw.EntryRow bot_name {
+        title: _("Bot name");
+        show-apply-button: true;
+        apply => $on_bot_entry_apply();
+      }
+
+      Adw.EntryRow user_name {
+        title: _("User name");
+        show-apply-button: true;
+        apply => $on_user_entry_apply();
+      }
     }
   }
 }

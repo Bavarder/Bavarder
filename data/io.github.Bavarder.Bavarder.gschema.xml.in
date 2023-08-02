@@ -10,6 +10,12 @@
 		<key name="model" type="s">
 			<default>'ggml-model-gpt4all-falcon-q4_0.bin'</default>
 		</key>
+		<key name="bot-name" type="s">
+			<default>'Assistant'</default>
+		</key>
+		<key name="user-name" type="s">
+			<default>'User'</default>
+		</key>
 		<key name="width" type="i">
 			<default>800</default>
 		</key>

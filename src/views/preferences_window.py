@@ -15,6 +15,8 @@ class PreferencesWindow(Adw.PreferencesWindow):
     general_page = Gtk.Template.Child()
     model_group = Gtk.Template.Child()
     miscellaneous_group = Gtk.Template.Child()
+    user_name = Gtk.Template.Child()
+    bot_name = Gtk.Template.Child()
 
     def __init__(self, parent, **kwargs):
         super().__init__(**kwargs)
@@ -33,6 +35,9 @@ class PreferencesWindow(Adw.PreferencesWindow):
         self.setup_signals()
         self.load_providers()
         self.load_models()
+
+        self.bot_name.set_text(self.app.bot_name)
+        self.user_name.set_text(self.app.user_name)
 
     def setup_signals(self):
         pass
@@ -68,3 +73,16 @@ class PreferencesWindow(Adw.PreferencesWindow):
         toast = Adw.Toast()
         toast.set_title(_("All chats cleared!"))
         self.add_toast(toast)
+
+    @Gtk.Template.Callback()
+    def on_bot_entry_apply(self, user_data, *args):
+        self.app.bot_name = user_data.get_text().capitalize()
+
+        self.app.load_bot_and_user_name()
+
+    @Gtk.Template.Callback()
+    def on_user_entry_apply(self, user_data, *args):
+        self.app.user_name = user_data.get_text().capitalize()
+
+        self.app.load_bot_and_user_name()
+    
