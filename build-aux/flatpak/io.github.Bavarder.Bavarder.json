@@ -59,13 +59,13 @@
           "buildsystem": "simple",
           "build-commands": [
             "cd gpt4all-backend/ && mkdir build && cd build && cmake .. && cmake --build . --parallel",
-            "cd gpt4all-bindings/python && pip wheel --no-deps -w dist . && ls && ls dist && pip3 install \"dist/gpt4all-1.0.6-py3-none-any.whl\" --verbose --exists-action=i --no-index --prefix=${FLATPAK_DEST}  --no-build-isolation"
+            "cd gpt4all-bindings/python && pip wheel --no-deps -w dist . && ls && ls dist && pip3 install \"dist/gpt4all-1.0.8-py3-none-any.whl\" --verbose --exists-action=i --no-index --prefix=${FLATPAK_DEST}  --no-build-isolation"
           ],
           "sources": [
             {
               "type": "git",
               "url": "https://github.com/nomic-ai/gpt4all",
-              "branch": "main"
+              "commit": "39acbc837816ea9c7673bfe5cf83aeaed95b2c5f"
             }
           ]
         },
