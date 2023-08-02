@@ -273,6 +273,10 @@ class BavarderApplication(Adw.Application):
     def check_network(self):
         return False
 
+    def clear_all_chats(self):
+        self.data["chats"] = []
+        self.win.load_threads()
+
 def main(version):
     """The application's entry point."""
     app = BavarderApplication()

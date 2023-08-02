@@ -14,6 +14,7 @@ class PreferencesWindow(Adw.PreferencesWindow):
     provider_group = Gtk.Template.Child()
     general_page = Gtk.Template.Child()
     model_group = Gtk.Template.Child()
+    miscellaneous_group = Gtk.Template.Child()
 
     def __init__(self, parent, **kwargs):
         super().__init__(**kwargs)
@@ -59,3 +60,11 @@ class PreferencesWindow(Adw.PreferencesWindow):
             self.model_group.add(self.no_models_available)
 
         self.general_page.add(self.model_group)
+
+    @Gtk.Template.Callback()
+    def clear_all_chats_clicked(self, widget, *args):
+        self.app.clear_all_chats()
+
+        toast = Adw.Toast()
+        toast.set_title(_("All chats cleared!"))
+        self.add_toast(toast)
