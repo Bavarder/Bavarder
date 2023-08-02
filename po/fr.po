@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-02 17:59+0200\n"
-"PO-Revision-Date: 2023-08-02 16:07+0000\n"
+"PO-Revision-Date: 2023-08-02 18:33+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -63,7 +63,7 @@ msgstr "Liste des modèles disponibles"
 
 #: src/views/preferences_window.py:69
 msgid "All chats cleared!"
-msgstr "Toutes les disccusions ont été effacées!"
+msgstr "Toutes les discussions ont été effacées !"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
 #: src/views/window.py:222 src/views/window.py:254 src/views/window.blp:297
