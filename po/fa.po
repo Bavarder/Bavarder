@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-02 17:59+0200\n"
+"POT-Creation-Date: 2023-08-02 20:25+0200\n"
 "PO-Revision-Date: 2023-08-02 16:04+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Persian <https://translate.codeberg.org/projects/bavarder/"
@@ -54,18 +54,38 @@ msgstr ""
 msgid "Translate"
 msgstr "ترجمه"
 
-#: src/views/preferences_window.py:48 src/views/preferences_window.blp:11
+#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:18 src/views/window.py:250
 #, fuzzy
 #| msgid "Model"
 msgid "Models"
 msgstr "حالت"
 
-#: src/views/preferences_window.py:55
+#: src/views/preferences_window.py:60
 msgid "List of available models"
 msgstr ""
 
-#: src/views/preferences_window.py:69
+#: src/views/preferences_window.py:72
+msgid "Delete All Threads"
+msgstr ""
+
+#: src/views/preferences_window.py:73
+#, fuzzy
+#| msgid "Are you sure you want to delete this thread?"
+msgid "Are you sure you want to delete all threads? This can't be undone!"
+msgstr "آیا مطمئنید که می‌خواهید این فرسته پیش نویس شده را حذف کنید؟"
+
+#: src/views/preferences_window.py:77 src/views/window.py:309
+#: src/widgets/thread_item.py:103
+msgid "Cancel"
+msgstr "لغو"
+
+#: src/views/preferences_window.py:78 src/widgets/thread_item.blp:56
+#: src/widgets/thread_item.py:104
+msgid "Delete"
+msgstr "پاک کردن"
+
+#: src/views/preferences_window.py:93
 msgid "All chats cleared!"
 msgstr ""
 
@@ -83,8 +103,11 @@ msgid "Miscellaneous"
 msgstr "متفرقه"
 
 #: src/views/preferences_window.blp:29
-msgid "Clear all chats"
-msgstr ""
+#, fuzzy
+#| msgctxt "shortcut window"
+#| msgid "Clear"
+msgid "Clear all threads"
+msgstr "پاک‌سازی"
 
 #: src/views/preferences_window.blp:33
 #, fuzzy
@@ -94,8 +117,18 @@ msgid "Clear"
 msgstr "پاک‌سازی"
 
 #: src/views/preferences_window.blp:34
-msgid "This will clear all chats from the database."
+msgid "This will clear all threads from the database."
 msgstr ""
+
+#: src/views/preferences_window.blp:41
+msgid "Bot name"
+msgstr ""
+
+#: src/views/preferences_window.blp:47
+#, fuzzy
+#| msgid "User"
+msgid "User name"
+msgstr "کاربر"
 
 #: src/views/window.py:227 src/views/window.py:259
 #, fuzzy
@@ -107,10 +140,6 @@ msgstr "پاک‌سازی"
 #: src/views/window.py:308
 msgid "Generating response"
 msgstr ""
-
-#: src/views/window.py:309 src/widgets/thread_item.py:103
-msgid "Cancel"
-msgstr "لغو"
 
 #: src/views/window.blp:33 src/views/window.blp:77 src/views/window.blp:78
 #: src/views/window.blp:181 src/views/window.blp:182
@@ -199,15 +228,7 @@ msgstr "ویرایش"
 msgid "Remove"
 msgstr "حذف کردن"
 
-#: src/widgets/item.py:117
-msgid "User"
-msgstr "کاربر"
-
-#: src/widgets/item.py:121
-msgid "Assistant"
-msgstr ""
-
-#: src/widgets/item.py:177
+#: src/widgets/item.py:179
 #, fuzzy
 #| msgid "Message"
 msgid "Message copied"
@@ -225,10 +246,6 @@ msgstr ""
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:75
 msgid "Edit Title"
 msgstr ""
-
-#: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:104
-msgid "Delete"
-msgstr "پاک کردن"
 
 #: src/widgets/thread_item.blp:61
 msgid "Star"
@@ -250,18 +267,18 @@ msgstr "آیا مطمئنید که می‌خواهید این فرسته پیش 
 msgid "Thread Deleted"
 msgstr ""
 
-#: src/main.py:147
+#: src/main.py:152
 #, python-format
 msgid "New Chat %i"
 msgstr ""
 
-#: src/main.py:227
+#: src/main.py:232
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
 
-#: src/main.py:240
+#: src/main.py:245
 msgid "Please enable a provider from the Dot Menu"
 msgstr ""
 
