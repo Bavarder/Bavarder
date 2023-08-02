@@ -224,7 +224,7 @@ class BavarderApplication(Adw.Application):
     def ask(self, prompt, chat):
         if self.local_mode:
             if not self.setup_chat(): # NO MODELS:
-                return _("Please download a model from Preferences!")
+                return _("Please download a model from Preferences by clicking on the Dot Menu at the top!")
             else:
                 with self.model.chat_session():
                     self.model.current_chat_session = chat["content"].copy()
@@ -237,7 +237,7 @@ class BavarderApplication(Adw.Application):
                     response = self.providers[self.current_provider].ask(prompt, chat)
                     break
                 else:
-                    response = _("Please enable a provider from the Brain Menu")
+                    response = _("Please enable a provider from the Dot Menu")
                 
         return response
 

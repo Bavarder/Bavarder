@@ -130,7 +130,7 @@ class BavarderWindow(Adw.ApplicationWindow):
                         self.stack.set_visible_child(self.status_no_chat)
                 except KeyError:
                     self.stack.set_visible_child(self.status_no_chat)
-
+            self.stack.set_visible_child(self.status_no_thread_main)
         else:
             if self.props.default_width < 500:
                 self.thread_stack.set_visible_child(self.status_no_thread)
