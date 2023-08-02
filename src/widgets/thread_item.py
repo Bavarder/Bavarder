@@ -95,7 +95,7 @@ class ThreadItem(Gtk.Box):
     def on_delete(self, *args):
 
         dialog = Adw.MessageDialog(
-            title=_("Delete Thread"),
+            heading=_("Delete Thread"),
             body=_("Are you sure you want to delete this thread?"),
             body_use_markup=True
         )
