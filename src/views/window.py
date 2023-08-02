@@ -204,23 +204,28 @@ class BavarderWindow(Adw.ApplicationWindow):
         provider_menu = Gio.Menu()
 
         for provider in self.app.providers.values():
+            section = Gio.Menu()
             if provider.enabled:
                 item_provider = Gio.MenuItem()
                 item_provider.set_label(provider.name)
                 item_provider.set_action_and_target_value(
                     "app.set_provider",
                     GLib.Variant("s", provider.slug))
-                provider_menu.append_item(item_provider)
+                section.append_item(item_provider)
+            provider_menu.append_section(_("Providers"), section)
         else:
+            section = Gio.Menu()
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Preferences"))
             item_provider.set_action_and_target_value("app.preferences", None)
-            provider_menu.append_item(item_provider)
+            section.append_item(item_provider)
 
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Clear all"))
             item_provider.set_action_and_target_value("win.clear_all", None)
-            provider_menu.append_item(item_provider)
+            section.append_item(item_provider)
+
+            provider_menu.append_section(None, section)
 
         self.provider_selector_button.set_menu_model(provider_menu)
 
@@ -232,22 +237,27 @@ class BavarderWindow(Adw.ApplicationWindow):
             self.app.list_models()
 
         for provider in self.app.models:
+            section = Gio.Menu()
             item_provider = Gio.MenuItem()
             item_provider.set_label(provider)
             item_provider.set_action_and_target_value(
                 "app.set_model",
                 GLib.Variant("s", provider))
-            provider_menu.append_item(item_provider)
+            section.append_item(item_provider)
+            provider_menu.append_section(_("Models"), section)
         else:
+            section = Gio.Menu()
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Preferences"))
             item_provider.set_action_and_target_value("app.preferences", None)
-            provider_menu.append_item(item_provider)
+            section.append_item(item_provider)
 
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Clear all"))
             item_provider.set_action_and_target_value("win.clear_all", None)
-            provider_menu.append_item(item_provider)
+            section.append_item(item_provider)
+
+            provider_menu.append_section(None, section)
 
         self.model_selector_button.set_menu_model(provider_menu)
 
