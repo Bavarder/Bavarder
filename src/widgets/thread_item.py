@@ -93,8 +93,32 @@ class ThreadItem(Gtk.Box):
             self.label.set_css_classes([])
 
     def on_delete(self, *args):
-        self.app.data["chats"].remove(self.chat)
-        self.win.load_threads()
+
+        dialog = Adw.MessageDialog(
+            title=_("Delete Thread"),
+            body=_("Are you sure you want to delete this thread?"),
+            body_use_markup=True
+        )
+
+        dialog.add_response("cancel", _("Cancel"))
+        dialog.add_response("delete", _("Delete"))
+        dialog.set_response_appearance("delete", Adw.ResponseAppearance.DESTRUCTIVE)
+        dialog.set_default_response("cancel")
+        dialog.set_close_response("cancel")
+
+        dialog.connect("response", self.on_delete_response)
+
+        dialog.set_transient_for(self.win)
+        dialog.present()
+
+    def on_delete_response(self, _widget, response):
+        if response == "delete":
+            self.app.data["chats"].remove(self.chat)
+            self.win.load_threads()
+
+            toast = Adw.Toast()
+            toast.set_title(_("Thread Deleted"))
+            self.win.toast_overlay.add_toast(toast)
     
 
 
