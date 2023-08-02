@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-02 20:25+0200\n"
-"PO-Revision-Date: 2023-08-02 18:33+0000\n"
+"PO-Revision-Date: 2023-08-02 20:50+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -59,16 +59,14 @@ msgid "List of available models"
 msgstr "Lĳst met beschikbare modellen"
 
 #: src/views/preferences_window.py:72
-#, fuzzy
-#| msgid "Delete Thread"
 msgid "Delete All Threads"
-msgstr "Gesprek verwijderen"
+msgstr "Alle gesprekken verwijderen"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Weet je zeker dat je dit wilt verwĳderen?"
+msgstr ""
+"Weet je zeker dat je alle gesprekken wilt verwĳderen? Deze actie is "
+"onomkeerbaar!"
 
 #: src/views/preferences_window.py:77 src/views/window.py:309
 #: src/widgets/thread_item.py:103
@@ -98,8 +96,6 @@ msgid "Miscellaneous"
 msgstr "Overig"
 
 #: src/views/preferences_window.blp:29
-#, fuzzy
-#| msgid "Clear all chats"
 msgid "Clear all threads"
 msgstr "Alle gesprekken wissen"
 
@@ -108,20 +104,16 @@ msgid "Clear"
 msgstr "Wissen"
 
 #: src/views/preferences_window.blp:34
-#, fuzzy
-#| msgid "This will clear all chats from the database."
 msgid "This will clear all threads from the database."
 msgstr "Hierdoor worden alle gesprekken gewist."
 
 #: src/views/preferences_window.blp:41
 msgid "Bot name"
-msgstr ""
+msgstr "Botnaam"
 
 #: src/views/preferences_window.blp:47
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Gebruiker"
+msgstr "Gebruikersnaam"
 
 #: src/views/window.py:227 src/views/window.py:259
 msgid "Clear all"
