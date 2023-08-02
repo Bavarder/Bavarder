@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-02 17:59+0200\n"
-"PO-Revision-Date: 2023-07-19 14:04+0000\n"
+"PO-Revision-Date: 2023-08-02 16:04+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Estonian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/et/>\n"
@@ -75,7 +75,7 @@ msgstr "Teenusepakkujad"
 
 #: src/views/preferences_window.blp:26
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Muu"
 
 #: src/views/preferences_window.blp:29
 msgid "Clear all chats"
@@ -83,7 +83,7 @@ msgstr ""
 
 #: src/views/preferences_window.blp:33
 msgid "Clear"
-msgstr ""
+msgstr "selge"
 
 #: src/views/preferences_window.blp:34
 msgid "This will clear all chats from the database."
@@ -178,7 +178,7 @@ msgstr ""
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr ""
+msgstr "Kopeeri"
 
 #: src/widgets/item.blp:105
 msgid "Edit"
@@ -217,11 +217,11 @@ msgstr ""
 
 #: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:104
 msgid "Delete"
-msgstr ""
+msgstr "Kustuta"
 
 #: src/widgets/thread_item.blp:61
 msgid "Star"
-msgstr ""
+msgstr "Tärn"
 
 #: src/widgets/thread_item.py:67
 msgid "Set Title"
