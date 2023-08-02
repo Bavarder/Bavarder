@@ -97,10 +97,16 @@ PopoverMenu popover {
 menu popover-model {
   section {
     item {
+      label: _("Copy");
+      action: "event.copy";
+    }
+
+    item {
       label: _("Edit");
       action: "event.edit";
     }
   }
+
   section {
     item {
       label: _("Remove");

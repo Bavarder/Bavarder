@@ -1,4 +1,4 @@
-from gi.repository import Gtk, Adw, Gio, GLib, Pango, GtkSource
+from gi.repository import Gtk, Adw, Gio, GLib, Pango, GtkSource, Gdk
 
 import re
 
@@ -152,6 +152,7 @@ class Item(Gtk.Box):
         self.action_group = Gio.SimpleActionGroup()
         self.create_action("delete", self.on_delete)
         self.create_action("edit", self.on_edit)
+        self.create_action("copy", self.on_copy)
         self.insert_action_group("event", self.action_group);
 
     def create_action(self, name, callback, shortcuts=None):
@@ -167,7 +168,17 @@ class Item(Gtk.Box):
         self.win.threads_row_activated_cb()
 
     def on_edit(self, *args):
-        self.win.message_entry.get_buffer().set_text(self.item["content"])
+        self.win.message_entry.get_buffer().set_text(self.content_text)
+
+    def on_copy(self, *args):
+        Gdk.Display.get_default().get_clipboard().set(self.content_text)
+
+        toast = Adw.Toast()
+        toast.set_title(_('Message copied'))
+
+        self.parent.toast_overlay.add_toast(toast)
+
+
 
     def convert_content_to_pango(self):
         lines = self.content_text.split("\n")
