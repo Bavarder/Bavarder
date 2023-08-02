@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-02 17:59+0200\n"
-"PO-Revision-Date: 2023-08-02 16:04+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-08-02 18:33+0000\n"
+"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -56,11 +56,11 @@ msgstr "Modellen"
 
 #: src/views/preferences_window.py:55
 msgid "List of available models"
-msgstr ""
+msgstr "Lĳst met beschikbare modellen"
 
 #: src/views/preferences_window.py:69
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Alle gesprekken zĳn gewist!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
 #: src/views/window.py:222 src/views/window.py:254 src/views/window.blp:297
@@ -77,25 +77,19 @@ msgstr "Overig"
 
 #: src/views/preferences_window.blp:29
 msgid "Clear all chats"
-msgstr ""
+msgstr "Alle gesprekken wissen"
 
 #: src/views/preferences_window.blp:33
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear"
 msgstr "Wissen"
 
 #: src/views/preferences_window.blp:34
 msgid "This will clear all chats from the database."
-msgstr ""
+msgstr "Hierdoor worden alle gesprekken gewist."
 
 #: src/views/window.py:227 src/views/window.py:259
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all"
-msgstr "Wissen"
+msgstr "Alles wissen"
 
 #: src/views/window.py:308
 msgid "Generating response"
@@ -115,14 +109,12 @@ msgid "Main Menu"
 msgstr "Hoofdmenu"
 
 #: src/views/window.blp:55
-#, fuzzy
-#| msgid "No Chat"
 msgid "No Chats"
-msgstr "Geen gesprek"
+msgstr "Geen gesprekken"
 
 #: src/views/window.blp:62
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "Begin een gesprek of kies een bestaand gesprek uit de zĳbalk"
 
 #: src/views/window.blp:95
 msgid "Message"
@@ -133,14 +125,12 @@ msgid "Chat"
 msgstr "Gesprek"
 
 #: src/views/window.blp:153
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "Bericht"
+msgstr "Geen berichten"
 
 #: src/views/window.blp:154
 msgid "Send first message to get started"
-msgstr ""
+msgstr "Verstuur je eerste bericht"
 
 #: src/views/window.blp:159
 msgid "No Internet"
@@ -148,11 +138,11 @@ msgstr "Geen internetverbinding"
 
 #: src/views/window.blp:166
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "Begin een gesprek"
 
 #: src/views/window.blp:238
 msgid "Open Emoji Picker"
-msgstr ""
+msgstr "Emojikiezer openen"
 
 #: src/views/window.blp:257
 msgid "Ask"
@@ -167,10 +157,8 @@ msgid "About Bavarder"
 msgstr "Over Bavarder"
 
 #: src/widgets/download_row.blp:11
-#, fuzzy
-#| msgid "Download more models"
 msgid "Download Model"
-msgstr "Meer modellen ophalen"
+msgstr "Model ophalen"
 
 #: src/widgets/download_row.py:29
 #, python-format
@@ -203,14 +191,12 @@ msgid "Assistant"
 msgstr "Assistent"
 
 #: src/widgets/item.py:177
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "Bericht"
+msgstr "Het bericht is gekopieerd"
 
 #: src/widgets/model_item.blp:11
 msgid "Delete Model"
-msgstr ""
+msgstr "Model verwĳderen"
 
 #: src/widgets/model_item.py:31
 #, python-format
@@ -223,7 +209,7 @@ msgstr "Titel bewerken"
 
 #: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:104
 msgid "Delete"
-msgstr "Verwijderen"
+msgstr "Verwĳderen"
 
 #: src/widgets/thread_item.blp:61
 msgid "Star"
@@ -235,35 +221,30 @@ msgstr "Titel instellen"
 
 #: src/widgets/thread_item.py:98
 msgid "Delete Thread"
-msgstr ""
+msgstr "Gesprek verwijderen"
 
 #: src/widgets/thread_item.py:99
 msgid "Are you sure you want to delete this thread?"
-msgstr "Weet je zeker dat je dit wilt verwijderen?"
+msgstr "Weet je zeker dat je dit wilt verwĳderen?"
 
 #: src/widgets/thread_item.py:120
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Het gesprek is verwĳderd"
 
 #: src/main.py:147
-#, fuzzy, python-format
-#| msgid "New Chat"
+#, python-format
 msgid "New Chat %i"
-msgstr "Nieuw gesprek"
+msgstr "Nieuw gesprek %i"
 
 #: src/main.py:227
-#, fuzzy
-#| msgid "Please download a model from Preferences!"
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
-msgstr "Installeer een model via de voorkeuren!"
+msgstr "Installeer een model via de voorkeuren of het ellipsmenu!"
 
 #: src/main.py:240
-#, fuzzy
-#| msgid "Please enable a provider from the Brain Menu"
 msgid "Please enable a provider from the Dot Menu"
-msgstr "Schakel een dienst in via het breinmenu"
+msgstr "Schakel een dienst in via het ellipsmenu"
 
 #~ msgid "Bavarder Developers"
 #~ msgstr "Baverder-ontwikkelaars"
