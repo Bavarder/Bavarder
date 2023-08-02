@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-20 14:06+0200\n"
+"POT-Creation-Date: 2023-08-02 17:59+0200\n"
 "PO-Revision-Date: 2023-07-20 17:46+0000\n"
 "Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://translate.codeberg.org/projects/bavarder/"
@@ -21,7 +21,7 @@ msgstr ""
 "X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
-#: src/views/window.blp:26
+#: src/views/window.blp:26 src/views/window.blp:61 src/views/window.blp:165
 msgid "Bavarder"
 msgstr "பவார்டர்"
 
@@ -49,32 +49,58 @@ msgstr "பதிப்புரிமை © 2023 0xMRTT"
 msgid "Translate"
 msgstr "மொழிபெயர்"
 
-#: src/views/preferences_window.py:47 src/views/preferences_window.blp:17
+#: src/views/preferences_window.py:48 src/views/preferences_window.blp:11
+#: src/views/preferences_window.blp:18 src/views/window.py:250
 msgid "Models"
 msgstr "மாதிரிகள்"
 
-#: src/views/preferences_window.py:54
-msgid "Download more models"
-msgstr "மேலும் மாதிரிகளைப் பதிவிறக்கவும்"
+#: src/views/preferences_window.py:55
+msgid "List of available models"
+msgstr ""
 
-#: src/views/preferences_window.blp:5 src/views/window.py:170
-#: src/views/window.py:192 src/views/window.blp:218
+#: src/views/preferences_window.py:69
+msgid "All chats cleared!"
+msgstr ""
+
+#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
+#: src/views/window.py:222 src/views/window.py:254 src/views/window.blp:297
 msgid "Preferences"
 msgstr "விருப்பத்தேர்வுகள்"
 
-#: src/views/preferences_window.blp:13
+#: src/views/preferences_window.blp:14 src/views/window.py:218
 msgid "Providers"
 msgstr "வழங்குபவர்கள்"
 
-#: src/views/window.py:241
+#: src/views/preferences_window.blp:26
+msgid "Miscellaneous"
+msgstr ""
+
+#: src/views/preferences_window.blp:29
+msgid "Clear all chats"
+msgstr ""
+
+#: src/views/preferences_window.blp:33
+msgid "Clear"
+msgstr ""
+
+#: src/views/preferences_window.blp:34
+msgid "This will clear all chats from the database."
+msgstr ""
+
+#: src/views/window.py:227 src/views/window.py:259
+msgid "Clear all"
+msgstr ""
+
+#: src/views/window.py:308
 msgid "Generating response"
 msgstr "பதிலை உருவாக்குகிறது"
 
-#: src/views/window.py:242
+#: src/views/window.py:309 src/widgets/thread_item.py:103
 msgid "Cancel"
 msgstr "ரத்துசெய்"
 
-#: src/views/window.blp:33 src/main.py:147
+#: src/views/window.blp:33 src/views/window.blp:77 src/views/window.blp:78
+#: src/views/window.blp:181 src/views/window.blp:182
 msgid "New Chat"
 msgstr "புதிய உரையாடல்"
 
@@ -82,33 +108,63 @@ msgstr "புதிய உரையாடல்"
 msgid "Main Menu"
 msgstr "முதன்மை பட்டியல்"
 
-#: src/views/window.blp:57
+#: src/views/window.blp:55
+#, fuzzy
+#| msgid "No Chat"
+msgid "No Chats"
+msgstr "உரையாடல்கள் இல்லை"
+
+#: src/views/window.blp:62
+msgid "Get started by creating a new chat or selecting one from the sidebar"
+msgstr ""
+
+#: src/views/window.blp:95
 msgid "Message"
 msgstr "செய்தி"
 
-#: src/views/window.blp:69
+#: src/views/window.blp:107
 msgid "Chat"
 msgstr "உரையாடல்"
 
-#: src/views/window.blp:115
-msgid "No Chat"
-msgstr "உரையாடல்கள் இல்லை"
+#: src/views/window.blp:153
+#, fuzzy
+#| msgid "Message"
+msgid "No Messages"
+msgstr "செய்தி"
 
-#: src/views/window.blp:120
+#: src/views/window.blp:154
+msgid "Send first message to get started"
+msgstr ""
+
+#: src/views/window.blp:159
 msgid "No Internet"
 msgstr "இணையம் இல்லை"
 
-#: src/views/window.blp:179
+#: src/views/window.blp:166
+msgid "Get started by creating a new chat"
+msgstr ""
+
+#: src/views/window.blp:238
+msgid "Open Emoji Picker"
+msgstr ""
+
+#: src/views/window.blp:257
 msgid "Ask"
 msgstr "கேள்"
 
-#: src/views/window.blp:223
+#: src/views/window.blp:302
 msgid "Keyboard Shortcuts"
 msgstr "விசைப்பலகை குறுக்குவழிகள்"
 
-#: src/views/window.blp:228
+#: src/views/window.blp:307
 msgid "About Bavarder"
 msgstr "பவார்டர் பற்றி"
+
+#: src/widgets/download_row.blp:11
+#, fuzzy
+#| msgid "Download more models"
+msgid "Download Model"
+msgstr "மேலும் மாதிரிகளைப் பதிவிறக்கவும்"
 
 #: src/widgets/download_row.py:29
 #, python-format
@@ -121,10 +177,14 @@ msgid "Model %s downloaded!"
 msgstr "%s மாதிரி பதிவிறக்கப்பட்டது!"
 
 #: src/widgets/item.blp:100
+msgid "Copy"
+msgstr ""
+
+#: src/widgets/item.blp:105
 msgid "Edit"
 msgstr "திருத்து"
 
-#: src/widgets/item.blp:106
+#: src/widgets/item.blp:112
 msgid "Remove"
 msgstr "அகற்று"
 
@@ -136,25 +196,67 @@ msgstr "பயனர்"
 msgid "Assistant"
 msgstr "உதவியாளர்"
 
+#: src/widgets/item.py:177
+#, fuzzy
+#| msgid "Message"
+msgid "Message copied"
+msgstr "செய்தி"
+
+#: src/widgets/model_item.blp:11
+msgid "Delete Model"
+msgstr ""
+
 #: src/widgets/model_item.py:31
 #, python-format
 msgid "Model %s deleted!"
 msgstr "மாதிரி %s நீக்கப்பட்டது!"
 
-#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:54
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:75
 msgid "Edit Title"
 msgstr "தலைப்பைத் திருத்து"
 
-#: src/widgets/thread_item.py:46
+#: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:104
+msgid "Delete"
+msgstr ""
+
+#: src/widgets/thread_item.blp:61
+msgid "Star"
+msgstr ""
+
+#: src/widgets/thread_item.py:67
 msgid "Set Title"
 msgstr "தலைப்பை அமைக்கவும்"
 
+#: src/widgets/thread_item.py:98
+msgid "Delete Thread"
+msgstr ""
+
+#: src/widgets/thread_item.py:99
+msgid "Are you sure you want to delete this thread?"
+msgstr ""
+
+#: src/widgets/thread_item.py:120
+msgid "Thread Deleted"
+msgstr ""
+
+#: src/main.py:147
+#, fuzzy, python-format
+#| msgid "New Chat"
+msgid "New Chat %i"
+msgstr "புதிய உரையாடல்"
+
 #: src/main.py:227
-msgid "Please download a model from Preferences!"
+#, fuzzy
+#| msgid "Please download a model from Preferences!"
+msgid ""
+"Please download a model from Preferences by clicking on the Dot Menu at the "
+"top!"
 msgstr "விருப்பங்களிலிருந்து மாதிரியைப் பதிவிறக்கவும்!"
 
 #: src/main.py:240
-msgid "Please enable a provider from the Brain Menu"
+#, fuzzy
+#| msgid "Please enable a provider from the Brain Menu"
+msgid "Please enable a provider from the Dot Menu"
 msgstr "மூளை பட்டியலில் இருந்து வழங்குநரை இயக்கவும்"
 
 #~ msgid "Prompt"
