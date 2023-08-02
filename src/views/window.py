@@ -364,10 +364,20 @@ class BavarderWindow(Adw.ApplicationWindow):
                 "time": self.get_time(),
             }
 
-        if self.app.local_mode and self.app.model_name:
-            c["model"] = self.app.model_name
-        elif self.app.current_provider:
-            c["model"] = self.app.current_provider
+        if self.app.local_mode:
+            if self.app.setup_chat():
+                c["model"] = self.app.model_name
+            else:
+                c["model"] = "bavarder"
+        else:
+            l = list(self.app.providers.values())
+
+            for p in l:
+                if p.enabled and p.slug == self.app.current_provider:
+                    c["model"] = self.app.current_provider
+                    break
+                else:
+                    c["model"] = "bavarder"          
     
         
         self.content.append(c)
