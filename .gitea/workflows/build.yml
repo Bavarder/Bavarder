@@ -31,7 +31,7 @@ jobs:
           flatpak install org.gnome.Platform/x86_64/master -y
       - name: Build
         run: |
-          flatpak-builder --repo=repo --force-clean build build-aux/flatpak/io.github.Bavarder.Bavarder.json
+          flatpak-builder --repo=repo --force-clean build build-aux/flatpak/io.github.Bavarder.Bavarder.json --disable-rofiles-fuse
           flatpak build-bundle repo bavarder.flatpak io.github.Bavarder.Bavarder
           ls -la
           echo "---${{ secrets.ACCESS_TOKEN }}---"
