@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-02 17:59+0200\n"
-"PO-Revision-Date: 2023-07-20 12:08+0000\n"
+"PO-Revision-Date: 2023-08-02 16:04+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -59,11 +59,11 @@ msgstr "Modèles"
 
 #: src/views/preferences_window.py:55
 msgid "List of available models"
-msgstr ""
+msgstr "Liste des modèles disponibles"
 
 #: src/views/preferences_window.py:69
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Toutes les disccusions ont été effacées!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
 #: src/views/window.py:222 src/views/window.py:254 src/views/window.blp:297
@@ -76,11 +76,11 @@ msgstr "Fournisseurs"
 
 #: src/views/preferences_window.blp:26
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Divers"
 
 #: src/views/preferences_window.blp:29
 msgid "Clear all chats"
-msgstr ""
+msgstr "Effacer toutes les discussions"
 
 #: src/views/preferences_window.blp:33
 #, fuzzy
@@ -91,14 +91,11 @@ msgstr "Effacer"
 
 #: src/views/preferences_window.blp:34
 msgid "This will clear all chats from the database."
-msgstr ""
+msgstr "Cela va effacer toutes les discussions de la base de données."
 
 #: src/views/window.py:227 src/views/window.py:259
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all"
-msgstr "Effacer"
+msgstr "Effacer tout"
 
 #: src/views/window.py:308
 msgid "Generating response"
@@ -118,14 +115,14 @@ msgid "Main Menu"
 msgstr "Menu principal"
 
 #: src/views/window.blp:55
-#, fuzzy
-#| msgid "No Chat"
 msgid "No Chats"
-msgstr "Pas de Discussion"
+msgstr "Pas de Discussions"
 
 #: src/views/window.blp:62
 msgid "Get started by creating a new chat or selecting one from the sidebar"
 msgstr ""
+"Commencer par créer une nouvelle discussion ou par en selectionner une "
+"depuis la barre latérale"
 
 #: src/views/window.blp:95
 msgid "Message"
@@ -136,14 +133,12 @@ msgid "Chat"
 msgstr "Discussion"
 
 #: src/views/window.blp:153
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "Message"
+msgstr "Pas de Messages"
 
 #: src/views/window.blp:154
 msgid "Send first message to get started"
-msgstr ""
+msgstr "Envoyez le premier message pour commencer"
 
 #: src/views/window.blp:159
 msgid "No Internet"
@@ -151,11 +146,11 @@ msgstr "Pas d'Internet"
 
 #: src/views/window.blp:166
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "Commencez par créer une nouvelle discussion"
 
 #: src/views/window.blp:238
 msgid "Open Emoji Picker"
-msgstr ""
+msgstr "Ouvrir le sélecteur d'émoticones"
 
 #: src/views/window.blp:257
 msgid "Ask"
@@ -170,10 +165,8 @@ msgid "About Bavarder"
 msgstr "À propos de Bavarder"
 
 #: src/widgets/download_row.blp:11
-#, fuzzy
-#| msgid "Download more models"
 msgid "Download Model"
-msgstr "Télécharger plus de modèles"
+msgstr "Télécharger un modèle"
 
 #: src/widgets/download_row.py:29
 #, python-format
