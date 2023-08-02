@@ -11,8 +11,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-02 17:59+0200\n"
-"PO-Revision-Date: 2023-07-22 07:38+0000\n"
-"Last-Translator: maymage <maymage@gmail.com>\n"
+"PO-Revision-Date: 2023-08-02 16:04+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -75,7 +75,7 @@ msgstr "Anbieter"
 
 #: src/views/preferences_window.blp:26
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Unterschiedlich"
 
 #: src/views/preferences_window.blp:29
 msgid "Clear all chats"
@@ -186,7 +186,7 @@ msgstr "Modell %s heruntergeladen!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: src/widgets/item.blp:105
 msgid "Edit"
@@ -225,11 +225,11 @@ msgstr "Titel bearbeiten"
 
 #: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:104
 msgid "Delete"
-msgstr ""
+msgstr "Löschen"
 
 #: src/widgets/thread_item.blp:61
 msgid "Star"
-msgstr ""
+msgstr "Sterne"
 
 #: src/widgets/thread_item.py:67
 msgid "Set Title"
@@ -241,7 +241,7 @@ msgstr ""
 
 #: src/widgets/thread_item.py:99
 msgid "Are you sure you want to delete this thread?"
-msgstr ""
+msgstr "Liste wirklich löschen?"
 
 #: src/widgets/thread_item.py:120
 msgid "Thread Deleted"
