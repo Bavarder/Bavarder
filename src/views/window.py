@@ -29,6 +29,7 @@ from bavarder.threading import KillableThread
 class CustomEntry(Gtk.TextView):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
+        super().set_css_name("entry")
 
 @Gtk.Template(resource_path=f'{rootdir}/ui/window.ui')
 class BavarderWindow(Adw.ApplicationWindow):
@@ -37,7 +38,6 @@ class BavarderWindow(Adw.ApplicationWindow):
     split_view = Gtk.Template.Child()
     threads_list = Gtk.Template.Child()
     title = Gtk.Template.Child()
-
     main_list = Gtk.Template.Child()
     status_no_chat = Gtk.Template.Child()
     status_no_chat_thread = Gtk.Template.Child()
@@ -48,7 +48,6 @@ class BavarderWindow(Adw.ApplicationWindow):
     local_mode_toggle = Gtk.Template.Child()
     provider_selector_button = Gtk.Template.Child()
     model_selector_button = Gtk.Template.Child()
-    clear_all_button = Gtk.Template.Child()
     banner = Gtk.Template.Child()
     toast_overlay = Gtk.Template.Child()
     stack = Gtk.Template.Child()
@@ -67,6 +66,8 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.message_entry = CustomEntry()
         self.message_entry.set_hexpand(True)
         self.message_entry.set_accepts_tab(False)
+        self.message_entry.set_top_margin(7)
+        self.message_entry.set_bottom_margin(7)
         self.message_entry.set_margin_start(5)
         self.message_entry.set_margin_end(5)
         self.message_entry.set_wrap_mode(Gtk.WrapMode.WORD)
@@ -191,7 +192,6 @@ class BavarderWindow(Adw.ApplicationWindow):
     # def scroll_down(self, *args):
     #     self.scrolled_window.emit("scroll-child", Gtk.ScrollType.END, False)
 
-    @Gtk.Template.Callback()
     def on_clear_all(self, *args):
         if self.content:
             self.stack.set_visible_child(self.main)
@@ -269,12 +269,10 @@ class BavarderWindow(Adw.ApplicationWindow):
             self.local_mode_toggle.set_icon_name("cloud-disabled-symbolic")
             self.model_selector_button.set_visible(True)
             self.provider_selector_button.set_visible(False)
-            self.clear_all_button.set_visible(False)
         else:
             self.local_mode_toggle.set_icon_name("cloud-filled-symbolic")
             self.provider_selector_button.set_visible(True)
             self.model_selector_button.set_visible(False)
-            self.clear_all_button.set_visible(False)
 
     def check_network(self):
         if self.app.check_network(): # Internet
