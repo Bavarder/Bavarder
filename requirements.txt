@@ -7,3 +7,4 @@ tqdm
 charset-normalizer
 idna
 urllib3
+Babel

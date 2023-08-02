@@ -17,9 +17,12 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-import time
+from datetime import datetime
+import locale 
 
 from gi.repository import Gtk, Gio, Adw, GLib
+from babel.dates import format_date, format_datetime, format_time
+from babel import Locale
 
 from bavarder.constants import app_id, build_type, rootdir
 from bavarder.widgets.thread_item import ThreadItem
@@ -339,6 +342,8 @@ class BavarderWindow(Adw.ApplicationWindow):
         if shortcuts:
             self.app.set_accels_for_action(f"win.{name}", shortcuts)
         
+    def get_time(self):
+        return format_time(datetime.now())
 
 
     def add_user_item(self, content):
@@ -346,7 +351,7 @@ class BavarderWindow(Adw.ApplicationWindow):
             {
                 "role": "user",
                 "content": content,
-                "time": time.strftime("%X")
+                "time": self.get_time(),
             }
         )
 
@@ -356,7 +361,7 @@ class BavarderWindow(Adw.ApplicationWindow):
         c = {
                 "role": "assistant",
                 "content": content,
-                "time": time.strftime("%X"),
+                "time": self.get_time(),
             }
 
         if self.app.local_mode and self.app.model_name:
