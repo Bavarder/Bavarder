@@ -166,9 +166,16 @@ class BavarderWindow(Adw.ApplicationWindow):
         if self.content:
             self.stack.set_visible_child(self.main)
             self.main_list.remove_all()
+            i = 0
             for item in self.content:
-                i = Item(self, self.chat, item)
-                self.main_list.append(i)
+                i += 1
+                item = Item(self, self.chat, item)
+                self.main_list.append(item)
+            
+            for i in range(i):
+                row = self.main_list.get_row_at_index(i)
+                row.set_selectable(False)
+                row.set_activatable(False)
         else:
             self.stack.set_visible_child(self.status_no_chat)
 
