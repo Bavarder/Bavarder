@@ -80,6 +80,7 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.on_local_mode_toggled(self.local_mode_toggle)
 
         self.create_action("cancel", self.cancel, ["<primary>Escape"])
+        self.create_action("clear_all", self.on_clear_all)
 
         self.settings.bind(
             "width", self, "default-width", Gio.SettingsBindFlags.DEFAULT
@@ -124,7 +125,10 @@ class BavarderWindow(Adw.ApplicationWindow):
                 self.threads_list.append(thread)
                 self.threads.append(thread)
 
-                if not chat["content"]:
+                try:
+                    if not chat["content"]:
+                        self.stack.set_visible_child(self.status_no_chat)
+                except KeyError:
                     self.stack.set_visible_child(self.status_no_chat)
 
         else:
@@ -193,8 +197,7 @@ class BavarderWindow(Adw.ApplicationWindow):
             self.stack.set_visible_child(self.main)
             self.main_list.remove_all()
             del self.chat["content"]
-        else:
-            self.stack.set_visible_child(self.status_no_chat)
+        self.stack.set_visible_child(self.status_no_chat)
 
     # PROVIDER - ONLINE
     def load_provider_selector(self):
@@ -212,6 +215,11 @@ class BavarderWindow(Adw.ApplicationWindow):
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Preferences"))
             item_provider.set_action_and_target_value("app.preferences", None)
+            provider_menu.append_item(item_provider)
+
+            item_provider = Gio.MenuItem()
+            item_provider.set_label(_("Clear all"))
+            item_provider.set_action_and_target_value("win.clear_all", None)
             provider_menu.append_item(item_provider)
 
         self.provider_selector_button.set_menu_model(provider_menu)
@@ -234,6 +242,11 @@ class BavarderWindow(Adw.ApplicationWindow):
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Preferences"))
             item_provider.set_action_and_target_value("app.preferences", None)
+            provider_menu.append_item(item_provider)
+
+            item_provider = Gio.MenuItem()
+            item_provider.set_label(_("Clear all"))
+            item_provider.set_action_and_target_value("win.clear_all", None)
             provider_menu.append_item(item_provider)
 
         self.model_selector_button.set_menu_model(provider_menu)
