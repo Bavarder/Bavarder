@@ -68,11 +68,30 @@ class PreferencesWindow(Adw.PreferencesWindow):
 
     @Gtk.Template.Callback()
     def clear_all_chats_clicked(self, widget, *args):
-        self.app.clear_all_chats()
+        dialog = Adw.MessageDialog(
+            heading=_("Delete All Threads"),
+            body=_("Are you sure you want to delete all threads? This can't be undone!"),
+            body_use_markup=True
+        )
 
-        toast = Adw.Toast()
-        toast.set_title(_("All chats cleared!"))
-        self.add_toast(toast)
+        dialog.add_response("cancel", _("Cancel"))
+        dialog.add_response("delete", _("Delete"))
+        dialog.set_response_appearance("delete", Adw.ResponseAppearance.DESTRUCTIVE)
+        dialog.set_default_response("cancel")
+        dialog.set_close_response("cancel")
+
+        dialog.connect("response", self.on_delete_response)
+
+        dialog.set_transient_for(self.win)
+        dialog.present()
+
+    def on_delete_response(self, _widget, response):
+        if response == "delete":
+            self.app.clear_all_chats()
+
+            toast = Adw.Toast()
+            toast.set_title(_("All chats cleared!"))
+            self.add_toast(toast)
 
     @Gtk.Template.Callback()
     def on_bot_entry_apply(self, user_data, *args):

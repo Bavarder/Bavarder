@@ -26,12 +26,12 @@ template $Preferences : Adw.PreferencesWindow {
       title: _("Miscellaneous");
 
       Adw.ActionRow {
-        title: _("Clear all chats");
+        title: _("Clear all threads");
 
         Button clear_all_chats_button {
           valign: center;
           label: _("Clear");
-          tooltip-text: _("This will clear all chats from the database.");
+          tooltip-text: _("This will clear all threads from the database.");
           clicked => $clear_all_chats_clicked();
           styles ["destructive-action"]
         }
