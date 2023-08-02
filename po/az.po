@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-02 20:25+0200\n"
-"PO-Revision-Date: 2023-08-02 16:04+0000\n"
+"PO-Revision-Date: 2023-08-02 20:50+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Azerbaijani <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/az/>\n"
@@ -124,7 +124,7 @@ msgstr ""
 
 #: src/views/preferences_window.blp:47
 msgid "User name"
-msgstr ""
+msgstr "İstifadəçi adı"
 
 #: src/views/window.py:227 src/views/window.py:259
 #, fuzzy
