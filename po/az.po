@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-02 17:59+0200\n"
-"PO-Revision-Date: 2023-07-20 12:08+0000\n"
+"PO-Revision-Date: 2023-08-02 16:04+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Azerbaijani <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/az/>\n"
@@ -187,7 +187,7 @@ msgstr ""
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr ""
+msgstr "Kopyala"
 
 #: src/widgets/item.blp:105
 msgid "Edit"
@@ -226,7 +226,7 @@ msgstr ""
 
 #: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:104
 msgid "Delete"
-msgstr ""
+msgstr "Silmək"
 
 #: src/widgets/thread_item.blp:61
 msgid "Star"
