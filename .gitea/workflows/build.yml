@@ -24,8 +24,11 @@ jobs:
       - name: Install dependencies
         run: |
           dnf -y install docker flatpak-builder flatpak git
-          flatpak install org.gnome.Sdk/x86_64/44 -y
-          flatpak install org.gnome.Platform/x86_64/44 -y
+          flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+          flatpak remote-delete flathub-beta --force
+          flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+          flatpak install org.gnome.Sdk/x86_64/master -y
+          flatpak install org.gnome.Platform/x86_64/master -y
       - name: Build
         run: |
           flatpak-builder --repo=repo --force-clean build build-aux/flatpak/io.github.Bavarder.Bavarder.json
