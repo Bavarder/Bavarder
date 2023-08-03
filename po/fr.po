@@ -7,13 +7,14 @@
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # muznyo <codeberg.vqtek@simplelogin.com>, 2023.
 # rene-coty <irenee.thirion@e.email>, 2023.
+# jibecfed <jean-baptiste@holcroft.fr>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-02 20:25+0200\n"
-"PO-Revision-Date: 2023-08-02 18:33+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
+"PO-Revision-Date: 2023-08-03 13:22+0000\n"
+"Last-Translator: jibecfed <jean-baptiste@holcroft.fr>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -62,16 +63,14 @@ msgid "List of available models"
 msgstr "Liste des modèles disponibles"
 
 #: src/views/preferences_window.py:72
-#, fuzzy
-#| msgid "Delete Thread"
 msgid "Delete All Threads"
-msgstr "Supprimer la discussion"
+msgstr "Supprimer toutes les discussions"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Voulez-vous vraiment supprimer cette discussion ?"
+msgstr ""
+"Voulez-vous vraiment supprimer toutes les discussions ? Ceci ne peut pas "
+"être annulé !"
 
 #: src/views/preferences_window.py:77 src/views/window.py:309
 #: src/widgets/thread_item.py:103
@@ -101,8 +100,6 @@ msgid "Miscellaneous"
 msgstr "Divers"
 
 #: src/views/preferences_window.blp:29
-#, fuzzy
-#| msgid "Clear all chats"
 msgid "Clear all threads"
 msgstr "Effacer toutes les discussions"
 
@@ -111,20 +108,16 @@ msgid "Clear"
 msgstr "Effacer"
 
 #: src/views/preferences_window.blp:34
-#, fuzzy
-#| msgid "This will clear all chats from the database."
 msgid "This will clear all threads from the database."
 msgstr "Cela va effacer toutes les discussions de la base de données."
 
 #: src/views/preferences_window.blp:41
 msgid "Bot name"
-msgstr ""
+msgstr "Nom du robot"
 
 #: src/views/preferences_window.blp:47
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Utilisateur"
+msgstr "Nom d’utilisateur"
 
 #: src/views/window.py:227 src/views/window.py:259
 msgid "Clear all"
@@ -145,7 +138,7 @@ msgstr "Menu principal"
 
 #: src/views/window.blp:55
 msgid "No Chats"
-msgstr "Pas de Discussions"
+msgstr "Aucune discussion"
 
 #: src/views/window.blp:62
 msgid "Get started by creating a new chat or selecting one from the sidebar"
