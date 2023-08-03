@@ -117,11 +117,11 @@ class Item(Gtk.Box):
         self.app = self.parent.get_application()
         self.win = self.app.get_active_window()
 
-        if t == self.app.user_name.lower(): # User
+        if t == self.app.user_name.lower() or t == "user": # User
             self.message_bubble.add_css_class("message-bubble-user")
             self.avatar.add_css_class("avatar-user")
             role = self.app.user_name
-        elif t == self.app.bot_name.lower(): # Assistant
+        elif t == self.app.bot_name.lower() or t == "assistant": # Assistant
             self.avatar.set_icon_name("bot-symbolic")
             self.user.add_css_class("warning")
             role = self.app.bot_name
