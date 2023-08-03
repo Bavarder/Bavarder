@@ -47,6 +47,12 @@ class AboutWindow:
             release_notes_version=constants.rel_ver,
         )
 
+        self.about_window.add_credit_section(
+            _("Packaging"),
+            [
+                _("Soumyadeep Ghosh https://codeberg.org/soumyadghosh")
+            ]
+        )
         self.about_window.add_link(
             _("Translate"),
             constants.translate_url
