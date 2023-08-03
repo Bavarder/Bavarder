@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-03 15:22+0200\n"
-"PO-Revision-Date: 2023-08-03 15:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-08-04 10:53+0000\n"
+"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -35,6 +35,10 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"Je hebt het opvraaglimiet bereikt! Voeg een toegangssleutel toe in de "
+"voorkeuren. Je kunt een toegangssleutel aanmaken door deze "
+"[handleiding](https://bavarder.codeberg.page/help/huggingface/) (Engels) te "
+"volgen."
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
@@ -54,7 +58,7 @@ msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Pakketten"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -62,7 +66,7 @@ msgstr "Vertalen"
 
 #: src/views/export_dialog.blp:6
 msgid "Export Thread ?"
-msgstr ""
+msgstr "Gesprek exporteren?"
 
 #: src/views/export_dialog.blp:51
 msgid "Close"
@@ -133,7 +137,7 @@ msgstr "Hierdoor worden alle gesprekken gewist."
 
 #: src/views/preferences_window.blp:42
 msgid "Names"
-msgstr "Naam"
+msgstr "Namen"
 
 #: src/views/preferences_window.blp:45
 msgid "Bot name"
@@ -145,7 +149,7 @@ msgstr "Gebruikersnaam"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
-msgstr "Vergeten"
+msgstr "Negeren"
 
 #: src/views/save_dialog.blp:9
 msgid "Save"
@@ -153,7 +157,7 @@ msgstr "Opslaan"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Gesprek exporteren?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -165,7 +169,7 @@ msgstr "Locatie"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "Het geëxporteerde gesprek wordt in deze map bewaard."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -173,11 +177,11 @@ msgstr "Kies een map"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "Het gesprek kan niet worden opgeslagen"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "Het gesprek is opgeslagen!"
 
 #: src/views/window.py:235 src/views/window.py:273
 msgid "Clear all"
