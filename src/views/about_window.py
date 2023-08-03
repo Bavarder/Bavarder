@@ -50,7 +50,7 @@ class AboutWindow:
         self.about_window.add_credit_section(
             _("Packaging"),
             [
-                _("Soumyadeep Ghosh https://codeberg.org/soumyadghosh")
+                "Soumyadeep Ghosh https://codeberg.org/soumyadghosh"
             ]
         )
         self.about_window.add_link(
