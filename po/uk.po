@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-03 15:22+0200\n"
-"PO-Revision-Date: 2023-08-02 16:04+0000\n"
+"PO-Revision-Date: 2023-08-03 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/uk/>\n"
@@ -22,8 +22,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
@@ -76,12 +76,12 @@ msgstr ""
 
 #: src/views/export_dialog.blp:51
 msgid "Close"
-msgstr ""
+msgstr "Закрити"
 
 #: src/views/export_dialog.blp:52 src/views/window.py:240
 #: src/views/window.py:278
 msgid "Export"
-msgstr ""
+msgstr "Експортувати"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:18 src/views/window.py:265
@@ -151,7 +151,7 @@ msgstr ""
 
 #: src/views/preferences_window.blp:42
 msgid "Names"
-msgstr ""
+msgstr "Ім'я"
 
 #: src/views/preferences_window.blp:45
 msgid "Bot name"
@@ -165,11 +165,11 @@ msgstr "Користувач"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
-msgstr ""
+msgstr "Скасувати зміни"
 
 #: src/views/save_dialog.blp:9
 msgid "Save"
-msgstr ""
+msgstr "Зберегти"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
@@ -177,11 +177,11 @@ msgstr ""
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr ""
+msgstr "Ім'я файлу"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
-msgstr ""
+msgstr "Місцезнаходження"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
@@ -189,7 +189,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr ""
+msgstr "Вибрати каталог"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: src/views/window.py:380
 msgid "human"
-msgstr ""
+msgstr "Людина"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:182 src/views/window.blp:183
@@ -279,7 +279,7 @@ msgstr "Про Bavarder"
 
 #: src/widgets/code_block.py:72
 msgid "Done"
-msgstr ""
+msgstr "Готово"
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
