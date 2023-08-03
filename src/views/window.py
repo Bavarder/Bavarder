@@ -109,18 +109,15 @@ class BavarderWindow(Adw.ApplicationWindow):
             return self.threads_list.get_selected_row().get_child().chat
         except AttributeError: # create a new chat
             #self.on_new_chat_action()
-            pass
-        finally:
-            return self.threads_list.get_selected_row().get_child().chat
+            return {}
+        
 
     @property
     def content(self):
         try:
             return self.chat["content"]
         except KeyError: # no content
-            self.chat["content"] = []
-        finally:
-            return self.chat["content"]
+            return []
 
     def load_threads(self):
         print("LOADING")

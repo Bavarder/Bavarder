@@ -40,4 +40,5 @@ class ExportDialog(Adw.MessageDialog):
     def handle_response(self, dialog, response, *args, **kwargs):
         if response == "export":
             dialog = SaveDialog(self.parent, self.text)
+            dialog.set_transient_for(self.parent)
             dialog.present()
