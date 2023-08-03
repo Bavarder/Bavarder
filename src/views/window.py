@@ -28,6 +28,7 @@ from bavarder.constants import app_id, build_type, rootdir
 from bavarder.widgets.thread_item import ThreadItem
 from bavarder.widgets.item import Item
 from bavarder.threading import KillableThread
+from bavarder.views.export_dialog import ExportDialog
 
 class CustomEntry(Gtk.TextView):
     def __init__(self, **kwargs):
@@ -85,6 +86,7 @@ class BavarderWindow(Adw.ApplicationWindow):
 
         self.create_action("cancel", self.cancel, ["<primary>Escape"])
         self.create_action("clear_all", self.on_clear_all)
+        self.create_action("export", self.on_export, ["<primary>e"])
 
         self.settings.bind(
             "width", self, "default-width", Gio.SettingsBindFlags.DEFAULT
@@ -202,6 +204,12 @@ class BavarderWindow(Adw.ApplicationWindow):
             del self.chat["content"]
         self.stack.set_visible_child(self.status_no_chat)
 
+    def on_export(self, *args):
+        if self.content:
+            dialog = ExportDialog(self, self.chat["content"])
+            dialog.set_transient_for(self)
+            dialog.present()
+
     # PROVIDER - ONLINE
     def load_provider_selector(self):
         provider_menu = Gio.Menu()
@@ -227,6 +235,11 @@ class BavarderWindow(Adw.ApplicationWindow):
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Clear all"))
             item_provider.set_action_and_target_value("win.clear_all", None)
+            section.append_item(item_provider)
+
+            item_provider = Gio.MenuItem()
+            item_provider.set_label(_("Export"))
+            item_provider.set_action_and_target_value("win.export", None)
             section.append_item(item_provider)
 
             provider_menu.append_section(None, section)
@@ -260,6 +273,11 @@ class BavarderWindow(Adw.ApplicationWindow):
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Clear all"))
             item_provider.set_action_and_target_value("win.clear_all", None)
+            section.append_item(item_provider)
+
+            item_provider = Gio.MenuItem()
+            item_provider.set_label(_("Export"))
+            item_provider.set_action_and_target_value("win.export", None)
             section.append_item(item_provider)
 
             provider_menu.append_section(None, section)

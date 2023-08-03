@@ -2,7 +2,9 @@
 <gresources>
   <gresource prefix="/io/github/Bavarder/Bavarder">
     <file preprocess="xml-stripblanks" alias="ui/window.ui">views/window.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/export_dialog.ui">views/export_dialog.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/preferences_window.ui">views/preferences_window.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/save_dialog.ui">views/save_dialog.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/thread_item.ui">widgets/thread_item.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/item.ui">widgets/item.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/provider_item.ui">providers/provider_item.ui</file>

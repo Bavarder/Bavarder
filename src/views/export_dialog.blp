@@ -1,0 +1,54 @@
+using Gtk 4.0;
+using Adw 1;
+using GtkSource 5;
+
+template $ExportDialog : Adw.MessageDialog {
+  heading: _("Export Thread ?");
+  response => $handle_response();
+  
+  extra-child: Overlay {
+        [overlay]
+        Button {
+            styles [
+                "circular",
+            ]
+            icon-name: "edit-copy-symbolic";
+            halign: end;
+            valign: end;
+            margin-bottom: 7;
+            margin-end: 7;
+            clicked => $copy();
+        }
+  
+        Box box {
+            orientation: vertical;
+            vexpand: true;
+            hexpand: true;
+
+            Gtk.ScrolledWindow view {
+                vexpand: true;
+                hexpand: true;
+                min-content-height: 200;
+
+                GtkSource.View source_view {
+                    vexpand: true;
+                    hexpand: true;
+                    buffer: GtkSource.Buffer buffer {};
+                    editable: false;
+                    monospace: true;
+                    show-line-marks: false;
+                    show-line-numbers: false;
+                    smart-backspace: false;
+                    margin-top: 5;
+                    margin-bottom: 5;
+                    styles [ "codeview", "card" ]
+                }
+            }
+        }
+    };
+
+    responses [
+        close: _("Close"),
+        export: _("Export") suggested,
+    ]
+}

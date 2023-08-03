@@ -5,7 +5,9 @@ python = import('python')
 blueprints = custom_target('blueprints',
   input: files(
     'gtk/help-overlay.blp',
+    'views/export_dialog.blp',
     'views/preferences_window.blp',
+    'views/save_dialog.blp',
     'views/window.blp',
     'widgets/thread_item.blp',
     'widgets/item.blp',
