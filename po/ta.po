@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-03 15:22+0200\n"
-"PO-Revision-Date: 2023-08-02 16:04+0000\n"
+"PO-Revision-Date: 2023-08-03 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Tamil <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ta/>\n"
@@ -131,7 +131,7 @@ msgstr ""
 
 #: src/views/preferences_window.blp:42
 msgid "Names"
-msgstr ""
+msgstr "Name"
 
 #: src/views/preferences_window.blp:45
 msgid "Bot name"
@@ -149,7 +149,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:9
 msgid "Save"
-msgstr ""
+msgstr "சேமி"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
@@ -157,11 +157,11 @@ msgstr ""
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr ""
+msgstr "File name"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
-msgstr ""
+msgstr "இருப்பிடம்"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
@@ -169,7 +169,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr ""
+msgstr "ஒரு கோப்பகத்தைத் தேர்ந்தெடுக்கவும்"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
@@ -254,7 +254,7 @@ msgstr "பவார்டர் பற்றி"
 
 #: src/widgets/code_block.py:72
 msgid "Done"
-msgstr ""
+msgstr "Done"
 
 #: src/widgets/download_row.blp:11
 #, fuzzy
