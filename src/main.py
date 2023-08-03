@@ -142,6 +142,7 @@ class BavarderApplication(Adw.Application):
         self.quit()
 
     def on_new_chat_action(self, widget, _):
+        print("NEW CHAT")
         chat_id = 0
         for chat in self.data["chats"]:
             if chat["id"] > chat_id:
@@ -222,6 +223,7 @@ class BavarderApplication(Adw.Application):
 
     def on_ask(self, widget, _):
         try:
+            print("ASK-APP")
             self.win.on_ask()
         except AttributeError:
             pass

@@ -47,6 +47,7 @@ template $BavarderWindow : Adw.ApplicationWindow {
             child: Stack thread_stack {
               Gtk.ListBox threads_list {
                 selection-mode: browse;
+                show-separators: false;
                 row-activated => $threads_row_activated_cb();
                 styles ["navigation-sidebar"]
               }

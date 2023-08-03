@@ -108,7 +108,8 @@ class BavarderWindow(Adw.ApplicationWindow):
         try:
             return self.threads_list.get_selected_row().get_child().chat
         except AttributeError: # create a new chat
-            self.on_new_chat_action()
+            #self.on_new_chat_action()
+            pass
         finally:
             return self.threads_list.get_selected_row().get_child().chat
 
@@ -314,15 +315,21 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def on_ask(self, *args):
-        if not self.threads: # no chat
-            self.on_new_chat_action()
-            self.threads_list.select_row(self.threads_list.get_row_at_index(0))
+        print("ASK-WIN")
 
         prompt = self.message_entry.get_buffer().props.text.strip()
         if prompt:
             self.message_entry.get_buffer().set_text("")
 
-            self.add_user_item(prompt)
+            try:
+                self.add_user_item(prompt)
+            except AttributeError: # no chat
+                self.on_new_chat_action()
+                row = self.threads_list.get_row_at_index(0)
+               
+                self.threads_list.select_row(row)
+                self.threads_row_activated_cb()
+                self.add_user_item(prompt)
 
             def thread_run():
                 self.toast = Adw.Toast()
@@ -373,6 +380,7 @@ class BavarderWindow(Adw.ApplicationWindow):
                 "role": self.app.user_name,
                 "content": content,
                 "time": self.get_time(),
+                "model": _("human"),
             }
         )
 
