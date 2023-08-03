@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-02 20:25+0200\n"
+"POT-Creation-Date: 2023-08-03 15:22+0200\n"
 "PO-Revision-Date: 2023-08-02 18:33+0000\n"
 "Last-Translator: nikrtyd <nikrtyd@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
@@ -25,13 +25,20 @@ msgstr ""
 "X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
-#: src/views/window.blp:26 src/views/window.blp:61 src/views/window.blp:165
+#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:166
 msgid "Bavarder"
 msgstr "Bavarder"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
 msgstr "Болтайте с котом"
+
+#: src/providers/hfbasechat.py:33
+msgid ""
+"You've reached the rate limit! Please add a token to the preferences. You "
+"can get the token by following this [guide](https://bavarder.codeberg.page/"
+"help/huggingface/)"
+msgstr ""
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
@@ -50,11 +57,28 @@ msgid "Copyright © 2023 0xMRTT"
 msgstr "Авторское право © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
+msgid "Packaging"
+msgstr ""
+
+#: src/views/about_window.py:57
 msgid "Translate"
 msgstr "Перевести"
 
+#: src/views/export_dialog.blp:6
+msgid "Export Thread ?"
+msgstr ""
+
+#: src/views/export_dialog.blp:51
+msgid "Close"
+msgstr ""
+
+#: src/views/export_dialog.blp:52 src/views/window.py:240
+#: src/views/window.py:278
+msgid "Export"
+msgstr ""
+
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:18 src/views/window.py:250
+#: src/views/preferences_window.blp:18 src/views/window.py:265
 msgid "Models"
 msgstr "Модели"
 
@@ -74,8 +98,8 @@ msgstr "Удалить беседу"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr "Вы уверены, что хотите удалить это?"
 
-#: src/views/preferences_window.py:77 src/views/window.py:309
-#: src/widgets/thread_item.py:103
+#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
+#: src/views/window.py:334 src/widgets/thread_item.py:103
 msgid "Cancel"
 msgstr "Отменить"
 
@@ -89,11 +113,11 @@ msgid "All chats cleared!"
 msgstr "Все чаты очищены!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
-#: src/views/window.py:222 src/views/window.py:254 src/views/window.blp:297
+#: src/views/window.py:230 src/views/window.py:268 src/views/window.blp:298
 msgid "Preferences"
 msgstr "Параметры"
 
-#: src/views/preferences_window.blp:14 src/views/window.py:218
+#: src/views/preferences_window.blp:14 src/views/window.py:227
 msgid "Providers"
 msgstr "Провайдеры"
 
@@ -117,26 +141,70 @@ msgstr "Очистить"
 msgid "This will clear all threads from the database."
 msgstr "Это удалит все чаты из базы данных."
 
-#: src/views/preferences_window.blp:41
+#: src/views/preferences_window.blp:42
+msgid "Names"
+msgstr ""
+
+#: src/views/preferences_window.blp:45
 msgid "Bot name"
 msgstr ""
 
-#: src/views/preferences_window.blp:47
+#: src/views/preferences_window.blp:51
 #, fuzzy
 #| msgid "User"
 msgid "User name"
 msgstr "Пользователь"
 
-#: src/views/window.py:227 src/views/window.py:259
+#: src/views/save_dialog.blp:8
+msgid "Discard"
+msgstr ""
+
+#: src/views/save_dialog.blp:9
+msgid "Save"
+msgstr ""
+
+#: src/views/save_dialog.blp:13
+msgid "Export Thread?"
+msgstr ""
+
+#: src/views/save_dialog.blp:26
+msgid "File Name"
+msgstr ""
+
+#: src/views/save_dialog.blp:39
+msgid "Location"
+msgstr ""
+
+#: src/views/save_dialog.blp:56
+msgid "The export of the Thread will be saved in this directory."
+msgstr ""
+
+#: src/views/save_dialog.blp:65
+msgid "Choose a directory"
+msgstr ""
+
+#: src/views/save_dialog.py:30
+msgid "Unable to save the Thread"
+msgstr ""
+
+#: src/views/save_dialog.py:32
+msgid "Thread successfully saved!"
+msgstr ""
+
+#: src/views/window.py:235 src/views/window.py:273
 msgid "Clear all"
 msgstr "Очистить все"
 
-#: src/views/window.py:308
+#: src/views/window.py:333
 msgid "Generating response"
 msgstr "Генерируется ответ"
 
-#: src/views/window.blp:33 src/views/window.blp:77 src/views/window.blp:78
-#: src/views/window.blp:181 src/views/window.blp:182
+#: src/views/window.py:380
+msgid "human"
+msgstr ""
+
+#: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
+#: src/views/window.blp:182 src/views/window.blp:183
 msgid "New Chat"
 msgstr "Новый чат"
 
@@ -144,54 +212,58 @@ msgstr "Новый чат"
 msgid "Main Menu"
 msgstr "Главное меню"
 
-#: src/views/window.blp:55
+#: src/views/window.blp:56
 msgid "No Chats"
 msgstr "Нет чатов"
 
-#: src/views/window.blp:62
+#: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
 msgstr ""
 "Начните с создания нового чата или выберите существующий на боковой панели"
 
-#: src/views/window.blp:95
+#: src/views/window.blp:96
 msgid "Message"
 msgstr "Сообщение"
 
-#: src/views/window.blp:107
+#: src/views/window.blp:108
 msgid "Chat"
 msgstr "Чат"
 
-#: src/views/window.blp:153
+#: src/views/window.blp:154
 msgid "No Messages"
 msgstr "Нет сообщений"
 
-#: src/views/window.blp:154
+#: src/views/window.blp:155
 msgid "Send first message to get started"
 msgstr "Отправьте первое сообщение, чтобы начать"
 
-#: src/views/window.blp:159
+#: src/views/window.blp:160
 msgid "No Internet"
 msgstr "Нет интернета"
 
-#: src/views/window.blp:166
+#: src/views/window.blp:167
 msgid "Get started by creating a new chat"
 msgstr "Начните с создания нового чата"
 
-#: src/views/window.blp:238
+#: src/views/window.blp:239
 msgid "Open Emoji Picker"
 msgstr "Открыть панель выбора эмодзи"
 
-#: src/views/window.blp:257
+#: src/views/window.blp:258
 msgid "Ask"
 msgstr "Спросить"
 
-#: src/views/window.blp:302
+#: src/views/window.blp:303
 msgid "Keyboard Shortcuts"
 msgstr "Комбинации клавиш"
 
-#: src/views/window.blp:307
+#: src/views/window.blp:308
 msgid "About Bavarder"
 msgstr "О Bavarder"
+
+#: src/widgets/code_block.py:72
+msgid "Done"
+msgstr ""
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
@@ -219,7 +291,7 @@ msgstr "Изменить"
 msgid "Remove"
 msgstr "Удалить"
 
-#: src/widgets/item.py:179
+#: src/widgets/item.py:177
 msgid "Message copied"
 msgstr "Сообщение скопировано"
 
@@ -256,19 +328,19 @@ msgstr "Вы уверены, что хотите удалить это?"
 msgid "Thread Deleted"
 msgstr "Беседа удалена"
 
-#: src/main.py:152
+#: src/main.py:153
 #, python-format
 msgid "New Chat %i"
 msgstr "Новый чат %i"
 
-#: src/main.py:232
+#: src/main.py:234
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
 "Пожалуйста, загрузите модель в Параметрах, нажав на меню с точками сверху!"
 
-#: src/main.py:245
+#: src/main.py:247
 msgid "Please enable a provider from the Dot Menu"
 msgstr "Пожалуйста, включите провайдера в меню с точками"
 

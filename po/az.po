@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-02 20:25+0200\n"
+"POT-Creation-Date: 2023-08-03 15:22+0200\n"
 "PO-Revision-Date: 2023-08-02 20:50+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Azerbaijani <https://translate.codeberg.org/projects/bavarder/"
@@ -22,7 +22,7 @@ msgstr ""
 "X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
-#: src/views/window.blp:26 src/views/window.blp:61 src/views/window.blp:165
+#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:166
 msgid "Bavarder"
 msgstr "Bavarder"
 
@@ -31,6 +31,13 @@ msgstr "Bavarder"
 #| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with a Cat"
 msgstr "Chit AI ilə söhbət edin"
+
+#: src/providers/hfbasechat.py:33
+msgid ""
+"You've reached the rate limit! Please add a token to the preferences. You "
+"can get the token by following this [guide](https://bavarder.codeberg.page/"
+"help/huggingface/)"
+msgstr ""
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
@@ -51,11 +58,28 @@ msgid "Copyright © 2023 0xMRTT"
 msgstr "Müəlliflik hüququ © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
+msgid "Packaging"
+msgstr ""
+
+#: src/views/about_window.py:57
 msgid "Translate"
 msgstr "Tərcümə et"
 
+#: src/views/export_dialog.blp:6
+msgid "Export Thread ?"
+msgstr ""
+
+#: src/views/export_dialog.blp:51
+msgid "Close"
+msgstr ""
+
+#: src/views/export_dialog.blp:52 src/views/window.py:240
+#: src/views/window.py:278
+msgid "Export"
+msgstr ""
+
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:18 src/views/window.py:250
+#: src/views/preferences_window.blp:18 src/views/window.py:265
 #, fuzzy
 #| msgid "Model"
 msgid "Models"
@@ -73,8 +97,8 @@ msgstr ""
 msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr ""
 
-#: src/views/preferences_window.py:77 src/views/window.py:309
-#: src/widgets/thread_item.py:103
+#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
+#: src/views/window.py:334 src/widgets/thread_item.py:103
 msgid "Cancel"
 msgstr "Ləğv et"
 
@@ -88,11 +112,11 @@ msgid "All chats cleared!"
 msgstr ""
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
-#: src/views/window.py:222 src/views/window.py:254 src/views/window.blp:297
+#: src/views/window.py:230 src/views/window.py:268 src/views/window.blp:298
 msgid "Preferences"
 msgstr "Üstünlüklər"
 
-#: src/views/preferences_window.blp:14 src/views/window.py:218
+#: src/views/preferences_window.blp:14 src/views/window.py:227
 msgid "Providers"
 msgstr "Provayderlər"
 
@@ -118,27 +142,71 @@ msgstr "Təmizlə"
 msgid "This will clear all threads from the database."
 msgstr ""
 
-#: src/views/preferences_window.blp:41
+#: src/views/preferences_window.blp:42
+msgid "Names"
+msgstr ""
+
+#: src/views/preferences_window.blp:45
 msgid "Bot name"
 msgstr ""
 
-#: src/views/preferences_window.blp:47
+#: src/views/preferences_window.blp:51
 msgid "User name"
 msgstr "İstifadəçi adı"
 
-#: src/views/window.py:227 src/views/window.py:259
+#: src/views/save_dialog.blp:8
+msgid "Discard"
+msgstr ""
+
+#: src/views/save_dialog.blp:9
+msgid "Save"
+msgstr ""
+
+#: src/views/save_dialog.blp:13
+msgid "Export Thread?"
+msgstr ""
+
+#: src/views/save_dialog.blp:26
+msgid "File Name"
+msgstr ""
+
+#: src/views/save_dialog.blp:39
+msgid "Location"
+msgstr ""
+
+#: src/views/save_dialog.blp:56
+msgid "The export of the Thread will be saved in this directory."
+msgstr ""
+
+#: src/views/save_dialog.blp:65
+msgid "Choose a directory"
+msgstr ""
+
+#: src/views/save_dialog.py:30
+msgid "Unable to save the Thread"
+msgstr ""
+
+#: src/views/save_dialog.py:32
+msgid "Thread successfully saved!"
+msgstr ""
+
+#: src/views/window.py:235 src/views/window.py:273
 #, fuzzy
 #| msgctxt "shortcut window"
 #| msgid "Clear"
 msgid "Clear all"
 msgstr "Təmizlə"
 
-#: src/views/window.py:308
+#: src/views/window.py:333
 msgid "Generating response"
 msgstr ""
 
-#: src/views/window.blp:33 src/views/window.blp:77 src/views/window.blp:78
-#: src/views/window.blp:181 src/views/window.blp:182
+#: src/views/window.py:380
+msgid "human"
+msgstr ""
+
+#: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
+#: src/views/window.blp:182 src/views/window.blp:183
 msgid "New Chat"
 msgstr ""
 
@@ -146,55 +214,59 @@ msgstr ""
 msgid "Main Menu"
 msgstr "Əsas menyu"
 
-#: src/views/window.blp:55
+#: src/views/window.blp:56
 msgid "No Chats"
 msgstr ""
 
-#: src/views/window.blp:62
+#: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
 msgstr ""
 
-#: src/views/window.blp:95
+#: src/views/window.blp:96
 msgid "Message"
 msgstr "Mesaj"
 
-#: src/views/window.blp:107
+#: src/views/window.blp:108
 msgid "Chat"
 msgstr ""
 
-#: src/views/window.blp:153
+#: src/views/window.blp:154
 #, fuzzy
 #| msgid "Message"
 msgid "No Messages"
 msgstr "Mesaj"
 
-#: src/views/window.blp:154
+#: src/views/window.blp:155
 msgid "Send first message to get started"
 msgstr ""
 
-#: src/views/window.blp:159
+#: src/views/window.blp:160
 msgid "No Internet"
 msgstr ""
 
-#: src/views/window.blp:166
+#: src/views/window.blp:167
 msgid "Get started by creating a new chat"
 msgstr ""
 
-#: src/views/window.blp:238
+#: src/views/window.blp:239
 msgid "Open Emoji Picker"
 msgstr ""
 
-#: src/views/window.blp:257
+#: src/views/window.blp:258
 msgid "Ask"
 msgstr "Soruş"
 
-#: src/views/window.blp:302
+#: src/views/window.blp:303
 msgid "Keyboard Shortcuts"
 msgstr "Klaviatura Qısayolları"
 
-#: src/views/window.blp:307
+#: src/views/window.blp:308
 msgid "About Bavarder"
 msgstr "Bavarder haqqında"
+
+#: src/widgets/code_block.py:72
+msgid "Done"
+msgstr ""
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
@@ -222,7 +294,7 @@ msgstr "Düzəliş et"
 msgid "Remove"
 msgstr ""
 
-#: src/widgets/item.py:179
+#: src/widgets/item.py:177
 #, fuzzy
 #| msgid "Message"
 msgid "Message copied"
@@ -261,18 +333,18 @@ msgstr ""
 msgid "Thread Deleted"
 msgstr ""
 
-#: src/main.py:152
+#: src/main.py:153
 #, python-format
 msgid "New Chat %i"
 msgstr ""
 
-#: src/main.py:232
+#: src/main.py:234
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
 
-#: src/main.py:245
+#: src/main.py:247
 msgid "Please enable a provider from the Dot Menu"
 msgstr ""
 
