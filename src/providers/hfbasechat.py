@@ -24,5 +24,10 @@ class BaseHFChatProvider(BaseProvider):
         })
 
         print(output)
-        
-        return output['generated_text']
+
+        if 'generated_text' in output:
+            return output['generated_text']
+        elif 'error' in output:
+            match output['error']:
+                case "Rate limit reached. Please log in or use your apiToken":
+                    return _("You've reached the rate limit! Please add a token to the preferences. You can get the token by following this [guide](https://bavarder.codeberg.page/help/huggingface/)")
