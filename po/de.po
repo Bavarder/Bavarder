@@ -6,13 +6,14 @@
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # maymage <maymage@gmail.com>, 2023.
+# tobiasfichtner <codeberg.org@tobiasfichtner.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-03 15:22+0200\n"
-"PO-Revision-Date: 2023-08-03 15:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-08-04 10:53+0000\n"
+"Last-Translator: tobiasfichtner <codeberg.org@tobiasfichtner.com>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -37,6 +38,10 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"Nutzungsgrenze erreicht! Zum aufheben der Nutzungsgrenze bitte "
+"Zugangsschlüssel in den Einstellungen speichern. Zugangsschlüssels können "
+"nach dieser [Anleitung](https://bavarder.codeberg.page/help/huggingface/) "
+"erhalten werden"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
@@ -56,15 +61,15 @@ msgstr "Urheberrechte © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Gepackt"
 
 #: src/views/about_window.py:57
 msgid "Translate"
-msgstr "Übersetzen"
+msgstr "Übersetzt"
 
 #: src/views/export_dialog.blp:6
 msgid "Export Thread ?"
-msgstr ""
+msgstr "Unterhaltung exportieren?"
 
 #: src/views/export_dialog.blp:51
 msgid "Close"
@@ -85,16 +90,14 @@ msgid "List of available models"
 msgstr "Liste verfügbarer Modelle"
 
 #: src/views/preferences_window.py:72
-#, fuzzy
-#| msgid "Delete Thread"
 msgid "Delete All Threads"
-msgstr "Gespräch löschen"
+msgstr "Alle Unterhaltungen löschen"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Sicher, dass dieses Gespräch gelöscht werden soll?"
+msgstr ""
+"Sicher, dass alle Unterhaltungen gelöscht werden sollen? Das kann nicht "
+"rückgängig gemacht werden!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:334 src/widgets/thread_item.py:103
@@ -124,8 +127,6 @@ msgid "Miscellaneous"
 msgstr "Unterschiedliches"
 
 #: src/views/preferences_window.blp:29
-#, fuzzy
-#| msgid "Clear all chats"
 msgid "Clear all threads"
 msgstr "Alle Unterhaltungen leeren"
 
@@ -134,24 +135,20 @@ msgid "Clear"
 msgstr "Leeren"
 
 #: src/views/preferences_window.blp:34
-#, fuzzy
-#| msgid "This will clear all chats from the database."
 msgid "This will clear all threads from the database."
 msgstr "Dies wird alle Unterhaltung in der Datenbank leeren."
 
 #: src/views/preferences_window.blp:42
 msgid "Names"
-msgstr "Name"
+msgstr "Namen"
 
 #: src/views/preferences_window.blp:45
 msgid "Bot name"
-msgstr ""
+msgstr "Bot Name"
 
 #: src/views/preferences_window.blp:51
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Nutzer"
+msgstr "Benutzername"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -163,7 +160,7 @@ msgstr "Speichern"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Unterhaltung exportieren?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -175,7 +172,7 @@ msgstr "Standort"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "Der Export der Unterhaltung wird in diesem Verzeichnis gespeichert."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -183,15 +180,15 @@ msgstr "Verzeichnis wählen"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "Unterhaltung konnte nicht gespeichert werden"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "Unterhaltung erfolgreich gespeichert!"
 
 #: src/views/window.py:235 src/views/window.py:273
 msgid "Clear all"
-msgstr "Alle leeren"
+msgstr "Alles leeren"
 
 #: src/views/window.py:333
 msgid "Generating response"
@@ -222,7 +219,7 @@ msgstr ""
 
 #: src/views/window.blp:96
 msgid "Message"
-msgstr "Meldung"
+msgstr "Nachricht"
 
 #: src/views/window.blp:108
 msgid "Chat"
@@ -230,7 +227,7 @@ msgstr "Unterhaltung"
 
 #: src/views/window.blp:154
 msgid "No Messages"
-msgstr "Keine Meldungen"
+msgstr "Keine Nachrichten"
 
 #: src/views/window.blp:155
 msgid "Send first message to get started"
@@ -238,7 +235,7 @@ msgstr "Um anzufangen, erste Nachricht senden"
 
 #: src/views/window.blp:160
 msgid "No Internet"
-msgstr "Kein Netzwerk"
+msgstr "Keine Netzwerkverbindung"
 
 #: src/views/window.blp:167
 msgid "Get started by creating a new chat"
@@ -246,7 +243,7 @@ msgstr "Um anzufangen, neue Unterhaltung erstellen"
 
 #: src/views/window.blp:239
 msgid "Open Emoji Picker"
-msgstr "Emojiauswahl öffnen"
+msgstr "Emoji-Auswahl öffnen"
 
 #: src/views/window.blp:258
 msgid "Ask"
@@ -292,7 +289,7 @@ msgstr "Entfernen"
 
 #: src/widgets/item.py:177
 msgid "Message copied"
-msgstr "Meldung kopiert"
+msgstr "Nachricht kopiert"
 
 #: src/widgets/model_item.blp:11
 msgid "Delete Model"
@@ -317,20 +314,20 @@ msgstr "Titel festlegen"
 
 #: src/widgets/thread_item.py:98
 msgid "Delete Thread"
-msgstr "Gespräch löschen"
+msgstr "Unterhaltung löschen"
 
 #: src/widgets/thread_item.py:99
 msgid "Are you sure you want to delete this thread?"
-msgstr "Sicher, dass dieses Gespräch gelöscht werden soll?"
+msgstr "Sicher, dass diese Unterhaltung gelöscht werden soll?"
 
 #: src/widgets/thread_item.py:120
 msgid "Thread Deleted"
-msgstr "Gespräch gelöscht"
+msgstr "Unterhaltung gelöscht"
 
 #: src/main.py:153
 #, python-format
 msgid "New Chat %i"
-msgstr "Neue Unterhaltung%i"
+msgstr "Neue Unterhaltung %i"
 
 #: src/main.py:234
 msgid ""
