@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-03 15:22+0200\n"
-"PO-Revision-Date: 2023-08-02 16:04+0000\n"
+"PO-Revision-Date: 2023-08-03 15:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
@@ -72,12 +72,12 @@ msgstr ""
 
 #: src/views/export_dialog.blp:51
 msgid "Close"
-msgstr ""
+msgstr "Stäng"
 
 #: src/views/export_dialog.blp:52 src/views/window.py:240
 #: src/views/window.py:278
 msgid "Export"
-msgstr ""
+msgstr "Exportera"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:18 src/views/window.py:265
@@ -147,7 +147,7 @@ msgstr ""
 
 #: src/views/preferences_window.blp:42
 msgid "Names"
-msgstr ""
+msgstr "Namn"
 
 #: src/views/preferences_window.blp:45
 msgid "Bot name"
@@ -161,11 +161,11 @@ msgstr "Användare"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
-msgstr ""
+msgstr "Kassera"
 
 #: src/views/save_dialog.blp:9
 msgid "Save"
-msgstr ""
+msgstr "Spara"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
@@ -173,11 +173,11 @@ msgstr ""
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr ""
+msgstr "filnamn"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
-msgstr ""
+msgstr "Plats"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
@@ -185,7 +185,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr ""
+msgstr "Välj en katalog"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
@@ -208,7 +208,7 @@ msgstr ""
 
 #: src/views/window.py:380
 msgid "human"
-msgstr ""
+msgstr "Människa"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:182 src/views/window.blp:183
@@ -273,7 +273,7 @@ msgstr "Om Bavarder"
 
 #: src/widgets/code_block.py:72
 msgid "Done"
-msgstr ""
+msgstr "Klar"
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
