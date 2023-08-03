@@ -32,18 +32,6 @@ $ ls
         #return " ".join([self.pick_generator()() for i in range(randint(1, 12))])
 
     def pick_generator(self):
-        if randint(1, 15) == 1:
-            return choice(
-                [
-                    lambda: "ня" * randint(1, 4),
-                    lambda: "ニャン" * randint(1, 4),
-                    lambda: "喵" * randint(1, 4),
-                    lambda: "ña" * randint(1, 4),
-                    lambda: "ڽا" * randint(1, 4),
-                    lambda: "ম্যাও" * randint(1, 4),
-                ]
-            )
-
         return choice(
             [
                 lambda: "meow" * randint(1, 3),

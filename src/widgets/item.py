@@ -117,8 +117,6 @@ class Item(Gtk.Box):
         self.app = self.parent.get_application()
         self.win = self.app.get_active_window()
 
-        print(t)
-
         if t == self.app.user_name: # User
             self.message_bubble.add_css_class("message-bubble-user")
             self.avatar.add_css_class("avatar-user")

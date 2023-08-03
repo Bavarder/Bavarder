@@ -206,8 +206,8 @@ class BavarderWindow(Adw.ApplicationWindow):
     def load_provider_selector(self):
         provider_menu = Gio.Menu()
 
+        section = Gio.Menu()
         for provider in self.app.providers.values():
-            section = Gio.Menu()
             if provider.enabled:
                 item_provider = Gio.MenuItem()
                 item_provider.set_label(provider.name)
@@ -215,8 +215,9 @@ class BavarderWindow(Adw.ApplicationWindow):
                     "app.set_provider",
                     GLib.Variant("s", provider.slug))
                 section.append_item(item_provider)
-            provider_menu.append_section(_("Providers"), section)
         else:
+            if self.app.providers:
+                provider_menu.append_section(_("Providers"), section)
             section = Gio.Menu()
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Preferences"))
@@ -239,16 +240,17 @@ class BavarderWindow(Adw.ApplicationWindow):
         if not self.app.models:
             self.app.list_models()
 
+        section = Gio.Menu()
         for provider in self.app.models:
-            section = Gio.Menu()
             item_provider = Gio.MenuItem()
             item_provider.set_label(provider)
             item_provider.set_action_and_target_value(
                 "app.set_model",
                 GLib.Variant("s", provider))
             section.append_item(item_provider)
-            provider_menu.append_section(_("Models"), section)
         else:
+            if self.app.models:
+                provider_menu.append_section(_("Models"), section)
             section = Gio.Menu()
             item_provider = Gio.MenuItem()
             item_provider.set_label(_("Preferences"))
