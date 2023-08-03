@@ -101,6 +101,7 @@ class BavarderWindow(Adw.ApplicationWindow):
             "is-fullscreen", self, "fullscreened", Gio.SettingsBindFlags.DEFAULT
         )
 
+        self.message_entry.grab_focus()
 
     @property
     def chat(self):
