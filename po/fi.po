@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-03 15:22+0200\n"
-"PO-Revision-Date: 2023-08-03 15:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-08-07 18:53+0000\n"
+"Last-Translator: artnay <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fi/>\n"
 "Language: fi\n"
@@ -84,7 +84,7 @@ msgstr "Mallit"
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "Luettelo kaikista malleista"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
@@ -108,7 +108,7 @@ msgstr "Poista"
 
 #: src/views/preferences_window.py:93
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Kaikki keskustelut tyhjennetty!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
 #: src/views/window.py:230 src/views/window.py:268 src/views/window.blp:298
@@ -131,9 +131,6 @@ msgid "Clear all threads"
 msgstr "Tyhjennä"
 
 #: src/views/preferences_window.blp:33
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear"
 msgstr "Tyhjennä"
 
@@ -147,13 +144,11 @@ msgstr "Nimi"
 
 #: src/views/preferences_window.blp:45
 msgid "Bot name"
-msgstr ""
+msgstr "Botin nimi"
 
 #: src/views/preferences_window.blp:51
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Käyttäjä:"
+msgstr "Käyttäjänimi"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -169,7 +164,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr ""
+msgstr "Tiedoston nimi"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
@@ -192,11 +187,8 @@ msgid "Thread successfully saved!"
 msgstr ""
 
 #: src/views/window.py:235 src/views/window.py:273
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all"
-msgstr "Tyhjennä"
+msgstr "Tyhjennä kaikki"
 
 #: src/views/window.py:333
 msgid "Generating response"
@@ -204,7 +196,7 @@ msgstr "Luodaan vastausta"
 
 #: src/views/window.py:380
 msgid "human"
-msgstr ""
+msgstr "ihminen"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:182 src/views/window.blp:183
@@ -216,14 +208,13 @@ msgid "Main Menu"
 msgstr "Päävalikko"
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "No Chat"
 msgid "No Chats"
-msgstr "Ei keskustelua"
+msgstr "Ei keskusteluja"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
 msgstr ""
+"Aloita luomalla uusi keskustelu tai valitsemalla keskustelu sivupalkista"
 
 #: src/views/window.blp:96
 msgid "Message"
@@ -234,14 +225,12 @@ msgid "Chat"
 msgstr "Chatti"
 
 #: src/views/window.blp:154
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "Viesti"
+msgstr "Ei viestejä"
 
 #: src/views/window.blp:155
 msgid "Send first message to get started"
-msgstr ""
+msgstr "Lähetä ensimmäinen viesti aloittaaksesi"
 
 #: src/views/window.blp:160
 msgid "No Internet"
@@ -249,11 +238,11 @@ msgstr "Ei internetyhteyttä"
 
 #: src/views/window.blp:167
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "Aloita luomalla uusi keskustelu"
 
 #: src/views/window.blp:239
 msgid "Open Emoji Picker"
-msgstr ""
+msgstr "Avaa emojivalitsin"
 
 #: src/views/window.blp:258
 msgid "Ask"
@@ -272,10 +261,8 @@ msgid "Done"
 msgstr "Valmis"
 
 #: src/widgets/download_row.blp:11
-#, fuzzy
-#| msgid "Download more models"
 msgid "Download Model"
-msgstr "Lataa lisää malleja"
+msgstr "Lataa malli"
 
 #: src/widgets/download_row.py:29
 #, python-format
@@ -300,14 +287,12 @@ msgid "Remove"
 msgstr "Poista"
 
 #: src/widgets/item.py:177
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "Viesti"
+msgstr "Viesti kopioitu"
 
 #: src/widgets/model_item.blp:11
 msgid "Delete Model"
-msgstr ""
+msgstr "Poista malli"
 
 #: src/widgets/model_item.py:31
 #, python-format
@@ -339,24 +324,19 @@ msgid "Thread Deleted"
 msgstr ""
 
 #: src/main.py:153
-#, fuzzy, python-format
-#| msgid "New Chat"
+#, python-format
 msgid "New Chat %i"
-msgstr "Uusi keskustelu"
+msgstr "Uusi keskustelu %i"
 
 #: src/main.py:234
-#, fuzzy
-#| msgid "Please download a model from Preferences!"
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
-msgstr "Lataa malli asetusten kautta!"
+msgstr "Lataa malli asetusten kautta napsauttamalla yläkulman pistevalikkoa!"
 
 #: src/main.py:247
-#, fuzzy
-#| msgid "Please enable a provider from the Brain Menu"
 msgid "Please enable a provider from the Dot Menu"
-msgstr "Ota palveluntarjoaja käyttöön valikosta"
+msgstr "Ota palveluntarjoaja käyttöön pistevalikosta"
 
 #~ msgid "Assistant"
 #~ msgstr "Avustaja"
