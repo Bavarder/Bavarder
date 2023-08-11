@@ -9,6 +9,7 @@ providers_sources = [
   'googleflant5xxl.py',
   'gpt2.py',
   'hfbasechat.py',
+  'local.py',
   'openai.py',
   'openaigpt35turbo.py',
   'openaigpt4.py',
