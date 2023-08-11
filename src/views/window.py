@@ -347,13 +347,17 @@ class BavarderWindow(Adw.ApplicationWindow):
                 GLib.idle_add(cleanup, response, self.toast)
 
             def cleanup(response, toast):
-                self.t.join()
-                self.toast.dismiss()
+                try:
+                    self.t.join()
+                    self.toast.dismiss()
 
-                if not response:
-                    response = _("Sorry, I don't know what to say.")
+                    if not response:
+                        response = _("Sorry, I don't know what to say.")
 
-                self.add_assistant_item(response)
+                    self.add_assistant_item(response)
+                except AttributeError:
+                    self.toast.dismiss()
+                    self.add_assistant_item(_("Sorry, I don't know what to say."))
 
             self.t = KillableThread(target=thread_run)
             self.t.start()
@@ -366,9 +370,15 @@ class BavarderWindow(Adw.ApplicationWindow):
         try:
             self.t.kill()
             self.t.join()
+
+            del self.t
             self.toast.dismiss()
         except AttributeError: # nothing to stop
-            pass
+            print("Nothing to stop")
+        except SystemExit:
+            self.t.join()
+            del self.t
+            self.toast.dismiss()
 
     def create_action(self, name, callback, shortcuts=None):
         action = Gio.SimpleAction.new(name, None)

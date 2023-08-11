@@ -144,7 +144,6 @@ class BavarderApplication(Adw.Application):
         self.quit()
 
     def on_new_chat_action(self, widget, _):
-        print("NEW CHAT")
         chat_id = 0
         for chat in self.data["chats"]:
             if chat["id"] > chat_id:
@@ -152,7 +151,7 @@ class BavarderApplication(Adw.Application):
         chat_id += 1
         chat = {
             "id": chat_id,
-            "title": _("New Chat %i" % chat_id),
+            "title": "New Chat " + str(chat_id),
             "starred": False,
             "content": [],
         }
@@ -261,7 +260,7 @@ class BavarderApplication(Adw.Application):
                 if self.model_name not in self.models:
                     self.download_model(self.model_name)
                 self.model = GPT4All(self.model_name, model_path=model_path)
-                return True
+            return True
 
     def download_model(self, model=None):
         if model:
