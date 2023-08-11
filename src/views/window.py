@@ -22,7 +22,6 @@ import locale
 
 from gi.repository import Gtk, Gio, Adw, GLib
 from babel.dates import format_date, format_datetime, format_time
-from babel import Locale
 
 from bavarder.constants import app_id, build_type, rootdir
 from bavarder.widgets.thread_item import ThreadItem
@@ -170,7 +169,10 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.split_view.set_collapsed(True)
         self.split_view.set_show_content(True)
 
-        self.title.set_title(self.chat["title"])
+        try:
+            self.title.set_title(self.chat["title"])
+        except KeyError:
+            self.title.set_title(_("New chat"))
 
         if self.content:
             self.stack.set_visible_child(self.main)
@@ -318,15 +320,21 @@ class BavarderWindow(Adw.ApplicationWindow):
         if prompt:
             self.message_entry.get_buffer().set_text("")
 
-            try:
-                self.add_user_item(prompt)
-            except AttributeError: # no chat
+            if not self.chat:
+                print("NEW CHAT")
                 self.on_new_chat_action()
-                row = self.threads_list.get_row_at_index(0)
+
+                # now get the latest row                    
+                row = self.threads_list.get_row_at_index(len(self.app.data["chats"]) - 1)
+
                
                 self.threads_list.select_row(row)
                 self.threads_row_activated_cb()
-                self.add_user_item(prompt)
+                print(self.chat)
+
+            
+            self.add_user_item(prompt)
+                            
 
             def thread_run():
                 self.toast = Adw.Toast()
@@ -341,6 +349,9 @@ class BavarderWindow(Adw.ApplicationWindow):
             def cleanup(response, toast):
                 self.t.join()
                 self.toast.dismiss()
+
+                if not response:
+                    response = _("Sorry, I don't know what to say.")
 
                 self.add_assistant_item(response)
 

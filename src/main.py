@@ -129,6 +129,8 @@ class BavarderApplication(Adw.Application):
 
     def save(self):
         with open(self.data_path, "w", encoding="utf-8") as f:
+            for name, d in self.data["providers"].items():
+                print(d)
             self.data = json.dump(self.data, f)
             self.settings.set_boolean("local-mode", self.local_mode)
             self.settings.set_string("current-provider", self.current_provider)
@@ -173,7 +175,7 @@ class BavarderApplication(Adw.Application):
         self.providers = {}
 
         for provider in PROVIDERS:
-            p = provider(self, self.win, self.data["providers"])
+            p = provider(self, self.win)
 
             self.providers[p.slug] = p
 

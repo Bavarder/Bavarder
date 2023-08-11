@@ -24,13 +24,13 @@ class Provider(Adw.ExpanderRow):
     def setup(self):
         self.set_title(self.provider.name)
         self.set_subtitle(self.provider.description)
-        self.enable_switch.set_active(self.provider.providers[self.provider.slug]["enabled"])
+        self.enable_switch.set_active( self.app.data["providers"][self.provider.slug]["enabled"])
 
-        if self.provider.require_authentification:
+        if self.provider.get_settings_rows():
             self.no_preferences_available.set_visible(False)
             
             for row in self.provider.get_settings_rows():
-                self.add(row)
+                self.add_row(row)
 
     # CALLBACKS
     @Gtk.Template.Callback()
