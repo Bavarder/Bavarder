@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-03 15:22+0200\n"
+"POT-Creation-Date: 2023-08-11 19:05+0200\n"
 "PO-Revision-Date: 2023-08-08 16:53+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Galician <https://translate.codeberg.org/projects/bavarder/"
@@ -25,16 +25,30 @@ msgstr ""
 msgid "Bavarder"
 msgstr "Bavarder"
 
+#: src/providers/base.py:79
+#, fuzzy
+#| msgid "How to choose a model"
+msgid "How to get a token"
+msgstr "Como escoller un modelo"
+
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
 msgstr ""
 
-#: src/providers/hfbasechat.py:33
+#: src/providers/hfbasechat.py:44
 msgid ""
 "You've reached the rate limit! Please add a token to the preferences. You "
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+
+#: src/providers/hfbasechat.py:49
+msgid "Sorry, I don't know what to say!"
+msgstr ""
+
+#: src/providers/hfbasechat.py:57
+msgid "API Key"
+msgstr "Chave da API"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
@@ -72,13 +86,13 @@ msgstr ""
 msgid "Close"
 msgstr "Pechar"
 
-#: src/views/export_dialog.blp:52 src/views/window.py:240
-#: src/views/window.py:278
+#: src/views/export_dialog.blp:52 src/views/window.py:242
+#: src/views/window.py:280
 msgid "Export"
 msgstr "Exportar"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:18 src/views/window.py:265
+#: src/views/preferences_window.blp:18 src/views/window.py:267
 #, fuzzy
 #| msgid "Model"
 msgid "Models"
@@ -99,7 +113,7 @@ msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr "Tes a certeza de querer eliminar a lista “%s”?"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:334 src/widgets/thread_item.py:103
+#: src/views/window.py:342 src/widgets/thread_item.py:103
 msgid "Cancel"
 msgstr "Anular"
 
@@ -113,11 +127,11 @@ msgid "All chats cleared!"
 msgstr ""
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
-#: src/views/window.py:230 src/views/window.py:268 src/views/window.blp:298
+#: src/views/window.py:232 src/views/window.py:270 src/views/window.blp:298
 msgid "Preferences"
 msgstr "Preferencias"
 
-#: src/views/preferences_window.blp:14 src/views/window.py:227
+#: src/views/preferences_window.blp:14 src/views/window.py:229
 msgid "Providers"
 msgstr "Fornecedores"
 
@@ -193,18 +207,28 @@ msgstr ""
 msgid "Thread successfully saved!"
 msgstr ""
 
-#: src/views/window.py:235 src/views/window.py:273
+#: src/views/window.py:175
+#, fuzzy
+#| msgid "New Chat"
+msgid "New chat"
+msgstr "Nova Conversa"
+
+#: src/views/window.py:237 src/views/window.py:275
 #, fuzzy
 #| msgctxt "shortcut window"
 #| msgid "Clear"
 msgid "Clear all"
 msgstr "Limpar"
 
-#: src/views/window.py:333
+#: src/views/window.py:341
 msgid "Generating response"
 msgstr ""
 
-#: src/views/window.py:380
+#: src/views/window.py:355 src/views/window.py:360
+msgid "Sorry, I don't know what to say."
+msgstr ""
+
+#: src/views/window.py:401
 msgid "human"
 msgstr "Persoa"
 
@@ -338,18 +362,13 @@ msgstr "Tes a certeza de querer eliminar a lista “%s”?"
 msgid "Thread Deleted"
 msgstr ""
 
-#: src/main.py:153
-#, python-format
-msgid "New Chat %i"
-msgstr ""
-
-#: src/main.py:234
+#: src/main.py:235
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
 
-#: src/main.py:247
+#: src/main.py:248
 msgid "Please enable a provider from the Dot Menu"
 msgstr ""
 
@@ -412,9 +431,6 @@ msgstr ""
 #~ msgid "About provider"
 #~ msgstr "Sobre o fornecedor"
 
-#~ msgid "API Key"
-#~ msgstr "Chave da API"
-
 #~ msgid "Prompt too long, splitting into chunks."
 #~ msgstr "O pé é demasiado longo; divídese en anacos."
 
@@ -435,9 +451,6 @@ msgstr ""
 
 #~ msgid "API Url"
 #~ msgstr "URL da API"
-
-#~ msgid "How to choose a model"
-#~ msgstr "Como escoller un modelo"
 
 #~ msgid "New version available!"
 #~ msgstr "Nova versión dispoñíbel!"
