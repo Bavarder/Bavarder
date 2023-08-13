@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-11 19:05+0200\n"
-"PO-Revision-Date: 2023-08-04 10:53+0000\n"
+"PO-Revision-Date: 2023-08-14 03:53+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/providers/hfbasechat.py:49
 msgid "Sorry, I don't know what to say!"
-msgstr ""
+msgstr "Ik heb hier geen antwoord op - sorry!"
 
 #: src/providers/hfbasechat.py:57
 msgid "API Key"
@@ -195,8 +195,6 @@ msgid "Thread successfully saved!"
 msgstr "Het gesprek is opgeslagen!"
 
 #: src/views/window.py:175
-#, fuzzy
-#| msgid "New Chat"
 msgid "New chat"
 msgstr "Nieuw gesprek"
 
@@ -210,7 +208,7 @@ msgstr "Bezig met samenstellen van antwoord…"
 
 #: src/views/window.py:355 src/views/window.py:360
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "Ik heb hier geen antwoord op - sorry."
 
 #: src/views/window.py:401
 msgid "human"
