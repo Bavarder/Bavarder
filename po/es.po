@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-11 19:05+0200\n"
-"PO-Revision-Date: 2023-08-05 06:53+0000\n"
+"PO-Revision-Date: 2023-08-14 03:53+0000\n"
 "Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/providers/hfbasechat.py:49
 msgid "Sorry, I don't know what to say!"
-msgstr ""
+msgstr "¡Lo siento, no entiendo lo que quieres decir!"
 
 #: src/providers/hfbasechat.py:57
 msgid "API Key"
@@ -201,10 +201,8 @@ msgid "Thread successfully saved!"
 msgstr "¡Tema guardado correctamente!"
 
 #: src/views/window.py:175
-#, fuzzy
-#| msgid "New Chat"
 msgid "New chat"
-msgstr "Nuevo Chat"
+msgstr "Chat nuevo"
 
 #: src/views/window.py:237 src/views/window.py:275
 msgid "Clear all"
@@ -216,7 +214,7 @@ msgstr "Generando la respuesta"
 
 #: src/views/window.py:355 src/views/window.py:360
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "Lo siento, no sé qué decir."
 
 #: src/views/window.py:401
 msgid "human"
