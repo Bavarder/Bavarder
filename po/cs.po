@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-11 19:05+0200\n"
-"PO-Revision-Date: 2023-08-03 15:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-08-18 08:53+0000\n"
+"Last-Translator: muznyo <codeberg.vqtek@simplelogin.com>\n"
 "Language-Team: Czech <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/cs/>\n"
 "Language: cs\n"
@@ -31,10 +31,8 @@ msgid "How to get a token"
 msgstr "Jak získat token"
 
 #: src/providers/catgpt.py:7
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with a Cat"
-msgstr "Chatovat s umělou inteligencí"
+msgstr "Chatovat s kočkou"
 
 #: src/providers/hfbasechat.py:44
 msgid ""
@@ -42,10 +40,13 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"Překročili jste limit! Prosím, přidejte token v nastavení. Můžete získat "
+"token pomocí tohoto [návodu](https://bavarder.codeberg.page/help/huggingface/"
+")"
 
 #: src/providers/hfbasechat.py:49
 msgid "Sorry, I don't know what to say!"
-msgstr ""
+msgstr "Omlouvám se, ale nevím, co na to říct!"
 
 #: src/providers/hfbasechat.py:57
 msgid "API Key"
@@ -57,24 +58,19 @@ msgstr "Žádná nastavení nejsou k dispozici"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
-"Launchpad Contributions:\n"
-"  Gmisiycs https://launchpad.net/~gmisiycs\n"
-"  Pavel Borecki https://launchpad.net/~pavel-borecki"
+msgstr "Překladatelé"
 
 #: src/views/about_window.py:42
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with AI"
 msgstr "Chatovat s umělou inteligencí"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Balení"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -82,7 +78,7 @@ msgstr "Přeložit"
 
 #: src/views/export_dialog.blp:6
 msgid "Export Thread ?"
-msgstr ""
+msgstr "Exportovat vlákno?"
 
 #: src/views/export_dialog.blp:51
 msgid "Close"
@@ -95,24 +91,20 @@ msgstr "Export"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:18 src/views/window.py:267
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
-msgstr "Model"
+msgstr "Modely"
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "Seznam dostupných modelů"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "Odstranit všechna vlákna"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Opravdu chcete tento seznam odstranit?"
+msgstr "Opravdu chcete odstranit všechna vlákna? Tento krok se nedá vrátit!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:342 src/widgets/thread_item.py:103
@@ -122,11 +114,11 @@ msgstr "Zrušit"
 #: src/views/preferences_window.py:78 src/widgets/thread_item.blp:56
 #: src/widgets/thread_item.py:104
 msgid "Delete"
-msgstr "Smazat"
+msgstr "Odstranit"
 
 #: src/views/preferences_window.py:93
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Všechny chaty vymazány!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
 #: src/views/window.py:232 src/views/window.py:270 src/views/window.blp:298
@@ -142,22 +134,16 @@ msgid "Miscellaneous"
 msgstr "Různé"
 
 #: src/views/preferences_window.blp:29
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all threads"
-msgstr "Vymazat"
+msgstr "Vymazat všechna vlákna"
 
 #: src/views/preferences_window.blp:33
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear"
 msgstr "Vymazat"
 
 #: src/views/preferences_window.blp:34
 msgid "This will clear all threads from the database."
-msgstr ""
+msgstr "Toto vymaže všechna vlákna z databáze."
 
 #: src/views/preferences_window.blp:42
 msgid "Names"
@@ -165,13 +151,11 @@ msgstr "Jméno"
 
 #: src/views/preferences_window.blp:45
 msgid "Bot name"
-msgstr ""
+msgstr "Jméno bota"
 
 #: src/views/preferences_window.blp:51
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Uživatel"
+msgstr "Uživatelské jméno"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -183,7 +167,7 @@ msgstr "Uložit"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Exportovat vlákno?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -195,7 +179,7 @@ msgstr "Umístění"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "Export vlákna bude uložen v tomto adresáři."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -203,32 +187,27 @@ msgstr "Vyberte složku"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "Nelze uložit vlákno"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "Vlákno bylo úspěšně uloženo!"
 
 #: src/views/window.py:175
-#, fuzzy
-#| msgid "Chat"
 msgid "New chat"
-msgstr "Konverzace"
+msgstr "Nový chat"
 
 #: src/views/window.py:237 src/views/window.py:275
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all"
-msgstr "Vymazat"
+msgstr "Vymazat vše"
 
 #: src/views/window.py:341
 msgid "Generating response"
-msgstr ""
+msgstr "Generuji odpověď"
 
 #: src/views/window.py:355 src/views/window.py:360
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "Omlouvám se, ale nevím, co na to říct."
 
 #: src/views/window.py:401
 msgid "human"
@@ -236,24 +215,20 @@ msgstr "Člověk"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:182 src/views/window.blp:183
-#, fuzzy
-#| msgid "Chat"
 msgid "New Chat"
-msgstr "Konverzace"
+msgstr "Nový chat"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
 msgstr "Hlavní menu"
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chats"
-msgstr "Konverzace"
+msgstr "Žádné chaty"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "Začněte vytvořením nového chatu nebo vybráním z boční lišty"
 
 #: src/views/window.blp:96
 msgid "Message"
@@ -261,29 +236,27 @@ msgstr "Zpráva"
 
 #: src/views/window.blp:108
 msgid "Chat"
-msgstr "Konverzace"
+msgstr "Chat"
 
 #: src/views/window.blp:154
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "Zpráva"
+msgstr "Žádné zprávy"
 
 #: src/views/window.blp:155
 msgid "Send first message to get started"
-msgstr ""
+msgstr "Odešlete první zprávu abyste začli"
 
 #: src/views/window.blp:160
 msgid "No Internet"
-msgstr ""
+msgstr "Bez internetu"
 
 #: src/views/window.blp:167
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "Začněte vytvořením nového chatu"
 
 #: src/views/window.blp:239
 msgid "Open Emoji Picker"
-msgstr ""
+msgstr "Otevřit výběr emoji"
 
 #: src/views/window.blp:258
 msgid "Ask"
@@ -303,21 +276,21 @@ msgstr "Hotovo"
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "Stáhnout model"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Stahuje se model %s"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "Model %s je stažen!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr "Kopírovat"
+msgstr "Zkopírovat"
 
 #: src/widgets/item.blp:105
 msgid "Edit"
@@ -328,53 +301,53 @@ msgid "Remove"
 msgstr "Odstranit"
 
 #: src/widgets/item.py:177
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "Zpráva"
+msgstr "Zpráva zkopírována"
 
 #: src/widgets/model_item.blp:11
 msgid "Delete Model"
-msgstr ""
+msgstr "Vymazat model"
 
 #: src/widgets/model_item.py:31
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "Model %s byl vymazán!"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:75
 msgid "Edit Title"
-msgstr ""
+msgstr "Změnit název"
 
 #: src/widgets/thread_item.blp:61
 msgid "Star"
-msgstr "Hvězdička"
+msgstr "Označit"
 
 #: src/widgets/thread_item.py:67
 msgid "Set Title"
-msgstr ""
+msgstr "Nastavit název"
 
 #: src/widgets/thread_item.py:98
 msgid "Delete Thread"
-msgstr ""
+msgstr "Odstranit vlákno"
 
 #: src/widgets/thread_item.py:99
 msgid "Are you sure you want to delete this thread?"
-msgstr "Opravdu chcete tento seznam odstranit?"
+msgstr "Opravdu chcete toto vlákno odstranit?"
 
 #: src/widgets/thread_item.py:120
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Vlákno bylo odstraněno"
 
 #: src/main.py:235
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
+"Prosím, stáhněte si model z nastavení kliknutím na tečkové menu v horní "
+"části!"
 
 #: src/main.py:248
 msgid "Please enable a provider from the Dot Menu"
-msgstr ""
+msgstr "Prosím, vyberte si poskytovatele kliknutím na nabídku s tečkou"
 
 #, fuzzy, python-format
 #~| msgid "Chat"
