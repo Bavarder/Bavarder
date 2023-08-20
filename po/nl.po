@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-20 20:57+0300\n"
-"PO-Revision-Date: 2023-08-20 18:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-08-21 06:53+0000\n"
+"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -200,14 +200,10 @@ msgid "New chat"
 msgstr "Nieuw gesprek"
 
 #: src/views/window.py:201
-#, fuzzy
-#| msgid "Delete All Threads"
 msgid "Delete All Chats"
 msgstr "Alle gesprekken verwijderen"
 
 #: src/views/window.py:202
-#, fuzzy
-#| msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
@@ -328,11 +324,11 @@ msgstr "Model verwĳderen"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "Max. aantal toegangssleutels"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "Het maximale aantal te genereren toegangssleutels."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
@@ -343,6 +339,8 @@ msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"De modeltemperatuur. Hogere waardes zorgen voor meer creativiteit, maar "
+"minder juistheid."
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
@@ -392,10 +390,8 @@ msgid "How far in the models generation history to apply the repeat penalty. "
 msgstr ""
 
 #: src/widgets/model_item.blp:117
-#, fuzzy
-#| msgid "Prompt"
 msgid "System Prompt"
-msgstr "Invoerveld"
+msgstr "Systeeminvoer"
 
 #: src/widgets/model_item.py:64
 #, python-format
