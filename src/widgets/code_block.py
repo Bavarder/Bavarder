@@ -47,7 +47,6 @@ class CodeBlock(Gtk.Widget):
         portal = Xdp.Portal()
         is_sandboxed = portal.running_under_sandbox()
         output = self._run(command, allow_escaping=is_sandboxed)
-
         self.output_buffer.set_text(output)
         self.output.set_visible(True)
 
@@ -56,21 +55,32 @@ class CodeBlock(Gtk.Widget):
             command = ['flatpak-spawn', '--host'] + command
 
         try:
-            process = subprocess.Popen(command, stdout=subprocess.PIPE,
-                                   stderr=subprocess.PIPE, shell=True)
-        except SubprocessError:
-            raise
+            process = subprocess.run(command, capture_output=True, text=True)
+            if process.returncode != 0:
+                output = process.stderr
+            else:
+                if process.stdout == "":
+                    output = _("Done")
+                else:
+                    output = process.stdout
+        except SubprocessError as e:
+            output = e.stdout
         except FileNotFoundError:
             raise
 
-        stdout, stderr = process.communicate()
+        o = ""
 
-        if process.returncode != 0:
-            output = stderr.decode()
-        else:
-            if stdout.decode() == "":
-                output = _("Done")
+        for line in output.split("\n"):
+            if line == "":
+                continue
+            elif line.strip().startswith("** (flatpak-spawn:"):
+                continue
+            elif line.strip().startswith("(flatpak-spawn:"):
+                continue
             else:
-                output = stdout.decode()
+                if line.strip() == "":
+                    o += _("Done") + "\n"
+                else:
+                    o += line + "\n"
 
-        return output
+        return o
