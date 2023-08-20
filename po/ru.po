@@ -14,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-20 19:19+0200\n"
 "PO-Revision-Date: 2023-08-20 18:05+0000\n"
-"Last-Translator: David Lapshin <ddaudix@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
 "Language: ru\n"
@@ -336,7 +336,7 @@ msgstr "Максимальное количество генерируемых �
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr ""
+msgstr "Температура"
 
 #: src/widgets/model_item.blp:31
 msgid ""
