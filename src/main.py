@@ -59,6 +59,7 @@ class BavarderApplication(Adw.Application):
     models = set()
     model = None
     action_running_in_background = False
+    number_of_win = 0
 
     def __init__(self):
         super().__init__(application_id='io.github.Bavarder.Bavarder',
@@ -68,6 +69,7 @@ class BavarderApplication(Adw.Application):
         self.create_action('preferences', self.on_preferences_action, ['<primary>comma'])
         self.create_action('new_chat', self.on_new_chat_action, ["<primary>n"])
         self.create_action('ask', self.on_ask, ["Return"])
+        self.create_action('new_window', self.on_new_window, ["<primary>w"])
 
         self.data_path = os.path.join(user_data_dir, "bavarder")
 
@@ -140,8 +142,12 @@ class BavarderApplication(Adw.Application):
 
     def on_quit(self, action, *args, **kwargs):
         """Called when the user activates the Quit action."""
-        self.save()
-        self.quit()
+        if self.number_of_win == 1:
+            self.save()
+            self.quit()
+        else:
+            self.win.destroy()
+            self.number_of_win -= 1
 
     def on_new_chat_action(self, widget, _):
         chat_id = 0
@@ -165,22 +171,37 @@ class BavarderApplication(Adw.Application):
         We raise the application's main window, creating it if
         necessary.
         """
-        self.win = self.props.active_window
-        if not self.win:
-            self.win = BavarderWindow(application=self)
-        self.win.connect("close-request", self.on_quit)
-        self.win.present()
+        self.new_window()
+
+    @property
+    def win(self):
+        """The application's main window."""
+        return self.props.active_window
+        
+    def new_window(self, window=None):
+        if window:
+            win = self.props.active_window
+        else:
+            win = BavarderWindow(application=self)
+            self.number_of_win += 1
+
+        
+        win.connect("close-request", self.on_quit)
 
         self.providers = {}
 
         for provider in PROVIDERS:
-            p = provider(self, self.win)
+            p = provider(self, win)
 
             self.providers[p.slug] = p
 
-        self.win.load_model_selector()
-        self.win.load_provider_selector()
+        win.load_model_selector()
+        win.load_provider_selector()
+        win.present()
 
+
+    def on_new_window(self, widget, _):
+        self.new_window()
 
 
     def on_about_action(self, widget, _):
