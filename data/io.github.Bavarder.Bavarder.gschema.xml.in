@@ -5,10 +5,10 @@
 			<default>true</default>
 		</key>
 		<key name="current-provider" type="s">
-			<default>'cat-gpt'</default>
+			<default>'google-flan-t5-xxl'</default>
 		</key>
 		<key name="model" type="s">
-			<default>'ggml-model-gpt4all-falcon-q4_0.bin'</default>
+			<default>'orca-mini-3b.ggmlv3.q4_0.bin'</default>
 		</key>
 		<key name="bot-name" type="s">
 			<default>'Assistant'</default>
