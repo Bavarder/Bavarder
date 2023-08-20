@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 19:19+0200\n"
+"POT-Creation-Date: 2023-08-20 20:57+0300\n"
 "PO-Revision-Date: 2023-08-20 18:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://translate.codeberg.org/projects/bavarder/"
@@ -348,7 +348,7 @@ msgstr ""
 #: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
-"Set this to 1 for greedy decoding. "
+"Set this to 1 for greedy decoding."
 msgstr ""
 
 #: src/widgets/model_item.blp:59
