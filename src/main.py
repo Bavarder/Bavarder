@@ -259,7 +259,7 @@ class BavarderApplication(Adw.Application):
                 for p in ["Hi", "Hello"]:
                     if p.lower() in prompt.lower():
                         return _("Hello, I am Bavarder, a Chit-Chat AI")
-                system_template = """A chat between a curious user and an artificial intelligence assistant."""
+                system_template = f"""You are a helpful and friendly AI assistant with the name {self.bot_name}. The name of the user are {self.user_name}. Respond very concisely."""
                 with self.model.chat_session(self.model_settings.get("system_template", system_template)):
                     self.model.current_chat_session = chat["content"].copy()
                 response = self.model.generate(
