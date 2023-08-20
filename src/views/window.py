@@ -165,7 +165,6 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def threads_row_activated_cb(self, *args):
-        self.split_view.set_collapsed(True)
         self.split_view.set_show_content(True)
 
         try:
