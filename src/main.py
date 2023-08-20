@@ -191,7 +191,7 @@ class BavarderApplication(Adw.Application):
             self.number_of_win += 1
 
         
-        win.connect("close-request", self.on_quit)
+        win.connect("close-request", self.on_close)
 
         self.providers = {}
 
