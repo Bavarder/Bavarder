@@ -75,10 +75,15 @@ class Item(Gtk.Box):
         self.convert_content_to_pango()
 
         result = ""
+        is_code = False
         for line in self.content_markup:
-            if isinstance(line, str): 
-                result += f"{line}\n"
-            else: # code
+            if  "<tt></tt>`" in line.strip():
+                if is_code:
+                    is_code = False
+                else:
+                    is_code = True
+                continue
+            if is_code or not isinstance(line, str):
                 label = Gtk.Label()
                 label.set_use_markup(True)
                 label.set_wrap(True)
@@ -91,10 +96,16 @@ class Item(Gtk.Box):
                 label.set_halign(Gtk.Align.START)
                 self.content.append(label)
 
-                result = "\n".join(line)
+                if not isinstance(line, str):
+                    result = "\n".join(line.strip())
+                else:
+                    result = line.strip()
 
                 self.content.append(CodeBlock(result))
                 result = ""
+            else: 
+                result += f"{line}\n"
+            
         else:
             if not result.strip() == "<tt></tt>`":
                 label = Gtk.Label()
