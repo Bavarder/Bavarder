@@ -119,7 +119,6 @@ class BavarderWindow(Adw.ApplicationWindow):
             return []
 
     def load_threads(self):
-        print("LOADING")
         self.threads_list.remove_all()
         if self.app.data["chats"]:
             self.thread_stack.set_visible_child(self.threads_list)
@@ -314,14 +313,11 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def on_ask(self, *args):
-        print("ASK-WIN")
-
         prompt = self.message_entry.get_buffer().props.text.strip()
         if prompt:
             self.message_entry.get_buffer().set_text("")
 
             if not self.chat:
-                print("NEW CHAT")
                 self.on_new_chat_action()
 
                 # now get the latest row                    
@@ -330,7 +326,6 @@ class BavarderWindow(Adw.ApplicationWindow):
                
                 self.threads_list.select_row(row)
                 self.threads_row_activated_cb()
-                print(self.chat)
 
             
             self.add_user_item(prompt)
