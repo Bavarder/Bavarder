@@ -1,8 +1,7 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $Model : Adw.ActionRow {
-    activatable-widget: delete_button;
+template $Model : Adw.ExpanderRow {
     [suffix]
     Button delete_button {
         styles ["flat"]
@@ -11,4 +10,110 @@ template $Model : Adw.ActionRow {
         tooltip-text: _("Delete Model");
         clicked => $on_delete_button_clicked();
     }
+}
+
+Adw.SpinRow max-tokens {
+    title: _("Max Tokens");
+    subtitle: _("The maximum number of tokens to generate.");
+    adjustment: max-tokens-adjustment;
+}
+
+Gtk.Adjustment max-tokens-adjustment {
+    lower: 1;
+    upper: 1000;
+    step-increment: 10;
+    page-increment: 20;
+    value-changed => $on_max_tokens_changed();
+}
+
+Adw.SpinRow temperature {
+    title: _("Temperature");
+    subtitle: _("The model temperature. Larger values increase creativity but decrease factuality.");
+    adjustment: temperature-adjustment;
+    digits: 2;
+}
+
+Gtk.Adjustment temperature-adjustment {
+    lower: 0.0;
+    upper: 1.0;
+    step-increment: 0.1;
+    page-increment: 0.2;
+    value-changed => $on_temperature_changed();
+}
+
+Adw.SpinRow top-k {
+    title: _("Top K");
+    subtitle: _("Randomly sample from the top_k most likely tokens at each generation step. Set this to 1 for greedy decoding. ");
+    adjustment: top-k-adjustment;
+}
+
+Gtk.Adjustment top-k-adjustment {
+    lower: 1;
+    upper: 100;
+    step-increment: 1;
+    page-increment: 10;
+    value-changed => $on_top_k_changed();
+}
+
+Adw.SpinRow top-p {
+    title: _("Top P");
+    subtitle: _("Randomly sample at each generation step from the top most likely tokens whose probabilities add up to top_p.");
+    adjustment: top-p-adjustment;
+    digits: 2;
+}
+
+Gtk.Adjustment top-p-adjustment {
+    lower: 0.0;
+    upper: 1.0;
+    step-increment: 0.1;
+    page-increment: 0.2;
+    value-changed => $on_top_p_changed();
+}
+
+Adw.SpinRow repetition-penalty {
+    title: _("Repetition Penalty");
+    subtitle: _("Penalize the model for repetition. Higher values result in less repetition. ");
+    adjustment: repetition-penalty-adjustment;
+    digits: 2;
+}
+
+Gtk.Adjustment repetition-penalty-adjustment {
+    lower: 1.0;
+    upper: 2.0;
+    step-increment: 0.1;
+    page-increment: 0.2;
+    value-changed => $on_repetition_penalty_changed();
+}
+
+Adw.SpinRow n-batch {
+    title: _("Batch Size");
+    subtitle: _("Number of prompt tokens processed in parallel. Larger values decrease latency but increase resource requirements.");
+    adjustment: n-batch-adjustment;
+}
+
+Gtk.Adjustment n-batch-adjustment {
+    lower: 1;
+    upper: 50;
+    step-increment: 1;
+    page-increment: 2;
+    value-changed => $on_n_batch_changed();
+}
+
+Adw.SpinRow repeat-last-n {
+    title: _("Repeat Last N");
+    subtitle: _("How far in the models generation history to apply the repeat penalty. ");
+    adjustment: repeat-last-n-adjustment;
+}
+
+Gtk.Adjustment repeat-last-n-adjustment {
+    lower: 0;
+    upper: 100;
+    step-increment: 1;
+    page-increment: 2;
+    value-changed => $on_repeat_last_n_changed();
+}
+
+Adw.EntryRow system-prompt {
+    title: _("System Prompt");
+    changed => $on_system_prompt_changed();
 }

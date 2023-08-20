@@ -83,7 +83,8 @@ class BavarderApplication(Adw.Application):
 
         self.data = {
             "chats": [],
-            "providers": {}
+            "providers": {},
+            "models": {}
         }
 
         if os.path.exists(self.data_path):
@@ -259,9 +260,19 @@ class BavarderApplication(Adw.Application):
                     if p.lower() in prompt.lower():
                         return _("Hello, I am Bavarder, a Chit-Chat AI")
                 system_template = """A chat between a curious user and an artificial intelligence assistant."""
-                with self.model.chat_session(system_template):
+                with self.model.chat_session(self.model_settings.get("system_template", system_template)):
                     self.model.current_chat_session = chat["content"].copy()
-                response = self.model.generate(prompt=prompt, top_k=1)
+                response = self.model.generate(
+                    prompt=prompt, 
+                    top_k=self.model_settings.get("top_k", 40),
+                    top_p=self.model_settings.get("top_p", 0.5),
+                    temp=self.model_settings.get("temperature", 0.9),
+                    max_tokens=self.model_settings.get("max_tokens", 500),
+                    repeat_penalty=self.model_settings.get("repetition_penalty", 1.20),
+                    repeat_last_n=self.model_settings.get("repeat_last_n", 64),
+                    n_batch=self.model_settings.get("n_batch", 10),
+                )
+
         else:
             l = list(self.providers.values())
 
@@ -273,6 +284,19 @@ class BavarderApplication(Adw.Application):
                     response = _("Please enable a provider from the Dot Menu")
                 
         return response
+
+    @property
+    def model_settings(self):
+        try:
+            return self.data["models"][self.model_name]
+        except KeyError:
+            try:
+                self.data["models"][self.model_name] = {}
+            except KeyError:
+                self.data["models"] = {}
+                self.data["models"][self.model_name] = {}
+                
+        return self.data["models"][self.model_name]
 
     def setup_chat(self):
         if not self.models:
