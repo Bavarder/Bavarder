@@ -264,13 +264,13 @@ class BavarderApplication(Adw.Application):
                     self.model.current_chat_session = chat["content"].copy()
                 response = self.model.generate(
                     prompt=prompt, 
-                    top_k=self.model_settings.get("top_k", 40),
-                    top_p=self.model_settings.get("top_p", 0.5),
-                    temp=self.model_settings.get("temperature", 0.9),
-                    max_tokens=self.model_settings.get("max_tokens", 500),
-                    repeat_penalty=self.model_settings.get("repetition_penalty", 1.20),
-                    repeat_last_n=self.model_settings.get("repeat_last_n", 64),
-                    n_batch=self.model_settings.get("n_batch", 10),
+                    top_k=int(self.model_settings.get("top_k", 40)),
+                    top_p=float(self.model_settings.get("top_p", 0.5)),
+                    temp=float(self.model_settings.get("temperature", 0.9)),
+                    max_tokens=int(self.model_settings.get("max_tokens", 500)),
+                    repeat_penalty=float(self.model_settings.get("repetition_penalty", 1.20)),
+                    repeat_last_n=int(self.model_settings.get("repeat_last_n", 64)),
+                    n_batch=int(self.model_settings.get("n_batch", 10)),
                 )
 
         else:
@@ -295,7 +295,7 @@ class BavarderApplication(Adw.Application):
             except KeyError:
                 self.data["models"] = {}
                 self.data["models"][self.model_name] = {}
-                
+
         return self.data["models"][self.model_name]
 
     def setup_chat(self):
