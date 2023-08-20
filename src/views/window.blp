@@ -151,9 +151,6 @@ template $BavarderWindow : Adw.ApplicationWindow {
             }
 
             Stack stack {
-              margin-end: 5;
-              margin-start: 5;
-
               Adw.StatusPage status_no_chat {
                 title: _("No Messages");
                 description: _("Send first message to get started");
@@ -212,6 +209,8 @@ template $BavarderWindow : Adw.ApplicationWindow {
                 //  margin-end: 12;
 
                   ListBox main_list {
+                    margin-end: 5;
+                    margin-start: 5;
                     styles [
                       "message-list",
                       "background"
