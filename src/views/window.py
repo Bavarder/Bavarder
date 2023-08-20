@@ -207,34 +207,42 @@ class BavarderWindow(Adw.ApplicationWindow):
             self.scroll_down_button.set_visible(True)
 
     def on_clear_all(self, *args):
-        dialog = Adw.MessageDialog(
-            heading=_("Delete All Chats"),
-            body=_("Are you sure you want to delete all chats in this thread? This can't be undone!"),
-            body_use_markup=True
-        )
+        if self.app.data["chats"]:
+            dialog = Adw.MessageDialog(
+                heading=_("Delete All Chats"),
+                body=_("Are you sure you want to delete all chats in this thread? This can't be undone!"),
+                body_use_markup=True
+            )
 
-        dialog.add_response("cancel", _("Cancel"))
-        dialog.add_response("delete", _("Delete"))
-        dialog.set_response_appearance("delete", Adw.ResponseAppearance.DESTRUCTIVE)
-        dialog.set_default_response("cancel")
-        dialog.set_close_response("cancel")
+            dialog.add_response("cancel", _("Cancel"))
+            dialog.add_response("delete", _("Delete"))
+            dialog.set_response_appearance("delete", Adw.ResponseAppearance.DESTRUCTIVE)
+            dialog.set_default_response("cancel")
+            dialog.set_close_response("cancel")
 
-        dialog.connect("response", self.on_clear_all_response)
+            dialog.connect("response", self.on_clear_all_response)
 
-        dialog.set_transient_for(self)
-        dialog.present()
+            dialog.set_transient_for(self)
+            dialog.present()
+        else:
+            toast = Adw.Toast()
+            toast.set_title(_("Nothing to clear!"))
+            self.toast_overlay.add_toast(toast)
 
 
     def on_clear_all_response(self, _widget, response):
         if response == "delete":
-            if self.content:
-                self.stack.set_visible_child(self.main)
-                self.main_list.remove_all()
-                del self.chat["content"]
-            self.stack.set_visible_child(self.status_no_chat)
-
             toast = Adw.Toast()
-            toast.set_title(_("All chats cleared!"))
+            if self.app.data["chats"]:
+                if self.content:
+                    self.stack.set_visible_child(self.main)
+                    self.main_list.remove_all()
+                    del self.chat["content"]
+                self.stack.set_visible_child(self.status_no_chat)
+
+                toast.set_title(_("All chats cleared!"))
+            else:
+                toast.set_title(_("Nothing to clear!"))
             self.toast_overlay.add_toast(toast)
 
     def on_export(self, *args):
@@ -242,6 +250,10 @@ class BavarderWindow(Adw.ApplicationWindow):
             dialog = ExportDialog(self, self.chat["content"])
             dialog.set_transient_for(self)
             dialog.present()
+        else:
+            toast = Adw.Toast()
+            toast.set_title(_("Nothing to export!"))
+            self.toast_overlay.add_toast(toast)
 
     # PROVIDER - ONLINE
     def load_provider_selector(self):
