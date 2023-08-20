@@ -82,7 +82,7 @@ class PreferencesWindow(Adw.PreferencesWindow):
 
         dialog.connect("response", self.on_delete_response)
 
-        dialog.set_transient_for(self.win)
+        dialog.set_transient_for(self)
         dialog.present()
 
     def on_delete_response(self, _widget, response):

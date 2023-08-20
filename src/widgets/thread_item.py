@@ -9,8 +9,10 @@ class ThreadItem(Gtk.Box):
     label = Gtk.Template.Child()
     text_value = Gtk.Template.Child("text-value")
     value_stack = Gtk.Template.Child("value-stack")
-    text_value_toggle = Gtk.Template.Child("text-value-toggle")
+    edit_button = Gtk.Template.Child("text-value-button")
     popover = Gtk.Template.Child()
+
+    edit_mode = False
 
     def __init__(self, parent, chat, **kwargs):
         super().__init__(**kwargs)
@@ -59,14 +61,14 @@ class ThreadItem(Gtk.Box):
             self.set_accels_for_action(f"app.{name}", shortcuts)
 
     @Gtk.Template.Callback()
-    def on_text_value_toggled(self, *args):
-        if self.text_value_toggle.get_active():
-            self.text_value_toggle.set_icon_name("check-round-outline2-symbolic")
+    def on_edit_button_clicked(self, *args):
+        if not self.edit_mode:
+            self.edit_button.set_icon_name("check-round-outline2-symbolic")
             self.text_value.set_text(self.label_text)
             widget = self.text_value
             tooltip = _("Set Title")
         else:
-            self.text_value_toggle.set_icon_name("document-edit-symbolic")
+            self.edit_button.set_icon_name("document-edit-symbolic")
             self.label_text = self.text_value.get_text()
             self.chat["title"] = self.label_text
             self.text_value.set_text(self.label_text)
@@ -75,8 +77,10 @@ class ThreadItem(Gtk.Box):
             tooltip = _("Edit Title")
             widget = self.label
 
+        self.edit_mode = not self.edit_mode
+
         self.value_stack.set_visible_child(widget)
-        self.text_value_toggle.set_tooltip_text(tooltip)
+        self.edit_button.set_tooltip_text(tooltip)
         self.label.set_text(self.label_text)
 
     def on_star(self, *args):

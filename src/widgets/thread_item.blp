@@ -23,13 +23,13 @@ template $ThreadItem : Box {
     }
   }
 
-  ToggleButton text-value-toggle {
+  Button text-value-button {
     valign: center;
     icon-name: "document-edit-symbolic";
     tooltip-text: _("Edit Title");
     styles ["flat"]
 
-    toggled => $on_text_value_toggled();
+    clicked => $on_edit_button_clicked();
   }
 
   //Button delete_button {
