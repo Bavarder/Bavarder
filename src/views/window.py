@@ -56,6 +56,7 @@ class BavarderWindow(Adw.ApplicationWindow):
     stack = Gtk.Template.Child()
     thread_stack = Gtk.Template.Child()
     main = Gtk.Template.Child()
+    scroll_down_button = Gtk.Template.Child()
 
     threads = []
 
@@ -101,6 +102,9 @@ class BavarderWindow(Adw.ApplicationWindow):
         )
 
         self.message_entry.grab_focus()
+
+        self.main.connect("edge-reached", self.on_edge_reached)
+        self.main.connect("edge-overshot", self.on_edge_reached)
 
     @property
     def chat(self):
@@ -195,6 +199,12 @@ class BavarderWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def scroll_down(self, *args):
         code = self.main.emit("scroll-child", Gtk.ScrollType.END, False)
+
+    def on_edge_reached(self, widget, edge):
+        if edge == Gtk.PositionType.BOTTOM:
+            self.scroll_down_button.set_visible(False)
+        else:
+            self.scroll_down_button.set_visible(True)
 
     def on_clear_all(self, *args):
         dialog = Adw.MessageDialog(
