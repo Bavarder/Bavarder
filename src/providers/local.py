@@ -6,7 +6,9 @@ class LocalProvider(BaseOpenAIProvider):
     name = "Local"
     description = "Choose any model you want!"
 
+
     def get_settings_rows(self):
+        self.url = f"https://bavarder.codeberg.page/help/local/"
         rows = super().get_settings_rows()
 
         self.model_row = Adw.EntryRow()
