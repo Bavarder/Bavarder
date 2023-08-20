@@ -197,11 +197,35 @@ class BavarderWindow(Adw.ApplicationWindow):
     #     self.scrolled_window.emit("scroll-child", Gtk.ScrollType.END, False)
 
     def on_clear_all(self, *args):
-        if self.content:
-            self.stack.set_visible_child(self.main)
-            self.main_list.remove_all()
-            del self.chat["content"]
-        self.stack.set_visible_child(self.status_no_chat)
+        dialog = Adw.MessageDialog(
+            heading=_("Delete All Chats"),
+            body=_("Are you sure you want to delete all chats in this thread? This can't be undone!"),
+            body_use_markup=True
+        )
+
+        dialog.add_response("cancel", _("Cancel"))
+        dialog.add_response("delete", _("Delete"))
+        dialog.set_response_appearance("delete", Adw.ResponseAppearance.DESTRUCTIVE)
+        dialog.set_default_response("cancel")
+        dialog.set_close_response("cancel")
+
+        dialog.connect("response", self.on_clear_all_response)
+
+        dialog.set_transient_for(self)
+        dialog.present()
+
+
+    def on_clear_all_response(self, _widget, response):
+        if response == "delete":
+            if self.content:
+                self.stack.set_visible_child(self.main)
+                self.main_list.remove_all()
+                del self.chat["content"]
+            self.stack.set_visible_child(self.status_no_chat)
+
+            toast = Adw.Toast()
+            toast.set_title(_("All chats cleared!"))
+            self.toast_overlay.add_toast(toast)
 
     def on_export(self, *args):
         if self.content:
