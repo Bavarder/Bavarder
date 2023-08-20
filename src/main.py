@@ -65,11 +65,12 @@ class BavarderApplication(Adw.Application):
         super().__init__(application_id='io.github.Bavarder.Bavarder',
                          flags=Gio.ApplicationFlags.DEFAULT_FLAGS)
         self.create_action("quit", self.on_quit, ["<primary>q"])
+        self.create_action("close", self.on_close, ["<primary>w"])
         self.create_action('about', self.on_about_action)
         self.create_action('preferences', self.on_preferences_action, ['<primary>comma'])
         self.create_action('new_chat', self.on_new_chat_action, ["<primary>n"])
         self.create_action('ask', self.on_ask, ["Return"])
-        self.create_action('new_window', self.on_new_window, ["<primary>w"])
+        self.create_action('new_window', self.on_new_window, ["<primary><shift>n"])
 
         self.data_path = os.path.join(user_data_dir, "bavarder")
 
@@ -143,9 +144,12 @@ class BavarderApplication(Adw.Application):
 
     def on_quit(self, action, *args, **kwargs):
         """Called when the user activates the Quit action."""
+        self.save()
+        self.quit()
+
+    def on_close(self, action, *args, **kwargs):
         if self.number_of_win == 1:
-            self.save()
-            self.quit()
+            self.on_quit(action, *args, **kwargs)
         else:
             self.win.destroy()
             self.number_of_win -= 1
