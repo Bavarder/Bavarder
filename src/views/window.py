@@ -374,8 +374,8 @@ class BavarderWindow(Adw.ApplicationWindow):
             del self.t
             self.toast.dismiss()
         except AttributeError: # nothing to stop
-            print("Nothing to stop")
-        except SystemExit:
+            pass
+        except Exception:
             self.t.join()
             del self.t
             self.toast.dismiss()

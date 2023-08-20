@@ -25,7 +25,7 @@ class KillableThread(threading.Thread):
     def localtrace(self, frame, event, arg):
         if self.killed:
             if event == 'line':
-                raise SystemExit()
+                raise Exception("Killed")
         return self.localtrace
 
     def kill(self):

@@ -234,7 +234,11 @@ class BavarderApplication(Adw.Application):
             if not self.setup_chat(): # NO MODELS:
                 return _("Please download a model from Preferences by clicking on the Dot Menu at the top!")
             else:
-                with self.model.chat_session():
+                for p in ["Hi", "Hello"]:
+                    if p.lower() in prompt.lower():
+                        return _("Hello, I am Bavarder, a Chit-Chat AI")
+                system_template = """A chat between a curious user and an artificial intelligence assistant."""
+                with self.model.chat_session(system_template):
                     self.model.current_chat_session = chat["content"].copy()
                 response = self.model.generate(prompt=prompt, top_k=1)
         else:
