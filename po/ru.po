@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-20 19:19+0200\n"
-"PO-Revision-Date: 2023-08-18 08:53+0000\n"
+"PO-Revision-Date: 2023-08-20 18:05+0000\n"
 "Last-Translator: David Lapshin <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
@@ -21,8 +21,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
@@ -62,11 +62,11 @@ msgstr "Параметры отсутствуют"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr "David Lapshin https://github.com/daudix-UFO"
+msgstr "David Lapshin https://codeberg.org/daudix-UFO"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr "Болтайте с искусственным интеллектом"
+msgstr "Болтайте с ИИ"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -136,7 +136,7 @@ msgstr "Провайдеры"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
-msgstr "Другое"
+msgstr "Разное"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
@@ -152,7 +152,7 @@ msgstr "Это удалит все беседы из базы данных."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr "Название"
+msgstr "Имена"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
@@ -188,7 +188,7 @@ msgstr "Экспорт беседы будет сохранен в этой ди
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr "Выберите каталог"
+msgstr "Выберите директорию"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
@@ -203,18 +203,16 @@ msgid "New chat"
 msgstr "Новый чат"
 
 #: src/views/window.py:201
-#, fuzzy
-#| msgid "Delete All Threads"
 msgid "Delete All Chats"
-msgstr "Удалить все беседы"
+msgstr "Удалить все чаты"
 
 #: src/views/window.py:202
-#, fuzzy
-#| msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
-msgstr "Вы уверены, что хотите удалить все беседы? Это не может быть отменено!"
+msgstr ""
+"Вы уверены, что хотите удалить все чаты в этой беседе? Это не может быть "
+"отменено!"
 
 #: src/views/window.py:259 src/views/window.py:297
 msgid "Clear all"
@@ -230,7 +228,7 @@ msgstr "Извините, я не знаю, что сказать."
 
 #: src/views/window.py:419
 msgid "human"
-msgstr "Человек"
+msgstr "человек"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:184 src/views/window.blp:185
@@ -330,11 +328,11 @@ msgstr "Удалить модель"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "Макс. количество токенов"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "Максимальное количество генерируемых токенов."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
@@ -345,59 +343,67 @@ msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"Температура модели. Большие значения повышают креативность, но снижают "
+"фактичность."
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding. "
 msgstr ""
+"Случайная выборка из top_k наиболее вероятных токенов на каждом шаге "
+"генерации. Для жадного декодирования установите значение 1. "
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
-msgstr ""
+msgstr "Top P"
 
 #: src/widgets/model_item.blp:60
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"Случайная выборка на каждом шаге генерации из верхних наиболее вероятных "
+"токенов, вероятности которых равны top_p."
 
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
-msgstr ""
+msgstr "Штраф за повторение"
 
 #: src/widgets/model_item.blp:75
 msgid ""
 "Penalize the model for repetition. Higher values result in less repetition. "
 msgstr ""
+"Штрафует модель за повторение. Большие значения приводят к меньшему "
+"количеству повторений. "
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
-msgstr ""
+msgstr "Размер пакета"
 
 #: src/widgets/model_item.blp:90
 msgid ""
 "Number of prompt tokens processed in parallel. Larger values decrease "
 "latency but increase resource requirements."
 msgstr ""
+"Количество параллельно обрабатываемых токенов подсказок. Большие значения "
+"уменьшают задержку, но увеличивают требования к ресурсам."
 
 #: src/widgets/model_item.blp:103
 msgid "Repeat Last N"
-msgstr ""
+msgstr "Повторение последнего N"
 
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
+msgstr "Как далеко в истории генерации моделей применять штраф за повтор. "
 
 #: src/widgets/model_item.blp:117
-#, fuzzy
-#| msgid "Prompt"
 msgid "System Prompt"
-msgstr "Поле ввода"
+msgstr "Системный запрос"
 
 #: src/widgets/model_item.py:64
 #, python-format
@@ -437,7 +443,7 @@ msgstr ""
 
 #: src/main.py:261
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr ""
+msgstr "Здравствуйте, я Bavarder, ИИ болтовни"
 
 #: src/main.py:284
 msgid "Please enable a provider from the Dot Menu"
