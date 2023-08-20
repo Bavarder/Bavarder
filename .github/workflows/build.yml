@@ -30,6 +30,6 @@ jobs:
       - uses: flatpak/flatpak-github-actions/flatpak-builder@v6
         with:
           bundle: bavarder.flatpak
-          manifest-path: build-aux/flatpak/io.github.Bavarder.Bavarder.Devel.json
+          manifest-path: build-aux/flatpak/io.github.Bavarder.Bavarder.json
           cache-key: flatpak-builder-${{ github.sha }}
           arch: ${{ matrix.arch }}
