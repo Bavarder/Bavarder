@@ -27,5 +27,6 @@
     <file preprocess="xml-stripblanks" alias="document-edit-symbolic.svg">../data/icons/hicolor/scalable/actions/document-edit-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="paper-plane-symbolic.svg">../data/icons/hicolor/scalable/actions/paper-plane-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="settings-symbolic.svg">../data/icons/hicolor/scalable/actions/settings-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="utilities-terminal-symbolic.svg">../data/icons/hicolor/scalable/actions/utilities-terminal-symbolic.svg</file>
   </gresource>
 </gresources>
