@@ -192,9 +192,9 @@ class BavarderWindow(Adw.ApplicationWindow):
     def on_new_chat_action(self, *args):
         self.app.on_new_chat_action(_, _)
 
-    # @Gtk.Template.Callback()
-    # def scroll_down(self, *args):
-    #     self.scrolled_window.emit("scroll-child", Gtk.ScrollType.END, False)
+    @Gtk.Template.Callback()
+    def scroll_down(self, *args):
+        code = self.main.emit("scroll-child", Gtk.ScrollType.END, False)
 
     def on_clear_all(self, *args):
         dialog = Adw.MessageDialog(
@@ -422,6 +422,8 @@ class BavarderWindow(Adw.ApplicationWindow):
 
         self.threads_row_activated_cb()
 
+        self.scroll_down()
+
     def add_assistant_item(self, content):
         c = {
                 "role": self.app.bot_name,
@@ -448,6 +450,8 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.content.append(c)
 
         self.threads_row_activated_cb()
+
+        self.scroll_down()
 
 
 

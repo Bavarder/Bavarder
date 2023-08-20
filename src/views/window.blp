@@ -135,20 +135,22 @@ template $BavarderWindow : Adw.ApplicationWindow {
           }
 
           content: Overlay {
-            // [overlay]
-            // Button {
-            //   styles [
-            //     "circular",
-            //   ]
-            //   icon-name: "go-bottom-symbolic";
-            //   halign: end;
-            //   valign: end;
-            //   margin-bottom: 7;
-            //   margin-end: 7;
-            //   clicked => $scroll_down();
-            // }
+            [overlay]
+            Button {
+              styles [
+                "circular",
+              ]
+              icon-name: "go-bottom-symbolic";
+              halign: end;
+              valign: end;
+              margin-bottom: 7;
+              margin-end: 7;
+              clicked => $scroll_down();
+            }
 
             Stack stack {
+              margin-end: 5;
+              margin-start: 5;
 
               Adw.StatusPage status_no_chat {
                 title: _("No Messages");
