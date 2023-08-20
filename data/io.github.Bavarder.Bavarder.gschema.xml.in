@@ -2,7 +2,7 @@
 <schemalist gettext-domain="bavarder">
 	<schema id="@APP_ID@" path="/io/github/Bavarder/Bavarder/">
 		<key name="local-mode" type="b">
-			<default>true</default>
+			<default>false</default>
 		</key>
 		<key name="current-provider" type="s">
 			<default>'google-flan-t5-xxl'</default>
