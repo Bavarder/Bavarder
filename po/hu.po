@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-20 19:19+0200\n"
-"PO-Revision-Date: 2023-08-03 15:00+0000\n"
+"PO-Revision-Date: 2023-08-20 18:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/hu/>\n"
@@ -355,7 +355,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr ""
+msgstr "Hőmérséklet"
 
 #: src/widgets/model_item.blp:31
 msgid ""
