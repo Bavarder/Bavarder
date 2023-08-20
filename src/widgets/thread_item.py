@@ -61,7 +61,7 @@ class ThreadItem(Gtk.Box):
     @Gtk.Template.Callback()
     def on_text_value_toggled(self, *args):
         if self.text_value_toggle.get_active():
-            self.text_value_toggle.set_icon_name("check-round-outline-symbolic")
+            self.text_value_toggle.set_icon_name("check-round-outline2-symbolic")
             self.text_value.set_text(self.label_text)
             widget = self.text_value
             tooltip = _("Set Title")
