@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-11 19:05+0200\n"
+"POT-Creation-Date: 2023-08-20 19:19+0200\n"
 "PO-Revision-Date: 2023-08-16 14:53+0000\n"
 "Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
@@ -24,7 +24,7 @@ msgstr ""
 "X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
-#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:166
+#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
 msgid "Bavarder"
 msgstr "Bavarder"
 
@@ -83,13 +83,13 @@ msgstr "Eksportować wątek ?"
 msgid "Close"
 msgstr "Zamknij"
 
-#: src/views/export_dialog.blp:52 src/views/window.py:242
-#: src/views/window.py:280
+#: src/views/export_dialog.blp:52 src/views/window.py:264
+#: src/views/window.py:302
 msgid "Export"
 msgstr "Eksportuj"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:18 src/views/window.py:267
+#: src/views/preferences_window.blp:19 src/views/window.py:289
 msgid "Models"
 msgstr "Modele"
 
@@ -108,53 +108,54 @@ msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr "Czy jesteś pewien że chcesz usunąć tą listę?"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:342 src/widgets/thread_item.py:103
+#: src/views/window.py:206 src/views/window.py:360
+#: src/widgets/thread_item.py:103
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: src/views/preferences_window.py:78 src/widgets/thread_item.blp:56
-#: src/widgets/thread_item.py:104
+#: src/views/preferences_window.py:78 src/views/window.py:207
+#: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:104
 msgid "Delete"
 msgstr "Usuń"
 
-#: src/views/preferences_window.py:93
+#: src/views/preferences_window.py:93 src/views/window.py:227
 msgid "All chats cleared!"
 msgstr "Wyczyszczono wszystkie wątki!"
 
-#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:23
-#: src/views/window.py:232 src/views/window.py:270 src/views/window.blp:298
+#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
+#: src/views/window.py:254 src/views/window.py:292 src/views/window.blp:300
 msgid "Preferences"
 msgstr "Preferencje"
 
-#: src/views/preferences_window.blp:14 src/views/window.py:229
+#: src/views/preferences_window.blp:15 src/views/window.py:251
 msgid "Providers"
 msgstr "Dostawcy"
 
-#: src/views/preferences_window.blp:26
+#: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
 msgstr "Różne"
 
-#: src/views/preferences_window.blp:29
+#: src/views/preferences_window.blp:31
 msgid "Clear all threads"
 msgstr "Wyczyść wszystkie wątki"
 
-#: src/views/preferences_window.blp:33
+#: src/views/preferences_window.blp:35
 msgid "Clear"
 msgstr "Wyczyść"
 
-#: src/views/preferences_window.blp:34
+#: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
 msgstr ""
 
-#: src/views/preferences_window.blp:42
+#: src/views/preferences_window.blp:44
 msgid "Names"
 msgstr "Imię"
 
-#: src/views/preferences_window.blp:45
+#: src/views/preferences_window.blp:47
 msgid "Bot name"
 msgstr "Nazwa bota"
 
-#: src/views/preferences_window.blp:51
+#: src/views/preferences_window.blp:53
 msgid "User name"
 msgstr "Nazwa użytkownika"
 
@@ -194,28 +195,42 @@ msgstr "Nie udało się zapisać wątku"
 msgid "Thread successfully saved!"
 msgstr "Wątek został zapisany pomyślnie!"
 
-#: src/views/window.py:175
+#: src/views/window.py:173
 msgid "New chat"
 msgstr "Nowy czat"
 
-#: src/views/window.py:237 src/views/window.py:275
+#: src/views/window.py:201
+#, fuzzy
+#| msgid "Delete All Threads"
+msgid "Delete All Chats"
+msgstr "Usuń wszystkie wątki"
+
+#: src/views/window.py:202
+#, fuzzy
+#| msgid "Are you sure you want to delete this thread?"
+msgid ""
+"Are you sure you want to delete all chats in this thread? This can't be "
+"undone!"
+msgstr "Czy jesteś pewien że chcesz usunąć tą listę?"
+
+#: src/views/window.py:259 src/views/window.py:297
 msgid "Clear all"
 msgstr "Wyczyść wszystko"
 
-#: src/views/window.py:341
+#: src/views/window.py:359
 msgid "Generating response"
 msgstr "Generowanie odpowiedzi"
 
-#: src/views/window.py:355 src/views/window.py:360
+#: src/views/window.py:373 src/views/window.py:378
 msgid "Sorry, I don't know what to say."
 msgstr ""
 
-#: src/views/window.py:401
+#: src/views/window.py:419
 msgid "human"
 msgstr "Człowiek"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
-#: src/views/window.blp:182 src/views/window.blp:183
+#: src/views/window.blp:184 src/views/window.blp:185
 msgid "New Chat"
 msgstr "Nowy czat"
 
@@ -239,39 +254,39 @@ msgstr "Wiadomość"
 msgid "Chat"
 msgstr "Czat"
 
-#: src/views/window.blp:154
+#: src/views/window.blp:156
 msgid "No Messages"
 msgstr "Brak wiadomości"
 
-#: src/views/window.blp:155
+#: src/views/window.blp:157
 msgid "Send first message to get started"
 msgstr ""
 
-#: src/views/window.blp:160
+#: src/views/window.blp:162
 msgid "No Internet"
 msgstr "Brak połączenia z internetem"
 
-#: src/views/window.blp:167
+#: src/views/window.blp:169
 msgid "Get started by creating a new chat"
 msgstr ""
 
-#: src/views/window.blp:239
+#: src/views/window.blp:241
 msgid "Open Emoji Picker"
 msgstr ""
 
-#: src/views/window.blp:258
+#: src/views/window.blp:260
 msgid "Ask"
 msgstr "Zapytaj"
 
-#: src/views/window.blp:303
+#: src/views/window.blp:305
 msgid "Keyboard Shortcuts"
 msgstr "Skróty klawiszowe"
 
-#: src/views/window.blp:308
+#: src/views/window.blp:310
 msgid "About Bavarder"
 msgstr "O Bavarderze"
 
-#: src/widgets/code_block.py:72
+#: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
 msgstr "Zrobione"
 
@@ -301,15 +316,86 @@ msgstr "Edycja"
 msgid "Remove"
 msgstr "Usuń"
 
-#: src/widgets/item.py:177
+#: src/widgets/item.py:188
 msgid "Message copied"
 msgstr "Skopiowano wiadomość"
 
-#: src/widgets/model_item.blp:11
+#: src/widgets/model_item.blp:10
 msgid "Delete Model"
 msgstr "Usuń model"
 
-#: src/widgets/model_item.py:31
+#: src/widgets/model_item.blp:16
+msgid "Max Tokens"
+msgstr ""
+
+#: src/widgets/model_item.blp:17
+msgid "The maximum number of tokens to generate."
+msgstr ""
+
+#: src/widgets/model_item.blp:30
+msgid "Temperature"
+msgstr ""
+
+#: src/widgets/model_item.blp:31
+msgid ""
+"The model temperature. Larger values increase creativity but decrease "
+"factuality."
+msgstr ""
+
+#: src/widgets/model_item.blp:45
+msgid "Top K"
+msgstr ""
+
+#: src/widgets/model_item.blp:46
+msgid ""
+"Randomly sample from the top_k most likely tokens at each generation step. "
+"Set this to 1 for greedy decoding. "
+msgstr ""
+
+#: src/widgets/model_item.blp:59
+msgid "Top P"
+msgstr ""
+
+#: src/widgets/model_item.blp:60
+msgid ""
+"Randomly sample at each generation step from the top most likely tokens "
+"whose probabilities add up to top_p."
+msgstr ""
+
+#: src/widgets/model_item.blp:74
+msgid "Repetition Penalty"
+msgstr ""
+
+#: src/widgets/model_item.blp:75
+msgid ""
+"Penalize the model for repetition. Higher values result in less repetition. "
+msgstr ""
+
+#: src/widgets/model_item.blp:89
+msgid "Batch Size"
+msgstr ""
+
+#: src/widgets/model_item.blp:90
+msgid ""
+"Number of prompt tokens processed in parallel. Larger values decrease "
+"latency but increase resource requirements."
+msgstr ""
+
+#: src/widgets/model_item.blp:103
+msgid "Repeat Last N"
+msgstr ""
+
+#: src/widgets/model_item.blp:104
+msgid "How far in the models generation history to apply the repeat penalty. "
+msgstr ""
+
+#: src/widgets/model_item.blp:117
+#, fuzzy
+#| msgid "Prompt"
+msgid "System Prompt"
+msgstr "Zapytanie"
+
+#: src/widgets/model_item.py:64
 #, python-format
 msgid "Model %s deleted!"
 msgstr "Usunięto model %s!"
@@ -338,7 +424,7 @@ msgstr "Czy jesteś pewien że chcesz usunąć tą listę?"
 msgid "Thread Deleted"
 msgstr "Usunięto wątek"
 
-#: src/main.py:235
+#: src/main.py:257
 #, fuzzy
 #| msgid "Please download a model from Preferences!"
 msgid ""
@@ -346,7 +432,11 @@ msgid ""
 "top!"
 msgstr "Prosimy pobrać model w Preferencjach!"
 
-#: src/main.py:248
+#: src/main.py:261
+msgid "Hello, I am Bavarder, a Chit-Chat AI"
+msgstr ""
+
+#: src/main.py:284
 #, fuzzy
 #| msgid "Please enable a provider from the Brain Menu"
 msgid "Please enable a provider from the Dot Menu"
@@ -359,9 +449,6 @@ msgstr "Prosimy włączyć dostawcę z Menu Mógzu"
 
 #~ msgid "Assistant"
 #~ msgstr "Asystent"
-
-#~ msgid "Prompt"
-#~ msgstr "Zapytanie"
 
 #~ msgid "Clear prompt after send"
 #~ msgstr "Czyść zapytanie po wysłaniu"
