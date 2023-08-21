@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-20 21:06+0300\n"
-"PO-Revision-Date: 2023-08-21 06:53+0000\n"
+"PO-Revision-Date: 2023-08-22 00:53+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -344,50 +344,56 @@ msgstr ""
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
+"Maak willekeurig toegangssleutels uit de waarschĳnlĳkste top_k-sleutels. "
+"Stel in op 1 om gretig te decoderen."
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
-msgstr ""
+msgstr "Top P"
 
 #: src/widgets/model_item.blp:60
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"Maak willekeurig toegangssleutels uit de waarschĳnlĳkste top_p-sleutels."
 
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
-msgstr ""
+msgstr "Herhaalgedrag"
 
 #: src/widgets/model_item.blp:75
 msgid ""
 "Penalize the model for repetition. Higher values result in less repetition."
 msgstr ""
+"Stel in hoe vaak herhaling map optreden. Hogere waarde = minder herhaling."
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
-msgstr ""
+msgstr "Reeksomvang"
 
 #: src/widgets/model_item.blp:90
 msgid ""
 "Number of prompt tokens processed in parallel. Larger values decrease "
 "latency but increase resource requirements."
 msgstr ""
+"Het aantal toegangssleutels dat tegelĳkertĳd wordt verwerkt. Lagere waardes "
+"leiden tot minder vertraging, maar vereisen meer kracht."
 
 #: src/widgets/model_item.blp:103
 msgid "Repeat Last N"
-msgstr ""
+msgstr "Recentste x-aantal herhalen"
 
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
+msgstr "Geef aan na hoeveel tĳd er niet meer herhaald mag worden. "
 
 #: src/widgets/model_item.blp:117
 msgid "System Prompt"
@@ -430,7 +436,7 @@ msgstr "Installeer een model via de voorkeuren of het ellipsmenu!"
 
 #: src/main.py:261
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr ""
+msgstr "Hallo, ik ben Bavarder, je koetjes-en-kalfjes-KI"
 
 #: src/main.py:284
 msgid "Please enable a provider from the Dot Menu"
