@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 20:57+0300\n"
+"POT-Creation-Date: 2023-08-20 21:06+0300\n"
 "PO-Revision-Date: 2023-08-20 18:05+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
@@ -392,7 +392,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:75
 msgid ""
-"Penalize the model for repetition. Higher values result in less repetition. "
+"Penalize the model for repetition. Higher values result in less repetition."
 msgstr ""
 
 #: src/widgets/model_item.blp:89
