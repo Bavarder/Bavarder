@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 21:06+0300\n"
+"POT-Creation-Date: 2023-08-21 12:44+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,17 +73,17 @@ msgstr ""
 msgid "Export Thread ?"
 msgstr ""
 
-#: src/views/export_dialog.blp:51
+#: src/views/export_dialog.blp:53
 msgid "Close"
 msgstr ""
 
-#: src/views/export_dialog.blp:52 src/views/window.py:264
-#: src/views/window.py:302
+#: src/views/export_dialog.blp:54 src/views/window.py:286
+#: src/views/window.py:324
 msgid "Export"
 msgstr ""
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:289
+#: src/views/preferences_window.blp:19 src/views/window.py:311
 msgid "Models"
 msgstr ""
 
@@ -100,26 +100,26 @@ msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr ""
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:206 src/views/window.py:360
-#: src/widgets/thread_item.py:103
+#: src/views/window.py:217 src/views/window.py:382
+#: src/widgets/thread_item.py:107
 msgid "Cancel"
 msgstr ""
 
-#: src/views/preferences_window.py:78 src/views/window.py:207
-#: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:104
+#: src/views/preferences_window.py:78 src/views/window.py:218
+#: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:108
 msgid "Delete"
 msgstr ""
 
-#: src/views/preferences_window.py:93 src/views/window.py:227
+#: src/views/preferences_window.py:93 src/views/window.py:243
 msgid "All chats cleared!"
 msgstr ""
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:254 src/views/window.py:292 src/views/window.blp:300
+#: src/views/window.py:276 src/views/window.py:314 src/views/window.blp:299
 msgid "Preferences"
 msgstr ""
 
-#: src/views/preferences_window.blp:15 src/views/window.py:251
+#: src/views/preferences_window.blp:15 src/views/window.py:273
 msgid "Providers"
 msgstr ""
 
@@ -187,33 +187,41 @@ msgstr ""
 msgid "Thread successfully saved!"
 msgstr ""
 
-#: src/views/window.py:173
+#: src/views/window.py:177
 msgid "New chat"
 msgstr ""
 
-#: src/views/window.py:201
+#: src/views/window.py:212
 msgid "Delete All Chats"
 msgstr ""
 
-#: src/views/window.py:202
+#: src/views/window.py:213
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
 msgstr ""
 
-#: src/views/window.py:259 src/views/window.py:297
+#: src/views/window.py:229 src/views/window.py:245
+msgid "Nothing to clear!"
+msgstr ""
+
+#: src/views/window.py:255
+msgid "Nothing to export!"
+msgstr ""
+
+#: src/views/window.py:281 src/views/window.py:319
 msgid "Clear all"
 msgstr ""
 
-#: src/views/window.py:359
+#: src/views/window.py:381
 msgid "Generating response"
 msgstr ""
 
-#: src/views/window.py:373 src/views/window.py:378
+#: src/views/window.py:395 src/views/window.py:400
 msgid "Sorry, I don't know what to say."
 msgstr ""
 
-#: src/views/window.py:419
+#: src/views/window.py:441
 msgid "human"
 msgstr ""
 
@@ -258,19 +266,19 @@ msgstr ""
 msgid "Get started by creating a new chat"
 msgstr ""
 
-#: src/views/window.blp:241
+#: src/views/window.blp:243
 msgid "Open Emoji Picker"
 msgstr ""
 
-#: src/views/window.blp:260
+#: src/views/window.blp:259
 msgid "Ask"
 msgstr ""
 
-#: src/views/window.blp:305
+#: src/views/window.blp:304
 msgid "Keyboard Shortcuts"
 msgstr ""
 
-#: src/views/window.blp:310
+#: src/views/window.blp:309
 msgid "About Bavarder"
 msgstr ""
 
@@ -386,7 +394,7 @@ msgstr ""
 msgid "Model %s deleted!"
 msgstr ""
 
-#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:75
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:77
 msgid "Edit Title"
 msgstr ""
 
@@ -394,32 +402,32 @@ msgstr ""
 msgid "Star"
 msgstr ""
 
-#: src/widgets/thread_item.py:67
+#: src/widgets/thread_item.py:69
 msgid "Set Title"
 msgstr ""
 
-#: src/widgets/thread_item.py:98
+#: src/widgets/thread_item.py:102
 msgid "Delete Thread"
 msgstr ""
 
-#: src/widgets/thread_item.py:99
+#: src/widgets/thread_item.py:103
 msgid "Are you sure you want to delete this thread?"
 msgstr ""
 
-#: src/widgets/thread_item.py:120
+#: src/widgets/thread_item.py:124
 msgid "Thread Deleted"
 msgstr ""
 
-#: src/main.py:257
+#: src/main.py:261
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
 
-#: src/main.py:261
+#: src/main.py:265
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
 msgstr ""
 
-#: src/main.py:284
+#: src/main.py:288
 msgid "Please enable a provider from the Dot Menu"
 msgstr ""

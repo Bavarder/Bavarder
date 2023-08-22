@@ -3,7 +3,7 @@ using Adw 1;
 
 template $ThreadItem : Box {
   orientation: horizontal;
-  styles ["flat"]
+  styles ["toolbar"]
 
   Stack value-stack {
     styles ["flat"]
@@ -23,13 +23,15 @@ template $ThreadItem : Box {
     }
   }
 
-  Button text-value-button {
+  Adw.SplitButton text-value-button {
     valign: center;
     icon-name: "document-edit-symbolic";
     tooltip-text: _("Edit Title");
     styles ["flat"]
 
     clicked => $on_edit_button_clicked();
+
+    menu-model: popover-model;
   }
 
   //Button delete_button {
