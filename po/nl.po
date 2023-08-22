@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-22 00:53+0000\n"
+"PO-Revision-Date: 2023-08-23 04:53+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -213,11 +213,11 @@ msgstr ""
 
 #: src/views/window.py:229 src/views/window.py:245
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "Er valt niks te wissen!"
 
 #: src/views/window.py:255
 msgid "Nothing to export!"
-msgstr ""
+msgstr "Er valt niks te exporteren!"
 
 #: src/views/window.py:281 src/views/window.py:319
 msgid "Clear all"
