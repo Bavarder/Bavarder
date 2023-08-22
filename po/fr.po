@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-22 15:47+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
+"PO-Revision-Date: 2023-08-23 04:53+0000\n"
+"Last-Translator: rene-coty <irenee.thirion@e.email>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
 "Language: fr\n"
@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/providers/hfbasechat.py:50
 msgid "Sorry, I don't know what to say!"
-msgstr "Désolé, je ne sais pas quoi dire !"
+msgstr "Désolé, je ne sais pas quoi dire !"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -57,7 +57,7 @@ msgstr "Clé d’API"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
-msgstr "Aucune préférences disponibles"
+msgstr "Pas de préférences disponibles"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -73,7 +73,7 @@ msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr "Embalage"
+msgstr "Empaquetage"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -108,8 +108,8 @@ msgstr "Supprimer toutes les discussions"
 #: src/views/preferences_window.py:73
 msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr ""
-"Voulez-vous vraiment supprimer toutes les discussions ? Ceci ne peut pas "
-"être annulé !"
+"Souhaitez-vous vraiment supprimer toutes les discussions ? Cette action ne "
+"pourra être annulée !"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:217 src/views/window.py:382
@@ -149,11 +149,11 @@ msgstr "Effacer"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr "Cela va effacer toutes les discussions de la base de données."
+msgstr "Ceci effacera toutes les discussions de la base de données."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr "Nom"
+msgstr "Noms"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
@@ -173,7 +173,7 @@ msgstr "Enregistrer"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr "Exporter le Fil ?"
+msgstr "Exporter le fil de discussion ?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -181,11 +181,11 @@ msgstr "Nom du fichier"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
-msgstr "Lieu"
+msgstr "Emplacement"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr "L'export du Fil sera enregistré dans ce répertoire."
+msgstr "Le fil de discussion sera exporté dans ce répertoire."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -193,7 +193,7 @@ msgstr "Choisir un répertoire"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr "Impossible d'enregistrer le Fil"
+msgstr "Impossible d’enregistrer le fil"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
@@ -205,15 +205,15 @@ msgstr "Nouvelle discussion"
 
 #: src/views/window.py:212
 msgid "Delete All Chats"
-msgstr "Supprimer touts les messages"
+msgstr "Supprimer tous les messages"
 
 #: src/views/window.py:213
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
 msgstr ""
-"Voulez-vous vraiment supprimer tous les messages dans ce fil ? Ceci ne peut "
-"pas être annulé !"
+"Souhaitez-vous vraiment supprimer tous les messages de ce fil ? Cette action "
+"ne pourra être annulée !"
 
 #: src/views/window.py:229 src/views/window.py:245
 msgid "Nothing to clear!"
@@ -221,7 +221,7 @@ msgstr "Rien à effacer !"
 
 #: src/views/window.py:255
 msgid "Nothing to export!"
-msgstr "Rien à exporter !"
+msgstr "Rien à exporter !"
 
 #: src/views/window.py:281 src/views/window.py:319
 msgid "Clear all"
@@ -242,7 +242,7 @@ msgstr "Humain"
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:184 src/views/window.blp:185
 msgid "New Chat"
-msgstr "Nouvelle Discussion"
+msgstr "Nouvelle discussion"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
@@ -255,7 +255,7 @@ msgstr "Aucune discussion"
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
 msgstr ""
-"Commencer par créer une nouvelle discussion ou par en selectionner une "
+"Commencez par créer une nouvelle discussion ou par en sélectionner une "
 "depuis la barre latérale"
 
 #: src/views/window.blp:96
@@ -268,7 +268,7 @@ msgstr "Discussion"
 
 #: src/views/window.blp:156
 msgid "No Messages"
-msgstr "Pas de Messages"
+msgstr "Pas de messages"
 
 #: src/views/window.blp:157
 msgid "Send first message to get started"
@@ -276,7 +276,7 @@ msgstr "Envoyez le premier message pour commencer"
 
 #: src/views/window.blp:162
 msgid "No Internet"
-msgstr "Pas d'Internet"
+msgstr "Pas d’internet"
 
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
@@ -284,7 +284,7 @@ msgstr "Commencez par créer une nouvelle discussion"
 
 #: src/views/window.blp:243
 msgid "Open Emoji Picker"
-msgstr "Ouvrir le sélecteur d'émoticones"
+msgstr "Ouvrir le sélecteur d’émoticônes"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -400,7 +400,7 @@ msgid ""
 "Number of prompt tokens processed in parallel. Larger values decrease "
 "latency but increase resource requirements."
 msgstr ""
-"Nombre de jetons d'invite traités en parallèle. Des valeurs plus élevées "
+"Nombre de jetons de requête traités en parallèle. Des valeurs plus élevées "
 "diminuent la latence mais augmentent les besoins en ressources."
 
 #: src/widgets/model_item.blp:103
@@ -415,7 +415,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:117
 msgid "System Prompt"
-msgstr "Invite du Système"
+msgstr "Requête système"
 
 #: src/widgets/model_item.py:64
 #, python-format
@@ -424,7 +424,7 @@ msgstr "Modèle %s supprimé !"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:77
 msgid "Edit Title"
-msgstr "Modifier le Titre"
+msgstr "Modifier le titre"
 
 #: src/widgets/thread_item.blp:63
 msgid "Star"
@@ -432,7 +432,7 @@ msgstr "Aimer"
 
 #: src/widgets/thread_item.py:69
 msgid "Set Title"
-msgstr "Définire le Titre"
+msgstr "Définir le titre"
 
 #: src/widgets/thread_item.py:102
 msgid "Delete Thread"
@@ -444,15 +444,15 @@ msgstr "Voulez-vous vraiment supprimer cette discussion ?"
 
 #: src/widgets/thread_item.py:124
 msgid "Thread Deleted"
-msgstr "Discussion Supprimé"
+msgstr "Discussion supprimée"
 
 #: src/main.py:265
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
-"Merci de télécharger un modèle depuis les Préférences en cliquant sur le "
-"Menu en Point en haut !"
+"Merci de télécharger un modèle depuis les Préférences en cliquant sur le "
+"Menu en pointillés en haut !"
 
 #: src/main.py:269
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
@@ -460,7 +460,7 @@ msgstr "Bonjour, je suis Bavarder, une IA pour bavarder"
 
 #: src/main.py:292
 msgid "Please enable a provider from the Dot Menu"
-msgstr "Merci d'activer un modèle depuis le Menu en Point"
+msgstr "Merci d’activer un modèle depuis le Menu en pointillés"
 
 #, python-format
 #~ msgid "New Chat %i"
