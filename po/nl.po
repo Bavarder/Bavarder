@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 21:06+0300\n"
+"POT-Creation-Date: 2023-08-22 17:40+0200\n"
 "PO-Revision-Date: 2023-08-22 00:53+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
@@ -43,11 +43,11 @@ msgstr ""
 "voorkeuren. Je kunt een toegangssleutel aanmaken door deze [handleiding]"
 "(https://bavarder.codeberg.page/help/huggingface/) (Engels) te volgen."
 
-#: src/providers/hfbasechat.py:49
+#: src/providers/hfbasechat.py:50
 msgid "Sorry, I don't know what to say!"
 msgstr "Ik heb hier geen antwoord op - sorry!"
 
-#: src/providers/hfbasechat.py:57
+#: src/providers/hfbasechat.py:58
 msgid "API Key"
 msgstr "Api-sleutel"
 
@@ -79,17 +79,17 @@ msgstr "Vertalen"
 msgid "Export Thread ?"
 msgstr "Gesprek exporteren?"
 
-#: src/views/export_dialog.blp:51
+#: src/views/export_dialog.blp:53
 msgid "Close"
 msgstr "Sluiten"
 
-#: src/views/export_dialog.blp:52 src/views/window.py:264
-#: src/views/window.py:302
+#: src/views/export_dialog.blp:54 src/views/window.py:286
+#: src/views/window.py:324
 msgid "Export"
 msgstr "Exporteren"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:289
+#: src/views/preferences_window.blp:19 src/views/window.py:311
 msgid "Models"
 msgstr "Modellen"
 
@@ -108,26 +108,26 @@ msgstr ""
 "onomkeerbaar!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:206 src/views/window.py:360
-#: src/widgets/thread_item.py:103
+#: src/views/window.py:217 src/views/window.py:382
+#: src/widgets/thread_item.py:107
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: src/views/preferences_window.py:78 src/views/window.py:207
-#: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:104
+#: src/views/preferences_window.py:78 src/views/window.py:218
+#: src/widgets/thread_item.blp:58 src/widgets/thread_item.py:108
 msgid "Delete"
 msgstr "Verwĳderen"
 
-#: src/views/preferences_window.py:93 src/views/window.py:227
+#: src/views/preferences_window.py:93 src/views/window.py:243
 msgid "All chats cleared!"
 msgstr "Alle gesprekken zĳn gewist!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:254 src/views/window.py:292 src/views/window.blp:300
+#: src/views/window.py:276 src/views/window.py:314 src/views/window.blp:299
 msgid "Preferences"
 msgstr "Voorkeuren"
 
-#: src/views/preferences_window.blp:15 src/views/window.py:251
+#: src/views/preferences_window.blp:15 src/views/window.py:273
 msgid "Providers"
 msgstr "Diensten"
 
@@ -195,15 +195,15 @@ msgstr "Het gesprek kan niet worden opgeslagen"
 msgid "Thread successfully saved!"
 msgstr "Het gesprek is opgeslagen!"
 
-#: src/views/window.py:173
+#: src/views/window.py:177
 msgid "New chat"
 msgstr "Nieuw gesprek"
 
-#: src/views/window.py:201
+#: src/views/window.py:212
 msgid "Delete All Chats"
 msgstr "Alle gesprekken verwijderen"
 
-#: src/views/window.py:202
+#: src/views/window.py:213
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
@@ -211,19 +211,27 @@ msgstr ""
 "Weet je zeker dat je alle gesprekken wilt verwĳderen? Deze actie is "
 "onomkeerbaar!"
 
-#: src/views/window.py:259 src/views/window.py:297
+#: src/views/window.py:229 src/views/window.py:245
+msgid "Nothing to clear!"
+msgstr ""
+
+#: src/views/window.py:255
+msgid "Nothing to export!"
+msgstr ""
+
+#: src/views/window.py:281 src/views/window.py:319
 msgid "Clear all"
 msgstr "Alles wissen"
 
-#: src/views/window.py:359
+#: src/views/window.py:381
 msgid "Generating response"
 msgstr "Bezig met samenstellen van antwoord…"
 
-#: src/views/window.py:373 src/views/window.py:378
+#: src/views/window.py:395 src/views/window.py:400
 msgid "Sorry, I don't know what to say."
 msgstr "Ik heb hier geen antwoord op - sorry."
 
-#: src/views/window.py:419
+#: src/views/window.py:441
 msgid "human"
 msgstr "Mens"
 
@@ -268,19 +276,19 @@ msgstr "Geen internetverbinding"
 msgid "Get started by creating a new chat"
 msgstr "Begin een gesprek"
 
-#: src/views/window.blp:241
+#: src/views/window.blp:243
 msgid "Open Emoji Picker"
 msgstr "Emojikiezer openen"
 
-#: src/views/window.blp:260
+#: src/views/window.blp:259
 msgid "Ask"
 msgstr "Vraag stellen"
 
-#: src/views/window.blp:305
+#: src/views/window.blp:304
 msgid "Keyboard Shortcuts"
 msgstr "Sneltoetsen"
 
-#: src/views/window.blp:310
+#: src/views/window.blp:309
 msgid "About Bavarder"
 msgstr "Over Bavarder"
 
@@ -404,41 +412,41 @@ msgstr "Systeeminvoer"
 msgid "Model %s deleted!"
 msgstr "‘%s’ is verwĳderd!"
 
-#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:75
+#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:77
 msgid "Edit Title"
 msgstr "Titel bewerken"
 
-#: src/widgets/thread_item.blp:61
+#: src/widgets/thread_item.blp:63
 msgid "Star"
 msgstr "Ster"
 
-#: src/widgets/thread_item.py:67
+#: src/widgets/thread_item.py:69
 msgid "Set Title"
 msgstr "Titel instellen"
 
-#: src/widgets/thread_item.py:98
+#: src/widgets/thread_item.py:102
 msgid "Delete Thread"
 msgstr "Gesprek verwijderen"
 
-#: src/widgets/thread_item.py:99
+#: src/widgets/thread_item.py:103
 msgid "Are you sure you want to delete this thread?"
 msgstr "Weet je zeker dat je dit wilt verwĳderen?"
 
-#: src/widgets/thread_item.py:120
+#: src/widgets/thread_item.py:124
 msgid "Thread Deleted"
 msgstr "Het gesprek is verwĳderd"
 
-#: src/main.py:257
+#: src/main.py:265
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr "Installeer een model via de voorkeuren of het ellipsmenu!"
 
-#: src/main.py:261
+#: src/main.py:269
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
 msgstr "Hallo, ik ben Bavarder, je koetjes-en-kalfjes-KI"
 
-#: src/main.py:284
+#: src/main.py:292
 msgid "Please enable a provider from the Dot Menu"
 msgstr "Schakel een dienst in via het ellipsmenu"
 
