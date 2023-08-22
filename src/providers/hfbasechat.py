@@ -46,6 +46,7 @@ class BaseHFChatProvider(BaseProvider):
             if 'generated_text' in output[0]:
                 return output[0]['generated_text']
         else:
+            print(output)
             return _("Sorry, I don't know what to say!")
 
     def get_settings_rows(self):

@@ -9,8 +9,10 @@ from .gpt2 import GPT2Provider
 from .openassistantsft1pythia12b import HuggingFaceOpenAssistantSFT1PythiaProvider
 from .robertasquad2 import RobertaSquad2Provider
 from .local import LocalProvider
+from .aihorde import AIHordeProvider
 
 PROVIDERS = {
+    AIHordeProvider,
     BlenderBotProvider,
     CatGPTProvider,
     DialoGPTProvider,

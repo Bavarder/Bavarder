@@ -2,6 +2,7 @@ providers_dir = join_paths(MODULE_DIR, 'providers')
 
 providers_sources = [
   '__init__.py',
+  'aihorde.py',
   'base.py',
   'blenderbot.py',
   'catgpt.py',

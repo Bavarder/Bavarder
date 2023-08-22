@@ -84,7 +84,11 @@ class BavarderApplication(Adw.Application):
 
         self.data = {
             "chats": [],
-            "providers": {},
+            "providers": {
+                "google-flan-t5-xxl": {"enabled": True, "data": {}},
+                "gpt-2": {"enabled": True, "data": {}},
+
+            },
             "models": {}
         }
 
@@ -216,8 +220,8 @@ class BavarderApplication(Adw.Application):
 
     def on_preferences_action(self, widget, _):
         """Callback for the app.preferences action."""
-        preferences = PreferencesWindow(self.win)
-        preferences.present()
+        self.preferences_window = PreferencesWindow(self.win)
+        self.preferences_window.present()
 
 
     def create_action(self, name, callback, shortcuts=None):

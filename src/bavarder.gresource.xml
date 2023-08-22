@@ -26,6 +26,7 @@
     <file preprocess="xml-stripblanks" alias="cloud-filled-symbolic.svg">../data/icons/hicolor/scalable/actions/cloud-filled-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="document-edit-symbolic.svg">../data/icons/hicolor/scalable/actions/document-edit-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="go-bottom-symbolic.svg">../data/icons/hicolor/scalable/actions/go-bottom-symbolic.svg</file>
+    <file preprocess="xml-stripblanks" alias="object-select-symbolic.svg">../data/icons/hicolor/scalable/actions/object-select-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="paper-plane-symbolic.svg">../data/icons/hicolor/scalable/actions/paper-plane-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="settings-symbolic.svg">../data/icons/hicolor/scalable/actions/settings-symbolic.svg</file>
     <file preprocess="xml-stripblanks" alias="terminal-symbolic.svg">../data/icons/hicolor/scalable/actions/terminal-symbolic.svg</file>

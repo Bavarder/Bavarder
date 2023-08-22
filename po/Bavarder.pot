@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 12:44+0200\n"
+"POT-Creation-Date: 2023-08-22 17:12+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,11 @@ msgid ""
 "help/huggingface/)"
 msgstr ""
 
-#: src/providers/hfbasechat.py:49
+#: src/providers/hfbasechat.py:50
 msgid "Sorry, I don't know what to say!"
 msgstr ""
 
-#: src/providers/hfbasechat.py:57
+#: src/providers/hfbasechat.py:58
 msgid "API Key"
 msgstr ""
 
@@ -106,7 +106,7 @@ msgid "Cancel"
 msgstr ""
 
 #: src/views/preferences_window.py:78 src/views/window.py:218
-#: src/widgets/thread_item.blp:56 src/widgets/thread_item.py:108
+#: src/widgets/thread_item.blp:58 src/widgets/thread_item.py:108
 msgid "Delete"
 msgstr ""
 
@@ -398,7 +398,7 @@ msgstr ""
 msgid "Edit Title"
 msgstr ""
 
-#: src/widgets/thread_item.blp:61
+#: src/widgets/thread_item.blp:63
 msgid "Star"
 msgstr ""
 
@@ -418,16 +418,16 @@ msgstr ""
 msgid "Thread Deleted"
 msgstr ""
 
-#: src/main.py:261
+#: src/main.py:265
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
 
-#: src/main.py:265
+#: src/main.py:269
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
 msgstr ""
 
-#: src/main.py:288
+#: src/main.py:292
 msgid "Please enable a provider from the Dot Menu"
 msgstr ""
