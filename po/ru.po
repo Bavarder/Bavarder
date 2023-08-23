@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-21 06:53+0000\n"
+"PO-Revision-Date: 2023-08-24 03:53+0000\n"
 "Last-Translator: David Lapshin <ddaudix@gmail.com>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
@@ -21,8 +21,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.18.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
@@ -216,11 +216,11 @@ msgstr ""
 
 #: src/views/window.py:229 src/views/window.py:245
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "Нечего очищать!"
 
 #: src/views/window.py:255
 msgid "Nothing to export!"
-msgstr ""
+msgstr "Нечего экспортировать!"
 
 #: src/views/window.py:281 src/views/window.py:319
 msgid "Clear all"
@@ -383,15 +383,11 @@ msgid "Repetition Penalty"
 msgstr "Штраф за повторение"
 
 #: src/widgets/model_item.blp:75
-#, fuzzy
-#| msgid ""
-#| "Penalize the model for repetition. Higher values result in less "
-#| "repetition. "
 msgid ""
 "Penalize the model for repetition. Higher values result in less repetition."
 msgstr ""
 "Штрафует модель за повторение. Большие значения приводят к меньшему "
-"количеству повторений. "
+"количеству повторений."
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
