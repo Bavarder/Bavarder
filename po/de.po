@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-22 15:48+0000\n"
-"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
+"PO-Revision-Date: 2023-08-25 22:53+0000\n"
+"Last-Translator: maymage <maymage@gmail.com>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -42,7 +42,7 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
-"Nutzungsgrenze erreicht! Zum aufheben der Nutzungsgrenze bitte "
+"Nutzungsgrenze erreicht! Zum Aufheben der Nutzungsgrenze bitte "
 "Zugangsschlüssel in den Einstellungen speichern. Zugangsschlüssel können "
 "nach dieser [Anleitung](https://bavarder.codeberg.page/help/huggingface/) "
 "erhalten werden"
@@ -72,6 +72,7 @@ msgid "Copyright © 2023 0xMRTT"
 msgstr "Urheberrechte © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
+#, fuzzy
 msgid "Packaging"
 msgstr "Gepackt"
 
@@ -103,12 +104,12 @@ msgstr "Liste verfügbarer Modelle"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr "Alle Unterhaltungen löschen"
+msgstr "Alle Gespräche löschen"
 
 #: src/views/preferences_window.py:73
 msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr ""
-"Sicher, dass alle Unterhaltungen gelöscht werden sollen? Das kann nicht "
+"Sicher, dass alle Gespräche gelöscht werden sollen? Dies kann nicht "
 "rückgängig gemacht werden!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
@@ -141,7 +142,7 @@ msgstr "Unterschiedliches"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
-msgstr "Alle Unterhaltungen leeren"
+msgstr "Alle Gespräche leeren"
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
@@ -149,7 +150,7 @@ msgstr "Leeren"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr "Dies wird alle Unterhaltung in der Datenbank leeren."
+msgstr "Dies wird alle Gespräche in der Datenbank leeren."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
@@ -185,7 +186,7 @@ msgstr "Standort"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr "Der Export der Unterhaltung wird in diesem Verzeichnis gespeichert."
+msgstr "Der Gesprächsexport wird in diesem Verzeichnis gespeichert."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -193,11 +194,11 @@ msgstr "Verzeichnis wählen"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr "Unterhaltung konnte nicht gespeichert werden"
+msgstr "Gespräch konnte nicht gespeichert werden"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr "Unterhaltung erfolgreich gespeichert!"
+msgstr "Gespräch erfolgreich gespeichert!"
 
 #: src/views/window.py:177
 msgid "New chat"
@@ -212,16 +213,16 @@ msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
 msgstr ""
-"Sicher, dass die gesamte Unterhaltung gelöscht werden soll? Das kann nicht "
+"Sicher, dass die gesamte Unterhaltung gelöscht werden soll? Dies kann nicht "
 "rückgängig gemacht werden!"
 
 #: src/views/window.py:229 src/views/window.py:245
 msgid "Nothing to clear!"
-msgstr "Nichts zu klären!"
+msgstr "Nichts zu leeren!"
 
 #: src/views/window.py:255
 msgid "Nothing to export!"
-msgstr "Nichts zum Exportieren!"
+msgstr "Nichts zu exportieren!"
 
 #: src/views/window.py:281 src/views/window.py:319
 msgid "Clear all"
@@ -353,7 +354,7 @@ msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
-"Die Modelltemperatur. Höhere Werte erhöhen die Kreativität, aber senken die "
+"Die Modelltemperatur. Höhere Werte erhöhen die Kreativität, senken aber die "
 "Sachlichkeit."
 
 #: src/widgets/model_item.blp:45
@@ -361,6 +362,7 @@ msgid "Top K"
 msgstr "Top K"
 
 #: src/widgets/model_item.blp:46
+#, fuzzy
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
@@ -393,6 +395,7 @@ msgstr ""
 "Wiederholung."
 
 #: src/widgets/model_item.blp:89
+#, fuzzy
 msgid "Batch Size"
 msgstr "Losgröße"
 
@@ -437,23 +440,23 @@ msgstr "Titel festlegen"
 
 #: src/widgets/thread_item.py:102
 msgid "Delete Thread"
-msgstr "Unterhaltung löschen"
+msgstr "Gespräch löschen"
 
 #: src/widgets/thread_item.py:103
 msgid "Are you sure you want to delete this thread?"
-msgstr "Sicher, dass diese Unterhaltung gelöscht werden soll?"
+msgstr "Sicher, dass dieses Gespräch gelöscht werden soll?"
 
 #: src/widgets/thread_item.py:124
 msgid "Thread Deleted"
-msgstr "Unterhaltung gelöscht"
+msgstr "Gespräch gelöscht"
 
 #: src/main.py:265
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
-"Bitte ein Modell von den Einstellungen laden durch Klicken des Punktmenüs "
-"oben!"
+"Bitte ein Modell von den Einstellungen durch Klicken des Punktmenüs oben "
+"laden!"
 
 #: src/main.py:269
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
