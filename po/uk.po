@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-25 09:21+0000\n"
+"PO-Revision-Date: 2023-08-25 22:53+0000\n"
 "Last-Translator: SomeTr <SomeTr@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/uk/>\n"
@@ -364,6 +364,8 @@ msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
+"Випадково вибирати з top_k найімовірніших токенів на кожному кроці "
+"генерації. Для жадібного декодування встановіть значення 1."
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
@@ -374,6 +376,8 @@ msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"Випадково вибирати на кожному кроці генерації з найімовірніших токенів, "
+"імовірності яких у сумі дорівнюють top_p."
 
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
@@ -388,21 +392,26 @@ msgstr ""
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
-msgstr ""
+msgstr "Розмір пакета"
 
 #: src/widgets/model_item.blp:90
 msgid ""
 "Number of prompt tokens processed in parallel. Larger values decrease "
 "latency but increase resource requirements."
 msgstr ""
+"Кількість паралельно оброблюваних токенів підказок. Більші значення "
+"зменшують затримку, але збільшують потребу в ресурсах."
 
 #: src/widgets/model_item.blp:103
+#, fuzzy
 msgid "Repeat Last N"
-msgstr ""
+msgstr "Повторити останні N"
 
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
 msgstr ""
+"Наскільки далеко в історії генерації моделі застосовувати штраф за "
+"повторення. "
 
 #: src/widgets/model_item.blp:117
 msgid "System Prompt"
