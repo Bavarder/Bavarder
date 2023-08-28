@@ -9,13 +9,14 @@
 # CraftWorksMC <thelonegamer87@gmail.com>, 2023.
 # maymage <maymage@gmail.com>, 2023.
 # albanobattistella <albanobattistella@gmail.com>, 2023.
+# maupao <paolo@paolomauri.it>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-20 18:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-08-28 21:53+0000\n"
+"Last-Translator: maupao <paolo@paolomauri.it>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/it/>\n"
 "Language: it\n"
@@ -49,7 +50,7 @@ msgstr ""
 
 #: src/providers/hfbasechat.py:50
 msgid "Sorry, I don't know what to say!"
-msgstr ""
+msgstr "Mi spiace, non so cosa dire!"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -75,7 +76,7 @@ msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Pacchetto"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -83,7 +84,7 @@ msgstr "Traduci"
 
 #: src/views/export_dialog.blp:6
 msgid "Export Thread ?"
-msgstr ""
+msgstr "Esporto il thread?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -96,24 +97,21 @@ msgstr "Esporta"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:19 src/views/window.py:311
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
-msgstr "Modello"
+msgstr "Modelli"
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "Elenco dei modelli disponibili"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "Elimina tutti i threads"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Sei sicuro di volerlo cancellare?"
+msgstr ""
+"Sei sicuro di voler eliminare tutti i threads? Questa azione è irreversibile!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:217 src/views/window.py:382
