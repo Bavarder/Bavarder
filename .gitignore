@@ -5,3 +5,5 @@ build/
 export/
 bavarder.flatpak
 r.txt
+.vscode/
+.flatpak/
