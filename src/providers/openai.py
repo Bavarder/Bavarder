@@ -2,6 +2,7 @@ from .base import BaseProvider
 
 import openai
 import socket
+from litellm import completion
 
 from gi.repository import Gtk, Adw, GLib
 
@@ -23,16 +24,18 @@ class BaseOpenAIProvider(BaseProvider):
         chat = chat["content"]
 
         if self.data.get("api_key"):
-            openai.api_key = self.data["api_key"]
+            api_key = self.data["api_key"]
         if self.data.get("api_base"):
-            openai.api_base = self.data["api_base"]
+            api_base = self.data["api_base"]
 
         if self.model:
             prompt = self.chunk(prompt)
             try:
-                response = self.chat.create(
+                response = completion(
                             model=self.model,
                             messages=chat,
+                            api_key=api_key,
+                            api_base=api_base,
                         ).choices[0].message.content
             except openai.error.AuthenticationError:
                 return _("Your API key is invalid, please check your preferences.")
