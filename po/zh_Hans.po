@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-20 18:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-09-12 16:53+0000\n"
+"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -27,7 +27,7 @@ msgstr "Bavarder"
 
 #: src/providers/base.py:79
 msgid "How to get a token"
-msgstr "如何获得 token"
+msgstr "如何获得令牌"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
@@ -39,10 +39,12 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"您已达到速率限制！ 请在首选项中添加令牌。 您可以按照此[指南] "
+"(https://bavarder.codeberg.page/help/huggingface/) 获取令牌"
 
 #: src/providers/hfbasechat.py:50
 msgid "Sorry, I don't know what to say!"
-msgstr ""
+msgstr "抱歉，我不知道该说什么！"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -68,7 +70,7 @@ msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "打包"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -76,7 +78,7 @@ msgstr "翻译"
 
 #: src/views/export_dialog.blp:6
 msgid "Export Thread ?"
-msgstr ""
+msgstr "导出线程？"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -94,17 +96,15 @@ msgstr "模型"
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "可用模型列表"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "删除所有线程"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "您确定要删除此列表吗？"
+msgstr "您确定要删除所有线程吗？ 这无法挽回！"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:217 src/views/window.py:382
@@ -119,7 +119,7 @@ msgstr "删除"
 
 #: src/views/preferences_window.py:93 src/views/window.py:243
 msgid "All chats cleared!"
-msgstr ""
+msgstr "聊天全部清空！"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.py:276 src/views/window.py:314 src/views/window.blp:299
@@ -135,22 +135,16 @@ msgid "Miscellaneous"
 msgstr "杂项"
 
 #: src/views/preferences_window.blp:31
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all threads"
-msgstr "清除"
+msgstr "清除所有线程"
 
 #: src/views/preferences_window.blp:35
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear"
 msgstr "清除"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr ""
+msgstr "这将会清除数据库中的所有线程。"
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
@@ -158,13 +152,11 @@ msgstr "名字"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr ""
+msgstr "机器人名称"
 
 #: src/views/preferences_window.blp:53
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "用户"
+msgstr "用户名称"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -176,7 +168,7 @@ msgstr "保存"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "导出线程？"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -188,7 +180,7 @@ msgstr "所在地"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "线程的导出将保存在该目录中。"
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -196,44 +188,37 @@ msgstr "选择目录"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "无法保存线程"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "线程成功保存！"
 
 #: src/views/window.py:177
-#, fuzzy
-#| msgid "New Chat"
 msgid "New chat"
 msgstr "新聊天"
 
 #: src/views/window.py:212
 msgid "Delete All Chats"
-msgstr ""
+msgstr "删除所有聊天内容"
 
 #: src/views/window.py:213
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
-msgstr "您确定要删除此列表吗？"
+msgstr "您确定要删除该线程中的所有聊天吗？ 这无法挽回！"
 
 #: src/views/window.py:229 src/views/window.py:245
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "没有什么要澄清的！"
 
 #: src/views/window.py:255
 msgid "Nothing to export!"
-msgstr ""
+msgstr "没什么可导出的！"
 
 #: src/views/window.py:281 src/views/window.py:319
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all"
-msgstr "清除"
+msgstr "全部清除"
 
 #: src/views/window.py:381
 msgid "Generating response"
@@ -241,7 +226,7 @@ msgstr "生成响应"
 
 #: src/views/window.py:395 src/views/window.py:400
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "抱歉，我不知道该说什么。"
 
 #: src/views/window.py:441
 msgid "human"
@@ -257,14 +242,12 @@ msgid "Main Menu"
 msgstr "主菜单"
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "No Chat"
 msgid "No Chats"
 msgstr "无聊天"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "通过创建新聊天或从侧边栏中选择一个开始"
 
 #: src/views/window.blp:96
 msgid "Message"
@@ -275,14 +258,12 @@ msgid "Chat"
 msgstr "聊天"
 
 #: src/views/window.blp:156
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "消息"
+msgstr "没有消息"
 
 #: src/views/window.blp:157
 msgid "Send first message to get started"
-msgstr ""
+msgstr "发送第一条消息即可开始"
 
 #: src/views/window.blp:162
 msgid "No Internet"
@@ -290,11 +271,11 @@ msgstr "无网络"
 
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "首先创建新的聊天"
 
 #: src/views/window.blp:243
 msgid "Open Emoji Picker"
-msgstr ""
+msgstr "打开表情选择器"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -313,10 +294,8 @@ msgid "Done"
 msgstr "完成"
 
 #: src/widgets/download_row.blp:11
-#, fuzzy
-#| msgid "Download more models"
 msgid "Download Model"
-msgstr "下载更多模型"
+msgstr "下载模型"
 
 #: src/widgets/download_row.py:29
 #, python-format
@@ -341,22 +320,20 @@ msgid "Remove"
 msgstr "移除"
 
 #: src/widgets/item.py:188
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "消息"
+msgstr "消息已复制"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "删除模型"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "最大令牌数"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "要生成的最大令牌数。"
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
@@ -366,60 +343,59 @@ msgstr "温度"
 msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
-msgstr ""
+msgstr "模型温度。 较大的值会增加创造力，但会降低准确性。"
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
-msgstr ""
+msgstr "在每个生成步骤中从 top_k 最可能的标记中随机采样。 将其设置为 1 "
+"以进行贪婪解码。"
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
-msgstr ""
+msgstr "Top P"
 
 #: src/widgets/model_item.blp:60
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
-msgstr ""
+msgstr "在每个生成步骤中从最有可能的标记中随机采样，其概率总计为 top_p。"
 
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
-msgstr ""
+msgstr "重复处罚"
 
 #: src/widgets/model_item.blp:75
 msgid ""
 "Penalize the model for repetition. Higher values result in less repetition."
-msgstr ""
+msgstr "对模型的重复进行惩罚。数值越大，重复越少。"
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
-msgstr ""
+msgstr "批量大小"
 
 #: src/widgets/model_item.blp:90
 msgid ""
 "Number of prompt tokens processed in parallel. Larger values decrease "
 "latency but increase resource requirements."
-msgstr ""
+msgstr "并行处理的提示令牌数量。数值越大，延迟越短，但所需资源越多。"
 
 #: src/widgets/model_item.blp:103
 msgid "Repeat Last N"
-msgstr ""
+msgstr "重复最后 N 个"
 
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
+msgstr "在模型生成历史中应用重复惩罚的程度。 "
 
 #: src/widgets/model_item.blp:117
-#, fuzzy
-#| msgid "Prompt"
 msgid "System Prompt"
-msgstr "提示词"
+msgstr "系统提示"
 
 #: src/widgets/model_item.py:64
 #, python-format
@@ -440,7 +416,7 @@ msgstr "选择标题"
 
 #: src/widgets/thread_item.py:102
 msgid "Delete Thread"
-msgstr ""
+msgstr "删除线程"
 
 #: src/widgets/thread_item.py:103
 msgid "Are you sure you want to delete this thread?"
@@ -448,25 +424,21 @@ msgstr "您确定要删除此列表吗？"
 
 #: src/widgets/thread_item.py:124
 msgid "Thread Deleted"
-msgstr ""
+msgstr "线程已删除"
 
 #: src/main.py:265
-#, fuzzy
-#| msgid "Please download a model from Preferences!"
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
-msgstr "请从首选项下载模型！"
+msgstr "请点击顶部的点菜单从首选项下载模型！"
 
 #: src/main.py:269
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr ""
+msgstr "大家好，我是 Bavarder，一个会聊天的AI"
 
 #: src/main.py:292
-#, fuzzy
-#| msgid "Please enable a provider from the Brain Menu"
 msgid "Please enable a provider from the Dot Menu"
-msgstr "请从“大脑”菜单打开提供程序"
+msgstr "请从点菜单启用提供商"
 
 #, fuzzy, python-format
 #~| msgid "New Chat"
