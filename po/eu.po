@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
 "PO-Revision-Date: 2023-09-15 18:49+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Sergio Varela <sergiovg01@outlook.com>\n"
 "Language-Team: Basque <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/eu/>\n"
 "Language: eu\n"
@@ -23,15 +23,15 @@ msgstr ""
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
 msgid "Bavarder"
-msgstr ""
+msgstr "Bavarder"
 
 #: src/providers/base.py:79
 msgid "How to get a token"
-msgstr ""
+msgstr "Nola lortu token bat"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
-msgstr ""
+msgstr "Hitz egin AA batekin"
 
 #: src/providers/hfbasechat.py:44
 msgid ""
@@ -39,34 +39,37 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"Tarifaren mugara iritsi zara! Mesedez, gehitu token bat ezarpenei. Token-a "
+"lor dezakezu [gida](https://bavarder.codeberg.page/help/huggingface/) honi "
+"jarraituz"
 
 #: src/providers/hfbasechat.py:50
 msgid "Sorry, I don't know what to say!"
-msgstr ""
+msgstr "Sentitzen dut, ez dut ulertzen zer esan nahi duzun!"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
-msgstr ""
+msgstr "API-aren gakoa"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
-msgstr ""
+msgstr "Ez dago lehentasunik"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
+msgstr "Sergio Varela https://ingrownmink4.codeberg.page/"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr ""
+msgstr "Hasi txateaten AA batekin"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Enbalajea"
 
 #: src/views/about_window.py:57
 msgid "Translate"
