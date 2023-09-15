@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-09-15 18:49+0000\n"
+"PO-Revision-Date: 2023-09-16 08:53+0000\n"
 "Last-Translator: Sergio Varela <sergiovg01@outlook.com>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
@@ -32,7 +32,7 @@ msgstr "Bavarder"
 
 #: src/providers/base.py:79
 msgid "How to get a token"
-msgstr "Cómo conseguir un token"
+msgstr "Cómo conseguir una clave"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
@@ -44,8 +44,8 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
-"¡Has alcanzado el límite de la tarifa! Por favor, añade un token a las "
-"preferencias. Puedes obtener el token siguiendo esta [guía](https://bavarder."
+"¡Has alcanzado el límite de la tarifa! Por favor, añade una clave en las "
+"preferencias. Puedes obtener la clave siguiendo esta [guía](https://bavarder."
 "codeberg.page/help/huggingface/)"
 
 #: src/providers/hfbasechat.py:50
@@ -106,7 +106,7 @@ msgstr "Lista de modelos disponibles"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr "Borrar todos los temas"
+msgstr "Borrar todos los hilos"
 
 #: src/views/preferences_window.py:73
 msgid "Are you sure you want to delete all threads? This can't be undone!"
@@ -144,7 +144,7 @@ msgstr "Varios"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
-msgstr "Borrar todos los hilos"
+msgstr "Limpiar todos los hilos"
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
@@ -188,7 +188,7 @@ msgstr "Ubicación"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr "Los hilos exportardos se guardarán en este directorio."
+msgstr "Los hilos exportados se guardarán en este directorio."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -200,7 +200,7 @@ msgstr "No se puede guardar el hilo"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr "¡Tema guardado correctamente!"
+msgstr "¡Hilo guardado correctamente!"
 
 #: src/views/window.py:177
 msgid "New chat"
@@ -240,16 +240,16 @@ msgstr "Lo siento, no sé qué decir."
 
 #: src/views/window.py:441
 msgid "human"
-msgstr "Humanidad"
+msgstr "humano"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:184 src/views/window.blp:185
 msgid "New Chat"
-msgstr "Nuevo Chat"
+msgstr "Nuevo chat"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
-msgstr "Menú Principal"
+msgstr "Menú principal"
 
 #: src/views/window.blp:56
 msgid "No Chats"
@@ -257,7 +257,8 @@ msgstr "Sin chats"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr "Empieza creando un nuevo chat o seleccionando uno de la barra lateral"
+msgstr ""
+"Empieza creando un nuevo chat o seleccionando uno desde la barra lateral"
 
 #: src/views/window.blp:96
 msgid "Message"
@@ -269,15 +270,15 @@ msgstr "Chat"
 
 #: src/views/window.blp:156
 msgid "No Messages"
-msgstr "Sin Mensajes"
+msgstr "Sin mensajes"
 
 #: src/views/window.blp:157
 msgid "Send first message to get started"
-msgstr "Envia el primer mensaje para empezar"
+msgstr "Envía el primer mensaje para empezar"
 
 #: src/views/window.blp:162
 msgid "No Internet"
-msgstr "Sin Internet"
+msgstr "Sin internet"
 
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
@@ -285,7 +286,7 @@ msgstr "Empieza creando un nuevo chat"
 
 #: src/views/window.blp:243
 msgid "Open Emoji Picker"
-msgstr "Abrir el selector de emoji"
+msgstr "Abrir el selector de emojis"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -305,7 +306,7 @@ msgstr "Hecho"
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
-msgstr "Descargar el modelo"
+msgstr "Descargar modelo"
 
 #: src/widgets/download_row.py:29
 #, python-format
@@ -319,7 +320,7 @@ msgstr "¡Modelo %s descargado!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr "Copia"
+msgstr "Copiar"
 
 #: src/widgets/item.blp:105
 msgid "Edit"
@@ -335,7 +336,7 @@ msgstr "Mensaje copiado"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr "Modelo Borrado"
+msgstr "Borrar modelo"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
@@ -425,7 +426,7 @@ msgstr "¡Modelo %s eliminado!"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:77
 msgid "Edit Title"
-msgstr "Editar el título"
+msgstr "Editar título"
 
 #: src/widgets/thread_item.blp:63
 msgid "Star"
@@ -433,11 +434,11 @@ msgstr "Estrella"
 
 #: src/widgets/thread_item.py:69
 msgid "Set Title"
-msgstr "Establecer un título"
+msgstr "Establecer título"
 
 #: src/widgets/thread_item.py:102
 msgid "Delete Thread"
-msgstr "Borrar el hilo"
+msgstr "Borrar hilo"
 
 #: src/widgets/thread_item.py:103
 msgid "Are you sure you want to delete this thread?"
@@ -452,8 +453,8 @@ msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
-"¡Por favor, descarga un modelo de las Preferencias haciendo clic en el Menú "
-"de puntos en la parte superior!"
+"¡Por favor, descarga un modelo desde «Preferencias» haciendo clic en el Menú "
+"de puntos de la parte superior!"
 
 #: src/main.py:269
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
