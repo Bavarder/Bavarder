@@ -8,13 +8,14 @@
 # deimidis <gmovia@pm.me>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # gallegonovato <fran-carro@hotmail.es>, 2023.
+# Sergio Varela <sergiovg01@outlook.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-24 03:53+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2023-09-15 18:49+0000\n"
+"Last-Translator: Sergio Varela <sergiovg01@outlook.com>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
 "Language: es\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -35,7 +36,7 @@ msgstr "Cómo conseguir un token"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
-msgstr "Charla con un gato"
+msgstr "Charla con una IA gatuna"
 
 #: src/providers/hfbasechat.py:44
 msgid ""
@@ -67,7 +68,7 @@ msgstr ""
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr "Ten un chat con una IA"
+msgstr "Empieza a chatear con una IA"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -163,7 +164,7 @@ msgstr "Nombre del bot"
 
 #: src/views/preferences_window.blp:53
 msgid "User name"
-msgstr "Nombre del usuario"
+msgstr "Nombre de usuario"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -203,7 +204,7 @@ msgstr "¡Tema guardado correctamente!"
 
 #: src/views/window.py:177
 msgid "New chat"
-msgstr "Chat nuevo"
+msgstr "Nuevo chat"
 
 #: src/views/window.py:212
 msgid "Delete All Chats"
@@ -252,7 +253,7 @@ msgstr "Menú Principal"
 
 #: src/views/window.blp:56
 msgid "No Chats"
-msgstr "Sin Chats"
+msgstr "Sin chats"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
