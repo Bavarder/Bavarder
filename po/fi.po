@@ -10,8 +10,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-20 18:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-09-19 05:53+0000\n"
+"Last-Translator: artnay <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fi/>\n"
 "Language: fi\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/providers/hfbasechat.py:50
 msgid "Sorry, I don't know what to say!"
-msgstr ""
+msgstr "Valitettavasti en tiedä mitä sanoa!"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -70,7 +70,7 @@ msgstr "Tekijänoikeus © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Paketointi"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -78,7 +78,7 @@ msgstr "Käännä"
 
 #: src/views/export_dialog.blp:6
 msgid "Export Thread ?"
-msgstr ""
+msgstr "Viedäänkö ketju?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -100,13 +100,11 @@ msgstr "Luettelo kaikista malleista"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "Poista kaikki ketjut"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Haluatko varmasti poistaa tämän?"
+msgstr "Haluatko varmasti poistaa kaikki ketjut? Tätä ei voi perua!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:217 src/views/window.py:382
@@ -137,11 +135,8 @@ msgid "Miscellaneous"
 msgstr "Muut"
 
 #: src/views/preferences_window.blp:31
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all threads"
-msgstr "Tyhjennä"
+msgstr "Tyhjennä kaikki ketjut"
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
@@ -149,7 +144,7 @@ msgstr "Tyhjennä"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr ""
+msgstr "Tämä tyhjentää kaikki ketjut tietokannasta."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
@@ -173,7 +168,7 @@ msgstr "Tallenna"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Viedäänkö ketju?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -185,7 +180,7 @@ msgstr "Sijainti"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "Ketjun vienti talletetaan tähän kansioon."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -193,37 +188,35 @@ msgstr "Valitse kansio"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "Ketjua ei voitu tallentaa"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "Ketju tallennettu!"
 
 #: src/views/window.py:177
-#, fuzzy
-#| msgid "New Chat"
 msgid "New chat"
 msgstr "Uusi keskustelu"
 
 #: src/views/window.py:212
 msgid "Delete All Chats"
-msgstr ""
+msgstr "Poista kaikki keskustelut"
 
 #: src/views/window.py:213
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
-msgstr "Haluatko varmasti poistaa tämän?"
+msgstr ""
+"Haluatko varmasti poistaa kaikki keskustelut tästä ketjusta? Tätä ei voi "
+"perua!"
 
 #: src/views/window.py:229 src/views/window.py:245
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "Ei mitään tyhjennettävää!"
 
 #: src/views/window.py:255
 msgid "Nothing to export!"
-msgstr ""
+msgstr "Ei mitään vietävää!"
 
 #: src/views/window.py:281 src/views/window.py:319
 msgid "Clear all"
@@ -235,7 +228,7 @@ msgstr "Luodaan vastausta"
 
 #: src/views/window.py:395 src/views/window.py:400
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "Valitettavasti en tiedä mitä sanoa."
 
 #: src/views/window.py:441
 msgid "human"
@@ -339,11 +332,11 @@ msgstr "Poista malli"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "Poletteja enintään"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "Luotavien polettien enimmäismäärä."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
@@ -403,10 +396,8 @@ msgid "How far in the models generation history to apply the repeat penalty. "
 msgstr ""
 
 #: src/widgets/model_item.blp:117
-#, fuzzy
-#| msgid "Prompt"
 msgid "System Prompt"
-msgstr "Kehote"
+msgstr "Järjestelmän kehote"
 
 #: src/widgets/model_item.py:64
 #, python-format
@@ -427,7 +418,7 @@ msgstr "Aseta nimi"
 
 #: src/widgets/thread_item.py:102
 msgid "Delete Thread"
-msgstr ""
+msgstr "Poista ketju"
 
 #: src/widgets/thread_item.py:103
 msgid "Are you sure you want to delete this thread?"
@@ -435,7 +426,7 @@ msgstr "Haluatko varmasti poistaa tämän?"
 
 #: src/widgets/thread_item.py:124
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Ketju poistettu"
 
 #: src/main.py:265
 msgid ""
@@ -445,7 +436,7 @@ msgstr "Lataa malli asetusten kautta napsauttamalla yläkulman pistevalikkoa!"
 
 #: src/main.py:269
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr ""
+msgstr "Hei, olen Bavarder, keskusteleva tekoäly"
 
 #: src/main.py:292
 msgid "Please enable a provider from the Dot Menu"
