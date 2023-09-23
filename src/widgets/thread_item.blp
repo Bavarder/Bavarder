@@ -5,46 +5,11 @@ template $ThreadItem : Box {
   orientation: horizontal;
   styles ["toolbar"]
 
-  Stack value-stack {
-    styles ["flat"]
-    valign: center;
-    hhomogeneous: false;
-    interpolate-size: true;
-    transition-type: crossfade;
-
-    Gtk.Inscription label {
-      hexpand: true;
-      xalign: 0;
-      text-overflow: ellipsize_end;
-    }
-
-    Entry text-value {
-      styles ["flat"]
-    }
+  Gtk.Inscription label {
+    hexpand: true;
+    xalign: 0;
+    text-overflow: ellipsize_end;
   }
-
-  Adw.SplitButton text-value-button {
-    valign: center;
-    icon-name: "document-edit-symbolic";
-    tooltip-text: _("Edit Title");
-    styles ["flat"]
-
-    clicked => $on_edit_button_clicked();
-
-    menu-model: popover-model;
-  }
-
-  //Button delete_button {
-  //  styles ["flat"]
-  //  icon-name: "user-trash-symbolic";
-  //  clicked => $on_delete_button_clicked();
-  //}
-
-  //Button star_button {
-  //  styles ["flat"]
-  //  icon-name: "non-starred-symbolic"; // starred-symbolic
-  //  clicked => $on_star_button_clicked();
-  //}
 }
 
 
@@ -54,6 +19,11 @@ PopoverMenu popover {
 
 menu popover-model {
   section {
+    item {
+      label: _("Edit Title");
+      action: "event.edit";
+    }
+
     item {
       label: _("Delete");
       action: "event.delete";

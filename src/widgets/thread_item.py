@@ -7,9 +7,6 @@ class ThreadItem(Gtk.Box):
     __gtype_name__ = "ThreadItem"
 
     label = Gtk.Template.Child()
-    text_value = Gtk.Template.Child("text-value")
-    value_stack = Gtk.Template.Child("value-stack")
-    edit_button = Gtk.Template.Child("text-value-button")
     popover = Gtk.Template.Child()
 
     edit_mode = False
@@ -50,7 +47,8 @@ class ThreadItem(Gtk.Box):
         self.action_group = Gio.SimpleActionGroup()
         self.create_action("delete", self.on_delete)
         self.create_action("star", self.on_star)
-        self.insert_action_group("event", self.action_group);
+        self.create_action("edit", self.on_edit_button_clicked)
+        self.insert_action_group("event", self.action_group)
 
     def create_action(self, name, callback, shortcuts=None):
         action = Gio.SimpleAction.new(name, None)
@@ -60,29 +58,50 @@ class ThreadItem(Gtk.Box):
         if shortcuts:
             self.set_accels_for_action(f"app.{name}", shortcuts)
 
-    @Gtk.Template.Callback()
     def on_edit_button_clicked(self, *args):
-        if not self.edit_mode:
-            self.edit_button.set_icon_name("check-round-outline2-symbolic")
-            self.text_value.set_text(self.label_text)
-            widget = self.text_value
-            tooltip = _("Set Title")
-        else:
-            self.edit_button.set_icon_name("document-edit-symbolic")
-            self.label_text = self.text_value.get_text()
+        box = Gtk.Box(
+                orientation=Gtk.Orientation.VERTICAL,
+                margin_top=12,
+                spacing=24,
+            )
+        listbox = Gtk.ListBox(
+            selection_mode=Gtk.SelectionMode.NONE,
+            hexpand=True,
+            vexpand=True,
+        )
+        listbox.add_css_class("boxed-list")
+        self.row = Adw.EntryRow()
+        self.row.set_text(self.chat["title"])
+        self.row.set_title(_("Edit Title"))
+        listbox.append(self.row)
+        box.append(listbox)
+
+        dialog = Adw.MessageDialog(
+            heading=_("Edit Title"),
+            transient_for=self.win,
+            modal=True,
+            extra_child=box
+        )
+
+        dialog.add_response("cancel", _("Cancel"))
+        dialog.add_response("edit", _("Edit"))
+        dialog.set_response_appearance("edit", Adw.ResponseAppearance.DESTRUCTIVE)
+        dialog.set_default_response("cancel")
+        dialog.set_close_response("cancel")
+
+        dialog.connect("response", self.on_edit_response)
+        dialog.present()
+        
+    def on_edit_response(self, _widget, response):
+        if response == "edit":
+            self.label_text = self.row.get_text()
             self.chat["title"] = self.label_text
-            self.text_value.set_text(self.label_text)
             self.win.title.set_title(self.label_text)
+            self.label.set_text(self.label_text)
 
-            tooltip = _("Edit Title")
-            widget = self.label
-
-        self.edit_mode = not self.edit_mode
-
-        self.value_stack.set_visible_child(widget)
-        self.edit_button.set_tooltip_text(tooltip)
-        self.label.set_text(self.label_text)
-
+            toast = Adw.Toast()
+            toast.set_title(_("Title Edited"))
+            self.win.toast_overlay.add_toast(toast)
     def on_star(self, *args):
         self.is_starred =  not self.is_starred
         self.update_star()
