@@ -32,8 +32,9 @@ class BaseHFChatProvider(BaseProvider):
                 },
             })
         else:
+            prompt = self.make_prompt(prompt, chat)
             output = query({
-                "inputs": self.make_prompt(prompt, chat),
+                "inputs": prompt,
             })
 
         if 'generated_text' in output:
