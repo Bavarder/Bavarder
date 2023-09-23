@@ -137,8 +137,6 @@ class BavarderApplication(Adw.Application):
 
     def save(self):
         with open(self.data_path, "w", encoding="utf-8") as f:
-            for name, d in self.data["providers"].items():
-                print(d)
             self.data = json.dump(self.data, f)
             self.settings.set_boolean("local-mode", self.local_mode)
             self.settings.set_string("current-provider", self.current_provider)
@@ -254,7 +252,6 @@ class BavarderApplication(Adw.Application):
 
     def on_ask(self, widget, _):
         try:
-            print("ASK-APP")
             self.win.on_ask()
         except AttributeError:
             pass
@@ -341,10 +338,6 @@ class BavarderApplication(Adw.Application):
     def clear_all_chats(self):
         self.data["chats"] = []
         self.win.load_threads()
-
-    def load_bot_and_user_name(self):
-        print(self.bot_name)
-        print(self.user_name)
 
 def main(version):
     """The application's entry point."""

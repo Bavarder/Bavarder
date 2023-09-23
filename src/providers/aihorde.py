@@ -37,9 +37,7 @@ class AIHordeProvider(BaseProvider):
         if r.status_code == 202:
             rid =  r.json()["id"]
         else:
-            print(r.json())
-            print(r.status_code)
-            return _("I'm sorry, I don't know what to say!")
+            return _(f"I'm sorry, I don't know what to say! ({r.status_code}, {r.json()['message']})")
 
 
         # do the request every seconds and check if it's finished
@@ -56,7 +54,6 @@ class AIHordeProvider(BaseProvider):
         rj = r.json()
 
         if r.status_code == 200:
-            print(rj)
             if rj["done"]:
                 return r.json()["generations"][0]["text"]
         return None
@@ -75,7 +72,6 @@ class AIHordeProvider(BaseProvider):
         r = requests.get("https://stablehorde.net/api/v2/status/models?type=text")
 
         if r.status_code != 200:
-            print(r.json())
             return self.rows
         else:
             rj = r.json()
