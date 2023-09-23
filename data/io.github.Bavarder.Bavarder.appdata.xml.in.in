@@ -126,6 +126,18 @@
 				<p>
 					Brand new UI
 				</p>
+				<p>
+					New providers
+				</p>
+				<p>
+					Markdown support
+				</p>
+				<p>
+					Local model support
+				</p>
+				<p> 
+					And more...
+				</p>
 			</description>
 		</release>
 		<release version="0.2.4" date="2023-6-16" type="stable">
