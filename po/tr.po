@@ -7,13 +7,14 @@
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # oktay454 <oktay@e.email>, 2023.
 # Edip1 <medip642@gmail.com>, 2023.
+# sabriunal <libreajans@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-22 17:40+0200\n"
-"PO-Revision-Date: 2023-08-20 18:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-09-24 09:53+0000\n"
+"Last-Translator: sabriunal <libreajans@gmail.com>\n"
 "Language-Team: Turkish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/tr/>\n"
 "Language: tr\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -42,10 +43,13 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"İstek sınırına ulaştınız! Lütfen tercihlerden jeton ekleyin. Bu "
+"[rehberi](https://bavarder.codeberg.page/help/huggingface/) takip ederek "
+"jeton alabilirsiniz"
 
 #: src/providers/hfbasechat.py:50
 msgid "Sorry, I don't know what to say!"
-msgstr ""
+msgstr "Üzgünüm, ne diyeceğimi bilemiyorum!"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -59,12 +63,13 @@ msgstr "Kullanılabilir tercih yok"
 msgid "translator-credits"
 msgstr ""
 "Kemal Oktay Aktoğan | @oktay454 | oktay@e.email\n"
-"Launchpad Contributions:\n"
-"  Kudret EMRE https://launchpad.net/~kudretemre"
+"Edip1 | https://translate.codeberg.org/user/Edip1/\n"
+"keyiflerolsun | https://translate.codeberg.org/user/keyiflerolsun/\n"
+"Sabri Ünal | https://translate.codeberg.org/user/sabriunal/"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr "Yapay zeka ile gevezelik yapın"
+msgstr "Yapay zeka ile sohbet edin"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -72,7 +77,7 @@ msgstr "Telif hakkı © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Paketleme"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -80,7 +85,7 @@ msgstr "Çevir"
 
 #: src/views/export_dialog.blp:6
 msgid "Export Thread ?"
-msgstr ""
+msgstr "Başlık Dışa Aktarılsın Mı?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -89,7 +94,7 @@ msgstr "Kapat"
 #: src/views/export_dialog.blp:54 src/views/window.py:286
 #: src/views/window.py:324
 msgid "Export"
-msgstr "Dışarı aktar"
+msgstr "Dışa Aktar"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:19 src/views/window.py:311
@@ -98,23 +103,22 @@ msgstr "Modeller"
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "Kullanılabilir modellerin listesi"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "Tüm Başlıkları Sil"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Bunu silmek istediğinize emin misiniz?"
+msgstr ""
+"Tüm başlıkları silmek istediğinize emin misiniz? Bu işlem geri alınamaz!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:217 src/views/window.py:382
 #: src/widgets/thread_item.py:107
 msgid "Cancel"
-msgstr "İptal et"
+msgstr "İptal"
 
 #: src/views/preferences_window.py:78 src/views/window.py:218
 #: src/widgets/thread_item.blp:58 src/widgets/thread_item.py:108
@@ -123,7 +127,7 @@ msgstr "Sil"
 
 #: src/views/preferences_window.py:93 src/views/window.py:243
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Tüm sohbetler temizlendi!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.py:276 src/views/window.py:314 src/views/window.blp:299
@@ -139,36 +143,28 @@ msgid "Miscellaneous"
 msgstr "Çeşitli"
 
 #: src/views/preferences_window.blp:31
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all threads"
-msgstr "Temizle"
+msgstr "Tüm başlıkları temizle"
 
 #: src/views/preferences_window.blp:35
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear"
 msgstr "Temizle"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr ""
+msgstr "Bu, tüm başlıkları veri tabanından temizleyecek."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr "Ad"
+msgstr "Adlar"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr ""
+msgstr "Bot adı"
 
 #: src/views/preferences_window.blp:53
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Kullanıcı"
+msgstr "Kullanıcı adı"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -180,11 +176,11 @@ msgstr "Kaydet"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Başlık Dışa Aktarılsın Mı?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr "Dosya adı"
+msgstr "Dosya Adı"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
@@ -192,7 +188,7 @@ msgstr "Konum"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "Başlığın dışa aktarımı bu dizine kaydedilecek."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -200,44 +196,39 @@ msgstr "Bir dizin seçin"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "Başlık kaydedilemedi"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "Başlık kaydedildi!"
 
 #: src/views/window.py:177
-#, fuzzy
-#| msgid "New Chat"
 msgid "New chat"
-msgstr "Yeni Sohbet"
+msgstr "Yeni sohbet"
 
 #: src/views/window.py:212
 msgid "Delete All Chats"
-msgstr ""
+msgstr "Tüm Sohbetleri Sil"
 
 #: src/views/window.py:213
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
-msgstr "Bunu silmek istediğinize emin misiniz?"
+msgstr ""
+"Tüm başlıktaki tüm sohbetleri silmek istediğinize emin misiniz? Bu işlem "
+"geri alınamaz!"
 
 #: src/views/window.py:229 src/views/window.py:245
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "Temizlenecek bir şey yok!"
 
 #: src/views/window.py:255
 msgid "Nothing to export!"
-msgstr ""
+msgstr "Dışa aktarılacak bir şey yok!"
 
 #: src/views/window.py:281 src/views/window.py:319
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all"
-msgstr "Temizle"
+msgstr "Tümünü temizle"
 
 #: src/views/window.py:381
 msgid "Generating response"
@@ -245,11 +236,11 @@ msgstr "Yanıt oluşturuluyor"
 
 #: src/views/window.py:395 src/views/window.py:400
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "Üzgünüm, ne diyeceğimi bilmiyorum."
 
 #: src/views/window.py:441
 msgid "human"
-msgstr "İnsan"
+msgstr "insan"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:184 src/views/window.blp:185
@@ -261,32 +252,28 @@ msgid "Main Menu"
 msgstr "Ana Menü"
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "No Chat"
 msgid "No Chats"
-msgstr "Sohbet yok"
+msgstr "Sohbet Yok"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "Yeni sohbet oluşturarak ya da kenar çubuğundan sohbet seçerek başlayın"
 
 #: src/views/window.blp:96
 msgid "Message"
-msgstr "Mesaj"
+msgstr "İleti"
 
 #: src/views/window.blp:108
 msgid "Chat"
 msgstr "Sohbet"
 
 #: src/views/window.blp:156
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "Mesaj"
+msgstr "İleti Yok"
 
 #: src/views/window.blp:157
 msgid "Send first message to get started"
-msgstr ""
+msgstr "Başlamak için ilk iletiyi gönder"
 
 #: src/views/window.blp:162
 msgid "No Internet"
@@ -294,11 +281,11 @@ msgstr "Internet Yok"
 
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "Yeni sohbet oluşturarak başlayın"
 
 #: src/views/window.blp:243
 msgid "Open Emoji Picker"
-msgstr ""
+msgstr "Emoji Seçiciyi Aç"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -306,7 +293,7 @@ msgstr "Sor"
 
 #: src/views/window.blp:304
 msgid "Keyboard Shortcuts"
-msgstr "Klavye kısayolları"
+msgstr "Klavye Kısayolları"
 
 #: src/views/window.blp:309
 msgid "About Bavarder"
@@ -317,20 +304,18 @@ msgid "Done"
 msgstr "Bitti"
 
 #: src/widgets/download_row.blp:11
-#, fuzzy
-#| msgid "Download more models"
 msgid "Download Model"
-msgstr "Daha fazla model indirin"
+msgstr "Model İndir"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr "%s Modeli İndiriliyor"
+msgstr "%s modeli indiriliyor"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr "%s Modeli İndirildi!"
+msgstr "%s modeli indirildi!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
@@ -345,90 +330,98 @@ msgid "Remove"
 msgstr "Kaldır"
 
 #: src/widgets/item.py:188
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "Mesaj"
+msgstr "İleti kopyalandı"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "Modeli Sil"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "Azami Jeton"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "Oluşturulacak azami jeton sayısı."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr "Vücut Sıcaklığı"
+msgstr "Sıcaklık"
 
 #: src/widgets/model_item.blp:31
 msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"Model sıcaklığı. Daha büyük değerler yaratıcılığı artırır ancak gerçekçiliği "
+"azaltır."
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
+"Her oluşturma adımında en olası top_k jetonları arasından rastgele örnek al. "
+"Bu değeri aç gözlü çözümleme için 1 olarak ayarlayın."
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
-msgstr ""
+msgstr "Top P"
 
 #: src/widgets/model_item.blp:60
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"Her oluşturma adımında olasılıkları top_p'ye toplamı en yüksek olan en olası "
+"jetonlardan rastgele örnekle."
 
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
-msgstr ""
+msgstr "Tekrar Cezası"
 
 #: src/widgets/model_item.blp:75
 msgid ""
 "Penalize the model for repetition. Higher values result in less repetition."
 msgstr ""
+"Tekrarlar için modeli cezalandır. Daha yüksek değerler daha az tekrarla "
+"sonuçlanır."
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
-msgstr ""
+msgstr "Toplu İşlem Boyutu"
 
 #: src/widgets/model_item.blp:90
 msgid ""
 "Number of prompt tokens processed in parallel. Larger values decrease "
 "latency but increase resource requirements."
 msgstr ""
+"Aynı anda işlenen girdi jetonlarının sayısı. Daha büyük değerler gecikmeyi "
+"azaltır ancak kaynak gereksinimlerini artırır."
 
 #: src/widgets/model_item.blp:103
 msgid "Repeat Last N"
-msgstr ""
+msgstr "Son N Yenile"
 
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
 msgstr ""
+"Tekrar cezasını uygulamak için modelin üretim geçmişinde ne kadar geri "
+"gitmek gerektiği. "
 
 #: src/widgets/model_item.blp:117
-#, fuzzy
-#| msgid "Prompt"
 msgid "System Prompt"
-msgstr "Girdi"
+msgstr "Sistem Girdisi"
 
 #: src/widgets/model_item.py:64
 #, python-format
 msgid "Model %s deleted!"
-msgstr "%s Modeli silindi!"
+msgstr "%s modeli silindi!"
 
 #: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:77
 msgid "Edit Title"
@@ -444,33 +437,30 @@ msgstr "Başlık Belirle"
 
 #: src/widgets/thread_item.py:102
 msgid "Delete Thread"
-msgstr ""
+msgstr "Başlığı Sil"
 
 #: src/widgets/thread_item.py:103
 msgid "Are you sure you want to delete this thread?"
-msgstr "Bunu silmek istediğinize emin misiniz?"
+msgstr "Bu başlığı silmek istediğinize emin misiniz?"
 
 #: src/widgets/thread_item.py:124
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Başlık Silindi"
 
 #: src/main.py:265
-#, fuzzy
-#| msgid "Please download a model from Preferences!"
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
-msgstr "Lütfen tercihlerden bir model indirin!"
+msgstr ""
+"Lütfen üstteki Nokta Menüsüne tıklayarak Tercihler'den bir model indirin!"
 
 #: src/main.py:269
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr ""
+msgstr "Merhaba, ben Bavarder, sohbet için bir Yapay Zekayım"
 
 #: src/main.py:292
-#, fuzzy
-#| msgid "Please enable a provider from the Brain Menu"
 msgid "Please enable a provider from the Dot Menu"
-msgstr "Lütfen menüden bir sağlayıcı etkinleştirin"
+msgstr "Nokta Menüden bir sağlayıcı etkinleştiriniz"
 
 #, fuzzy, python-format
 #~| msgid "New Chat"
