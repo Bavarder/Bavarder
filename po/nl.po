@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-08-23 04:53+0000\n"
+"PO-Revision-Date: 2023-10-05 04:53+0000\n"
 "Last-Translator: Vistaus <vistausss@fastmail.com>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -44,10 +44,9 @@ msgstr ""
 "(https://bavarder.codeberg.page/help/huggingface/) (Engels) te volgen."
 
 #: src/providers/hfbasechat.py:50
-#, fuzzy, python-brace-format
-#| msgid "Sorry, I don't know what to say!"
+#, python-brace-format
 msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "Ik heb hier geen antwoord op - sorry!"
+msgstr "Ik heb hier geen antwoord op! (Foutmelding: {output})"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -425,7 +424,7 @@ msgstr "Ster"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "De titel is bewerkt"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
