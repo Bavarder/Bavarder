@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-22 17:40+0200\n"
+"POT-Creation-Date: 2023-10-04 15:21+0200\n"
 "PO-Revision-Date: 2023-09-19 05:53+0000\n"
 "Last-Translator: artnay <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
@@ -34,7 +34,7 @@ msgstr "Miten saat poletin"
 msgid "Chit-Chat with a Cat"
 msgstr "Rupattele kissan kanssa"
 
-#: src/providers/hfbasechat.py:44
+#: src/providers/hfbasechat.py:45
 msgid ""
 "You've reached the rate limit! Please add a token to the preferences. You "
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
@@ -42,7 +42,9 @@ msgid ""
 msgstr ""
 
 #: src/providers/hfbasechat.py:50
-msgid "Sorry, I don't know what to say!"
+#, fuzzy, python-brace-format
+#| msgid "Sorry, I don't know what to say!"
+msgid "Sorry, I don't know what to say! (Error: {output})"
 msgstr "Valitettavasti en tiedä mitä sanoa!"
 
 #: src/providers/hfbasechat.py:58
@@ -108,12 +110,12 @@ msgstr "Haluatko varmasti poistaa kaikki ketjut? Tätä ei voi perua!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:217 src/views/window.py:382
-#: src/widgets/thread_item.py:107
+#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
 msgid "Cancel"
 msgstr "Peruuta"
 
 #: src/views/preferences_window.py:78 src/views/window.py:218
-#: src/widgets/thread_item.blp:58 src/widgets/thread_item.py:108
+#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
 msgstr "Poista"
 
@@ -314,7 +316,7 @@ msgstr "Malli %s ladattu!"
 msgid "Copy"
 msgstr "Kopioi"
 
-#: src/widgets/item.blp:105
+#: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
 msgstr "Muokkaa"
 
@@ -322,7 +324,7 @@ msgstr "Muokkaa"
 msgid "Remove"
 msgstr "Poista"
 
-#: src/widgets/item.py:188
+#: src/widgets/item.py:189
 msgid "Message copied"
 msgstr "Viesti kopioitu"
 
@@ -404,43 +406,47 @@ msgstr "Järjestelmän kehote"
 msgid "Model %s deleted!"
 msgstr "Malli %s poistettu!"
 
-#: src/widgets/thread_item.blp:29 src/widgets/thread_item.py:77
+#: src/widgets/thread_item.blp:23 src/widgets/thread_item.py:75
+#: src/widgets/thread_item.py:80
 msgid "Edit Title"
 msgstr "Muokkaa nimeä"
 
-#: src/widgets/thread_item.blp:63
+#: src/widgets/thread_item.blp:33
 msgid "Star"
 msgstr "Tähden mukaan"
 
-#: src/widgets/thread_item.py:69
-msgid "Set Title"
-msgstr "Aseta nimi"
+#: src/widgets/thread_item.py:103
+msgid "Title Edited"
+msgstr ""
 
-#: src/widgets/thread_item.py:102
+#: src/widgets/thread_item.py:121
 msgid "Delete Thread"
 msgstr "Poista ketju"
 
-#: src/widgets/thread_item.py:103
+#: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
 msgstr "Haluatko varmasti poistaa tämän?"
 
-#: src/widgets/thread_item.py:124
+#: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
 msgstr "Ketju poistettu"
 
-#: src/main.py:265
+#: src/main.py:262
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr "Lataa malli asetusten kautta napsauttamalla yläkulman pistevalikkoa!"
 
-#: src/main.py:269
+#: src/main.py:266
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
 msgstr "Hei, olen Bavarder, keskusteleva tekoäly"
 
-#: src/main.py:292
+#: src/main.py:289
 msgid "Please enable a provider from the Dot Menu"
 msgstr "Ota palveluntarjoaja käyttöön pistevalikosta"
+
+#~ msgid "Set Title"
+#~ msgstr "Aseta nimi"
 
 #, python-format
 #~ msgid "New Chat %i"
