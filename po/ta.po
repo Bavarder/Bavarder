@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-08-27 16:16+0000\n"
+"PO-Revision-Date: 2023-10-14 17:53+0000\n"
 "Last-Translator: \"K.B.Dharun Krishna\" <kbdharunkrishna@gmail.com>\n"
 "Language-Team: Tamil <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ta/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -44,10 +44,9 @@ msgstr ""
 "அடையாளத்தைப் பெறலாம்"
 
 #: src/providers/hfbasechat.py:50
-#, fuzzy, python-brace-format
-#| msgid "Sorry, I don't know what to say!"
+#, python-brace-format
 msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "மன்னிக்கவும், எனக்கு என்ன சொல்வது என்று தெரியவில்லை!"
+msgstr "மன்னிக்கவும், எனக்கு என்ன சொல்வது என்று தெரியவில்லை! (பிழை: {output})"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -117,7 +116,7 @@ msgstr "ரத்துசெய்"
 #: src/views/preferences_window.py:78 src/views/window.py:218
 #: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
-msgstr "அழி"
+msgstr "நீக்கு"
 
 #: src/views/preferences_window.py:93 src/views/window.py:243
 msgid "All chats cleared!"
@@ -247,7 +246,7 @@ msgstr "முதன்மை பட்டியல்"
 
 #: src/views/window.blp:56
 msgid "No Chats"
-msgstr "உரையாடல்கள் எதுவும் இல்லை"
+msgstr "உரையாடல்கள் இல்லை"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
@@ -297,7 +296,7 @@ msgstr "பவார்டர் பற்றி"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
-msgstr "Done"
+msgstr "முடிந்தது"
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
@@ -429,7 +428,7 @@ msgstr "துவங்கு"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "தலைப்பு திருத்தப்பட்டது"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
