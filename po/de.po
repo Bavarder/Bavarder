@@ -8,13 +8,14 @@
 # maymage <maymage@gmail.com>, 2023.
 # tobiasfichtner <codeberg.org@tobiasfichtner.com>, 2023.
 # Frederik Zorn <federdaemn@mail.de>, 2023.
+# Hartmut Goebel <h.goebel@crazy-compilers.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-10-01 08:53+0000\n"
-"Last-Translator: Frederik Zorn <federdaemn@mail.de>\n"
+"PO-Revision-Date: 2023-10-16 01:53+0000\n"
+"Last-Translator: Hartmut Goebel <h.goebel@crazy-compilers.com>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -49,10 +50,9 @@ msgstr ""
 "erhalten werden"
 
 #: src/providers/hfbasechat.py:50
-#, fuzzy, python-brace-format
-#| msgid "Sorry, I don't know what to say!"
+#, python-brace-format
 msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "Entschuldige, ich weiß nicht, was ich sagen soll!"
+msgstr "Entschuldige, ich weiß nicht, was ich sagen soll! (Fehler: {output})"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -397,7 +397,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
-msgstr "Chargengröße"
+msgstr "Losgröße"
 
 #: src/widgets/model_item.blp:90
 msgid ""
@@ -437,7 +437,7 @@ msgstr "Stern"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "Titel bearbeitet"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
