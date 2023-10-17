@@ -77,12 +77,13 @@ class Item(Gtk.Box):
         result = ""
         is_code = False
         for line in self.content_markup:
-            if  "<tt></tt>`" in line.strip():
-                if is_code:
-                    is_code = False
-                else:
-                    is_code = True
-                continue
+            if isinstance(line, str):
+                if  "<tt></tt>`" in line.strip():
+                    if is_code:
+                        is_code = False
+                    else:
+                        is_code = True
+                    continue
             if is_code or not isinstance(line, str):
                 label = Gtk.Label()
                 label.set_use_markup(True)
@@ -97,7 +98,7 @@ class Item(Gtk.Box):
                 self.content.append(label)
 
                 if not isinstance(line, str):
-                    result = "\n".join(line.strip())
+                    result = "\n".join(line)
                 else:
                     result = line.strip()
 

@@ -20,7 +20,14 @@ class BaseOpenAIProvider(BaseProvider):
             openai.api_base = self.data["api_base"]
 
     def ask(self, prompt, chat):
-        chat = chat["content"]
+        _chat = []
+        for c in chat["content"]:
+            if c["role"] == self.app.bot_name:
+                role = "assistant"
+            else:
+                role = "user"
+            _chat.append({"role": role, "content": c["content"]})
+        chat = _chat
 
         if self.data.get("api_key"):
             openai.api_key = self.data["api_key"]
@@ -30,6 +37,7 @@ class BaseOpenAIProvider(BaseProvider):
         if self.model:
             prompt = self.chunk(prompt)
             try:
+                print(chat)
                 response = self.chat.create(
                             model=self.model,
                             messages=chat,
