@@ -1,8 +1,8 @@
-name: bavarder # you probably want to 'snapcraft register <name>'
-base: core22 # the base snap is the execution environment for this snap
+name: bavarder
+base: core22 
 adopt-info: bavarder
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs and slots
+grade: stable
+confinement: strict
 
 architectures:
   - build-on: amd64
@@ -19,15 +19,54 @@ parts:
     plugin: meson
     meson-parameters:
       - --prefix=/usr
-    override-prime: |
-      echo 'Skip'      
+    override-prime: ''      
+  gpt4all:
+    source: https://github.com/nomic-ai/gpt4all.git
+    source-commit: '39acbc837816ea9c7673bfe5cf83aeaed95b2c5f'
+    plugin: python
+    override-build: |
+      craftctl default
+      pip install --prefix=$CRAFT_PART_INSTALL/usr gpt4all
+      sed -i '1c#!/usr/bin/python3' -i $CRAFT_PART_INSTALL/usr/local/bin/*
+    python-packages:
+      - certifi==2023.7.22
+      - charset-normalizer==3.2.0
+      - idna==3.4
+      - requests==2.31.0
+      - urllib3==2.0.4
+      - tqdm==4.66.1
+      - Babel==2.12.1
+      - openai==0.27.8
+      - aiohttp==3.8.5
+      - aiosignal==1.3.1
+      - async-timeout==4.0.3
+      - attrs==23.1.0
+      - frozenlist==1.4.0
+      - multidict==6.0.4
+      - yarl==1.9.2
+      - lxml
+    organize: 
+      bin: usr/bin
+      lib/python3.10/site-packages: usr/lib/python3/dist-packages
+      usr/local/bin: usr/bin
+      usr/local/lib/python3.10/dist-packages: usr/lib/python3/dist-packages      
+    prime:
+      - -usr/bin/activate*
+      - -usr/bin/Activate.ps1
+      - -usr/bin/python*
+      - -usr/bin/pip*
+      - -include
+      - -lib
+      - -lib64
+      - -bin
+      - -share
+      - -pyvenv.cfg
 
   bavarder:
-    after: [blueprint-compiler]
-    # See 'snapcraft plugins'
+    after: [blueprint-compiler, gpt4all]
     plugin: meson
-    source: https://github.com/Bavarder/Bavarder.git
-    source-tag: '0.2.4'
+    source: https://codeberg.org/Bavarder/Bavarder.git
+    source-tag: '1.0.0'
     meson-parameters:
       - --prefix=/snap/bavarder/current/usr
       - -Dbuildtype=release
@@ -35,29 +74,19 @@ parts:
       - webkitgtk-6-gnome-2204-sdk/latest/stable
     build-environment:
       - LD_LIBRARY_PATH: /snap/webkitgtk-sdk/current/usr/lib:/snap/webkitgtk-sdk/current/usr/lib/$CRAFT_ARCH_TRIPLET:/snap/webkitgtk-sdk/current/usr/lib/webkitgtk-6.0:/snap/webkitgtk-sdk/current/usr/lib/$CRAFT_ARCH_TRIPLET/girepository-1.0:$LD_LIBRARY_PATH
-      - PYTHONPATH: $CRAFT_STAGE/usr/lib/python3/dist-packages:$CRAFT_PART_INSTALL/usr/local/lib/python3.10/dist-packages:$PYTHONPATH
-      - GI_TYPELIB_PATH: /snap/gnome-42-2204-sdk/current/usr/lib/$CRAFT_ARCH_TRIPLET/girepository-1.0:/snap/gnome-42-2204-sdk/current/usr/lib/girepository-1.0:/snap/webkitgtk-6-gnome-2204-sdk/current/usr/lib/$CRAFT_ARCH_TRIPLET/girepository-1.0
-    override-pull: |
-      craftctl default
-      patch -p1 < $CRAFT_PROJECT_DIR/snap/bavarder.patch
-      pip install --prefix=$CRAFT_PART_INSTALL/usr baichat-py==0.3.0 googlebardpy==0.1.0 openai==0.27.7 pymdown-extensions==10.0.1 requests==2.31.0 text-generation==0.5.2 gradio-client==0.2.5 lxml      
+      - PYTHONPATH: $CRAFT_STAGE/lib/python3/site-packages:$CRAFT_STAGE/lib/python3.10/site-packages:$CRAFT_STAGE/usr/lib/python3/dist-packages:$PYTHONPATH 
+      - GI_TYPELIB_PATH: /snap/gnome-42-2204-sdk/current/usr/lib/$CRAFT_ARCH_TRIPLET/girepository-1.0:/snap/gnome-42-2204-sdk/current/usr/lib/girepository-1.0:/snap/webkitgtk-6-gnome-2204-sdk/current/usr/lib/$CRAFT_ARCH_TRIPLET/girepository-1.0 
     override-build: |
+      set -eux
       craftctl default
-      mkdir -p $CRAFT_PART_INSTALL/meta/gui
-      cp -r $CRAFT_PART_INSTALL/snap/bavarder/current/usr/share/icons $CRAFT_PART_INSTALL/meta/gui/
-      find $CRAFT_PART_INSTALL/meta/gui/icons -type f -not -name 'io.github.Bavarder.Bavarder*' -exec rm {} + -o -type d -empty -exec rmdir {} +
-      for i in `find $CRAFT_PART_INSTALL/meta/gui/icons -name "*.svg" -o -name "*.png"`; do
-        mv $i "`dirname $i`/snap.$CRAFT_PROJECT_NAME.`basename $i`"
-      done
-      sed -e '1c#!/usr/bin/python3' -i $CRAFT_PART_INSTALL/usr/local/bin/*
       sed -e '1c#!/usr/bin/env python3' -i $CRAFT_PART_INSTALL/snap/bavarder/current/usr/bin/bavarder
       chmod +x $CRAFT_PART_INSTALL/snap/bavarder/current/usr/bin/bavarder      
     parse-info: [usr/share/appdata/io.github.Bavarder.Bavarder.appdata.xml]
     organize:
       snap/bavarder/current: .
-      usr/local: usr
     prime:
       - -snap/bavarder
+
   gst:
     after: [ bavarder ]
     plugin: nil
@@ -88,7 +117,7 @@ apps:
     extensions: [gnome]
     common-id: io.github.Bavarder.Bavarder
     environment:
-      PYTHONPATH: $SNAP/usr/lib/python3.10/dist-packages:$PYTHONPATH
+      PYTHONPATH: $SNAP/usr/lib/python3/dist-packages:$PYTHONPATH
       GI_TYPELIB_PATH: $SNAP/webkitgtk-platform/usr/lib/$CRAFT_ARCH_TRIPLET/girepository-1.0:$GI_TYPELIB_PATH
       LD_LIBRARY_PATH: $SNAP/webkitgtk-platform/usr/lib/$SNAPCRAFT_ARCH_TRIPLET:$SNAP/webkitgtk-platform/usr/lib/$SNAPCRAFT_ARCH_TRIPLET/webkitgtk-6.0:$LD_LIBRARY_PATH
     plugs:
