@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-10-19 03:53+0000\n"
+"PO-Revision-Date: 2023-10-27 12:13+0000\n"
 "Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pl/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -163,7 +163,7 @@ msgstr "Nazwa użytkownika"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
-msgstr "Usuń"
+msgstr "Odrzuć"
 
 #: src/views/save_dialog.blp:9
 msgid "Save"
@@ -361,6 +361,8 @@ msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
+"Losowo próbkuj z top_k najbardziej prawdopodobnych tokenów na każdym etapie "
+"generowania. Ustaw tę wartość na 1, aby uzyskać zachłanne dekodowanie."
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
