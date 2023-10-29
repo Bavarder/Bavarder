@@ -9,13 +9,14 @@
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # gallegonovato <fran-carro@hotmail.es>, 2023.
 # Sergio Varela <sergiovg01@outlook.com>, 2023.
+# SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-10-06 04:53+0000\n"
-"Last-Translator: gallegonovato <fran-carro@hotmail.es>\n"
+"PO-Revision-Date: 2023-10-30 09:13+0000\n"
+"Last-Translator: SomeTr <SomeTr@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Spanish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/es/>\n"
 "Language: es\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -65,7 +66,7 @@ msgstr "No existen preferencias"
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  Hector A. Mantellini https://launchpad.net/~xombra"
+"Hector A. Mantellini https://launchpad.net/~xombra"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
