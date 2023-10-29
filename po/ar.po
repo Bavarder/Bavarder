@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # nakibrayan2 <codeberg.org.quoz7@aleeas.com>, 2023.
+# SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-09-09 08:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-10-30 09:13+0000\n"
+"Last-Translator: SomeTr <SomeTr@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ar/>\n"
 "Language: ar\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.0\n"
+"X-Generator: Weblate 5.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -176,7 +177,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr "اسم الملف:"
+msgstr "اسم الملف"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
