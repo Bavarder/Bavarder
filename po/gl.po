@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # xosecalvo <xosecalvo@gmail.com>, 2023.
+# SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-08-08 16:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-10-30 09:13+0000\n"
+"Last-Translator: SomeTr <SomeTr@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Galician <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/gl/>\n"
 "Language: gl\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -59,9 +60,10 @@ msgstr "Non hai ningunha preferencia dispoñíbel"
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
-"  Manuel Xosé Lemos https://launchpad.net/~mxlemos\n"
-"  Miguel Anxo Bouzada https://launchpad.net/~mbouzada\n"
-"  oterobueu https://launchpad.net/~oterobueu"
+"Manuel Xosé Lemos https://launchpad.net/~mxlemos\n"
+"Miguel Anxo Bouzada https://launchpad.net/~mbouzada\n"
+"oterobueu\n"
+"https://launchpad.net/~oterobueu"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
