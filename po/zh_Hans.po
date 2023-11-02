@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # yangyangdaji <1504305527@qq.com>, 2023.
+# ericjsz <codeberg@togr.top>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-09-12 16:53+0000\n"
-"Last-Translator: yangyangdaji <1504305527@qq.com>\n"
+"PO-Revision-Date: 2023-11-02 17:13+0000\n"
+"Last-Translator: ericjsz <codeberg@togr.top>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -18,12 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.1\n"
+"X-Generator: Weblate 5.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
 msgid "Bavarder"
-msgstr "Bavarder"
+msgstr "聊天"
 
 #: src/providers/base.py:79
 msgid "How to get a token"
@@ -43,10 +44,9 @@ msgstr ""
 "bavarder.codeberg.page/help/huggingface/) 获取令牌"
 
 #: src/providers/hfbasechat.py:50
-#, fuzzy, python-brace-format
-#| msgid "Sorry, I don't know what to say!"
+#, python-brace-format
 msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "抱歉，我不知道该说什么！"
+msgstr "抱歉，我不知道该说什么！(Error: {output})"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -58,9 +58,7 @@ msgstr "没有可用的选项"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
-"yangyangdaji\n"
-"https://github.com/yangyangdaji"
+msgstr "翻译者致谢"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
@@ -416,7 +414,7 @@ msgstr "星"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "标题已编辑"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
