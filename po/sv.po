@@ -7,13 +7,15 @@
 # Morgan Antonsson <morgan.antonsson@gmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-10-30 09:13+0000\n"
-"Last-Translator: SomeTr <SomeTr@users.noreply.translate.codeberg.org>\n"
+"PO-Revision-Date: 2023-11-09 09:13+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
 "Language: sv\n"
@@ -60,7 +62,7 @@ msgstr ""
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
+msgstr "skøldis <jellybean@turtle.garden>"
 
 #: src/views/about_window.py:42
 #, fuzzy
