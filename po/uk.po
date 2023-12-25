@@ -16,9 +16,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-11-09 09:13+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2023-12-26 08:56+0000\n"
+"Last-Translator: SomeTr <SomeTr@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/uk/>\n"
 "Language: uk\n"
@@ -27,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -79,7 +78,7 @@ msgstr "Авторське право © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Пакунок"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -157,7 +156,7 @@ msgstr "Це видалить усі розмови з бази даних."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr "Ім'я"
+msgstr "Імена"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
@@ -406,7 +405,6 @@ msgstr ""
 "зменшують затримку, але збільшують потребу в ресурсах."
 
 #: src/widgets/model_item.blp:103
-#, fuzzy
 msgid "Repeat Last N"
 msgstr "Повторити останні N"
 
