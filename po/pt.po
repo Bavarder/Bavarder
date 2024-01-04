@@ -6,13 +6,14 @@
 # galegovski <galegovski@outlook.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # aresende <contact@aresende.com>, 2023.
+# N4taa <r0dr1g02m4r5d3v@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-08-20 18:05+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-01-05 07:56+0000\n"
+"Last-Translator: N4taa <r0dr1g02m4r5d3v@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pt/>\n"
 "Language: pt\n"
@@ -20,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -32,10 +33,8 @@ msgid "How to get a token"
 msgstr "Como adquirir um token"
 
 #: src/providers/catgpt.py:7
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with a Cat"
-msgstr "Bate-papo com uma IA"
+msgstr "Bate-papo com um gato"
 
 #: src/providers/hfbasechat.py:45
 msgid ""
@@ -43,11 +42,14 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"Chegou ao limite de taxa! Por favor adicione um token nas preferências. Pode "
+"conseguir o token seguindo este [guia](https://bavarder.codeberg.page/help/"
+"huggingface/)"
 
 #: src/providers/hfbasechat.py:50
 #, python-brace-format
 msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr ""
+msgstr "Desculpe, não sei o que dizer! (Erro: {output})"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -59,17 +61,15 @@ msgstr "Nenhuma configuração disponível"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
+msgstr "créditos-de-tradução"
 
 #: src/views/about_window.py:42
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with AI"
-msgstr "Bate-papo com uma IA"
+msgstr "Bate-Papo com uma IA"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
@@ -81,7 +81,7 @@ msgstr "Traduzir"
 
 #: src/views/export_dialog.blp:6
 msgid "Export Thread ?"
-msgstr ""
+msgstr "Exportar Conversa ?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -94,24 +94,22 @@ msgstr "Exportar"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:19 src/views/window.py:311
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
-msgstr "Modelo"
+msgstr "Modelos"
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "Lista de modelos disponíveis"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "Apagar Todas as Conversas"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "De certeza que pretende apagar o lembrete?"
+msgstr ""
+"De certeza que pretende apagar todas as conversas? Esta ação não pode ser "
+"desfeita!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:217 src/views/window.py:382
@@ -126,7 +124,7 @@ msgstr "Apagar"
 
 #: src/views/preferences_window.py:93 src/views/window.py:243
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Todas as conversas foram limpas!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.py:276 src/views/window.py:314 src/views/window.blp:299
@@ -142,11 +140,8 @@ msgid "Miscellaneous"
 msgstr "Diversos"
 
 #: src/views/preferences_window.blp:31
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all threads"
-msgstr "Limpar"
+msgstr "Limpar todas as conversas"
 
 #: src/views/preferences_window.blp:35
 #, fuzzy
@@ -157,7 +152,7 @@ msgstr "Limpar"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr ""
+msgstr "Isto irá limpar todas as conversas da base de dados."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
@@ -165,13 +160,11 @@ msgstr "Nome"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr ""
+msgstr "Nome do Bot"
 
 #: src/views/preferences_window.blp:53
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Utilizador"
+msgstr "Nome de Utilizador"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -183,11 +176,11 @@ msgstr "Guardar"
 
 #: src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Exportar conversa?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr ""
+msgstr "Nome do Ficheiro"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
@@ -195,7 +188,7 @@ msgstr "Localização"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "A exportação da Conversa será salva nesta diretória."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -203,21 +196,19 @@ msgstr "Escolher um directório"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "Incapaz de salvar a Conversa"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "Conversa salva com sucesso!"
 
 #: src/views/window.py:177
-#, fuzzy
-#| msgid "Chat"
 msgid "New chat"
-msgstr "Conversas"
+msgstr "Nova conversa"
 
 #: src/views/window.py:212
 msgid "Delete All Chats"
-msgstr ""
+msgstr "Apagar Todas as Conversas"
 
 #: src/views/window.py:213
 #, fuzzy
