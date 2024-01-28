@@ -4,13 +4,14 @@
 # Bavarder, 2023.
 #
 # watchakorn-18k <porton555@gmail.com>, 2023.
+# yuttct <yuttct@yahoo.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-08-03 15:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-01-29 00:56+0000\n"
+"Last-Translator: yuttct <yuttct@yahoo.com>\n"
 "Language-Team: Thai <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/th/>\n"
 "Language: th\n"
@@ -18,16 +19,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
 msgid "Bavarder"
-msgstr "แบบวาร์เดอร์"
+msgstr "แชท"
 
 #: src/providers/base.py:79
 msgid "How to get a token"
-msgstr ""
+msgstr "วิธีรับโทเค็น"
 
 #: src/providers/catgpt.py:7
 #, fuzzy
@@ -41,23 +42,26 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"คุณมีอัตราถึงขีดจำกัดแล้ว! โปรดเพิ่มโทเค็นให้กับการตั้งค่า "
+"คุณสามารถรับโทเค็นได้โดยทำตาม[คำแนะนำ](https://bavarder.codeberg.page/help/"
+"huggingface/)"
 
 #: src/providers/hfbasechat.py:50
 #, python-brace-format
 msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr ""
+msgstr "ขออภัย ฉันไม่รู้จะพูดอะไร! (ข้อผิดพลาด: {output})"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
-msgstr ""
+msgstr "คีย์ API"
 
 #: src/providers/provider_item.blp:12
 msgid "No preferences available"
-msgstr ""
+msgstr "ไม่มีค่ากำหนดที่ใช้ได้"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
+msgstr "เครดิตนักแปล"
 
 #: src/views/about_window.py:42
 #, fuzzy
@@ -67,11 +71,11 @@ msgstr "แชทกับ AI"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "ลิขสิทธิ์ © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "บรรจุภัณฑ์"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -79,7 +83,7 @@ msgstr "แปลภาษา"
 
 #: src/views/export_dialog.blp:6
 msgid "Export Thread ?"
-msgstr ""
+msgstr "ส่งออกเธรด ?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -99,11 +103,11 @@ msgstr "โหมด"
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "รายการรุ่นที่มีจำหน่าย"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "ลบกระทู้ทั้งหมด"
 
 #: src/views/preferences_window.py:73
 #, fuzzy
