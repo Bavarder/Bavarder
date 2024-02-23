@@ -5,13 +5,14 @@
 #
 # artnay <jiri.gronroos@iki.fi>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
+# jaahas <jaaahas@proton.me>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-04 15:21+0200\n"
-"PO-Revision-Date: 2023-11-08 08:13+0000\n"
-"Last-Translator: artnay <jiri.gronroos@iki.fi>\n"
+"PO-Revision-Date: 2024-02-24 02:56+0000\n"
+"Last-Translator: jaahas <jaaahas@proton.me>\n"
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fi/>\n"
 "Language: fi\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -40,6 +41,8 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"Olet saavuttanut rajan! Lisääthän tunnisteen asetuksiin, jonka voit saada "
+"seuraamalla tätä [opasta](https://bavarder.codeberg.page/help/huggingface/)"
 
 #: src/providers/hfbasechat.py:50
 #, python-brace-format
@@ -348,10 +351,12 @@ msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"Mallin lämpötila. Isommat arvot nostavat luovuutta, mutta laskevat "
+"faktuaalisuutta."
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
-msgstr ""
+msgstr "Korkein K"
 
 #: src/widgets/model_item.blp:46
 msgid ""
@@ -361,7 +366,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
-msgstr ""
+msgstr "Korkein P"
 
 #: src/widgets/model_item.blp:60
 msgid ""
@@ -371,12 +376,13 @@ msgstr ""
 
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
-msgstr ""
+msgstr "Toistamisrangaistus"
 
 #: src/widgets/model_item.blp:75
 msgid ""
 "Penalize the model for repetition. Higher values result in less repetition."
 msgstr ""
+"Rankaise mallia toistamisesta. Isommat arvot tuottavat vähemmän toistoa."
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
@@ -390,11 +396,11 @@ msgstr ""
 
 #: src/widgets/model_item.blp:103
 msgid "Repeat Last N"
-msgstr ""
+msgstr "Toista viimeinen N"
 
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
+msgstr "Kuinka pitkälle mallin historiassa käytetään toistamisrangaistusta. "
 
 #: src/widgets/model_item.blp:117
 msgid "System Prompt"
