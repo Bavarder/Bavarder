@@ -3,7 +3,6 @@ import openai
 from openai import OpenAI
 import socket
 import os
-import httpx
 
 from gi.repository import Gtk, Adw, GLib
 
@@ -11,18 +10,23 @@ from gi.repository import Gtk, Adw, GLib
 class BaseOpenAIProvider(BaseProvider):
     model = None
     api_key_title = "API Key"
-    client = OpenAI(
-    # This is the default and can be omitted
-    api_key=os.environ.get("OPENAI_API_KEY"),
-    )
 
     def __init__(self, app, window):
         super().__init__(app, window)
 
+        try:
+            self.client = OpenAI(
+                api_key=os.environ.get("OPENAI_API_KEY"),
+            )
+        except openai.OpenAIError:
+            self.client = OpenAI(
+                api_key="",
+            )
+
         if self.data.get("api_key"):
             self.client.api_key = self.data["api_key"]
         if self.data.get("api_base"):
-            self.client.base_url = httpx.URL(self.data["api_base"])
+            self.client.base_url = self.data["api_base"]
 
     def ask(self, prompt, chat):
         _chat = []
