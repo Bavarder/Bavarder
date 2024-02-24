@@ -1,5 +1,5 @@
 from .openai import BaseOpenAIProvider
-
+import openai
 from gi.repository import Gtk, Adw
 
 class LocalProvider(BaseOpenAIProvider):
