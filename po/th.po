@@ -5,13 +5,15 @@
 #
 # watchakorn-18k <porton555@gmail.com>, 2023.
 # yuttct <yuttct@yahoo.com>, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-02-02 01:56+0000\n"
-"Last-Translator: yuttct <yuttct@yahoo.com>\n"
+"PO-Revision-Date: 2024-02-25 13:48+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Thai <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/th/>\n"
 "Language: th\n"
@@ -19,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.3.1\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -28,7 +30,7 @@ msgstr "แชท"
 
 #: src/providers/base.py:8
 msgid "Image"
-msgstr ""
+msgstr "รูปภาพ"
 
 #: src/providers/base.py:9 src/views/window.blp:108
 msgid "Chat"
