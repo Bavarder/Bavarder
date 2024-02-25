@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 po_dir=$(dirname "$(realpath "$0")")
 xgettext -f "$po_dir"/POTFILES -o "$po_dir"/Bavarder.pot --add-comments=Translators --keyword=_ --keyword=C_1c,2 --from-code=UTF-8
 sed -i "s/SOME DESCRIPTIVE TITLE./Bavarder POT file/" "$po_dir"/Bavarder.pot
