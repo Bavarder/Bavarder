@@ -11,6 +11,9 @@ from .robertasquad2 import RobertaSquad2Provider
 from .local import LocalProvider
 from .aihorde import AIHordeProvider
 from .stablediffusion import StableDiffusionProvider 
+from .analogdiffusion import AnalogDiffusionProvider
+from .nitrodiffusion import NitroDiffusionProvider
+from .openjourney import OpenJourneyProvider
 
 PROVIDERS = {
     AIHordeProvider,
@@ -23,6 +26,9 @@ PROVIDERS = {
     GPT2Provider,
     LocalProvider,
     StableDiffusionProvider,
+    AnalogDiffusionProvider,
+    NitroDiffusionProvider,
+    OpenJourneyProvider,
     # StableBeluga2Provider,
     # HuggingFaceOpenAssistantSFT1PythiaProvider,
     # RobertaSquad2Provider

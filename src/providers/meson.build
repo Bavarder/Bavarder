@@ -2,6 +2,7 @@ providers_dir = join_paths(MODULE_DIR, 'providers')
 
 providers_sources = [
   '__init__.py',
+  'analogdiffusion.py', 
   'aihorde.py',
   'base.py',
   'basehfimage.py',
@@ -13,10 +14,12 @@ providers_sources = [
   'gpt2.py',
   'hfbasechat.py',
   'local.py',
+  'nitrodiffusion.py',
   'openai.py',
   'openaigpt35turbo.py',
   'openaigpt4.py',
   'openassistantsft1pythia12b.py',
+  'openjourney.py',
   'petals.py',
   'provider_item.py',
   'stablebeluga2.py',
