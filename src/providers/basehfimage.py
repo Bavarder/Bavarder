@@ -35,12 +35,9 @@ class BaseHFImageProvider(BaseImageProvider):
         })
 
         if output:
-            print(output)
             try:
-                print("IMAGE")
                 return Image.open(io.BytesIO(output))
             except UnidentifiedImageError:
-                print("FAILED IMAGE")
                 return output
 
     def get_settings_rows(self):

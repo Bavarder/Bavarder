@@ -41,7 +41,6 @@ class BaseOpenAIProvider(BaseProvider):
         if self.model:
             prompt = self.chunk(prompt)
             try:
-                print(chat)
                 response = self.client.chat.completions.create(
                             model=self.model,
                             messages=chat,
