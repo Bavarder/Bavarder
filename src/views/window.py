@@ -402,9 +402,9 @@ class BavarderWindow(Adw.ApplicationWindow):
             self.t = KillableThread(target=thread_run)
             self.t.start()
 
-    @Gtk.Template.Callback()
-    def on_emoji(self, *args):
-        self.message_entry.do_insert_emoji(self.message_entry)
+    # @Gtk.Template.Callback()
+    # def on_emoji(self, *args):
+    #     self.message_entry.do_insert_emoji(self.message_entry)
 
     def cancel(self, *args):
         try:
