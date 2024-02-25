@@ -121,6 +121,19 @@
 		</keyword>
 	</keywords>
 	<releases>
+		<release version="1.1.0" date="2024-2-25" type="stable">
+			<description>
+				<p>
+					Image generation support
+				</p>
+				<p>
+					New providers
+				</p>
+				<p>
+					Bug fixes
+				</p>
+			</description>
+		</release>
 		<release version="1.0.0" date="2023-7-19" type="stable">
 			<description>
 				<p>

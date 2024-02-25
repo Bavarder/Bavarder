@@ -9,3 +9,4 @@ idna
 urllib3
 Babel
 openai
+pillow
