@@ -28,7 +28,7 @@ class Provider(Adw.ExpanderRow):
         self.provider_type.set_label(self.provider.provider_type.value)
         match self.provider.provider_type:
             case ProviderType.IMAGE:
-                self.provider_type.add_css_class("badge-silver")
+                self.provider_type.add_css_class("badge-titanium")
             case ProviderType.CHAT:
                 self.provider_type.add_css_class("badge-gold")
             case ProviderType.VOICE:
@@ -36,7 +36,7 @@ class Provider(Adw.ExpanderRow):
             case ProviderType.TEXT:
                 self.provider_type.add_css_class("badge-tin")
             case ProviderType.MOVIE:
-                self.provider_type.add_css_class("badge-titanium")
+                self.provider_type.add_css_class("badge-silver")
 
         self.enable_switch.set_active( self.app.data["providers"][self.provider.slug]["enabled"])
 

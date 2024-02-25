@@ -8,7 +8,7 @@ import json
 from gi.repository import Gtk, Adw, GLib
 
 
-class BaseOpenAIImageProvider(BaseProvider):
+class BaseOpenAIImageProvider(BaseImageProvider):
     model = None
     api_key_title = "API Key"
 
@@ -33,9 +33,9 @@ class BaseOpenAIImageProvider(BaseProvider):
         if self.model:
             prompt = self.chunk(prompt)
             try:
-                response = client.images.generate(
+                response = self.client.images.generate(
                     model=self.model,
-                    prompt=self.prompt,
+                    prompt=prompt,
                     size="1024x1024",
                     quality="standard",
                     n=1,
@@ -110,7 +110,9 @@ class BaseOpenAIImageProvider(BaseProvider):
 class DallE2(BaseOpenAIImageProvider):
     name = "DALL·E 2"
     model = "dall-e-2"
+    description = "DALL·E is a AI system that can create realistic images and art from a description in natural language. "
 
 class DallE3(BaseOpenAIImageProvider):
     name = "DALL·E 3"
     model = "dall-e-3"
+    description = "DALL·E is a AI system that can create realistic images and art from a description in natural language. "

@@ -13,7 +13,7 @@ class AIHordeProvider(BaseProvider):
     STATUS_URL = "https://stablehorde.net/api/v2/generate/text/status/"
     API_KEY = "0000000000"
     model = "PygmalionAI/pygmalion-7b"
-    
+    description = "AI Horde is a crowdsourced distributed cluster of Image generation workers and text generation workers."
 
     def ask(self, prompt, chat, **kwargs):
         self.API_KEY = self.data.get("api_key", "0000000000")
