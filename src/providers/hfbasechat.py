@@ -1,4 +1,4 @@
-from .base import BaseProvider
+from .base import BaseProvider, ProviderType
 
 import requests
 
@@ -23,7 +23,7 @@ class BaseHFChatProvider(BaseProvider):
 
             return response.json()
             
-        if self.chat_mode:
+        if self.provider_type == ProviderType.CHAT:
             output = query({
                 "inputs": {
                     "past_user_inputs": [i['content'] for i in chat if i['role'] == self.app.user_name],
