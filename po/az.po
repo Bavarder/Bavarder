@@ -5,13 +5,15 @@
 #
 # thepoladov13 <thepoladov@protonmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2023-08-03 15:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-02-25 13:48+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Azerbaijani <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/az/>\n"
 "Language: az\n"
@@ -19,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -340,7 +342,7 @@ msgstr "Düzəliş et"
 
 #: src/widgets/item.blp:117
 msgid "Remove"
-msgstr ""
+msgstr "Ləğv et"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
