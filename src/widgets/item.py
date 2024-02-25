@@ -85,11 +85,11 @@ class Item(Gtk.Box):
         try:
             if not isinstance(self.content_text, Image.Image):
                 if isinstance(self.content_text, bytes):
-                    image = Image.open(io.BytesIO(self.content_text))
+                    self.image = Image.open(io.BytesIO(self.content_text))
                 else:
-                    image = Image.open(io.BytesIO(base64.b64decode(self.content_text)))
+                    self.image = Image.open(io.BytesIO(base64.b64decode(self.content_text)))
             else:
-                image = self.content_text
+                self.image = self.content_text
         except Exception:
             self.convert_content_to_pango()
 
@@ -148,9 +148,8 @@ class Item(Gtk.Box):
             picture.add_css_class("card")
             picture.set_margin_start(12)
             picture.set_margin_end(12)
-            #print(self.content.get_width(), self.content.get_height())
             picture.set_size_request(270, 270)
-            image.save("/tmp/image.png")
+            self.image.save("/tmp/image.png")
             picture.set_file(Gio.File.new_for_path("/tmp/image.png"))
             self.content.append(picture)
 
@@ -191,6 +190,7 @@ class Item(Gtk.Box):
         self.action_group = Gio.SimpleActionGroup()
         self.create_action("delete", self.on_delete)
         self.create_action("edit", self.on_edit)
+        self.create_action("save", self.on_save)
         self.create_action("copy", self.on_copy)
         self.insert_action_group("event", self.action_group);
 
@@ -209,6 +209,41 @@ class Item(Gtk.Box):
     def on_edit(self, *args):
         self.win.message_entry.get_buffer().set_text(self.content_text)
 
+    def on_save(self, *args):
+        def on_save_response(dialog, response):
+            if response == Gtk.ResponseType.OK:
+                toast = Adw.Toast()
+                try:
+                    self.image.save(dialog.get_file().get_path())
+                except Exception as e:
+                    toast.set_title(_("Failed to save the image"))
+                else:
+                    toast.set_title(_("Image saved"))
+                finally:
+                    self.parent.toast_overlay.add_toast(toast)
+
+            dialog.destroy()
+
+        try:
+            self.image
+        except AttributeError:
+            toast = Adw.Toast()
+            toast.set_title(_("No image to save"))
+            self.parent.toast_overlay.add_toast(toast)
+        else:
+            dialog = Gtk.FileChooserDialog(
+                title=_("Save message"),
+                action=Gtk.FileChooserAction.SAVE,
+                modal=True,
+                transient_for=self.win,
+            )
+            dialog.add_button(_("Cancel"), Gtk.ResponseType.CANCEL)
+            dialog.add_button(_("Save"), Gtk.ResponseType.OK)
+
+            dialog.connect('response', on_save_response)
+            dialog.present()
+
+        
     def on_copy(self, *args):
         Gdk.Display.get_default().get_clipboard().set(self.content_text)
 
