@@ -4,6 +4,8 @@ providers_sources = [
   '__init__.py',
   'aihorde.py',
   'base.py',
+  'basehfimage.py',
+  'baseimage.py',
   'blenderbot.py',
   'catgpt.py',
   'dialogpt.py',
@@ -19,6 +21,7 @@ providers_sources = [
   'provider_item.py',
   'stablebeluga2.py',
   'robertasquad2.py',
+  'stablediffusion.py',
 ]
 
 PY_INSTALLDIR.install_sources(providers_sources, subdir: providers_dir)

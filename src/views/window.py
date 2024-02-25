@@ -19,6 +19,8 @@
 
 from datetime import datetime
 import locale 
+import io 
+import base64
 
 from gi.repository import Gtk, Gio, Adw, GLib
 from babel.dates import format_date, format_datetime, format_time
@@ -392,9 +394,17 @@ class BavarderWindow(Adw.ApplicationWindow):
                     self.toast.dismiss()
 
                     if not response:
-                        response = _("Sorry, I don't know what to say.")
+                        self.add_assistant_item(_("Sorry, I don't know what to say."))
+                    else:
+                        if isinstance(response, str):
+                            self.add_assistant_item(response)
+                        else:
+                            buffered = io.BytesIO()
+                            response.save(buffered, format="JPEG")
+                            img_str = base64.b64encode(buffered.getvalue())
 
-                    self.add_assistant_item(response)
+                            self.add_assistant_item(img_str.decode("utf-8"))
+
                 except AttributeError:
                     self.toast.dismiss()
                     self.add_assistant_item(_("Sorry, I don't know what to say."))

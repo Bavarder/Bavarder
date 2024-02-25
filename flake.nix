@@ -55,6 +55,7 @@
             lxml
             openai
             pygobject3
+            pillow
             requests
           ];
 

@@ -10,6 +10,7 @@ from .openassistantsft1pythia12b import HuggingFaceOpenAssistantSFT1PythiaProvid
 from .robertasquad2 import RobertaSquad2Provider
 from .local import LocalProvider
 from .aihorde import AIHordeProvider
+from .stablediffusion import StableDiffusionProvider 
 
 PROVIDERS = {
     AIHordeProvider,
@@ -20,7 +21,8 @@ PROVIDERS = {
     OpenAIGPT4Provider,
     GoogleFlant5XXLProvider,
     GPT2Provider,
-    LocalProvider
+    LocalProvider,
+    StableDiffusionProvider,
     # StableBeluga2Provider,
     # HuggingFaceOpenAssistantSFT1PythiaProvider,
     # RobertaSquad2Provider

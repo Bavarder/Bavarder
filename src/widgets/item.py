@@ -1,6 +1,10 @@
 from gi.repository import Gtk, Adw, Gio, GLib, Pango, GtkSource, Gdk
 
 import re
+import io
+import base64
+
+from PIL import Image, UnidentifiedImageError
 
 from bavarder.constants import app_id, rootdir
 from bavarder.widgets.code_block import CodeBlock
@@ -72,62 +76,85 @@ class Item(Gtk.Box):
 
         self.content_text = self.item["content"]
 
-        self.convert_content_to_pango()
-
-        result = ""
-        is_code = False
-        for line in self.content_markup:
-            if isinstance(line, str):
-                if  "<tt></tt>`" in line.strip():
-                    if is_code:
-                        is_code = False
-                    else:
-                        is_code = True
-                    continue
-            if is_code or not isinstance(line, str):
-                label = Gtk.Label()
-                label.set_use_markup(True)
-                label.set_wrap(True)
-                label.set_xalign(0)
-                label.set_wrap_mode(Pango.WrapMode.WORD)
-                label.set_markup(result)
-                label.set_justify(Gtk.Justification.LEFT)
-                label.set_valign(Gtk.Align.START)
-                label.set_hexpand(True)
-                label.set_halign(Gtk.Align.START)
-                self.content.append(label)
-
-                if not isinstance(line, str):
-                    result = "\n".join(line)
-                else:
-                    result = line.strip()
-
-                self.content.append(CodeBlock(result))
-                result = ""
-            else: 
-                result += f"{line}\n"
-            
-        else:
-            if not result.strip() == "<tt></tt>`":
-                label = Gtk.Label()
-                label.set_use_markup(True)
-                label.set_wrap(True)
-                label.set_xalign(0)
-                label.set_wrap_mode(Pango.WrapMode.WORD)
-                label.set_markup(result)
-                label.set_justify(Gtk.Justification.LEFT)
-                label.set_valign(Gtk.Align.START)
-                label.set_hexpand(True)
-                label.set_halign(Gtk.Align.START)
-                self.content.append(label)
-
-        t = self.item["role"].lower()
-
         self.parent = parent
         self.settings = parent.settings
 
         self.app = self.parent.get_application()
         self.win = self.app.get_active_window()
+
+        try:
+            if not isinstance(self.content_text, Image.Image):
+                if isinstance(self.content_text, bytes):
+                    image = Image.open(io.BytesIO(self.content_text))
+                else:
+                    image = Image.open(io.BytesIO(base64.b64decode(self.content_text)))
+            else:
+                image = self.content_text
+        except Exception:
+            self.convert_content_to_pango()
+
+            result = ""
+            is_code = False
+            for line in self.content_markup:
+                if isinstance(line, str):
+                    if  "<tt></tt>`" in line.strip():
+                        if is_code:
+                            is_code = False
+                        else:
+                            is_code = True
+                        continue
+                if is_code or not isinstance(line, str):
+                    label = Gtk.Label()
+                    label.set_use_markup(True)
+                    label.set_wrap(True)
+                    label.set_xalign(0)
+                    label.set_wrap_mode(Pango.WrapMode.WORD)
+                    label.set_markup(result)
+                    label.set_justify(Gtk.Justification.LEFT)
+                    label.set_valign(Gtk.Align.START)
+                    label.set_hexpand(True)
+                    label.set_halign(Gtk.Align.START)
+                    self.content.append(label)
+
+                    if not isinstance(line, str):
+                        result = "\n".join(line)
+                    else:
+                        result = line.strip()
+
+                    self.content.append(CodeBlock(result))
+                    result = ""
+                else: 
+                    result += f"{line}\n"
+                
+            else:
+                if not result.strip() == "<tt></tt>`":
+                    label = Gtk.Label()
+                    label.set_use_markup(True)
+                    label.set_wrap(True)
+                    label.set_xalign(0)
+                    label.set_wrap_mode(Pango.WrapMode.WORD)
+                    label.set_markup(result)
+                    label.set_justify(Gtk.Justification.LEFT)
+                    label.set_valign(Gtk.Align.START)
+                    label.set_hexpand(True)
+                    label.set_halign(Gtk.Align.START)
+                    self.content.append(label)
+        else:
+            picture = Gtk.Picture()
+            picture.set_halign(Gtk.Align.CENTER)
+            picture.set_can_shrink(True)
+            picture.set_content_fit(Gtk.ContentFit.FILL)
+            picture.set_visible(True)
+            picture.add_css_class("card")
+            picture.set_margin_start(12)
+            picture.set_margin_end(12)
+            #print(self.content.get_width(), self.content.get_height())
+            picture.set_size_request(270, 270)
+            image.save("/tmp/image.png")
+            picture.set_file(Gio.File.new_for_path("/tmp/image.png"))
+            self.content.append(picture)
+
+        t = self.item["role"].lower()
 
         if t == self.app.user_name.lower() or t == "user": # User
             self.message_bubble.add_css_class("message-bubble-user")
