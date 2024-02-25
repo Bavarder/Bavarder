@@ -1,5 +1,5 @@
 project('bavarder',
-          version: '1.0.0',
+          version: '1.1.0',
     meson_version: '>= 0.62.0',
   default_options: [ 'warning_level=2', 'werror=false', ],
 )
@@ -11,7 +11,7 @@ python = import('python')
 # Constants
 PROJECT_RDNN_NAME = 'io.github.Bavarder.Bavarder'
 BUGTRACKER_URL = 'https://codeberg.org/Bavarder/Bavarder/issues'
-HELP_URL = 'https://matrix.to/#/#bavarder:projectsegfau.lt'
+HELP_URL = 'https://matrix.to/#/#bavarder:envs.net'
 TRANSLATE_URL = 'https://translate.codeberg.org/engage/bavarder/'
 PROJECT_URL = 'https://bavarder.codeberg.page'
 
