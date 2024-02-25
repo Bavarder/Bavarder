@@ -4,13 +4,15 @@
 # Bavarder, 2023.
 #
 # Vistaus <vistausss@fastmail.com>, 2023.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2023-10-05 04:53+0000\n"
-"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
+"PO-Revision-Date: 2024-02-25 13:48+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -18,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -27,7 +29,7 @@ msgstr "Bavarder"
 
 #: src/providers/base.py:8
 msgid "Image"
-msgstr ""
+msgstr "afbeelding"
 
 #: src/providers/base.py:9 src/views/window.blp:108
 msgid "Chat"
@@ -35,11 +37,11 @@ msgstr "Gesprek"
 
 #: src/providers/base.py:10
 msgid "Voice"
-msgstr ""
+msgstr "Spraak"
 
 #: src/providers/base.py:11
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: src/providers/base.py:12
 msgid "Movie"
