@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-04 15:21+0200\n"
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
 "PO-Revision-Date: 2023-11-02 17:13+0000\n"
 "Last-Translator: ericjsz <codeberg@togr.top>\n"
 "Language-Team: Chinese (Simplified) <https://translate.codeberg.org/projects/"
@@ -26,7 +26,27 @@ msgstr ""
 msgid "Bavarder"
 msgstr "聊天"
 
-#: src/providers/base.py:79
+#: src/providers/base.py:8
+msgid "Image"
+msgstr ""
+
+#: src/providers/base.py:9 src/views/window.blp:108
+msgid "Chat"
+msgstr "聊天"
+
+#: src/providers/base.py:10
+msgid "Voice"
+msgstr ""
+
+#: src/providers/base.py:11
+msgid "Text"
+msgstr ""
+
+#: src/providers/base.py:12
+msgid "Movie"
+msgstr ""
+
+#: src/providers/base.py:86
 msgid "How to get a token"
 msgstr "如何获得令牌"
 
@@ -52,7 +72,7 @@ msgstr "抱歉，我不知道该说什么！(Error: {output})"
 msgid "API Key"
 msgstr "API 密钥"
 
-#: src/providers/provider_item.blp:12
+#: src/providers/provider_item.blp:18
 msgid "No preferences available"
 msgstr "没有可用的选项"
 
@@ -76,21 +96,21 @@ msgstr "打包"
 msgid "Translate"
 msgstr "翻译"
 
-#: src/views/export_dialog.blp:6
-msgid "Export Thread ?"
+#: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
+msgid "Export Thread?"
 msgstr "导出线程？"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
 msgstr "关闭"
 
-#: src/views/export_dialog.blp:54 src/views/window.py:286
-#: src/views/window.py:324
+#: src/views/export_dialog.blp:54 src/views/window.py:288
+#: src/views/window.py:326
 msgid "Export"
 msgstr "导出"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:311
+#: src/views/preferences_window.blp:19 src/views/window.py:313
 msgid "Models"
 msgstr "模型"
 
@@ -107,26 +127,26 @@ msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr "您确定要删除所有线程吗？ 这无法挽回！"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:217 src/views/window.py:382
+#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
 #: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
 msgid "Cancel"
 msgstr "取消"
 
-#: src/views/preferences_window.py:78 src/views/window.py:218
+#: src/views/preferences_window.py:78 src/views/window.py:220
 #: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
 msgstr "删除"
 
-#: src/views/preferences_window.py:93 src/views/window.py:243
+#: src/views/preferences_window.py:93 src/views/window.py:245
 msgid "All chats cleared!"
 msgstr "聊天全部清空！"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:276 src/views/window.py:314 src/views/window.blp:299
+#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
 msgid "Preferences"
 msgstr "首选项"
 
-#: src/views/preferences_window.blp:15 src/views/window.py:273
+#: src/views/preferences_window.blp:15 src/views/window.py:275
 msgid "Providers"
 msgstr "提供者"
 
@@ -162,13 +182,9 @@ msgstr "用户名称"
 msgid "Discard"
 msgstr "丢弃"
 
-#: src/views/save_dialog.blp:9
+#: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
 msgstr "保存"
-
-#: src/views/save_dialog.blp:13
-msgid "Export Thread?"
-msgstr "导出线程？"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -194,41 +210,41 @@ msgstr "无法保存线程"
 msgid "Thread successfully saved!"
 msgstr "线程成功保存！"
 
-#: src/views/window.py:177
+#: src/views/window.py:179
 msgid "New chat"
 msgstr "新聊天"
 
-#: src/views/window.py:212
+#: src/views/window.py:214
 msgid "Delete All Chats"
 msgstr "删除所有聊天内容"
 
-#: src/views/window.py:213
+#: src/views/window.py:215
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
 msgstr "您确定要删除该线程中的所有聊天吗？ 这无法挽回！"
 
-#: src/views/window.py:229 src/views/window.py:245
+#: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
 msgstr "没有什么要澄清的！"
 
-#: src/views/window.py:255
+#: src/views/window.py:257
 msgid "Nothing to export!"
 msgstr "没什么可导出的！"
 
-#: src/views/window.py:281 src/views/window.py:319
+#: src/views/window.py:283 src/views/window.py:321
 msgid "Clear all"
 msgstr "全部清除"
 
-#: src/views/window.py:381
+#: src/views/window.py:383
 msgid "Generating response"
 msgstr "生成响应"
 
-#: src/views/window.py:395 src/views/window.py:400
+#: src/views/window.py:397 src/views/window.py:410
 msgid "Sorry, I don't know what to say."
 msgstr "抱歉，我不知道该说什么。"
 
-#: src/views/window.py:441
+#: src/views/window.py:451
 msgid "human"
 msgstr "人类"
 
@@ -253,10 +269,6 @@ msgstr "通过创建新聊天或从侧边栏中选择一个开始"
 msgid "Message"
 msgstr "消息"
 
-#: src/views/window.blp:108
-msgid "Chat"
-msgstr "聊天"
-
 #: src/views/window.blp:156
 msgid "No Messages"
 msgstr "没有消息"
@@ -272,10 +284,6 @@ msgstr "无网络"
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
 msgstr "首先创建新的聊天"
-
-#: src/views/window.blp:243
-msgid "Open Emoji Picker"
-msgstr "打开表情选择器"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -315,11 +323,31 @@ msgstr "复制"
 msgid "Edit"
 msgstr "编辑"
 
-#: src/widgets/item.blp:112
+#: src/widgets/item.blp:117
 msgid "Remove"
 msgstr "移除"
 
-#: src/widgets/item.py:189
+#: src/widgets/item.py:219
+#, fuzzy
+#| msgid "Unable to save the Thread"
+msgid "Failed to save the image"
+msgstr "无法保存线程"
+
+#: src/widgets/item.py:221
+msgid "Image saved"
+msgstr ""
+
+#: src/widgets/item.py:231
+msgid "No image to save"
+msgstr ""
+
+#: src/widgets/item.py:235
+#, fuzzy
+#| msgid "Message"
+msgid "Save message"
+msgstr "消息"
+
+#: src/widgets/item.py:251
 msgid "Message copied"
 msgstr "消息已复制"
 
@@ -428,19 +456,25 @@ msgstr "您确定要删除此列表吗？"
 msgid "Thread Deleted"
 msgstr "线程已删除"
 
-#: src/main.py:262
+#: src/main.py:261
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr "请点击顶部的点菜单从首选项下载模型！"
 
-#: src/main.py:266
+#: src/main.py:265
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
 msgstr "大家好，我是 Bavarder，一个会聊天的AI"
 
-#: src/main.py:289
+#: src/main.py:288
 msgid "Please enable a provider from the Dot Menu"
 msgstr "请从点菜单启用提供商"
+
+#~ msgid "Export Thread ?"
+#~ msgstr "导出线程？"
+
+#~ msgid "Open Emoji Picker"
+#~ msgstr "打开表情选择器"
 
 #~ msgid "Set Title"
 #~ msgstr "选择标题"

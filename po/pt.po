@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-04 15:21+0200\n"
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
 "PO-Revision-Date: 2024-01-05 07:56+0000\n"
 "Last-Translator: N4taa <r0dr1g02m4r5d3v@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
@@ -28,7 +28,27 @@ msgstr ""
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: src/providers/base.py:79
+#: src/providers/base.py:8
+msgid "Image"
+msgstr ""
+
+#: src/providers/base.py:9 src/views/window.blp:108
+msgid "Chat"
+msgstr "Conversas"
+
+#: src/providers/base.py:10
+msgid "Voice"
+msgstr ""
+
+#: src/providers/base.py:11
+msgid "Text"
+msgstr ""
+
+#: src/providers/base.py:12
+msgid "Movie"
+msgstr ""
+
+#: src/providers/base.py:86
 msgid "How to get a token"
 msgstr "Como adquirir um token"
 
@@ -55,7 +75,7 @@ msgstr "Desculpe, não sei o que dizer! (Erro: {output})"
 msgid "API Key"
 msgstr "Chave de API"
 
-#: src/providers/provider_item.blp:12
+#: src/providers/provider_item.blp:18
 msgid "No preferences available"
 msgstr "Nenhuma configuração disponível"
 
@@ -79,21 +99,21 @@ msgstr ""
 msgid "Translate"
 msgstr "Traduzir"
 
-#: src/views/export_dialog.blp:6
-msgid "Export Thread ?"
-msgstr "Exportar Conversa ?"
+#: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
+msgid "Export Thread?"
+msgstr "Exportar conversa?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
 msgstr "Fechar"
 
-#: src/views/export_dialog.blp:54 src/views/window.py:286
-#: src/views/window.py:324
+#: src/views/export_dialog.blp:54 src/views/window.py:288
+#: src/views/window.py:326
 msgid "Export"
 msgstr "Exportar"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:311
+#: src/views/preferences_window.blp:19 src/views/window.py:313
 msgid "Models"
 msgstr "Modelos"
 
@@ -112,26 +132,26 @@ msgstr ""
 "desfeita!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:217 src/views/window.py:382
+#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
 #: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/views/preferences_window.py:78 src/views/window.py:218
+#: src/views/preferences_window.py:78 src/views/window.py:220
 #: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
 msgstr "Apagar"
 
-#: src/views/preferences_window.py:93 src/views/window.py:243
+#: src/views/preferences_window.py:93 src/views/window.py:245
 msgid "All chats cleared!"
 msgstr "Todas as conversas foram limpas!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:276 src/views/window.py:314 src/views/window.blp:299
+#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
 msgid "Preferences"
 msgstr "Preferências"
 
-#: src/views/preferences_window.blp:15 src/views/window.py:273
+#: src/views/preferences_window.blp:15 src/views/window.py:275
 msgid "Providers"
 msgstr "Provedores"
 
@@ -170,13 +190,9 @@ msgstr "Nome de Utilizador"
 msgid "Discard"
 msgstr "Descartar"
 
-#: src/views/save_dialog.blp:9
+#: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
 msgstr "Guardar"
-
-#: src/views/save_dialog.blp:13
-msgid "Export Thread?"
-msgstr "Exportar conversa?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -202,15 +218,15 @@ msgstr "Incapaz de salvar a Conversa"
 msgid "Thread successfully saved!"
 msgstr "Conversa salva com sucesso!"
 
-#: src/views/window.py:177
+#: src/views/window.py:179
 msgid "New chat"
 msgstr "Nova conversa"
 
-#: src/views/window.py:212
+#: src/views/window.py:214
 msgid "Delete All Chats"
 msgstr "Apagar Todas as Conversas"
 
-#: src/views/window.py:213
+#: src/views/window.py:215
 #, fuzzy
 #| msgid "Are you sure you want to delete this thread?"
 msgid ""
@@ -218,30 +234,30 @@ msgid ""
 "undone!"
 msgstr "De certeza que pretende apagar o lembrete?"
 
-#: src/views/window.py:229 src/views/window.py:245
+#: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
 msgstr ""
 
-#: src/views/window.py:255
+#: src/views/window.py:257
 msgid "Nothing to export!"
 msgstr ""
 
-#: src/views/window.py:281 src/views/window.py:319
+#: src/views/window.py:283 src/views/window.py:321
 #, fuzzy
 #| msgctxt "shortcut window"
 #| msgid "Clear"
 msgid "Clear all"
 msgstr "Limpar"
 
-#: src/views/window.py:381
+#: src/views/window.py:383
 msgid "Generating response"
 msgstr ""
 
-#: src/views/window.py:395 src/views/window.py:400
+#: src/views/window.py:397 src/views/window.py:410
 msgid "Sorry, I don't know what to say."
 msgstr ""
 
-#: src/views/window.py:441
+#: src/views/window.py:451
 msgid "human"
 msgstr "Humano"
 
@@ -270,10 +286,6 @@ msgstr ""
 msgid "Message"
 msgstr "Mensagem"
 
-#: src/views/window.blp:108
-msgid "Chat"
-msgstr "Conversas"
-
 #: src/views/window.blp:156
 #, fuzzy
 #| msgid "Message"
@@ -290,10 +302,6 @@ msgstr ""
 
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
-msgstr ""
-
-#: src/views/window.blp:243
-msgid "Open Emoji Picker"
 msgstr ""
 
 #: src/views/window.blp:259
@@ -334,11 +342,31 @@ msgstr "Cópia"
 msgid "Edit"
 msgstr "Editar"
 
-#: src/widgets/item.blp:112
+#: src/widgets/item.blp:117
 msgid "Remove"
 msgstr "Remover"
 
-#: src/widgets/item.py:189
+#: src/widgets/item.py:219
+#, fuzzy
+#| msgid "Unable to save the Thread"
+msgid "Failed to save the image"
+msgstr "Incapaz de salvar a Conversa"
+
+#: src/widgets/item.py:221
+msgid "Image saved"
+msgstr ""
+
+#: src/widgets/item.py:231
+msgid "No image to save"
+msgstr ""
+
+#: src/widgets/item.py:235
+#, fuzzy
+#| msgid "Message"
+msgid "Save message"
+msgstr "Mensagem"
+
+#: src/widgets/item.py:251
 #, fuzzy
 #| msgid "Message"
 msgid "Message copied"
@@ -449,19 +477,22 @@ msgstr "De certeza que pretende apagar o lembrete?"
 msgid "Thread Deleted"
 msgstr ""
 
-#: src/main.py:262
+#: src/main.py:261
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
 
-#: src/main.py:266
+#: src/main.py:265
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
 msgstr ""
 
-#: src/main.py:289
+#: src/main.py:288
 msgid "Please enable a provider from the Dot Menu"
 msgstr ""
+
+#~ msgid "Export Thread ?"
+#~ msgstr "Exportar Conversa ?"
 
 #, fuzzy, python-format
 #~| msgid "Chat"

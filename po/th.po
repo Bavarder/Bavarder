@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-04 15:21+0200\n"
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
 "PO-Revision-Date: 2024-02-02 01:56+0000\n"
 "Last-Translator: yuttct <yuttct@yahoo.com>\n"
 "Language-Team: Thai <https://translate.codeberg.org/projects/bavarder/"
@@ -26,7 +26,27 @@ msgstr ""
 msgid "Bavarder"
 msgstr "แชท"
 
-#: src/providers/base.py:79
+#: src/providers/base.py:8
+msgid "Image"
+msgstr ""
+
+#: src/providers/base.py:9 src/views/window.blp:108
+msgid "Chat"
+msgstr "พูดคุย"
+
+#: src/providers/base.py:10
+msgid "Voice"
+msgstr ""
+
+#: src/providers/base.py:11
+msgid "Text"
+msgstr ""
+
+#: src/providers/base.py:12
+msgid "Movie"
+msgstr ""
+
+#: src/providers/base.py:86
 msgid "How to get a token"
 msgstr "วิธีรับโทเค็น"
 
@@ -53,7 +73,7 @@ msgstr "ขออภัย ฉันไม่รู้จะพูดอะไ�
 msgid "API Key"
 msgstr "คีย์ API"
 
-#: src/providers/provider_item.blp:12
+#: src/providers/provider_item.blp:18
 msgid "No preferences available"
 msgstr "ไม่มีค่ากำหนดที่ใช้ได้"
 
@@ -77,21 +97,21 @@ msgstr "บรรจุภัณฑ์"
 msgid "Translate"
 msgstr "แปลภาษา"
 
-#: src/views/export_dialog.blp:6
-msgid "Export Thread ?"
-msgstr "ส่งออกเธรด ?"
+#: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
+msgid "Export Thread?"
+msgstr "ส่งออกเธรด?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
 msgstr "ปิด"
 
-#: src/views/export_dialog.blp:54 src/views/window.py:286
-#: src/views/window.py:324
+#: src/views/export_dialog.blp:54 src/views/window.py:288
+#: src/views/window.py:326
 msgid "Export"
 msgstr "ส่งออก"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:311
+#: src/views/preferences_window.blp:19 src/views/window.py:313
 msgid "Models"
 msgstr "โมเดล"
 
@@ -108,26 +128,26 @@ msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบกระทู้ทั้งหมด? สิ่งนี้ไม่สามารถยกเลิกได้!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:217 src/views/window.py:382
+#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
 #: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
 msgid "Cancel"
 msgstr "ยกเลิก"
 
-#: src/views/preferences_window.py:78 src/views/window.py:218
+#: src/views/preferences_window.py:78 src/views/window.py:220
 #: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
 msgstr "ลบ"
 
-#: src/views/preferences_window.py:93 src/views/window.py:243
+#: src/views/preferences_window.py:93 src/views/window.py:245
 msgid "All chats cleared!"
 msgstr "ล้างแชททั้งหมดแล้ว!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:276 src/views/window.py:314 src/views/window.blp:299
+#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
 msgid "Preferences"
 msgstr "การตั้งค่า"
 
-#: src/views/preferences_window.blp:15 src/views/window.py:273
+#: src/views/preferences_window.blp:15 src/views/window.py:275
 msgid "Providers"
 msgstr "ผู้ให้บริการ"
 
@@ -166,13 +186,9 @@ msgstr "ชื่อผู้ใช้"
 msgid "Discard"
 msgstr "ทิ้ง"
 
-#: src/views/save_dialog.blp:9
+#: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
 msgstr "บันทึก"
-
-#: src/views/save_dialog.blp:13
-msgid "Export Thread?"
-msgstr "ส่งออกเธรด?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -198,43 +214,41 @@ msgstr "ไม่สามารถบันทึกกระทู้ได้
 msgid "Thread successfully saved!"
 msgstr "บันทึกชุดข้อความสำเร็จแล้ว!"
 
-#: src/views/window.py:177
+#: src/views/window.py:179
 msgid "New chat"
 msgstr "แชทใหม่"
 
-#: src/views/window.py:212
+#: src/views/window.py:214
 msgid "Delete All Chats"
 msgstr "ลบแชททั้งหมด"
 
-#: src/views/window.py:213
+#: src/views/window.py:215
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
-msgstr ""
-"คุณแน่ใจหรือไม่ว่าต้องการลบการแชททั้งหมดในกระทู้นี้ "
-"สิ่งนี้ไม่สามารถยกเลิกได้!"
+msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบการแชททั้งหมดในกระทู้นี้ สิ่งนี้ไม่สามารถยกเลิกได้!"
 
-#: src/views/window.py:229 src/views/window.py:245
+#: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
 msgstr "ไม่มีอะไรต้องเคลียร์!"
 
-#: src/views/window.py:255
+#: src/views/window.py:257
 msgid "Nothing to export!"
 msgstr "ไม่มีอะไรจะส่งออก!"
 
-#: src/views/window.py:281 src/views/window.py:319
+#: src/views/window.py:283 src/views/window.py:321
 msgid "Clear all"
 msgstr "ลบทั้งหมด"
 
-#: src/views/window.py:381
+#: src/views/window.py:383
 msgid "Generating response"
 msgstr "กำลังสร้างการตอบสนอง"
 
-#: src/views/window.py:395 src/views/window.py:400
+#: src/views/window.py:397 src/views/window.py:410
 msgid "Sorry, I don't know what to say."
 msgstr "ขออภัย ฉันไม่รู้จะพูดอะไร"
 
-#: src/views/window.py:441
+#: src/views/window.py:451
 msgid "human"
 msgstr "มนุษย์"
 
@@ -259,10 +273,6 @@ msgstr "เริ่มต้นด้วยการสร้างแชทใ
 msgid "Message"
 msgstr "ข้อความ"
 
-#: src/views/window.blp:108
-msgid "Chat"
-msgstr "พูดคุย"
-
 #: src/views/window.blp:156
 msgid "No Messages"
 msgstr "ไม่มีข้อความ"
@@ -278,10 +288,6 @@ msgstr "ไม่มีอินเทอร์เน็ต"
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
 msgstr "เริ่มต้นด้วยการสร้างแชทใหม่"
-
-#: src/views/window.blp:243
-msgid "Open Emoji Picker"
-msgstr "เปิดเครื่องมือเลือกอีโมจิ"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -321,11 +327,31 @@ msgstr "คัดลอก"
 msgid "Edit"
 msgstr "แก้ไข"
 
-#: src/widgets/item.blp:112
+#: src/widgets/item.blp:117
 msgid "Remove"
 msgstr "ลบ"
 
-#: src/widgets/item.py:189
+#: src/widgets/item.py:219
+#, fuzzy
+#| msgid "Unable to save the Thread"
+msgid "Failed to save the image"
+msgstr "ไม่สามารถบันทึกกระทู้ได้"
+
+#: src/widgets/item.py:221
+msgid "Image saved"
+msgstr ""
+
+#: src/widgets/item.py:231
+msgid "No image to save"
+msgstr ""
+
+#: src/widgets/item.py:235
+#, fuzzy
+#| msgid "Message"
+msgid "Save message"
+msgstr "ข้อความ"
+
+#: src/widgets/item.py:251
 msgid "Message copied"
 msgstr "คัดลอกข้อความแล้ว"
 
@@ -349,8 +375,7 @@ msgstr "อุณหภูมิ"
 msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
-msgstr ""
-"อุณหภูมิของโมเดล ค่าที่มากขึ้นจะเพิ่มความคิดสร้างสรรค์แต่ลดความเป็นจริงลง"
+msgstr "อุณหภูมิของโมเดล ค่าที่มากขึ้นจะเพิ่มความคิดสร้างสรรค์แต่ลดความเป็นจริงลง"
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
@@ -361,8 +386,8 @@ msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
-"สุ่มตัวอย่างจากโทเค็นที่มีแนวโน้มมากที่สุด top_k ในแต่ละขั้นตอนการสร้าง "
-"ตั้งค่านี้เป็น 1 สำหรับการถอดรหัสแบบละโมบ"
+"สุ่มตัวอย่างจากโทเค็นที่มีแนวโน้มมากที่สุด top_k ในแต่ละขั้นตอนการสร้าง ตั้งค่านี้เป็น 1 "
+"สำหรับการถอดรหัสแบบละโมบ"
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
@@ -373,8 +398,7 @@ msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
-"สุ่มตัวอย่างในแต่ละขั้นตอนการสร้างจากโทเค็นที่มีแนวโน้มสูงที่สุดซึ่งความน่าจะ"
-"เป็นรวมกันเป็น top_p"
+"สุ่มตัวอย่างในแต่ละขั้นตอนการสร้างจากโทเค็นที่มีแนวโน้มสูงที่สุดซึ่งความน่าจะเป็นรวมกันเป็น top_p"
 
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
@@ -439,19 +463,25 @@ msgstr "คุณแน่ใจไหมว่าต้องการลบส
 msgid "Thread Deleted"
 msgstr ""
 
-#: src/main.py:262
+#: src/main.py:261
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
 
-#: src/main.py:266
+#: src/main.py:265
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
 msgstr ""
 
-#: src/main.py:289
+#: src/main.py:288
 msgid "Please enable a provider from the Dot Menu"
 msgstr ""
+
+#~ msgid "Export Thread ?"
+#~ msgstr "ส่งออกเธรด ?"
+
+#~ msgid "Open Emoji Picker"
+#~ msgstr "เปิดเครื่องมือเลือกอีโมจิ"
 
 #~ msgid "Clear prompt after send"
 #~ msgstr "ล้างพร้อมต์หลังจากส่ง"

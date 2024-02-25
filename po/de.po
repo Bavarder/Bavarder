@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-04 15:21+0200\n"
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
 "PO-Revision-Date: 2023-10-16 01:53+0000\n"
 "Last-Translator: Hartmut Goebel <h.goebel@crazy-compilers.com>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
@@ -30,7 +30,27 @@ msgstr ""
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: src/providers/base.py:79
+#: src/providers/base.py:8
+msgid "Image"
+msgstr ""
+
+#: src/providers/base.py:9 src/views/window.blp:108
+msgid "Chat"
+msgstr "Unterhaltung"
+
+#: src/providers/base.py:10
+msgid "Voice"
+msgstr ""
+
+#: src/providers/base.py:11
+msgid "Text"
+msgstr ""
+
+#: src/providers/base.py:12
+msgid "Movie"
+msgstr ""
+
+#: src/providers/base.py:86
 msgid "How to get a token"
 msgstr "Wie Sie einen Schlüssel bekommen"
 
@@ -58,7 +78,7 @@ msgstr "Entschuldige, ich weiß nicht, was ich sagen soll! (Fehler: {output})"
 msgid "API Key"
 msgstr "API Schlüssel"
 
-#: src/providers/provider_item.blp:12
+#: src/providers/provider_item.blp:18
 msgid "No preferences available"
 msgstr "Keine Einstellungen verfügbar"
 
@@ -82,21 +102,21 @@ msgstr "Packetierung"
 msgid "Translate"
 msgstr "Übersetzt"
 
-#: src/views/export_dialog.blp:6
-msgid "Export Thread ?"
+#: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
+msgid "Export Thread?"
 msgstr "Gespräch exportieren?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
 msgstr "Schließen"
 
-#: src/views/export_dialog.blp:54 src/views/window.py:286
-#: src/views/window.py:324
+#: src/views/export_dialog.blp:54 src/views/window.py:288
+#: src/views/window.py:326
 msgid "Export"
 msgstr "Exportieren"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:311
+#: src/views/preferences_window.blp:19 src/views/window.py:313
 msgid "Models"
 msgstr "Modelle"
 
@@ -115,26 +135,26 @@ msgstr ""
 "rückgängig gemacht werden!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:217 src/views/window.py:382
+#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
 #: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/views/preferences_window.py:78 src/views/window.py:218
+#: src/views/preferences_window.py:78 src/views/window.py:220
 #: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
 msgstr "Löschen"
 
-#: src/views/preferences_window.py:93 src/views/window.py:243
+#: src/views/preferences_window.py:93 src/views/window.py:245
 msgid "All chats cleared!"
 msgstr "Alle Unterhaltungen geleert!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:276 src/views/window.py:314 src/views/window.blp:299
+#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
 msgid "Preferences"
 msgstr "Einstellungen"
 
-#: src/views/preferences_window.blp:15 src/views/window.py:273
+#: src/views/preferences_window.blp:15 src/views/window.py:275
 msgid "Providers"
 msgstr "Anbieter"
 
@@ -170,13 +190,9 @@ msgstr "Benutzername"
 msgid "Discard"
 msgstr "Verwerfen"
 
-#: src/views/save_dialog.blp:9
+#: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
 msgstr "Speichern"
-
-#: src/views/save_dialog.blp:13
-msgid "Export Thread?"
-msgstr "Gespräch exportieren?"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -202,15 +218,15 @@ msgstr "Gespräch konnte nicht gespeichert werden"
 msgid "Thread successfully saved!"
 msgstr "Gespräch erfolgreich gespeichert!"
 
-#: src/views/window.py:177
+#: src/views/window.py:179
 msgid "New chat"
 msgstr "Neue Unterhaltung"
 
-#: src/views/window.py:212
+#: src/views/window.py:214
 msgid "Delete All Chats"
 msgstr "Alle Unterhaltungen löschen"
 
-#: src/views/window.py:213
+#: src/views/window.py:215
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
@@ -218,27 +234,27 @@ msgstr ""
 "Sicher, dass die gesamte Unterhaltung gelöscht werden soll? Dies kann nicht "
 "rückgängig gemacht werden!"
 
-#: src/views/window.py:229 src/views/window.py:245
+#: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
 msgstr "Nichts zu leeren!"
 
-#: src/views/window.py:255
+#: src/views/window.py:257
 msgid "Nothing to export!"
 msgstr "Nichts zu exportieren!"
 
-#: src/views/window.py:281 src/views/window.py:319
+#: src/views/window.py:283 src/views/window.py:321
 msgid "Clear all"
 msgstr "Alles leeren"
 
-#: src/views/window.py:381
+#: src/views/window.py:383
 msgid "Generating response"
 msgstr "Antwort generieren"
 
-#: src/views/window.py:395 src/views/window.py:400
+#: src/views/window.py:397 src/views/window.py:410
 msgid "Sorry, I don't know what to say."
 msgstr "Entschuldige, ich weiß nicht, was ich sagen soll."
 
-#: src/views/window.py:441
+#: src/views/window.py:451
 msgid "human"
 msgstr "Mensch"
 
@@ -265,10 +281,6 @@ msgstr ""
 msgid "Message"
 msgstr "Nachricht"
 
-#: src/views/window.blp:108
-msgid "Chat"
-msgstr "Unterhaltung"
-
 #: src/views/window.blp:156
 msgid "No Messages"
 msgstr "Keine Nachrichten"
@@ -284,10 +296,6 @@ msgstr "Keine Netzwerkverbindung"
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
 msgstr "Um anzufangen, neue Unterhaltung erstellen"
-
-#: src/views/window.blp:243
-msgid "Open Emoji Picker"
-msgstr "Emoji-Auswahl öffnen"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -327,11 +335,31 @@ msgstr "Kopieren"
 msgid "Edit"
 msgstr "Bearbeiten"
 
-#: src/widgets/item.blp:112
+#: src/widgets/item.blp:117
 msgid "Remove"
 msgstr "Entfernen"
 
-#: src/widgets/item.py:189
+#: src/widgets/item.py:219
+#, fuzzy
+#| msgid "Unable to save the Thread"
+msgid "Failed to save the image"
+msgstr "Gespräch konnte nicht gespeichert werden"
+
+#: src/widgets/item.py:221
+msgid "Image saved"
+msgstr ""
+
+#: src/widgets/item.py:231
+msgid "No image to save"
+msgstr ""
+
+#: src/widgets/item.py:235
+#, fuzzy
+#| msgid "Message"
+msgid "Save message"
+msgstr "Nachricht"
+
+#: src/widgets/item.py:251
 msgid "Message copied"
 msgstr "Nachricht kopiert"
 
@@ -451,7 +479,7 @@ msgstr "Sicher, dass dieses Gespräch gelöscht werden soll?"
 msgid "Thread Deleted"
 msgstr "Gespräch gelöscht"
 
-#: src/main.py:262
+#: src/main.py:261
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
@@ -459,13 +487,19 @@ msgstr ""
 "Bitte ein Modell von den Einstellungen durch Klicken des Punktmenüs oben "
 "laden!"
 
-#: src/main.py:266
+#: src/main.py:265
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
 msgstr "Hallo, ich bin Bavarder, eine Plauder-AI"
 
-#: src/main.py:289
+#: src/main.py:288
 msgid "Please enable a provider from the Dot Menu"
 msgstr "Bitte vom Punktmenü einen Anbieter einschalten"
+
+#~ msgid "Export Thread ?"
+#~ msgstr "Gespräch exportieren?"
+
+#~ msgid "Open Emoji Picker"
+#~ msgstr "Emoji-Auswahl öffnen"
 
 #~ msgid "Set Title"
 #~ msgstr "Titel festlegen"
