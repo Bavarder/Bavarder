@@ -33,3 +33,52 @@
 .sourceview {
   font-family: monospace;
 }
+
+.tag {
+  border-radius: 20px;
+  background-color: alpha(currentColor, 0.07);
+  padding: 5px 13px;
+  margin: 0 2px;
+}
+
+badge-gray {
+  background-color: #deddda;
+  color: #3d3846;
+}
+.badge-silver {
+  background-color: #deddda;
+  color: #3d3846;
+}
+.badge-gold {
+  background-color: #f6d32d;
+  color: #3d3846;
+}
+.badge-copper {
+  background-color: #a47e3c;
+}
+.badge-bronze {
+  background-color: #a47e3c;
+}
+.badge-iron {
+  background-color: #3d3846;
+  color: #deddda;
+}
+.badge-steel {
+  background-color: #3d3846;
+  color: #deddda;
+}
+.badge-tin {
+  background-color: #deddda;
+  color: #3d3846;
+}
+.badge-aluminum {
+  background-color: #deddda;
+  color: #3d3846;
+}
+.badge-cobalt {
+  background-color: #3584e4;
+}
+.badge-titanium {
+  background-color: #3d3846;
+  color: #deddda;
+}

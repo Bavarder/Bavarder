@@ -2,11 +2,18 @@ import unicodedata
 import re
 from typing import List, Dict
 from gi.repository import Gtk, Adw, GLib
+from enum import Enum
 
-    
+class ProviderType(Enum):
+    IMAGE = _("Image")
+    CHAT = _("Chat")
+    VOICE = _("Voice")
+    TEXT = _("Text")
+    MOVIE = _("Movie")
 class BaseProvider:
     name: str
     description: str = ""
+    provider_type: ProviderType = ProviderType.CHAT
     languages: List[str] = []
     developer_name: str = "0xMRTT"
     developers = ["0xMRTT https://github.com/0xMRTT"]

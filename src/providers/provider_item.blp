@@ -8,6 +8,12 @@ template $Provider : Adw.ExpanderRow {
         valign: center;
     }
 
+    [suffix]
+    Label provider_type {
+        valign: center;
+        styles [ "tag" ]
+    }
+
     Adw.ActionRow no_preferences_available {
         title: _("No preferences available");
     }
