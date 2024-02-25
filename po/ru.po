@@ -8,13 +8,15 @@
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # nikrtyd <nikrtyd@gmail.com>, 2023.
 # David Lapshin <ddaudix@gmail.com>, 2023.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2023-12-16 16:56+0000\n"
-"Last-Translator: David Lapshin <ddaudix@gmail.com>\n"
+"PO-Revision-Date: 2024-02-25 13:48+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Russian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ru/>\n"
 "Language: ru\n"
@@ -23,7 +25,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.2.1\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -32,7 +34,7 @@ msgstr "Bavarder"
 
 #: src/providers/base.py:8
 msgid "Image"
-msgstr ""
+msgstr "Изображение"
 
 #: src/providers/base.py:9 src/views/window.blp:108
 msgid "Chat"
@@ -40,11 +42,11 @@ msgstr "Чат"
 
 #: src/providers/base.py:10
 msgid "Voice"
-msgstr ""
+msgstr "Звук"
 
 #: src/providers/base.py:11
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 #: src/providers/base.py:12
 msgid "Movie"
