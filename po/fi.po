@@ -6,13 +6,15 @@
 # artnay <jiri.gronroos@iki.fi>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # jaahas <jaaahas@proton.me>, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-02-24 02:56+0000\n"
-"Last-Translator: jaahas <jaaahas@proton.me>\n"
+"PO-Revision-Date: 2024-02-25 13:48+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fi/>\n"
 "Language: fi\n"
@@ -29,7 +31,7 @@ msgstr "Bavarder"
 
 #: src/providers/base.py:8
 msgid "Image"
-msgstr ""
+msgstr "Kuva"
 
 #: src/providers/base.py:9 src/views/window.blp:108
 msgid "Chat"
@@ -37,11 +39,11 @@ msgstr "Chatti"
 
 #: src/providers/base.py:10
 msgid "Voice"
-msgstr ""
+msgstr "Ääni"
 
 #: src/providers/base.py:11
 msgid "Text"
-msgstr ""
+msgstr "Teksti"
 
 #: src/providers/base.py:12
 msgid "Movie"
