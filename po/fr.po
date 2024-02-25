@@ -4,7 +4,7 @@
 # Bavarder, 2023.
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
-# 0xMRTT <0xmrtt@proton.me>, 2023.
+# 0xMRTT <0xmrtt@proton.me>, 2023, 2024.
 # muznyo <codeberg.vqtek@simplelogin.com>, 2023.
 # rene-coty <irenee.thirion@e.email>, 2023.
 # jibecfed <jean-baptiste@holcroft.fr>, 2023.
@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2023-11-27 06:13+0000\n"
+"PO-Revision-Date: 2024-02-25 13:48+0000\n"
 "Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
 "Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fr/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.1\n"
+"X-Generator: Weblate 5.4\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -31,7 +31,7 @@ msgstr "Bavarder"
 
 #: src/providers/base.py:8
 msgid "Image"
-msgstr ""
+msgstr "Image"
 
 #: src/providers/base.py:9 src/views/window.blp:108
 msgid "Chat"
@@ -39,15 +39,15 @@ msgstr "Discussion"
 
 #: src/providers/base.py:10
 msgid "Voice"
-msgstr ""
+msgstr "Audio"
 
 #: src/providers/base.py:11
 msgid "Text"
-msgstr ""
+msgstr "Texte"
 
 #: src/providers/base.py:12
 msgid "Movie"
-msgstr ""
+msgstr "Vidéo"
 
 #: src/providers/base.py:86
 msgid "How to get a token"
@@ -338,24 +338,20 @@ msgid "Remove"
 msgstr "Retirer"
 
 #: src/widgets/item.py:219
-#, fuzzy
-#| msgid "Unable to save the Thread"
 msgid "Failed to save the image"
-msgstr "Impossible d’enregistrer le fil"
+msgstr "Impossible d’enregistrer l'image"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "Image enregistré"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "Aucune image à enregistrer"
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "Message"
+msgstr "Message enregistré"
 
 #: src/widgets/item.py:251
 msgid "Message copied"
