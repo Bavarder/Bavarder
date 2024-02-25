@@ -14,6 +14,8 @@ from .stablediffusion import StableDiffusionProvider
 from .analogdiffusion import AnalogDiffusionProvider
 from .nitrodiffusion import NitroDiffusionProvider
 from .openjourney import OpenJourneyProvider
+from .openaiimage import DallE2, DallE3
+from .portraitplus import PortraitPlusProvider
 
 PROVIDERS = {
     AIHordeProvider,
@@ -29,6 +31,9 @@ PROVIDERS = {
     AnalogDiffusionProvider,
     NitroDiffusionProvider,
     OpenJourneyProvider,
+    DallE2,
+    DallE3,
+    PortraitPlusProvider,
     # StableBeluga2Provider,
     # HuggingFaceOpenAssistantSFT1PythiaProvider,
     # RobertaSquad2Provider
