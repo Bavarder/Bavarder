@@ -5,16 +5,15 @@
 #
 # ioghjog <michal.d1191@gmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
-# Eryk Michalak <gnu.ewm@protonmail.com>, 2023.
+# Eryk Michalak <gnu.ewm@protonmail.com>, 2023, 2024.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-02-25 13:48+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-03-09 14:13+0000\n"
+"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pl/>\n"
 "Language: pl\n"
@@ -48,7 +47,7 @@ msgstr "Tekst"
 
 #: src/providers/base.py:12
 msgid "Movie"
-msgstr ""
+msgstr "Film"
 
 #: src/providers/base.py:86
 msgid "How to get a token"
@@ -335,24 +334,20 @@ msgid "Remove"
 msgstr "Usuń"
 
 #: src/widgets/item.py:219
-#, fuzzy
-#| msgid "Unable to save the Thread"
 msgid "Failed to save the image"
-msgstr "Nie udało się zapisać wątku"
+msgstr "Nie udało się zapisać obrazu"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "Zapisano obraz"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "Brak obrazów do zapisania"
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "Wiadomość"
+msgstr "Zapisz wiadomość"
 
 #: src/widgets/item.py:251
 msgid "Message copied"
