@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-03-20 04:53+0000\n"
+"PO-Revision-Date: 2024-03-20 22:53+0000\n"
 "Last-Translator: Mumulhl <mumulhl@duck.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.codeberg.org/"
 "projects/bavarder/bavarder/zh_Hant/>\n"
@@ -230,23 +230,23 @@ msgstr "您確定要刪除該執行緒中的所有聊天嗎？ 這無法挽回�
 
 #: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "沒什麼可清除的！"
 
 #: src/views/window.py:257
 msgid "Nothing to export!"
-msgstr ""
+msgstr "沒什麼可匯出的！"
 
 #: src/views/window.py:283 src/views/window.py:321
 msgid "Clear all"
-msgstr ""
+msgstr "全部清除"
 
 #: src/views/window.py:383
 msgid "Generating response"
-msgstr ""
+msgstr "生成響應"
 
 #: src/views/window.py:397 src/views/window.py:410
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "抱歉，我不知道該說什麼。"
 
 #: src/views/window.py:451
 msgid "human"
@@ -255,43 +255,39 @@ msgstr "人類"
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:184 src/views/window.blp:185
 msgid "New Chat"
-msgstr ""
+msgstr "新聊天"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
 msgstr "主選單"
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chats"
-msgstr "聊天"
+msgstr "無聊天"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "透過建立新聊天或從側邊欄中選擇一個開始"
 
 #: src/views/window.blp:96
 msgid "Message"
 msgstr "訊息"
 
 #: src/views/window.blp:156
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "訊息"
+msgstr "沒有訊息"
 
 #: src/views/window.blp:157
 msgid "Send first message to get started"
-msgstr ""
+msgstr "傳送第一條訊息即可開始"
 
 #: src/views/window.blp:162
 msgid "No Internet"
-msgstr ""
+msgstr "無網路"
 
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "首先建立新的聊天"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -311,17 +307,17 @@ msgstr "完成"
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "下載模型"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "正在下載 %s 模型"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "模型 %s 已下載！"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
@@ -337,39 +333,35 @@ msgstr "移除"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
-msgstr ""
+msgstr "無法儲存影象"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "影象已儲存"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "沒有影象可儲存"
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "訊息"
+msgstr "儲存訊息"
 
 #: src/widgets/item.py:251
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "訊息"
+msgstr "訊息已複製"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "刪除模型"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "最大 Token"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "要生成的最大 Token。"
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
@@ -379,70 +371,69 @@ msgstr "溫度"
 msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
-msgstr ""
+msgstr "模型溫度。 較大的值會增加創造力，但會降低準確性。"
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
-msgstr ""
+msgstr "在每個生成步驟中從 top_k 最可能的標記中隨機取樣。 將其設定為 1 "
+"以進行貪婪解碼。"
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
-msgstr ""
+msgstr "Top P"
 
 #: src/widgets/model_item.blp:60
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
-msgstr ""
+msgstr "在每個生成步驟中從最有可能的標記中隨機取樣，其機率總計為 top_p。"
 
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
-msgstr ""
+msgstr "重複處罰"
 
 #: src/widgets/model_item.blp:75
 msgid ""
 "Penalize the model for repetition. Higher values result in less repetition."
-msgstr ""
+msgstr "對模型的重複進行懲罰。數值越大，重複越少。"
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
-msgstr ""
+msgstr "批次大小"
 
 #: src/widgets/model_item.blp:90
 msgid ""
 "Number of prompt tokens processed in parallel. Larger values decrease "
 "latency but increase resource requirements."
-msgstr ""
+msgstr "並行處理的提示 token 數量。數值越大，延遲越短，但所需資源越多。"
 
 #: src/widgets/model_item.blp:103
 msgid "Repeat Last N"
-msgstr ""
+msgstr "重複最後 N 個"
 
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
+msgstr "在模型生成歷史中應用重複懲罰的程度。 "
 
 #: src/widgets/model_item.blp:117
-#, fuzzy
-#| msgid "Prompt"
 msgid "System Prompt"
-msgstr "提示"
+msgstr "系統提示"
 
 #: src/widgets/model_item.py:64
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "模型 %s 已刪除！"
 
 #: src/widgets/thread_item.blp:23 src/widgets/thread_item.py:75
 #: src/widgets/thread_item.py:80
 msgid "Edit Title"
-msgstr ""
+msgstr "編輯標題"
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
@@ -450,11 +441,11 @@ msgstr "星級"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "標題已編輯"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr ""
+msgstr "刪除執行緒"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
@@ -462,21 +453,21 @@ msgstr "您確定要刪除嗎？"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr ""
+msgstr "執行緒已刪除"
 
 #: src/main.py:261
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
-msgstr ""
+msgstr "請點選頂部的點選單從首選項下載模型！"
 
 #: src/main.py:265
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr ""
+msgstr "大家好，我是 Bavarder，一個會聊天的AI"
 
 #: src/main.py:288
 msgid "Please enable a provider from the Dot Menu"
-msgstr ""
+msgstr "請從點選單啟用提供商"
 
 #~ msgid "Clear prompt after send"
 #~ msgstr "送出後清除提示"
