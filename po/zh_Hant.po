@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-03-20 22:53+0000\n"
+"PO-Revision-Date: 2024-03-22 05:18+0000\n"
 "Last-Translator: Mumulhl <mumulhl@duck.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.codeberg.org/"
 "projects/bavarder/bavarder/zh_Hant/>\n"
@@ -68,9 +68,7 @@ msgstr ""
 #: src/providers/hfbasechat.py:50
 #, python-brace-format
 msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr ""
-"抱歉，我不知道該說什麼！(錯誤:\n"
-"{output})"
+msgstr "抱歉，我不知道該說什麼！(錯誤: {output})"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
