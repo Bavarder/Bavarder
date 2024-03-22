@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-03-20 22:53+0000\n"
+"PO-Revision-Date: 2024-03-23 05:18+0000\n"
 "Last-Translator: aei <aei@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ar/>\n"
@@ -43,11 +43,11 @@ msgstr "صوت"
 
 #: src/providers/base.py:11
 msgid "Text"
-msgstr ""
+msgstr "نص"
 
 #: src/providers/base.py:12
 msgid "Movie"
-msgstr ""
+msgstr "فلم"
 
 #: src/providers/base.py:86
 msgid "How to get a token"
@@ -55,7 +55,7 @@ msgstr "كيفية التحصل على توكن"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
-msgstr ""
+msgstr "تحدَّث مع قطَّة"
 
 #: src/providers/hfbasechat.py:45
 msgid ""
