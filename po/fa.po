@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-02-25 13:48+0000\n"
+"PO-Revision-Date: 2024-04-29 13:18+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 "Language-Team: Persian <https://translate.codeberg.org/projects/bavarder/"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.5.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -42,7 +42,7 @@ msgstr "صدا"
 
 #: src/providers/base.py:11
 msgid "Text"
-msgstr ""
+msgstr "متن"
 
 #: src/providers/base.py:12
 msgid "Movie"
@@ -81,6 +81,8 @@ msgstr ""
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr ""
+"مترجم: علی قنواتیان (Translated by Ali Ghanavatia). با تشکر از ابوالفضل "
+"امیدی و مسلم بهزادی (Special thanks to Abolfazl Omidi and Moslem Behzadi)"
 
 #: src/views/about_window.py:42
 #, fuzzy
