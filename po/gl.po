@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-04-29 13:18+0000\n"
+"PO-Revision-Date: 2024-05-08 07:53+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 "Language-Team: Galician <https://translate.codeberg.org/projects/bavarder/"
@@ -394,7 +394,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr ""
+msgstr "Temperatura"
 
 #: src/widgets/model_item.blp:31
 msgid ""
