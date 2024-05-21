@@ -8,14 +8,14 @@
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023, 2024.
+# Umeaman <Umeaman@users.noreply.translate.codeberg.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-02-25 13:48+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-05-21 13:18+0000\n"
+"Last-Translator: Umeaman <Umeaman@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
 "Language: sv\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -48,7 +48,7 @@ msgstr "text"
 
 #: src/providers/base.py:12
 msgid "Movie"
-msgstr ""
+msgstr "Film"
 
 #: src/providers/base.py:86
 msgid "How to get a token"
@@ -58,7 +58,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with a Cat"
-msgstr "Chatta med en AI"
+msgstr "Småprata med en Katt"
 
 #: src/providers/hfbasechat.py:45
 msgid ""
@@ -68,31 +68,30 @@ msgid ""
 msgstr ""
 
 #: src/providers/hfbasechat.py:50
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr ""
+msgstr "Ledsen, men jag vet inte vad jag ska säga! (Fel: {output})"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
-msgstr ""
+msgstr "API-nyckel"
 
 #: src/providers/provider_item.blp:18
+#, fuzzy
 msgid "No preferences available"
-msgstr ""
+msgstr "Inga egenskaper tillgängliga"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "skøldis <jellybean@turtle.garden>"
 
 #: src/views/about_window.py:42
-#, fuzzy
-#| msgid "Chit-chat with an AI"
 msgid "Chit-Chat with AI"
-msgstr "Chatta med en AI"
+msgstr "Småprata med AI"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Upphovsrätt © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
@@ -103,8 +102,9 @@ msgid "Translate"
 msgstr "Översätt"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
+#, fuzzy
 msgid "Export Thread?"
-msgstr ""
+msgstr "Exportera tråd?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -120,21 +120,20 @@ msgstr "Exportera"
 #, fuzzy
 #| msgid "Model"
 msgid "Models"
-msgstr "Läge"
+msgstr "Modeller"
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "Lista över tillgängliga modeller"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "Ta bort alla trådar"
 
 #: src/views/preferences_window.py:73
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Är du säker på att du vill ta bort detta?"
+msgstr ""
+"Är du säker på att du vill ta bort alla trådar? Det här kan inte ångras!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
@@ -149,7 +148,7 @@ msgstr "Radera"
 
 #: src/views/preferences_window.py:93 src/views/window.py:245
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Alla chattar rensades!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
@@ -165,36 +164,31 @@ msgid "Miscellaneous"
 msgstr "Diverse"
 
 #: src/views/preferences_window.blp:31
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all threads"
-msgstr "Rensa"
+msgstr "Rensa alla trådar"
 
 #: src/views/preferences_window.blp:35
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear"
 msgstr "Rensa"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr ""
+msgstr "Det här kommer att rensa alla trådar från databasen."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
 msgstr "Namn"
 
 #: src/views/preferences_window.blp:47
+#, fuzzy
 msgid "Bot name"
-msgstr ""
+msgstr "Namn på boten"
 
 #: src/views/preferences_window.blp:53
 #, fuzzy
 #| msgid "User"
 msgid "User name"
-msgstr "Användare"
+msgstr "Namn på användaren"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -214,7 +208,7 @@ msgstr "Plats"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "Exporteringen av tråden kommer att sparas i den här mappen."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -222,50 +216,47 @@ msgstr "Välj en katalog"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "Kunde inte spara tråden"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "Sparandet av tråden lyckades!"
 
 #: src/views/window.py:179
 msgid "New chat"
-msgstr ""
+msgstr "Ny chatt"
 
 #: src/views/window.py:214
 msgid "Delete All Chats"
-msgstr ""
+msgstr "Ta bort alla chattar"
 
 #: src/views/window.py:215
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
-msgstr "Är du säker på att du vill ta bort detta?"
+msgstr ""
+"Är du säker på att du vill ta bort alla chattar i den här tråden? Det här "
+"kan inte ångras!"
 
 #: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "Ingenting att rensa!"
 
 #: src/views/window.py:257
 msgid "Nothing to export!"
-msgstr ""
+msgstr "Ingenting att exportera!"
 
 #: src/views/window.py:283 src/views/window.py:321
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all"
-msgstr "Rensa"
+msgstr "Rensa allt"
 
 #: src/views/window.py:383
 msgid "Generating response"
-msgstr ""
+msgstr "Genererar svar"
 
 #: src/views/window.py:397 src/views/window.py:410
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "Ledsen, men jag vet inte vad jag ska säga."
 
 #: src/views/window.py:451
 msgid "human"
@@ -274,43 +265,39 @@ msgstr "Människa"
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:184 src/views/window.blp:185
 msgid "New Chat"
-msgstr ""
+msgstr "Ny chatt"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
 msgstr "Huvudmeny"
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chats"
-msgstr "Chatt"
+msgstr "Inga chatter"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "Börja med att skapa en ny chatt eller välj en från sidofältet"
 
 #: src/views/window.blp:96
 msgid "Message"
 msgstr "Meddelande"
 
 #: src/views/window.blp:156
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "Meddelande"
+msgstr "Inga meddelanden"
 
 #: src/views/window.blp:157
 msgid "Send first message to get started"
-msgstr ""
+msgstr "Skicka första meddelandet för att börja"
 
 #: src/views/window.blp:162
 msgid "No Internet"
-msgstr ""
+msgstr "Inget internet"
 
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "Börja genom att skapa en ny chatt"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -329,18 +316,19 @@ msgid "Done"
 msgstr "Klar"
 
 #: src/widgets/download_row.blp:11
+#, fuzzy
 msgid "Download Model"
-msgstr ""
+msgstr "Hämta modell"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Hämtar modellen %s"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "Modellen %s hämtades!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
@@ -355,32 +343,29 @@ msgid "Remove"
 msgstr "Ta bort"
 
 #: src/widgets/item.py:219
+#, fuzzy
 msgid "Failed to save the image"
-msgstr ""
+msgstr "Sparandet av bilden misslyckades"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "Bilden sparades"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "Ingen bild att spara"
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "Meddelande"
+msgstr "Spara meddelande"
 
 #: src/widgets/item.py:251
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "Meddelande"
+msgstr "Meddelandet kopierades"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "Ta bort modellen"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
@@ -395,14 +380,18 @@ msgid "Temperature"
 msgstr "Temperatur"
 
 #: src/widgets/model_item.blp:31
+#, fuzzy
 msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"Temperatur för modellen. Större värden ökar kreativitet, men minskar "
+"sakligheten."
 
 #: src/widgets/model_item.blp:45
+#, fuzzy
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:46
 msgid ""
@@ -412,7 +401,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
-msgstr ""
+msgstr "Top P"
 
 #: src/widgets/model_item.blp:60
 msgid ""
