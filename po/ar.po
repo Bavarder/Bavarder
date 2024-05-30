@@ -12,9 +12,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-04-29 13:18+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-05-31 05:18+0000\n"
+"Last-Translator: aei <aei@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ar/>\n"
 "Language: ar\n"
@@ -23,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.5.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -226,12 +225,12 @@ msgid "Delete All Chats"
 msgstr ""
 
 #: src/views/window.py:215
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
-msgstr "هل أنت متأكد أنك تريد حذف هذا؟"
+msgstr ""
+"هل أنت متأكد أنك تريد حذف جميع الرسائل في المحادثة؟ لايمكن التراجع من هذه "
+"العملية!"
 
 #: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
@@ -260,7 +259,7 @@ msgstr "إنسان"
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:184 src/views/window.blp:185
 msgid "New Chat"
-msgstr ""
+msgstr "محادثة جديدة"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
@@ -342,11 +341,11 @@ msgstr "أزل"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
-msgstr ""
+msgstr "فشل حفظ الصورة"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "تم حفظ الصورة"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
