@@ -7,13 +7,14 @@
 # SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # aei <aei@users.noreply.translate.codeberg.org>, 2024.
+# Weblate <noreply-mt-weblate@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-05-31 05:18+0000\n"
-"Last-Translator: aei <aei@users.noreply.translate.codeberg.org>\n"
+"PO-Revision-Date: 2024-06-08 16:18+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/ar/>\n"
 "Language: ar\n"
@@ -218,7 +219,7 @@ msgstr ""
 
 #: src/views/window.py:179
 msgid "New chat"
-msgstr ""
+msgstr "محادثة جديدة"
 
 #: src/views/window.py:214
 msgid "Delete All Chats"
