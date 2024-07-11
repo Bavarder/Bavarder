@@ -6,14 +6,14 @@
 # kouroshtaf <kouroshtaf@gmail.com>, 2023.
 # Kourosh <kouroshtaf@gmail.com>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# amearb <amearb@users.noreply.translate.codeberg.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-04-29 13:18+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-07-12 09:18+0000\n"
+"Last-Translator: amearb <amearb@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Persian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fa/>\n"
 "Language: fa\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.5.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -46,11 +46,11 @@ msgstr "متن"
 
 #: src/providers/base.py:12
 msgid "Movie"
-msgstr ""
+msgstr "فیلم"
 
 #: src/providers/base.py:86
 msgid "How to get a token"
-msgstr ""
+msgstr "روش گرفتن نشانه"
 
 #: src/providers/catgpt.py:7
 #, fuzzy
