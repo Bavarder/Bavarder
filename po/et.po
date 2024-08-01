@@ -6,14 +6,15 @@
 # vabaME <vaba@riseup.net>, 2023.
 # Weblate <noreply-mt-weblate@weblate.org>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Priit Jõerüüt <jrtcdbrg@users.noreply.translate.codeberg.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-06-08 16:18+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-08-01 20:18+0000\n"
+"Last-Translator: Priit Jõerüüt <jrtcdbrg@users.noreply.translate.codeberg."
+"org>\n"
 "Language-Team: Estonian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/et/>\n"
 "Language: et\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -46,13 +47,11 @@ msgstr "Tekst"
 
 #: src/providers/base.py:12
 msgid "Movie"
-msgstr ""
+msgstr "Film"
 
 #: src/providers/base.py:86
-#, fuzzy
-#| msgid "How to choose a model"
 msgid "How to get a token"
-msgstr "Kuidas valida mudelit"
+msgstr "Kuidas saan tunnusloa"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
@@ -64,11 +63,14 @@ msgid ""
 "can get the token by following this [guide](https://bavarder.codeberg.page/"
 "help/huggingface/)"
 msgstr ""
+"Sa oled jõudnud päringute ülempiirini! Palun lisa eelistustesse oma "
+"tunnusluba, mille saad järgneva [juhendi alusel](https://bavarder.codeberg."
+"page/help/huggingface/)"
 
 #: src/providers/hfbasechat.py:50
 #, python-brace-format
 msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr ""
+msgstr "Vabandust, ma kohe ei tea mida nüüd öelda! (Viga: {output})"
 
 #: src/providers/hfbasechat.py:58
 msgid "API Key"
@@ -76,11 +78,11 @@ msgstr "API võti"
 
 #: src/providers/provider_item.blp:18
 msgid "No preferences available"
-msgstr "No preferences available"
+msgstr "Eelistusi pole saadaval"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
+msgstr "Priit Jõerüüt 2024"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
@@ -88,11 +90,11 @@ msgstr ""
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr "Autoriõigus © 2023 0xMRTT"
+msgstr "Autoriõigused © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Pakendamine"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -100,7 +102,7 @@ msgstr "Tõlgi"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Kas ekspordime jutulõnga?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -113,22 +115,22 @@ msgstr "Ekspordi"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:19 src/views/window.py:313
-#, fuzzy
-#| msgid "Model"
 msgid "Models"
-msgstr "Mudel"
+msgstr "Mudelid"
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "Saadavalolevate mudelite loend"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "Kustuta kõik jutulõngad"
 
 #: src/views/preferences_window.py:73
 msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr ""
+"Kas sa oled kindel, et soovid kõik jutulõngad kustutada? Seda tegevust ei "
+"saa tagasi pöörata!"
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
@@ -143,7 +145,7 @@ msgstr "Kustuta"
 
 #: src/views/preferences_window.py:93 src/views/window.py:245
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Kõik vestlused on eemaldatud!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
@@ -160,15 +162,15 @@ msgstr "Muu"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
-msgstr ""
+msgstr "Tühjenda kõik jutulõngad"
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
-msgstr "selge"
+msgstr "Tühjenda"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr ""
+msgstr "Sellega eemaldad kõik jutulõngad andmebaasist."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
@@ -176,13 +178,11 @@ msgstr "Sisesta nimi"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr ""
+msgstr "Vestlusroboti nimi"
 
 #: src/views/preferences_window.blp:53
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Kasutaja:"
+msgstr "Kasutajanimi"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -194,7 +194,7 @@ msgstr "Salvesta"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr ""
+msgstr "Faili nimi"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
@@ -202,98 +202,96 @@ msgstr "Asukoht"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "Jutulõngast eksporditavad andmed salvestuvad siia kausta."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr "Valige kataloog…"
+msgstr "Vali kaust"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "Jutulõnga salvestamine ei õnnestu"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "Jutulõnga salvestamine õnnestus!"
 
 #: src/views/window.py:179
 msgid "New chat"
-msgstr ""
+msgstr "Uus vestlus"
 
 #: src/views/window.py:214
 msgid "Delete All Chats"
-msgstr ""
+msgstr "Kustuta kõik vestlused"
 
 #: src/views/window.py:215
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
 msgstr ""
+"Kas oled kindel, et soovid kustutada kõik vestlused sellest jutulõngast? "
+"Seda tegevust ei saa tagasi pöörata!"
 
 #: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "Pole mitte midagi eemaldada!"
 
 #: src/views/window.py:257
 msgid "Nothing to export!"
-msgstr ""
+msgstr "Pole mitte midagi eksportida!"
 
 #: src/views/window.py:283 src/views/window.py:321
 msgid "Clear all"
-msgstr ""
+msgstr "Tühjenda kõik"
 
 #: src/views/window.py:383
 msgid "Generating response"
-msgstr ""
+msgstr "Loome vastust"
 
 #: src/views/window.py:397 src/views/window.py:410
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "Vabandust, ma kohe ei tea mida nüüd öelda."
 
 #: src/views/window.py:451
 msgid "human"
-msgstr ""
+msgstr "inimene"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:184 src/views/window.blp:185
 msgid "New Chat"
-msgstr ""
+msgstr "Uus vestlus"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
 msgstr "Peamenüü"
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chats"
-msgstr "Kõne"
+msgstr "Vestlusi ei leidu"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "Alustamiseks kas loo uus vestlus või vali külgpaanist mõni olemasolev"
 
 #: src/views/window.blp:96
 msgid "Message"
 msgstr "Sõnum"
 
 #: src/views/window.blp:156
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "Sõnum"
+msgstr "Sõnumeid ei leidu"
 
 #: src/views/window.blp:157
 msgid "Send first message to get started"
-msgstr ""
+msgstr "Alustamiseks kirjuta esimene sõnum"
 
 #: src/views/window.blp:162
 msgid "No Internet"
-msgstr ""
+msgstr "Internetiühendus puudub"
 
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "Alustamiseks loo uus vestlus"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -313,17 +311,17 @@ msgstr "Valmis"
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "Laadi alla mudel"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Laadime %s mudelit alla"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "%s mudel on allalaaditud!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
@@ -339,39 +337,35 @@ msgstr "Eemalda"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
-msgstr ""
+msgstr "Pildi salvestamine ei õnnestu"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "Pilt on salvestatud"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "Pole pilti, mida saaks salvestada"
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "Sõnum"
+msgstr "Salvesta sõnum"
 
 #: src/widgets/item.py:251
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "Sõnum"
+msgstr "Sõnum on kopeeritud"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "Kustuta mudel"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "Maksimaalselt tookeneid"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "Suurim loodavate tookenite arv."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
@@ -382,6 +376,8 @@ msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"Mudeli temperatuur. Suuremad väärtused parandavad loovust, kuid vähendavad "
+"täpsust."
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
@@ -392,6 +388,8 @@ msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
+"Igas sammus võta top_k'st tõenäolised tookenid. Ahne töötluse jaoks määra "
+"väärtuseks 1."
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
@@ -431,8 +429,6 @@ msgid "How far in the models generation history to apply the repeat penalty. "
 msgstr ""
 
 #: src/widgets/model_item.blp:117
-#, fuzzy
-#| msgid "Prompt"
 msgid "System Prompt"
 msgstr "Viip"
 
