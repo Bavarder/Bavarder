@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-08-01 20:18+0000\n"
+"PO-Revision-Date: 2024-08-02 10:18+0000\n"
 "Last-Translator: Priit Jõerüüt <jrtcdbrg@users.noreply.translate.codeberg."
 "org>\n"
 "Language-Team: Estonian <https://translate.codeberg.org/projects/bavarder/"
@@ -55,7 +55,7 @@ msgstr "Kuidas saan tunnusloa"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
-msgstr ""
+msgstr "Lobise kassiga"
 
 #: src/providers/hfbasechat.py:45
 msgid ""
@@ -86,7 +86,7 @@ msgstr "Priit Jõerüüt 2024"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr ""
+msgstr "Vestle tehisintellektiga"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -158,7 +158,7 @@ msgstr "Teenusepakkujad"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
-msgstr "Muu"
+msgstr "Muud eelistused"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
@@ -303,7 +303,7 @@ msgstr "Klaviatuuri kiirvalikud"
 
 #: src/views/window.blp:309
 msgid "About Bavarder"
-msgstr "Teave"
+msgstr "Rakenduse teave"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
@@ -329,7 +329,7 @@ msgstr "Kopeeri"
 
 #: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
-msgstr "Muutmine"
+msgstr "Muuda"
 
 #: src/widgets/item.blp:117
 msgid "Remove"
@@ -381,7 +381,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:45
 msgid "Top K"
-msgstr ""
+msgstr "Ülemine K"
 
 #: src/widgets/model_item.blp:46
 msgid ""
@@ -393,7 +393,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:59
 msgid "Top P"
-msgstr ""
+msgstr "Ülemine P"
 
 #: src/widgets/model_item.blp:60
 msgid ""
@@ -435,12 +435,12 @@ msgstr "Viip"
 #: src/widgets/model_item.py:64
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "%s mudel on kustutatud!"
 
 #: src/widgets/thread_item.blp:23 src/widgets/thread_item.py:75
 #: src/widgets/thread_item.py:80
 msgid "Edit Title"
-msgstr ""
+msgstr "Muuda pealkirja"
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
@@ -448,33 +448,35 @@ msgstr "Tärn"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "Pealkiri on muudetud"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr ""
+msgstr "Kustuta jutulõng"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr ""
+msgstr "Kas sa oled kindel, et soovid selle jutulõnga kustutada?"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Jutulõng on kustutatud"
 
 #: src/main.py:261
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
 "top!"
 msgstr ""
+"Palun klõpsi ülal asuvat kolme punktiga ikooni ja vali eelistustest mõne "
+"mudeli allalaadimine!"
 
 #: src/main.py:265
 msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr ""
+msgstr "Tere, olen Bavarder, üks tehisaruga vestleja"
 
 #: src/main.py:288
 msgid "Please enable a provider from the Dot Menu"
-msgstr ""
+msgstr "Palun vali kolme punktiga ikoonist teenusepakkuja"
 
 #~ msgid "Clear prompt after send"
 #~ msgstr "Kustuta viip pärast saatmist"
