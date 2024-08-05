@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2024-08-02 10:18+0000\n"
+"PO-Revision-Date: 2024-08-06 00:18+0000\n"
 "Last-Translator: Priit Jõerüüt <jrtcdbrg@users.noreply.translate.codeberg."
 "org>\n"
 "Language-Team: Estonian <https://translate.codeberg.org/projects/bavarder/"
@@ -400,33 +400,39 @@ msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"Vali juhuslikult igal põlvkonna sammul kõige tõenäolisematest tookenitest, "
+"mis tõenäoliselt lisanduvad top_p'le."
 
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
-msgstr ""
+msgstr "Karistus korduste eest"
 
 #: src/widgets/model_item.blp:75
 msgid ""
 "Penalize the model for repetition. Higher values result in less repetition."
 msgstr ""
+"Karista mudelit korduste eest. Suuremad väärtused annavad tulemuseks vähem "
+"kordusi."
 
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
-msgstr ""
+msgstr "Töötlusbloki suurus"
 
 #: src/widgets/model_item.blp:90
 msgid ""
 "Number of prompt tokens processed in parallel. Larger values decrease "
 "latency but increase resource requirements."
 msgstr ""
+"Rööpselt töödeldavate tookenipäringute arv. Suuremad väärtused vähendavad "
+"latentsust, kuid on ressursinõudlikumad."
 
 #: src/widgets/model_item.blp:103
 msgid "Repeat Last N"
-msgstr ""
+msgstr "Korda viimast N'i"
 
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
+msgstr "Kui kaugele mudeli sammude ajaloos rakendame karistust korduste eest. "
 
 #: src/widgets/model_item.blp:117
 msgid "System Prompt"
