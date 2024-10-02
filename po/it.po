@@ -13,13 +13,21 @@
 # enderboyk2 <lorenzomicci48@gmail.com>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # C1ff0 <C1ff0@users.noreply.translate.codeberg.org>, 2024.
+# albanobattistella <albanobattistella@users.noreply.translate.codeberg.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-05-25 01:18+0000\n"
 "Last-Translator: C1ff0 <C1ff0@users.noreply.translate.codeberg.org>\n"
+=======
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"PO-Revision-Date: 2024-10-03 06:31+0000\n"
+"Last-Translator: albanobattistella <albanobattistella@users.noreply.translate"
+".codeberg.org>\n"
+>>>>>>> 4989c51 (Translated using Weblate (Italian))
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/it/>\n"
 "Language: it\n"
@@ -27,7 +35,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -335,10 +343,8 @@ msgid "Remove"
 msgstr "Rimuovi"
 
 #: src/widgets/item.py:219
-#, fuzzy
-#| msgid "Unable to save the Thread"
 msgid "Failed to save the image"
-msgstr "Impossibile salvare la discussione"
+msgstr "Impossibile salvare l'immagine"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
@@ -349,10 +355,8 @@ msgid "No image to save"
 msgstr "Nessuna immagine da salvare"
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "Messaggio"
+msgstr "Salva messaggio"
 
 #: src/widgets/item.py:251
 msgid "Message copied"
