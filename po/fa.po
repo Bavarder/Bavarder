@@ -11,9 +11,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-07-12 09:18+0000\n"
 "Last-Translator: amearb <amearb@users.noreply.translate.codeberg.org>\n"
+=======
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"PO-Revision-Date: 2024-10-08 16:31+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+>>>>>>> 3b623d2 (Translated using Weblate (Persian))
 "Language-Team: Persian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fa/>\n"
 "Language: fa\n"
@@ -21,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -381,7 +388,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr ""
+msgstr "دما"
 
 #: src/widgets/model_item.blp:31
 msgid ""
