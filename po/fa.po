@@ -7,6 +7,7 @@
 # Kourosh <kouroshtaf@gmail.com>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # amearb <amearb@users.noreply.translate.codeberg.org>, 2024.
+# Artiman <Artiman@users.noreply.translate.codeberg.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -17,10 +18,15 @@ msgstr ""
 "Last-Translator: amearb <amearb@users.noreply.translate.codeberg.org>\n"
 =======
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2024-10-08 16:31+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 >>>>>>> 3b623d2 (Translated using Weblate (Persian))
+=======
+"PO-Revision-Date: 2024-10-09 05:31+0000\n"
+"Last-Translator: Artiman <Artiman@users.noreply.translate.codeberg.org>\n"
+>>>>>>> a35465b (Translated using Weblate (Persian))
 "Language-Team: Persian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fa/>\n"
 "Language: fa\n"
@@ -33,11 +39,64 @@ msgstr ""
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
-msgstr "باوارده"
+msgstr "باوردر"
 
+<<<<<<< HEAD
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
+=======
+#: src/providers/base.py:8
+msgid "Image"
+msgstr "تصویر"
+
+#: src/providers/base.py:9 src/views/window.blp:108
+msgid "Chat"
+msgstr "گپ"
+
+#: src/providers/base.py:10
+msgid "Voice"
+msgstr "صدا"
+
+#: src/providers/base.py:11
+msgid "Text"
+msgstr "متن"
+
+#: src/providers/base.py:12
+msgid "Movie"
+msgstr "فیلم"
+
+#: src/providers/base.py:86
+msgid "How to get a token"
+msgstr "روش گرفتن نشانه"
+
+#: src/providers/catgpt.py:7
+msgid "Chit-Chat with a Cat"
+msgstr "گپی با یک گریه"
+
+#: src/providers/hfbasechat.py:45
+msgid ""
+"You've reached the rate limit! Please add a token to the preferences. You "
+"can get the token by following this [guide](https://bavarder.codeberg.page/"
+"help/huggingface/)"
+msgstr ""
+"شما به محدودیت درخواست رسیدید! لطفا توکن خود را به ترجیحات اضافه کنید. شما "
+"می توانید با خواندن این راهنما توکن خود را بگیرید [راهنما](https://bavarder."
+"codeberg.page/help/huggingface/)"
+
+#: src/providers/hfbasechat.py:50
+#, python-brace-format
+msgid "Sorry, I don't know what to say! (Error: {output})"
+msgstr "متاسفم , نمی دانم چه بگویم! (خطا: {خروجی})"
+
+#: src/providers/hfbasechat.py:58
+msgid "API Key"
+msgstr "کلید رابط برنامه نویسی اپلیکیشن"
+
+#: src/providers/provider_item.blp:18
+msgid "No preferences available"
+msgstr "ترجیحاتی موجود نیست"
+>>>>>>> a35465b (Translated using Weblate (Persian))
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -53,11 +112,11 @@ msgstr "گپی با هوش مصنوعی"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "کپیرایت © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "بسته بندی"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -88,7 +147,7 @@ msgstr "متن درخواست"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "مضوع را صادرات کنیم؟"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -98,6 +157,7 @@ msgstr "بستن"
 msgid "Export"
 msgstr "برون‌برد"
 
+<<<<<<< HEAD
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
@@ -107,34 +167,72 @@ msgstr "پیش‌فرض‌ها"
 #: src/views/preferences_window.py:46 src/views/window.py:297
 #, fuzzy
 #| msgid "Model"
+=======
+#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
+#: src/views/preferences_window.blp:19 src/views/window.py:313
+>>>>>>> a35465b (Translated using Weblate (Persian))
 msgid "Models"
-msgstr "حالت"
+msgstr "مدل ها"
 
+<<<<<<< HEAD
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
 msgstr ""
 
+=======
+#: src/views/preferences_window.py:60
+msgid "List of available models"
+msgstr "لیست مدل های موجود"
+
+#: src/views/preferences_window.py:72
+msgid "Delete All Threads"
+msgstr "حذف تمام موضوعات"
+
+#: src/views/preferences_window.py:73
+msgid "Are you sure you want to delete all threads? This can't be undone!"
+msgstr ""
+"آیا مطمئنید که می‌خواهید همه ی این موضوعات را حذف کنید؟ این نمی تواند لغو شود!"
+
+#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
+#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
+#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
+msgid "Cancel"
+msgstr "لغو"
+
+#: src/views/preferences_window.py:78 src/views/window.py:220
+#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
+msgid "Delete"
+msgstr "پاک کردن"
+
+#: src/views/preferences_window.py:93 src/views/window.py:245
+msgid "All chats cleared!"
+msgstr "همه ی چت ها پاک شد!"
+
+#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
+#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
+msgid "Preferences"
+msgstr "پیش‌فرض‌ها"
+
+#: src/views/preferences_window.blp:15 src/views/window.py:275
+msgid "Providers"
+msgstr "تامین کنندگان"
+
+>>>>>>> a35465b (Translated using Weblate (Persian))
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
 msgstr "متفرقه"
 
 #: src/views/preferences_window.blp:31
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all threads"
-msgstr "پاک‌سازی"
+msgstr "پاک‌سازی همه ی موضوعات"
 
 #: src/views/preferences_window.blp:35
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear"
-msgstr "پاک‌سازی"
+msgstr "پاکسازی"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr ""
+msgstr "این همه ی موضوع ها را از پایگاه داده پاکسازی می کند."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
@@ -142,13 +240,11 @@ msgstr "نام"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr ""
+msgstr "نام بات"
 
 #: src/views/preferences_window.blp:53
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "کاربر"
+msgstr "نام کاربری"
 
 #: src/views/preferences_window.py:55
 msgid "No local models available"
@@ -202,43 +298,85 @@ msgstr "مکان"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "صادرات این موضوع در این دایرکتوری دخیره می شود."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr ""
+msgstr "یک دایرکتوری انتخاب کنید"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "ناقابل به ذخیره موضوع بودیم"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "موضوع به موفقیت ذخیره شد!"
 
+<<<<<<< HEAD
+=======
+#: src/views/window.py:179
+msgid "New chat"
+msgstr "چت جدید"
+
+#: src/views/window.py:214
+msgid "Delete All Chats"
+msgstr "پاکسازی همه ی چت ها"
+
+#: src/views/window.py:215
+msgid ""
+"Are you sure you want to delete all chats in this thread? This can't be "
+"undone!"
+msgstr ""
+"آیا مطمئنید که می‌خواهید این فرسته پیش نویس شده را حذف کنید؟ این نمی تواند "
+"لغو شود!"
+
+#: src/views/window.py:231 src/views/window.py:247
+msgid "Nothing to clear!"
+msgstr "هیچی برای پاکسازی نیست!"
+
+#: src/views/window.py:257
+msgid "Nothing to export!"
+msgstr "هیچی برای صادر نیست!"
+
+#: src/views/window.py:283 src/views/window.py:321
+msgid "Clear all"
+msgstr "پاک‌سازی همه"
+
+#: src/views/window.py:383
+msgid "Generating response"
+msgstr "در حال ایجاد پاسخ"
+
+#: src/views/window.py:397 src/views/window.py:410
+msgid "Sorry, I don't know what to say."
+msgstr "متاسفم نمی دانم چه بگویم."
+
+#: src/views/window.py:451
+msgid "human"
+msgstr "انسان"
+
+>>>>>>> a35465b (Translated using Weblate (Persian))
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
-msgstr ""
+msgstr "چت جدید"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
 msgstr "منوی اصلی"
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chats"
-msgstr "گپ"
+msgstr "بدون هیچ چتی"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "شروع کنیذ با شروع کردن چت جدید یا انتخاب یکی در نوار کناری"
 
 #: src/views/window.blp:96
 msgid "Message"
 msgstr "پیام"
 
+<<<<<<< HEAD
 #: src/views/window.blp:102
 msgid "Chat"
 msgstr "گپ"
@@ -246,20 +384,23 @@ msgstr "گپ"
 #: src/views/window.blp:143
 #, fuzzy
 #| msgid "Message"
+=======
+#: src/views/window.blp:156
+>>>>>>> a35465b (Translated using Weblate (Persian))
 msgid "No Messages"
-msgstr "پیام"
+msgstr "بدون پیام"
 
 #: src/views/window.blp:144
 msgid "Send first message to get started"
-msgstr ""
+msgstr "اولین پیام را بفرستید تا شروع کنید"
 
 #: src/views/window.blp:149
 msgid "No Internet"
-msgstr ""
+msgstr "بدون اینترنت"
 
 #: src/views/window.blp:156
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "شروع کنید با ساختن چت جدید"
 
 #: src/views/window.blp:246
 msgid "Ask"
@@ -326,21 +467,21 @@ msgstr "تمام"
 
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "دانلود مدل"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "در حال دانلود مدل %s"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "مدل %s دانلود شد!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr "رونوشت"
+msgstr "کپی"
 
 #: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
@@ -352,39 +493,35 @@ msgstr "حذف کردن"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
-msgstr ""
+msgstr "ذخیره ی تصویر ناموفق بود"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "تصویر ذخیره شد"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "هیچ تصویری برای ذخیره نیست"
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "پیام"
+msgstr "ذخیره پیام"
 
 #: src/widgets/item.py:251
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "پیام"
+msgstr "پیام کپی شد"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "پاکسازی مدل"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "محدودیت توکن"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "حداکثر تعداد توکن ها برای تولید."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
@@ -395,8 +532,24 @@ msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"دمای مدل. ارزش های بزرگتر خلاقیت را افزایش می دهد اما دستی را کاهش می دهد."
 
 #: src/widgets/model_item.blp:45
+<<<<<<< HEAD
+=======
+msgid "Top K"
+msgstr ""
+
+#: src/widgets/model_item.blp:46
+msgid ""
+"Randomly sample from the top_k most likely tokens at each generation step. "
+"Set this to 1 for greedy decoding."
+msgstr ""
+"نمونه‌برداری تصادفی از top_k توکن‌های محتمل‌تر در هر مرحله تولید. این را برای "
+"رمزگشایی حریصانه روی 1 تنظیم کنید."
+
+#: src/widgets/model_item.blp:59
+>>>>>>> a35465b (Translated using Weblate (Persian))
 msgid "Top P"
 msgstr ""
 
@@ -405,26 +558,65 @@ msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"به طور تصادفی در هر مرحله تولید از توکن های محتمل برتر که احتمالات آنها به "
+"top_p می رسد، نمونه برداری کنید."
 
+<<<<<<< HEAD
 #: src/widgets/model_item.blp:60
 msgid "Top K"
 msgstr ""
+=======
+#: src/widgets/model_item.blp:74
+msgid "Repetition Penalty"
+msgstr "جریمه تکرار"
+>>>>>>> a35465b (Translated using Weblate (Persian))
 
 #: src/widgets/model_item.blp:61
 msgid ""
+<<<<<<< HEAD
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
 
 #: src/widgets/model_item.py:49
+=======
+"Penalize the model for repetition. Higher values result in less repetition."
+msgstr "مدل را برای تکرار جریمه کنید. ارزش بالاتر منجر به تکرار کمتر می شود."
+
+#: src/widgets/model_item.blp:89
+msgid "Batch Size"
+msgstr "اندازه دسته"
+
+#: src/widgets/model_item.blp:90
+msgid ""
+"Number of prompt tokens processed in parallel. Larger values decrease "
+"latency but increase resource requirements."
+msgstr ""
+"تعداد توکن های سریع پردازش شده به صورت موازی. ارزش بزرگتر تاخیر را کاهش می "
+"دهد اما نیاز به منابع را افزایش می دهد."
+
+#: src/widgets/model_item.blp:103
+msgid "Repeat Last N"
+msgstr "تکرار اخرین ن"
+
+#: src/widgets/model_item.blp:104
+msgid "How far in the models generation history to apply the repeat penalty. "
+msgstr "تا چه اندازه در تاریخ نسل مدل ها اعمال جریمه تکراری اعمال می شود. "
+
+#: src/widgets/model_item.blp:117
+msgid "System Prompt"
+msgstr "متن سیستم"
+
+#: src/widgets/model_item.py:64
+>>>>>>> a35465b (Translated using Weblate (Persian))
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "مدل %s پاک شد!"
 
 #: src/widgets/thread_item.blp:23 src/widgets/thread_item.py:75
 #: src/widgets/thread_item.py:80
 msgid "Edit Title"
-msgstr ""
+msgstr "تغییر عنوان"
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
@@ -432,11 +624,11 @@ msgstr "ستاره"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "به عنوان تغییر ایجاد شد"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr ""
+msgstr "پاکسازی موضوع"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
@@ -444,8 +636,9 @@ msgstr "آیا مطمئنید که می‌خواهید این فرسته پیش 
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr ""
+msgstr "موضوع پاکسازی شد"
 
+<<<<<<< HEAD
 #~ msgid "Image"
 #~ msgstr "تصویر"
 
@@ -468,6 +661,22 @@ msgstr ""
 
 #~ msgid "Providers"
 #~ msgstr "تامین کنندگان"
+=======
+#: src/main.py:261
+msgid ""
+"Please download a model from Preferences by clicking on the Dot Menu at the "
+"top!"
+msgstr ""
+"لطفاً یک مدل را از ترجیحات با کلیک بر روی منوی نقطه در بالا دانلود کنید!"
+
+#: src/main.py:265
+msgid "Hello, I am Bavarder, a Chit-Chat AI"
+msgstr "سلام، من باواردر هستم,یک هوش مصنوعی برای گپ زدن"
+
+#: src/main.py:288
+msgid "Please enable a provider from the Dot Menu"
+msgstr "لطفا یک ارائه دهنده را از منوی نقطه ای فعال کنید"
+>>>>>>> a35465b (Translated using Weblate (Persian))
 
 #~ msgid "Clear prompt after send"
 #~ msgstr "متن درخواست رو بعد از ارسال پاک کن"
