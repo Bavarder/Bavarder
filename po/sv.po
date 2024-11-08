@@ -9,13 +9,20 @@
 # SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023, 2024.
 # Umeaman <Umeaman@users.noreply.translate.codeberg.org>, 2024.
+# Weblate <noreply-mt-weblate@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-05-21 13:18+0000\n"
 "Last-Translator: Umeaman <Umeaman@users.noreply.translate.codeberg.org>\n"
+=======
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"PO-Revision-Date: 2024-11-08 16:07+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+>>>>>>> c556bcb (Translated using Weblate (Swedish))
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
 "Language: sv\n"
@@ -23,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.8.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -419,7 +426,7 @@ msgstr ""
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr ""
+msgstr "Radera tråd"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
