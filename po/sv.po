@@ -10,6 +10,7 @@
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023, 2024.
 # Umeaman <Umeaman@users.noreply.translate.codeberg.org>, 2024.
 # Weblate <noreply-mt-weblate@weblate.org>, 2024.
+# bittin <bittin@users.noreply.translate.codeberg.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -20,9 +21,14 @@ msgstr ""
 "Last-Translator: Umeaman <Umeaman@users.noreply.translate.codeberg.org>\n"
 =======
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2024-11-08 16:07+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 >>>>>>> c556bcb (Translated using Weblate (Swedish))
+=======
+"PO-Revision-Date: 2024-11-16 01:07+0000\n"
+"Last-Translator: bittin <bittin@users.noreply.translate.codeberg.org>\n"
+>>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
 "Language: sv\n"
@@ -37,10 +43,61 @@ msgstr ""
 msgid "Bavarder"
 msgstr "Bavarder"
 
+<<<<<<< HEAD
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
 
+=======
+#: src/providers/base.py:8
+msgid "Image"
+msgstr "Bild"
+
+#: src/providers/base.py:9 src/views/window.blp:108
+msgid "Chat"
+msgstr "Chatt"
+
+#: src/providers/base.py:10
+msgid "Voice"
+msgstr "Ljud"
+
+#: src/providers/base.py:11
+msgid "Text"
+msgstr "text"
+
+#: src/providers/base.py:12
+msgid "Movie"
+msgstr "Film"
+
+#: src/providers/base.py:86
+msgid "How to get a token"
+msgstr "Hur man får en token"
+
+#: src/providers/catgpt.py:7
+msgid "Chit-Chat with a Cat"
+msgstr "Småprata med en katt"
+
+#: src/providers/hfbasechat.py:45
+msgid ""
+"You've reached the rate limit! Please add a token to the preferences. You "
+"can get the token by following this [guide](https://bavarder.codeberg.page/"
+"help/huggingface/)"
+msgstr ""
+
+#: src/providers/hfbasechat.py:50
+#, python-brace-format
+msgid "Sorry, I don't know what to say! (Error: {output})"
+msgstr "Förlåt, jag vet inte vad jag ska säga! (Fel: {output})"
+
+#: src/providers/hfbasechat.py:58
+msgid "API Key"
+msgstr "API-nyckel"
+
+#: src/providers/provider_item.blp:18
+msgid "No preferences available"
+msgstr "Inga inställningar tillgängliga"
+
+>>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "skøldis <jellybean@turtle.garden>"
@@ -85,7 +142,6 @@ msgid "System Prompt"
 msgstr "Prompt"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
-#, fuzzy
 msgid "Export Thread?"
 msgstr "Exportera tråd?"
 
@@ -97,6 +153,7 @@ msgstr "Stäng"
 msgid "Export"
 msgstr "Exportera"
 
+<<<<<<< HEAD
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
@@ -106,6 +163,10 @@ msgstr "Inställningar"
 #: src/views/preferences_window.py:46 src/views/window.py:297
 #, fuzzy
 #| msgid "Model"
+=======
+#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
+#: src/views/preferences_window.blp:19 src/views/window.py:313
+>>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 msgid "Models"
 msgstr "Modeller"
 
@@ -134,15 +195,12 @@ msgid "Names"
 msgstr "Namn"
 
 #: src/views/preferences_window.blp:47
-#, fuzzy
 msgid "Bot name"
-msgstr "Namn på boten"
+msgstr "Botnamn"
 
 #: src/views/preferences_window.blp:53
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Namn på användaren"
+msgstr "Användarnamn"
 
 #: src/views/preferences_window.py:55
 #, fuzzy
@@ -312,8 +370,12 @@ msgstr "Människa"
 msgid "Done"
 msgstr "Klar"
 
+<<<<<<< HEAD
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 #, fuzzy
+=======
+#: src/widgets/download_row.blp:11
+>>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 msgid "Download Model"
 msgstr "Hämta modell"
 
@@ -340,9 +402,8 @@ msgid "Remove"
 msgstr "Ta bort"
 
 #: src/widgets/item.py:219
-#, fuzzy
 msgid "Failed to save the image"
-msgstr "Sparandet av bilden misslyckades"
+msgstr "Misslyckades att spara bild"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
@@ -366,24 +427,22 @@ msgstr "Ta bort modellen"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "Max Tokens"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "Det maximala antalet tokens att generera."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
 msgstr "Temperatur"
 
 #: src/widgets/model_item.blp:31
-#, fuzzy
 msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
-"Temperatur för modellen. Större värden ökar kreativitet, men minskar "
-"sakligheten."
+"Modellens temperatur. Större värden ökar kreativiteten men minskar fakta."
 
 #: src/widgets/model_item.blp:45
 msgid "Top P"
@@ -395,10 +454,45 @@ msgid ""
 "whose probabilities add up to top_p."
 msgstr ""
 
+<<<<<<< HEAD
 #: src/widgets/model_item.blp:60
 #, fuzzy
 msgid "Top K"
 msgstr "Top K"
+=======
+#: src/widgets/model_item.blp:74
+msgid "Repetition Penalty"
+msgstr "Repetitionsstraff"
+
+#: src/widgets/model_item.blp:75
+msgid ""
+"Penalize the model for repetition. Higher values result in less repetition."
+msgstr "Bestraffa modellen för upprepning. Högre värden ger mindre upprepning."
+
+#: src/widgets/model_item.blp:89
+msgid "Batch Size"
+msgstr "Batchstorlek"
+
+#: src/widgets/model_item.blp:90
+msgid ""
+"Number of prompt tokens processed in parallel. Larger values decrease "
+"latency but increase resource requirements."
+msgstr ""
+"Antal prompt-tokens som behandlas parallellt. Större värden minskar latensen "
+"men ökar resurskraven."
+
+#: src/widgets/model_item.blp:103
+msgid "Repeat Last N"
+msgstr ""
+
+#: src/widgets/model_item.blp:104
+msgid "How far in the models generation history to apply the repeat penalty. "
+msgstr ""
+
+#: src/widgets/model_item.blp:117
+msgid "System Prompt"
+msgstr "Systemprompt"
+>>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 
 #: src/widgets/model_item.blp:61
 msgid ""
@@ -409,12 +503,12 @@ msgstr ""
 #: src/widgets/model_item.py:49
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "Model %s raderad!"
 
 #: src/widgets/thread_item.blp:23 src/widgets/thread_item.py:75
 #: src/widgets/thread_item.py:80
 msgid "Edit Title"
-msgstr ""
+msgstr "Redigera titel"
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
@@ -422,7 +516,7 @@ msgstr "Stjärna"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "Titel redigerad"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
@@ -434,8 +528,9 @@ msgstr "Är du säker på att du vill ta bort detta?"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Tråd raderad"
 
+<<<<<<< HEAD
 #~ msgid "Image"
 #~ msgstr "Bild"
 
@@ -465,6 +560,23 @@ msgstr ""
 
 #~ msgid "Providers"
 #~ msgstr "Leverantörer"
+=======
+#: src/main.py:261
+msgid ""
+"Please download a model from Preferences by clicking on the Dot Menu at the "
+"top!"
+msgstr ""
+"Vänligen ladda ner en modell från inställningarna genom att klicka på "
+"punktmenyn längst upp!"
+
+#: src/main.py:265
+msgid "Hello, I am Bavarder, a Chit-Chat AI"
+msgstr "Hej, jag heter Bavarder, en Chit-Chat AI"
+
+#: src/main.py:288
+msgid "Please enable a provider from the Dot Menu"
+msgstr "Vänligen aktivera en leverantör från punktmenyn"
+>>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 
 #~ msgid "Clear prompt after send"
 #~ msgstr "Töm prompt efter den har skickats"
