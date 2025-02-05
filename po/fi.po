@@ -8,13 +8,21 @@
 # jaahas <jaaahas@proton.me>, 2024.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # artnay <artnay@users.noreply.translate.codeberg.org>, 2024.
+# Ricky-Tigg <ricky-tigg@users.noreply.translate.codeberg.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-06-07 05:18+0000\n"
 "Last-Translator: artnay <artnay@users.noreply.translate.codeberg.org>\n"
+=======
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"PO-Revision-Date: 2025-02-06 00:21+0000\n"
+"Last-Translator: Ricky-Tigg <ricky-tigg@users.noreply.translate.codeberg.org>"
+"\n"
+>>>>>>> 93479bb (Translated using Weblate (Finnish))
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fi/>\n"
 "Language: fi\n"
@@ -22,16 +30,69 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
 msgstr "Bavarder"
 
+<<<<<<< HEAD
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
+=======
+#: src/providers/base.py:8
+msgid "Image"
+msgstr "Kuva"
+
+#: src/providers/base.py:9 src/views/window.blp:108
+msgid "Chat"
+msgstr "Pikakeskustelu"
+
+#: src/providers/base.py:10
+msgid "Voice"
+msgstr "Ääni"
+
+#: src/providers/base.py:11
+msgid "Text"
+msgstr "Teksti"
+
+#: src/providers/base.py:12
+msgid "Movie"
+msgstr "Elokuva"
+
+#: src/providers/base.py:86
+msgid "How to get a token"
+msgstr "Kuinka saada poletin"
+
+#: src/providers/catgpt.py:7
+msgid "Chit-Chat with a Cat"
+msgstr "Rupattele kissan kanssa"
+
+#: src/providers/hfbasechat.py:45
+msgid ""
+"You've reached the rate limit! Please add a token to the preferences. You "
+"can get the token by following this [guide](https://bavarder.codeberg.page/"
+"help/huggingface/)"
+msgstr ""
+"Olet saavuttanut enimmäisrajan! Lisääthän poletin asetuksiin. Voit hankkia "
+"poletin noudattamalla tätä [opasta](https://bavarder.codeberg.page/help/"
+"huggingface/)"
+
+#: src/providers/hfbasechat.py:50
+#, python-brace-format
+msgid "Sorry, I don't know what to say! (Error: {output})"
+msgstr "Valitettavasti en tiedä mitä sanoa! (Virhe: {output})"
+
+#: src/providers/hfbasechat.py:58
+msgid "API Key"
+msgstr "API-avain"
+
+#: src/providers/provider_item.blp:18
+msgid "No preferences available"
+msgstr "Asetuksia ei ole saatavilla"
+>>>>>>> 93479bb (Translated using Weblate (Finnish))
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -42,7 +103,7 @@ msgstr ""
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr "Keskustele tekoälyn kanssa"
+msgstr "Pikakeskustele tekoälyn kanssa"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -81,7 +142,7 @@ msgstr "Järjestelmän kehote"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr "Viedäänkö ketju?"
+msgstr "Viedäänkö säie?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -91,6 +152,41 @@ msgstr "Sulje"
 msgid "Export"
 msgstr "Vie"
 
+<<<<<<< HEAD
+=======
+#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
+#: src/views/preferences_window.blp:19 src/views/window.py:313
+msgid "Models"
+msgstr "Mallit"
+
+#: src/views/preferences_window.py:60
+msgid "List of available models"
+msgstr "Luettelo saatavilla olevista malleista"
+
+#: src/views/preferences_window.py:72
+msgid "Delete All Threads"
+msgstr "Poista kaikki säikeet"
+
+#: src/views/preferences_window.py:73
+msgid "Are you sure you want to delete all threads? This can't be undone!"
+msgstr "Oletko varma, että haluat poistaa kaikki säikeet? Tätä ei voi kumota!"
+
+#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
+#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
+#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: src/views/preferences_window.py:78 src/views/window.py:220
+#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
+msgid "Delete"
+msgstr "Poista"
+
+#: src/views/preferences_window.py:93 src/views/window.py:245
+msgid "All chats cleared!"
+msgstr "Kaikki pikakeskustelut tyhjennetty!"
+
+>>>>>>> 93479bb (Translated using Weblate (Finnish))
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
@@ -107,11 +203,11 @@ msgstr ""
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
-msgstr "Muut"
+msgstr "Sekalaista"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
-msgstr "Tyhjennä kaikki ketjut"
+msgstr "Tyhjennä kaikki säikeet"
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
@@ -119,11 +215,11 @@ msgstr "Tyhjennä"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr "Tämä tyhjentää kaikki ketjut tietokannasta."
+msgstr "Tämä tyhjentää kaikki säikeet tietokannasta."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr "Nimi"
+msgstr "Nimet"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
@@ -186,7 +282,7 @@ msgstr "Sijainti"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr "Ketjun vienti talletetaan tähän kansioon."
+msgstr "Säikeen vienti talletetaan tähän kansioon."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
@@ -194,16 +290,59 @@ msgstr "Valitse kansio"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr "Ketjua ei voitu tallentaa"
+msgstr "Säiettä ei voitu tallentaa"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr "Ketju tallennettu!"
+msgstr "Säie tallennettu!"
 
+<<<<<<< HEAD
+=======
+#: src/views/window.py:179
+msgid "New chat"
+msgstr "Uusi pikakeskustelu"
+
+#: src/views/window.py:214
+msgid "Delete All Chats"
+msgstr "Poista kaikki pikakeskustelut"
+
+#: src/views/window.py:215
+msgid ""
+"Are you sure you want to delete all chats in this thread? This can't be "
+"undone!"
+msgstr ""
+"Oletko varma, että haluat poistaa kaikki pikakeskustelut tästä säikeestä? "
+"Tätä ei voi kumota!"
+
+#: src/views/window.py:231 src/views/window.py:247
+msgid "Nothing to clear!"
+msgstr "Ei mitään tyhjennettävää!"
+
+#: src/views/window.py:257
+msgid "Nothing to export!"
+msgstr "Ei mitään vietävää!"
+
+#: src/views/window.py:283 src/views/window.py:321
+msgid "Clear all"
+msgstr "Tyhjennä kaikki"
+
+#: src/views/window.py:383
+msgid "Generating response"
+msgstr "Luodaan vastausta"
+
+#: src/views/window.py:397 src/views/window.py:410
+msgid "Sorry, I don't know what to say."
+msgstr "Valitettavasti en tiedä mitä sanoa."
+
+#: src/views/window.py:451
+msgid "human"
+msgstr "ihminen"
+
+>>>>>>> 93479bb (Translated using Weblate (Finnish))
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
-msgstr "Uusi keskustelu"
+msgstr "Uusi pikakeskustelu"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
@@ -211,12 +350,13 @@ msgstr "Päävalikko"
 
 #: src/views/window.blp:56
 msgid "No Chats"
-msgstr "Ei keskusteluja"
+msgstr "Ei pikakeskusteluja"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
 msgstr ""
-"Aloita luomalla uusi keskustelu tai valitsemalla keskustelu sivupalkista"
+"Aloita luomalla uusi pikakeskustelu tai valitsemalla pikakeskustelu "
+"sivupalkista"
 
 #: src/views/window.blp:96
 msgid "Message"
@@ -236,11 +376,11 @@ msgstr "Lähetä ensimmäinen viesti aloittaaksesi"
 
 #: src/views/window.blp:149
 msgid "No Internet"
-msgstr "Ei internetyhteyttä"
+msgstr "Ei Internetiä"
 
 #: src/views/window.blp:156
 msgid "Get started by creating a new chat"
-msgstr "Aloita luomalla uusi keskustelu"
+msgstr "Aloita luomalla uusi pikakeskustelu"
 
 #: src/views/window.blp:246
 msgid "Ask"
@@ -248,11 +388,11 @@ msgstr "Kysy"
 
 #: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
-msgstr "Pikanäppäimet"
+msgstr "Näppäimistön pikanäppäimet"
 
 #: src/views/window.blp:296
 msgid "About Bavarder"
-msgstr "Tietoja - Bavarder"
+msgstr "Tietoja Bavarderista"
 
 #: src/views/window.py:183
 msgid "New chat"
@@ -375,6 +515,21 @@ msgstr ""
 "faktuaalisuutta."
 
 #: src/widgets/model_item.blp:45
+<<<<<<< HEAD
+=======
+msgid "Top K"
+msgstr "Korkein K"
+
+#: src/widgets/model_item.blp:46
+msgid ""
+"Randomly sample from the top_k most likely tokens at each generation step. "
+"Set this to 1 for greedy decoding."
+msgstr ""
+"Ota satunnainen näyte top_k todennäköisimmästä poletista kussakin sukupolven "
+"vaiheessa. Aseta tämä arvoon 1 ahneelle dekoodaukselle."
+
+#: src/widgets/model_item.blp:59
+>>>>>>> 93479bb (Translated using Weblate (Finnish))
 msgid "Top P"
 msgstr "Korkein P"
 
@@ -383,6 +538,8 @@ msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"Ota satunnainen näyte jokaisessa sukupolven vaiheessa todennäköisimmistä "
+"poleteista, joiden todennäköisyydet ovat top_p."
 
 #: src/widgets/model_item.blp:60
 msgid "Top K"
@@ -390,11 +547,43 @@ msgstr "Korkein K"
 
 #: src/widgets/model_item.blp:61
 msgid ""
+<<<<<<< HEAD
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
 
 #: src/widgets/model_item.py:49
+=======
+"Penalize the model for repetition. Higher values result in less repetition."
+msgstr ""
+"Rankaise mallia toistamisesta. Isommat arvot tuottavat vähemmän toistoa."
+
+#: src/widgets/model_item.blp:89
+msgid "Batch Size"
+msgstr "Erän koko"
+
+#: src/widgets/model_item.blp:90
+msgid ""
+"Number of prompt tokens processed in parallel. Larger values decrease "
+"latency but increase resource requirements."
+msgstr ""
+"Rinnakkain käsiteltyjen kehoteiden polettien määrä. Suuremmat arvot "
+"vähentävät viivettä, mutta lisäävät resurssivaatimuksia."
+
+#: src/widgets/model_item.blp:103
+msgid "Repeat Last N"
+msgstr "Toista viimeinen N"
+
+#: src/widgets/model_item.blp:104
+msgid "How far in the models generation history to apply the repeat penalty. "
+msgstr "Kuinka pitkälle mallin historiassa käytetään toistamisrangaistusta. "
+
+#: src/widgets/model_item.blp:117
+msgid "System Prompt"
+msgstr "Järjestelmän kehote"
+
+#: src/widgets/model_item.py:64
+>>>>>>> 93479bb (Translated using Weblate (Finnish))
 #, python-format
 msgid "Model %s deleted!"
 msgstr "Malli %s poistettu!"
@@ -406,23 +595,23 @@ msgstr "Muokkaa nimeä"
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
-msgstr "Tähden mukaan"
+msgstr "Tähti"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr "Nimeä muokattu"
+msgstr "Otsikko muokattu"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr "Poista ketju"
+msgstr "Poista säie"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr "Haluatko varmasti poistaa tämän?"
+msgstr "Oletko varma, että haluat poistaa tämän säikeen?"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr "Ketju poistettu"
+msgstr "Säie poistettu"
 
 #~ msgid "Image"
 #~ msgstr "Kuva"
