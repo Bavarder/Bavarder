@@ -10,6 +10,7 @@
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # N4taa <N4taa@users.noreply.translate.codeberg.org>, 2024.
 # rafablog77 <rafablog77@users.noreply.translate.codeberg.org>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -21,9 +22,13 @@ msgstr ""
 =======
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
 "PO-Revision-Date: 2025-02-10 10:21+0000\n"
+<<<<<<< HEAD
 "Last-Translator: rafablog77 <rafablog77@users.noreply.translate.codeberg.org>"
 "\n"
 >>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
+=======
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+>>>>>>> 23b701a (Translated using Weblate (Portuguese))
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pt/>\n"
 "Language: pt\n"
@@ -251,11 +256,15 @@ msgstr "Humano"
 
 >>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
+<<<<<<< HEAD
 #: src/views/window.blp:171 src/views/window.blp:172
 #, fuzzy
 #| msgid "Chat"
+=======
+#: src/views/window.blp:184 src/views/window.blp:185
+>>>>>>> 23b701a (Translated using Weblate (Portuguese))
 msgid "New Chat"
-msgstr "Conversas"
+msgstr "Nova conversa"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
