@@ -9,13 +9,21 @@
 # N4taa <r0dr1g02m4r5d3v@gmail.com>, 2024.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # N4taa <N4taa@users.noreply.translate.codeberg.org>, 2024.
+# rafablog77 <rafablog77@users.noreply.translate.codeberg.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-03-11 22:13+0000\n"
 "Last-Translator: N4taa <N4taa@users.noreply.translate.codeberg.org>\n"
+=======
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"PO-Revision-Date: 2025-02-10 10:21+0000\n"
+"Last-Translator: rafablog77 <rafablog77@users.noreply.translate.codeberg.org>"
+"\n"
+>>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pt/>\n"
 "Language: pt\n"
@@ -23,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.4.2\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -48,7 +56,7 @@ msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Empacotamento"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -112,9 +120,6 @@ msgid "Clear all threads"
 msgstr "Limpar todas as conversas"
 
 #: src/views/preferences_window.blp:35
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear"
 msgstr "Limpar"
 
@@ -202,6 +207,49 @@ msgstr "Incapaz de salvar a Conversa"
 msgid "Thread successfully saved!"
 msgstr "Conversa salva com sucesso!"
 
+<<<<<<< HEAD
+=======
+#: src/views/window.py:179
+msgid "New chat"
+msgstr "Nova conversa"
+
+#: src/views/window.py:214
+msgid "Delete All Chats"
+msgstr "Apagar Todas as Conversas"
+
+#: src/views/window.py:215
+msgid ""
+"Are you sure you want to delete all chats in this thread? This can't be "
+"undone!"
+msgstr ""
+"Tem certeza que quer deletar todas as conversas desta thread? Isso não pode "
+"ser desfeito!"
+
+#: src/views/window.py:231 src/views/window.py:247
+msgid "Nothing to clear!"
+msgstr "Nada para limpar!"
+
+#: src/views/window.py:257
+msgid "Nothing to export!"
+msgstr "Nada para exportar!"
+
+#: src/views/window.py:283 src/views/window.py:321
+msgid "Clear all"
+msgstr "Limpar tudo"
+
+#: src/views/window.py:383
+msgid "Generating response"
+msgstr "Gerando resposta"
+
+#: src/views/window.py:397 src/views/window.py:410
+msgid "Sorry, I don't know what to say."
+msgstr "Desculpe, não sei o que dizer."
+
+#: src/views/window.py:451
+msgid "human"
+msgstr "Humano"
+
+>>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:171 src/views/window.blp:172
 #, fuzzy
@@ -214,19 +262,18 @@ msgid "Main Menu"
 msgstr "Menu principal"
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chats"
-msgstr "Conversas"
+msgstr "Sem Conversas"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "Comece criando uma nova conversa ou selecionando uma da sidebar"
 
 #: src/views/window.blp:96
 msgid "Message"
 msgstr "Mensagem"
 
+<<<<<<< HEAD
 #: src/views/window.blp:102
 msgid "Chat"
 msgstr "Conversas"
@@ -234,20 +281,23 @@ msgstr "Conversas"
 #: src/views/window.blp:143
 #, fuzzy
 #| msgid "Message"
+=======
+#: src/views/window.blp:156
+>>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 msgid "No Messages"
-msgstr "Mensagem"
+msgstr "Sem Mensagens"
 
 #: src/views/window.blp:144
 msgid "Send first message to get started"
-msgstr ""
+msgstr "Envie a primeira mensagem para conversar"
 
 #: src/views/window.blp:149
 msgid "No Internet"
-msgstr ""
+msgstr "Sem Internet"
 
 #: src/views/window.blp:156
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "Comece criando uma nova conversa"
 
 #: src/views/window.blp:246
 msgid "Ask"
@@ -316,17 +366,17 @@ msgstr "Feito"
 
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "Baixar Modelo"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Baixando modelo %s"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "Modelo %s baixado!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
@@ -341,42 +391,38 @@ msgid "Remove"
 msgstr "Remover"
 
 #: src/widgets/item.py:219
-#, fuzzy
-#| msgid "Unable to save the Thread"
 msgid "Failed to save the image"
-msgstr "Incapaz de salvar a Conversa"
+msgstr "Incapaz de salvar a imagem"
 
 #: src/widgets/item.py:221
+#, fuzzy
 msgid "Image saved"
-msgstr ""
+msgstr "Imagem salva"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "Nenhuma imagem para salvar"
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "Mensagem"
+msgstr "Salvar mensagem"
 
 #: src/widgets/item.py:251
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "Mensagem"
+msgstr "Mensagem copiada"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "Apagar modelo"
 
 #: src/widgets/model_item.blp:16
+#, fuzzy
 msgid "Max Tokens"
-msgstr ""
+msgstr "Máximo de Tokens"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "O número máximo de tokens para gerar."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
@@ -387,28 +433,85 @@ msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"A temperatura do modelo. Valores maiores aumentam a criatividade, mas "
+"diminuem a factualidade."
 
 #: src/widgets/model_item.blp:45
-msgid "Top P"
+<<<<<<< HEAD
+=======
+msgid "Top K"
+msgstr "Top K"
+
+#: src/widgets/model_item.blp:46
+msgid ""
+"Randomly sample from the top_k most likely tokens at each generation step. "
+"Set this to 1 for greedy decoding."
 msgstr ""
+"Amostra aleatoriamente dos top_k tokens mais prováveis em cada etapa de "
+"geração. Defina isso como 1 para decodificação gananciosa."
+
+#: src/widgets/model_item.blp:59
+>>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
+msgid "Top P"
+msgstr "Top P"
 
 #: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"Amostragem aleatória em cada etapa de geração a partir dos tokens mais "
+"prováveis cujas probabilidades somam top_p."
 
+<<<<<<< HEAD
 #: src/widgets/model_item.blp:60
 msgid "Top K"
 msgstr ""
+=======
+#: src/widgets/model_item.blp:74
+msgid "Repetition Penalty"
+msgstr "Penalidade de repetição"
+>>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 
 #: src/widgets/model_item.blp:61
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
+"Penalizar o modelo por repetição. Valores maiores resultam em menos "
+"repetição."
 
+<<<<<<< HEAD
 #: src/widgets/model_item.py:49
+=======
+#: src/widgets/model_item.blp:89
+msgid "Batch Size"
+msgstr "Tamanho do lote"
+
+#: src/widgets/model_item.blp:90
+msgid ""
+"Number of prompt tokens processed in parallel. Larger values decrease "
+"latency but increase resource requirements."
+msgstr ""
+"Número de tokens de prompt processados em paralelo. Valores maiores diminuem "
+"a latência, mas aumentam os requisitos de recursos."
+
+#: src/widgets/model_item.blp:103
+msgid "Repeat Last N"
+msgstr ""
+
+#: src/widgets/model_item.blp:104
+msgid "How far in the models generation history to apply the repeat penalty. "
+msgstr ""
+
+#: src/widgets/model_item.blp:117
+#, fuzzy
+#| msgid "Prompt"
+msgid "System Prompt"
+msgstr "Prompt"
+
+#: src/widgets/model_item.py:64
+>>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 #, python-format
 msgid "Model %s deleted!"
 msgstr ""
