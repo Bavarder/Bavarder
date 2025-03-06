@@ -8,14 +8,21 @@
 # elementbound <ezittgtx@gmail.com>, 2023.
 # ViBE <vibe@protonmail.com>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Vigenere0602 <vigenere0602@noreply.codeberg.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-02-25 13:48+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
+=======
+"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"PO-Revision-Date: 2025-03-07 00:57+0000\n"
+"Last-Translator: Vigenere0602 <vigenere0602@noreply.codeberg.org>\n"
+>>>>>>> 73aca10 (Translated using Weblate (Hungarian))
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/hu/>\n"
 "Language: hu\n"
@@ -23,24 +30,78 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
 msgstr "Bavarder"
 
+<<<<<<< HEAD
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
 
+=======
+#: src/providers/base.py:8
+msgid "Image"
+msgstr "Kép"
+
+#: src/providers/base.py:9 src/views/window.blp:108
+msgid "Chat"
+msgstr "Csevegés"
+
+#: src/providers/base.py:10
+msgid "Voice"
+msgstr "Hang"
+
+#: src/providers/base.py:11
+msgid "Text"
+msgstr "Szöveg"
+
+#: src/providers/base.py:12
+msgid "Movie"
+msgstr "Film"
+
+#: src/providers/base.py:86
+msgid "How to get a token"
+msgstr "API.kulcs beszerzése"
+
+#: src/providers/catgpt.py:7
+msgid "Chit-Chat with a Cat"
+msgstr "Csevegés egy macskával"
+
+#: src/providers/hfbasechat.py:45
+msgid ""
+"You've reached the rate limit! Please add a token to the preferences. You "
+"can get the token by following this [guide](https://bavarder.codeberg.page/"
+"help/huggingface/)"
+msgstr ""
+"Elérte a díjkorlátot! Kérjük, adjon hozzá egy tokent a beállításokhoz. A "
+"tokent az alábbi [útmutató] követésével szerezheti meg (https://"
+"bavarder.codeberg.page/help/huggingface/)"
+
+#: src/providers/hfbasechat.py:50
+#, python-brace-format
+msgid "Sorry, I don't know what to say! (Error: {output})"
+msgstr "Bocsánat, nem tudom, mit mondjak! (Hiba: {output})"
+
+#: src/providers/hfbasechat.py:58
+msgid "API Key"
+msgstr "API-kulcs"
+
+#: src/providers/provider_item.blp:18
+msgid "No preferences available"
+msgstr "Nincs elérhető beállítás"
+
+>>>>>>> 73aca10 (Translated using Weblate (Hungarian))
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "ViBE"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr ""
+msgstr "Csevegés a mesterséges intelligenciával"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -48,7 +109,7 @@ msgstr "Szerzői jog © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Csomagolás"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -79,7 +140,7 @@ msgstr "Parancsablak"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Téma exportálása?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -89,6 +150,7 @@ msgstr "Bezár"
 msgid "Export"
 msgstr "Exportálás"
 
+<<<<<<< HEAD
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
@@ -98,30 +160,68 @@ msgstr "Beállítások"
 #: src/views/preferences_window.py:46 src/views/window.py:297
 #, fuzzy
 #| msgid "Model"
+=======
+#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
+#: src/views/preferences_window.blp:19 src/views/window.py:313
+>>>>>>> 73aca10 (Translated using Weblate (Hungarian))
 msgid "Models"
-msgstr "Modell"
+msgstr "Modellek"
 
+<<<<<<< HEAD
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
 msgstr ""
 
+=======
+#: src/views/preferences_window.py:60
+msgid "List of available models"
+msgstr "Elérhető modellek listája"
+
+#: src/views/preferences_window.py:72
+msgid "Delete All Threads"
+msgstr "Minden téma törlése"
+
+#: src/views/preferences_window.py:73
+msgid "Are you sure you want to delete all threads? This can't be undone!"
+msgstr ""
+"Biztos, hogy törölni szeretnéd az összes témát? Ezt nem lehet visszavonni!"
+
+#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
+#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
+#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
+msgid "Cancel"
+msgstr "Mégse"
+
+#: src/views/preferences_window.py:78 src/views/window.py:220
+#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
+msgid "Delete"
+msgstr "Törlés"
+
+#: src/views/preferences_window.py:93 src/views/window.py:245
+msgid "All chats cleared!"
+msgstr "Minden chat törölve!"
+
+#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
+#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
+msgid "Preferences"
+msgstr "Beállítások"
+
+#: src/views/preferences_window.blp:15 src/views/window.py:275
+msgid "Providers"
+msgstr "Szolgáltatók"
+
+>>>>>>> 73aca10 (Translated using Weblate (Hungarian))
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
 msgstr "Egyebek"
 
 #: src/views/preferences_window.blp:31
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all threads"
-msgstr "Kiürítés"
+msgstr "Minden téma törlése"
 
 #: src/views/preferences_window.blp:35
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear"
-msgstr "Kiürítés"
+msgstr "Törlés"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
