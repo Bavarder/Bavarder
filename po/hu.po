@@ -7,7 +7,7 @@
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # elementbound <ezittgtx@gmail.com>, 2023.
 # ViBE <vibe@protonmail.com>, 2023.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024, 2025.
 # Vigenere0602 <vigenere0602@noreply.codeberg.org>, 2025.
 msgid ""
 msgstr ""
@@ -20,9 +20,15 @@ msgstr ""
 "memory@weblate.org>\n"
 =======
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
+<<<<<<< HEAD
 "PO-Revision-Date: 2025-03-07 00:57+0000\n"
 "Last-Translator: Vigenere0602 <vigenere0602@noreply.codeberg.org>\n"
 >>>>>>> 73aca10 (Translated using Weblate (Hungarian))
+=======
+"PO-Revision-Date: 2025-03-08 16:21+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+>>>>>>> 72238d5 (Translated using Weblate (Hungarian))
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/hu/>\n"
 "Language: hu\n"
@@ -543,7 +549,7 @@ msgstr "Biztos, hogy törölni szeretnéd?"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Thread Deleted"
 
 #~ msgid "Image"
 #~ msgstr "Kép"
