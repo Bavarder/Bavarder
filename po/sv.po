@@ -7,7 +7,7 @@
 # Morgan Antonsson <morgan.antonsson@gmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023, 2024, 2025.
 # Umeaman <Umeaman@users.noreply.translate.codeberg.org>, 2024.
 # Weblate <noreply-mt-weblate@weblate.org>, 2024.
 # bittin <bittin@users.noreply.translate.codeberg.org>, 2024.
@@ -22,6 +22,7 @@ msgstr ""
 =======
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
 <<<<<<< HEAD
+<<<<<<< HEAD
 "PO-Revision-Date: 2024-11-08 16:07+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 >>>>>>> c556bcb (Translated using Weblate (Swedish))
@@ -29,6 +30,11 @@ msgstr ""
 "PO-Revision-Date: 2024-11-16 01:07+0000\n"
 "Last-Translator: bittin <bittin@users.noreply.translate.codeberg.org>\n"
 >>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
+=======
+"PO-Revision-Date: 2025-03-08 16:21+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+>>>>>>> abc5ae3 (Translated using Weblate (Swedish))
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
 "Language: sv\n"
@@ -36,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.1\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -112,7 +118,7 @@ msgstr "Upphovsrätt © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Paketering"
 
 #: src/views/about_window.py:57
 msgid "Translate"
