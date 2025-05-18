@@ -152,7 +152,7 @@ msgstr "Isaǧǧawen"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
-msgstr "Ayen nniḍen"
+msgstr "Wiyyaḍ"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
