@@ -4,13 +4,15 @@
 # Bavarder, 2024.
 #
 # butterflyoffire <butterflyoffire@noreply.codeberg.org>, 2025.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
 "PO-Revision-Date: 2025-05-18 18:13+0000\n"
-"Last-Translator: butterflyoffire <butterflyoffire@noreply.codeberg.org>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Kabyle <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/kab/>\n"
 "Language: kab\n"
@@ -75,7 +77,7 @@ msgstr ""
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr ""
+msgstr "ButterflyOfFire <butterflyoffire@protonmail.com>"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
@@ -99,12 +101,12 @@ msgstr ""
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
-msgstr ""
+msgstr "Mdel"
 
 #: src/views/export_dialog.blp:54 src/views/window.py:288
 #: src/views/window.py:326
 msgid "Export"
-msgstr ""
+msgstr "Sifeḍ"
 
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:19 src/views/window.py:313
@@ -141,7 +143,7 @@ msgstr ""
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
 msgid "Preferences"
-msgstr ""
+msgstr "Imenyafen"
 
 #: src/views/preferences_window.blp:15 src/views/window.py:275
 msgid "Providers"
@@ -177,11 +179,11 @@ msgstr ""
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
-msgstr ""
+msgstr "Anef"
 
 #: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
-msgstr ""
+msgstr "Sekles"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -197,7 +199,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr ""
+msgstr "Fren akaram"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
@@ -209,7 +211,7 @@ msgstr ""
 
 #: src/views/window.py:179
 msgid "New chat"
-msgstr ""
+msgstr "Asqerdec amaynut"
 
 #: src/views/window.py:214
 msgid "Delete All Chats"
@@ -252,7 +254,7 @@ msgstr ""
 
 #: src/views/window.blp:41
 msgid "Main Menu"
-msgstr ""
+msgstr "Umuɣ agejdan"
 
 #: src/views/window.blp:56
 msgid "No Chats"
@@ -264,7 +266,7 @@ msgstr ""
 
 #: src/views/window.blp:96
 msgid "Message"
-msgstr ""
+msgstr "Izen"
 
 #: src/views/window.blp:156
 msgid "No Messages"
@@ -288,7 +290,7 @@ msgstr ""
 
 #: src/views/window.blp:304
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Inegzumen n unasiw"
 
 #: src/views/window.blp:309
 msgid "About Bavarder"
@@ -296,7 +298,7 @@ msgstr ""
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
-msgstr ""
+msgstr "Immed"
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
@@ -314,15 +316,15 @@ msgstr ""
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr ""
+msgstr "Nɣel"
 
 #: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
-msgstr ""
+msgstr "áº’reg"
 
 #: src/widgets/item.blp:117
 msgid "Remove"
-msgstr ""
+msgstr "Kkes"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
@@ -358,7 +360,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr ""
+msgstr "Lḥamu"
 
 #: src/widgets/model_item.blp:31
 msgid ""
@@ -429,7 +431,7 @@ msgstr ""
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
-msgstr ""
+msgstr "Itri"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
