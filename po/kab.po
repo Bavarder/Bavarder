@@ -6,13 +6,14 @@
 # butterflyoffire <butterflyoffire@noreply.codeberg.org>, 2025.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2025.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# Moonshadow <moonshadow@noreply.codeberg.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2025-05-19 07:04+0000\n"
-"Last-Translator: butterflyoffire <butterflyoffire@noreply.codeberg.org>\n"
+"PO-Revision-Date: 2025-05-22 22:58+0000\n"
+"Last-Translator: Moonshadow <moonshadow@noreply.codeberg.org>\n"
 "Language-Team: Kabyle <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/kab/>\n"
 "Language: kab\n"
@@ -49,7 +50,7 @@ msgstr "Tavidyut"
 
 #: src/providers/base.py:86
 msgid "How to get a token"
-msgstr ""
+msgstr "Amek ara tawiḍ ajuṭu"
 
 #: src/providers/catgpt.py:7
 msgid "Chit-Chat with a Cat"
@@ -73,7 +74,7 @@ msgstr "Tasarutt API"
 
 #: src/providers/provider_item.blp:18
 msgid "No preferences available"
-msgstr ""
+msgstr "Ulac ismenyifen i yellan"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -97,7 +98,7 @@ msgstr "Suqel"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Sifeḍ asqerdec?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -115,11 +116,11 @@ msgstr ""
 
 #: src/views/preferences_window.py:60
 msgid "List of available models"
-msgstr ""
+msgstr "Tabdart n timudam yellan"
 
 #: src/views/preferences_window.py:72
 msgid "Delete All Threads"
-msgstr ""
+msgstr "Kkes akk isqerdicen"
 
 #: src/views/preferences_window.py:73
 msgid "Are you sure you want to delete all threads? This can't be undone!"
@@ -138,7 +139,7 @@ msgstr "Kkes"
 
 #: src/views/preferences_window.py:93 src/views/window.py:245
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Ttwasfaḍen akk isqerdicen!"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
@@ -155,7 +156,7 @@ msgstr "Wiyyaḍ"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
-msgstr ""
+msgstr "Sfeḍ akk isqerdicen"
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
@@ -203,11 +204,11 @@ msgstr "Fren akaram"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "D awezɣi asekles n usqerdec"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "Asqerdec yettwasekles akken iwata!"
 
 #: src/views/window.py:179
 msgid "New chat"
@@ -215,7 +216,7 @@ msgstr "Asqerdec amaynut"
 
 #: src/views/window.py:214
 msgid "Delete All Chats"
-msgstr ""
+msgstr "Kkes akk idiwenniyen"
 
 #: src/views/window.py:215
 msgid ""
@@ -225,11 +226,11 @@ msgstr ""
 
 #: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "Ulac ara yettwasfaḍen!"
 
 #: src/views/window.py:257
 msgid "Nothing to export!"
-msgstr ""
+msgstr "Ulac ara yettwasifḍen!"
 
 #: src/views/window.py:283 src/views/window.py:321
 msgid "Clear all"
@@ -237,7 +238,7 @@ msgstr "Sfeḍ-iten akk"
 
 #: src/views/window.py:383
 msgid "Generating response"
-msgstr ""
+msgstr "Asirew n tririt"
 
 #: src/views/window.py:397 src/views/window.py:410
 msgid "Sorry, I don't know what to say."
@@ -258,7 +259,7 @@ msgstr "Umuɣ agejdan"
 
 #: src/views/window.blp:56
 msgid "No Chats"
-msgstr ""
+msgstr "Ulac asqerdec"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
@@ -282,7 +283,7 @@ msgstr "Ulac tuqqna ɣer Internet"
 
 #: src/views/window.blp:169
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "Aha bdu s tmerna n udiwenni amaynut"
 
 #: src/views/window.blp:259
 msgid "Ask"
@@ -302,17 +303,17 @@ msgstr "Immed"
 
 #: src/widgets/download_row.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "Sader tamudemt"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Asader n timudemt %s"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "Tettwasader timudemt %s!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
@@ -328,7 +329,7 @@ msgstr "Kkes"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
-msgstr ""
+msgstr "Yecceḍ usekles n tugna"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
@@ -336,7 +337,7 @@ msgstr "Tugna tettwakles"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "Ulac tugna ara yettwaseklasen"
 
 #: src/widgets/item.py:235
 msgid "Save message"
@@ -344,11 +345,11 @@ msgstr "Sekles izen"
 
 #: src/widgets/item.py:251
 msgid "Message copied"
-msgstr ""
+msgstr "Izen yettwanɣal"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "Kkes tamudemt"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
@@ -422,7 +423,7 @@ msgstr ""
 #: src/widgets/model_item.py:64
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "Tettwakkes timudemt %s!"
 
 #: src/widgets/thread_item.blp:23 src/widgets/thread_item.py:75
 #: src/widgets/thread_item.py:80
@@ -435,11 +436,11 @@ msgstr "Itri"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "Azwel yettwaẓreg"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr ""
+msgstr "Kkes asqerdec"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
@@ -447,7 +448,7 @@ msgstr ""
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Asqerdec yettwakkes"
 
 #: src/main.py:261
 msgid ""
