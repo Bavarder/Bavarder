@@ -13,7 +13,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
 "PO-Revision-Date: 2025-09-08 16:09+0000\n"
-"Last-Translator: butterflyoffire <butterflyoffire@noreply.codeberg.org>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Kabyle <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/kab/>\n"
 "Language: kab\n"
@@ -90,7 +91,7 @@ msgstr "Copyright © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Asekrud"
 
 #: src/views/about_window.py:57
 msgid "Translate"
@@ -418,7 +419,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:117
 msgid "System Prompt"
-msgstr ""
+msgstr "Anagraw n wammud"
 
 #: src/widgets/model_item.py:64
 #, python-format
