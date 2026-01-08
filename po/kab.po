@@ -5,16 +5,15 @@
 #
 # butterflyoffire <butterflyoffire@noreply.codeberg.org>, 2025.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2025.
-# Weblate <noreply-mt-weblate@weblate.org>, 2025.
+# Weblate <noreply-mt-weblate@weblate.org>, 2025, 2026.
 # Moonshadow <moonshadow@noreply.codeberg.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2025-10-08 16:09+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2026-01-08 16:21+0000\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Kabyle <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/kab/>\n"
 "Language: kab\n"
@@ -22,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13.2\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
@@ -125,7 +124,7 @@ msgstr "Kkes akk isqerdicen"
 
 #: src/views/preferences_window.py:73
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr ""
+msgstr "Tetḥeqqeḍ tebɣiḍ ad tekkseḍ akk aktayen? Tigawt-a ur tettwakkes ara."
 
 #: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
 #: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
@@ -223,7 +222,7 @@ msgstr "Kkes akk idiwenniyen"
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
-msgstr ""
+msgstr "Tetḥeqqeḍ tebɣiḍ ad tekkseḍ akk aktayen? Tigawt-a ur tettwakkes ara."
 
 #: src/views/window.py:231 src/views/window.py:247
 msgid "Nothing to clear!"
@@ -445,7 +444,7 @@ msgstr "Kkes asqerdec"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr ""
+msgstr "Tetḥeqqeḍ tebɣiḍ ad tekkseḍ izen-a?"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
