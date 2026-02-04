@@ -97,11 +97,11 @@ class PreferencesWindow(Adw.PreferencesWindow):
     def on_bot_entry_apply(self, user_data, *args):
         self.app.bot_name = user_data.get_text()
 
-        self.app.load_bot_and_user_name()
+        self.app.save()
 
     @Gtk.Template.Callback()
     def on_user_entry_apply(self, user_data, *args):
         self.app.user_name = user_data.get_text()
 
-        self.app.load_bot_and_user_name()
-    
+        self.app.save()
+
