@@ -196,7 +196,7 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def on_new_chat_action(self, *args):
-        self.app.on_new_chat_action(_, _)
+        self.app.on_new_chat_action(None, None)
 
     @Gtk.Template.Callback()
     def scroll_down(self, *args):
