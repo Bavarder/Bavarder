@@ -136,7 +136,7 @@ class BavarderApplication(Adw.Application):
 
     def save(self):
         with open(self.data_path, "w", encoding="utf-8") as f:
-            self.data = json.dump(self.data, f)
+            json.dump(self.data, f)
             self.settings.set_boolean("local-mode", self.local_mode)
             self.settings.set_string("current-provider", self.current_provider)
             self.settings.set_string("model", self.model_name)
