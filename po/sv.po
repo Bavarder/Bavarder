@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-05-21 13:18+0000\n"
 "Last-Translator: Umeaman <Umeaman@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
@@ -25,61 +25,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5.5\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
-#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
+#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: src/providers/base.py:8
-msgid "Image"
-msgstr "Bild"
-
-#: src/providers/base.py:9 src/views/window.blp:108
-msgid "Chat"
-msgstr "Chatt"
-
-#: src/providers/base.py:10
-msgid "Voice"
-msgstr "Ljud"
-
-#: src/providers/base.py:11
-msgid "Text"
-msgstr "text"
-
-#: src/providers/base.py:12
-msgid "Movie"
-msgstr "Film"
-
-#: src/providers/base.py:86
-msgid "How to get a token"
+#: src/llm.py:39
+msgid "No model available. Please download a model or set a model path."
 msgstr ""
-
-#: src/providers/catgpt.py:7
-#, fuzzy
-#| msgid "Chit-chat with an AI"
-msgid "Chit-Chat with a Cat"
-msgstr "Småprata med en Katt"
-
-#: src/providers/hfbasechat.py:45
-msgid ""
-"You've reached the rate limit! Please add a token to the preferences. You "
-"can get the token by following this [guide](https://bavarder.codeberg.page/"
-"help/huggingface/)"
-msgstr ""
-
-#: src/providers/hfbasechat.py:50
-#, fuzzy, python-brace-format
-msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "Ledsen, men jag vet inte vad jag ska säga! (Fel: {output})"
-
-#: src/providers/hfbasechat.py:58
-msgid "API Key"
-msgstr "API-nyckel"
-
-#: src/providers/provider_item.blp:18
-#, fuzzy
-msgid "No preferences available"
-msgstr "Inga egenskaper tillgängliga"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -101,6 +54,29 @@ msgstr ""
 msgid "Translate"
 msgstr "Översätt"
 
+#: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
+#, fuzzy
+#| msgid "Open settings"
+msgid "Chat Settings"
+msgstr "Öppna inställningar"
+
+#: src/views/chat_settings_dialog.blp:11
+#, fuzzy
+#| msgctxt "shortcut window"
+#| msgid "General"
+msgid "General"
+msgstr "Generellt"
+
+#: src/views/chat_settings_dialog.blp:14
+msgid "Chat Title"
+msgstr ""
+
+#: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
+#, fuzzy
+#| msgid "Prompt"
+msgid "System Prompt"
+msgstr "Prompt"
+
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 #, fuzzy
 msgid "Export Thread?"
@@ -110,54 +86,25 @@ msgstr "Exportera tråd?"
 msgid "Close"
 msgstr "Stäng"
 
-#: src/views/export_dialog.blp:54 src/views/window.py:288
-#: src/views/window.py:326
+#: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
 msgstr "Exportera"
 
-#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:313
+#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
+#: src/views/window.blp:286
+msgid "Preferences"
+msgstr "Inställningar"
+
+#: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
+#: src/views/preferences_window.py:46 src/views/window.py:297
 #, fuzzy
 #| msgid "Model"
 msgid "Models"
 msgstr "Modeller"
 
-#: src/views/preferences_window.py:60
-msgid "List of available models"
-msgstr "Lista över tillgängliga modeller"
-
-#: src/views/preferences_window.py:72
-msgid "Delete All Threads"
-msgstr "Ta bort alla trådar"
-
-#: src/views/preferences_window.py:73
-msgid "Are you sure you want to delete all threads? This can't be undone!"
+#: src/views/preferences_window.blp:19
+msgid "Model Marketplace"
 msgstr ""
-"Är du säker på att du vill ta bort alla trådar? Det här kan inte ångras!"
-
-#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: src/views/preferences_window.py:78 src/views/window.py:220
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "Radera"
-
-#: src/views/preferences_window.py:93 src/views/window.py:245
-msgid "All chats cleared!"
-msgstr "Alla chattar rensades!"
-
-#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
-msgid "Preferences"
-msgstr "Inställningar"
-
-#: src/views/preferences_window.blp:15 src/views/window.py:275
-msgid "Providers"
-msgstr "Leverantörer"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -189,6 +136,41 @@ msgstr "Namn på boten"
 #| msgid "User"
 msgid "User name"
 msgstr "Namn på användaren"
+
+#: src/views/preferences_window.py:55
+#, fuzzy
+msgid "No local models available"
+msgstr "Inga egenskaper tillgängliga"
+
+#: src/views/preferences_window.py:91
+#, fuzzy, python-format
+#| msgid "Downloading model %s"
+msgid "Error loading marketplace: %s"
+msgstr "Hämtar modellen %s"
+
+#: src/views/preferences_window.py:101
+msgid "Delete All Threads"
+msgstr "Ta bort alla trådar"
+
+#: src/views/preferences_window.py:102
+msgid "Are you sure you want to delete all threads? This can't be undone!"
+msgstr ""
+"Är du säker på att du vill ta bort alla trådar? Det här kan inte ångras!"
+
+#: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
+#: src/views/window.py:223 src/widgets/item.py:240
+#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: src/views/preferences_window.py:107 src/views/window.py:224
+#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
+msgid "Delete"
+msgstr "Radera"
+
+#: src/views/preferences_window.py:122 src/views/window.py:249
+msgid "All chats cleared!"
+msgstr "Alla chattar rensades!"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -222,48 +204,8 @@ msgstr "Kunde inte spara tråden"
 msgid "Thread successfully saved!"
 msgstr "Sparandet av tråden lyckades!"
 
-#: src/views/window.py:179
-msgid "New chat"
-msgstr "Ny chatt"
-
-#: src/views/window.py:214
-msgid "Delete All Chats"
-msgstr "Ta bort alla chattar"
-
-#: src/views/window.py:215
-msgid ""
-"Are you sure you want to delete all chats in this thread? This can't be "
-"undone!"
-msgstr ""
-"Är du säker på att du vill ta bort alla chattar i den här tråden? Det här "
-"kan inte ångras!"
-
-#: src/views/window.py:231 src/views/window.py:247
-msgid "Nothing to clear!"
-msgstr "Ingenting att rensa!"
-
-#: src/views/window.py:257
-msgid "Nothing to export!"
-msgstr "Ingenting att exportera!"
-
-#: src/views/window.py:283 src/views/window.py:321
-msgid "Clear all"
-msgstr "Rensa allt"
-
-#: src/views/window.py:383
-msgid "Generating response"
-msgstr "Genererar svar"
-
-#: src/views/window.py:397 src/views/window.py:410
-msgid "Sorry, I don't know what to say."
-msgstr "Ledsen, men jag vet inte vad jag ska säga."
-
-#: src/views/window.py:451
-msgid "human"
-msgstr "Människa"
-
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
-#: src/views/window.blp:184 src/views/window.blp:185
+#: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
 msgstr "Ny chatt"
 
@@ -283,39 +225,87 @@ msgstr "Börja med att skapa en ny chatt eller välj en från sidofältet"
 msgid "Message"
 msgstr "Meddelande"
 
-#: src/views/window.blp:156
+#: src/views/window.blp:102
+msgid "Chat"
+msgstr "Chatt"
+
+#: src/views/window.blp:143
 msgid "No Messages"
 msgstr "Inga meddelanden"
 
-#: src/views/window.blp:157
+#: src/views/window.blp:144
 msgid "Send first message to get started"
 msgstr "Skicka första meddelandet för att börja"
 
-#: src/views/window.blp:162
+#: src/views/window.blp:149
 msgid "No Internet"
 msgstr "Inget internet"
 
-#: src/views/window.blp:169
+#: src/views/window.blp:156
 msgid "Get started by creating a new chat"
 msgstr "Börja genom att skapa en ny chatt"
 
-#: src/views/window.blp:259
+#: src/views/window.blp:246
 msgid "Ask"
 msgstr "Fråga"
 
-#: src/views/window.blp:304
+#: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
 msgstr "Tangentbordsgenvägar"
 
-#: src/views/window.blp:309
+#: src/views/window.blp:296
 msgid "About Bavarder"
 msgstr "Om Bavarder"
+
+#: src/views/window.py:183
+msgid "New chat"
+msgstr "Ny chatt"
+
+#: src/views/window.py:218
+msgid "Delete All Chats"
+msgstr "Ta bort alla chattar"
+
+#: src/views/window.py:219
+msgid ""
+"Are you sure you want to delete all chats in this thread? This can't be "
+"undone!"
+msgstr ""
+"Är du säker på att du vill ta bort alla chattar i den här tråden? Det här "
+"kan inte ångras!"
+
+#: src/views/window.py:235 src/views/window.py:251
+msgid "Nothing to clear!"
+msgstr "Ingenting att rensa!"
+
+#: src/views/window.py:261
+msgid "Nothing to export!"
+msgstr "Ingenting att exportera!"
+
+#: src/views/window.py:307
+msgid "Clear all"
+msgstr "Rensa allt"
+
+#: src/views/window.py:368
+msgid "Sorry, I don't know what to say."
+msgstr "Ledsen, men jag vet inte vad jag ska säga."
+
+#: src/views/window.py:388
+msgid "Error: "
+msgstr ""
+
+#: src/views/window.py:391
+msgid "Generating response"
+msgstr "Genererar svar"
+
+#: src/views/window.py:433
+msgid "human"
+msgstr "Människa"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
 msgstr "Klar"
 
-#: src/widgets/download_row.blp:11
+#: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 #, fuzzy
 msgid "Download Model"
 msgstr "Hämta modell"
@@ -389,60 +379,27 @@ msgstr ""
 "sakligheten."
 
 #: src/widgets/model_item.blp:45
-#, fuzzy
-msgid "Top K"
-msgstr "Top K"
-
-#: src/widgets/model_item.blp:46
-msgid ""
-"Randomly sample from the top_k most likely tokens at each generation step. "
-"Set this to 1 for greedy decoding."
-msgstr ""
-
-#: src/widgets/model_item.blp:59
 msgid "Top P"
 msgstr "Top P"
 
-#: src/widgets/model_item.blp:60
+#: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
 
-#: src/widgets/model_item.blp:74
-msgid "Repetition Penalty"
-msgstr ""
-
-#: src/widgets/model_item.blp:75
-msgid ""
-"Penalize the model for repetition. Higher values result in less repetition."
-msgstr ""
-
-#: src/widgets/model_item.blp:89
-msgid "Batch Size"
-msgstr ""
-
-#: src/widgets/model_item.blp:90
-msgid ""
-"Number of prompt tokens processed in parallel. Larger values decrease "
-"latency but increase resource requirements."
-msgstr ""
-
-#: src/widgets/model_item.blp:103
-msgid "Repeat Last N"
-msgstr ""
-
-#: src/widgets/model_item.blp:104
-msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
-
-#: src/widgets/model_item.blp:117
+#: src/widgets/model_item.blp:60
 #, fuzzy
-#| msgid "Prompt"
-msgid "System Prompt"
-msgstr "Prompt"
+msgid "Top K"
+msgstr "Top K"
 
-#: src/widgets/model_item.py:64
+#: src/widgets/model_item.blp:61
+msgid ""
+"Randomly sample from the top_k most likely tokens at each generation step. "
+"Set this to 1 for greedy decoding."
+msgstr ""
+
+#: src/widgets/model_item.py:49
 #, python-format
 msgid "Model %s deleted!"
 msgstr ""
@@ -472,19 +429,35 @@ msgstr "Är du säker på att du vill ta bort detta?"
 msgid "Thread Deleted"
 msgstr ""
 
-#: src/main.py:261
-msgid ""
-"Please download a model from Preferences by clicking on the Dot Menu at the "
-"top!"
-msgstr ""
+#~ msgid "Image"
+#~ msgstr "Bild"
 
-#: src/main.py:265
-msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr ""
+#~ msgid "Voice"
+#~ msgstr "Ljud"
 
-#: src/main.py:288
-msgid "Please enable a provider from the Dot Menu"
-msgstr ""
+#~ msgid "Text"
+#~ msgstr "text"
+
+#~ msgid "Movie"
+#~ msgstr "Film"
+
+#, fuzzy
+#~| msgid "Chit-chat with an AI"
+#~ msgid "Chit-Chat with a Cat"
+#~ msgstr "Småprata med en Katt"
+
+#, fuzzy, python-brace-format
+#~ msgid "Sorry, I don't know what to say! (Error: {output})"
+#~ msgstr "Ledsen, men jag vet inte vad jag ska säga! (Fel: {output})"
+
+#~ msgid "API Key"
+#~ msgstr "API-nyckel"
+
+#~ msgid "List of available models"
+#~ msgstr "Lista över tillgängliga modeller"
+
+#~ msgid "Providers"
+#~ msgstr "Leverantörer"
 
 #~ msgid "Clear prompt after send"
 #~ msgstr "Töm prompt efter den har skickats"
@@ -510,9 +483,6 @@ msgstr ""
 #~ msgid "No API key provided, you can provide one in settings"
 #~ msgstr "Ingen API-nyckel har angetts, du kan ange en i inställningarna"
 
-#~ msgid "Open settings"
-#~ msgstr "Öppna inställningar"
-
 #, fuzzy
 #~| msgid "About Bavarder"
 #~ msgid "About provider"
@@ -523,10 +493,6 @@ msgstr ""
 
 #~ msgid "Wait"
 #~ msgstr "Vänta"
-
-#~ msgctxt "shortcut window"
-#~ msgid "General"
-#~ msgstr "Generellt"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Show Shortcuts"

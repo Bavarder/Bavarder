@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-05-25 01:18+0000\n"
 "Last-Translator: C1ff0 <C1ff0@users.noreply.translate.codeberg.org>\n"
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
@@ -29,61 +29,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5.5\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
-#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
+#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: src/providers/base.py:8
-msgid "Image"
-msgstr "Immagine"
-
-#: src/providers/base.py:9 src/views/window.blp:108
-msgid "Chat"
-msgstr "Chat"
-
-#: src/providers/base.py:10
-msgid "Voice"
-msgstr "Voce"
-
-#: src/providers/base.py:11
-msgid "Text"
-msgstr "Testo"
-
-#: src/providers/base.py:12
-msgid "Movie"
-msgstr "Film"
-
-#: src/providers/base.py:86
-msgid "How to get a token"
-msgstr "Come avere una chiave"
-
-#: src/providers/catgpt.py:7
-msgid "Chit-Chat with a Cat"
-msgstr "Chiacchiera con un'IA"
-
-#: src/providers/hfbasechat.py:45
-msgid ""
-"You've reached the rate limit! Please add a token to the preferences. You "
-"can get the token by following this [guide](https://bavarder.codeberg.page/"
-"help/huggingface/)"
+#: src/llm.py:39
+msgid "No model available. Please download a model or set a model path."
 msgstr ""
-"Hai raggiunto il limite massimo! Perfavore aggiungi un token nelle "
-"impostazioni. Puoi ricevere un token seguendo questa [guida] (https://"
-"bavarder.codeberg.page/help/huggingface/)"
-
-#: src/providers/hfbasechat.py:50
-#, python-brace-format
-msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "Mi spiace, non so cosa dire!(Errore: {output})"
-
-#: src/providers/hfbasechat.py:58
-msgid "API Key"
-msgstr "Chiave API"
-
-#: src/providers/provider_item.blp:18
-msgid "No preferences available"
-msgstr "Impostazioni non disponibili"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -107,6 +60,29 @@ msgstr "Pacchetto"
 msgid "Translate"
 msgstr "Traduci"
 
+#: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
+#, fuzzy
+#| msgid "Open settings"
+msgid "Chat Settings"
+msgstr "Apri impostazioni"
+
+#: src/views/chat_settings_dialog.blp:11
+#, fuzzy
+#| msgctxt "shortcut window"
+#| msgid "General"
+msgid "General"
+msgstr "Generale"
+
+#: src/views/chat_settings_dialog.blp:14
+#, fuzzy
+#| msgid "Set Title"
+msgid "Chat Title"
+msgstr "Imposta titolo"
+
+#: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
+msgid "System Prompt"
+msgstr "Prompt di sistema"
+
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
 msgstr "Esportare la discussione?"
@@ -115,52 +91,23 @@ msgstr "Esportare la discussione?"
 msgid "Close"
 msgstr "Chiudi"
 
-#: src/views/export_dialog.blp:54 src/views/window.py:288
-#: src/views/window.py:326
+#: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
 msgstr "Esporta"
 
-#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:313
-msgid "Models"
-msgstr "Modelli"
-
-#: src/views/preferences_window.py:60
-msgid "List of available models"
-msgstr "Elenco dei modelli disponibili"
-
-#: src/views/preferences_window.py:72
-msgid "Delete All Threads"
-msgstr "Elimina tutti i threads"
-
-#: src/views/preferences_window.py:73
-msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr ""
-"Sei sicuro di voler eliminare tutti i threads? Questa azione è irreversibile!"
-
-#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "Cancella"
-
-#: src/views/preferences_window.py:78 src/views/window.py:220
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "Elimina"
-
-#: src/views/preferences_window.py:93 src/views/window.py:245
-msgid "All chats cleared!"
-msgstr "Tutte le chat sono state pulite!"
-
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
+#: src/views/window.blp:286
 msgid "Preferences"
 msgstr "Preferenze"
 
-#: src/views/preferences_window.blp:15 src/views/window.py:275
-msgid "Providers"
-msgstr "Fornitori"
+#: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
+#: src/views/preferences_window.py:46 src/views/window.py:297
+msgid "Models"
+msgstr "Modelli"
+
+#: src/views/preferences_window.blp:19
+msgid "Model Marketplace"
+msgstr ""
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -189,6 +136,42 @@ msgstr "Nome del bot"
 #: src/views/preferences_window.blp:53
 msgid "User name"
 msgstr "Nome utente"
+
+#: src/views/preferences_window.py:55
+#, fuzzy
+#| msgid "No preferences available"
+msgid "No local models available"
+msgstr "Impostazioni non disponibili"
+
+#: src/views/preferences_window.py:91
+#, fuzzy, python-format
+#| msgid "Downloading model %s"
+msgid "Error loading marketplace: %s"
+msgstr "Scaricando il modello %s"
+
+#: src/views/preferences_window.py:101
+msgid "Delete All Threads"
+msgstr "Elimina tutti i threads"
+
+#: src/views/preferences_window.py:102
+msgid "Are you sure you want to delete all threads? This can't be undone!"
+msgstr ""
+"Sei sicuro di voler eliminare tutti i threads? Questa azione è irreversibile!"
+
+#: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
+#: src/views/window.py:223 src/widgets/item.py:240
+#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
+msgid "Cancel"
+msgstr "Cancella"
+
+#: src/views/preferences_window.py:107 src/views/window.py:224
+#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
+msgid "Delete"
+msgstr "Elimina"
+
+#: src/views/preferences_window.py:122 src/views/window.py:249
+msgid "All chats cleared!"
+msgstr "Tutte le chat sono state pulite!"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -222,48 +205,8 @@ msgstr "Impossibile salvare la discussione"
 msgid "Thread successfully saved!"
 msgstr "Discussione salvata!"
 
-#: src/views/window.py:179
-msgid "New chat"
-msgstr "Nuova chat"
-
-#: src/views/window.py:214
-msgid "Delete All Chats"
-msgstr "Elimina tutte le chat"
-
-#: src/views/window.py:215
-msgid ""
-"Are you sure you want to delete all chats in this thread? This can't be "
-"undone!"
-msgstr ""
-"Sei sicuro di volerlo cancellare tutte le chat in questa discussione? Questa "
-"azione è irreversibile!"
-
-#: src/views/window.py:231 src/views/window.py:247
-msgid "Nothing to clear!"
-msgstr "Niente da pulire!"
-
-#: src/views/window.py:257
-msgid "Nothing to export!"
-msgstr "Niente da esportare!"
-
-#: src/views/window.py:283 src/views/window.py:321
-msgid "Clear all"
-msgstr "Cancella tutto"
-
-#: src/views/window.py:383
-msgid "Generating response"
-msgstr "Generazione della risposta"
-
-#: src/views/window.py:397 src/views/window.py:410
-msgid "Sorry, I don't know what to say."
-msgstr "Scusa, non so che dire."
-
-#: src/views/window.py:451
-msgid "human"
-msgstr "Umano"
-
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
-#: src/views/window.blp:184 src/views/window.blp:185
+#: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
 msgstr "Nuova chat"
 
@@ -283,39 +226,89 @@ msgstr "Inizia creando una nuova chat o selezionane una dalla barra laterale"
 msgid "Message"
 msgstr "Messaggio"
 
-#: src/views/window.blp:156
+#: src/views/window.blp:102
+msgid "Chat"
+msgstr "Chat"
+
+#: src/views/window.blp:143
 msgid "No Messages"
 msgstr "Nessun messaggio"
 
-#: src/views/window.blp:157
+#: src/views/window.blp:144
 msgid "Send first message to get started"
 msgstr "Manda il tuo primo messaggio per iniziare"
 
-#: src/views/window.blp:162
+#: src/views/window.blp:149
 msgid "No Internet"
 msgstr "Nessuna connessione"
 
-#: src/views/window.blp:169
+#: src/views/window.blp:156
 msgid "Get started by creating a new chat"
 msgstr "Inizia creando una nuova chat"
 
-#: src/views/window.blp:259
+#: src/views/window.blp:246
 msgid "Ask"
 msgstr "Chiedi"
 
-#: src/views/window.blp:304
+#: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
 msgstr "Scorciatoie da tastiera"
 
-#: src/views/window.blp:309
+#: src/views/window.blp:296
 msgid "About Bavarder"
 msgstr "Informazioni su Bavarder"
+
+#: src/views/window.py:183
+msgid "New chat"
+msgstr "Nuova chat"
+
+#: src/views/window.py:218
+msgid "Delete All Chats"
+msgstr "Elimina tutte le chat"
+
+#: src/views/window.py:219
+msgid ""
+"Are you sure you want to delete all chats in this thread? This can't be "
+"undone!"
+msgstr ""
+"Sei sicuro di volerlo cancellare tutte le chat in questa discussione? Questa "
+"azione è irreversibile!"
+
+#: src/views/window.py:235 src/views/window.py:251
+msgid "Nothing to clear!"
+msgstr "Niente da pulire!"
+
+#: src/views/window.py:261
+msgid "Nothing to export!"
+msgstr "Niente da esportare!"
+
+#: src/views/window.py:307
+msgid "Clear all"
+msgstr "Cancella tutto"
+
+#: src/views/window.py:368
+msgid "Sorry, I don't know what to say."
+msgstr "Scusa, non so che dire."
+
+#: src/views/window.py:388
+#, fuzzy
+#| msgid "API Error"
+msgid "Error: "
+msgstr "Errore API"
+
+#: src/views/window.py:391
+msgid "Generating response"
+msgstr "Generazione della risposta"
+
+#: src/views/window.py:433
+msgid "human"
+msgstr "Umano"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
 msgstr "Fatto"
 
-#: src/widgets/download_row.blp:11
+#: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
 msgstr "Scarica modello"
 
@@ -390,22 +383,10 @@ msgstr ""
 "diminuiscono la fattualità."
 
 #: src/widgets/model_item.blp:45
-msgid "Top K"
-msgstr "Top K"
-
-#: src/widgets/model_item.blp:46
-msgid ""
-"Randomly sample from the top_k most likely tokens at each generation step. "
-"Set this to 1 for greedy decoding."
-msgstr ""
-"Campiona casualmente dai token più probabili top_k in ogni fase di "
-"generazione. Impostalo su 1 per una decodifica avida."
-
-#: src/widgets/model_item.blp:59
 msgid "Top P"
 msgstr "Top P"
 
-#: src/widgets/model_item.blp:60
+#: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
@@ -413,44 +394,19 @@ msgstr ""
 "Campiona casualmente ad ogni passaggio di generazione dai token più "
 "probabili le cui probabilità si sommano a top_p."
 
-#: src/widgets/model_item.blp:74
-msgid "Repetition Penalty"
-msgstr "Penalità ripetizioni"
+#: src/widgets/model_item.blp:60
+msgid "Top K"
+msgstr "Top K"
 
-#: src/widgets/model_item.blp:75
+#: src/widgets/model_item.blp:61
 msgid ""
-"Penalize the model for repetition. Higher values result in less repetition."
+"Randomly sample from the top_k most likely tokens at each generation step. "
+"Set this to 1 for greedy decoding."
 msgstr ""
-"Penalizza il modello per le ripetizioni. Valori alti risulteranno in meno "
-"ripetizioni."
+"Campiona casualmente dai token più probabili top_k in ogni fase di "
+"generazione. Impostalo su 1 per una decodifica avida."
 
-#: src/widgets/model_item.blp:89
-msgid "Batch Size"
-msgstr "Batch Size"
-
-#: src/widgets/model_item.blp:90
-msgid ""
-"Number of prompt tokens processed in parallel. Larger values decrease "
-"latency but increase resource requirements."
-msgstr ""
-"Numero di token processati in parallelo. Valori grandi diminueranno la "
-"latenza ma incrementeranno la richiesta di risorse."
-
-#: src/widgets/model_item.blp:103
-msgid "Repeat Last N"
-msgstr "Ripeti l'ultimo N"
-
-#: src/widgets/model_item.blp:104
-msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
-"Fino a che punto della cronologia della generazione dei modelli applicare la "
-"penalità di ripetizione. "
-
-#: src/widgets/model_item.blp:117
-msgid "System Prompt"
-msgstr "Prompt di sistema"
-
-#: src/widgets/model_item.py:64
+#: src/widgets/model_item.py:49
 #, python-format
 msgid "Model %s deleted!"
 msgstr "Modello %s eliminato!"
@@ -480,29 +436,93 @@ msgstr "Sei sicuro di volerlo cancellare?"
 msgid "Thread Deleted"
 msgstr "Discussione eliminata"
 
-#: src/main.py:261
-msgid ""
-"Please download a model from Preferences by clicking on the Dot Menu at the "
-"top!"
-msgstr ""
-"Perfavore, scarica un modello dalle impostazioni cliccando nel menù in alto!"
+#~ msgid "Image"
+#~ msgstr "Immagine"
 
-#: src/main.py:265
-msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr "Ciao, io sono Bavarder, un' IA"
+#~ msgid "Voice"
+#~ msgstr "Voce"
 
-#: src/main.py:288
-msgid "Please enable a provider from the Dot Menu"
-msgstr "Perfavore, abilita un provider dal menù"
+#~ msgid "Text"
+#~ msgstr "Testo"
+
+#~ msgid "Movie"
+#~ msgstr "Film"
+
+#~ msgid "How to get a token"
+#~ msgstr "Come avere una chiave"
+
+#~ msgid "Chit-Chat with a Cat"
+#~ msgstr "Chiacchiera con un'IA"
+
+#~ msgid ""
+#~ "You've reached the rate limit! Please add a token to the preferences. You "
+#~ "can get the token by following this [guide](https://"
+#~ "bavarder.codeberg.page/help/huggingface/)"
+#~ msgstr ""
+#~ "Hai raggiunto il limite massimo! Perfavore aggiungi un token nelle "
+#~ "impostazioni. Puoi ricevere un token seguendo questa [guida] (https://"
+#~ "bavarder.codeberg.page/help/huggingface/)"
+
+#, python-brace-format
+#~ msgid "Sorry, I don't know what to say! (Error: {output})"
+#~ msgstr "Mi spiace, non so cosa dire!(Errore: {output})"
+
+#~ msgid "API Key"
+#~ msgstr "Chiave API"
+
+#~ msgid "List of available models"
+#~ msgstr "Elenco dei modelli disponibili"
+
+#~ msgid "Providers"
+#~ msgstr "Fornitori"
+
+#~ msgid "Repetition Penalty"
+#~ msgstr "Penalità ripetizioni"
+
+#~ msgid ""
+#~ "Penalize the model for repetition. Higher values result in less "
+#~ "repetition."
+#~ msgstr ""
+#~ "Penalizza il modello per le ripetizioni. Valori alti risulteranno in meno "
+#~ "ripetizioni."
+
+#~ msgid "Batch Size"
+#~ msgstr "Batch Size"
+
+#~ msgid ""
+#~ "Number of prompt tokens processed in parallel. Larger values decrease "
+#~ "latency but increase resource requirements."
+#~ msgstr ""
+#~ "Numero di token processati in parallelo. Valori grandi diminueranno la "
+#~ "latenza ma incrementeranno la richiesta di risorse."
+
+#~ msgid "Repeat Last N"
+#~ msgstr "Ripeti l'ultimo N"
+
+#~ msgid ""
+#~ "How far in the models generation history to apply the repeat penalty. "
+#~ msgstr ""
+#~ "Fino a che punto della cronologia della generazione dei modelli applicare "
+#~ "la penalità di ripetizione. "
+
+#~ msgid ""
+#~ "Please download a model from Preferences by clicking on the Dot Menu at "
+#~ "the top!"
+#~ msgstr ""
+#~ "Perfavore, scarica un modello dalle impostazioni cliccando nel menù in "
+#~ "alto!"
+
+#~ msgid "Hello, I am Bavarder, a Chit-Chat AI"
+#~ msgstr "Ciao, io sono Bavarder, un' IA"
+
+#~ msgid "Please enable a provider from the Dot Menu"
+#~ msgstr "Perfavore, abilita un provider dal menù"
 
 #~ msgid "Export Thread ?"
 #~ msgstr "Esporto il thread?"
 
 #~ msgid "Open Emoji Picker"
 #~ msgstr "Apri il menu delle Emoji"
-
-#~ msgid "Set Title"
-#~ msgstr "Imposta titolo"
 
 #, fuzzy, python-format
 #~| msgid "Chat"
@@ -570,9 +590,6 @@ msgstr "Perfavore, abilita un provider dal menù"
 #~ msgstr ""
 #~ "Nessuna chiave API fornita; è possibile fornirne una nelle impostazioni"
 
-#~ msgid "Open settings"
-#~ msgstr "Apri impostazioni"
-
 #~ msgid "About provider"
 #~ msgstr "Sul gestore"
 
@@ -588,9 +605,6 @@ msgstr "Perfavore, abilita un provider dal menù"
 #~ msgstr ""
 #~ "Superato la quota corrente, perfavore contrallare il proprio piano ed i "
 #~ "dettagli della fatturazione."
-
-#~ msgid "API Error"
-#~ msgstr "Errore API"
 
 #~ msgid "No model selected, you can choose one in preferences"
 #~ msgstr "Nessun modello selezionato, puo scegliere uno nelle impostazioni"
@@ -612,10 +626,6 @@ msgstr "Perfavore, abilita un provider dal menù"
 
 #~ msgid "Wait"
 #~ msgstr "Attendere"
-
-#~ msgctxt "shortcut window"
-#~ msgid "General"
-#~ msgstr "Generale"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Show Shortcuts"

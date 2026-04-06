@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-02-25 13:48+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
@@ -23,62 +23,14 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 5.4\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
-#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
+#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: src/providers/base.py:8
-msgid "Image"
-msgstr "Obrázek"
-
-#: src/providers/base.py:9 src/views/window.blp:108
-msgid "Chat"
-msgstr "Chat"
-
-#: src/providers/base.py:10
-msgid "Voice"
-msgstr "Zvuk"
-
-#: src/providers/base.py:11
-msgid "Text"
-msgstr "Text"
-
-#: src/providers/base.py:12
-msgid "Movie"
+#: src/llm.py:39
+msgid "No model available. Please download a model or set a model path."
 msgstr ""
-
-#: src/providers/base.py:86
-msgid "How to get a token"
-msgstr "Jak získat token"
-
-#: src/providers/catgpt.py:7
-msgid "Chit-Chat with a Cat"
-msgstr "Chatovat s kočkou"
-
-#: src/providers/hfbasechat.py:45
-msgid ""
-"You've reached the rate limit! Please add a token to the preferences. You "
-"can get the token by following this [guide](https://bavarder.codeberg.page/"
-"help/huggingface/)"
-msgstr ""
-"Překročili jste limit! Prosím, přidejte token v nastavení. Můžete získat "
-"token pomocí tohoto [návodu](https://bavarder.codeberg.page/help/"
-"huggingface/)"
-
-#: src/providers/hfbasechat.py:50
-#, fuzzy, python-brace-format
-#| msgid "Sorry, I don't know what to say!"
-msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "Omlouvám se, ale nevím, co na to říct!"
-
-#: src/providers/hfbasechat.py:58
-msgid "API Key"
-msgstr "Klíč API"
-
-#: src/providers/provider_item.blp:18
-msgid "No preferences available"
-msgstr "Žádná nastavení nejsou k dispozici"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -100,6 +52,29 @@ msgstr "Balení"
 msgid "Translate"
 msgstr "Přeložit"
 
+#: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
+#, fuzzy
+#| msgid "Open settings"
+msgid "Chat Settings"
+msgstr "Otevřít nastavení"
+
+#: src/views/chat_settings_dialog.blp:11
+#, fuzzy
+#| msgctxt "shortcut window"
+#| msgid "General"
+msgid "General"
+msgstr "Obecné"
+
+#: src/views/chat_settings_dialog.blp:14
+#, fuzzy
+#| msgid "Set Title"
+msgid "Chat Title"
+msgstr "Nastavit název"
+
+#: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
+msgid "System Prompt"
+msgstr "Systémový dotaz"
+
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
 msgstr "Exportovat vlákno?"
@@ -108,51 +83,23 @@ msgstr "Exportovat vlákno?"
 msgid "Close"
 msgstr "Zavřít"
 
-#: src/views/export_dialog.blp:54 src/views/window.py:288
-#: src/views/window.py:326
+#: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
 msgstr "Export"
 
-#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:313
-msgid "Models"
-msgstr "Modely"
-
-#: src/views/preferences_window.py:60
-msgid "List of available models"
-msgstr "Seznam dostupných modelů"
-
-#: src/views/preferences_window.py:72
-msgid "Delete All Threads"
-msgstr "Odstranit všechna vlákna"
-
-#: src/views/preferences_window.py:73
-msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Opravdu chcete odstranit všechna vlákna? Tento krok se nedá vrátit!"
-
-#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: src/views/preferences_window.py:78 src/views/window.py:220
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "Odstranit"
-
-#: src/views/preferences_window.py:93 src/views/window.py:245
-msgid "All chats cleared!"
-msgstr "Všechny chaty vymazány!"
-
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
+#: src/views/window.blp:286
 msgid "Preferences"
 msgstr "Nastavení"
 
-#: src/views/preferences_window.blp:15 src/views/window.py:275
-msgid "Providers"
-msgstr "Poskytovatelé"
+#: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
+#: src/views/preferences_window.py:46 src/views/window.py:297
+msgid "Models"
+msgstr "Modely"
+
+#: src/views/preferences_window.blp:19
+msgid "Model Marketplace"
+msgstr ""
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -181,6 +128,41 @@ msgstr "Jméno bota"
 #: src/views/preferences_window.blp:53
 msgid "User name"
 msgstr "Uživatelské jméno"
+
+#: src/views/preferences_window.py:55
+#, fuzzy
+#| msgid "No preferences available"
+msgid "No local models available"
+msgstr "Žádná nastavení nejsou k dispozici"
+
+#: src/views/preferences_window.py:91
+#, fuzzy, python-format
+#| msgid "Downloading model %s"
+msgid "Error loading marketplace: %s"
+msgstr "Stahuje se model %s"
+
+#: src/views/preferences_window.py:101
+msgid "Delete All Threads"
+msgstr "Odstranit všechna vlákna"
+
+#: src/views/preferences_window.py:102
+msgid "Are you sure you want to delete all threads? This can't be undone!"
+msgstr "Opravdu chcete odstranit všechna vlákna? Tento krok se nedá vrátit!"
+
+#: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
+#: src/views/window.py:223 src/widgets/item.py:240
+#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: src/views/preferences_window.py:107 src/views/window.py:224
+#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
+msgid "Delete"
+msgstr "Odstranit"
+
+#: src/views/preferences_window.py:122 src/views/window.py:249
+msgid "All chats cleared!"
+msgstr "Všechny chaty vymazány!"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -214,48 +196,8 @@ msgstr "Nelze uložit vlákno"
 msgid "Thread successfully saved!"
 msgstr "Vlákno bylo úspěšně uloženo!"
 
-#: src/views/window.py:179
-msgid "New chat"
-msgstr "Nový chat"
-
-#: src/views/window.py:214
-msgid "Delete All Chats"
-msgstr "Odstranit všechny chaty"
-
-#: src/views/window.py:215
-msgid ""
-"Are you sure you want to delete all chats in this thread? This can't be "
-"undone!"
-msgstr ""
-"Opravdu chcete odstranit všechny chaty v tomto vlákně? Tento krok se nedá "
-"vrátit!"
-
-#: src/views/window.py:231 src/views/window.py:247
-msgid "Nothing to clear!"
-msgstr "Nic k vymazání!"
-
-#: src/views/window.py:257
-msgid "Nothing to export!"
-msgstr "Nic k exportování!"
-
-#: src/views/window.py:283 src/views/window.py:321
-msgid "Clear all"
-msgstr "Vymazat vše"
-
-#: src/views/window.py:383
-msgid "Generating response"
-msgstr "Generuji odpověď"
-
-#: src/views/window.py:397 src/views/window.py:410
-msgid "Sorry, I don't know what to say."
-msgstr "Omlouvám se, ale nevím, co na to říct."
-
-#: src/views/window.py:451
-msgid "human"
-msgstr "Člověk"
-
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
-#: src/views/window.blp:184 src/views/window.blp:185
+#: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
 msgstr "Nový chat"
 
@@ -275,39 +217,89 @@ msgstr "Začněte vytvořením nového chatu nebo vybráním z boční lišty"
 msgid "Message"
 msgstr "Zpráva"
 
-#: src/views/window.blp:156
+#: src/views/window.blp:102
+msgid "Chat"
+msgstr "Chat"
+
+#: src/views/window.blp:143
 msgid "No Messages"
 msgstr "Žádné zprávy"
 
-#: src/views/window.blp:157
+#: src/views/window.blp:144
 msgid "Send first message to get started"
 msgstr "Odešlete první zprávu abyste začli"
 
-#: src/views/window.blp:162
+#: src/views/window.blp:149
 msgid "No Internet"
 msgstr "Bez internetu"
 
-#: src/views/window.blp:169
+#: src/views/window.blp:156
 msgid "Get started by creating a new chat"
 msgstr "Začněte vytvořením nového chatu"
 
-#: src/views/window.blp:259
+#: src/views/window.blp:246
 msgid "Ask"
 msgstr "Zeptat se"
 
-#: src/views/window.blp:304
+#: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
 msgstr "Klávesové zkratky"
 
-#: src/views/window.blp:309
+#: src/views/window.blp:296
 msgid "About Bavarder"
 msgstr "O Bavarder"
+
+#: src/views/window.py:183
+msgid "New chat"
+msgstr "Nový chat"
+
+#: src/views/window.py:218
+msgid "Delete All Chats"
+msgstr "Odstranit všechny chaty"
+
+#: src/views/window.py:219
+msgid ""
+"Are you sure you want to delete all chats in this thread? This can't be "
+"undone!"
+msgstr ""
+"Opravdu chcete odstranit všechny chaty v tomto vlákně? Tento krok se nedá "
+"vrátit!"
+
+#: src/views/window.py:235 src/views/window.py:251
+msgid "Nothing to clear!"
+msgstr "Nic k vymazání!"
+
+#: src/views/window.py:261
+msgid "Nothing to export!"
+msgstr "Nic k exportování!"
+
+#: src/views/window.py:307
+msgid "Clear all"
+msgstr "Vymazat vše"
+
+#: src/views/window.py:368
+msgid "Sorry, I don't know what to say."
+msgstr "Omlouvám se, ale nevím, co na to říct."
+
+#: src/views/window.py:388
+#, fuzzy
+#| msgid "API Error"
+msgid "Error: "
+msgstr "API chyba"
+
+#: src/views/window.py:391
+msgid "Generating response"
+msgstr "Generuji odpověď"
+
+#: src/views/window.py:433
+msgid "human"
+msgstr "Člověk"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
 msgstr "Hotovo"
 
-#: src/widgets/download_row.blp:11
+#: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
 msgstr "Stáhnout model"
 
@@ -381,66 +373,30 @@ msgstr ""
 "Modelová teplota. Větší hodnoty zvyšují kreativitu, ale snižují věcnost."
 
 #: src/widgets/model_item.blp:45
-msgid "Top K"
-msgstr "Top K"
-
-#: src/widgets/model_item.blp:46
-msgid ""
-"Randomly sample from the top_k most likely tokens at each generation step. "
-"Set this to 1 for greedy decoding."
-msgstr ""
-"Randomly sample from the top_k most likely tokens at each generation step. "
-"Set this to 1 for greedy decoding."
-
-#: src/widgets/model_item.blp:59
 msgid "Top P"
 msgstr "Top P"
 
+#: src/widgets/model_item.blp:46
+msgid ""
+"Randomly sample at each generation step from the top most likely tokens "
+"whose probabilities add up to top_p."
+msgstr ""
+"Randomly sample at each generation step from the top most likely tokens "
+"whose probabilities add up to top_p."
+
 #: src/widgets/model_item.blp:60
+msgid "Top K"
+msgstr "Top K"
+
+#: src/widgets/model_item.blp:61
 msgid ""
-"Randomly sample at each generation step from the top most likely tokens "
-"whose probabilities add up to top_p."
+"Randomly sample from the top_k most likely tokens at each generation step. "
+"Set this to 1 for greedy decoding."
 msgstr ""
-"Randomly sample at each generation step from the top most likely tokens "
-"whose probabilities add up to top_p."
+"Randomly sample from the top_k most likely tokens at each generation step. "
+"Set this to 1 for greedy decoding."
 
-#: src/widgets/model_item.blp:74
-msgid "Repetition Penalty"
-msgstr "Penalizace za opakování"
-
-#: src/widgets/model_item.blp:75
-msgid ""
-"Penalize the model for repetition. Higher values result in less repetition."
-msgstr ""
-"Penalizujte model pro opakování. Vyšší hodnoty vedou k menšímu počtu "
-"opakování."
-
-#: src/widgets/model_item.blp:89
-msgid "Batch Size"
-msgstr "Velikost dávky"
-
-#: src/widgets/model_item.blp:90
-msgid ""
-"Number of prompt tokens processed in parallel. Larger values decrease "
-"latency but increase resource requirements."
-msgstr ""
-"Počet tokenů dotazu zpracovávaných paralelně. Větší hodnoty snižují latenci, "
-"ale zvyšují nároky na zdroje."
-
-#: src/widgets/model_item.blp:103
-msgid "Repeat Last N"
-msgstr "Opakovat posledních N"
-
-#: src/widgets/model_item.blp:104
-msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
-"Jak daleko v historii generování modelu použít penalizaci za opakování. "
-
-#: src/widgets/model_item.blp:117
-msgid "System Prompt"
-msgstr "Systémový dotaz"
-
-#: src/widgets/model_item.py:64
+#: src/widgets/model_item.py:49
 #, python-format
 msgid "Model %s deleted!"
 msgstr "Model %s byl vymazán!"
@@ -470,30 +426,90 @@ msgstr "Opravdu chcete toto vlákno odstranit?"
 msgid "Thread Deleted"
 msgstr "Vlákno bylo odstraněno"
 
-#: src/main.py:261
-msgid ""
-"Please download a model from Preferences by clicking on the Dot Menu at the "
-"top!"
-msgstr ""
-"Prosím, stáhněte si model z nastavení kliknutím na tečkové menu v horní "
-"části!"
+#~ msgid "Image"
+#~ msgstr "Obrázek"
 
-#: src/main.py:265
-msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr "Ahoj, jsem Bavarder, AI pro chatování"
+#~ msgid "Voice"
+#~ msgstr "Zvuk"
 
-#: src/main.py:288
-msgid "Please enable a provider from the Dot Menu"
-msgstr "Prosím, vyberte si poskytovatele kliknutím na nabídku s tečkou"
+#~ msgid "Text"
+#~ msgstr "Text"
+
+#~ msgid "How to get a token"
+#~ msgstr "Jak získat token"
+
+#~ msgid "Chit-Chat with a Cat"
+#~ msgstr "Chatovat s kočkou"
+
+#~ msgid ""
+#~ "You've reached the rate limit! Please add a token to the preferences. You "
+#~ "can get the token by following this [guide](https://"
+#~ "bavarder.codeberg.page/help/huggingface/)"
+#~ msgstr ""
+#~ "Překročili jste limit! Prosím, přidejte token v nastavení. Můžete získat "
+#~ "token pomocí tohoto [návodu](https://bavarder.codeberg.page/help/"
+#~ "huggingface/)"
+
+#, fuzzy, python-brace-format
+#~| msgid "Sorry, I don't know what to say!"
+#~ msgid "Sorry, I don't know what to say! (Error: {output})"
+#~ msgstr "Omlouvám se, ale nevím, co na to říct!"
+
+#~ msgid "API Key"
+#~ msgstr "Klíč API"
+
+#~ msgid "List of available models"
+#~ msgstr "Seznam dostupných modelů"
+
+#~ msgid "Providers"
+#~ msgstr "Poskytovatelé"
+
+#~ msgid "Repetition Penalty"
+#~ msgstr "Penalizace za opakování"
+
+#~ msgid ""
+#~ "Penalize the model for repetition. Higher values result in less "
+#~ "repetition."
+#~ msgstr ""
+#~ "Penalizujte model pro opakování. Vyšší hodnoty vedou k menšímu počtu "
+#~ "opakování."
+
+#~ msgid "Batch Size"
+#~ msgstr "Velikost dávky"
+
+#~ msgid ""
+#~ "Number of prompt tokens processed in parallel. Larger values decrease "
+#~ "latency but increase resource requirements."
+#~ msgstr ""
+#~ "Počet tokenů dotazu zpracovávaných paralelně. Větší hodnoty snižují "
+#~ "latenci, ale zvyšují nároky na zdroje."
+
+#~ msgid "Repeat Last N"
+#~ msgstr "Opakovat posledních N"
+
+#~ msgid ""
+#~ "How far in the models generation history to apply the repeat penalty. "
+#~ msgstr ""
+#~ "Jak daleko v historii generování modelu použít penalizaci za opakování. "
+
+#~ msgid ""
+#~ "Please download a model from Preferences by clicking on the Dot Menu at "
+#~ "the top!"
+#~ msgstr ""
+#~ "Prosím, stáhněte si model z nastavení kliknutím na tečkové menu v horní "
+#~ "části!"
+
+#~ msgid "Hello, I am Bavarder, a Chit-Chat AI"
+#~ msgstr "Ahoj, jsem Bavarder, AI pro chatování"
+
+#~ msgid "Please enable a provider from the Dot Menu"
+#~ msgstr "Prosím, vyberte si poskytovatele kliknutím na nabídku s tečkou"
 
 #~ msgid "Export Thread ?"
 #~ msgstr "Exportovat vlákno?"
 
 #~ msgid "Open Emoji Picker"
 #~ msgstr "Otevřit výběr emoji"
-
-#~ msgid "Set Title"
-#~ msgstr "Nastavit název"
 
 #, fuzzy, python-format
 #~| msgid "Chat"
@@ -548,9 +564,6 @@ msgstr "Prosím, vyberte si poskytovatele kliknutím na nabídku s tečkou"
 #~ msgid "No API key provided, you can provide one in settings"
 #~ msgstr "API klíč nebyl přidán, můžete jej přidat v nastavení"
 
-#~ msgid "Open settings"
-#~ msgstr "Otevřít nastavení"
-
 #~ msgid "About provider"
 #~ msgstr "O poskytovateli"
 
@@ -566,9 +579,6 @@ msgstr "Prosím, vyberte si poskytovatele kliknutím na nabídku s tečkou"
 #~ msgstr ""
 #~ "Překročili jste svůj limit, zkontrolujte prosím svůj tarif a fakturační "
 #~ "údaje."
-
-#~ msgid "API Error"
-#~ msgstr "API chyba"
 
 #~ msgid "No model selected, you can choose one in preferences"
 #~ msgstr "Není vybrán model, vyberte si jeden z nastavení"
@@ -590,10 +600,6 @@ msgstr "Prosím, vyberte si poskytovatele kliknutím na nabídku s tečkou"
 
 #~ msgid "Wait"
 #~ msgstr "Čekejte"
-
-#~ msgctxt "shortcut window"
-#~ msgid "General"
-#~ msgstr "Obecné"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Show Shortcuts"

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-04-29 13:18+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
@@ -23,61 +23,14 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.5.2\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
-#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
+#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
 msgstr "แชท"
 
-#: src/providers/base.py:8
-msgid "Image"
-msgstr "รูปภาพ"
-
-#: src/providers/base.py:9 src/views/window.blp:108
-msgid "Chat"
-msgstr "พูดคุย"
-
-#: src/providers/base.py:10
-msgid "Voice"
+#: src/llm.py:39
+msgid "No model available. Please download a model or set a model path."
 msgstr ""
-
-#: src/providers/base.py:11
-msgid "Text"
-msgstr "ข้อความ"
-
-#: src/providers/base.py:12
-msgid "Movie"
-msgstr ""
-
-#: src/providers/base.py:86
-msgid "How to get a token"
-msgstr "วิธีรับโทเค็น"
-
-#: src/providers/catgpt.py:7
-msgid "Chit-Chat with a Cat"
-msgstr "ชิตแชทกับแมว"
-
-#: src/providers/hfbasechat.py:45
-msgid ""
-"You've reached the rate limit! Please add a token to the preferences. You "
-"can get the token by following this [guide](https://bavarder.codeberg.page/"
-"help/huggingface/)"
-msgstr ""
-"คุณมีอัตราถึงขีดจำกัดแล้ว! โปรดเพิ่มโทเค็นให้กับการตั้งค่า "
-"คุณสามารถรับโทเค็นได้โดยทำตาม[คำแนะนำ](https://bavarder.codeberg.page/help/"
-"huggingface/)"
-
-#: src/providers/hfbasechat.py:50
-#, python-brace-format
-msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "ขออภัย ฉันไม่รู้จะพูดอะไร! (ข้อผิดพลาด: {output})"
-
-#: src/providers/hfbasechat.py:58
-msgid "API Key"
-msgstr "คีย์ API"
-
-#: src/providers/provider_item.blp:18
-msgid "No preferences available"
-msgstr "ไม่มีค่ากำหนดที่ใช้ได้"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -99,6 +52,29 @@ msgstr "บรรจุภัณฑ์"
 msgid "Translate"
 msgstr "แปลภาษา"
 
+#: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
+#, fuzzy
+#| msgid "Open settings"
+msgid "Chat Settings"
+msgstr "เปิดการตั้งค่า"
+
+#: src/views/chat_settings_dialog.blp:11
+#, fuzzy
+#| msgctxt "shortcut window"
+#| msgid "General"
+msgid "General"
+msgstr "ทั่วไป"
+
+#: src/views/chat_settings_dialog.blp:14
+msgid "Chat Title"
+msgstr ""
+
+#: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
+#, fuzzy
+#| msgid "Prompt"
+msgid "System Prompt"
+msgstr "พรอมต์"
+
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
 msgstr "ส่งออกเธรด?"
@@ -107,51 +83,23 @@ msgstr "ส่งออกเธรด?"
 msgid "Close"
 msgstr "ปิด"
 
-#: src/views/export_dialog.blp:54 src/views/window.py:288
-#: src/views/window.py:326
+#: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
 msgstr "ส่งออก"
 
-#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:313
-msgid "Models"
-msgstr "โมเดล"
-
-#: src/views/preferences_window.py:60
-msgid "List of available models"
-msgstr "รายการรุ่นที่มีจำหน่าย"
-
-#: src/views/preferences_window.py:72
-msgid "Delete All Threads"
-msgstr "ลบกระทู้ทั้งหมด"
-
-#: src/views/preferences_window.py:73
-msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบกระทู้ทั้งหมด? สิ่งนี้ไม่สามารถยกเลิกได้!"
-
-#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "ยกเลิก"
-
-#: src/views/preferences_window.py:78 src/views/window.py:220
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "ลบ"
-
-#: src/views/preferences_window.py:93 src/views/window.py:245
-msgid "All chats cleared!"
-msgstr "ล้างแชททั้งหมดแล้ว!"
-
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
+#: src/views/window.blp:286
 msgid "Preferences"
 msgstr "การตั้งค่า"
 
-#: src/views/preferences_window.blp:15 src/views/window.py:275
-msgid "Providers"
-msgstr "ผู้ให้บริการ"
+#: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
+#: src/views/preferences_window.py:46 src/views/window.py:297
+msgid "Models"
+msgstr "โมเดล"
+
+#: src/views/preferences_window.blp:19
+msgid "Model Marketplace"
+msgstr ""
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -183,6 +131,41 @@ msgstr "ชื่อบอท"
 #: src/views/preferences_window.blp:53
 msgid "User name"
 msgstr "ชื่อผู้ใช้"
+
+#: src/views/preferences_window.py:55
+#, fuzzy
+#| msgid "No preferences available"
+msgid "No local models available"
+msgstr "ไม่มีค่ากำหนดที่ใช้ได้"
+
+#: src/views/preferences_window.py:91
+#, fuzzy, python-format
+#| msgid "Downloading model %s"
+msgid "Error loading marketplace: %s"
+msgstr "กำลังดาวน์โหลดโมเดล %s"
+
+#: src/views/preferences_window.py:101
+msgid "Delete All Threads"
+msgstr "ลบกระทู้ทั้งหมด"
+
+#: src/views/preferences_window.py:102
+msgid "Are you sure you want to delete all threads? This can't be undone!"
+msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบกระทู้ทั้งหมด? สิ่งนี้ไม่สามารถยกเลิกได้!"
+
+#: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
+#: src/views/window.py:223 src/widgets/item.py:240
+#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: src/views/preferences_window.py:107 src/views/window.py:224
+#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
+msgid "Delete"
+msgstr "ลบ"
+
+#: src/views/preferences_window.py:122 src/views/window.py:249
+msgid "All chats cleared!"
+msgstr "ล้างแชททั้งหมดแล้ว!"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -216,46 +199,8 @@ msgstr "ไม่สามารถบันทึกกระทู้ได้
 msgid "Thread successfully saved!"
 msgstr "บันทึกชุดข้อความสำเร็จแล้ว!"
 
-#: src/views/window.py:179
-msgid "New chat"
-msgstr "แชทใหม่"
-
-#: src/views/window.py:214
-msgid "Delete All Chats"
-msgstr "ลบแชททั้งหมด"
-
-#: src/views/window.py:215
-msgid ""
-"Are you sure you want to delete all chats in this thread? This can't be "
-"undone!"
-msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบการแชททั้งหมดในกระทู้นี้ สิ่งนี้ไม่สามารถยกเลิกได้!"
-
-#: src/views/window.py:231 src/views/window.py:247
-msgid "Nothing to clear!"
-msgstr "ไม่มีอะไรต้องเคลียร์!"
-
-#: src/views/window.py:257
-msgid "Nothing to export!"
-msgstr "ไม่มีอะไรจะส่งออก!"
-
-#: src/views/window.py:283 src/views/window.py:321
-msgid "Clear all"
-msgstr "ลบทั้งหมด"
-
-#: src/views/window.py:383
-msgid "Generating response"
-msgstr "กำลังสร้างการตอบสนอง"
-
-#: src/views/window.py:397 src/views/window.py:410
-msgid "Sorry, I don't know what to say."
-msgstr "ขออภัย ฉันไม่รู้จะพูดอะไร"
-
-#: src/views/window.py:451
-msgid "human"
-msgstr "มนุษย์"
-
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
-#: src/views/window.blp:184 src/views/window.blp:185
+#: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
 msgstr "แชทใหม่"
 
@@ -275,39 +220,85 @@ msgstr "เริ่มต้นด้วยการสร้างแชทใ
 msgid "Message"
 msgstr "ข้อความ"
 
-#: src/views/window.blp:156
+#: src/views/window.blp:102
+msgid "Chat"
+msgstr "พูดคุย"
+
+#: src/views/window.blp:143
 msgid "No Messages"
 msgstr "ไม่มีข้อความ"
 
-#: src/views/window.blp:157
+#: src/views/window.blp:144
 msgid "Send first message to get started"
 msgstr "ส่งข้อความแรกเพื่อเริ่มต้น"
 
-#: src/views/window.blp:162
+#: src/views/window.blp:149
 msgid "No Internet"
 msgstr "ไม่มีอินเทอร์เน็ต"
 
-#: src/views/window.blp:169
+#: src/views/window.blp:156
 msgid "Get started by creating a new chat"
 msgstr "เริ่มต้นด้วยการสร้างแชทใหม่"
 
-#: src/views/window.blp:259
+#: src/views/window.blp:246
 msgid "Ask"
 msgstr "ถาม"
 
-#: src/views/window.blp:304
+#: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
 msgstr "แป้นพิมพ์ลัด"
 
-#: src/views/window.blp:309
+#: src/views/window.blp:296
 msgid "About Bavarder"
 msgstr "เกี่ยวกับแบบวาร์เดอร์"
+
+#: src/views/window.py:183
+msgid "New chat"
+msgstr "แชทใหม่"
+
+#: src/views/window.py:218
+msgid "Delete All Chats"
+msgstr "ลบแชททั้งหมด"
+
+#: src/views/window.py:219
+msgid ""
+"Are you sure you want to delete all chats in this thread? This can't be "
+"undone!"
+msgstr "คุณแน่ใจหรือไม่ว่าต้องการลบการแชททั้งหมดในกระทู้นี้ สิ่งนี้ไม่สามารถยกเลิกได้!"
+
+#: src/views/window.py:235 src/views/window.py:251
+msgid "Nothing to clear!"
+msgstr "ไม่มีอะไรต้องเคลียร์!"
+
+#: src/views/window.py:261
+msgid "Nothing to export!"
+msgstr "ไม่มีอะไรจะส่งออก!"
+
+#: src/views/window.py:307
+msgid "Clear all"
+msgstr "ลบทั้งหมด"
+
+#: src/views/window.py:368
+msgid "Sorry, I don't know what to say."
+msgstr "ขออภัย ฉันไม่รู้จะพูดอะไร"
+
+#: src/views/window.py:388
+msgid "Error: "
+msgstr ""
+
+#: src/views/window.py:391
+msgid "Generating response"
+msgstr "กำลังสร้างการตอบสนอง"
+
+#: src/views/window.py:433
+msgid "human"
+msgstr "มนุษย์"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
 msgstr "ทำเสร็จ"
 
-#: src/widgets/download_row.blp:11
+#: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
 msgstr "ดาวน์โหลดโมเดล"
 
@@ -380,10 +371,21 @@ msgid ""
 msgstr "อุณหภูมิของโมเดล ค่าที่มากขึ้นจะเพิ่มความคิดสร้างสรรค์แต่ลดความเป็นจริงลง"
 
 #: src/widgets/model_item.blp:45
-msgid "Top K"
+msgid "Top P"
 msgstr ""
 
 #: src/widgets/model_item.blp:46
+msgid ""
+"Randomly sample at each generation step from the top most likely tokens "
+"whose probabilities add up to top_p."
+msgstr ""
+"สุ่มตัวอย่างในแต่ละขั้นตอนการสร้างจากโทเค็นที่มีแนวโน้มสูงที่สุดซึ่งความน่าจะเป็นรวมกันเป็น top_p"
+
+#: src/widgets/model_item.blp:60
+msgid "Top K"
+msgstr ""
+
+#: src/widgets/model_item.blp:61
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
@@ -391,51 +393,7 @@ msgstr ""
 "สุ่มตัวอย่างจากโทเค็นที่มีแนวโน้มมากที่สุด top_k ในแต่ละขั้นตอนการสร้าง ตั้งค่านี้เป็น 1 "
 "สำหรับการถอดรหัสแบบละโมบ"
 
-#: src/widgets/model_item.blp:59
-msgid "Top P"
-msgstr ""
-
-#: src/widgets/model_item.blp:60
-msgid ""
-"Randomly sample at each generation step from the top most likely tokens "
-"whose probabilities add up to top_p."
-msgstr ""
-"สุ่มตัวอย่างในแต่ละขั้นตอนการสร้างจากโทเค็นที่มีแนวโน้มสูงที่สุดซึ่งความน่าจะเป็นรวมกันเป็น top_p"
-
-#: src/widgets/model_item.blp:74
-msgid "Repetition Penalty"
-msgstr ""
-
-#: src/widgets/model_item.blp:75
-msgid ""
-"Penalize the model for repetition. Higher values result in less repetition."
-msgstr ""
-
-#: src/widgets/model_item.blp:89
-msgid "Batch Size"
-msgstr ""
-
-#: src/widgets/model_item.blp:90
-msgid ""
-"Number of prompt tokens processed in parallel. Larger values decrease "
-"latency but increase resource requirements."
-msgstr ""
-
-#: src/widgets/model_item.blp:103
-msgid "Repeat Last N"
-msgstr ""
-
-#: src/widgets/model_item.blp:104
-msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
-
-#: src/widgets/model_item.blp:117
-#, fuzzy
-#| msgid "Prompt"
-msgid "System Prompt"
-msgstr "พรอมต์"
-
-#: src/widgets/model_item.py:64
+#: src/widgets/model_item.py:49
 #, python-format
 msgid "Model %s deleted!"
 msgstr ""
@@ -465,19 +423,39 @@ msgstr "คุณแน่ใจไหมว่าต้องการลบส
 msgid "Thread Deleted"
 msgstr ""
 
-#: src/main.py:261
-msgid ""
-"Please download a model from Preferences by clicking on the Dot Menu at the "
-"top!"
-msgstr ""
+#~ msgid "Image"
+#~ msgstr "รูปภาพ"
 
-#: src/main.py:265
-msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr ""
+#~ msgid "Text"
+#~ msgstr "ข้อความ"
 
-#: src/main.py:288
-msgid "Please enable a provider from the Dot Menu"
-msgstr ""
+#~ msgid "How to get a token"
+#~ msgstr "วิธีรับโทเค็น"
+
+#~ msgid "Chit-Chat with a Cat"
+#~ msgstr "ชิตแชทกับแมว"
+
+#~ msgid ""
+#~ "You've reached the rate limit! Please add a token to the preferences. You "
+#~ "can get the token by following this [guide](https://"
+#~ "bavarder.codeberg.page/help/huggingface/)"
+#~ msgstr ""
+#~ "คุณมีอัตราถึงขีดจำกัดแล้ว! โปรดเพิ่มโทเค็นให้กับการตั้งค่า "
+#~ "คุณสามารถรับโทเค็นได้โดยทำตาม[คำแนะนำ](https://bavarder.codeberg.page/help/"
+#~ "huggingface/)"
+
+#, python-brace-format
+#~ msgid "Sorry, I don't know what to say! (Error: {output})"
+#~ msgstr "ขออภัย ฉันไม่รู้จะพูดอะไร! (ข้อผิดพลาด: {output})"
+
+#~ msgid "API Key"
+#~ msgstr "คีย์ API"
+
+#~ msgid "List of available models"
+#~ msgstr "รายการรุ่นที่มีจำหน่าย"
+
+#~ msgid "Providers"
+#~ msgstr "ผู้ให้บริการ"
 
 #~ msgid "Export Thread ?"
 #~ msgstr "ส่งออกเธรด ?"
@@ -509,9 +487,6 @@ msgstr ""
 #~ msgid "No API key provided, you can provide one in settings"
 #~ msgstr "ไม่มีรหัส API คุณสามารถระบุได้ในการตั้งค่าได้"
 
-#~ msgid "Open settings"
-#~ msgstr "เปิดการตั้งค่า"
-
 #, fuzzy
 #~| msgid "About Bavarder"
 #~ msgid "About provider"
@@ -522,10 +497,6 @@ msgstr ""
 
 #~ msgid "Wait"
 #~ msgstr "รอ"
-
-#~ msgctxt "shortcut window"
-#~ msgid "General"
-#~ msgstr "ทั่วไป"
 
 #~ msgctxt "shortcut window"
 #~ msgid "Show Shortcuts"
