@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-25 14:46+0100\n"
+"POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-04-29 13:18+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
@@ -22,62 +22,14 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.5.2\n"
 
-#: data/io.github.Bavarder.Bavarder.desktop.in.in:3 src/views/window.blp:6
-#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:168
+#: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
+#: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
 msgstr "Bavarder"
 
-#: src/providers/base.py:8
-msgid "Image"
-msgstr "Irudia"
-
-#: src/providers/base.py:9 src/views/window.blp:108
-msgid "Chat"
-msgstr "Txata"
-
-#: src/providers/base.py:10
-msgid "Voice"
-msgstr "Ahotsa"
-
-#: src/providers/base.py:11
-msgid "Text"
-msgstr "Testua"
-
-#: src/providers/base.py:12
-msgid "Movie"
+#: src/llm.py:39
+msgid "No model available. Please download a model or set a model path."
 msgstr ""
-
-#: src/providers/base.py:86
-msgid "How to get a token"
-msgstr "Nola lortu gako bat"
-
-#: src/providers/catgpt.py:7
-msgid "Chit-Chat with a Cat"
-msgstr "Hitz egin AA batekin"
-
-#: src/providers/hfbasechat.py:45
-msgid ""
-"You've reached the rate limit! Please add a token to the preferences. You "
-"can get the token by following this [guide](https://bavarder.codeberg.page/"
-"help/huggingface/)"
-msgstr ""
-"Tarifaren mugara iritsi zara! Mesedez, gehitu gako bat hobespenei. Gako bat "
-"lor dezakezu [gida](https://bavarder.codeberg.page/help/huggingface/) honi "
-"jarraituz"
-
-#: src/providers/hfbasechat.py:50
-#, fuzzy, python-brace-format
-#| msgid "Sorry, I don't know what to say!"
-msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "Sentitzen dut, ez dut ulertzen zer esan nahi duzun!"
-
-#: src/providers/hfbasechat.py:58
-msgid "API Key"
-msgstr "API-aren gakoa"
-
-#: src/providers/provider_item.blp:18
-msgid "No preferences available"
-msgstr "Ez dago hobespenik"
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -101,6 +53,24 @@ msgstr "Enbalajea"
 msgid "Translate"
 msgstr "Itzuli"
 
+#: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
+msgid "Chat Settings"
+msgstr ""
+
+#: src/views/chat_settings_dialog.blp:11
+msgid "General"
+msgstr ""
+
+#: src/views/chat_settings_dialog.blp:14
+#, fuzzy
+#| msgid "Set Title"
+msgid "Chat Title"
+msgstr "Titulua ezarri"
+
+#: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
+msgid "System Prompt"
+msgstr "Sistemaren mezua"
+
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
 msgstr "Haria esportatu?"
@@ -109,51 +79,23 @@ msgstr "Haria esportatu?"
 msgid "Close"
 msgstr "Itxi"
 
-#: src/views/export_dialog.blp:54 src/views/window.py:288
-#: src/views/window.py:326
+#: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
 msgstr "Esportatu"
 
-#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:313
-msgid "Models"
-msgstr "Ereduak"
-
-#: src/views/preferences_window.py:60
-msgid "List of available models"
-msgstr "Eredu erabilgarrien zerrenda"
-
-#: src/views/preferences_window.py:72
-msgid "Delete All Threads"
-msgstr "Hari guztiak ezabatu"
-
-#: src/views/preferences_window.py:73
-msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Ziur zaude hari guztiak ezabatu nahi dituzula? Hau ezin da desegin!"
-
-#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "Ezeztatu"
-
-#: src/views/preferences_window.py:78 src/views/window.py:220
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "Ezabatu"
-
-#: src/views/preferences_window.py:93 src/views/window.py:245
-msgid "All chats cleared!"
-msgstr "Txat guztiak ezabatuta!"
-
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
+#: src/views/window.blp:286
 msgid "Preferences"
 msgstr "Hobespenak"
 
-#: src/views/preferences_window.blp:15 src/views/window.py:275
-msgid "Providers"
-msgstr "Hornitzaileak"
+#: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
+#: src/views/preferences_window.py:46 src/views/window.py:297
+msgid "Models"
+msgstr "Ereduak"
+
+#: src/views/preferences_window.blp:19
+msgid "Model Marketplace"
+msgstr ""
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -182,6 +124,41 @@ msgstr "Bot-aren izena"
 #: src/views/preferences_window.blp:53
 msgid "User name"
 msgstr "Erabiltzailearen izena"
+
+#: src/views/preferences_window.py:55
+#, fuzzy
+#| msgid "No preferences available"
+msgid "No local models available"
+msgstr "Ez dago hobespenik"
+
+#: src/views/preferences_window.py:91
+#, fuzzy, python-format
+#| msgid "Downloading model %s"
+msgid "Error loading marketplace: %s"
+msgstr "%s eredua deskargatzen"
+
+#: src/views/preferences_window.py:101
+msgid "Delete All Threads"
+msgstr "Hari guztiak ezabatu"
+
+#: src/views/preferences_window.py:102
+msgid "Are you sure you want to delete all threads? This can't be undone!"
+msgstr "Ziur zaude hari guztiak ezabatu nahi dituzula? Hau ezin da desegin!"
+
+#: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
+#: src/views/window.py:223 src/widgets/item.py:240
+#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
+msgid "Cancel"
+msgstr "Ezeztatu"
+
+#: src/views/preferences_window.py:107 src/views/window.py:224
+#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
+msgid "Delete"
+msgstr "Ezabatu"
+
+#: src/views/preferences_window.py:122 src/views/window.py:249
+msgid "All chats cleared!"
+msgstr "Txat guztiak ezabatuta!"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
@@ -215,48 +192,8 @@ msgstr "Ezin da haria gorde"
 msgid "Thread successfully saved!"
 msgstr "Haria ondo gorde da!"
 
-#: src/views/window.py:179
-msgid "New chat"
-msgstr "Txat berria"
-
-#: src/views/window.py:214
-msgid "Delete All Chats"
-msgstr "Txat guztiak ezabatu"
-
-#: src/views/window.py:215
-msgid ""
-"Are you sure you want to delete all chats in this thread? This can't be "
-"undone!"
-msgstr ""
-"Ziur zaude hari honetako txat guztiak ezabatu nahi dituzula? Hau ezin da "
-"desegin!"
-
-#: src/views/window.py:231 src/views/window.py:247
-msgid "Nothing to clear!"
-msgstr "Ez dago ezer ezabatzerik!"
-
-#: src/views/window.py:257
-msgid "Nothing to export!"
-msgstr "Esportatzeko ezer ez!"
-
-#: src/views/window.py:283 src/views/window.py:321
-msgid "Clear all"
-msgstr "Garbitu dena"
-
-#: src/views/window.py:383
-msgid "Generating response"
-msgstr "Erantzuna sortzen"
-
-#: src/views/window.py:397 src/views/window.py:410
-msgid "Sorry, I don't know what to say."
-msgstr "Sentitzen dut, ez dakit zer esan."
-
-#: src/views/window.py:451
-msgid "human"
-msgstr "gizakia"
-
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
-#: src/views/window.blp:184 src/views/window.blp:185
+#: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
 msgstr "Txat berria"
 
@@ -276,39 +213,87 @@ msgstr "Hasi txat berri bat sortzen edo alboko barrako bat hautatzen"
 msgid "Message"
 msgstr "Mezua"
 
-#: src/views/window.blp:156
+#: src/views/window.blp:102
+msgid "Chat"
+msgstr "Txata"
+
+#: src/views/window.blp:143
 msgid "No Messages"
 msgstr "Mezurik gabe"
 
-#: src/views/window.blp:157
+#: src/views/window.blp:144
 msgid "Send first message to get started"
 msgstr "Bidali zure lehenengo mezua hasteko"
 
-#: src/views/window.blp:162
+#: src/views/window.blp:149
 msgid "No Internet"
 msgstr "Internet gabe"
 
-#: src/views/window.blp:169
+#: src/views/window.blp:156
 msgid "Get started by creating a new chat"
 msgstr "Hasi txat berri bat sortzen"
 
-#: src/views/window.blp:259
+#: src/views/window.blp:246
 msgid "Ask"
 msgstr "Galdetu"
 
-#: src/views/window.blp:304
+#: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
 msgstr "Teklatu lasterbideak"
 
-#: src/views/window.blp:309
+#: src/views/window.blp:296
 msgid "About Bavarder"
 msgstr "Bavarder-ri buruz"
+
+#: src/views/window.py:183
+msgid "New chat"
+msgstr "Txat berria"
+
+#: src/views/window.py:218
+msgid "Delete All Chats"
+msgstr "Txat guztiak ezabatu"
+
+#: src/views/window.py:219
+msgid ""
+"Are you sure you want to delete all chats in this thread? This can't be "
+"undone!"
+msgstr ""
+"Ziur zaude hari honetako txat guztiak ezabatu nahi dituzula? Hau ezin da "
+"desegin!"
+
+#: src/views/window.py:235 src/views/window.py:251
+msgid "Nothing to clear!"
+msgstr "Ez dago ezer ezabatzerik!"
+
+#: src/views/window.py:261
+msgid "Nothing to export!"
+msgstr "Esportatzeko ezer ez!"
+
+#: src/views/window.py:307
+msgid "Clear all"
+msgstr "Garbitu dena"
+
+#: src/views/window.py:368
+msgid "Sorry, I don't know what to say."
+msgstr "Sentitzen dut, ez dakit zer esan."
+
+#: src/views/window.py:388
+msgid "Error: "
+msgstr ""
+
+#: src/views/window.py:391
+msgid "Generating response"
+msgstr "Erantzuna sortzen"
+
+#: src/views/window.py:433
+msgid "human"
+msgstr "gizakia"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
 msgstr "Eginda"
 
-#: src/widgets/download_row.blp:11
+#: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
 msgstr "Eredua deskargatu"
 
@@ -383,22 +368,10 @@ msgstr ""
 "zehaztasun gutxiago."
 
 #: src/widgets/model_item.blp:45
-msgid "Top K"
-msgstr "Top K"
-
-#: src/widgets/model_item.blp:46
-msgid ""
-"Randomly sample from the top_k most likely tokens at each generation step. "
-"Set this to 1 for greedy decoding."
-msgstr ""
-"Sortzen da urrats bakoitzean top_k gako probableenen ausazko laginketa. "
-"Ezarri hau 1-en deskodetze jatun baterako."
-
-#: src/widgets/model_item.blp:59
 msgid "Top P"
 msgstr "Top P"
 
-#: src/widgets/model_item.blp:60
+#: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
@@ -406,43 +379,19 @@ msgstr ""
 "Ausazko laginketa gako probableenak sortzeko urrats bakoitzean, horien "
 "probabilitateak top_p direlarik."
 
-#: src/widgets/model_item.blp:74
-msgid "Repetition Penalty"
-msgstr "Errepikapenagatiko zigorra"
+#: src/widgets/model_item.blp:60
+msgid "Top K"
+msgstr "Top K"
 
-#: src/widgets/model_item.blp:75
+#: src/widgets/model_item.blp:61
 msgid ""
-"Penalize the model for repetition. Higher values result in less repetition."
+"Randomly sample from the top_k most likely tokens at each generation step. "
+"Set this to 1 for greedy decoding."
 msgstr ""
-"Errepikapenak zigortu. Balio altuenek errepikapen gutxiago ematen dituzte."
+"Sortzen da urrats bakoitzean top_k gako probableenen ausazko laginketa. "
+"Ezarri hau 1-en deskodetze jatun baterako."
 
-#: src/widgets/model_item.blp:89
-msgid "Batch Size"
-msgstr "Lotearen tamaina"
-
-#: src/widgets/model_item.blp:90
-msgid ""
-"Number of prompt tokens processed in parallel. Larger values decrease "
-"latency but increase resource requirements."
-msgstr ""
-"Paraleloan prozesatutako abisu-gakoen kopurua. Balio altuenek latentzia "
-"murrizten dute, baina baliabideen baldintzak handitzen dira."
-
-#: src/widgets/model_item.blp:103
-msgid "Repeat Last N"
-msgstr "Errepikatu azken N"
-
-#: src/widgets/model_item.blp:104
-msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
-"Eredua sortzeko historialaren zein puntutan aplikatuko den "
-"errepikapenagatiko penalizazioa. "
-
-#: src/widgets/model_item.blp:117
-msgid "System Prompt"
-msgstr "Sistemaren mezua"
-
-#: src/widgets/model_item.py:64
+#: src/widgets/model_item.py:49
 #, python-format
 msgid "Model %s deleted!"
 msgstr "%s eredua ezabatuta!"
@@ -472,27 +421,87 @@ msgstr "Ziur zaude zerrenda hau ezabatu nahi duzula?"
 msgid "Thread Deleted"
 msgstr "Haria ezabatu da"
 
-#: src/main.py:261
-msgid ""
-"Please download a model from Preferences by clicking on the Dot Menu at the "
-"top!"
-msgstr ""
-"Mesedez, deskargatu eredu bat «Hobespenak» atalean, goiko aldeko puntuen "
-"menuan klik eginez!"
+#~ msgid "Image"
+#~ msgstr "Irudia"
 
-#: src/main.py:265
-msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr "Kaixo, Bavarder naiz, Txit-Txateko AA bat"
+#~ msgid "Voice"
+#~ msgstr "Ahotsa"
 
-#: src/main.py:288
-msgid "Please enable a provider from the Dot Menu"
-msgstr "Mesedez, aktibatu hornitzaile bat puntuen menutik"
+#~ msgid "Text"
+#~ msgstr "Testua"
+
+#~ msgid "How to get a token"
+#~ msgstr "Nola lortu gako bat"
+
+#~ msgid "Chit-Chat with a Cat"
+#~ msgstr "Hitz egin AA batekin"
+
+#~ msgid ""
+#~ "You've reached the rate limit! Please add a token to the preferences. You "
+#~ "can get the token by following this [guide](https://"
+#~ "bavarder.codeberg.page/help/huggingface/)"
+#~ msgstr ""
+#~ "Tarifaren mugara iritsi zara! Mesedez, gehitu gako bat hobespenei. Gako "
+#~ "bat lor dezakezu [gida](https://bavarder.codeberg.page/help/huggingface/) "
+#~ "honi jarraituz"
+
+#, fuzzy, python-brace-format
+#~| msgid "Sorry, I don't know what to say!"
+#~ msgid "Sorry, I don't know what to say! (Error: {output})"
+#~ msgstr "Sentitzen dut, ez dut ulertzen zer esan nahi duzun!"
+
+#~ msgid "API Key"
+#~ msgstr "API-aren gakoa"
+
+#~ msgid "List of available models"
+#~ msgstr "Eredu erabilgarrien zerrenda"
+
+#~ msgid "Providers"
+#~ msgstr "Hornitzaileak"
+
+#~ msgid "Repetition Penalty"
+#~ msgstr "Errepikapenagatiko zigorra"
+
+#~ msgid ""
+#~ "Penalize the model for repetition. Higher values result in less "
+#~ "repetition."
+#~ msgstr ""
+#~ "Errepikapenak zigortu. Balio altuenek errepikapen gutxiago ematen dituzte."
+
+#~ msgid "Batch Size"
+#~ msgstr "Lotearen tamaina"
+
+#~ msgid ""
+#~ "Number of prompt tokens processed in parallel. Larger values decrease "
+#~ "latency but increase resource requirements."
+#~ msgstr ""
+#~ "Paraleloan prozesatutako abisu-gakoen kopurua. Balio altuenek latentzia "
+#~ "murrizten dute, baina baliabideen baldintzak handitzen dira."
+
+#~ msgid "Repeat Last N"
+#~ msgstr "Errepikatu azken N"
+
+#~ msgid ""
+#~ "How far in the models generation history to apply the repeat penalty. "
+#~ msgstr ""
+#~ "Eredua sortzeko historialaren zein puntutan aplikatuko den "
+#~ "errepikapenagatiko penalizazioa. "
+
+#~ msgid ""
+#~ "Please download a model from Preferences by clicking on the Dot Menu at "
+#~ "the top!"
+#~ msgstr ""
+#~ "Mesedez, deskargatu eredu bat «Hobespenak» atalean, goiko aldeko puntuen "
+#~ "menuan klik eginez!"
+
+#~ msgid "Hello, I am Bavarder, a Chit-Chat AI"
+#~ msgstr "Kaixo, Bavarder naiz, Txit-Txateko AA bat"
+
+#~ msgid "Please enable a provider from the Dot Menu"
+#~ msgstr "Mesedez, aktibatu hornitzaile bat puntuen menutik"
 
 #~ msgid "Export Thread ?"
 #~ msgstr "Haria esportatu?"
 
 #~ msgid "Open Emoji Picker"
 #~ msgstr "Emoji-en hautagailua ireki"
-
-#~ msgid "Set Title"
-#~ msgstr "Titulua ezarri"
