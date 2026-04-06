@@ -23,9 +23,9 @@ body:
       label: Version
       description: What version of Bavarder are you running? (Must be >= 2.0)
       options:
-        - 2.0 (Latest)
-        - > 2.0 (Devel)
-        - < 2.0 (UNSUPPORTED)
+        - "2.0 (Latest)"
+        - "> 2.0 (Devel)"
+        - "< 2.0 (UNSUPPORTED)"
       default: 0
     validations:
       required: true
