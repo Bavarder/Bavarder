@@ -1,36 +1,26 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ChatSettingsDialog : Adw.MessageDialog {
+template $ChatSettingsDialog : Adw.PreferencesWindow {
   title: _("Chat Settings");
-  close-response: "cancel";
+  default-width: 400;
+  default-height: 300;
 
-  Adw.EntryRow title_entry {
-    title: _("Chat Title");
-    show-apply-button: true;
-  }
+  Adw.PreferencesPage {
+    Adw.PreferencesGroup {
+      title: _("General");
 
-  Gtk.Label {
-    label: _("System Prompt");
-    halign: start;
-    margin-top: 12;
-  }
+      Adw.EntryRow title_entry {
+        title: _("Chat Title");
+      }
+    }
 
-  Gtk.TextView system_prompt_view {
-    height-request: 150;
-    wrap-mode: word;
-    margin-top: 6;
-  }
+    Adw.PreferencesGroup {
+      title: _("System Prompt");
 
-  Adw.ButtonContent {
-    label: _("Cancel");
-    use-underline: true;
-    response: "cancel";
-  }
-
-  Adw.ButtonContent {
-    label: _("Save");
-    use-underline: true;
-    response: "save";
+      Adw.EntryRow system_prompt_entry {
+        title: _("System Prompt");
+      }
+    }
   }
 }

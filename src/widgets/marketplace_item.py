@@ -29,7 +29,7 @@ class MarketplaceItem(Adw.ActionRow):
 
             toast = Adw.Toast()
             toast.set_timeout(0)
-            toast.set_title(_("Downloading model %s" % self.model_info.get("name")))
+            toast.set_title(_("Downloading %s" % self.model_info.get("name")))
             self.window.toast_overlay.add_toast(toast)
 
             model_id = self.model_info.get("id")
@@ -42,12 +42,36 @@ class MarketplaceItem(Adw.ActionRow):
                 GLib.idle_add(show_error, _("No .litertlm file found in this model"))
                 return
             
+            filename = litertlm_files[0]
+            
+            try:
+                from huggingface_hub import get_hf_file_metadata
+                metadata = get_hf_file_metadata(
+                    repo_id=model_id,
+                    filename=filename,
+                )
+                total_size = metadata.size
+            except:
+                total_size = 0
+
+            class Progress:
+                downloaded = 0
+
+            def update_toast(downloaded, total):
+                if total > 0:
+                    percent = int((downloaded / total) * 100)
+                    toast.set_title(_("Downloading %s (%d%%)" % (self.model_info.get("name"), percent)))
+                else:
+                    toast.set_title(_("Downloading %s" % self.model_info.get("name")))
+
             try:
                 model_file = hf_hub_download(
                     repo_id=model_id,
-                    filename=litertlm_files[0],
+                    filename=filename,
                     cache_dir=self.app.user_cache_dir,
                 )
+                if total_size > 0:
+                    toast.set_title(_("Downloading %s (100%%)" % self.model_info.get("name")))
             except Exception as e:
                 GLib.idle_add(show_error, str(e))
                 return
@@ -64,6 +88,8 @@ class MarketplaceItem(Adw.ActionRow):
             toast.dismiss()
 
             self.app.action_running_in_background = False
+            self.app.list_models()
+            self.window.load_models()
 
             toast = Adw.Toast()
             toast.set_title(_("Model %s downloaded!" % self.model_info.get("name")))

@@ -78,6 +78,8 @@ class BavarderApplication(Adw.Application):
         if not os.path.exists(model_path):
             os.makedirs(model_path)
 
+        self.list_models()
+
         self.data_path = os.path.join(self.data_path, "data.json")
 
         self.data = {
@@ -108,9 +110,19 @@ class BavarderApplication(Adw.Application):
 
         self.user_cache_dir = user_cache_dir
         self.llm = LLM(self)
+        self.model_settings = {
+            "max_tokens": 200,
+            "temperature": 0.7,
+            "top_p": 0.9,
+            "top_k": 40,
+        }
 
     def on_set_model_action(self, action, *args):
         Gio.SimpleAction.set_state(self.lookup_action("set_model"), args[0])
+        self.model_name = args[0].get_string()
+        if self.win and self.win.chat:
+            self.win.chat["model"] = self.model_name
+            self.win.threads_row_activated_cb()
 
     def save(self):
         with open(self.data_path, "w", encoding="utf-8") as f:
@@ -234,7 +246,15 @@ class BavarderApplication(Adw.Application):
         self.models = set()
         for root, dirs, files in os.walk(model_path):
             for model in files:
-                self.models.add(model)
+                if model.endswith(".litertlm"):
+                    self.models.add(model)
+
+    def delete_model(self, model_name):
+        model_file = os.path.join(model_path, model_name)
+        if os.path.exists(model_file):
+            os.remove(model_file)
+        self.list_models()
+        self.win.load_model_selector()
 
     def clear_all_chats(self):
         self.data["chats"] = []

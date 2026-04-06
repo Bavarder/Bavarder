@@ -10,3 +10,5 @@ r.txt
 *.pyc
 __pycache__/
 *.log
+result
+*.profraw

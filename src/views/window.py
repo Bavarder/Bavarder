@@ -68,6 +68,8 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.app = Gtk.Application.get_default()
         self.settings = Gio.Settings(schema_id=app_id)
 
+        self.is_generating = False
+
         CustomEntry.set_css_name("entry")
         self.message_entry = CustomEntry()
         self.message_entry.set_hexpand(True)
@@ -85,7 +87,7 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.create_action("cancel", self.cancel, ["<primary>Escape"])
         self.create_action("clear_all", self.on_clear_all)
         self.create_action("export", self.on_export, ["<primary>e"])
-        self.create_action("chat_settings", self.on_chat_settings, ["<primary>comma"])
+        self.create_action("chat_settings", self.on_chat_settings, ["<primary><shift>c"])
 
         self.settings.bind(
             "width", self, "default-width", Gio.SettingsBindFlags.DEFAULT
@@ -108,17 +110,21 @@ class BavarderWindow(Adw.ApplicationWindow):
     @property
     def chat(self):
         try:
-            return self.threads_list.get_selected_row().get_child().chat
-        except AttributeError: # create a new chat
-            #self.on_new_chat_action()
-            return {}
+            chat = self.threads_list.get_selected_row().get_child().chat
+            if not chat or not chat.get("id"):
+                return None
+            return chat
+        except AttributeError:
+            return None
 
 
     @property
     def content(self):
         try:
+            if not self.chat:
+                return []
             return self.chat["content"]
-        except KeyError: # no content
+        except (KeyError, TypeError):
             return []
 
     def load_threads(self):
@@ -169,10 +175,12 @@ class BavarderWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def threads_row_activated_cb(self, *args):
         self.split_view.set_show_content(True)
+        self.load_model_selector()
+        self.message_entry.grab_focus()
 
         try:
             self.title.set_title(self.chat["title"])
-        except KeyError:
+        except (KeyError, TypeError):
             self.title.set_title(_("New chat"))
 
         if self.content:
@@ -194,6 +202,7 @@ class BavarderWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def on_new_chat_action(self, *args):
         self.app.on_new_chat_action(_, _)
+        self.message_entry.grab_focus()
 
     @Gtk.Template.Callback()
     def scroll_down(self, *args):
@@ -258,7 +267,8 @@ class BavarderWindow(Adw.ApplicationWindow):
         if self.chat:
             dialog = ChatSettingsDialog(self, self.chat)
             dialog.set_transient_for(self)
-            dialog.present()
+            dialog.set_modal(True)
+            dialog.show()
 
     # MODEL - OFFLINE
     def load_model_selector(self):
@@ -288,23 +298,24 @@ class BavarderWindow(Adw.ApplicationWindow):
                 section.append_item(item_provider)
             provider_menu.append_section(_("Models"), section)
 
-        section = Gio.Menu()
-        item_provider = Gio.MenuItem()
-        item_provider.set_label(_("Preferences"))
-        item_provider.set_action_and_target_value("app.preferences", None)
-        section.append_item(item_provider)
+        if self.chat:
+            section = Gio.Menu()
+            item_provider = Gio.MenuItem()
+            item_provider.set_label(_("Chat Settings"))
+            item_provider.set_action_and_target_value("win.chat_settings", None)
+            section.append_item(item_provider)
 
-        item_provider = Gio.MenuItem()
-        item_provider.set_label(_("Clear all"))
-        item_provider.set_action_and_target_value("win.clear_all", None)
-        section.append_item(item_provider)
+            item_provider = Gio.MenuItem()
+            item_provider.set_label(_("Clear all"))
+            item_provider.set_action_and_target_value("win.clear_all", None)
+            section.append_item(item_provider)
 
-        item_provider = Gio.MenuItem()
-        item_provider.set_label(_("Export"))
-        item_provider.set_action_and_target_value("win.export", None)
-        section.append_item(item_provider)
+            item_provider = Gio.MenuItem()
+            item_provider.set_label(_("Export"))
+            item_provider.set_action_and_target_value("win.export", None)
+            section.append_item(item_provider)
 
-        provider_menu.append_section(None, section)
+            provider_menu.append_section(None, section)
 
         self.model_selector_button.set_menu_model(provider_menu)
 
@@ -324,6 +335,9 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     @Gtk.Template.Callback()
     def on_ask(self, *args):
+        if self.is_generating:
+            return
+
         prompt = self.message_entry.get_buffer().props.text.strip()
         if prompt:
             self.message_entry.get_buffer().set_text("")
@@ -331,26 +345,43 @@ class BavarderWindow(Adw.ApplicationWindow):
             if not self.chat:
                 self.on_new_chat_action()
 
-                # now get the latest row
                 row = self.threads_list.get_row_at_index(len(self.app.data["chats"]) - 1)
 
 
                 self.threads_list.select_row(row)
                 self.threads_row_activated_cb()
 
+            first_message = self.chat and not bool(self.chat.get("content", []))
+            if first_message:
+                self.first_message = prompt
 
             self.add_user_item(prompt)
+
+            self.is_generating = True
+            self.message_entry.set_sensitive(False)
 
             self.response_buffer = ""
             self.assistant_item_added = False
 
             def on_token(token):
                 if token is None:
+                    self.is_generating = False
+                    self.message_entry.set_sensitive(True)
                     self.toast.dismiss()
                     if not self.response_buffer:
                         self.add_assistant_item(_("Sorry, I don't know what to say."))
                     else:
                         self.update_last_assistant_item(self.response_buffer.strip())
+                    
+                    if first_message:
+                        words = self.first_message.split()[:5]
+                        title = " ".join(words)
+                        if len(self.first_message.split()) > 5:
+                            title += "..."
+                        self.chat["title"] = title
+                        self.title.set_title(title)
+                        self.load_threads()
+                    
                     return
                 
                 self.response_buffer += token
@@ -365,6 +396,8 @@ class BavarderWindow(Adw.ApplicationWindow):
                     self.scroll_down()
 
             def on_error(error):
+                self.is_generating = False
+                self.message_entry.set_sensitive(True)
                 self.toast.dismiss()
                 self.add_assistant_item(_("Error: ") + error)
 
@@ -420,6 +453,8 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.scroll_down()
 
     def get_model_name(self):
+        if self.app.model_name:
+            return self.app.model_name
         model_path = self.app.data.get("models", {}).get("model_path", "")
         if model_path and os.path.exists(model_path):
             return os.path.basename(model_path)
