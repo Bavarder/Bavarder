@@ -31,12 +31,6 @@
   </a>
 </p>
 
-<p align="center">
-  <a href="https://stopthemingmy.app">
-    <img alt="Please do not theme this app" src="https://stopthemingmy.app/badge.svg"/>
-  </a>
-</p>
-
 <a href="https://bavarder.codeberg.page">
 <p align="center">
   <img src="./data/screenshots/preview.png" alt="Preview"/>
@@ -48,6 +42,14 @@
 Documentation is available [here](https://bavarder.codeberg.page)
 
 ## Installation
+
+### Nix
+
+Nix is used to develop Bavarder, there is also a Nix flake available at [flake.nix](./flake.nix). You can run Bavarder without installing it by running
+
+``` shell
+nix run github:Bavarder/Bavarder
+```
 
 ### Flatpak
 
@@ -66,6 +68,18 @@ curl -s -o bavarder.flatpak https://codeberg.org/api/packages/Bavarder/generic/B
 ```
 
 #### From Source
+
+### Nix
+
+Just clone the repo and run `nix develop` and you will be in a shell with all the dependencies installed, you can then run `nix run` to run the app or `nix build` to build it
+
+``` shell
+git clone https://github.com/Bavarder/Bavarder # or https://codeberg.org/Bavarder/Bavarder
+cd Bavarder
+nix develop
+nix run # Run the app
+nix build # Build the app
+```
 
 ### Flatpak-builder
 
@@ -115,12 +129,3 @@ You can translate Bavarder using [Codeberg Translate](https://translate.codeberg
 ## About the name
 
 Bavarder is a french word, the definiton of Bavarder is "Parler abondamment de choses sans grande portée" (Talking a lot about things that don't matter) (Larousse) which can be translated by Chit-Chat (informal conversation about matters that are not important). For non-french speakers, Bavarder can be hard to speak, it's prounouced as [bavaʀde]. Hear [here](https://youtu.be/9Qoogwxo5YA)
-
-## See also 
-
-### [Imaginer : Imagine with AI](https://imaginer.codeberg.page)
-
-A tool for generating pictures with AI (GNOME app)
-
-- [GitHub](https://github.com/ImaginerApp/Imaginer)
-- [Codeberg](https://codeberg.org/Imaginer/Imaginer)
