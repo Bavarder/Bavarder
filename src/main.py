@@ -142,6 +142,7 @@ class BavarderApplication(Adw.Application):
             "title": "New Chat " + str(chat_id),
             "starred": False,
             "content": [],
+            "system_prompt": "",
         }
 
         self.data["chats"].append(chat)

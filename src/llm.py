@@ -60,35 +60,14 @@ class LLM:
                 self.load_model()
 
                 messages = []
-                for msg in chat.get("content", []):
-                    role = msg.get("role", "user")
-                    if role == self.app.user_name:
-                        role = "user"
-                    elif role == self.app.bot_name:
-                        role = "assistant"
-                    else:
-                        role = "user"
-                    content = msg.get("content", "")
+                
+                system_prompt = chat.get("system_prompt", "")
+                if system_prompt:
                     messages.append({
-                        "role": role,
-                        "content": [{"type": "text", "text": content}]
+                        "role": "system",
+                        "content": [{"type": "text", "text": system_prompt}]
                     })
-
-                with self.engine.create_conversation(messages=messages) as conv:
-                    response = conv.send_message(prompt)
-                    GLib.idle_add(callback, response["content"][0]["text"])
-            except Exception as e:
-                GLib.idle_add(error_callback, str(e))
-
-        t = threading.Thread(target=thread_run)
-        t.start()
-
-    def ask_async(self, prompt, chat, callback, error_callback):
-        def thread_run():
-            try:
-                self.load_model()
-
-                messages = []
+                
                 for msg in chat.get("content", []):
                     role = msg.get("role", "user")
                     if role == self.app.user_name:
@@ -109,6 +88,7 @@ class LLM:
                         for item in chunk.get("content", []):
                             if item.get("type") == "text":
                                 GLib.idle_add(callback, item["text"])
+                GLib.idle_add(callback, None)
             except Exception as e:
                 GLib.idle_add(error_callback, str(e))
 

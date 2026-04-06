@@ -31,6 +31,7 @@ from bavarder.widgets.thread_item import ThreadItem
 from bavarder.widgets.item import Item
 from bavarder.threading import KillableThread
 from bavarder.views.export_dialog import ExportDialog
+from bavarder.views.chat_settings_dialog import ChatSettingsDialog
 
 class CustomEntry(Gtk.TextView):
     def __init__(self, **kwargs):
@@ -84,6 +85,7 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.create_action("cancel", self.cancel, ["<primary>Escape"])
         self.create_action("clear_all", self.on_clear_all)
         self.create_action("export", self.on_export, ["<primary>e"])
+        self.create_action("chat_settings", self.on_chat_settings, ["<primary>comma"])
 
         self.settings.bind(
             "width", self, "default-width", Gio.SettingsBindFlags.DEFAULT
@@ -252,6 +254,12 @@ class BavarderWindow(Adw.ApplicationWindow):
             toast.set_title(_("Nothing to export!"))
             self.toast_overlay.add_toast(toast)
 
+    def on_chat_settings(self, *args):
+        if self.chat:
+            dialog = ChatSettingsDialog(self, self.chat)
+            dialog.set_transient_for(self)
+            dialog.present()
+
     # MODEL - OFFLINE
     def load_model_selector(self):
         provider_menu = Gio.Menu()
@@ -333,12 +341,28 @@ class BavarderWindow(Adw.ApplicationWindow):
 
             self.add_user_item(prompt)
 
-            def on_response(response):
-                if not response:
-                    self.add_assistant_item(_("Sorry, I don't know what to say."))
-                else:
-                    self.add_assistant_item(response)
-                self.toast.dismiss()
+            self.response_buffer = ""
+            self.assistant_item_added = False
+
+            def on_token(token):
+                if token is None:
+                    self.toast.dismiss()
+                    if not self.response_buffer:
+                        self.add_assistant_item(_("Sorry, I don't know what to say."))
+                    else:
+                        self.update_last_assistant_item(self.response_buffer.strip())
+                    return
+                
+                self.response_buffer += token
+                
+                min_content = 5
+                if len(self.response_buffer) >= min_content:
+                    if not self.assistant_item_added:
+                        self.add_assistant_item(self.response_buffer.strip())
+                        self.assistant_item_added = True
+                    else:
+                        self.update_last_assistant_item(self.response_buffer.strip())
+                    self.scroll_down()
 
             def on_error(error):
                 self.toast.dismiss()
@@ -349,7 +373,7 @@ class BavarderWindow(Adw.ApplicationWindow):
             self.toast.set_timeout(0)
             self.toast_overlay.add_toast(self.toast)
 
-            self.app.ask(prompt, self.chat, on_response, on_error)
+            self.app.ask(prompt, self.chat, on_token, on_error)
 
     # @Gtk.Template.Callback()
     # def on_emoji(self, *args):
@@ -395,12 +419,19 @@ class BavarderWindow(Adw.ApplicationWindow):
 
         self.scroll_down()
 
+    def get_model_name(self):
+        model_path = self.app.data.get("models", {}).get("model_path", "")
+        if model_path and os.path.exists(model_path):
+            return os.path.basename(model_path)
+        return "litert-lm"
+
     def add_assistant_item(self, content):
+        model_name = self.get_model_name()
         c = {
             "role": self.app.bot_name,
             "content": content,
             "time": self.get_time(),
-            "model": "litert-lm",
+            "model": model_name,
         }
 
         self.content.append(c)
@@ -408,3 +439,9 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.threads_row_activated_cb()
 
         self.scroll_down()
+
+    def update_last_assistant_item(self, content):
+        if self.content:
+            self.content[-1]["content"] = content
+            self.threads_row_activated_cb()
+            self.scroll_down()

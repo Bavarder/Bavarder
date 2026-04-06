@@ -5,6 +5,7 @@ python = import('python')
 blueprints = custom_target('blueprints',
   input: files(
     'gtk/help-overlay.blp',
+    'views/chat_settings_dialog.blp',
     'views/export_dialog.blp',
     'views/preferences_window.blp',
     'views/save_dialog.blp',
