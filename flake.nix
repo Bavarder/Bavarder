@@ -88,7 +88,6 @@
             lxml
             openai
             pygobject3
-            pillow
             requests
             packaging
             litert-lm-api-nightly

@@ -9,7 +9,6 @@ charset-normalizer
 idna
 urllib3
 Babel
-pillow
 huggingface-hub
 litert-lm-api-nightly
 litert-lm-nightly
