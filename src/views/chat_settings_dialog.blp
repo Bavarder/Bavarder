@@ -1,10 +1,10 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ChatSettingsDialog : Adw.PreferencesWindow {
+template $ChatSettingsDialog : Adw.PreferencesDialog {
   title: _("Chat Settings");
-  default-width: 400;
-  default-height: 300;
+  content-width: 400;
+  content-height: 300;
 
   Adw.PreferencesPage {
     Adw.PreferencesGroup {

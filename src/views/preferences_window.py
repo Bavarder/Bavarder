@@ -6,7 +6,7 @@ from bavarder.widgets.model_item import Model
 
 
 @Gtk.Template(resource_path=f"{rootdir}/ui/preferences_window.ui")
-class PreferencesWindow(Adw.PreferencesWindow):
+class PreferencesWindow(Adw.PreferencesDialog):
     __gtype_name__ = "Preferences"
 
     general_page = Gtk.Template.Child()
@@ -24,8 +24,6 @@ class PreferencesWindow(Adw.PreferencesWindow):
 
         self.app = self.parent.get_application()
         self.win = self.app.get_active_window()
-
-        self.set_transient_for(self.win)
 
         self.setup()
 
@@ -97,10 +95,9 @@ class PreferencesWindow(Adw.PreferencesWindow):
 
     @Gtk.Template.Callback()
     def clear_all_chats_clicked(self, widget, *args):
-        dialog = Adw.MessageDialog(
+        dialog = Adw.AlertDialog(
             heading=_("Delete All Threads"),
             body=_("Are you sure you want to delete all threads? This can't be undone!"),
-            body_use_markup=True
         )
 
         dialog.add_response("cancel", _("Cancel"))
@@ -109,18 +106,16 @@ class PreferencesWindow(Adw.PreferencesWindow):
         dialog.set_default_response("cancel")
         dialog.set_close_response("cancel")
 
-        dialog.connect("response", self.on_delete_response)
+        dialog.connect("response", self._on_delete_response)
+        dialog.present(self)
 
-        dialog.set_transient_for(self)
-        dialog.present()
-
-    def on_delete_response(self, _widget, response):
+    def _on_delete_response(self, dialog, response):
         if response == "delete":
             self.app.clear_all_chats()
 
             toast = Adw.Toast()
             toast.set_title(_("All chats cleared!"))
-            self.add_toast(toast)
+            self.win.toast_overlay.add_toast(toast)
 
     @Gtk.Template.Callback()
     def on_bot_entry_apply(self, user_data, *args):

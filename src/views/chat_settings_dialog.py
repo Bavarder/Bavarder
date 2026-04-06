@@ -4,7 +4,7 @@ from bavarder.constants import app_id, rootdir
 
 
 @Gtk.Template(resource_path=f"{rootdir}/ui/chat_settings_dialog.ui")
-class ChatSettingsDialog(Adw.PreferencesWindow):
+class ChatSettingsDialog(Adw.PreferencesDialog):
     __gtype_name__ = "ChatSettingsDialog"
 
     title_entry = Gtk.Template.Child()
@@ -16,7 +16,7 @@ class ChatSettingsDialog(Adw.PreferencesWindow):
         self.chat = chat
         self.app = parent.app
 
-        self.connect("close-request", self.on_close_request)
+        self.connect("closed", self.on_closed)
         self.setup()
 
     def setup(self):
@@ -25,7 +25,7 @@ class ChatSettingsDialog(Adw.PreferencesWindow):
         system_prompt = self.chat.get("system_prompt", "")
         self.system_prompt_entry.set_text(system_prompt)
 
-    def on_close_request(self, *args):
+    def on_closed(self, *args):
         new_title = self.title_entry.get_text().strip()
         if new_title:
             self.chat["title"] = new_title
@@ -33,5 +33,13 @@ class ChatSettingsDialog(Adw.PreferencesWindow):
 
         system_prompt = self.system_prompt_entry.get_text()
         self.chat["system_prompt"] = system_prompt
-
-        self.parent.load_threads()
+        
+        self.app.save()
+        
+        for row in self.parent.threads_list:
+            if row.get_child().chat.get("id") == self.chat.get("id"):
+                self.parent.threads_list.select_row(row)
+                self.parent.threads_row_activated_cb()
+                break
+        else:
+            self.parent.load_threads()

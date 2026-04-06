@@ -202,6 +202,12 @@ class BavarderWindow(Adw.ApplicationWindow):
     @Gtk.Template.Callback()
     def on_new_chat_action(self, *args):
         self.app.on_new_chat_action(_, _)
+        
+        row = self.threads_list.get_row_at_index(len(self.app.data["chats"]) - 1)
+        if row:
+            self.threads_list.select_row(row)
+            self.threads_row_activated_cb()
+        
         self.message_entry.grab_focus()
 
     @Gtk.Template.Callback()
@@ -216,10 +222,9 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     def on_clear_all(self, *args):
         if self.app.data["chats"]:
-            dialog = Adw.MessageDialog(
+            dialog = Adw.AlertDialog(
                 heading=_("Delete All Chats"),
                 body=_("Are you sure you want to delete all chats in this thread? This can't be undone!"),
-                body_use_markup=True
             )
 
             dialog.add_response("cancel", _("Cancel"))
@@ -228,17 +233,15 @@ class BavarderWindow(Adw.ApplicationWindow):
             dialog.set_default_response("cancel")
             dialog.set_close_response("cancel")
 
-            dialog.connect("response", self.on_clear_all_response)
-
-            dialog.set_transient_for(self)
-            dialog.present()
+            dialog.connect("response", self._on_clear_all_response)
+            dialog.present(self)
         else:
             toast = Adw.Toast()
             toast.set_title(_("Nothing to clear!"))
             self.toast_overlay.add_toast(toast)
 
 
-    def on_clear_all_response(self, _widget, response):
+    def _on_clear_all_response(self, dialog, response):
         if response == "delete":
             toast = Adw.Toast()
             if self.app.data["chats"]:
@@ -247,7 +250,7 @@ class BavarderWindow(Adw.ApplicationWindow):
                     self.main_list.remove_all()
                     del self.chat["content"]
                 self.stack.set_visible_child(self.status_no_chat)
-
+                self.app.save()
                 toast.set_title(_("All chats cleared!"))
             else:
                 toast.set_title(_("Nothing to clear!"))
@@ -266,9 +269,7 @@ class BavarderWindow(Adw.ApplicationWindow):
     def on_chat_settings(self, *args):
         if self.chat:
             dialog = ChatSettingsDialog(self, self.chat)
-            dialog.set_transient_for(self)
-            dialog.set_modal(True)
-            dialog.show()
+            dialog.present(self)
 
     # MODEL - OFFLINE
     def load_model_selector(self):
@@ -380,7 +381,6 @@ class BavarderWindow(Adw.ApplicationWindow):
                             title += "..."
                         self.chat["title"] = title
                         self.title.set_title(title)
-                        self.load_threads()
                     
                     return
                 

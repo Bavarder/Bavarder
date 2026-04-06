@@ -1,69 +1,84 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $SaveDialog : Adw.MessageDialog {
-    response => $handle_response();
-    responses [
-        cancel: _("Cancel"),
-        disacard: _("Discard") destructive,
-        save: _("Save") suggested disabled,
-    ]
-    close-response: "cancel";
-    modal: true;
-    heading: _("Export Thread?");
-    // body: _("");
+template $SaveDialog : Adw.Dialog {
+  title: _("Save Thread");
+  content-width: 400;
+  content-height: 350;
 
-    extra-child: Box {
-        margin-top: 12;
+  Adw.HeaderBar {
+    show-start-title-buttons: true;
+    show-end-title-buttons: true;
+  }
+
+  Box {
+    orientation: vertical;
+    margin-start: 12;
+    margin-end: 12;
+    margin-top: 12;
+    margin-bottom: 12;
+    spacing: 24;
+
+    ListBox {
+        selection-mode: none;
+        styles ["boxed-list"]
+
+        Adw.EntryRow filename {
+            title: _("File Name");
+            entry-activated => $on_entry_activated();
+        }
+    }
+
+    Box {
         orientation: vertical;
-        spacing: 24;
 
         ListBox {
             selection-mode: none;
             styles ["boxed-list"]
 
-            Adw.EntryRow filename {
-                title: _("File Name");
-                entry-activated => $on_entry_activated();
-            }
-        }
+            Adw.ActionRow location {
+                title: _("Location");
+                subtitle: "Select Location";
+                activatable-widget: button_location;
 
-        Box {
-            orientation: vertical;
-
-            ListBox {
-                selection-mode: none;
-                styles ["boxed-list"]
-
-                Adw.ActionRow location {
-                    title: _("Location");
-                    subtitle: "Select Location";
-                    activatable-widget: button_location;
-
-                    Button button_location {
-                        icon-name: "folder-symbolic";
-                        valign: center;
-                        styles ["flat"]
-                        clicked => $on_location_button_clicked();
-                    }
+                Button button_location {
+                    icon-name: "folder-symbolic";
+                    valign: center;
+                    styles ["flat"]
+                    clicked => $on_location_button_clicked();
                 }
             }
-
-            Label {
-                margin-start: 12;
-                margin-top: 12;
-                halign: start;
-                label: _("The export of the Thread will be saved in this directory.");
-                styles ["dim-label", "caption"]
-                justify: left;
-            }
         }
-    };
+
+        Label {
+            margin-start: 12;
+            margin-top: 12;
+            halign: start;
+            label: _("The export of the Thread will be saved in this directory.");
+            styles ["dim-label", "caption"]
+            justify: left;
+        }
+    }
+
+    Box {
+        orientation: horizontal;
+        halign: end;
+        spacing: 6;
+
+        Button cancel_button {
+            label: _("Cancel");
+            clicked => $on_cancel_clicked();
+        }
+
+        Button save_button {
+            label: _("Save");
+            styles ["suggested-action"]
+            clicked => $on_save_clicked();
+        }
+    }
+  }
 }
 
 Gtk.FileDialog file_chooser {
   title: _("Choose a directory");
-  modal: true;
-  //action: open;
-  //response => $on_filechooser_response();
 }

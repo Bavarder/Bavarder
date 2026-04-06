@@ -2,11 +2,20 @@ using Gtk 4.0;
 using Adw 1;
 using GtkSource 5;
 
-template $ExportDialog : Adw.MessageDialog {
-  heading: _("Export Thread?");
-  response => $handle_response();
-  
-  extra-child: Overlay {
+template $ExportDialog : Adw.Dialog {
+  title: _("Export Thread?");
+  content-width: 500;
+  content-height: 400;
+
+  Adw.HeaderBar {
+    show-start-title-buttons: false;
+    show-end-title-buttons: true;
+  }
+
+  Box {
+    orientation: vertical;
+
+    Overlay {
         [overlay]
         Button {
             styles [
@@ -19,7 +28,7 @@ template $ExportDialog : Adw.MessageDialog {
             margin-end: 7;
             clicked => $copy();
         }
-  
+    
         Box box {
             orientation: vertical;
             vexpand: true;
@@ -47,10 +56,26 @@ template $ExportDialog : Adw.MessageDialog {
                 }
             }
         }
-    };
+    }
 
-    responses [
-        close: _("Close"),
-        export: _("Export") suggested,
-    ]
+    Box {
+        orientation: horizontal;
+        halign: end;
+        spacing: 6;
+        margin-start: 12;
+        margin-end: 12;
+        margin-bottom: 12;
+
+        Button close_button {
+            label: _("Close");
+            clicked => $on_close_clicked();
+        }
+
+        Button export_button {
+            label: _("Export");
+            styles ["suggested-action"]
+            clicked => $on_export_clicked();
+        }
+    }
+  }
 }

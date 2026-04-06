@@ -126,7 +126,7 @@ class BavarderApplication(Adw.Application):
 
     def save(self):
         with open(self.data_path, "w", encoding="utf-8") as f:
-            self.data = json.dump(self.data, f)
+            json.dump(self.data, f)
             self.settings.set_string("model", self.model_name)
             self.settings.set_string("bot-name", self.bot_name)
             self.settings.set_string("user-name", self.user_name)
@@ -258,6 +258,7 @@ class BavarderApplication(Adw.Application):
 
     def clear_all_chats(self):
         self.data["chats"] = []
+        self.save()
         self.win.load_threads()
 
 def main(version):

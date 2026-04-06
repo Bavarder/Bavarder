@@ -1,11 +1,10 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $Preferences : Adw.PreferencesWindow {
+template $Preferences : Adw.PreferencesDialog {
   title: _("Preferences");
-  default-height: 600;
-  default-width: 600;
-  modal: true;
+  content-height: 600;
+  content-width: 600;
 
   Adw.PreferencesPage general_page {
     title: _("Models");
