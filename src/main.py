@@ -34,7 +34,6 @@ from .constants import app_id
 from .providers import PROVIDERS
 
 import json
-from gpt4all import GPT4All
 import os
 
 user_config_dir = os.environ.get(
@@ -54,7 +53,7 @@ model_path = os.path.join(user_cache_dir, "bavarder", "models")
 class BavarderApplication(Adw.Application):
     """The main application singleton class."""
 
-    model_name = "ggml-model-gpt4all-falcon-q4_0.bin"
+
     models = set()
     model = None
     action_running_in_background = False
@@ -121,17 +120,11 @@ class BavarderApplication(Adw.Application):
         self.bot_name = self.settings.get_string("bot-name")
         self.user_name = self.settings.get_string("user-name")
 
-
     def on_set_provider_action(self, action, *args):
         self.current_provider = args[0].get_string()
         Gio.SimpleAction.set_state(self.lookup_action("set_provider"), args[0])
 
     def on_set_model_action(self, action, *args):
-        previous = self.model_name
-        self.model_name = args[0].get_string()
-        if previous != self.model_name:
-            # reset model for loading the new one
-            self.model = None
         Gio.SimpleAction.set_state(self.lookup_action("set_model"), args[0])
 
     def save(self):
@@ -183,7 +176,7 @@ class BavarderApplication(Adw.Application):
     def win(self):
         """The application's main window."""
         return self.props.active_window
-        
+
     def new_window(self, window=None):
         if window:
             win = self.props.active_window
@@ -191,7 +184,7 @@ class BavarderApplication(Adw.Application):
             win = BavarderWindow(application=self)
             self.number_of_win += 1
 
-        
+
         win.connect("close-request", self.on_close)
 
         self.providers = {}
@@ -256,83 +249,25 @@ class BavarderApplication(Adw.Application):
             pass
 
     def ask(self, prompt, chat):
-        if self.local_mode:
-            if not self.setup_chat(): # NO MODELS:
-                return _("Please download a model from Preferences by clicking on the Dot Menu at the top!")
+        l = list(self.providers.values())
+
+        for p in l:
+            if p.enabled and p.slug == self.current_provider:
+                response = self.providers[self.current_provider].ask(prompt, chat)
+                break
             else:
-                for p in ["Hi", "Hello"]:
-                    if p.lower() in prompt.lower():
-                        return _("Hello, I am Bavarder, a Chit-Chat AI")
-                system_template = f"""You are a helpful and friendly AI assistant with the name {self.bot_name}. The name of the user are {self.user_name}. Respond very concisely."""
-                with self.model.chat_session(self.model_settings.get("system_template", system_template)):
-                    self.model.current_chat_session = chat["content"].copy()
-                response = self.model.generate(
-                    prompt=prompt, 
-                    top_k=int(self.model_settings.get("top_k", 40)),
-                    top_p=float(self.model_settings.get("top_p", 0.5)),
-                    temp=float(self.model_settings.get("temperature", 0.9)),
-                    max_tokens=int(self.model_settings.get("max_tokens", 500)),
-                    repeat_penalty=float(self.model_settings.get("repetition_penalty", 1.20)),
-                    repeat_last_n=int(self.model_settings.get("repeat_last_n", 64)),
-                    n_batch=int(self.model_settings.get("n_batch", 10)),
-                )
+                response = _("Please enable a provider from the Dot Menu")
 
-        else:
-            l = list(self.providers.values())
-
-            for p in l:
-                if p.enabled and p.slug == self.current_provider:
-                    response = self.providers[self.current_provider].ask(prompt, chat)
-                    break
-                else:
-                    response = _("Please enable a provider from the Dot Menu")
-                
         return response
 
-    @property
-    def model_settings(self):
-        try:
-            return self.data["models"][self.model_name]
-        except KeyError:
-            try:
-                self.data["models"][self.model_name] = {}
-            except KeyError:
-                self.data["models"] = {}
-                self.data["models"][self.model_name] = {}
-
-        return self.data["models"][self.model_name]
-
-    def setup_chat(self):
-        if not self.models:
-            self.list_models()
-
-        if not self.models:
-            return False
-        else:
-            if self.model is None:
-                if self.model_name not in self.models:
-                    self.download_model(self.model_name)
-                self.model = GPT4All(self.model_name, model_path=model_path)
-            return True
-
-    def download_model(self, model=None):
-        if model:
-            self.model_name = model
-        GPT4All.retrieve_model(self.model_name, model_path=model_path,  verbose=True)
-        self.models.add(self.model_name)
+    def check_network(self):
+        return False
 
     def list_models(self):
         self.models = set()
         for root, dirs, files in os.walk(model_path):
             for model in files:
                 self.models.add(model)
-    
-    def delete_model(self, model):
-        os.remove(os.path.join(model_path, model))
-        self.list_models()
-
-    def check_network(self):
-        return False
 
     def clear_all_chats(self):
         self.data["chats"] = []
@@ -342,6 +277,3 @@ def main(version):
     """The application's entry point."""
     app = BavarderApplication()
     return app.run(sys.argv)
-
-
-

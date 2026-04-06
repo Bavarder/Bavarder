@@ -6,16 +6,22 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    flake-utils,
-    ...
-  }: let
-    systems = ["aarch64-linux" "x86_64-linux"];
-  in
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+      ...
+    }:
+    let
+      systems = [
+        "aarch64-linux"
+        "x86_64-linux"
+      ];
+    in
     flake-utils.lib.eachSystem systems (
-      system: let
+      system:
+      let
         pkgs = nixpkgs.legacyPackages.${system};
 
         bavarder = pkgs.python3Packages.buildPythonApplication rec {
@@ -24,12 +30,6 @@
           pyproject = false;
 
           src = ./.;
-
-          patches = [
-            # Removes gpt4all support. It would be lots of work to package it properly
-            # and we already have ollama with working ROCm + CUDA in nixpkgs.
-            ./0001-remove-gpt4all-support.patch
-          ];
 
           nativeBuildInputs = with pkgs; [
             appstream-glib
@@ -43,7 +43,7 @@
             wrapGAppsHook4
           ];
 
-          buildInputs =  with pkgs; [
+          buildInputs = with pkgs; [
             gtksourceview5
             libadwaita
             libportal
@@ -60,13 +60,14 @@
           ];
 
         };
-      in {
+      in
+      {
         formatter = pkgs.alejandra;
 
         checks.bavarder = bavarder;
         packages.default = bavarder;
 
-        devShells.default = pkgs.mkShell.override {stdenv = pkgs.python3Packages.stdenv;} {
+        devShells.default = pkgs.mkShell.override { stdenv = pkgs.python3Packages.stdenv; } {
           inherit (bavarder) nativeBuildInputs buildInputs propagatedBuildInputs;
         };
       }
