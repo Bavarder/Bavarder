@@ -3,7 +3,7 @@ using Adw 1;
 
 template $Preferences : Adw.PreferencesWindow {
   title: _("Preferences");
-  default-height: 400;
+  default-height: 600;
   default-width: 600;
   modal: true;
 
@@ -17,6 +17,10 @@ template $Preferences : Adw.PreferencesWindow {
 
     Adw.PreferencesGroup model_group {
       title: _("Models");
+    }
+
+    Adw.PreferencesGroup marketplace_group {
+      title: _("Model Marketplace");
     }
   }
 

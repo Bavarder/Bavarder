@@ -57,7 +57,7 @@
           ];
         };
 
-        bavarder = pkgs.python3Packages.buildPythonApplication rec {
+        bavarder = pkgs.python3Packages.buildPythonApplication {
           pname = "bavarder";
           version = self.rev or "dirty";
           pyproject = false;

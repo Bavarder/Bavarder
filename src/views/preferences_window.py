@@ -1,8 +1,9 @@
-from gi.repository import Gtk, Adw, Gio
+from gi.repository import Gtk, Adw, Gio, GLib
 
 from bavarder.constants import app_id, rootdir
-from bavarder.providers.provider_item import Provider
+from bavarder.widgets.marketplace_item import MarketplaceItem
 from bavarder.widgets.model_item import Model
+
 
 @Gtk.Template(resource_path=f"{rootdir}/ui/preferences_window.ui")
 class PreferencesWindow(Adw.PreferencesWindow):
@@ -11,6 +12,7 @@ class PreferencesWindow(Adw.PreferencesWindow):
     provider_group = Gtk.Template.Child()
     general_page = Gtk.Template.Child()
     model_group = Gtk.Template.Child()
+    marketplace_group = Gtk.Template.Child()
     miscellaneous_group = Gtk.Template.Child()
     user_name = Gtk.Template.Child()
     bot_name = Gtk.Template.Child()
@@ -30,19 +32,14 @@ class PreferencesWindow(Adw.PreferencesWindow):
 
     def setup(self):
         self.setup_signals()
-        self.load_providers()
         self.load_models()
+        self.load_marketplace()
 
         self.bot_name.set_text(self.app.bot_name)
         self.user_name.set_text(self.app.user_name)
 
     def setup_signals(self):
         pass
-
-    def load_providers(self):
-        for provider in self.app.providers.values():
-            p = Provider(self.app, self, provider)
-            self.provider_group.add(p)
 
     def load_models(self):
         self.general_page.remove(self.model_group)
@@ -51,6 +48,7 @@ class PreferencesWindow(Adw.PreferencesWindow):
 
         if self.app.models:
             for model in self.app.models:
+                from bavarder.widgets.model_item import Model
                 p = Model(self.app, self, model)
                 self.model_group.add(p)
         else:
@@ -59,6 +57,42 @@ class PreferencesWindow(Adw.PreferencesWindow):
             self.model_group.add(no_models)
 
         self.general_page.add(self.model_group)
+
+    def load_marketplace(self):
+        def fetch_models():
+            try:
+                from huggingface_hub import list_models
+                models = list(list_models(
+                    filter={"library_name": "litert-lm"},
+                    sort="downloads",
+                    direction=-1,
+                    limit=50
+                ))
+                model_list = []
+                for m in models:
+                    model_list.append({
+                        "id": m.id,
+                        "name": m.model_id if hasattr(m, 'model_id') else m.id,
+                        "downloads": getattr(m, 'downloads', 0)
+                    })
+                GLib.idle_add(update_ui, model_list)
+            except Exception as e:
+                GLib.idle_add(show_error, str(e))
+
+        def update_ui(model_list):
+            self.marketplace_group.remove_all()
+            for m in model_list:
+                item = MarketplaceItem(self.app, self.win, m)
+                self.marketplace_group.add(item)
+
+        def show_error(message):
+            toast = Adw.Toast()
+            toast.set_title(_("Error loading marketplace: %s" % message))
+            self.add_toast(toast)
+
+        import threading
+        t = threading.Thread(target=fetch_models)
+        t.start()
 
     @Gtk.Template.Callback()
     def clear_all_chats_clicked(self, widget, *args):
@@ -98,4 +132,3 @@ class PreferencesWindow(Adw.PreferencesWindow):
         self.app.user_name = user_data.get_text()
 
         self.app.load_bot_and_user_name()
-    

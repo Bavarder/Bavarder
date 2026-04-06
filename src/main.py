@@ -120,6 +120,8 @@ class BavarderApplication(Adw.Application):
         self.bot_name = self.settings.get_string("bot-name")
         self.user_name = self.settings.get_string("user-name")
 
+        self.user_cache_dir = user_cache_dir
+
     def on_set_provider_action(self, action, *args):
         self.current_provider = args[0].get_string()
         Gio.SimpleAction.set_state(self.lookup_action("set_provider"), args[0])

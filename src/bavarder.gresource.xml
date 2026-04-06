@@ -10,6 +10,7 @@
     <file preprocess="xml-stripblanks" alias="ui/provider_item.ui">providers/provider_item.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/model_item.ui">widgets/model_item.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/download_row.ui">widgets/download_row.ui</file>
+    <file preprocess="xml-stripblanks" alias="ui/marketplace_item.ui">widgets/marketplace_item.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/code_block.ui">widgets/code_block.ui</file>
     <file preprocess="xml-stripblanks">gtk/help-overlay.ui</file>
     <file>style.css</file>
