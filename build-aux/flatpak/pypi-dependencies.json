@@ -4,96 +4,6 @@
   "build-commands": [],
   "modules": [
     {
-      "name": "python3-requests",
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"requests\" --no-build-isolation"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/9a/3c/c17fb3ca2d9c3acff52e30b309f538586f9f5b9c9cf454f3845fc9af4881/certifi-2026.2.25-py3-none-any.whl",
-          "sha256": "027692e4402ad994f1c42e52a4997a9763c646b73e4096e4d5d6db8af1d6f0fa"
-        },
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/e7/a1/67fe25fac3c7642725500a3f6cfe5821ad557c3abb11c9d20d12c7008d3e/charset_normalizer-3.4.7.tar.gz",
-          "sha256": "ae89db9e5f98a11a4bf50407d4363e7b09b31e55bc117b4f7d80aab97ba009e5"
-        },
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/0e/61/66938bbb5fc52dbdf84594873d5b51fb1f7c7794e9c0f5bd885f30bc507b/idna-3.11-py3-none-any.whl",
-          "sha256": "771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea"
-        },
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/d7/8e/7540e8a2036f79a125c1d2ebadf69ed7901608859186c856fa0388ef4197/requests-2.33.1-py3-none-any.whl",
-          "sha256": "4e6d1ef462f3626a1f0a0a9c42dd93c63bad33f9f1c1937509b8c5c8718ab56a"
-        },
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/39/08/aaaad47bc4e9dc8c725e68f9d04865dbcb2052843ff09c97b08904852d84/urllib3-2.6.3-py3-none-any.whl",
-          "sha256": "bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4"
-        }
-      ]
-    },
-    {
-      "name": "python3-tqdm",
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"tqdm\" --no-build-isolation"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/16/e1/3079a9ff9b8e11b846c6ac5c8b5bfb7ff225eee721825310c91b3b50304f/tqdm-4.67.3-py3-none-any.whl",
-          "sha256": "ee1e4c0e59148062281c49d80b25b67771a127c85fc9676d3be5f243206826bf"
-        }
-      ]
-    },
-    {
-      "name": "python3-charset-normalizer",
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"charset-normalizer\" --no-build-isolation"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/e7/a1/67fe25fac3c7642725500a3f6cfe5821ad557c3abb11c9d20d12c7008d3e/charset_normalizer-3.4.7.tar.gz",
-          "sha256": "ae89db9e5f98a11a4bf50407d4363e7b09b31e55bc117b4f7d80aab97ba009e5"
-        }
-      ]
-    },
-    {
-      "name": "python3-idna",
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"idna\" --no-build-isolation"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/0e/61/66938bbb5fc52dbdf84594873d5b51fb1f7c7794e9c0f5bd885f30bc507b/idna-3.11-py3-none-any.whl",
-          "sha256": "771a87f49d9defaf64091e6e6fe9c18d4833f140bd19464795bc32d966ca37ea"
-        }
-      ]
-    },
-    {
-      "name": "python3-urllib3",
-      "buildsystem": "simple",
-      "build-commands": [
-        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"urllib3\" --no-build-isolation"
-      ],
-      "sources": [
-        {
-          "type": "file",
-          "url": "https://files.pythonhosted.org/packages/39/08/aaaad47bc4e9dc8c725e68f9d04865dbcb2052843ff09c97b08904852d84/urllib3-2.6.3-py3-none-any.whl",
-          "sha256": "bf272323e553dfb2e87d9bfd225ca7b0f467b919d7bbd355436d3fd37cb0acd4"
-        }
-      ]
-    },
-    {
       "name": "python3-Babel",
       "buildsystem": "simple",
       "build-commands": [
@@ -151,8 +61,19 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/53/92/ec9ad04d0b5728dca387a45af7bc98fbb0d73b2118759f5f6038b61a57e8/hf_xet-1.4.3.tar.gz",
-          "sha256": "8ddedb73c8c08928c793df2f3401ec26f95be7f7e516a7bee2fbb546f6676113"
+          "url": "https://files.pythonhosted.org/packages/53/60/46d493db155d2ee2801b71fb1b0fd67696359047fdd8caee2c914cc50c79/hf_xet-1.4.3-cp37-abi3-manylinux_2_28_aarch64.whl",
+          "sha256": "39f2d2e9654cd9b4319885733993807aab6de9dfbd34c42f0b78338d6617421f",
+          "only-arches": [
+            "aarch64"
+          ]
+        },
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/df/9a/a24b26dc8a65f0ecc0fe5be981a19e61e7ca963b85e062c083f3a9100529/hf_xet-1.4.3-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "sha256": "fc360b70c815bf340ed56c7b8c63aacf11762a4b099b2fe2c9bd6d6068668c08",
+          "only-arches": [
+            "x86_64"
+          ]
         },
         {
           "type": "file",
@@ -290,8 +211,19 @@
         },
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/53/92/ec9ad04d0b5728dca387a45af7bc98fbb0d73b2118759f5f6038b61a57e8/hf_xet-1.4.3.tar.gz",
-          "sha256": "8ddedb73c8c08928c793df2f3401ec26f95be7f7e516a7bee2fbb546f6676113"
+          "url": "https://files.pythonhosted.org/packages/53/60/46d493db155d2ee2801b71fb1b0fd67696359047fdd8caee2c914cc50c79/hf_xet-1.4.3-cp37-abi3-manylinux_2_28_aarch64.whl",
+          "sha256": "39f2d2e9654cd9b4319885733993807aab6de9dfbd34c42f0b78338d6617421f",
+          "only-arches": [
+            "aarch64"
+          ]
+        },
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/df/9a/a24b26dc8a65f0ecc0fe5be981a19e61e7ca963b85e062c083f3a9100529/hf_xet-1.4.3-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+          "sha256": "fc360b70c815bf340ed56c7b8c63aacf11762a4b099b2fe2c9bd6d6068668c08",
+          "only-arches": [
+            "x86_64"
+          ]
         },
         {
           "type": "file",

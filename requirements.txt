@@ -3,11 +3,6 @@
 # chmod +x flatpak-pip-generator
 # ./flatpak-pip-generator --requirements-file=requirements.txt --output build-aux/flatpak/pypi-dependencies
 
-requests
-tqdm
-charset-normalizer
-idna
-urllib3
 Babel
 huggingface-hub
 litert-lm-api-nightly
