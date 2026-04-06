@@ -1,0 +1,8 @@
+[tool.pyright]
+include = ["src"]
+exclude = ["build", "__pycache__", "src/providers"]
+reportMissingImports = false
+reportMissingTypeStubs = false
+reportUndefinedVariable = false
+typeCheckingMode = "basic"
+pythonVersion = "3.13"

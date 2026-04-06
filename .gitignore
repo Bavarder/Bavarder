@@ -12,3 +12,4 @@ __pycache__/
 *.log
 result
 *.profraw
+.mypy_cache/

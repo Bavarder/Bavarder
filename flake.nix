@@ -90,6 +90,7 @@
             pygobject3
             pillow
             requests
+            packaging
             litert-lm-api-nightly
             litert-lm-nightly
           ];
@@ -97,19 +98,14 @@
         };
       in
       let
-        update-po = pkgs.writeShellScriptBin "bavarder-update-po" ''
+        updatePoScript = pkgs.writeShellScript "bavarder-update-po" ''
           #!${pkgs.bash}/bin/bash
           set -e
-          po_dir="po"
-          ${pkgs.gettext}/bin/xgettext -f "$po_dir"/POTFILES -o "$po_dir"/Bavarder.pot --add-comments=Translators --keyword=_ --keyword=C_1c,2 --from-code=UTF-8
-          sed -i "s/SOME DESCRIPTIVE TITLE./Bavarder POT file/" "$po_dir"/Bavarder.pot
-          sed -i "s/YEAR THE PACKAGE'S COPYRIGHT HOLDER/$(date +%Y) Bavarder/" "$po_dir"/Bavarder.pot
-          sed -i "s@same license as the PACKAGE package.@GNU GPLv3 license.@" "$po_dir"/Bavarder.pot
-          sed -i "s/FIRST AUTHOR <EMAIL@ADDRESS>, YEAR./Bavarder, $(date +%Y)./" "$po_dir"/Bavarder.pot
-
-          regex="$po_dir/([a-zA-Z_]*).po"
-          find "$po_dir" -type f -name "*.po" | sed -rn "s:$regex:\1:p" > "$po_dir/LINGUAS"
-
+          cd "${self}"
+          rm -rf build
+          ${pkgs.meson}/bin/meson setup build
+          ${pkgs.meson}/bin/meson compile -C build bavarder-update-po
+          echo "PO files updated."
         '';
       in
       {
@@ -117,7 +113,46 @@
 
         checks.bavarder = bavarder;
         packages.default = bavarder;
-        packages.update-po = update-po;
+
+        packages.update-po = pkgs.writeShellScriptBin "update-po" updatePoScript;
+
+        packages.flatpak-pip-generator =
+          let
+            pythonWithPackaging = pkgs.python3.withPackages (
+              python: with python; [
+                packaging
+                requirements-parser
+                pip
+              ]
+            );
+          in
+          pkgs.writeScriptBin "flatpak-pip-generator" ''
+            #!${pythonWithPackaging}/bin/python3
+            import subprocess
+            import sys
+            import urllib.request
+            import os
+
+            url = "https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/pip/flatpak-pip-generator.py"
+            dest = "/tmp/flatpak-pip-generator.py"
+            print("Downloading flatpak-pip-generator.py...")
+            urllib.request.urlretrieve(url, dest)
+
+            env = os.environ.copy()
+            env["PATH"] = "${pythonWithPackaging}/bin:" + env.get("PATH", "")
+
+            result = subprocess.run(
+              [sys.executable, dest, "--requirements-file=requirements.txt", "--output", "./build-aux/flatpak/pypi-dependencies"],
+              capture_output=True,
+              text=True,
+              env=env
+            )
+            print(result.stdout)
+            if result.returncode != 0:
+              print(result.stderr, file=sys.stderr)
+              sys.exit(result.returncode)
+            print("pypi-dependencies.json updated successfully.")
+          '';
 
         devShells.default = pkgs.mkShell.override { stdenv = pkgs.python3Packages.stdenv; } {
           inherit (bavarder) nativeBuildInputs buildInputs propagatedBuildInputs;
@@ -127,6 +162,9 @@
             echo ""
             echo "To update translation files:"
             echo "  nix run .#update-po"
+            echo ""
+            echo "To update flatpak pip dependencies:"
+            echo "  nix run .#flatpak-pip-generator"
             echo ""
           '';
         };
