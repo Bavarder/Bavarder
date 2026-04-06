@@ -1,19 +1,17 @@
-from gi.repository import Gtk, Adw, Gio
+from gi.repository import Gtk, Adw, Gio, GLib
 
 from bavarder.constants import app_id, rootdir
-from bavarder.providers.provider_item import Provider
+from bavarder.widgets.marketplace_item import MarketplaceItem
 from bavarder.widgets.model_item import Model
-from bavarder.widgets.download_row import DownloadRow
 
-from gpt4all import GPT4All
 
 @Gtk.Template(resource_path=f"{rootdir}/ui/preferences_window.ui")
-class PreferencesWindow(Adw.PreferencesWindow):
+class PreferencesWindow(Adw.PreferencesDialog):
     __gtype_name__ = "Preferences"
 
-    provider_group = Gtk.Template.Child()
     general_page = Gtk.Template.Child()
     model_group = Gtk.Template.Child()
+    marketplace_group = Gtk.Template.Child()
     miscellaneous_group = Gtk.Template.Child()
     user_name = Gtk.Template.Child()
     bot_name = Gtk.Template.Child()
@@ -27,14 +25,12 @@ class PreferencesWindow(Adw.PreferencesWindow):
         self.app = self.parent.get_application()
         self.win = self.app.get_active_window()
 
-        self.set_transient_for(self.win)
-
         self.setup()
 
     def setup(self):
         self.setup_signals()
-        self.load_providers()
         self.load_models()
+        self.load_marketplace()
 
         self.bot_name.set_text(self.app.bot_name)
         self.user_name.set_text(self.app.user_name)
@@ -42,36 +38,66 @@ class PreferencesWindow(Adw.PreferencesWindow):
     def setup_signals(self):
         pass
 
-    def load_providers(self):
-        for provider in self.app.providers.values():
-            p = Provider(self.app, self, provider)
-            self.provider_group.add(p)
-
     def load_models(self):
         self.general_page.remove(self.model_group)
         self.model_group = Adw.PreferencesGroup()
         self.model_group.set_title(_("Models"))
-        
-        for model in self.app.models:
-            p = Model(self.app, self, model)
-            self.model_group.add(p)
+
+        if self.app.models:
+            for model in self.app.models:
+                from bavarder.widgets.model_item import Model
+                p = Model(self.app, self, model)
+                self.model_group.add(p)
         else:
-            self.no_models_available = Adw.ExpanderRow()
-            self.no_models_available.set_title(_("List of available models"))
-
-            for model in GPT4All.list_models():
-                self.no_models_available.add_row(DownloadRow(self.app, self, model))
-
-            self.model_group.add(self.no_models_available)
+            no_models = Adw.ActionRow()
+            no_models.set_title(_("No local models available"))
+            self.model_group.add(no_models)
 
         self.general_page.add(self.model_group)
 
+    def load_marketplace(self):
+        def fetch_models():
+            try:
+                from huggingface_hub import list_models
+                models = list(list_models(
+                    author="litert-community",
+                    sort="downloads",
+                ))
+                model_list = []
+                for m in models:
+                    model_list.append({
+                        "id": m.id,
+                        "name": m.model_id if hasattr(m, 'model_id') else m.id,
+                        "downloads": getattr(m, 'downloads', 0)
+                    })
+                GLib.idle_add(update_ui, model_list)
+            except Exception as e:
+                GLib.idle_add(show_error, str(e))
+
+        def update_ui(model_list):
+            child = self.marketplace_group.get_first_child()
+            while child is not None:
+                next_child = child.get_next_sibling()
+                self.marketplace_group.remove(child)
+                child = next_child
+            for m in model_list:
+                item = MarketplaceItem(self.app, self.win, m)
+                self.marketplace_group.add(item)
+
+        def show_error(message):
+            toast = Adw.Toast()
+            toast.set_title(_("Error loading marketplace: %s" % message))
+            self.add_toast(toast)
+
+        import threading
+        t = threading.Thread(target=fetch_models)
+        t.start()
+
     @Gtk.Template.Callback()
     def clear_all_chats_clicked(self, widget, *args):
-        dialog = Adw.MessageDialog(
+        dialog = Adw.AlertDialog(
             heading=_("Delete All Threads"),
             body=_("Are you sure you want to delete all threads? This can't be undone!"),
-            body_use_markup=True
         )
 
         dialog.add_response("cancel", _("Cancel"))
@@ -80,18 +106,16 @@ class PreferencesWindow(Adw.PreferencesWindow):
         dialog.set_default_response("cancel")
         dialog.set_close_response("cancel")
 
-        dialog.connect("response", self.on_delete_response)
+        dialog.connect("response", self._on_delete_response)
+        dialog.present(self)
 
-        dialog.set_transient_for(self)
-        dialog.present()
-
-    def on_delete_response(self, _widget, response):
+    def _on_delete_response(self, dialog, response):
         if response == "delete":
             self.app.clear_all_chats()
 
             toast = Adw.Toast()
             toast.set_title(_("All chats cleared!"))
-            self.add_toast(toast)
+            self.win.toast_overlay.add_toast(toast)
 
     @Gtk.Template.Callback()
     def on_bot_entry_apply(self, user_data, *args):
@@ -104,4 +128,3 @@ class PreferencesWindow(Adw.PreferencesWindow):
         self.app.user_name = user_data.get_text()
 
         self.app.load_bot_and_user_name()
-    

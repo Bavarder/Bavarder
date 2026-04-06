@@ -19,9 +19,8 @@ class AboutWindow:
         self.setup()
 
     def setup(self):
-        self.about_window = Adw.AboutWindow(
+        self.about_window = Adw.AboutDialog(
             application_name="Bavarder",
-            transient_for=self.app.get_active_window(),
             application_icon=constants.app_id,
             developer_name="0xMRTT",
             website=constants.project_url,
@@ -66,10 +65,10 @@ Python: {platform.python_version()}
 OS: {platform.system()} {platform.release()} {platform.version()}
 """
         )
-        self.about_window.present()
+        self.about_window.present(self.parent)
 
 
 
     def present(self):
-        self.about_window.present()
+        self.about_window.present(self.parent)
 

@@ -1,22 +1,21 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $Preferences : Adw.PreferencesWindow {
+template $Preferences : Adw.PreferencesDialog {
   title: _("Preferences");
-  default-height: 400;
-  default-width: 600;
-  modal: true;
+  content-height: 600;
+  content-width: 600;
 
   Adw.PreferencesPage general_page {
     title: _("Models");
     icon-name: "brain-augemnted-symbolic";
 
-    Adw.PreferencesGroup provider_group {
-      title: _("Providers");
-    }
-
     Adw.PreferencesGroup model_group {
       title: _("Models");
+    }
+
+    Adw.PreferencesGroup marketplace_group {
+      title: _("Model Marketplace");
     }
   }
 

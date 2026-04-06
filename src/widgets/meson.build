@@ -7,6 +7,7 @@ widgets_sources = [
   'thread_item.py',
   'download_row.py',
   'model_item.py',
+  'marketplace_item.py',
 ]
 
 PY_INSTALLDIR.install_sources(widgets_sources, subdir: widgets_dir)

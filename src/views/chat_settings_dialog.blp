@@ -1,0 +1,26 @@
+using Gtk 4.0;
+using Adw 1;
+
+template $ChatSettingsDialog : Adw.PreferencesDialog {
+  title: _("Chat Settings");
+  content-width: 400;
+  content-height: 300;
+
+  Adw.PreferencesPage {
+    Adw.PreferencesGroup {
+      title: _("General");
+
+      Adw.EntryRow title_entry {
+        title: _("Chat Title");
+      }
+    }
+
+    Adw.PreferencesGroup {
+      title: _("System Prompt");
+
+      Adw.EntryRow system_prompt_entry {
+        title: _("System Prompt");
+      }
+    }
+  }
+}

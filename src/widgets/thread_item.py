@@ -59,49 +59,10 @@ class ThreadItem(Gtk.Box):
             self.set_accels_for_action(f"app.{name}", shortcuts)
 
     def on_edit_button_clicked(self, *args):
-        box = Gtk.Box(
-                orientation=Gtk.Orientation.VERTICAL,
-                margin_top=12,
-                spacing=24,
-            )
-        listbox = Gtk.ListBox(
-            selection_mode=Gtk.SelectionMode.NONE,
-            hexpand=True,
-            vexpand=True,
-        )
-        listbox.add_css_class("boxed-list")
-        self.row = Adw.EntryRow()
-        self.row.set_text(self.chat["title"])
-        self.row.set_title(_("Edit Title"))
-        listbox.append(self.row)
-        box.append(listbox)
+        from bavarder.views.chat_settings_dialog import ChatSettingsDialog
+        dialog = ChatSettingsDialog(self.win, self.chat)
+        dialog.present(self.win)
 
-        dialog = Adw.MessageDialog(
-            heading=_("Edit Title"),
-            transient_for=self.win,
-            modal=True,
-            extra_child=box
-        )
-
-        dialog.add_response("cancel", _("Cancel"))
-        dialog.add_response("edit", _("Edit"))
-        dialog.set_response_appearance("edit", Adw.ResponseAppearance.DESTRUCTIVE)
-        dialog.set_default_response("cancel")
-        dialog.set_close_response("cancel")
-
-        dialog.connect("response", self.on_edit_response)
-        dialog.present()
-        
-    def on_edit_response(self, _widget, response):
-        if response == "edit":
-            self.label_text = self.row.get_text()
-            self.chat["title"] = self.label_text
-            self.win.title.set_title(self.label_text)
-            self.label.set_text(self.label_text)
-
-            toast = Adw.Toast()
-            toast.set_title(_("Title Edited"))
-            self.win.toast_overlay.add_toast(toast)
     def on_star(self, *args):
         self.is_starred =  not self.is_starred
         self.update_star()
@@ -117,10 +78,9 @@ class ThreadItem(Gtk.Box):
 
     def on_delete(self, *args):
 
-        dialog = Adw.MessageDialog(
+        dialog = Adw.AlertDialog(
             heading=_("Delete Thread"),
             body=_("Are you sure you want to delete this thread?"),
-            body_use_markup=True
         )
 
         dialog.add_response("cancel", _("Cancel"))
@@ -129,14 +89,13 @@ class ThreadItem(Gtk.Box):
         dialog.set_default_response("cancel")
         dialog.set_close_response("cancel")
 
-        dialog.connect("response", self.on_delete_response)
+        dialog.connect("response", self._on_delete_response)
+        dialog.present(self.win)
 
-        dialog.set_transient_for(self.win)
-        dialog.present()
-
-    def on_delete_response(self, _widget, response):
+    def _on_delete_response(self, dialog, response):
         if response == "delete":
             self.app.data["chats"].remove(self.chat)
+            self.app.save()
             self.win.load_threads()
 
             toast = Adw.Toast()

@@ -6,7 +6,7 @@ from bavarder.views.save_dialog import SaveDialog
 GtkSource.init()
 
 @Gtk.Template(resource_path=f"{rootdir}/ui/export_dialog.ui")
-class ExportDialog(Adw.MessageDialog):
+class ExportDialog(Adw.Dialog):
     __gtype_name__ = "ExportDialog"
 
     buffer = Gtk.Template.Child()
@@ -37,8 +37,10 @@ class ExportDialog(Adw.MessageDialog):
         Gdk.Display.get_default().get_clipboard().set(self.text)
 
     @Gtk.Template.Callback()
-    def handle_response(self, dialog, response, *args, **kwargs):
-        if response == "export":
-            dialog = SaveDialog(self.parent, self.text)
-            dialog.set_transient_for(self.parent)
-            dialog.present()
+    def on_close_clicked(self, *args, **kwargs):
+        self.close()
+
+    @Gtk.Template.Callback()
+    def on_export_clicked(self, *args, **kwargs):
+        dialog = SaveDialog(self.parent, self.text)
+        dialog.present(self.parent)

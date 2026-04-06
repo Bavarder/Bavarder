@@ -7,3 +7,9 @@ bavarder.flatpak
 r.txt
 .vscode/
 .flatpak/
+*.pyc
+__pycache__/
+*.log
+result
+*.profraw
+.mypy_cache/

@@ -3,6 +3,7 @@ views_dir = join_paths(MODULE_DIR, 'views')
 views_sources = [
   '__init__.py',
   'about_window.py',
+  'chat_settings_dialog.py',
   'export_dialog.py',
   'preferences_window.py',
   'save_dialog.py',

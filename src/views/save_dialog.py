@@ -3,7 +3,7 @@ from gi.repository import Gtk, Adw, Gio, Gdk
 from bavarder.constants import app_id, rootdir
 
 @Gtk.Template(resource_path=f"{rootdir}/ui/save_dialog.ui")
-class SaveDialog(Adw.MessageDialog):
+class SaveDialog(Adw.Dialog):
     __gtype_name__ = "SaveDialog"
 
     filename = Gtk.Template.Child()
@@ -15,9 +15,10 @@ class SaveDialog(Adw.MessageDialog):
 
         self.text: str = text
         self.parent = parent
+        self.set_response_enabled("save", False)
 
     @Gtk.Template.Callback()
-    def handle_response(self, dialog, response, *args, **kwargs):
+    def handle_response(self, response, *args, **kwargs):
         if response == "save":
             filename = self.filename.get_text()
             path = f"{self.directory}/{filename}.md"
@@ -31,6 +32,17 @@ class SaveDialog(Adw.MessageDialog):
             else:
                 toast.set_title(_("Thread successfully saved!"))
             self.parent.toast_overlay.add_toast(toast)
+            self.close()
+        else:
+            self.close()
+
+    @Gtk.Template.Callback()
+    def on_cancel_clicked(self, *args):
+        self.close()
+
+    @Gtk.Template.Callback()
+    def on_save_clicked(self, *args):
+        self.handle_response("save")
 
     @Gtk.Template.Callback()
     def on_location_button_clicked(self, widget, *args):

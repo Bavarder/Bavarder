@@ -97,12 +97,6 @@ template $BavarderWindow : Adw.ApplicationWindow {
         child: Adw.ToolbarView {
           [top]
           Adw.HeaderBar {
-            [start]
-            Gtk.ToggleButton local_mode_toggle {
-              icon-name: 'cloud-disabled-symbolic';
-              toggled => $on_local_mode_toggled();
-            }
-
             [title]
             Adw.WindowTitle title {
               title: _("Chat");
@@ -118,13 +112,6 @@ template $BavarderWindow : Adw.ApplicationWindow {
             [end]
             MenuButton model_selector_button {
               icon-name: 'view-more-symbolic';
-              visible: false;
-            }
-
-            [end]
-            MenuButton provider_selector_button {
-              icon-name: 'view-more-symbolic';
-              visible: false;
             }
 
           }

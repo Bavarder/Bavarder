@@ -1,6 +1,7 @@
+# To update pypi-dependencies.json, run:
 # curl -O https://raw.githubusercontent.com/flatpak/flatpak-builder-tools/master/pip/flatpak-pip-generator
 # chmod +x flatpak-pip-generator
-# ./flatpak-pip-generator --requirements-file=requirements.txt --output pypi-dependencies
+# ./flatpak-pip-generator --requirements-file=requirements.txt --output build-aux/flatpak/pypi-dependencies
 
 requests
 tqdm
@@ -8,5 +9,7 @@ charset-normalizer
 idna
 urllib3
 Babel
-openai
 pillow
+huggingface-hub
+litert-lm-api-nightly
+litert-lm-nightly
