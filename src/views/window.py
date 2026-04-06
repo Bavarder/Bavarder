@@ -18,9 +18,10 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
 from datetime import datetime
-import locale 
-import io 
+import locale
+import io
 import base64
+import os
 
 from gi.repository import Gtk, Gio, Adw, GLib
 from babel.dates import format_date, format_datetime, format_time
@@ -50,8 +51,6 @@ class BavarderWindow(Adw.ApplicationWindow):
     status_no_thread_main = Gtk.Template.Child()
     status_no_internet = Gtk.Template.Child()
     scrolled_window = Gtk.Template.Child()
-    local_mode_toggle = Gtk.Template.Child()
-    provider_selector_button = Gtk.Template.Child()
     model_selector_button = Gtk.Template.Child()
     banner = Gtk.Template.Child()
     toast_overlay = Gtk.Template.Child()
@@ -82,10 +81,6 @@ class BavarderWindow(Adw.ApplicationWindow):
         self.scrolled_window.set_child(self.message_entry)
         self.load_threads()
 
-        self.local_mode_toggle.set_active(self.app.local_mode)
-
-        self.on_local_mode_toggled(self.local_mode_toggle)
-
         self.create_action("cancel", self.cancel, ["<primary>Escape"])
         self.create_action("clear_all", self.on_clear_all)
         self.create_action("export", self.on_export, ["<primary>e"])
@@ -115,7 +110,7 @@ class BavarderWindow(Adw.ApplicationWindow):
         except AttributeError: # create a new chat
             #self.on_new_chat_action()
             return {}
-        
+
 
     @property
     def content(self):
@@ -186,7 +181,7 @@ class BavarderWindow(Adw.ApplicationWindow):
                 i += 1
                 item = Item(self, self.chat, item)
                 self.main_list.append(item)
-            
+
             for i in range(i):
                 row = self.main_list.get_row_at_index(i)
                 row.set_selectable(False)
@@ -257,92 +252,53 @@ class BavarderWindow(Adw.ApplicationWindow):
             toast.set_title(_("Nothing to export!"))
             self.toast_overlay.add_toast(toast)
 
-    # PROVIDER - ONLINE
-    def load_provider_selector(self):
-        provider_menu = Gio.Menu()
-
-        section = Gio.Menu()
-        for provider in self.app.providers.values():
-            if provider.enabled:
-                item_provider = Gio.MenuItem()
-                item_provider.set_label(provider.name)
-                item_provider.set_action_and_target_value(
-                    "app.set_provider",
-                    GLib.Variant("s", provider.slug))
-                section.append_item(item_provider)
-        else:
-            if self.app.providers:
-                provider_menu.append_section(_("Providers"), section)
-            section = Gio.Menu()
-            item_provider = Gio.MenuItem()
-            item_provider.set_label(_("Preferences"))
-            item_provider.set_action_and_target_value("app.preferences", None)
-            section.append_item(item_provider)
-
-            item_provider = Gio.MenuItem()
-            item_provider.set_label(_("Clear all"))
-            item_provider.set_action_and_target_value("win.clear_all", None)
-            section.append_item(item_provider)
-
-            item_provider = Gio.MenuItem()
-            item_provider.set_label(_("Export"))
-            item_provider.set_action_and_target_value("win.export", None)
-            section.append_item(item_provider)
-
-            provider_menu.append_section(None, section)
-
-        self.provider_selector_button.set_menu_model(provider_menu)
-
     # MODEL - OFFLINE
     def load_model_selector(self):
         provider_menu = Gio.Menu()
 
-        if not self.app.models:
-            self.app.list_models()
+        section = Gio.Menu()
+
+        models = set()
+
+        model_path = self.app.data.get("models", {}).get("model_path", "")
+        if model_path and os.path.exists(model_path):
+            models.add(os.path.basename(model_path))
+
+        models_dir = os.path.join(self.app.user_cache_dir, "bavarder", "models")
+        if os.path.exists(models_dir):
+            for f in os.listdir(models_dir):
+                if f.endswith(".litertlm"):
+                    models.add(f)
+
+        if models:
+            for model in models:
+                item_provider = Gio.MenuItem()
+                item_provider.set_label(model)
+                item_provider.set_action_and_target_value(
+                    "app.set_model",
+                    GLib.Variant("s", model))
+                section.append_item(item_provider)
+            provider_menu.append_section(_("Models"), section)
 
         section = Gio.Menu()
-        for provider in self.app.models:
-            item_provider = Gio.MenuItem()
-            item_provider.set_label(provider)
-            item_provider.set_action_and_target_value(
-                "app.set_model",
-                GLib.Variant("s", provider))
-            section.append_item(item_provider)
-        else:
-            if self.app.models:
-                provider_menu.append_section(_("Models"), section)
-            section = Gio.Menu()
-            item_provider = Gio.MenuItem()
-            item_provider.set_label(_("Preferences"))
-            item_provider.set_action_and_target_value("app.preferences", None)
-            section.append_item(item_provider)
+        item_provider = Gio.MenuItem()
+        item_provider.set_label(_("Preferences"))
+        item_provider.set_action_and_target_value("app.preferences", None)
+        section.append_item(item_provider)
 
-            item_provider = Gio.MenuItem()
-            item_provider.set_label(_("Clear all"))
-            item_provider.set_action_and_target_value("win.clear_all", None)
-            section.append_item(item_provider)
+        item_provider = Gio.MenuItem()
+        item_provider.set_label(_("Clear all"))
+        item_provider.set_action_and_target_value("win.clear_all", None)
+        section.append_item(item_provider)
 
-            item_provider = Gio.MenuItem()
-            item_provider.set_label(_("Export"))
-            item_provider.set_action_and_target_value("win.export", None)
-            section.append_item(item_provider)
+        item_provider = Gio.MenuItem()
+        item_provider.set_label(_("Export"))
+        item_provider.set_action_and_target_value("win.export", None)
+        section.append_item(item_provider)
 
-            provider_menu.append_section(None, section)
+        provider_menu.append_section(None, section)
 
         self.model_selector_button.set_menu_model(provider_menu)
-
-    @Gtk.Template.Callback()
-    def on_local_mode_toggled(self, widget):
-        self.app.local_mode = widget.get_active()
-
-        if self.app.local_mode:
-            self.local_mode_toggle.set_icon_name("cloud-disabled-symbolic")
-            self.model_selector_button.set_visible(True)
-            self.provider_selector_button.set_visible(False)
-        else:
-            self.local_mode_toggle.set_icon_name("cloud-filled-symbolic")
-            self.provider_selector_button.set_visible(True)
-            self.model_selector_button.set_visible(False)
 
     def check_network(self):
         if self.app.check_network(): # Internet
@@ -367,50 +323,33 @@ class BavarderWindow(Adw.ApplicationWindow):
             if not self.chat:
                 self.on_new_chat_action()
 
-                # now get the latest row                    
+                # now get the latest row
                 row = self.threads_list.get_row_at_index(len(self.app.data["chats"]) - 1)
 
-               
+
                 self.threads_list.select_row(row)
                 self.threads_row_activated_cb()
 
-            
+
             self.add_user_item(prompt)
-                            
 
-            def thread_run():
-                self.toast = Adw.Toast()
-                self.toast.set_title(_("Generating response"))
-                self.toast.set_button_label(_("Cancel"))
-                self.toast.set_action_name("win.cancel")
-                self.toast.set_timeout(0)
-                self.toast_overlay.add_toast(self.toast)
-                response = self.app.ask(prompt, self.chat)
-                GLib.idle_add(cleanup, response, self.toast)
-
-            def cleanup(response, toast):
-                try:
-                    self.t.join()
-                    self.toast.dismiss()
-
-                    if not response:
-                        self.add_assistant_item(_("Sorry, I don't know what to say."))
-                    else:
-                        if isinstance(response, str):
-                            self.add_assistant_item(response)
-                        else:
-                            buffered = io.BytesIO()
-                            response.save(buffered, format="JPEG")
-                            img_str = base64.b64encode(buffered.getvalue())
-
-                            self.add_assistant_item(img_str.decode("utf-8"))
-
-                except AttributeError:
-                    self.toast.dismiss()
+            def on_response(response):
+                if not response:
                     self.add_assistant_item(_("Sorry, I don't know what to say."))
+                else:
+                    self.add_assistant_item(response)
+                self.toast.dismiss()
 
-            self.t = KillableThread(target=thread_run)
-            self.t.start()
+            def on_error(error):
+                self.toast.dismiss()
+                self.add_assistant_item(_("Error: ") + error)
+
+            self.toast = Adw.Toast()
+            self.toast.set_title(_("Generating response"))
+            self.toast.set_timeout(0)
+            self.toast_overlay.add_toast(self.toast)
+
+            self.app.ask(prompt, self.chat, on_response, on_error)
 
     # @Gtk.Template.Callback()
     # def on_emoji(self, *args):
@@ -437,7 +376,7 @@ class BavarderWindow(Adw.ApplicationWindow):
 
         if shortcuts:
             self.app.set_accels_for_action(f"win.{name}", shortcuts)
-        
+
     def get_time(self):
         return format_time(datetime.now())
 
@@ -458,26 +397,14 @@ class BavarderWindow(Adw.ApplicationWindow):
 
     def add_assistant_item(self, content):
         c = {
-                "role": self.app.bot_name,
-                "content": content,
-                "time": self.get_time(),
-            }
+            "role": self.app.bot_name,
+            "content": content,
+            "time": self.get_time(),
+            "model": "litert-lm",
+        }
 
-        l = list(self.app.providers.values())
-
-        for p in l:
-            if p.enabled and p.slug == self.app.current_provider:
-                c["model"] = self.app.current_provider
-                break
-            else:
-                c["model"] = "bavarder"          
-    
-        
         self.content.append(c)
 
         self.threads_row_activated_cb()
 
         self.scroll_down()
-
-
-

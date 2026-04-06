@@ -9,7 +9,6 @@ from bavarder.widgets.model_item import Model
 class PreferencesWindow(Adw.PreferencesWindow):
     __gtype_name__ = "Preferences"
 
-    provider_group = Gtk.Template.Child()
     general_page = Gtk.Template.Child()
     model_group = Gtk.Template.Child()
     marketplace_group = Gtk.Template.Child()
@@ -63,10 +62,8 @@ class PreferencesWindow(Adw.PreferencesWindow):
             try:
                 from huggingface_hub import list_models
                 models = list(list_models(
-                    filter={"library_name": "litert-lm"},
+                    author="litert-community",
                     sort="downloads",
-                    direction=-1,
-                    limit=50
                 ))
                 model_list = []
                 for m in models:
@@ -80,7 +77,11 @@ class PreferencesWindow(Adw.PreferencesWindow):
                 GLib.idle_add(show_error, str(e))
 
         def update_ui(model_list):
-            self.marketplace_group.remove_all()
+            child = self.marketplace_group.get_first_child()
+            while child is not None:
+                next_child = child.get_next_sibling()
+                self.marketplace_group.remove(child)
+                child = next_child
             for m in model_list:
                 item = MarketplaceItem(self.app, self.win, m)
                 self.marketplace_group.add(item)

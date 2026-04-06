@@ -22,24 +22,40 @@ class MarketplaceItem(Adw.ActionRow):
 
     @Gtk.Template.Callback()
     def on_download_button_clicked(self, widget, *args):
+        self.download_cancelled = False
+
         def thread_run():
             self.app.action_running_in_background = True
 
             toast = Adw.Toast()
             toast.set_timeout(0)
             toast.set_title(_("Downloading model %s" % self.model_info.get("name")))
-            self.window.add_toast(toast)
+            self.window.toast_overlay.add_toast(toast)
 
             model_id = self.model_info.get("id")
-            from huggingface_hub import hf_hub_download
-            model_file = hf_hub_download(
-                repo_id=model_id,
-                filename="*.litertlm",
-                cache_dir=self.app.user_cache_dir
-            )
+            from huggingface_hub import hf_hub_download, list_repo_files
+            
+            files = list_repo_files(model_id, repo_type="model")
+            litertlm_files = [f for f in files if f.endswith('.litertlm')]
+            
+            if not litertlm_files:
+                GLib.idle_add(show_error, _("No .litertlm file found in this model"))
+                return
+            
+            try:
+                model_file = hf_hub_download(
+                    repo_id=model_id,
+                    filename=litertlm_files[0],
+                    cache_dir=self.app.user_cache_dir,
+                )
+            except Exception as e:
+                GLib.idle_add(show_error, str(e))
+                return
 
-            self.app.data["providers"]["litert-lm"]["data"]["model_path"] = model_file
-            self.app.data["providers"]["litert-lm"]["data"]["hf_model"] = model_id
+            if "models" not in self.app.data:
+                self.app.data["models"] = {}
+            self.app.data["models"]["model_path"] = model_file
+            self.app.data["models"]["hf_model"] = model_id
             GLib.idle_add(cleanup, toast, model_file)
 
         def cleanup(toast, model_file):
@@ -51,7 +67,19 @@ class MarketplaceItem(Adw.ActionRow):
 
             toast = Adw.Toast()
             toast.set_title(_("Model %s downloaded!" % self.model_info.get("name")))
-            self.window.add_toast(toast)
+            self.window.toast_overlay.add_toast(toast)
+            
+            self.set_subtitle(self.model_info.get("id"))
+
+        def show_error(message):
+            try:
+                t.join()
+            except Exception:
+                pass
+            self.app.action_running_in_background = False
+            toast = Adw.Toast()
+            toast.set_title(message)
+            self.window.toast_overlay.add_toast(toast)
 
         t = KillableThread(target=thread_run)
         t.start()

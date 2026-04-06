@@ -7,7 +7,6 @@
     <file preprocess="xml-stripblanks" alias="ui/save_dialog.ui">views/save_dialog.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/thread_item.ui">widgets/thread_item.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/item.ui">widgets/item.ui</file>
-    <file preprocess="xml-stripblanks" alias="ui/provider_item.ui">providers/provider_item.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/model_item.ui">widgets/model_item.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/download_row.ui">widgets/download_row.ui</file>
     <file preprocess="xml-stripblanks" alias="ui/marketplace_item.ui">widgets/marketplace_item.ui</file>

@@ -31,7 +31,7 @@ from .views.window import BavarderWindow
 from .views.about_window import AboutWindow
 from .views.preferences_window import PreferencesWindow
 from .constants import app_id
-from .providers import PROVIDERS
+from .llm import LLM
 
 import json
 import os
@@ -82,11 +82,6 @@ class BavarderApplication(Adw.Application):
 
         self.data = {
             "chats": [],
-            "providers": {
-                "google-flan-t5-xxl": {"enabled": True, "data": {}},
-                "gpt-2": {"enabled": True, "data": {}},
-
-            },
             "models": {}
         }
 
@@ -94,21 +89,12 @@ class BavarderApplication(Adw.Application):
             try:
                 with open(self.data_path, "r", encoding="utf-8") as f:
                     self.data = json.load(f)
-            except Exception: # if there is an error, we use a plain config
+            except Exception:
                 pass
 
         self.settings = Gio.Settings(schema_id=app_id)
 
-        self.local_mode = self.settings.get_boolean("local-mode")
-        self.current_provider = self.settings.get_string("current-provider")
         self.model_name = self.settings.get_string("model")
-
-        self.create_stateful_action(
-            "set_provider",
-            GLib.VariantType.new("s"),
-            GLib.Variant("s", self.current_provider),
-            self.on_set_provider_action
-        )
 
         self.create_stateful_action(
             "set_model",
@@ -121,10 +107,7 @@ class BavarderApplication(Adw.Application):
         self.user_name = self.settings.get_string("user-name")
 
         self.user_cache_dir = user_cache_dir
-
-    def on_set_provider_action(self, action, *args):
-        self.current_provider = args[0].get_string()
-        Gio.SimpleAction.set_state(self.lookup_action("set_provider"), args[0])
+        self.llm = LLM(self)
 
     def on_set_model_action(self, action, *args):
         Gio.SimpleAction.set_state(self.lookup_action("set_model"), args[0])
@@ -132,8 +115,6 @@ class BavarderApplication(Adw.Application):
     def save(self):
         with open(self.data_path, "w", encoding="utf-8") as f:
             self.data = json.dump(self.data, f)
-            self.settings.set_boolean("local-mode", self.local_mode)
-            self.settings.set_string("current-provider", self.current_provider)
             self.settings.set_string("model", self.model_name)
             self.settings.set_string("bot-name", self.bot_name)
             self.settings.set_string("user-name", self.user_name)
@@ -189,15 +170,7 @@ class BavarderApplication(Adw.Application):
 
         win.connect("close-request", self.on_close)
 
-        self.providers = {}
-
-        for provider in PROVIDERS:
-            p = provider(self, win)
-
-            self.providers[p.slug] = p
-
         win.load_model_selector()
-        win.load_provider_selector()
         win.present()
 
 
@@ -250,17 +223,8 @@ class BavarderApplication(Adw.Application):
         except AttributeError:
             pass
 
-    def ask(self, prompt, chat):
-        l = list(self.providers.values())
-
-        for p in l:
-            if p.enabled and p.slug == self.current_provider:
-                response = self.providers[self.current_provider].ask(prompt, chat)
-                break
-            else:
-                response = _("Please enable a provider from the Dot Menu")
-
-        return response
+    def ask(self, prompt, chat, callback, error_callback):
+        self.llm.ask(prompt, chat, callback, error_callback)
 
     def check_network(self):
         return False
