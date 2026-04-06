@@ -3,7 +3,6 @@ providers_dir = join_paths(MODULE_DIR, 'providers')
 providers_sources = [
   '__init__.py',
   'base.py',
-  'local.py',
   'litert_lm.py',
   'provider_item.py',
 ]

@@ -21,9 +21,7 @@ class LiteRTLMProvider(BaseProvider):
         self.model_path_row = Adw.EntryRow()
         self.model_path_row.connect("apply", self.on_apply)
         self.model_path_row.props.title = _("Model Path")
-        self.model_path_row.props.subtitle = _(
-            "Path to .litertlm model file"
-        )
+
         if "model_path" in self.data:
             self.model_path_row.props.text = str(self.data["model_path"])
         else:
@@ -38,6 +36,7 @@ class LiteRTLMProvider(BaseProvider):
         model_path = self.model_path_row.get_text()
         self.data["model_path"] = model_path
         self.model = None
+        self.conversation = None
 
     def load_model(self):
         if self.model is not None:
