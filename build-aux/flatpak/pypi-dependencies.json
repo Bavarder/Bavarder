@@ -244,8 +244,19 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://files.pythonhosted.org/packages/example/litert-lm-api-nightly-example.whl",
-          "sha256": "placeholder-sha256-value-example"
+          "url": "https://files.pythonhosted.org/packages/38/91/a9d6bc8214ceffff5987598a41133ee78ba67a1f55ae13c844cd7a9e3358/litert_lm_api_nightly-0.10.0.dev20260405-cp313-cp313-manylinux_2_35_aarch64.whl",
+          "sha256": "20ba12057cdce547912fe285777d660f33d8ca5e44ddcc6327fd8dd2d9dd38f2",
+          "only-arches": [
+            "aarch64"
+          ]
+        },
+        {
+          "type": "file",
+          "url": "https://files.pythonhosted.org/packages/31/6a/9942b0216289ec631a6b842dd6973b57eb58a3194516d509c306f74a1ba5/litert_lm_api_nightly-0.10.0.dev20260405-cp313-cp313-manylinux_2_35_x86_64.whl",
+          "sha256": "824acfe58dff08b342af99735cb94474741e1b62cf44ff551afd9292ee354c07",
+          "only-arches": [
+            "x86_64"
+          ]
         }
       ]
     },
