@@ -13,3 +13,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+  - package-ecosystem: "nix"
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
