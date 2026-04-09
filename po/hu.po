@@ -1,233 +1,105 @@
 # Bavarder POT file
-# Copyright (C) 2023 Bavarder
+# Copyright (C) 2026 Bavarder
 # This file is distributed under the GNU GPLv3 license.
-# Bavarder, 2023.
+# Bavarder, 2026.
 #
-# osiixy <osiixy@gmail.com>, 2023.
-# 0xMRTT <0xmrtt@proton.me>, 2023.
-# elementbound <ezittgtx@gmail.com>, 2023.
-# ViBE <vibe@protonmail.com>, 2023.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024, 2025.
-# Vigenere0602 <vigenere0602@noreply.codeberg.org>, 2025.
+# 0xMRTT <0xMRTT@tuta.io>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2024-02-25 13:48+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
-=======
-"POT-Creation-Date: 2024-02-25 14:46+0100\n"
-<<<<<<< HEAD
-"PO-Revision-Date: 2025-03-07 00:57+0000\n"
-"Last-Translator: Vigenere0602 <vigenere0602@noreply.codeberg.org>\n"
->>>>>>> 73aca10 (Translated using Weblate (Hungarian))
-=======
-"PO-Revision-Date: 2025-03-08 16:21+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
->>>>>>> 72238d5 (Translated using Weblate (Hungarian))
-"Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
-"bavarder/hu/>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
-msgstr "Bavarder"
+msgstr ""
 
-<<<<<<< HEAD
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
 
-=======
-#: src/providers/base.py:8
-msgid "Image"
-msgstr "Kép"
-
-#: src/providers/base.py:9 src/views/window.blp:108
-msgid "Chat"
-msgstr "Csevegés"
-
-#: src/providers/base.py:10
-msgid "Voice"
-msgstr "Hang"
-
-#: src/providers/base.py:11
-msgid "Text"
-msgstr "Szöveg"
-
-#: src/providers/base.py:12
-msgid "Movie"
-msgstr "Film"
-
-#: src/providers/base.py:86
-msgid "How to get a token"
-msgstr "API.kulcs beszerzése"
-
-#: src/providers/catgpt.py:7
-msgid "Chit-Chat with a Cat"
-msgstr "Csevegés egy macskával"
-
-#: src/providers/hfbasechat.py:45
-msgid ""
-"You've reached the rate limit! Please add a token to the preferences. You "
-"can get the token by following this [guide](https://bavarder.codeberg.page/"
-"help/huggingface/)"
-msgstr ""
-"Elérte a díjkorlátot! Kérjük, adjon hozzá egy tokent a beállításokhoz. A "
-"tokent az alábbi [útmutató] követésével szerezheti meg (https://"
-"bavarder.codeberg.page/help/huggingface/)"
-
-#: src/providers/hfbasechat.py:50
-#, python-brace-format
-msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "Bocsánat, nem tudom, mit mondjak! (Hiba: {output})"
-
-#: src/providers/hfbasechat.py:58
-msgid "API Key"
-msgstr "API-kulcs"
-
-#: src/providers/provider_item.blp:18
-msgid "No preferences available"
-msgstr "Nincs elérhető beállítás"
-
->>>>>>> 73aca10 (Translated using Weblate (Hungarian))
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr "ViBE"
+msgstr ""
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr "Csevegés a mesterséges intelligenciával"
+msgstr ""
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr "Szerzői jog © 2023 0xMRTT"
+msgstr ""
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr "Csomagolás"
+msgstr ""
 
 #: src/views/about_window.py:57
 msgid "Translate"
-msgstr "Fordítás"
+msgstr ""
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
-#, fuzzy
-#| msgid "Open settings"
 msgid "Chat Settings"
-msgstr "Beállítások megnyitása"
+msgstr ""
 
 #: src/views/chat_settings_dialog.blp:11
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "General"
 msgid "General"
-msgstr "Általános"
+msgstr ""
 
 #: src/views/chat_settings_dialog.blp:14
 msgid "Chat Title"
 msgstr ""
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
-#, fuzzy
-#| msgid "Prompt"
 msgid "System Prompt"
-msgstr "Parancsablak"
+msgstr ""
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr "Téma exportálása?"
+msgstr ""
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
-msgstr "Bezár"
+msgstr ""
 
 #: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
-msgstr "Exportálás"
+msgstr ""
 
-<<<<<<< HEAD
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
-msgstr "Beállítások"
+msgstr ""
 
 #: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
 #: src/views/preferences_window.py:46 src/views/window.py:297
-#, fuzzy
-#| msgid "Model"
-=======
-#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:313
->>>>>>> 73aca10 (Translated using Weblate (Hungarian))
 msgid "Models"
-msgstr "Modellek"
+msgstr ""
 
-<<<<<<< HEAD
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
 msgstr ""
 
-=======
-#: src/views/preferences_window.py:60
-msgid "List of available models"
-msgstr "Elérhető modellek listája"
-
-#: src/views/preferences_window.py:72
-msgid "Delete All Threads"
-msgstr "Minden téma törlése"
-
-#: src/views/preferences_window.py:73
-msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr ""
-"Biztos, hogy törölni szeretnéd az összes témát? Ezt nem lehet visszavonni!"
-
-#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "Mégse"
-
-#: src/views/preferences_window.py:78 src/views/window.py:220
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "Törlés"
-
-#: src/views/preferences_window.py:93 src/views/window.py:245
-msgid "All chats cleared!"
-msgstr "Minden chat törölve!"
-
-#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
-msgid "Preferences"
-msgstr "Beállítások"
-
-#: src/views/preferences_window.blp:15 src/views/window.py:275
-msgid "Providers"
-msgstr "Szolgáltatók"
-
->>>>>>> 73aca10 (Translated using Weblate (Hungarian))
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
-msgstr "Egyebek"
+msgstr ""
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
-msgstr "Minden téma törlése"
+msgstr ""
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
-msgstr "Törlés"
+msgstr ""
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
@@ -235,23 +107,19 @@ msgstr ""
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr "Név"
+msgstr ""
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
 msgstr ""
 
 #: src/views/preferences_window.blp:53
-#, fuzzy
-#| msgid "User"
 msgid "User name"
-msgstr "Felhasználó"
+msgstr ""
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "Nincs elérhető beállítás"
+msgstr ""
 
 #: src/views/preferences_window.py:91
 #, python-format
@@ -263,21 +131,19 @@ msgid "Delete All Threads"
 msgstr ""
 
 #: src/views/preferences_window.py:102
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Biztos, hogy törölni szeretnéd?"
+msgstr ""
 
 #: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
 #: src/views/window.py:223 src/widgets/item.py:240
 #: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
 msgid "Cancel"
-msgstr "Mégse"
+msgstr ""
 
 #: src/views/preferences_window.py:107 src/views/window.py:224
 #: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
-msgstr "Törlés"
+msgstr ""
 
 #: src/views/preferences_window.py:122 src/views/window.py:249
 msgid "All chats cleared!"
@@ -285,19 +151,19 @@ msgstr ""
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
-msgstr "Elvetés"
+msgstr ""
 
 #: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
-msgstr "Mentés"
+msgstr ""
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr "Fájl név"
+msgstr ""
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
-msgstr "Fekvés"
+msgstr ""
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
@@ -305,7 +171,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr "Válasszon egy könyvtárat"
+msgstr ""
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
@@ -317,20 +183,16 @@ msgstr ""
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:171 src/views/window.blp:172
-#, fuzzy
-#| msgid "Chat"
 msgid "New Chat"
-msgstr "Csevegés"
+msgstr ""
 
 #: src/views/window.blp:41
 msgid "Main Menu"
-msgstr "Menü"
+msgstr ""
 
 #: src/views/window.blp:56
-#, fuzzy
-#| msgid "Chat"
 msgid "No Chats"
-msgstr "Csevegés"
+msgstr ""
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
@@ -338,17 +200,15 @@ msgstr ""
 
 #: src/views/window.blp:96
 msgid "Message"
-msgstr "Üzenet"
+msgstr ""
 
 #: src/views/window.blp:102
 msgid "Chat"
-msgstr "Csevegés"
+msgstr ""
 
 #: src/views/window.blp:143
-#, fuzzy
-#| msgid "Message"
 msgid "No Messages"
-msgstr "Üzenet"
+msgstr ""
 
 #: src/views/window.blp:144
 msgid "Send first message to get started"
@@ -364,33 +224,29 @@ msgstr ""
 
 #: src/views/window.blp:246
 msgid "Ask"
-msgstr "Kérdés küldése"
+msgstr ""
 
 #: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
-msgstr "Gyorsbillentyűk"
+msgstr ""
 
 #: src/views/window.blp:296
 msgid "About Bavarder"
-msgstr "Névjegy"
+msgstr ""
 
 #: src/views/window.py:183
-#, fuzzy
-#| msgid "Chat"
 msgid "New chat"
-msgstr "Csevegés"
+msgstr ""
 
 #: src/views/window.py:218
 msgid "Delete All Chats"
 msgstr ""
 
 #: src/views/window.py:219
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
-msgstr "Biztos, hogy törölni szeretnéd?"
+msgstr ""
 
 #: src/views/window.py:235 src/views/window.py:251
 msgid "Nothing to clear!"
@@ -401,21 +257,16 @@ msgid "Nothing to export!"
 msgstr ""
 
 #: src/views/window.py:307
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
 msgid "Clear all"
-msgstr "Kiürítés"
+msgstr ""
 
 #: src/views/window.py:368
 msgid "Sorry, I don't know what to say."
 msgstr ""
 
 #: src/views/window.py:388
-#, fuzzy
-#| msgid "API Error"
 msgid "Error: "
-msgstr "API hiba"
+msgstr ""
 
 #: src/views/window.py:391
 msgid "Generating response"
@@ -423,11 +274,11 @@ msgstr ""
 
 #: src/views/window.py:433
 msgid "human"
-msgstr "Ember"
+msgstr ""
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
-msgstr "Kész"
+msgstr ""
 
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
@@ -445,15 +296,15 @@ msgstr ""
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr "Másolás"
+msgstr ""
 
 #: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
-msgstr "Szerkesztés"
+msgstr ""
 
 #: src/widgets/item.blp:117
 msgid "Remove"
-msgstr "Eltávolítás"
+msgstr ""
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
@@ -468,16 +319,12 @@ msgid "No image to save"
 msgstr ""
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "Üzenet"
+msgstr ""
 
 #: src/widgets/item.py:251
-#, fuzzy
-#| msgid "Message"
 msgid "Message copied"
-msgstr "Üzenet"
+msgstr ""
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
@@ -493,7 +340,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr "Hőmérséklet"
+msgstr ""
 
 #: src/widgets/model_item.blp:31
 msgid ""
@@ -533,7 +380,7 @@ msgstr ""
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
-msgstr "Csillag"
+msgstr ""
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
@@ -545,153 +392,8 @@ msgstr ""
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr "Biztos, hogy törölni szeretnéd?"
+msgstr ""
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr "Thread Deleted"
-
-#~ msgid "Image"
-#~ msgstr "Kép"
-
-#~ msgid "Voice"
-#~ msgstr "Hang"
-
-#~ msgid "Text"
-#~ msgstr "Szöveg"
-
-#~ msgid "How to get a token"
-#~ msgstr "API.kulcs beszerzése"
-
-#~ msgid "API Key"
-#~ msgstr "API-kulcs"
-
-#~ msgid "Providers"
-#~ msgstr "Szolgáltatók"
-
-#, fuzzy, python-format
-#~| msgid "Chat"
-#~ msgid "New Chat %i"
-#~ msgstr "Csevegés"
-
-#~ msgid "Clear prompt after send"
-#~ msgstr "Elküldött üzenet automatikus törlése"
-
-#~ msgid "The prompt will be cleared after send"
-#~ msgstr "Az elküldött üzenet automatikusan törlésre kerül a parancsablakból"
-
-#~ msgid "Use plain text for output"
-#~ msgstr "Válasz kezelése egyszerű szövegként"
-
-#~ msgid "The plain text without formatting will be used"
-#~ msgstr "A kapott válasz nem lesz megformázva"
-
-#~ msgid "Close all windows without warning"
-#~ msgstr "Program bezárása figyelmeztetés nélkül"
-
-#~ msgid ""
-#~ "All windows will be closed without warning, this can lead to data loss"
-#~ msgstr ""
-#~ "Minden ablak bezárásra kerül figyelmeztetés nélkül. Ez adatvesztést "
-#~ "eredményezhet"
-
-#~ msgid "Look for provider news"
-#~ msgstr "Hírek megjelenítése"
-
-#~ msgid ""
-#~ "News about issues with providers will be fetched from Bavarder website"
-#~ msgstr ""
-#~ "A szolgáltatókkal kapcsolatban információ jelenhet meg az alkalmazásban"
-
-#~ msgid "No network connection"
-#~ msgstr "Nincs hálózati kapcsolat"
-
-#~ msgid "Response"
-#~ msgstr "Válasz"
-
-#~ msgid "Copy to Clipboard"
-#~ msgstr "Másolás vágólapra"
-
-#~ msgid "Stop"
-#~ msgstr "Megszakítás"
-
-#~ msgid "ERROR"
-#~ msgstr "HIBA"
-
-#~ msgid "DESCRIPTION"
-#~ msgstr "LEÍRÁS"
-
-#~ msgid "Try Again"
-#~ msgstr "Próbálja újra"
-
-#~ msgid "New window"
-#~ msgstr "Új ablak"
-
-#~ msgid "No API key provided, you can provide one in settings"
-#~ msgstr "Nincs megadva API-kulcs. A beállításokban adhat hozzá"
-
-#~ msgid "About provider"
-#~ msgstr "Információ a szolgáltatóról"
-
-#~ msgid "Prompt too long, splitting into chunks."
-#~ msgstr "A parancs túl hosszú, ezért részletekben lesz elküldve."
-
-#~ msgid "You don't have access to this model"
-#~ msgstr "Nincs hozzáférése ehhez a modellhez"
-
-#~ msgid ""
-#~ "You exceeded your current quota, please check your plan and billing "
-#~ "details."
-#~ msgstr "Elérte a napi kvótát. Kérem, ellenőrizze az előfizetés részleteit!"
-
-#~ msgid "No model selected, you can choose one in preferences"
-#~ msgstr "Nincs modell kiválasztva. A beállításokban tudja kiválasztani"
-
-#~ msgid "API Url"
-#~ msgstr "API-hivatkozás"
-
-#~ msgid "How to choose a model"
-#~ msgstr "Modell kiválasztása"
-
-#~ msgid "0xMRTT"
-#~ msgstr "0xMRTT"
-
-#~ msgid "New version available!"
-#~ msgstr "Új verzió érthető el."
-
-#~ msgid "New Window"
-#~ msgstr "Új ablak"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Close current window"
-#~ msgstr "Ablak bezárása"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Close all windows"
-#~ msgstr "Összes ablak bezárása"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Preferences"
-#~ msgstr "Beállítások"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Copy response"
-#~ msgstr "Válasz másolása"
-
-#, fuzzy
-#~| msgid "Preferences"
-#~ msgid "Update preferences UI"
-#~ msgstr "Beállítások"
-
-#~ msgid "Update translations"
-#~ msgstr "- Frissített fordítások"
-
-#~ msgctxt "shortcut window"
-#~ msgid "Quit"
-#~ msgstr "Kilépés"
-
-#, fuzzy
-#~| msgctxt "shortcut window"
-#~| msgid "Quit"
-#~ msgid "Quit"
-#~ msgstr "Kilépés"
+msgstr ""

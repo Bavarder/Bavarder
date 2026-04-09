@@ -1,127 +1,56 @@
 # Bavarder POT file
-# Copyright (C) 2023 Bavarder
+# Copyright (C) 2026 Bavarder
 # This file is distributed under the GNU GPLv3 license.
-# Bavarder, 2023.
+# Bavarder, 2026.
 #
-# nakibrayan2 <codeberg.org.quoz7@aleeas.com>, 2023.
-# SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
-# aei <aei@users.noreply.translate.codeberg.org>, 2024.
-# Weblate <noreply-mt-weblate@weblate.org>, 2024.
-# iramosu <iramosu@users.noreply.translate.codeberg.org>, 2025.
+# 0xMRTT <0xMRTT@tuta.io>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2024-07-31 00:18+0000\n"
-"Last-Translator: aei <aei@users.noreply.translate.codeberg.org>\n"
-=======
-"POT-Creation-Date: 2024-02-25 14:46+0100\n"
-"PO-Revision-Date: 2025-01-30 13:41+0000\n"
-"Last-Translator: iramosu <iramosu@users.noreply.translate.codeberg.org>\n"
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
-"Language-Team: Arabic <https://translate.codeberg.org/projects/bavarder/"
-"bavarder/ar/>\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.9.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
-msgstr "ثرثرة"
+msgstr ""
 
-<<<<<<< HEAD
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
-=======
-#: src/providers/base.py:8
-msgid "Image"
-msgstr "صورة"
-
-#: src/providers/base.py:9 src/views/window.blp:108
-msgid "Chat"
-msgstr "دردشة"
-
-#: src/providers/base.py:10
-msgid "Voice"
-msgstr "صوت"
-
-#: src/providers/base.py:11
-msgid "Text"
-msgstr "نص"
-
-#: src/providers/base.py:12
-msgid "Movie"
-msgstr "فِلم"
-
-#: src/providers/base.py:86
-msgid "How to get a token"
-msgstr "كيفية الحصول على أمارات"
-
-#: src/providers/catgpt.py:7
-msgid "Chit-Chat with a Cat"
-msgstr "دردِش مع قطَّة"
-
-#: src/providers/hfbasechat.py:45
-msgid ""
-"You've reached the rate limit! Please add a token to the preferences. You "
-"can get the token by following this [guide](https://bavarder.codeberg.page/"
-"help/huggingface/)"
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
 msgstr ""
-"وصلت حد المعدل! من فضلك أضِف أمارة للتفضيلات. يمكن الحصول على أمارة عبر إتباع "
-"هذا [الإرشاد](https://bavarder.codeberg.page/help/huggingface/)"
 
-<<<<<<< HEAD
-=======
-#: src/providers/hfbasechat.py:50
-#, python-brace-format
-msgid "Sorry, I don't know what to say! (Error: {output})"
-msgstr "عذرًا، لا أعرف ما أقوله! (خطأ: {output})"
-
-#: src/providers/hfbasechat.py:58
-msgid "API Key"
-msgstr "مفتاح واجهة برمجة التطبيقات (API)"
-
-#: src/providers/provider_item.blp:18
-msgid "No preferences available"
-msgstr "لا تفضيلات متوفرة"
-
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr ""
-"nakibrayan2\n"
-"أحمد النجماوي <iramosu@protonmail.com>"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr "دردش مع الذكاء الصناعي"
+msgstr ""
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr "حقوق النشر © 2023 0xMRTT"
+msgstr ""
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr "التحزيم"
+msgstr ""
 
 #: src/views/about_window.py:57
 msgid "Translate"
-msgstr "ترجم"
+msgstr ""
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
-#, fuzzy
-#| msgid "Open settings"
 msgid "Chat Settings"
-msgstr "فتح التفضيلات"
+msgstr ""
 
 #: src/views/chat_settings_dialog.blp:11
 msgid "General"
@@ -132,111 +61,66 @@ msgid "Chat Title"
 msgstr ""
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
-#, fuzzy
-#| msgid "Prompt"
 msgid "System Prompt"
-msgstr "موجه"
+msgstr ""
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr "أأصدِر الموضوع؟"
+msgstr ""
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
-msgstr "أغلِق"
+msgstr ""
 
 #: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
-msgstr "صدِّر"
+msgstr ""
 
-<<<<<<< HEAD
-=======
-#: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
-#: src/views/preferences_window.blp:19 src/views/window.py:313
-msgid "Models"
-msgstr "الطرز"
-
-#: src/views/preferences_window.py:60
-msgid "List of available models"
-msgstr "قائمة الطرز المتوفرة"
-
-#: src/views/preferences_window.py:72
-msgid "Delete All Threads"
-msgstr "احذف جميع المواضيع"
-
-#: src/views/preferences_window.py:73
-msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "أمتأكد من حذف جميع المحادثات؟ لا يمكن استرجاع هذا!"
-
-#: src/views/preferences_window.py:77 src/views/save_dialog.blp:7
-#: src/views/window.py:219 src/views/window.py:384 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "ألغِ"
-
-#: src/views/preferences_window.py:78 src/views/window.py:220
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "احذف"
-
-#: src/views/preferences_window.py:93 src/views/window.py:245
-msgid "All chats cleared!"
-msgstr "محيت كافة الدردشات!"
-
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
-msgstr "التفضيلات"
+msgstr ""
 
-<<<<<<< HEAD
 #: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
 #: src/views/preferences_window.py:46 src/views/window.py:297
 msgid "Models"
-msgstr "نماذج"
+msgstr ""
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
 msgstr ""
-=======
-#: src/views/preferences_window.blp:15 src/views/window.py:275
-msgid "Providers"
-msgstr "الموفرون"
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
-msgstr "مُتنوع"
+msgstr ""
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
-msgstr "امح كافة المواضيع"
+msgstr ""
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
-msgstr "امح"
+msgstr ""
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr "سيمحُ هذا كافة المواضيع من قاعدة البيانات."
+msgstr ""
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr "الأسماء"
+msgstr ""
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr "اسم البوت"
+msgstr ""
 
 #: src/views/preferences_window.blp:53
 msgid "User name"
-msgstr "اسم المستخدم"
+msgstr ""
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "لا توجد تفضيلات متاحة"
+msgstr ""
 
 #: src/views/preferences_window.py:91
 #, python-format
@@ -245,23 +129,22 @@ msgstr ""
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
-msgstr "‏حذف جميع المحادثات"
+msgstr ""
 
 #: src/views/preferences_window.py:102
 msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr ""
-"هل أنت متأكد أنك تريد حذف جميع المحادثات؟ لا يمكن التراجع بعد هذه العملية!"
 
 #: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
 #: src/views/window.py:223 src/widgets/item.py:240
 #: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
 msgid "Cancel"
-msgstr "ألغِ"
+msgstr ""
 
 #: src/views/preferences_window.py:107 src/views/window.py:224
 #: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
-msgstr "احذف"
+msgstr ""
 
 #: src/views/preferences_window.py:122 src/views/window.py:249
 msgid "All chats cleared!"
@@ -269,139 +152,92 @@ msgstr ""
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
-msgstr "أهمِل"
+msgstr ""
 
 #: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
-msgstr "احفظ"
+msgstr ""
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr "اسم الملف"
+msgstr ""
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
-msgstr "الموقع"
+msgstr ""
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr "تصدير الموضوع سيحفظ في هذا الدليل."
+msgstr ""
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr "اختر دليلًا"
+msgstr ""
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr "تعذَّر حفظ الموضوع"
+msgstr ""
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr "حُفِظ الموضوع بنجاح!"
+msgstr ""
 
-<<<<<<< HEAD
-=======
-#: src/views/window.py:179
-msgid "New chat"
-msgstr "دردشة جديدة"
-
-#: src/views/window.py:214
-msgid "Delete All Chats"
-msgstr "احذف جميع الدردشات"
-
-#: src/views/window.py:215
-msgid ""
-"Are you sure you want to delete all chats in this thread? This can't be "
-"undone!"
-msgstr "أمتأكد من حذف جميع الدردشات في الموضوع؟ لا يمكن استرجاع هذا!"
-
-#: src/views/window.py:231 src/views/window.py:247
-msgid "Nothing to clear!"
-msgstr "لا شيء لمحوه!"
-
-#: src/views/window.py:257
-msgid "Nothing to export!"
-msgstr "لا شيء لتصديره!"
-
-#: src/views/window.py:283 src/views/window.py:321
-msgid "Clear all"
-msgstr "امح الكل"
-
-#: src/views/window.py:383
-msgid "Generating response"
-msgstr "يوَّلد ردًا"
-
-#: src/views/window.py:397 src/views/window.py:410
-msgid "Sorry, I don't know what to say."
-msgstr "عذرًا، لا أعرف ما أقوله."
-
-#: src/views/window.py:451
-msgid "human"
-msgstr "إنسان"
-
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
-msgstr "دردشة جديدة"
+msgstr ""
 
 #: src/views/window.blp:41
 msgid "Main Menu"
-msgstr "القائمة الرئيسة"
+msgstr ""
 
 #: src/views/window.blp:56
 msgid "No Chats"
-msgstr "لا دردشات"
+msgstr ""
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr "ابدأ عبر إنشاء دردشة جديدة أو اختيار واحدة من الشريط الجانبي"
+msgstr ""
 
 #: src/views/window.blp:96
 msgid "Message"
-msgstr "رسالة"
+msgstr ""
 
-<<<<<<< HEAD
 #: src/views/window.blp:102
 msgid "Chat"
-msgstr "محادثة"
+msgstr ""
 
 #: src/views/window.blp:143
-#, fuzzy
-#| msgid "Message"
-=======
-#: src/views/window.blp:156
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
 msgid "No Messages"
-msgstr "لا رسائل"
+msgstr ""
 
 #: src/views/window.blp:144
 msgid "Send first message to get started"
-msgstr "أرسل أول رسالة لتبدأ"
+msgstr ""
 
 #: src/views/window.blp:149
 msgid "No Internet"
-msgstr "لا إنترنت"
+msgstr ""
 
 #: src/views/window.blp:156
 msgid "Get started by creating a new chat"
-msgstr "ابدأ عبر إنشاء دردشة جديدة"
+msgstr ""
 
 #: src/views/window.blp:246
 msgid "Ask"
-msgstr "اسأل"
+msgstr ""
 
 #: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
-msgstr "اختصارات لوحة المفاتيح"
+msgstr ""
 
 #: src/views/window.blp:296
 msgid "About Bavarder"
-msgstr "عَنْ «ثرثرة»"
+msgstr ""
 
 #: src/views/window.py:183
 msgid "New chat"
-msgstr "محادثة جديدة"
+msgstr ""
 
 #: src/views/window.py:218
 msgid "Delete All Chats"
@@ -412,8 +248,6 @@ msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
 msgstr ""
-"هل أنت متأكد أنك تريد حذف جميع الرسائل في المحادثة؟ لايمكن التراجع من هذه "
-"العملية!"
 
 #: src/views/window.py:235 src/views/window.py:251
 msgid "Nothing to clear!"
@@ -432,10 +266,8 @@ msgid "Sorry, I don't know what to say."
 msgstr ""
 
 #: src/views/window.py:388
-#, fuzzy
-#| msgid "API Error"
 msgid "Error: "
-msgstr "خطأ في API"
+msgstr ""
 
 #: src/views/window.py:391
 msgid "Generating response"
@@ -443,96 +275,83 @@ msgstr ""
 
 #: src/views/window.py:433
 msgid "human"
-msgstr "إنسان"
+msgstr ""
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
-msgstr "تم"
+msgstr ""
 
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
-msgstr "نزِّل الطراز"
+msgstr ""
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr "ينزَّل الطراز %s"
+msgstr ""
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr "نُزِّل الطراز %s!"
+msgstr ""
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr "انسخ"
+msgstr ""
 
 #: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
-msgstr "حرر"
+msgstr ""
 
 #: src/widgets/item.blp:117
 msgid "Remove"
-msgstr "أزِل"
+msgstr ""
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
-msgstr "تعذّر حفظ الصورة"
+msgstr ""
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr "حفظت الصورة"
+msgstr ""
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr "لا صورة لحفظها"
+msgstr ""
 
 #: src/widgets/item.py:235
 msgid "Save message"
-msgstr "احفظ الرسالة"
+msgstr ""
 
 #: src/widgets/item.py:251
 msgid "Message copied"
-msgstr "نُسِخت الرسالة"
+msgstr ""
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr "احذف الطراز"
+msgstr ""
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr "الحد الأقصى للأمارات"
+msgstr ""
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr "أقصى عدد من الأمارات لتوليده."
+msgstr ""
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr "درجة الحرارة"
+msgstr ""
 
 #: src/widgets/model_item.blp:31
 msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
-msgstr "درجة حرارة الطراز. القيم الأكبر ستزيد الإبداع وتقلل الحقائق."
-
-#: src/widgets/model_item.blp:45
-<<<<<<< HEAD
-=======
-msgid "Top K"
-msgstr "أعلى K"
-
-#: src/widgets/model_item.blp:46
-msgid ""
-"Randomly sample from the top_k most likely tokens at each generation step. "
-"Set this to 1 for greedy decoding."
 msgstr ""
 
-#: src/widgets/model_item.blp:59
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
+#: src/widgets/model_item.blp:45
 msgid "Top P"
-msgstr "أعلى P"
+msgstr ""
 
 #: src/widgets/model_item.blp:46
 msgid ""
@@ -540,208 +359,42 @@ msgid ""
 "whose probabilities add up to top_p."
 msgstr ""
 
-<<<<<<< HEAD
 #: src/widgets/model_item.blp:60
 msgid "Top K"
 msgstr ""
-=======
-#: src/widgets/model_item.blp:74
-msgid "Repetition Penalty"
-msgstr "عقوبة التكرار"
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
 
 #: src/widgets/model_item.blp:61
 msgid ""
-<<<<<<< HEAD
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
 
 #: src/widgets/model_item.py:49
-=======
-"Penalize the model for repetition. Higher values result in less repetition."
-msgstr "يعاقب الطراز للتكرار، مما يؤدي إلى نتائج فيها تكرار أقل."
-
-#: src/widgets/model_item.blp:89
-msgid "Batch Size"
-msgstr "حجم الدُفعة"
-
-#: src/widgets/model_item.blp:90
-msgid ""
-"Number of prompt tokens processed in parallel. Larger values decrease "
-"latency but increase resource requirements."
-msgstr ""
-
-#: src/widgets/model_item.blp:103
-msgid "Repeat Last N"
-msgstr ""
-
-#: src/widgets/model_item.blp:104
-msgid "How far in the models generation history to apply the repeat penalty. "
-msgstr ""
-
-#: src/widgets/model_item.blp:117
-msgid "System Prompt"
-msgstr "محث النظام"
-
-#: src/widgets/model_item.py:64
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
 #, python-format
 msgid "Model %s deleted!"
-msgstr "اكتُشف الطراز %s!"
+msgstr ""
 
 #: src/widgets/thread_item.blp:23 src/widgets/thread_item.py:75
 #: src/widgets/thread_item.py:80
 msgid "Edit Title"
-msgstr "عَدِّل العنوان"
+msgstr ""
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
-msgstr "نجمة"
+msgstr ""
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr "عُدل العنوان"
+msgstr ""
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr "احذف الموضوع"
+msgstr ""
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr "أمتأكد من حذف هذا الموضوع؟"
+msgstr ""
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr "حُذف الموضوع"
-
-<<<<<<< HEAD
-#~ msgid "Image"
-#~ msgstr "صورة"
-
-#~ msgid "Voice"
-#~ msgstr "صوت"
-
-#~ msgid "Text"
-#~ msgstr "نص"
-
-#~ msgid "Movie"
-#~ msgstr "فلم"
-
-#~ msgid "How to get a token"
-#~ msgstr "كيفية التحصل على توكن"
-
-#~ msgid "Chit-Chat with a Cat"
-#~ msgstr "تحدَّث مع قطَّة"
-
-#~ msgid "API Key"
-#~ msgstr "مفتاح API"
-
-#~ msgid "Providers"
-#~ msgstr "مقدمي الخدمة"
-=======
-#: src/main.py:261
-msgid ""
-"Please download a model from Preferences by clicking on the Dot Menu at the "
-"top!"
-msgstr "من فضلك نزل طرازًا عبر التفضيلات من خلال نقر قائمة النقاط في الأعلى!"
-
-#: src/main.py:265
-msgid "Hello, I am Bavarder, a Chit-Chat AI"
-msgstr "مرحبًا، أنا «ثرثرة»، الذكاء الصناعي للدردشة"
-
-#: src/main.py:288
-msgid "Please enable a provider from the Dot Menu"
-msgstr "من فضلك فعّل موفرًا من قائمة النقاط"
->>>>>>> 0881f51 (Translated using Weblate (Arabic))
-
-#~ msgid "Clear prompt after send"
-#~ msgstr "مسح نصح الموجه بعد الإرسال"
-
-#~ msgid "The prompt will be cleared after send"
-#~ msgstr "سيتم مسح نص الموجه بعد الإرسال"
-
-#~ msgid "Use plain text for output"
-#~ msgstr "إستخدام نص بدون تنسيق للإخراج"
-
-#~ msgid "The plain text without formatting will be used"
-#~ msgstr "سيتم استخدام نص بدون تنسيق"
-
-#~ msgid "Close all windows without warning"
-#~ msgstr "إغلاق جميع النوافض بدون سابق إنذار"
-
-#~ msgid ""
-#~ "All windows will be closed without warning, this can lead to data loss"
-#~ msgstr ""
-#~ "سيتم إغلاق جميع النوافذ دون سابق إنذار ، وهذا قد يؤدي إلى فقدان للبيانات"
-
-#~ msgid "Look for provider news"
-#~ msgstr "البحث عن أخبار مزود الخدمة"
-
-#~ msgid ""
-#~ "News about issues with providers will be fetched from Bavarder website"
-#~ msgstr ""
-#~ "سيتم جلب الأخبار المتعلقة بالمشكلات مع مقدمي الخدمة من موقع ثرثرة على "
-#~ "الويب"
-
-#~ msgid "No network connection"
-#~ msgstr "لا يوجد اتصال بالشبكة"
-
-#~ msgid "Response"
-#~ msgstr "الجواب"
-
-#~ msgid "Copy to Clipboard"
-#~ msgstr "النسخ إلى الحافظة"
-
-#~ msgid "Stop"
-#~ msgstr "إيقاف"
-
-#~ msgid "ERROR"
-#~ msgstr "خطأ"
-
-#~ msgid "DESCRIPTION"
-#~ msgstr "وصف"
-
-#~ msgid "Try Again"
-#~ msgstr "حاول مرة أخرى"
-
-#~ msgid "New window"
-#~ msgstr "إنشاء نافذة جديدة"
-
-#~ msgid "No API key provided, you can provide one in settings"
-#~ msgstr "لم يتم توفير مفتاح API ، يمكن توفير مفتاح في التفضيلات"
-
-#~ msgid "About provider"
-#~ msgstr "حول مقدم الخدمة"
-
-#~ msgid "Prompt too long, splitting into chunks."
-#~ msgstr "النص في الموجه طويل جدا ، سيتم تقسيمة إلى قطع."
-
-#~ msgid "You don't have access to this model"
-#~ msgstr "ليس لديك حق الوصول إلى هذا النموذج"
-
-#~ msgid ""
-#~ "You exceeded your current quota, please check your plan and billing "
-#~ "details."
-#~ msgstr "لقد تجاوزت حصتك الحالية ، يرجى التأكد من إشتراكك و تفاصيل الفواتير."
-
-#~ msgid "No model selected, you can choose one in preferences"
-#~ msgstr "لم يتم تحديد أي نموذج ، يمكن اختيار نموذج في التفضيلات"
-
-#~ msgid "API Url"
-#~ msgstr "رابط API"
-
-#~ msgid "How to choose a model"
-#~ msgstr "كيفية اختيار نموذج"
-
-#~ msgid "0xMRTT"
-#~ msgstr "0xMRTT"
-
-#~ msgid "New version available!"
-#~ msgstr "هنالك إصدار جديد متوفر!"
-
-#~ msgid "New Window"
-#~ msgstr "نافذة جديدة"
-
-#~ msgid "Wait"
-#~ msgstr "يرجى الإنتضار"
+msgstr ""

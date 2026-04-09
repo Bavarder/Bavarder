@@ -18,16 +18,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-05-25 01:18+0000\n"
 "Last-Translator: C1ff0 <C1ff0@users.noreply.translate.codeberg.org>\n"
-=======
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
 "PO-Revision-Date: 2024-10-03 06:31+0000\n"
 "Last-Translator: albanobattistella <albanobattistella@users.noreply.translate"
 ".codeberg.org>\n"
->>>>>>> 4989c51 (Translated using Weblate (Italian))
 "Language-Team: Italian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/it/>\n"
 "Language: it\n"
