@@ -13,16 +13,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-06-07 05:18+0000\n"
 "Last-Translator: artnay <artnay@users.noreply.translate.codeberg.org>\n"
-=======
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
 "PO-Revision-Date: 2025-02-06 00:21+0000\n"
 "Last-Translator: Ricky-Tigg <ricky-tigg@users.noreply.translate.codeberg.org>"
 "\n"
->>>>>>> 93479bb (Translated using Weblate (Finnish))
 "Language-Team: Finnish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/fi/>\n"
 "Language: fi\n"
@@ -37,11 +34,9 @@ msgstr ""
 msgid "Bavarder"
 msgstr "Bavarder"
 
-<<<<<<< HEAD
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
-=======
 #: src/providers/base.py:8
 msgid "Image"
 msgstr "Kuva"
@@ -92,7 +87,6 @@ msgstr "API-avain"
 #: src/providers/provider_item.blp:18
 msgid "No preferences available"
 msgstr "Asetuksia ei ole saatavilla"
->>>>>>> 93479bb (Translated using Weblate (Finnish))
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -152,8 +146,6 @@ msgstr "Sulje"
 msgid "Export"
 msgstr "Vie"
 
-<<<<<<< HEAD
-=======
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:19 src/views/window.py:313
 msgid "Models"
@@ -186,7 +178,6 @@ msgstr "Poista"
 msgid "All chats cleared!"
 msgstr "Kaikki pikakeskustelut tyhjennetty!"
 
->>>>>>> 93479bb (Translated using Weblate (Finnish))
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
@@ -296,8 +287,6 @@ msgstr "Säiettä ei voitu tallentaa"
 msgid "Thread successfully saved!"
 msgstr "Säie tallennettu!"
 
-<<<<<<< HEAD
-=======
 #: src/views/window.py:179
 msgid "New chat"
 msgstr "Uusi pikakeskustelu"
@@ -338,7 +327,6 @@ msgstr "Valitettavasti en tiedä mitä sanoa."
 msgid "human"
 msgstr "ihminen"
 
->>>>>>> 93479bb (Translated using Weblate (Finnish))
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
@@ -515,8 +503,6 @@ msgstr ""
 "faktuaalisuutta."
 
 #: src/widgets/model_item.blp:45
-<<<<<<< HEAD
-=======
 msgid "Top K"
 msgstr "Korkein K"
 
@@ -529,7 +515,6 @@ msgstr ""
 "vaiheessa. Aseta tämä arvoon 1 ahneelle dekoodaukselle."
 
 #: src/widgets/model_item.blp:59
->>>>>>> 93479bb (Translated using Weblate (Finnish))
 msgid "Top P"
 msgstr "Korkein P"
 
@@ -547,13 +532,11 @@ msgstr "Korkein K"
 
 #: src/widgets/model_item.blp:61
 msgid ""
-<<<<<<< HEAD
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
 
 #: src/widgets/model_item.py:49
-=======
 "Penalize the model for repetition. Higher values result in less repetition."
 msgstr ""
 "Rankaise mallia toistamisesta. Isommat arvot tuottavat vähemmän toistoa."
@@ -583,7 +566,6 @@ msgid "System Prompt"
 msgstr "Järjestelmän kehote"
 
 #: src/widgets/model_item.py:64
->>>>>>> 93479bb (Translated using Weblate (Finnish))
 #, python-format
 msgid "Model %s deleted!"
 msgstr "Malli %s poistettu!"

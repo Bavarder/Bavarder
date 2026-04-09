@@ -15,26 +15,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-05-21 13:18+0000\n"
 "Last-Translator: Umeaman <Umeaman@users.noreply.translate.codeberg.org>\n"
-=======
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-<<<<<<< HEAD
-<<<<<<< HEAD
 "PO-Revision-Date: 2024-11-08 16:07+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
->>>>>>> c556bcb (Translated using Weblate (Swedish))
-=======
 "PO-Revision-Date: 2024-11-16 01:07+0000\n"
 "Last-Translator: bittin <bittin@users.noreply.translate.codeberg.org>\n"
->>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
-=======
 "PO-Revision-Date: 2025-03-08 16:21+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
->>>>>>> abc5ae3 (Translated using Weblate (Swedish))
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
 "Language: sv\n"
@@ -49,12 +40,10 @@ msgstr ""
 msgid "Bavarder"
 msgstr "Bavarder"
 
-<<<<<<< HEAD
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
 
-=======
 #: src/providers/base.py:8
 msgid "Image"
 msgstr "Bild"
@@ -103,7 +92,6 @@ msgstr "API-nyckel"
 msgid "No preferences available"
 msgstr "Inga inställningar tillgängliga"
 
->>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr "skøldis <jellybean@turtle.garden>"
@@ -159,7 +147,6 @@ msgstr "Stäng"
 msgid "Export"
 msgstr "Exportera"
 
-<<<<<<< HEAD
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
@@ -169,10 +156,8 @@ msgstr "Inställningar"
 #: src/views/preferences_window.py:46 src/views/window.py:297
 #, fuzzy
 #| msgid "Model"
-=======
 #: src/views/preferences_window.py:53 src/views/preferences_window.blp:11
 #: src/views/preferences_window.blp:19 src/views/window.py:313
->>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 msgid "Models"
 msgstr "Modeller"
 
@@ -376,12 +361,9 @@ msgstr "Människa"
 msgid "Done"
 msgstr "Klar"
 
-<<<<<<< HEAD
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 #, fuzzy
-=======
 #: src/widgets/download_row.blp:11
->>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 msgid "Download Model"
 msgstr "Hämta modell"
 
@@ -460,12 +442,10 @@ msgid ""
 "whose probabilities add up to top_p."
 msgstr ""
 
-<<<<<<< HEAD
 #: src/widgets/model_item.blp:60
 #, fuzzy
 msgid "Top K"
 msgstr "Top K"
-=======
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
 msgstr "Repetitionsstraff"
@@ -498,7 +478,6 @@ msgstr ""
 #: src/widgets/model_item.blp:117
 msgid "System Prompt"
 msgstr "Systemprompt"
->>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 
 #: src/widgets/model_item.blp:61
 msgid ""
@@ -536,7 +515,6 @@ msgstr "Är du säker på att du vill ta bort detta?"
 msgid "Thread Deleted"
 msgstr "Tråd raderad"
 
-<<<<<<< HEAD
 #~ msgid "Image"
 #~ msgstr "Bild"
 
@@ -566,7 +544,6 @@ msgstr "Tråd raderad"
 
 #~ msgid "Providers"
 #~ msgstr "Leverantörer"
-=======
 #: src/main.py:261
 msgid ""
 "Please download a model from Preferences by clicking on the Dot Menu at the "
@@ -582,7 +559,6 @@ msgstr "Hej, jag heter Bavarder, en Chit-Chat AI"
 #: src/main.py:288
 msgid "Please enable a provider from the Dot Menu"
 msgstr "Vänligen aktivera en leverantör från punktmenyn"
->>>>>>> f1ac0a3 (Translated using Weblate (Swedish))
 
 #~ msgid "Clear prompt after send"
 #~ msgstr "Töm prompt efter den har skickats"

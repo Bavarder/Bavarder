@@ -16,25 +16,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2024-03-11 22:13+0000\n"
 "Last-Translator: N4taa <N4taa@users.noreply.translate.codeberg.org>\n"
-=======
 "POT-Creation-Date: 2024-02-25 14:46+0100\n"
-<<<<<<< HEAD
 "PO-Revision-Date: 2025-02-10 10:21+0000\n"
-<<<<<<< HEAD
 "Last-Translator: rafablog77 <rafablog77@users.noreply.translate.codeberg.org>"
 "\n"
->>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
-=======
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
->>>>>>> 23b701a (Translated using Weblate (Portuguese))
-=======
 "PO-Revision-Date: 2025-02-11 13:21+0000\n"
 "Last-Translator: yorunin <yorunin@users.noreply.translate.codeberg.org>\n"
->>>>>>> 7117339 (Translated using Weblate (Portuguese))
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pt/>\n"
 "Language: pt\n"
@@ -218,8 +209,6 @@ msgstr "Incapaz de salvar a Conversa"
 msgid "Thread successfully saved!"
 msgstr "Conversa salva com sucesso!"
 
-<<<<<<< HEAD
-=======
 #: src/views/window.py:179
 msgid "New chat"
 msgstr "Nova conversa"
@@ -260,15 +249,11 @@ msgstr "Desculpe, não sei o que dizer."
 msgid "human"
 msgstr "Humano"
 
->>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
-<<<<<<< HEAD
 #: src/views/window.blp:171 src/views/window.blp:172
 #, fuzzy
 #| msgid "Chat"
-=======
 #: src/views/window.blp:184 src/views/window.blp:185
->>>>>>> 23b701a (Translated using Weblate (Portuguese))
 msgid "New Chat"
 msgstr "Nova conversa"
 
@@ -288,7 +273,6 @@ msgstr "Comece criando uma nova conversa ou selecionando uma da sidebar"
 msgid "Message"
 msgstr "Mensagem"
 
-<<<<<<< HEAD
 #: src/views/window.blp:102
 msgid "Chat"
 msgstr "Conversas"
@@ -296,9 +280,7 @@ msgstr "Conversas"
 #: src/views/window.blp:143
 #, fuzzy
 #| msgid "Message"
-=======
 #: src/views/window.blp:156
->>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 msgid "No Messages"
 msgstr "Sem Mensagens"
 
@@ -452,8 +434,6 @@ msgstr ""
 "diminuem a factualidade."
 
 #: src/widgets/model_item.blp:45
-<<<<<<< HEAD
-=======
 msgid "Top K"
 msgstr "Top K"
 
@@ -466,7 +446,6 @@ msgstr ""
 "geração. Defina isso como 1 para decodificação gananciosa."
 
 #: src/widgets/model_item.blp:59
->>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 msgid "Top P"
 msgstr "Top P"
 
@@ -478,15 +457,12 @@ msgstr ""
 "Amostragem aleatória em cada etapa de geração a partir dos tokens mais "
 "prováveis cujas probabilidades somam top_p."
 
-<<<<<<< HEAD
 #: src/widgets/model_item.blp:60
 msgid "Top K"
 msgstr ""
-=======
 #: src/widgets/model_item.blp:74
 msgid "Repetition Penalty"
 msgstr "Penalidade de repetição"
->>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 
 #: src/widgets/model_item.blp:61
 msgid ""
@@ -496,9 +472,7 @@ msgstr ""
 "Penalizar o modelo por repetição. Valores maiores resultam em menos "
 "repetição."
 
-<<<<<<< HEAD
 #: src/widgets/model_item.py:49
-=======
 #: src/widgets/model_item.blp:89
 msgid "Batch Size"
 msgstr "Tamanho do lote"
@@ -526,7 +500,6 @@ msgid "System Prompt"
 msgstr "Prompt do Sistema"
 
 #: src/widgets/model_item.py:64
->>>>>>> 64bfdf1 (Translated using Weblate (Portuguese))
 #, python-format
 msgid "Model %s deleted!"
 msgstr "Modelo %s deletado!"
@@ -557,7 +530,6 @@ msgstr "Tem certeza que pretende apagar esta conversa?"
 msgid "Thread Deleted"
 msgstr "Tópico apagado"
 
-<<<<<<< HEAD
 #~ msgid "Image"
 #~ msgstr "Imagem"
 
@@ -597,7 +569,6 @@ msgstr "Tópico apagado"
 
 #~ msgid "Providers"
 #~ msgstr "Provedores"
-=======
 #: src/main.py:261
 #, fuzzy
 msgid ""
@@ -614,7 +585,6 @@ msgstr "Olá, Eu sou Bavarder, uma IA de bate-papo"
 #: src/main.py:288
 msgid "Please enable a provider from the Dot Menu"
 msgstr "Por favor, Ative um provedor através do Menu"
->>>>>>> 7117339 (Translated using Weblate (Portuguese))
 
 #~ msgid "Export Thread ?"
 #~ msgstr "Exportar Conversa ?"
