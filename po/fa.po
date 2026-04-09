@@ -194,11 +194,6 @@ msgstr "پاک کردن"
 msgid "All chats cleared!"
 msgstr "همه ی چت ها پاک شد!"
 
-#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
-msgid "Preferences"
-msgstr "پیش‌فرض‌ها"
-
 #: src/views/preferences_window.blp:15 src/views/window.py:275
 msgid "Providers"
 msgstr "تامین کنندگان"
@@ -238,31 +233,6 @@ msgstr ""
 #: src/views/preferences_window.py:91
 #, python-format
 msgid "Error loading marketplace: %s"
-msgstr ""
-
-#: src/views/preferences_window.py:101
-msgid "Delete All Threads"
-msgstr ""
-
-#: src/views/preferences_window.py:102
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
-msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "آیا مطمئنید که می‌خواهید این فرسته پیش نویس شده را حذف کنید؟"
-
-#: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
-#: src/views/window.py:223 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "لغو"
-
-#: src/views/preferences_window.py:107 src/views/window.py:224
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "پاک کردن"
-
-#: src/views/preferences_window.py:122 src/views/window.py:249
-msgid "All chats cleared!"
 msgstr ""
 
 #: src/views/save_dialog.blp:8
@@ -358,10 +328,6 @@ msgstr "شروع کنیذ با شروع کردن چت جدید یا انتخاب
 msgid "Message"
 msgstr "پیام"
 
-#: src/views/window.blp:102
-msgid "Chat"
-msgstr "گپ"
-
 #: src/views/window.blp:143
 #, fuzzy
 #| msgid "Message"
@@ -393,52 +359,9 @@ msgstr "کلیدهای میانبر"
 msgid "About Bavarder"
 msgstr "درباره"
 
-#: src/views/window.py:183
-msgid "New chat"
-msgstr ""
-
-#: src/views/window.py:218
-msgid "Delete All Chats"
-msgstr ""
-
-#: src/views/window.py:219
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
-msgid ""
-"Are you sure you want to delete all chats in this thread? This can't be "
-"undone!"
-msgstr "آیا مطمئنید که می‌خواهید این فرسته پیش نویس شده را حذف کنید؟"
-
-#: src/views/window.py:235 src/views/window.py:251
-msgid "Nothing to clear!"
-msgstr ""
-
-#: src/views/window.py:261
-msgid "Nothing to export!"
-msgstr ""
-
-#: src/views/window.py:307
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "Clear"
-msgid "Clear all"
-msgstr "پاک‌سازی"
-
-#: src/views/window.py:368
-msgid "Sorry, I don't know what to say."
-msgstr ""
-
 #: src/views/window.py:388
 msgid "Error: "
 msgstr ""
-
-#: src/views/window.py:391
-msgid "Generating response"
-msgstr ""
-
-#: src/views/window.py:433
-msgid "human"
-msgstr "انسان"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
@@ -537,21 +460,8 @@ msgstr ""
 "به طور تصادفی در هر مرحله تولید از توکن های محتمل برتر که احتمالات آنها به "
 "top_p می رسد، نمونه برداری کنید."
 
-#: src/widgets/model_item.blp:60
-msgid "Top K"
-msgstr ""
-#: src/widgets/model_item.blp:74
-msgid "Repetition Penalty"
-msgstr "جریمه تکرار"
-
-#: src/widgets/model_item.blp:61
-msgid ""
-"Randomly sample from the top_k most likely tokens at each generation step. "
-"Set this to 1 for greedy decoding."
-msgstr ""
-
 #: src/widgets/model_item.py:49
-"Penalize the model for repetition. Higher values result in less repetition."
+msgid "Penalize the model for repetition. Higher values result in less repetition."
 msgstr "مدل را برای تکرار جریمه کنید. ارزش بالاتر منجر به تکرار کمتر می شود."
 
 #: src/widgets/model_item.blp:89
@@ -573,10 +483,6 @@ msgstr "تکرار اخرین ن"
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
 msgstr "تا چه اندازه در تاریخ نسل مدل ها اعمال جریمه تکراری اعمال می شود. "
-
-#: src/widgets/model_item.blp:117
-msgid "System Prompt"
-msgstr "متن سیستم"
 
 #: src/widgets/model_item.py:64
 #, python-format

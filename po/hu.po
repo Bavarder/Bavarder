@@ -193,11 +193,6 @@ msgstr "Törlés"
 msgid "All chats cleared!"
 msgstr "Minden chat törölve!"
 
-#: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
-#: src/views/window.py:278 src/views/window.py:316 src/views/window.blp:299
-msgid "Preferences"
-msgstr "Beállítások"
-
 #: src/views/preferences_window.blp:15 src/views/window.py:275
 msgid "Providers"
 msgstr "Szolgáltatók"
@@ -241,31 +236,6 @@ msgstr "Nincs elérhető beállítás"
 #: src/views/preferences_window.py:91
 #, python-format
 msgid "Error loading marketplace: %s"
-msgstr ""
-
-#: src/views/preferences_window.py:101
-msgid "Delete All Threads"
-msgstr ""
-
-#: src/views/preferences_window.py:102
-#, fuzzy
-#| msgid "Are you sure you want to delete this thread?"
-msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr "Biztos, hogy törölni szeretnéd?"
-
-#: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
-#: src/views/window.py:223 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "Mégse"
-
-#: src/views/preferences_window.py:107 src/views/window.py:224
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "Törlés"
-
-#: src/views/preferences_window.py:122 src/views/window.py:249
-msgid "All chats cleared!"
 msgstr ""
 
 #: src/views/save_dialog.blp:8
@@ -324,10 +294,6 @@ msgstr ""
 #: src/views/window.blp:96
 msgid "Message"
 msgstr "Üzenet"
-
-#: src/views/window.blp:102
-msgid "Chat"
-msgstr "Csevegés"
 
 #: src/views/window.blp:143
 #, fuzzy

@@ -122,11 +122,6 @@ msgstr ""
 msgid "Preferences"
 msgstr "העדפות"
 
-#: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
-#: src/views/preferences_window.py:46 src/views/window.py:297
-msgid "Models"
-msgstr ""
-
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
 msgstr ""
@@ -166,29 +161,6 @@ msgstr ""
 #: src/views/preferences_window.py:91
 #, python-format
 msgid "Error loading marketplace: %s"
-msgstr ""
-
-#: src/views/preferences_window.py:101
-msgid "Delete All Threads"
-msgstr ""
-
-#: src/views/preferences_window.py:102
-msgid "Are you sure you want to delete all threads? This can't be undone!"
-msgstr ""
-
-#: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
-#: src/views/window.py:223 src/widgets/item.py:240
-#: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
-msgid "Cancel"
-msgstr "בטל"
-
-#: src/views/preferences_window.py:107 src/views/window.py:224
-#: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
-msgid "Delete"
-msgstr "מחיקה"
-
-#: src/views/preferences_window.py:122 src/views/window.py:249
-msgid "All chats cleared!"
 msgstr ""
 
 #: src/views/save_dialog.blp:8

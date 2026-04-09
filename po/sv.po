@@ -281,10 +281,6 @@ msgstr "Börja med att skapa en ny chatt eller välj en från sidofältet"
 msgid "Message"
 msgstr "Meddelande"
 
-#: src/views/window.blp:102
-msgid "Chat"
-msgstr "Chatt"
-
 #: src/views/window.blp:143
 msgid "No Messages"
 msgstr "Inga meddelanden"
@@ -474,10 +470,6 @@ msgstr ""
 #: src/widgets/model_item.blp:104
 msgid "How far in the models generation history to apply the repeat penalty. "
 msgstr ""
-
-#: src/widgets/model_item.blp:117
-msgid "System Prompt"
-msgstr "Systemprompt"
 
 #: src/widgets/model_item.blp:61
 msgid ""
