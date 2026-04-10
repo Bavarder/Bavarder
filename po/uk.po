@@ -11,13 +11,14 @@
 # Anatolii Bielibov <Anatoly136UA@users.noreply.translate.codeberg.org>, 2023.
 # SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023, 2024.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2023, 2024.
+# SomeTr <sometr@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2024-02-26 02:56+0000\n"
-"Last-Translator: SomeTr <SomeTr@users.noreply.translate.codeberg.org>\n"
+"PO-Revision-Date: 2026-04-11 07:57+0000\n"
+"Last-Translator: SomeTr <sometr@noreply.codeberg.org>\n"
 "Language-Team: Ukrainian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/uk/>\n"
 "Language: uk\n"
@@ -26,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -35,7 +36,7 @@ msgstr "Bavarder"
 
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
-msgstr ""
+msgstr "Немає моделей. Завантажте модель або вкажіть шлях до неї."
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -58,23 +59,16 @@ msgid "Translate"
 msgstr "Перекласти"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
-#, fuzzy
-#| msgid "Open settings"
 msgid "Chat Settings"
-msgstr "Відкрити налаштування"
+msgstr "Налаштування бесіди"
 
 #: src/views/chat_settings_dialog.blp:11
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "General"
 msgid "General"
 msgstr "Загальні"
 
 #: src/views/chat_settings_dialog.blp:14
-#, fuzzy
-#| msgid "Set Title"
 msgid "Chat Title"
-msgstr "Вказати назву"
+msgstr "Назва бесіди"
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
@@ -104,7 +98,7 @@ msgstr "Моделі"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
-msgstr ""
+msgstr "Джерело моделей"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -120,7 +114,7 @@ msgstr "Очистити"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr "Це видалить усі розмови з бази даних."
+msgstr "Буде видалено всі розмови з бази даних."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
@@ -128,23 +122,20 @@ msgstr "Імена"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr "Ім'я бота"
+msgstr "Ім’я бота"
 
 #: src/views/preferences_window.blp:53
 msgid "User name"
-msgstr "Ім'я користувача"
+msgstr "Ім’я користувача"
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "Налаштування відсутні"
+msgstr "Немає локальних моделей"
 
 #: src/views/preferences_window.py:91
-#, fuzzy, python-format
-#| msgid "Downloading model %s"
+#, python-format
 msgid "Error loading marketplace: %s"
-msgstr "Завантаження моделі %s"
+msgstr "Помилка завантаження джерела моделей: %s"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
@@ -179,7 +170,7 @@ msgstr "Зберегти"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr "Ім'я файлу"
+msgstr "Назва файлу"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
@@ -287,10 +278,8 @@ msgid "Sorry, I don't know what to say."
 msgstr "Вибачте, я не знаю, що сказати."
 
 #: src/views/window.py:388
-#, fuzzy
-#| msgid "API Error"
 msgid "Error: "
-msgstr "Помилка API"
+msgstr "Помилка: "
 
 #: src/views/window.py:391
 msgid "Generating response"
