@@ -4,7 +4,7 @@
 # Bavarder, 2023.
 #
 # 0xMRTT <0xmrtt@tuta.io>, 2023.
-# 0xMRTT <0xmrtt@proton.me>, 2023, 2024.
+# 0xMRTT <0xmrtt@proton.me>, 2023, 2024, 2026.
 # muznyo <codeberg.vqtek@simplelogin.com>, 2023.
 # rene-coty <irenee.thirion@e.email>, 2023.
 # jibecfed <jean-baptiste@holcroft.fr>, 2023.
@@ -14,16 +14,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2026-04-06 15:19+0000\n"
-"Last-Translator: 0xMRTT <0xMRTT@tuta.io>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/bavarder/bavarder/"
-"fr/>\n"
+"PO-Revision-Date: 2026-04-10 19:21+0000\n"
+"Last-Translator: 0xMRTT <0xmrtt@proton.me>\n"
+"Language-Team: French <https://translate.codeberg.org/projects/bavarder/"
+"bavarder/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.17-dev\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -61,9 +61,6 @@ msgid "Chat Settings"
 msgstr "Paramètres de la discussion"
 
 #: src/views/chat_settings_dialog.blp:11
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "General"
 msgid "General"
 msgstr "Général"
 
