@@ -7,14 +7,14 @@
 # Weblate <noreply-mt-weblate@weblate.org>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # Priit Jõerüüt <jrtcdbrg@users.noreply.translate.codeberg.org>, 2024.
+# Priit Jõerüüt <jrtcdbrg@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2024-08-06 00:18+0000\n"
-"Last-Translator: Priit Jõerüüt "
-"<jrtcdbrg@users.noreply.translate.codeberg.org>\n"
+"PO-Revision-Date: 2026-04-11 07:57+0000\n"
+"Last-Translator: Priit Jõerüüt <jrtcdbrg@noreply.codeberg.org>\n"
 "Language-Team: Estonian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/et/>\n"
 "Language: et\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -32,6 +32,8 @@ msgstr "Bavarder"
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
+"Ühtegi mudelit pole saadaval. Palun laadi alla mõni mudel või näita "
+"asukohta, kus olemasolev asub."
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -54,20 +56,16 @@ msgid "Translate"
 msgstr "Tõlgi"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
-#, fuzzy
-#| msgid "Open settings"
 msgid "Chat Settings"
-msgstr "Ava seadistused"
+msgstr "Vestluse seadistused"
 
 #: src/views/chat_settings_dialog.blp:11
 msgid "General"
-msgstr ""
+msgstr "Üldseadistused"
 
 #: src/views/chat_settings_dialog.blp:14
-#, fuzzy
-#| msgid "Edit Title"
 msgid "Chat Title"
-msgstr "Muuda pealkirja"
+msgstr "Vestluse pealkiri"
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
@@ -97,7 +95,7 @@ msgstr "Mudelid"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
-msgstr ""
+msgstr "LLM-ide mudelite turg"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -128,16 +126,13 @@ msgid "User name"
 msgstr "Kasutajanimi"
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "Eelistusi pole saadaval"
+msgstr "Ühtegi kohalikku mudelit pole saadaval"
 
 #: src/views/preferences_window.py:91
-#, fuzzy, python-format
-#| msgid "Downloading model %s"
+#, python-format
 msgid "Error loading marketplace: %s"
-msgstr "Laadime %s mudelit alla"
+msgstr "Viga mudelite turu laadimisel: %s"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
@@ -282,10 +277,8 @@ msgid "Sorry, I don't know what to say."
 msgstr "Vabandust, ma kohe ei tea mida nüüd öelda."
 
 #: src/views/window.py:388
-#, fuzzy
-#| msgid "API Error"
 msgid "Error: "
-msgstr "API viga"
+msgstr "Viga: "
 
 #: src/views/window.py:391
 msgid "Generating response"
