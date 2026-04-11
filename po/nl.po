@@ -5,13 +5,14 @@
 #
 # Vistaus <vistausss@fastmail.com>, 2023, 2024.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Vistaus <vistaus@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2024-02-26 02:56+0000\n"
-"Last-Translator: Vistaus <vistausss@fastmail.com>\n"
+"PO-Revision-Date: 2026-04-11 07:57+0000\n"
+"Last-Translator: Vistaus <vistaus@noreply.codeberg.org>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
 "Language: nl\n"
@@ -19,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -29,6 +30,7 @@ msgstr "Bavarder"
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
+"Er is geen model beschikbaar. Download een model of kies een modellocatie."
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -51,10 +53,8 @@ msgid "Translate"
 msgstr "Vertalen"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
-#, fuzzy
-#| msgid "Open settings"
 msgid "Chat Settings"
-msgstr "Voorkeuren openen"
+msgstr "Gespreksvoorkeuren"
 
 #: src/views/chat_settings_dialog.blp:11
 #, fuzzy
