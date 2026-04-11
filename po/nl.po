@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2026-04-11 07:57+0000\n"
+"PO-Revision-Date: 2026-04-11 20:57+0000\n"
 "Last-Translator: Vistaus <vistaus@noreply.codeberg.org>\n"
 "Language-Team: Dutch <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/nl/>\n"
@@ -57,17 +57,12 @@ msgid "Chat Settings"
 msgstr "Gespreksvoorkeuren"
 
 #: src/views/chat_settings_dialog.blp:11
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "General"
 msgid "General"
 msgstr "Algemeen"
 
 #: src/views/chat_settings_dialog.blp:14
-#, fuzzy
-#| msgid "Set Title"
 msgid "Chat Title"
-msgstr "Titel instellen"
+msgstr "Gesprekstitel"
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
@@ -97,7 +92,7 @@ msgstr "Modellen"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
-msgstr ""
+msgstr "Modelmarkt"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -128,16 +123,13 @@ msgid "User name"
 msgstr "Gebruikersnaam"
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "Er zĳn geen voorkeuren beschikbaar"
+msgstr "Er zĳn geen lokale modellen beschikbaar"
 
 #: src/views/preferences_window.py:91
-#, fuzzy, python-format
-#| msgid "Downloading model %s"
+#, python-format
 msgid "Error loading marketplace: %s"
-msgstr "Bezig met ophalen van ‘%s’…"
+msgstr "De markt kan niet worden geladen: %s"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
@@ -282,10 +274,8 @@ msgid "Sorry, I don't know what to say."
 msgstr "Ik heb hier geen antwoord op - sorry."
 
 #: src/views/window.py:388
-#, fuzzy
-#| msgid "API Error"
 msgid "Error: "
-msgstr "Api-foutmelding"
+msgstr "Foutmelding: "
 
 #: src/views/window.py:391
 msgid "Generating response"
