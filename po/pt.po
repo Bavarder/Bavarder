@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2026-04-13 20:57+0000\n"
+"PO-Revision-Date: 2026-04-14 18:57+0000\n"
 "Last-Translator: N4ta <codeberg@n4ta.anonaddy.me>\n"
 "Language-Team: Portuguese <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pt/>\n"
@@ -24,11 +24,13 @@ msgstr ""
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
-msgstr ""
+msgstr "Bavarder"
 
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
+"Nenhum modelo disponível, por favor descarregue um modelo ou indique um "
+"caminho para ele."
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -52,15 +54,15 @@ msgstr "Traduzir"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
 msgid "Chat Settings"
-msgstr ""
+msgstr "Configurações do Chat"
 
 #: src/views/chat_settings_dialog.blp:11
 msgid "General"
-msgstr ""
+msgstr "Geral"
 
 #: src/views/chat_settings_dialog.blp:14
 msgid "Chat Title"
-msgstr ""
+msgstr "Título da Conversa"
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
@@ -90,7 +92,7 @@ msgstr "Modelos"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
-msgstr ""
+msgstr "Mercado de Modelos"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -122,12 +124,12 @@ msgstr "Nome de Utilizador"
 
 #: src/views/preferences_window.py:55
 msgid "No local models available"
-msgstr ""
+msgstr "Sem modelos locais disponíveis"
 
 #: src/views/preferences_window.py:91
 #, python-format
 msgid "Error loading marketplace: %s"
-msgstr ""
+msgstr "Erro ao carregar mercado: %s"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
@@ -273,134 +275,140 @@ msgstr "Desculpe, não sei o que dizer."
 
 #: src/views/window.py:388
 msgid "Error: "
-msgstr ""
+msgstr "Erro: "
 
 #: src/views/window.py:391
 msgid "Generating response"
-msgstr ""
+msgstr "Gerando resposta"
 
 #: src/views/window.py:433
 msgid "human"
-msgstr ""
+msgstr "humano"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
-msgstr ""
+msgstr "Feito"
 
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "Baixar Modelo"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "Baixando modelo %s"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "Modelo %s baixado!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: src/widgets/item.blp:117
 msgid "Remove"
-msgstr ""
+msgstr "Remover"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
-msgstr ""
+msgstr "Incapaz de salvar a imagem"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "Imagem salva"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "Nenhuma imagem para salvar"
 
 #: src/widgets/item.py:235
 msgid "Save message"
-msgstr ""
+msgstr "Salvar mensagem"
 
 #: src/widgets/item.py:251
 msgid "Message copied"
-msgstr ""
+msgstr "Mensagem copiada"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "Apagar modelo"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "Máximo de Tokens"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "O número máximo de tokens para gerar."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr ""
+msgstr "Temperatura"
 
 #: src/widgets/model_item.blp:31
 msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"A temperatura do modelo. Valores maiores aumentam a criatividade, mas "
+"diminuem a factualidade."
 
 #: src/widgets/model_item.blp:45
 msgid "Top P"
-msgstr ""
+msgstr "Top P"
 
 #: src/widgets/model_item.blp:46
 msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"Amostragem aleatória em cada etapa de geração a partir dos tokens mais "
+"prováveis cujas probabilidades somam top_p."
 
 #: src/widgets/model_item.blp:60
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:61
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
+"Amostra aleatoriamente dos top_k tokens mais prováveis em cada etapa de "
+"geração. Defina isso como 1 para decodificação gananciosa."
 
 #: src/widgets/model_item.py:49
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "Modelo %s deletado!"
 
 #: src/widgets/thread_item.blp:23 src/widgets/thread_item.py:75
 #: src/widgets/thread_item.py:80
 msgid "Edit Title"
-msgstr ""
+msgstr "Editar Título"
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
-msgstr ""
+msgstr "Estrela"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "Título Editado"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr ""
+msgstr "Apagar Tópico"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr ""
+msgstr "Tem a certeza que pretende apagar esta conversa?"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Tópico apagado"
