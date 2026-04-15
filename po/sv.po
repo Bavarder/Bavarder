@@ -6,13 +6,14 @@
 # 0xMRTT <0xMRTT@tuta.io>, 2026.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2026.
+# bittin <bittin@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2026-04-15 12:57+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Last-Translator: bittin <bittin@noreply.codeberg.org>\n"
 "Language-Team: Swedish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/sv/>\n"
 "Language: sv\n"
@@ -30,10 +31,13 @@ msgstr "Bavarder"
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
+"Ingen modell tillgänglig. Ladda ner en modell eller ange en modellsökväg."
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr "skøldis <jellybean@turtle.garden>"
+msgstr ""
+"skøldis <jellybean@turtle.garden>\n"
+"Luna Jernberg <lunajernberg@gnome.org>"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
@@ -61,7 +65,7 @@ msgstr "Allmänt"
 
 #: src/views/chat_settings_dialog.blp:14
 msgid "Chat Title"
-msgstr ""
+msgstr "Chatt titel"
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
@@ -69,7 +73,7 @@ msgstr "Systeminstruktion"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Exportera tråd?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
@@ -91,7 +95,7 @@ msgstr "Modeller"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
-msgstr ""
+msgstr "Modellmarknadsplats"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -111,7 +115,7 @@ msgstr "Det här kommer att rensa alla trådar från databasen."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr ""
+msgstr "Namn"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
@@ -123,12 +127,12 @@ msgstr "Användarnamn"
 
 #: src/views/preferences_window.py:55
 msgid "No local models available"
-msgstr ""
+msgstr "Inga lokala modeller tillgängliga"
 
 #: src/views/preferences_window.py:91
 #, python-format
 msgid "Error loading marketplace: %s"
-msgstr ""
+msgstr "Fel vid laddning av marknadsplats: %s"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
@@ -164,7 +168,7 @@ msgstr "Spara"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr "Filnamn:"
+msgstr "Filnamn"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
@@ -307,7 +311,7 @@ msgstr "Kopiera"
 
 #: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
-msgstr "Edit"
+msgstr "Redigera"
 
 #: src/widgets/item.blp:117
 msgid "Remove"
@@ -339,7 +343,7 @@ msgstr "Ta bort modellen"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr "Max Tokens"
+msgstr "Max antal tokens"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
@@ -365,6 +369,8 @@ msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"Ta slumpmässigt urval vid varje generationssteg från de mest sannolika "
+"tokens vars sannolikheter summeras når upp till topp_p."
 
 #: src/widgets/model_item.blp:60
 msgid "Top K"
@@ -375,6 +381,8 @@ msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
+"Slumpmässigt sampla från de topp_k mest sannolika tokensen vid varje "
+"generationssteg. Sätt detta till 1 för girig avkodning."
 
 #: src/widgets/model_item.py:49
 #, python-format
