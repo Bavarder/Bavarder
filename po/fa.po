@@ -4,24 +4,28 @@
 # Bavarder, 2026.
 #
 # 0xMRTT <0xMRTT@tuta.io>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-15 12:57+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
+"Language-Team: Persian <https://translate.codeberg.org/projects/bavarder/"
+"bavarder/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
-msgstr ""
+msgstr "باوارده"
 
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
@@ -30,22 +34,24 @@ msgstr ""
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr ""
+"مترجم: علی قنواتیان (Translated by Ali Ghanavatia). با تشکر از ابوالفضل "
+"امیدی و مسلم بهزادی (Special thanks to Abolfazl Omidi and Moslem Behzadi)"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr ""
+msgstr "گپی با هوش مصنوعی"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "کپیرایت © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "بسته بندی"
 
 #: src/views/about_window.py:57
 msgid "Translate"
-msgstr ""
+msgstr "ترجمه"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
 msgid "Chat Settings"
@@ -53,7 +59,7 @@ msgstr ""
 
 #: src/views/chat_settings_dialog.blp:11
 msgid "General"
-msgstr ""
+msgstr "عمومی"
 
 #: src/views/chat_settings_dialog.blp:14
 msgid "Chat Title"
@@ -61,29 +67,29 @@ msgstr ""
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
-msgstr ""
+msgstr "پرامپت سیستم"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "مضوع را صادرات کنیم؟"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
-msgstr ""
+msgstr "بستن"
 
 #: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
-msgstr ""
+msgstr "صادر"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
-msgstr ""
+msgstr "ترجیحات"
 
 #: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
 #: src/views/preferences_window.py:46 src/views/window.py:297
 msgid "Models"
-msgstr ""
+msgstr "مدل ها"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
@@ -91,31 +97,31 @@ msgstr ""
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
-msgstr ""
+msgstr "گوناگون"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
-msgstr ""
+msgstr "پاک‌سازی همه ی موضوعات"
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
-msgstr ""
+msgstr "پاک کردن"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
-msgstr ""
+msgstr "این همه ی موضوع ها را از پایگاه داده پاکسازی می کند."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr ""
+msgstr "نام"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr ""
+msgstr "نام بات"
 
 #: src/views/preferences_window.blp:53
 msgid "User name"
-msgstr ""
+msgstr "نام کاربری"
 
 #: src/views/preferences_window.py:55
 msgid "No local models available"
@@ -128,99 +134,100 @@ msgstr ""
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
-msgstr ""
+msgstr "حذف تمام موضوعات"
 
 #: src/views/preferences_window.py:102
 msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr ""
+"آیا مطمئنید که می‌خواهید همه ی این موضوعات را حذف کنید؟ این نمی تواند لغو شود!"
 
 #: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
 #: src/views/window.py:223 src/widgets/item.py:240
 #: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
 msgid "Cancel"
-msgstr ""
+msgstr "لغو"
 
 #: src/views/preferences_window.py:107 src/views/window.py:224
 #: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
-msgstr ""
+msgstr "حذف"
 
 #: src/views/preferences_window.py:122 src/views/window.py:249
 msgid "All chats cleared!"
-msgstr ""
+msgstr "همه ی چت ها پاک شد!"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
-msgstr ""
+msgstr "ول کردن"
 
 #: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
-msgstr ""
+msgstr "ذخیره"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr ""
+msgstr "نام فایل"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
-msgstr ""
+msgstr "موقعیت مکانی"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
-msgstr ""
+msgstr "صادرات این موضوع در این دایرکتوری دخیره می شود."
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr ""
+msgstr "یک دایرکتوری انتخاب کنید"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
-msgstr ""
+msgstr "ناقابل به ذخیره موضوع بودیم"
 
 #: src/views/save_dialog.py:32
 msgid "Thread successfully saved!"
-msgstr ""
+msgstr "موضوع به موفقیت ذخیره شد!"
 
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
-msgstr ""
+msgstr "چت جدید"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
-msgstr ""
+msgstr "منو اصلی"
 
 #: src/views/window.blp:56
 msgid "No Chats"
-msgstr ""
+msgstr "بدون هیچ چتی"
 
 #: src/views/window.blp:63
 msgid "Get started by creating a new chat or selecting one from the sidebar"
-msgstr ""
+msgstr "شروع کنیذ با شروع کردن چت جدید یا انتخاب یکی در نوار کناری"
 
 #: src/views/window.blp:96
 msgid "Message"
-msgstr ""
+msgstr "پیام"
 
 #: src/views/window.blp:102
 msgid "Chat"
-msgstr ""
+msgstr "گپ"
 
 #: src/views/window.blp:143
 msgid "No Messages"
-msgstr ""
+msgstr "بدون پیام"
 
 #: src/views/window.blp:144
 msgid "Send first message to get started"
-msgstr ""
+msgstr "اولین پیام را بفرستید تا شروع کنید"
 
 #: src/views/window.blp:149
 msgid "No Internet"
-msgstr ""
+msgstr "بدون اینترنت"
 
 #: src/views/window.blp:156
 msgid "Get started by creating a new chat"
-msgstr ""
+msgstr "شروع کنید با ساختن چت جدید"
 
 #: src/views/window.blp:246
 msgid "Ask"
@@ -228,41 +235,43 @@ msgstr ""
 
 #: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "کلیدهای میانبر"
 
 #: src/views/window.blp:296
 msgid "About Bavarder"
-msgstr ""
+msgstr "درباره"
 
 #: src/views/window.py:183
 msgid "New chat"
-msgstr ""
+msgstr "چت جدید"
 
 #: src/views/window.py:218
 msgid "Delete All Chats"
-msgstr ""
+msgstr "حذف همه گفتگوها"
 
 #: src/views/window.py:219
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
 msgstr ""
+"آیا مطمئنید که می‌خواهید این فرسته پیش نویس شده را حذف کنید؟ این نمی تواند "
+"لغو شود!"
 
 #: src/views/window.py:235 src/views/window.py:251
 msgid "Nothing to clear!"
-msgstr ""
+msgstr "هیچی برای پاکسازی نیست!"
 
 #: src/views/window.py:261
 msgid "Nothing to export!"
-msgstr ""
+msgstr "هیچی برای صادر نیست!"
 
 #: src/views/window.py:307
 msgid "Clear all"
-msgstr ""
+msgstr "پاک‌سازی همه"
 
 #: src/views/window.py:368
 msgid "Sorry, I don't know what to say."
-msgstr ""
+msgstr "متاسفم نمی دانم چه بگویم."
 
 #: src/views/window.py:388
 msgid "Error: "
@@ -270,7 +279,7 @@ msgstr ""
 
 #: src/views/window.py:391
 msgid "Generating response"
-msgstr ""
+msgstr "در حال ایجاد پاسخ"
 
 #: src/views/window.py:433
 msgid "human"
@@ -278,75 +287,76 @@ msgstr ""
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
-msgstr ""
+msgstr "تمام"
 
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "دانلود مدل"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "در حال دانلود مدل %s"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "مدل %s دانلود شد!"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr ""
+msgstr "رونوشت"
 
 #: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
-msgstr ""
+msgstr "ویرایش"
 
 #: src/widgets/item.blp:117
 msgid "Remove"
-msgstr ""
+msgstr "حذف"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
-msgstr ""
+msgstr "ذخیره ی تصویر ناموفق بود"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "تصویر ذخیره شد"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "هیچ تصویری برای ذخیره نیست"
 
 #: src/widgets/item.py:235
 msgid "Save message"
-msgstr ""
+msgstr "ذخیره پیام"
 
 #: src/widgets/item.py:251
 msgid "Message copied"
-msgstr ""
+msgstr "پیام کپی شد"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "پاکسازی مدل"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr ""
+msgstr "محدودیت توکن"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
-msgstr ""
+msgstr "حداکثر تعداد توکن ها برای تولید."
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr ""
+msgstr "دما"
 
 #: src/widgets/model_item.blp:31
 msgid ""
 "The model temperature. Larger values increase creativity but decrease "
 "factuality."
 msgstr ""
+"دمای مدل. ارزش های بزرگتر خلاقیت را افزایش می دهد اما دستی را کاهش می دهد."
 
 #: src/widgets/model_item.blp:45
 msgid "Top P"
@@ -357,43 +367,47 @@ msgid ""
 "Randomly sample at each generation step from the top most likely tokens "
 "whose probabilities add up to top_p."
 msgstr ""
+"به طور تصادفی در هر مرحله تولید از توکن های محتمل برتر که احتمالات آنها به "
+"top_p می رسد، نمونه برداری کنید."
 
 #: src/widgets/model_item.blp:60
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:61
 msgid ""
 "Randomly sample from the top_k most likely tokens at each generation step. "
 "Set this to 1 for greedy decoding."
 msgstr ""
+"نمونه‌برداری تصادفی از top_k توکن‌های محتمل‌تر در هر مرحله تولید. این را برای "
+"رمزگشایی حریصانه روی 1 تنظیم کنید."
 
 #: src/widgets/model_item.py:49
 #, python-format
 msgid "Model %s deleted!"
-msgstr ""
+msgstr "مدل %s پاک شد!"
 
 #: src/widgets/thread_item.blp:23 src/widgets/thread_item.py:75
 #: src/widgets/thread_item.py:80
 msgid "Edit Title"
-msgstr ""
+msgstr "تغییر عنوان"
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
-msgstr ""
+msgstr "ستاره دار کن"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "به عنوان تغییر ایجاد شد"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr ""
+msgstr "پاکسازی موضوع"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr ""
+msgstr "آیا مطمئن هستید که می خواهید این آهنگ را حذف کنید؟"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr ""
+msgstr "موضوع پاکسازی شد"
