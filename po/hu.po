@@ -5,13 +5,15 @@
 #
 # 0xMRTT <0xMRTT@tuta.io>, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2026.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2026-04-15 12:57+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Hungarian <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/hu/>\n"
 "Language: hu\n"
@@ -24,7 +26,7 @@ msgstr ""
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
 msgid "Bavarder"
-msgstr ""
+msgstr "Bavarder"
 
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
@@ -33,30 +35,32 @@ msgstr ""
 #: src/views/about_window.py:12
 msgid "translator-credits"
 msgstr ""
+"Somogyvári Róbert <cr04ch at gmail>, 2008\n"
+"Gyuris Gellért <jobel at ujevangelizacio.hu>, 2018, 2019, 2020, 2021, 2023"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr ""
+msgstr "Csevegés a mesterséges intelligenciával"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
-msgstr ""
+msgstr "Szerzői jog © 2023 0xMRTT"
 
 #: src/views/about_window.py:51
 msgid "Packaging"
-msgstr ""
+msgstr "Csomagolás"
 
 #: src/views/about_window.py:57
 msgid "Translate"
-msgstr ""
+msgstr "Fordítás"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
 msgid "Chat Settings"
-msgstr ""
+msgstr "Csevegés beállításai"
 
 #: src/views/chat_settings_dialog.blp:11
 msgid "General"
-msgstr ""
+msgstr "Továbbiak"
 
 #: src/views/chat_settings_dialog.blp:14
 msgid "Chat Title"
@@ -64,29 +68,29 @@ msgstr ""
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
-msgstr ""
+msgstr "Rendszer prompt"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
-msgstr ""
+msgstr "Téma exportálása?"
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
-msgstr ""
+msgstr "Bezárás"
 
 #: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
-msgstr ""
+msgstr "Export"
 
 #: src/views/preferences_window.blp:5 src/views/preferences_window.blp:24
 #: src/views/window.blp:286
 msgid "Preferences"
-msgstr ""
+msgstr "Beállítások"
 
 #: src/views/preferences_window.blp:11 src/views/preferences_window.blp:15
 #: src/views/preferences_window.py:46 src/views/window.py:297
 msgid "Models"
-msgstr ""
+msgstr "Modellek"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
@@ -94,15 +98,15 @@ msgstr ""
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
-msgstr ""
+msgstr "Vegyes"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
-msgstr ""
+msgstr "Minden téma törlése"
 
 #: src/views/preferences_window.blp:35
 msgid "Clear"
-msgstr ""
+msgstr "Kiürít"
 
 #: src/views/preferences_window.blp:36
 msgid "This will clear all threads from the database."
@@ -110,15 +114,15 @@ msgstr ""
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr ""
+msgstr "Név"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr ""
+msgstr "Név szerint"
 
 #: src/views/preferences_window.blp:53
 msgid "User name"
-msgstr ""
+msgstr "Felhasználói név"
 
 #: src/views/preferences_window.py:55
 msgid "No local models available"
@@ -131,34 +135,35 @@ msgstr ""
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
-msgstr ""
+msgstr "Minden téma törlése"
 
 #: src/views/preferences_window.py:102
 msgid "Are you sure you want to delete all threads? This can't be undone!"
 msgstr ""
+"Biztos, hogy törölni szeretnéd az összes témát? Ezt nem lehet visszavonni!"
 
 #: src/views/preferences_window.py:106 src/views/save_dialog.blp:7
 #: src/views/window.py:223 src/widgets/item.py:240
 #: src/widgets/thread_item.py:86 src/widgets/thread_item.py:126
 msgid "Cancel"
-msgstr ""
+msgstr "Mégsem"
 
 #: src/views/preferences_window.py:107 src/views/window.py:224
 #: src/widgets/thread_item.blp:28 src/widgets/thread_item.py:127
 msgid "Delete"
-msgstr ""
+msgstr "Törlés"
 
 #: src/views/preferences_window.py:122 src/views/window.py:249
 msgid "All chats cleared!"
-msgstr ""
+msgstr "Minden chat törölve!"
 
 #: src/views/save_dialog.blp:8
 msgid "Discard"
-msgstr ""
+msgstr "Elvetés"
 
 #: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
-msgstr ""
+msgstr "Mentés"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
@@ -166,7 +171,7 @@ msgstr "Fájlnév:"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
-msgstr ""
+msgstr "Tartózkodási hely"
 
 #: src/views/save_dialog.blp:56
 msgid "The export of the Thread will be saved in this directory."
@@ -174,7 +179,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:65
 msgid "Choose a directory"
-msgstr ""
+msgstr "Válasszon egy könyvtárat"
 
 #: src/views/save_dialog.py:30
 msgid "Unable to save the Thread"
@@ -187,11 +192,11 @@ msgstr ""
 #: src/views/window.blp:33 src/views/window.blp:78 src/views/window.blp:79
 #: src/views/window.blp:171 src/views/window.blp:172
 msgid "New Chat"
-msgstr ""
+msgstr "Új beszélgetés"
 
 #: src/views/window.blp:41
 msgid "Main Menu"
-msgstr ""
+msgstr "Főmenü"
 
 #: src/views/window.blp:56
 msgid "No Chats"
@@ -203,15 +208,15 @@ msgstr ""
 
 #: src/views/window.blp:96
 msgid "Message"
-msgstr ""
+msgstr "Üzenet"
 
 #: src/views/window.blp:102
 msgid "Chat"
-msgstr ""
+msgstr "Chat"
 
 #: src/views/window.blp:143
 msgid "No Messages"
-msgstr ""
+msgstr "Üzenetek"
 
 #: src/views/window.blp:144
 msgid "Send first message to get started"
@@ -231,25 +236,26 @@ msgstr "Kérdezze meg a"
 
 #: src/views/window.blp:291
 msgid "Keyboard Shortcuts"
-msgstr ""
+msgstr "Gyorsbillentyűk"
 
 #: src/views/window.blp:296
 msgid "About Bavarder"
-msgstr ""
+msgstr "Névjegy"
 
 #: src/views/window.py:183
 msgid "New chat"
-msgstr ""
+msgstr "Új csevegés"
 
 #: src/views/window.py:218
 msgid "Delete All Chats"
-msgstr ""
+msgstr "Minden beszélgetés törlése"
 
 #: src/views/window.py:219
 msgid ""
 "Are you sure you want to delete all chats in this thread? This can't be "
 "undone!"
 msgstr ""
+"Biztos, hogy törölni szeretnéd az összes témát? Ezt nem lehet visszavonni!"
 
 #: src/views/window.py:235 src/views/window.py:251
 msgid "Nothing to clear!"
@@ -281,11 +287,11 @@ msgstr "Ember"
 
 #: src/widgets/code_block.py:63 src/widgets/code_block.py:82
 msgid "Done"
-msgstr ""
+msgstr "Kész"
 
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "Modulok letöltése"
 
 #: src/widgets/download_row.py:29
 #, python-format
@@ -299,15 +305,15 @@ msgstr ""
 
 #: src/widgets/item.blp:100
 msgid "Copy"
-msgstr ""
+msgstr "Másolás"
 
 #: src/widgets/item.blp:105 src/widgets/thread_item.py:87
 msgid "Edit"
-msgstr ""
+msgstr "Szerkesztés"
 
 #: src/widgets/item.blp:117
 msgid "Remove"
-msgstr ""
+msgstr "Eltávolítás"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
@@ -331,7 +337,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "Törlési mód"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
@@ -343,7 +349,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:30
 msgid "Temperature"
-msgstr ""
+msgstr "Hőmérséklet"
 
 #: src/widgets/model_item.blp:31
 msgid ""
@@ -363,7 +369,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:60
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:61
 msgid ""
@@ -383,7 +389,7 @@ msgstr ""
 
 #: src/widgets/thread_item.blp:33
 msgid "Star"
-msgstr ""
+msgstr "Csillag"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
@@ -395,8 +401,8 @@ msgstr ""
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr ""
+msgstr "Biztos, hogy törölni szeretnéd?"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
-msgstr ""
+msgstr "Thread Deleted"
