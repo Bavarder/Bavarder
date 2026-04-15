@@ -5,15 +5,16 @@
 #
 # xosecalvo <xosecalvo@gmail.com>, 2023.
 # SomeTr <SomeTr@users.noreply.translate.codeberg.org>, 2023.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2025-03-08 16:21+0000\n"
-"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
+"PO-Revision-Date: 2026-04-15 12:57+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Galician <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/gl/>\n"
 "Language: gl\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -135,7 +136,7 @@ msgstr "Nome"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr ""
+msgstr "Por nome"
 
 #: src/views/preferences_window.blp:53
 #, fuzzy
@@ -276,7 +277,7 @@ msgstr "Nova Conversa"
 
 #: src/views/window.py:218
 msgid "Delete All Chats"
-msgstr ""
+msgstr "Eliminar todos os chats"
 
 #: src/views/window.py:219
 #, fuzzy
@@ -325,17 +326,17 @@ msgstr "Feito"
 
 #: src/widgets/download_row.blp:11 src/widgets/marketplace_item.blp:11
 msgid "Download Model"
-msgstr ""
+msgstr "Descargar Modelo"
 
 #: src/widgets/download_row.py:29
 #, python-format
 msgid "Downloading model %s"
-msgstr ""
+msgstr "A descargar Modelo"
 
 #: src/widgets/download_row.py:45
 #, python-format
 msgid "Model %s downloaded!"
-msgstr ""
+msgstr "Descarga de Modelo"
 
 #: src/widgets/item.blp:100
 msgid "Copy"
@@ -351,7 +352,7 @@ msgstr "Retirar"
 
 #: src/widgets/item.py:219
 msgid "Failed to save the image"
-msgstr ""
+msgstr "Non se comprimeu a imaxe"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
@@ -375,7 +376,7 @@ msgstr "Mensaxe"
 
 #: src/widgets/model_item.blp:10
 msgid "Delete Model"
-msgstr ""
+msgstr "Modo eliminar"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
@@ -407,7 +408,7 @@ msgstr ""
 
 #: src/widgets/model_item.blp:60
 msgid "Top K"
-msgstr ""
+msgstr "Top K"
 
 #: src/widgets/model_item.blp:61
 msgid ""
