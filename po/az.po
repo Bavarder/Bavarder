@@ -5,14 +5,14 @@
 #
 # thepoladov13 <thepoladov@protonmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024, 2026.
 # Weblate <noreply-mt-weblate@weblate.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2024-08-08 16:18+0000\n"
+"PO-Revision-Date: 2026-04-15 12:57+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 "Language-Team: Azerbaijani <https://translate.codeberg.org/projects/bavarder/"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -84,7 +84,7 @@ msgstr ""
 
 #: src/views/export_dialog.blp:53
 msgid "Close"
-msgstr ""
+msgstr "Bağla"
 
 #: src/views/export_dialog.blp:54 src/views/window.py:312
 msgid "Export"
@@ -134,7 +134,7 @@ msgstr "Ad"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
-msgstr ""
+msgstr "Ada görə"
 
 #: src/views/preferences_window.blp:53
 msgid "User name"
@@ -184,7 +184,7 @@ msgstr "Saxla"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
-msgstr ""
+msgstr "Fayl adı"
 
 #: src/views/save_dialog.blp:39
 msgid "Location"
@@ -243,7 +243,7 @@ msgstr ""
 
 #: src/views/window.blp:149
 msgid "No Internet"
-msgstr ""
+msgstr "İnternet"
 
 #: src/views/window.blp:156
 msgid "Get started by creating a new chat"
@@ -424,11 +424,11 @@ msgstr ""
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
-msgstr ""
+msgstr "Qeydi silin"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr ""
+msgstr "Bu treki silmək istədiyinizə əminsiniz?"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
