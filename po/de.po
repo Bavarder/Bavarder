@@ -11,13 +11,14 @@
 # Hartmut Goebel <h.goebel@crazy-compilers.com>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # Dirk <Dirk@users.noreply.translate.codeberg.org>, 2024.
+# Cheesus42 <cheesus42@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2024-03-12 22:53+0000\n"
-"Last-Translator: Dirk <Dirk@users.noreply.translate.codeberg.org>\n"
+"PO-Revision-Date: 2026-04-30 07:57+0000\n"
+"Last-Translator: Cheesus42 <cheesus42@noreply.codeberg.org>\n"
 "Language-Team: German <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/de/>\n"
 "Language: de\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4.2\n"
+"X-Generator: Weblate 5.17\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -35,6 +36,7 @@ msgstr "Bavarder"
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
+"Kein Model verfügbar. Bitte lade ein Model herunter oder gebe einen Pfad an."
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -57,23 +59,16 @@ msgid "Translate"
 msgstr "Übersetzt"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
-#, fuzzy
-#| msgid "Open settings"
 msgid "Chat Settings"
-msgstr "Einstellungen öffnen"
+msgstr "Chateinstellungen öffnen"
 
 #: src/views/chat_settings_dialog.blp:11
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "General"
 msgid "General"
 msgstr "Allgemein"
 
 #: src/views/chat_settings_dialog.blp:14
-#, fuzzy
-#| msgid "Set Title"
 msgid "Chat Title"
-msgstr "Titel festlegen"
+msgstr "Chattitel"
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
@@ -103,7 +98,7 @@ msgstr "Modelle"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
-msgstr ""
+msgstr "Modelmarktplatz"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -134,16 +129,13 @@ msgid "User name"
 msgstr "Benutzername"
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "Keine Einstellungen verfügbar"
+msgstr "Keine lokalen Modelle verfügbar"
 
 #: src/views/preferences_window.py:91
-#, fuzzy, python-format
-#| msgid "Downloading model %s"
+#, python-format
 msgid "Error loading marketplace: %s"
-msgstr "Modell %s herunterladen"
+msgstr "Fehler beim laden des Marketplace: %s"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
@@ -290,10 +282,8 @@ msgid "Sorry, I don't know what to say."
 msgstr "Entschuldige, ich weiß nicht, was ich sagen soll."
 
 #: src/views/window.py:388
-#, fuzzy
-#| msgid "API Error"
 msgid "Error: "
-msgstr "API Fehler"
+msgstr "Fehler: "
 
 #: src/views/window.py:391
 msgid "Generating response"
