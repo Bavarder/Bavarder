@@ -7,13 +7,14 @@
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # Eryk Michalak <gnu.ewm@protonmail.com>, 2023, 2024.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Danio06 <danio06@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2024-03-09 14:13+0000\n"
-"Last-Translator: Eryk Michalak <gnu.ewm@protonmail.com>\n"
+"PO-Revision-Date: 2026-05-07 23:14+0000\n"
+"Last-Translator: Danio06 <danio06@noreply.codeberg.org>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pl/>\n"
 "Language: pl\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -31,15 +32,15 @@ msgstr "Bavarder"
 
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
-msgstr ""
+msgstr "Brak dostępnego modelu. Pobierz proszę model lub ustaw ścieżkę modelu."
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
-msgstr "ewm"
+msgstr "Autorzy tłumaczenia"
 
 #: src/views/about_window.py:42
 msgid "Chit-Chat with AI"
-msgstr "Pogawędka z SI"
+msgstr "Pogawędka ze sztuczną inteligencją"
 
 #: src/views/about_window.py:44
 msgid "Copyright © 2023 0xMRTT"
@@ -54,27 +55,20 @@ msgid "Translate"
 msgstr "Tłumacz"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
-#, fuzzy
-#| msgid "Open settings"
 msgid "Chat Settings"
-msgstr "Otwórz ustawienia"
+msgstr "Ustawienia czatu"
 
 #: src/views/chat_settings_dialog.blp:11
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "General"
 msgid "General"
-msgstr "Ogólne"
+msgstr "Ogólny"
 
 #: src/views/chat_settings_dialog.blp:14
-#, fuzzy
-#| msgid "Set Title"
 msgid "Chat Title"
-msgstr "Ustaw tytuł"
+msgstr "Tytuł czatu"
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
-msgstr "Zapytanie systemowe"
+msgstr "Polecenie systemowe"
 
 #: src/views/export_dialog.blp:6 src/views/save_dialog.blp:13
 msgid "Export Thread?"
@@ -100,11 +94,11 @@ msgstr "Modele"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
-msgstr ""
+msgstr "Sklep modeli"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
-msgstr "Różne"
+msgstr "Różnorodny"
 
 #: src/views/preferences_window.blp:31
 msgid "Clear all threads"
@@ -120,7 +114,7 @@ msgstr "Wyczyści to wszystkie wątki w bazie danych."
 
 #: src/views/preferences_window.blp:44
 msgid "Names"
-msgstr "Imię"
+msgstr "Nazwy"
 
 #: src/views/preferences_window.blp:47
 msgid "Bot name"
@@ -131,16 +125,13 @@ msgid "User name"
 msgstr "Nazwa użytkownika"
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "Brak dostępnych preferencji"
+msgstr "Brak dostępnych modeli lokalnych"
 
 #: src/views/preferences_window.py:91
-#, fuzzy, python-format
-#| msgid "Downloading model %s"
+#, python-format
 msgid "Error loading marketplace: %s"
-msgstr "Pobieranie modelu %s"
+msgstr "Błąd ładowania sklepu: %s"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
@@ -283,10 +274,8 @@ msgid "Sorry, I don't know what to say."
 msgstr "Przepraszam, nie wiem co powiedzieć."
 
 #: src/views/window.py:388
-#, fuzzy
-#| msgid "API Error"
 msgid "Error: "
-msgstr "Błąd API"
+msgstr "Błąd: "
 
 #: src/views/window.py:391
 msgid "Generating response"
@@ -352,7 +341,7 @@ msgstr "Usuń model"
 
 #: src/widgets/model_item.blp:16
 msgid "Max Tokens"
-msgstr "Maks. ilość tokenów"
+msgstr "Maksymalna ilość tokenów"
 
 #: src/widgets/model_item.blp:17
 msgid "The maximum number of tokens to generate."
@@ -368,7 +357,7 @@ msgid ""
 "factuality."
 msgstr ""
 "Temperatura modelu. Większe wartości zwiększają kreatywność, ale zmniejszają "
-"rzeczowość."
+"dokładność."
 
 #: src/widgets/model_item.blp:45
 msgid "Top P"
@@ -410,7 +399,7 @@ msgstr "Gwiazda"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr "Zedytowano tytuł"
+msgstr "Tytuł został edytowany"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
@@ -418,7 +407,7 @@ msgstr "Usuń wątek"
 
 #: src/widgets/thread_item.py:122
 msgid "Are you sure you want to delete this thread?"
-msgstr "Czy jesteś pewien że chcesz usunąć tą listę?"
+msgstr "Czy jesteś pewien że chcesz usunąć ten wątek?"
 
 #: src/widgets/thread_item.py:143
 msgid "Thread Deleted"
