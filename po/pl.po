@@ -6,15 +6,16 @@
 # ioghjog <michal.d1191@gmail.com>, 2023.
 # 0xMRTT <0xmrtt@proton.me>, 2023.
 # Eryk Michalak <gnu.ewm@protonmail.com>, 2023, 2024.
-# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
+# Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024, 2026.
 # Danio06 <danio06@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2026-05-07 23:14+0000\n"
-"Last-Translator: Danio06 <danio06@noreply.codeberg.org>\n"
+"PO-Revision-Date: 2026-05-08 15:58+0000\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Polish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/pl/>\n"
 "Language: pl\n"
@@ -60,7 +61,7 @@ msgstr "Ustawienia czatu"
 
 #: src/views/chat_settings_dialog.blp:11
 msgid "General"
-msgstr "Ogólny"
+msgstr "Ogólne"
 
 #: src/views/chat_settings_dialog.blp:14
 msgid "Chat Title"
