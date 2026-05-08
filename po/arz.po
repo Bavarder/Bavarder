@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2026-04-29 15:57+0000\n"
+"PO-Revision-Date: 2026-05-08 15:58+0000\n"
 "Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Arabic (Egyptian) <https://translate.codeberg.org/projects/"
 "bavarder/bavarder/arz/>\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=(n == 0) ? 0 : ((n == 1) ? 1 : ((n == 2) ? "
 "2 : ((n % 100 >= 3 && n % 100 <= 10) ? 3 : ((n % 100 >= 11 && n % 100 <= 99) "
 "? 4 : 5))));\n"
-"X-Generator: Weblate 5.17\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -51,7 +51,7 @@ msgstr ""
 
 #: src/views/about_window.py:57
 msgid "Translate"
-msgstr ""
+msgstr "ترجم"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
 msgid "Chat Settings"
@@ -161,7 +161,7 @@ msgstr ""
 
 #: src/views/save_dialog.blp:9 src/widgets/item.blp:110 src/widgets/item.py:241
 msgid "Save"
-msgstr ""
+msgstr "حفظ"
 
 #: src/views/save_dialog.blp:26
 msgid "File Name"
