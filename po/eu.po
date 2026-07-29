@@ -5,14 +5,14 @@
 #
 # Sergio Varela <sergiovg01@outlook.com>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024, 2026.
+# markelarizaga <markelarizaga@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2026-04-15 12:57+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2026-07-29 21:07+0000\n"
+"Last-Translator: markelarizaga <markelarizaga@noreply.codeberg.org>\n"
 "Language-Team: Basque <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/eu/>\n"
 "Language: eu\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.17\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -30,6 +30,8 @@ msgstr "Bavarder"
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
+"Ez dago modelorik eskuragarri. Mesedez deskargatu modelo bat edo ezarri "
+"modeloaren kokapena."
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -62,10 +64,8 @@ msgid "General"
 msgstr "Orokorra"
 
 #: src/views/chat_settings_dialog.blp:14
-#, fuzzy
-#| msgid "Set Title"
 msgid "Chat Title"
-msgstr "Titulua ezarri"
+msgstr "Txataren izenburua"
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
@@ -95,7 +95,7 @@ msgstr "Ereduak"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
-msgstr ""
+msgstr "Modeloen Merkatua"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -126,16 +126,13 @@ msgid "User name"
 msgstr "Erabiltzailearen izena"
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "Ez dago hobespenik"
+msgstr "Ez dago bertako modelorik eskuragarri"
 
 #: src/views/preferences_window.py:91
-#, fuzzy, python-format
-#| msgid "Downloading model %s"
+#, python-format
 msgid "Error loading marketplace: %s"
-msgstr "%s eredua deskargatzen"
+msgstr "%s merkatua kargatzean akatsa"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
@@ -320,24 +317,20 @@ msgid "Remove"
 msgstr "Kendu"
 
 #: src/widgets/item.py:219
-#, fuzzy
-#| msgid "Unable to save the Thread"
 msgid "Failed to save the image"
-msgstr "Ezin da haria gorde"
+msgstr "Arazoa irudia gordetzean"
 
 #: src/widgets/item.py:221
 msgid "Image saved"
-msgstr ""
+msgstr "Irudia gorde da"
 
 #: src/widgets/item.py:231
 msgid "No image to save"
-msgstr ""
+msgstr "Ez dago gordetzeko irudirik"
 
 #: src/widgets/item.py:235
-#, fuzzy
-#| msgid "Message"
 msgid "Save message"
-msgstr "Mezua"
+msgstr "Mezua gorde"
 
 #: src/widgets/item.py:251
 msgid "Message copied"
@@ -407,7 +400,7 @@ msgstr "Izarra"
 
 #: src/widgets/thread_item.py:103
 msgid "Title Edited"
-msgstr ""
+msgstr "Izenburua aldatu da"
 
 #: src/widgets/thread_item.py:121
 msgid "Delete Thread"
