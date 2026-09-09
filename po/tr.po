@@ -12,13 +12,14 @@
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # yakushabb <yakushabb@gmail.com>, 2024.
 # Patkek <patkek@noreply.codeberg.org>, 2026.
+# Weblate <noreply-mt-weblate@weblate.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
 "PO-Revision-Date: 2026-09-10 05:25+0000\n"
-"Last-Translator: Patkek <patkek@noreply.codeberg.org>\n"
+"Last-Translator: Weblate <noreply-mt-weblate@weblate.org>\n"
 "Language-Team: Turkish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/tr/>\n"
 "Language: tr\n"
@@ -284,10 +285,8 @@ msgid "Sorry, I don't know what to say."
 msgstr "Üzgünüm, ne diyeceğimi bilmiyorum."
 
 #: src/views/window.py:388
-#, fuzzy
-#| msgid "API Error"
 msgid "Error: "
-msgstr "API Hatası"
+msgstr "Hata: "
 
 #: src/views/window.py:391
 msgid "Generating response"
