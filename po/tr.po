@@ -11,13 +11,14 @@
 # Sabri Ünal <libreajans@gmail.com>, 2023.
 # Weblate Translation Memory <noreply-mt-weblate-translation-memory@weblate.org>, 2024.
 # yakushabb <yakushabb@gmail.com>, 2024.
+# Patkek <patkek@noreply.codeberg.org>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2024-03-14 01:53+0000\n"
-"Last-Translator: yakushabb <yakushabb@gmail.com>\n"
+"PO-Revision-Date: 2026-09-10 05:25+0000\n"
+"Last-Translator: Patkek <patkek@noreply.codeberg.org>\n"
 "Language-Team: Turkish <https://translate.codeberg.org/projects/bavarder/"
 "bavarder/tr/>\n"
 "Language: tr\n"
@@ -25,7 +26,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4.2\n"
+"X-Generator: Weblate 2026.8.1\n"
 
 #: data/io.github.Bavarder.Bavarder.desktop.in.in:2 src/views/window.blp:6
 #: src/views/window.blp:26 src/views/window.blp:62 src/views/window.blp:155
@@ -35,6 +36,8 @@ msgstr "Bavarder"
 #: src/llm.py:39
 msgid "No model available. Please download a model or set a model path."
 msgstr ""
+"Kullanılabilir model yok. Lütfen bir model indirin veya bir model yolu "
+"belirleyin."
 
 #: src/views/about_window.py:12
 msgid "translator-credits"
@@ -61,23 +64,16 @@ msgid "Translate"
 msgstr "Çevir"
 
 #: src/views/chat_settings_dialog.blp:5 src/views/window.py:302
-#, fuzzy
-#| msgid "Open settings"
 msgid "Chat Settings"
-msgstr "Ayarları aç"
+msgstr "Sohbet Ayarları"
 
 #: src/views/chat_settings_dialog.blp:11
-#, fuzzy
-#| msgctxt "shortcut window"
-#| msgid "General"
 msgid "General"
 msgstr "Genel"
 
 #: src/views/chat_settings_dialog.blp:14
-#, fuzzy
-#| msgid "Set Title"
 msgid "Chat Title"
-msgstr "Başlık Belirle"
+msgstr "Sohbet Başlığı"
 
 #: src/views/chat_settings_dialog.blp:19 src/views/chat_settings_dialog.blp:22
 msgid "System Prompt"
@@ -107,7 +103,7 @@ msgstr "Modeller"
 
 #: src/views/preferences_window.blp:19
 msgid "Model Marketplace"
-msgstr ""
+msgstr "Model Pazarı"
 
 #: src/views/preferences_window.blp:28
 msgid "Miscellaneous"
@@ -138,16 +134,13 @@ msgid "User name"
 msgstr "Kullanıcı adı"
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "Kullanılabilir tercih yok"
+msgstr "Yerel model mevcut değil"
 
 #: src/views/preferences_window.py:91
-#, fuzzy, python-format
-#| msgid "Downloading model %s"
+#, python-format
 msgid "Error loading marketplace: %s"
-msgstr "%s modeli indiriliyor"
+msgstr "Pazar yüklenirken hata oluştu: %s"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
