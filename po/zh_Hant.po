@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-06 14:20+0200\n"
-"PO-Revision-Date: 2026-10-28 04:27+0000\n"
+"PO-Revision-Date: 2026-10-29 21:27+0000\n"
 "Last-Translator: itsxiaobai <itsxiaobai@noreply.codeberg.org>\n"
 "Language-Team: Chinese (Traditional Han script) <https://"
 "translate.codeberg.org/projects/bavarder/bavarder/zh_Hant/>\n"
@@ -92,7 +92,6 @@ msgid "Models"
 msgstr "模型"
 
 #: src/views/preferences_window.blp:19
-#, fuzzy
 msgid "Model Marketplace"
 msgstr "模型市集"
 
@@ -125,16 +124,13 @@ msgid "User name"
 msgstr "使用者名稱"
 
 #: src/views/preferences_window.py:55
-#, fuzzy
-#| msgid "No preferences available"
 msgid "No local models available"
-msgstr "無可用偏好設定"
+msgstr "無可用本地模型"
 
 #: src/views/preferences_window.py:91
-#, fuzzy, python-format
-#| msgid "Downloading model %s"
+#, python-format
 msgid "Error loading marketplace: %s"
-msgstr "正在下載 %s 模型"
+msgstr "載入市集 %s 失敗"
 
 #: src/views/preferences_window.py:101
 msgid "Delete All Threads"
@@ -275,10 +271,8 @@ msgid "Sorry, I don't know what to say."
 msgstr "抱歉，我不知道該說什麼。"
 
 #: src/views/window.py:388
-#, fuzzy
-#| msgid "API Error"
 msgid "Error: "
-msgstr "API 錯誤"
+msgstr "錯誤： "
 
 #: src/views/window.py:391
 msgid "Generating response"
